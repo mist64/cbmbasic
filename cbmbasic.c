@@ -32,6 +32,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifdef _MSC_VER
+#define inline _inline
+#endif
+
 #ifndef __GNUC__  /* Can only support "linkonce" vars with GCC */
 #define __attribute__(X)
 #endif

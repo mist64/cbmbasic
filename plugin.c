@@ -46,7 +46,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include "plugin.h"
 #include "glue.h"
 
@@ -204,8 +203,9 @@ unsigned short
 plugin_gone() {
 	set_chrptr(get_chrptr()+1);
 	for (;;) {
+		unsigned short chrptr;
 		set_chrptr(get_chrptr()-1);
-		unsigned short chrptr = get_chrptr();
+		chrptr = get_chrptr();
 		/*
 		 * this example shows:
 		 * - how to get a 16 bit integer
@@ -255,15 +255,9 @@ plugin_gone() {
 		 */
 		if (compare("\236TEM")) {
 			char s[256];
-			char* argv[2];
 
 			get_string(s);
-			argv[0] = s;
-			argv[1] = 0;
-			if (!vfork()) {
-				execve(s, argv, 0);
-				exit(0);
-			}
+			system(s);
 
 			continue;
 		}
