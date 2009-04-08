@@ -17,10 +17,10 @@ clean:
 	-rmdir "$(OUTDIR)"
 
 .c{$(OUTDIR)}.obj:
-	$(cc) $(cdebug) $(cflags) $(cvarsdll) -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NONSTDC_NO_WARNINGS=1 /Fo"$(OUTDIR)/" /Fd"$(OUTDIR)/" $<
+	$(cc) $(cdebug) $(cflags) $(cvarsdll) -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NONSTDC_NO_DEPRECATE=1 /Fo"$(OUTDIR)/" /Fd"$(OUTDIR)/" $<
 
 "$(OUTDIR)":
 	mkdir "$(OUTDIR)"
 
-"$(TARGET)": "$(OUTDIR)\cbmbasic.obj" "$(OUTDIR)\runtime.obj" "$(OUTDIR)\readdir.obj"
+"$(TARGET)": "$(OUTDIR)\cbmbasic.obj" "$(OUTDIR)\runtime.obj" "$(OUTDIR)\readdir.obj" "$(OUTDIR)\plugin.obj"
 	$(link) $(ldebug) $(conlflags) -out:"$(TARGET)" $** $(conlibsdll)
