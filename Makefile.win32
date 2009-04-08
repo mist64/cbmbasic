@@ -1,0 +1,26 @@
+APPVER = 5.0
+TARGETOS = WINNT
+
+!include <win32.mak>
+
+!ifndef nounicode
+cvarsdll = $(cvarsdll) -DUNICODE -D_UNICODE
+!endif
+
+OUTDIR=.\bin\win32
+TARGET=$(OUTDIR)\cbmbasic.exe
+
+build: "$(OUTDIR)" "$(TARGET)"
+rebuild: clean build
+clean:
+	-erase /f /q "$(OUTDIR)\*.*"
+	-rmdir "$(OUTDIR)"
+
+.c{$(OUTDIR)}.obj:
+	$(cc) $(cdebug) $(cflags) $(cvarsdll) -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NONSTDC_NO_WARNINGS=1 /Fo"$(OUTDIR)/" /Fd"$(OUTDIR)/" $<
+
+"$(OUTDIR)":
+	mkdir "$(OUTDIR)"
+
+"$(TARGET)": "$(OUTDIR)\cbmbasic.obj" "$(OUTDIR)\runtime.obj" "$(OUTDIR)\readdir.obj"
+	$(link) $(ldebug) $(conlflags) -out:"$(TARGET)" $** $(conlibsdll)
