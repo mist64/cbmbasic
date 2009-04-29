@@ -192,6 +192,10 @@
 				RelativePath=".\runtime.c"
 				>
 			</File>
+			<File
+				RelativePath=".\console.c"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"

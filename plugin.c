@@ -52,6 +52,7 @@
 #endif
 #include "plugin.h"
 #include "glue.h"
+#include "console.h"
 
 static unsigned short
 get_chrptr() {
@@ -225,16 +226,7 @@ plugin_gone() {
 			/* XXX ignores terminal size */
 			if (x>80 || y>25 || x==0 || y==0)
 				return error(ERROR_ILLEGAL_QUANTITY);
-#ifdef _WIN32
-			{
-				COORD pos;
-				pos.X = x - 1;
-				pos.Y = y - 1;
-				SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
-			}
-#else
-			printf("\33[%d;%df", y, x); /* ANSI */
-#endif
+			move_cursor(x, y);
 
 			continue;
 		}

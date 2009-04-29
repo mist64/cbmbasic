@@ -24,7 +24,7 @@
  * SUCH DAMAGE.
  */
 
-#define NO_CLRHOME
+//#define NO_CLRHOME
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -41,6 +41,7 @@
 #include "readdir.h"
 #include "plugin.h"
 #include "glue.h"
+#include "console.h"
 
 unsigned char RAM[65536];
 
@@ -390,16 +391,26 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
 			putchar(13);
 			putchar(10);
 			break;
-#ifdef _WIN32
-		case 0x1D: /* CSR RIGHT */
-			putchar(' ');
+		case 17: /* CSR DOWN */
+			down_cursor();
 			break;
-#endif
+		case 19: /* CSR HOME */
+			move_cursor(0, 0);
+			break;
+		case 29: /* CSR RIGHT */
+			right_cursor();
+			break;
+		case 145: /* CSR UP */
+			up_cursor();
+			break;
 		case 147: /* clear screen */
 #ifndef NO_CLRHOME
 			if (!kernal_quote)
-				printf("%c[2J%c[;H", 27, 27);
+				clear_screen();
 #endif
+			break;
+		case 157: /* CSR LEFT */
+			left_cursor();
 			break;
 		case '"':
 			kernal_quote = 1-kernal_quote;

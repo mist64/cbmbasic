@@ -22,5 +22,5 @@ clean:
 "$(OUTDIR)":
 	mkdir "$(OUTDIR)"
 
-"$(TARGET)": "$(OUTDIR)\cbmbasic.obj" "$(OUTDIR)\runtime.obj" "$(OUTDIR)\readdir.obj" "$(OUTDIR)\plugin.obj"
+"$(TARGET)": "$(OUTDIR)\cbmbasic.obj" "$(OUTDIR)\runtime.obj" "$(OUTDIR)\readdir.obj" "$(OUTDIR)\plugin.obj" "$(OUTDIR)\console.obj"
 	$(link) $(ldebug) $(conlflags) -out:"$(TARGET)" $** $(conlibsdll)
