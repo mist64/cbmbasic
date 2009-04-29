@@ -1,0 +1,25 @@
+CC=gcc
+CFLAGS=-Wall -Wa,-xarch=v8 -m32 -mcpu=v8
+
+ifdef nodebug
+CDEBUG=-O3 -DNDEBUG
+else
+CDEBUG=-O0 -DDEBUG
+endif
+
+OUTDIR=./bin/sun32
+TARGET=$(OUTDIR)/cbmbasic
+
+build: $(OUTDIR) $(TARGET)
+rebuild: clean build
+clean:
+	-rm -fr $(OUTDIR)
+
+$(OUTDIR)/%.o:%.c
+	$(CC) $(CDEBUG) $(CFLAGS) -c $< -o $@
+
+$(OUTDIR):
+	mkdir $(OUTDIR)
+
+$(TARGET): $(OUTDIR)/cbmbasic.o $(OUTDIR)/runtime.o $(OUTDIR)/plugin.o $(OUTDIR)/console.o
+	$(CC) $(CDEBUG) $(CFLAGS) -o $(TARGET) $?
