@@ -181,6 +181,10 @@
 				>
 			</File>
 			<File
+				RelativePath=".\console.c"
+				>
+			</File>
+			<File
 				RelativePath=".\plugin.c"
 				>
 			</File>
@@ -192,16 +196,16 @@
 				RelativePath=".\runtime.c"
 				>
 			</File>
-			<File
-				RelativePath=".\console.c"
-				>
-			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
 			Filter="h;hpp;hxx;hm;inl;inc;xsd"
 			UniqueIdentifier="{93995380-89BD-4b04-88EB-625FBE52EBFB}"
 			>
+			<File
+				RelativePath=".\console.h"
+				>
+			</File>
 			<File
 				RelativePath=".\glue.h"
 				>

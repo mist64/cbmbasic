@@ -115,3 +115,27 @@ void move_cursor(int x, int y) {
   printf("\033[%d;%df", y, x);
 #endif /* _WIN32 */
 }
+
+void get_cursor(int* x, int* y)
+{
+#ifdef _WIN32
+  COORD pos;
+  DWORD dummy;
+  HANDLE hstd_out;
+
+  if( (get_console_info(&hstd_out, &pos, &dummy)) == -1 )
+  {
+      *x = 0;
+      *y = 0;
+  }
+  else
+  {
+      *x = pos.X;
+      *y = pos.Y;
+  }
+#else /* ANSI */
+  /* TODO we always return 0/0 as the cursor position */
+  *x = 0;
+  *y = 0;
+#endif /* _WIN32 */
+}

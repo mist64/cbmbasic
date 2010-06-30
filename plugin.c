@@ -266,6 +266,10 @@ plugin_gone() {
 
 			continue;
 		}
+
+		if (compare("QUIT")) {
+			exit(0);
+		}
 		break;
 	}
 	return 0;

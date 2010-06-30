@@ -33,6 +33,7 @@
 #ifdef _WIN32
 #include <direct.h>  // getcwd, chdir
 #include <windows.h> // GetLocalTime, SetLocalTime
+#include <conio.h>   // _kbhit, _getch
 #else
 #include <sys/time.h>
 #include <unistd.h>
@@ -671,7 +672,15 @@ STOP() {
 /* GETIN */
 static void
 GETIN() {
-	CHRIN();
+#ifdef _WIN32
+    if (_kbhit())
+        A = _getch();
+    else
+        A = 0;
+    C = 0;
+#else
+    CHRIN();
+#endif
 }
 
 /* CLALL */
@@ -682,12 +691,18 @@ CLALL() {
 /* PLOT */
 static void
 PLOT() {
-		/*
-		 * TODO we always return 0/0 as the cursor position
-		 * setting the cursor is unused by CBMBASIC
-		 */
-		X = 0;
-		Y = 0;
+    if (C)
+    {
+        int CX, CY;
+        get_cursor(&CX, &CY);
+        Y = CX;
+        X = CY;
+    }
+    else
+    {
+        printf("UNIMPL: set cursor %d %d\n", Y, X);
+        exit(1);
+    }
 }
 
 

@@ -7,5 +7,6 @@ void down_cursor();
 void left_cursor();
 void right_cursor();
 void move_cursor(int x, int y);
+void get_cursor(int* x, int* y);
 
 #endif /* CONSOLE_H_INCLUDED */
