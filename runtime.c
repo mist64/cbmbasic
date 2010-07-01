@@ -119,8 +119,12 @@ CHRGOT() {
 #endif
 #define RAM_TOP 0xA000
 #define KERN_ERR_NONE			0
+#define KERN_ERR_FILE_OPEN			2
+#define KERN_ERR_FILE_NOT_OPEN		3
 #define KERN_ERR_FILE_NOT_FOUND		4
 #define KERN_ERR_DEVICE_NOT_PRESENT	5
+#define KERN_ERR_NOT_INPUT_FILE		6
+#define KERN_ERR_NOT_OUTPUT_FILE	7
 #define KERN_ERR_MISSING_FILE_NAME	8
 #define KERN_ERR_ILLEGAL_DEVICE_NUMBER	9
 
@@ -130,6 +134,8 @@ unsigned short kernal_filename;
 unsigned char kernal_filename_len;
 unsigned char kernal_lfn, kernal_dev, kernal_sec;
 int kernal_quote = 0;
+unsigned char kernal_output = 0, kernal_input = 0;
+FILE* kernal_files[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 /* shell script hack */
 int readycount = 0;
@@ -266,37 +272,71 @@ SETNAM() {
 /* OPEN */
 static void
 OPEN() {
-		printf("UNIMPL: OPEN\n");
-		exit(1);
+    if (kernal_files[kernal_lfn]) {
+        C = 1;
+        A = kernal_status = KERN_ERR_FILE_OPEN;
+    } else if (kernal_filename_len == 0) {
+        C = 1;
+        A = kernal_status = KERN_ERR_MISSING_FILE_NAME;
+    } else {
+        unsigned char savedbyte = RAM[kernal_filename+kernal_filename_len];
+        const char* mode = kernal_sec == 0 ? "r" : "w";
+        RAM[kernal_filename+kernal_filename_len] = 0;
+        kernal_files[kernal_lfn] = fopen(RAM+kernal_filename, mode);
+        RAM[kernal_filename+kernal_filename_len] = savedbyte;
+        if (kernal_files[kernal_lfn]) {
+            C = 0;
+        } else {
+            C = 1;
+            A = kernal_status = KERN_ERR_FILE_NOT_FOUND;
+        }
+    }
 }
 
 /* CLOSE */
 static void
 CLOSE() {
-		printf("UNIMPL: CLOSE\n");
-		exit(1);
+    if (!kernal_files[kernal_lfn]) {
+        C = 1;
+        A = kernal_status = KERN_ERR_FILE_NOT_OPEN;
+    } else {
+        fclose(kernal_files[kernal_lfn]);
+        kernal_files[kernal_lfn] = 0;
+        C = 0;
+    }
 }
 
 /* CHKIN */
 static void
 CHKIN() {
-		printf("UNIMPL: CHKIN\n");
-		exit(1);
+    if (!kernal_files[X]) {
+        C = 1;
+        A = kernal_status = KERN_ERR_FILE_NOT_OPEN;
+    } else {
+        // TODO Check read/write mode
+        kernal_input = X;
+        C = 0;
+    }
 }
 
 /* CHKOUT */
 static void
 CHKOUT() {
-		printf("UNIMPL: CHKOUT\n");
-		exit(1);
+    if (!kernal_files[X]) {
+        C = 1;
+        A = kernal_status = KERN_ERR_FILE_NOT_OPEN;
+    } else {
+        // TODO Check read/write mode
+        kernal_output = X;
+        C = 0;
+    }
 }
 
 /* CLRCHN */
 static void
 CLRCHN() {
-#ifdef DEBUG
-		printf("WARNING: UNIMPL: CLRCHN\n");
-#endif
+    kernal_input = 0;
+    kernal_output = 0;
 }
 
 static const char run[] = { 'R', 'U', 'N', 13 };
@@ -310,8 +350,16 @@ CHRIN() {
 	if ((!interactive) && (readycount==2)) {
 		exit(0);
 	}
-	if (!input_file) {
+	if (kernal_input != 0) {
+		if ((A = fgetc(kernal_files[kernal_input])) == (unsigned char) EOF) {
+			C = 1;
+			A = kernal_status = KERN_ERR_NOT_INPUT_FILE;
+		} else
+			C = 0;
+	} else if (!input_file) {
 		A = getchar(); /* stdin */
+		if (A=='\n') A = '\r';
+		C = 0;
 	} else {
 		if (fakerun) {
 			A = run[fakerun_index++];
@@ -324,12 +372,10 @@ CHRIN() {
 				fakerun_index = 0;
 				A = run[fakerun_index++];
 			}
+			if (A=='\n') A = '\r';
 		}
+		C = 0;
 	}
-	if (A==255)
-		exit(0);
-	if (A=='\n') A = '\r';
-	C = 0;
 }
 
 /* CHROUT */
@@ -383,45 +429,53 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
 #if 0
 	printf("CHROUT: %c (%d)\n", A, A);
 #else
-	switch (A) {
-		case 10:
-			kernal_quote = 0;
-			break;
-		case 13:
-			kernal_quote = 0;
-			putchar(13);
-			putchar(10);
-			break;
-		case 17: /* CSR DOWN */
-			down_cursor();
-			break;
-		case 19: /* CSR HOME */
-			move_cursor(0, 0);
-			break;
-		case 29: /* CSR RIGHT */
-			right_cursor();
-			break;
-		case 145: /* CSR UP */
-			up_cursor();
-			break;
-		case 147: /* clear screen */
+    if (kernal_output) {
+        if (fputc(A, kernal_files[kernal_output]) == EOF) {
+            C = 1;
+            A = kernal_status = KERN_ERR_NOT_OUTPUT_FILE;
+        } else
+            C = 0;
+    } else {
+		switch (A) {
+			case 10:
+				kernal_quote = 0;
+				break;
+			case 13:
+				kernal_quote = 0;
+				putchar(13);
+				putchar(10);
+				break;
+			case 17: /* CSR DOWN */
+				down_cursor();
+				break;
+			case 19: /* CSR HOME */
+				move_cursor(0, 0);
+				break;
+			case 29: /* CSR RIGHT */
+				right_cursor();
+				break;
+			case 145: /* CSR UP */
+				up_cursor();
+				break;
+			case 147: /* clear screen */
 #ifndef NO_CLRHOME
-			if (!kernal_quote)
-				clear_screen();
+				if (!kernal_quote)
+					clear_screen();
 #endif
-			break;
-		case 157: /* CSR LEFT */
-			left_cursor();
-			break;
-		case '"':
-			kernal_quote = 1-kernal_quote;
-			// fallthrough
-		default:
-			putchar(A);
+				break;
+			case 157: /* CSR LEFT */
+				left_cursor();
+				break;
+			case '"':
+				kernal_quote = 1-kernal_quote;
+				// fallthrough
+			default:
+				putchar(A);
+		}
+#endif
+		fflush(stdout);
+		C = 0;
 	}
-#endif
-	fflush(stdout);
-	C = 0;
 }
 
 /* LOAD */
@@ -672,34 +726,46 @@ STOP() {
 /* GETIN */
 static void
 GETIN() {
+    if (kernal_input != 0) {
+        if ((A = fgetc(kernal_files[kernal_input])) == (unsigned char) EOF) {
+            C = 1;
+            A = kernal_status = KERN_ERR_NOT_INPUT_FILE;
+        } else
+            C = 0;
+    } else {
 #ifdef _WIN32
-    if (_kbhit())
-        A = _getch();
-    else
-        A = 0;
-    C = 0;
+        if (_kbhit())
+            A = _getch();
+        else
+            A = 0;
+        C = 0;
 #else
-    CHRIN();
+        CHRIN();
 #endif
+    }
 }
 
 /* CLALL */
 static void
 CLALL() {
+    int i;
+    for (i = 0; i < sizeof(kernal_files)/sizeof(kernal_files[0]); ++i) {
+        if (kernal_files[i]) {
+            fclose(kernal_files[i]);
+            kernal_files[i] = 0;
+        }
+    }
 }
 
 /* PLOT */
 static void
 PLOT() {
-    if (C)
-    {
+    if (C) {
         int CX, CY;
         get_cursor(&CX, &CY);
         Y = CX;
         X = CY;
-    }
-    else
-    {
+    } else {
         printf("UNIMPL: set cursor %d %d\n", Y, X);
         exit(1);
     }
