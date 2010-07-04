@@ -139,3 +139,89 @@ void get_cursor(int* x, int* y)
   *y = 0;
 #endif /* _WIN32 */
 }
+
+void set_color(int c)
+{
+#ifdef _WIN32
+    HANDLE h;
+    CONSOLE_SCREEN_BUFFER_INFO info;
+    WORD bg;
+
+    h = GetStdHandle(STD_OUTPUT_HANDLE);
+    if( h == INVALID_HANDLE_VALUE || GetConsoleScreenBufferInfo(h, &info) == FALSE )
+        return;
+
+    bg = info.wAttributes & (BACKGROUND_RED | BACKGROUND_GREEN | BACKGROUND_BLUE | BACKGROUND_INTENSITY);
+    switch (c)
+    {
+    case COLOR_WHITE:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_RED:
+        info.wAttributes = bg | FOREGROUND_RED;
+        break;
+
+    case COLOR_GREEN:
+        info.wAttributes = bg | FOREGROUND_GREEN;
+        break;
+
+    case COLOR_BLUE:
+        info.wAttributes = bg | FOREGROUND_BLUE;
+        break;
+
+    case COLOR_BLACK:
+        info.wAttributes = bg;
+        break;
+
+    case COLOR_PURPLE:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_YELLOW:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_CYAN:
+        info.wAttributes = bg | FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_ORANGE:
+        info.wAttributes = bg | FOREGROUND_GREEN | FOREGROUND_BLUE;
+        break;
+
+    case COLOR_BROWN:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_GREEN;
+        break;
+
+    case COLOR_LTRED:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_GREY1:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_BLUE;
+        break;
+
+    case COLOR_GREY2:
+        info.wAttributes = bg | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_LTGREEN:
+        info.wAttributes = bg | FOREGROUND_GREEN | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_LTBLUE:
+        info.wAttributes = bg | FOREGROUND_BLUE | FOREGROUND_INTENSITY;
+        break;
+
+    case COLOR_GREY3:
+        info.wAttributes = bg | FOREGROUND_RED | FOREGROUND_BLUE | FOREGROUND_GREEN;
+        break;
+    }
+
+    SetConsoleTextAttribute(h, info.wAttributes);
+
+#else /* ANSI */
+  /* TODO */
+#endif /* _WIN32 */
+}
