@@ -139,6 +139,7 @@ unsigned char kernal_lfn, kernal_dev, kernal_sec;
 int kernal_quote = 0;
 unsigned char kernal_output = 0, kernal_input = 0;
 FILE* kernal_files[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
+int kernal_files_next[] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
 
 /* shell script hack */
 int readycount = 0;
@@ -293,6 +294,7 @@ OPEN() {
         kernal_files[kernal_lfn] = fopen(RAM+kernal_filename, mode);
         RAM[kernal_filename+kernal_filename_len] = savedbyte;
         if (kernal_files[kernal_lfn]) {
+            kernal_files_next[kernal_lfn] = EOF;
             C = 0;
         } else {
             C = 1;
@@ -361,10 +363,17 @@ CHRIN() {
 		exit(0);
 	}
 	if (kernal_input != 0) {
-		if ((A = fgetc(kernal_files[kernal_input])) == (unsigned char) EOF) {
-			A = 199;
+		if (feof(kernal_files[kernal_input])) {
 			kernal_status |= KERN_ST_EOF;
 			kernal_status |= KERN_ST_TIME_OUT_READ;
+			A = 13;
+		} else {
+			if (kernal_files_next[kernal_input] == EOF)
+				kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
+			A = kernal_files_next[kernal_input];
+			kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
+			if (kernal_files_next[kernal_input] == EOF)
+				kernal_status |= KERN_ST_EOF;
 		}
 	} else if (!input_file) {
 		A = getchar(); /* stdin */
@@ -736,10 +745,17 @@ STOP() {
 static void
 GETIN() {
     if (kernal_input != 0) {
-        if ((A = fgetc(kernal_files[kernal_input])) == (unsigned char) EOF) {
-            A = 199;
+        if (feof(kernal_files[kernal_input])) {
             kernal_status |= KERN_ST_EOF;
             kernal_status |= KERN_ST_TIME_OUT_READ;
+            A = 199;
+        } else {
+            if (kernal_files_next[kernal_input] == EOF)
+                kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
+            A = kernal_files_next[kernal_input];
+            kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
+            if (kernal_files_next[kernal_input] == EOF)
+                kernal_status |= KERN_ST_EOF;
         }
         C = 0;
     } else {
