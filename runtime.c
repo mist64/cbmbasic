@@ -128,6 +128,9 @@ CHRGOT() {
 #define KERN_ERR_MISSING_FILE_NAME	8
 #define KERN_ERR_ILLEGAL_DEVICE_NUMBER	9
 
+#define KERN_ST_TIME_OUT_READ 0x02
+#define KERN_ST_EOF 0x40
+
 /* KERNAL internal state */
 unsigned char kernal_msgflag, kernal_status = 0;
 unsigned short kernal_filename;
@@ -151,6 +154,10 @@ init_os(int argc, char **argv) {
 	if (argc>1) {
 		interactive = 0;
 		input_file = fopen(argv[1], "r");
+		if (!input_file) {
+			printf("Error opening: %s\n", argv[1]);
+			exit(1);
+		}
 		if (fgetc(input_file)=='#') {
 			char c;
 			do {
@@ -272,12 +279,13 @@ SETNAM() {
 /* OPEN */
 static void
 OPEN() {
+    kernal_status = 0;
     if (kernal_files[kernal_lfn]) {
         C = 1;
-        A = kernal_status = KERN_ERR_FILE_OPEN;
+        A = KERN_ERR_FILE_OPEN;
     } else if (kernal_filename_len == 0) {
         C = 1;
-        A = kernal_status = KERN_ERR_MISSING_FILE_NAME;
+        A = KERN_ERR_MISSING_FILE_NAME;
     } else {
         unsigned char savedbyte = RAM[kernal_filename+kernal_filename_len];
         const char* mode = kernal_sec == 0 ? "r" : "w";
@@ -288,7 +296,7 @@ OPEN() {
             C = 0;
         } else {
             C = 1;
-            A = kernal_status = KERN_ERR_FILE_NOT_FOUND;
+            A = KERN_ERR_FILE_NOT_FOUND;
         }
     }
 }
@@ -298,7 +306,7 @@ static void
 CLOSE() {
     if (!kernal_files[kernal_lfn]) {
         C = 1;
-        A = kernal_status = KERN_ERR_FILE_NOT_OPEN;
+        A = KERN_ERR_FILE_NOT_OPEN;
     } else {
         fclose(kernal_files[kernal_lfn]);
         kernal_files[kernal_lfn] = 0;
@@ -309,9 +317,10 @@ CLOSE() {
 /* CHKIN */
 static void
 CHKIN() {
+    kernal_status = 0;
     if (!kernal_files[X]) {
         C = 1;
-        A = kernal_status = KERN_ERR_FILE_NOT_OPEN;
+        A = KERN_ERR_FILE_NOT_OPEN;
     } else {
         // TODO Check read/write mode
         kernal_input = X;
@@ -322,9 +331,10 @@ CHKIN() {
 /* CHKOUT */
 static void
 CHKOUT() {
+    kernal_status = 0;
     if (!kernal_files[X]) {
         C = 1;
-        A = kernal_status = KERN_ERR_FILE_NOT_OPEN;
+        A = KERN_ERR_FILE_NOT_OPEN;
     } else {
         // TODO Check read/write mode
         kernal_output = X;
@@ -352,14 +362,13 @@ CHRIN() {
 	}
 	if (kernal_input != 0) {
 		if ((A = fgetc(kernal_files[kernal_input])) == (unsigned char) EOF) {
-			C = 1;
-			A = kernal_status = KERN_ERR_NOT_INPUT_FILE;
-		} else
-			C = 0;
+			A = 199;
+			kernal_status |= KERN_ST_EOF;
+			kernal_status |= KERN_ST_TIME_OUT_READ;
+		}
 	} else if (!input_file) {
 		A = getchar(); /* stdin */
 		if (A=='\n') A = '\r';
-		C = 0;
 	} else {
 		if (fakerun) {
 			A = run[fakerun_index++];
@@ -374,8 +383,8 @@ CHRIN() {
 			}
 			if (A=='\n') A = '\r';
 		}
-		C = 0;
 	}
+	C = 0;
 }
 
 /* CHROUT */
@@ -432,7 +441,7 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
     if (kernal_output) {
         if (fputc(A, kernal_files[kernal_output]) == EOF) {
             C = 1;
-            A = kernal_status = KERN_ERR_NOT_OUTPUT_FILE;
+            A = KERN_ERR_NOT_OUTPUT_FILE;
         } else
             C = 0;
     } else {
@@ -608,19 +617,19 @@ load_noerr:
 		X = end & 0xFF;
 		Y = end >> 8;
 		C = 0;
-		A = kernal_status = KERN_ERR_NONE;
+		A = KERN_ERR_NONE;
 		return;
 file_not_found:
 		C = 1;
-		A = kernal_status = KERN_ERR_FILE_NOT_FOUND;
+		A = KERN_ERR_FILE_NOT_FOUND;
 		return;
 device_not_present:
 		C = 1;
-		A = kernal_status = KERN_ERR_DEVICE_NOT_PRESENT;
+		A = KERN_ERR_DEVICE_NOT_PRESENT;
 		return;
 missing_file_name:
 		C = 1;
-		A = kernal_status = KERN_ERR_MISSING_FILE_NAME;
+		A = KERN_ERR_MISSING_FILE_NAME;
 		return;
 }
 
@@ -636,12 +645,12 @@ SAVE() {
 		end = X | Y << 8;
 		if (end<start) {
 			C = 1;
-			A = kernal_status = KERN_ERR_NONE;
+			A = KERN_ERR_NONE;
 			return;
 		}
 		if (!kernal_filename_len) {
 			C = 1;
-			A = kernal_status = KERN_ERR_MISSING_FILE_NAME;
+			A = KERN_ERR_MISSING_FILE_NAME;
 			return;
 		}
 		savedbyte = RAM[kernal_filename+kernal_filename_len]; /* TODO possible overflow */
@@ -649,7 +658,7 @@ SAVE() {
 		f = fopen((char*)&RAM[kernal_filename], "wb"); /* overwrite - these are not the COMMODORE DOS semantics! */
 		if (!f) {
 			C = 1;
-			A = kernal_status = KERN_ERR_FILE_NOT_FOUND;
+			A = KERN_ERR_FILE_NOT_FOUND;
 			return;
 		}
 		fputc(start & 0xFF, f);
@@ -657,7 +666,7 @@ SAVE() {
 		fwrite(&RAM[start], end-start, 1, f);
 		fclose(f);
 		C = 0;
-		A = kernal_status = KERN_ERR_NONE;
+		A = KERN_ERR_NONE;
 }
 
 /* SETTIM */
@@ -728,10 +737,11 @@ static void
 GETIN() {
     if (kernal_input != 0) {
         if ((A = fgetc(kernal_files[kernal_input])) == (unsigned char) EOF) {
-            C = 1;
-            A = kernal_status = KERN_ERR_NOT_INPUT_FILE;
-        } else
-            C = 0;
+            A = 199;
+            kernal_status |= KERN_ST_EOF;
+            kernal_status |= KERN_ST_TIME_OUT_READ;
+        }
+        C = 0;
     } else {
 #ifdef _WIN32
         if (_kbhit())
