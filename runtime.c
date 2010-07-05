@@ -455,7 +455,7 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
             C = 0;
     } else {
         if (kernal_quote) {
-            if (A == '"') kernal_quote = 0;
+            if (A == '"' || A == '\n' || A == '\r') kernal_quote = 0;
             putchar(A);
         } else {
             switch (A) {
@@ -463,10 +463,8 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
                     set_color(COLOR_WHITE);
                     break;
                 case 10:
-                    kernal_quote = 0;
                     break;
                 case 13:
-                    kernal_quote = 0;
                     putchar(13);
                     putchar(10);
                     break;
@@ -816,10 +814,11 @@ GETIN() {
             A = _getch();
         else
             A = 0;
-        C = 0;
 #else
-        CHRIN();
+        A = getchar();
 #endif
+        if (A=='\n') A = '\r';
+        C = 0;
     }
 }
 
