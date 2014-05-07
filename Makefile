@@ -1,4 +1,4 @@
-OBJS=cbmbasic.o runtime.o plugin.o
+OBJS=cbmbasic.o runtime.o plugin.o console.o
 CFLAGS=-Wall -O3
 
 all: cbmbasic
