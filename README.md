@@ -30,9 +30,9 @@ You can use cbmbasic in interactive mode by just running the binary without para
 cbmbasic implements a small plugin system that lets developers add additional statements, functions etc. Right now, you can turn this on with "SYS 1" (turn off with "SYS 0"), and use the new statements LOCATE *y*, *x* (set cursor position), SYSTEM *string* (run command line command) and the extended WAIT *port*, *mask*, which implements the [Bill Gates easter egg](http://www.pagetable.com/?p=43).
 
 ## Internals
-The core of the BASIC interpreter is in the file cbmbasic.c, which is platform, endianness and bitness independent. For all I/O, it calls out into runtime.c, do it should be able to adapt this project for any OS by just changing runtime.c.
+The core of the BASIC interpreter is in the file `cbmbasic.c`, which is platform, endianness and bitness independent. For all I/O, it calls out into `runtime.c`, so it should be possible to adapt this project for any OS by just changing `runtime.c`.
 
-All function calls that the core interpreter can't handle end up in kernal_dispatch() in runtime.c, where a switch statement dispatches these to C functions. For Commodore BASIC, runtime.c has to support several Commodore KERNAL library routines. Some of them are very important (CHRIN, CHROUT) and some are only used for certain BASIC statements (LOAD, SAVE, OPEN, SETTIM). runtime.c does not implement all functions yet.
+All function calls that the core interpreter can't handle end up in kernal_dispatch() in `runtime.c`, where a switch statement dispatches these to C functions. For Commodore BASIC, `runtime.c` has to support several Commodore KERNAL library routines. Some of them are very important (CHRIN, CHROUT) and some are only used for certain BASIC statements (LOAD, SAVE, OPEN, SETTIM). `runtime.c` does not implement all functions yet.
 
 ## License
 Feel free to use this project for any purpose, give credit if you like, and send back improvements to the authors, if you like, so that others can benefit from it. See source for license details.
