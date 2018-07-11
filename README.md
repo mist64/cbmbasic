@@ -22,7 +22,7 @@ You can use cbmbasic in interactive mode by just running the binary without para
     $ ls -l hello.bas 
     -rwxr-xr-x  1 mist  staff  40  7 Apr 21:30 hello.bas
     $ cat hello.bas 
-    #!/usr/bin/cbmbasic
+    #!/usr/bin/env cbmbasic
     PRINT"HELLO WORLD!"
     $ ./hello.bas 
     HELLO WORLD!
