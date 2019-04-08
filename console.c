@@ -140,6 +140,19 @@ void get_cursor(int* x, int* y)
 #endif /* _WIN32 */
 }
 
+void reverse_screen(int c) {
+#ifdef _WIN32
+	/* No implementation for Windows yet */
+#else /* ANSI */
+   if (c == 1) {
+     fputs("\033[7m", stdout);
+   } else {
+     fputs("\033[0m", stdout);
+   }
+	
+#endif
+}
+
 void set_color(int c)
 {
 #ifdef _WIN32
@@ -222,6 +235,80 @@ void set_color(int c)
     SetConsoleTextAttribute(h, info.wAttributes);
 
 #else /* ANSI */
-  /* TODO */
+int fg,attr;
+	fg=37;
+	attr=0;
+switch (c)
+    {
+    case COLOR_WHITE: /* Bold white */
+        fg=37;
+	attr=1;
+        break;
+
+    case COLOR_GREY1: /* Bold black is a dark grey */
+    case COLOR_BROWN:
+        fg=30;
+	attr=1;
+	break;
+
+    case COLOR_GREY2:
+    case COLOR_GREY3:
+        fg=37;
+	attr=0;
+        break;
+
+    case COLOR_RED:
+        fg=31;
+	attr=0;
+        break;
+
+    case COLOR_ORANGE:
+    case COLOR_LTRED:
+	attr=1;
+        fg=31;
+        break;
+
+    case COLOR_GREEN:
+        fg=32;
+	attr=1;
+        break;
+
+    case COLOR_LTGREEN:
+        fg=32;
+	attr=0;
+        break;
+
+    case COLOR_BLUE:
+	attr=1;
+        fg=34;
+        break;
+
+    case COLOR_BLACK:
+        fg=30;
+	attr=0;
+        break;
+
+    case COLOR_PURPLE:
+	attr=1;
+        fg=35; /* Magenta */
+        break;
+
+    case COLOR_YELLOW:
+	attr=1;
+        fg=33;
+        break;
+
+    case COLOR_CYAN:
+	attr=1;
+        fg=36;
+        break;
+
+    case COLOR_LTBLUE:
+	attr=0;
+        fg=36;
+        break;
+}
+printf("\033[%d;%d;40m", attr,fg);
+
 #endif /* _WIN32 */
 }

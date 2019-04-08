@@ -28,5 +28,6 @@ void right_cursor();
 void move_cursor(int x, int y);
 void get_cursor(int* x, int* y);
 void set_color(int c);
+void reverse_screen(int c);
 
 #endif /* CONSOLE_H_INCLUDED */
