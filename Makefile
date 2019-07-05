@@ -4,7 +4,7 @@ CFLAGS+=-Wall -O3
 all: cbmbasic
 
 cbmbasic: $(OBJS)
-	$(CC) -o cbmbasic $(OBJS)
+	$(CC) $(LDFLAGS) -o cbmbasic $(OBJS)
 
 clean:
 	rm -f $(OBJS) cbmbasic
