@@ -48,10 +48,6 @@ typedef u8 bool;
 #endif
 
 /* Function Declarations */
-double fmod(double, double);
-float fmodf(float, float);
-long double fmodl(long double, long double);
-int main(int llvm_cbe_argc, char **llvm_cbe_argv);
 int init_os(int , char **);
 u32 kernal_dispatch(void);
 
