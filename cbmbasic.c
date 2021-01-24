@@ -7419,7 +7419,7 @@ llvm_cbe_lA3B7:
   llvm_cbe_X_2e_tmp_2e_151625 = llvm_cbe_X_2e_tmp_2e_151625__PHI_TEMPORARY;
   X = llvm_cbe_X_2e_tmp_2e_151625;
   A = llvm_cbe_A_2e_tmp_2e_051626;
-  Z = (((bool )llvm_cbe_Z_2e_tmp_2e_051628_2e_in));
+  Z = ((llvm_cbe_Z_2e_tmp_2e_051628_2e_in));
   N = ((((((llvm_cbe_N_2e_tmp_2e_051629_2e_in) >> (7))))));
   C = llvm_cbe_C_2e_tmp_2e_051630;
   V = llvm_cbe_V_2e_tmp_2e_151632;
@@ -7546,7 +7546,7 @@ llvm_cbe_lA38A:
   llvm_cbe_tmp1924 = ((llvm_cbe_tmp1898_2e_rle + (2)));
   llvm_cbe_tmp1950 = ((llvm_cbe_tmp1898_2e_rle + (4)));
   X = llvm_cbe_tmp1950;
-  Z = (((bool )(llvm_cbe_tmp1950 == 0)));
+  Z = (((llvm_cbe_tmp1950 == 0)));
   N = ((((((llvm_cbe_tmp1950) >> (7))))));
   llvm_cbe_V_2e_promoted51623 = V;
   llvm_cbe_V_2e_tmp_2e_051631__PHI_TEMPORARY = llvm_cbe_V_2e_promoted51623;   /* for PHI node */
@@ -7633,7 +7633,7 @@ llvm_cbe_lA3F3:
   *((&RAM[(89u)])) = (((llvm_cbe_tmp2687 + (-1))));
   llvm_cbe_tmp2701 = ((llvm_cbe_tmp2700_2e_rle + (-1)));
   X = llvm_cbe_tmp2701;
-  Z = (((bool )(llvm_cbe_tmp2700_2e_rle == 1)));
+  Z = (((llvm_cbe_tmp2700_2e_rle == 1)));
   N = ((((((llvm_cbe_tmp2701) >> (7))))));
   if (llvm_cbe_tmp2700_2e_rle == 1) {
     goto llvm_cbe_bb2717;
@@ -7672,7 +7672,7 @@ llvm_cbe_bb2283:
   llvm_cbe_iftmp_2e_116_2e_0 = llvm_cbe_iftmp_2e_116_2e_0__PHI_TEMPORARY;
   V = llvm_cbe_iftmp_2e_116_2e_0;
   llvm_cbe_tmp22852286 = (llvm_cbe_tmp2261);
-  llvm_cbe_tmp22882289 = ((bool )(llvm_cbe_tmp22852286 == 0));
+  llvm_cbe_tmp22882289 = ((llvm_cbe_tmp22852286 == 0));
   llvm_cbe_tmp2290_2e_lobit = (((((llvm_cbe_tmp22852286) >> (7)))));
   llvm_cbe_tmp23012302 = (((((((((((llvm_cbe_tmp22642265) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp23012302;
@@ -7680,7 +7680,7 @@ llvm_cbe_bb2283:
   Y = llvm_cbe_tmp22852286;
   llvm_cbe_tmp2316 = *((&RAM[(91u)]));
   A = llvm_cbe_tmp2316;
-  Z = (((bool )(llvm_cbe_tmp2316 == 0)));
+  Z = (((llvm_cbe_tmp2316 == 0)));
   N = ((((((llvm_cbe_tmp2316) >> (7))))));
   llvm_cbe_tmp2330 = *((&RAM[(96u)]));
   llvm_cbe_tmp2336 = ((((((((((llvm_cbe_tmp2316)) + (-1)))) - ((llvm_cbe_tmp2330))))) + ((llvm_cbe_tmp23012302))));
@@ -7703,7 +7703,7 @@ llvm_cbe_lA3BF:
   C = 1;
   llvm_cbe_tmp2241 = *((&RAM[(90u)]));
   A = llvm_cbe_tmp2241;
-  llvm_cbe_tmp22432244 = ((bool )(llvm_cbe_tmp2241 == 0));
+  llvm_cbe_tmp22432244 = ((llvm_cbe_tmp2241 == 0));
   Z = llvm_cbe_tmp22432244;
   llvm_cbe_tmp2245_2e_lobit = (((((llvm_cbe_tmp2241) >> (7)))));
   N = llvm_cbe_tmp2245_2e_lobit;
@@ -7734,7 +7734,7 @@ llvm_cbe_bb29046:
   A = llvm_cbe_tmp29072;
   llvm_cbe_tmp29084 = *((&RAM[(52u)]));
   X = llvm_cbe_tmp29084;
-  Z = (((bool )(llvm_cbe_tmp29084 == 0)));
+  Z = (((llvm_cbe_tmp29084 == 0)));
   N = ((((((llvm_cbe_tmp29084) >> (7))))));
   *((&RAM[(88u)])) = llvm_cbe_tmp29072;
   *((&RAM[(89u)])) = llvm_cbe_tmp29084;
@@ -7760,7 +7760,7 @@ llvm_cbe_bb28987:
   *((&RAM[(90u)])) = ((llvm_cbe_tmp28962));
   llvm_cbe_tmp29013 = *((&RAM[(96u)]));
   A = llvm_cbe_tmp29013;
-  Z = (((bool )(llvm_cbe_tmp29013 == 0)));
+  Z = (((llvm_cbe_tmp29013 == 0)));
   N = ((((((llvm_cbe_tmp29013) >> (7))))));
   llvm_cbe_tmp29029 = ((((llvm_cbe_iftmp_2e_6912_2e_0)) + ((llvm_cbe_tmp29013))));
   if ((((s8 )llvm_cbe_tmp29013) < ((s8 )0))) {
@@ -7785,7 +7785,7 @@ llvm_cbe_bb28879:
   *((&RAM[(85u)])) = llvm_cbe_tmp28909;
   llvm_cbe_tmp28946 = *((&RAM[(((((((llvm_cbe_tmp28849)) << 8u) | ((llvm_cbe_tmp28861))) + ((llvm_cbe_tmp28909))) & 65535u))]));
   A = llvm_cbe_tmp28946;
-  Z = (((bool )(llvm_cbe_tmp28946 == 0)));
+  Z = (((llvm_cbe_tmp28946 == 0)));
   N = ((((((llvm_cbe_tmp28946) >> (7))))));
   llvm_cbe_tmp28960 = *((&RAM[(95u)]));
   llvm_cbe_tmp28962 = ((((llvm_cbe_tmp28960)) + ((llvm_cbe_tmp28946))));
@@ -7800,7 +7800,7 @@ llvm_cbe_lB606:
   llvm_cbe_tmp28861 = *((&RAM[(78u)]));
   llvm_cbe_tmp28863 = ((llvm_cbe_tmp28849 | llvm_cbe_tmp28861));
   A = llvm_cbe_tmp28863;
-  Z = (((bool )(llvm_cbe_tmp28863 == 0)));
+  Z = (((llvm_cbe_tmp28863 == 0)));
   N = ((((((llvm_cbe_tmp28863) >> (7))))));
   if (llvm_cbe_tmp28863 == 0) {
     goto llvm_cbe_lB601;
@@ -7814,7 +7814,7 @@ llvm_cbe_bb27706:
   llvm_cbe_tmp2771227713 = (llvm_cbe_tmp27711);
   llvm_cbe_tmp2771527716 = (((((((((((llvm_cbe_tmp2771227713) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp2771527716;
-  Z = (((bool )((llvm_cbe_tmp2771227713 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2771227713 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27711))) >> (7))))));
   if (((llvm_cbe_tmp2771227713 & 255u) == 0u)) {
     goto llvm_cbe_lB606;
@@ -7831,7 +7831,7 @@ llvm_cbe_lB572:
   llvm_cbe_tmp2768327684 = (llvm_cbe_tmp27682);
   llvm_cbe_tmp2768627687 = (((((((((((llvm_cbe_tmp2768327684) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp2768627687;
-  Z = (((bool )((llvm_cbe_tmp2768327684 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2768327684 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27682))) >> (7))))));
   if (((llvm_cbe_tmp2768327684 & 255u) == 0u)) {
     goto llvm_cbe_bb27706;
@@ -7845,7 +7845,7 @@ llvm_cbe_lB56E:
   llvm_cbe_tmp27654_2e_rle = llvm_cbe_tmp27654_2e_rle__PHI_TEMPORARY;
   A = llvm_cbe_tmp27654_2e_rle;
   X = llvm_cbe_tmp27666_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp27666_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp27666_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp27666_2e_rle) >> (7))))));
   llvm_cbe_tmp27735_2e_rle51924__PHI_TEMPORARY = llvm_cbe_tmp27654_2e_rle;   /* for PHI node */
   llvm_cbe_tmp27678_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp27666_2e_rle;   /* for PHI node */
@@ -7870,7 +7870,7 @@ llvm_cbe_bb27597:
   llvm_cbe_tmp27602 = ((((llvm_cbe_tmp27598)) - ((llvm_cbe_tmp27600))));
   llvm_cbe_tmp2760327604 = (llvm_cbe_tmp27602);
   C = ((((((((((((llvm_cbe_tmp2760327604) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2760327604 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2760327604 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27602))) >> (7))))));
   if (((llvm_cbe_tmp2760327604 & 255u) == 0u)) {
     goto llvm_cbe_lB566;
@@ -7884,7 +7884,7 @@ llvm_cbe_lB559:
   llvm_cbe_tmp27573 = ((((llvm_cbe_tmp27569)) - ((llvm_cbe_tmp27571))));
   llvm_cbe_tmp2757427575 = (llvm_cbe_tmp27573);
   C = ((((((((((((llvm_cbe_tmp2757427575) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2757427575 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2757427575 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27573))) >> (7))))));
   if (((llvm_cbe_tmp2757427575 & 255u) == 0u)) {
     goto llvm_cbe_bb27597;
@@ -7898,7 +7898,7 @@ llvm_cbe_lB54D:
   A = llvm_cbe_tmp27543;
   llvm_cbe_tmp27555 = *((&RAM[(46u)]));
   X = llvm_cbe_tmp27555;
-  Z = (((bool )(llvm_cbe_tmp27555 == 0)));
+  Z = (((llvm_cbe_tmp27555 == 0)));
   N = ((((((llvm_cbe_tmp27555) >> (7))))));
   *((&RAM[(34u)])) = llvm_cbe_tmp27543;
   *((&RAM[(35u)])) = llvm_cbe_tmp27555;
@@ -7910,7 +7910,7 @@ llvm_cbe_lB544:
   llvm_cbe_tmp27492 = ((((llvm_cbe_tmp27488)) - ((llvm_cbe_tmp27490))));
   llvm_cbe_tmp2749327494 = (llvm_cbe_tmp27492);
   C = ((((((((((((llvm_cbe_tmp2749327494) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2749327494 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2749327494 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27492))) >> (7))))));
   if (((llvm_cbe_tmp2749327494 & 255u) == 0u)) {
     goto llvm_cbe_lB54D;
@@ -7943,7 +7943,7 @@ llvm_cbe_lB526:
   X = llvm_cbe_tmp27399;
   llvm_cbe_tmp27411 = *((&RAM[(56u)]));
   A = llvm_cbe_tmp27411;
-  Z = (((bool )(llvm_cbe_tmp27411 == 0)));
+  Z = (((llvm_cbe_tmp27411 == 0)));
   N = ((((((llvm_cbe_tmp27411) >> (7))))));
   llvm_cbe_tmp27424_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp27411;   /* for PHI node */
   llvm_cbe_tmp27423_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp27399;   /* for PHI node */
@@ -7952,7 +7952,7 @@ llvm_cbe_lB526:
 llvm_cbe_bb3008:
   A = llvm_cbe_tmp2979;
   X = llvm_cbe_tmp2992;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_051617 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_051617 == 1)));
   N = ((((((llvm_cbe_tmp2992) >> (7))))));
   *((&RAM[(((((((llvm_cbe_S_2e_tmp_2e_051615 + (-1)))))) | 256u))])) = (-92);
   *((&RAM[(((((((llvm_cbe_S_2e_tmp_2e_051615 + (-2)))))) | 256u))])) = (30);
@@ -7984,7 +7984,7 @@ llvm_cbe_lA412:
   S = llvm_cbe_tmp2944;
   X = (9);
   A = llvm_cbe_tmp2877;
-  Z = (((bool )(llvm_cbe_tmp2877 == 0)));
+  Z = (((llvm_cbe_tmp2877 == 0)));
   N = ((((((llvm_cbe_tmp2877) >> (7))))));
   llvm_cbe_indvar51834__PHI_TEMPORARY = 0;   /* for PHI node */
   llvm_cbe_A_2e_tmp_2e_051616__PHI_TEMPORARY = llvm_cbe_tmp2877;   /* for PHI node */
@@ -8005,7 +8005,7 @@ llvm_cbe_lA408:
   llvm_cbe_tmp28822883 = (llvm_cbe_tmp2881);
   llvm_cbe_tmp2884_2e_lobit49718 = ((((((((llvm_cbe_tmp28822883) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp2884_2e_lobit49718 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp28822883 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp28822883 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp2881))) >> (7))))));
   if (llvm_cbe_tmp2884_2e_lobit49718 == 0) {
     goto llvm_cbe_bb2905;
@@ -8044,7 +8044,7 @@ llvm_cbe_bb4378:
   *((&RAM[(88u)])) = llvm_cbe_tmp43804381;
   llvm_cbe_tmp4404 = *((&RAM[(46u)]));
   Y = llvm_cbe_tmp4404;
-  Z = (((bool )(llvm_cbe_tmp4404 == 0)));
+  Z = (((llvm_cbe_tmp4404 == 0)));
   N = ((((((llvm_cbe_tmp4404) >> (7))))));
   *((&RAM[(91u)])) = llvm_cbe_tmp4404;
   if (llvm_cbe_iftmp_2e_626_2e_0 == 0) {
@@ -8066,7 +8066,7 @@ llvm_cbe_bb4335:
   C = 0;
   llvm_cbe_tmp4336 = *((&RAM[(45u)]));
   A = llvm_cbe_tmp4336;
-  Z = (((bool )(llvm_cbe_tmp4336 == 0)));
+  Z = (((llvm_cbe_tmp4336 == 0)));
   N = ((((((llvm_cbe_tmp4336) >> (7))))));
   *((&RAM[(90u)])) = llvm_cbe_tmp4336;
   llvm_cbe_tmp4351 = *((&RAM[(11u)]));
@@ -8080,7 +8080,7 @@ llvm_cbe_bb4335:
 llvm_cbe_lA4F3:
   llvm_cbe_tmp4319 = *((&RAM[(512u)]));
   A = llvm_cbe_tmp4319;
-  Z = (((bool )(llvm_cbe_tmp4319 == 0)));
+  Z = (((llvm_cbe_tmp4319 == 0)));
   N = ((((((llvm_cbe_tmp4319) >> (7))))));
   if (llvm_cbe_tmp4319 == 0) {
     goto llvm_cbe_lA480;
@@ -8095,7 +8095,7 @@ llvm_cbe_bb4377:
 llvm_cbe_bb4421:
   llvm_cbe_tmp4423 = ((llvm_cbe_tmp4404 + 1));
   Y = llvm_cbe_tmp4423;
-  Z = (((bool )(llvm_cbe_tmp4423 == 0)));
+  Z = (((llvm_cbe_tmp4423 == 0)));
   N = ((((((llvm_cbe_tmp4423) >> (7))))));
   llvm_cbe_tmp4435_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp4423;   /* for PHI node */
   goto llvm_cbe_lA508;
@@ -8116,7 +8116,7 @@ llvm_cbe_bb21282:
   V = llvm_cbe_iftmp_2e_4869_2e_0;
   llvm_cbe_tmp2128421285 = (llvm_cbe_tmp21264);
   A = llvm_cbe_tmp2128421285;
-  Z = (((bool )(llvm_cbe_tmp2128421285 == 0)));
+  Z = (((llvm_cbe_tmp2128421285 == 0)));
   N = ((((((llvm_cbe_tmp2128421285) >> (7))))));
   llvm_cbe_tmp21299 = ((llvm_cbe_tmp21264)) & 256u;
   C = ((((((llvm_cbe_tmp21299) >> (8u))))));
@@ -8144,7 +8144,7 @@ llvm_cbe_lB143:
   A = llvm_cbe_tmp21233;
   llvm_cbe_tmp21245 = *((&RAM[(50u)]));
   Y = llvm_cbe_tmp21245;
-  Z = (((bool )(llvm_cbe_tmp21245 == 0)));
+  Z = (((llvm_cbe_tmp21245 == 0)));
   N = ((((((llvm_cbe_tmp21245) >> (7))))));
   *((&RAM[(90u)])) = llvm_cbe_tmp21233;
   *((&RAM[(91u)])) = llvm_cbe_tmp21245;
@@ -8160,7 +8160,7 @@ llvm_cbe_lB13B:
   llvm_cbe_tmp21156 = ((llvm_cbe_tmp2107421075 + (-83)));
   llvm_cbe_tmp2115721158 = (llvm_cbe_tmp21156);
   C = ((((((((((((llvm_cbe_tmp2115721158) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2115721158 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2115721158 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp21156))) >> (7))))));
   if (((llvm_cbe_tmp2115721158 & 255u) == 0u)) {
     goto llvm_cbe_bb21180;
@@ -8177,7 +8177,7 @@ llvm_cbe_lB128:
   llvm_cbe_tmp21076 = ((llvm_cbe_tmp2107421075 + (-84)));
   llvm_cbe_tmp2107721078 = (llvm_cbe_tmp21076);
   C = ((((((((((((llvm_cbe_tmp2107721078) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2107721078 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2107721078 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp21076))) >> (7))))));
   if (((llvm_cbe_tmp2107721078 & 255u) == 0u)) {
     goto llvm_cbe_bb21100;
@@ -8199,7 +8199,7 @@ llvm_cbe_lB11D:
   llvm_cbe_tmp20984 = ((((llvm_cbe_tmp20964)) + (-42)));
   llvm_cbe_tmp2098520986 = (llvm_cbe_tmp20984);
   C = ((((((((((((llvm_cbe_tmp2098520986) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2098520986 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2098520986 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp20984))) >> (7))))));
   if (((llvm_cbe_tmp2098520986 & 255u) == 0u)) {
     goto llvm_cbe_lB123;
@@ -8221,7 +8221,7 @@ llvm_cbe_lB0EF:
 
 llvm_cbe_bb20807:
   llvm_cbe_tmp20809 = ((llvm_cbe_X_2e_tmp_2e_051590 + 1));
-  llvm_cbe_tmp2081120812 = ((bool )(llvm_cbe_tmp20809 == 0));
+  llvm_cbe_tmp2081120812 = ((llvm_cbe_tmp20809 == 0));
   llvm_cbe_tmp20813_2e_lobit = (((((llvm_cbe_tmp20809) >> (7)))));
   llvm_cbe_indvar_2e_next51832 = ((llvm_cbe_indvar51831 + 1));
   if (llvm_cbe_tmp20809 == 0) {
@@ -8316,7 +8316,7 @@ llvm_cbe_lB0E7:
   A = llvm_cbe_tmp20530;
   llvm_cbe_tmp20542 = *((&RAM[(46u)]));
   X = llvm_cbe_tmp20542;
-  Z = (((bool )(llvm_cbe_tmp20542 == 0)));
+  Z = (((llvm_cbe_tmp20542 == 0)));
   N = ((((((llvm_cbe_tmp20542) >> (7))))));
   llvm_cbe_indvar51831__PHI_TEMPORARY = 0;   /* for PHI node */
   llvm_cbe_V_2e_tmp_2e_051594__PHI_TEMPORARY = llvm_cbe_iftmp_2e_4698_2e_0;   /* for PHI node */
@@ -8331,7 +8331,7 @@ llvm_cbe_lB0DB:
   llvm_cbe_tmp20458 = A;
   llvm_cbe_tmp20459 = ((llvm_cbe_tmp20458 | llvm_cbe_tmp20457));
   A = llvm_cbe_tmp20459;
-  Z = (((bool )(llvm_cbe_tmp20459 == 0)));
+  Z = (((llvm_cbe_tmp20459 == 0)));
   N = ((((((llvm_cbe_tmp20459) >> (7))))));
   llvm_cbe_tmp20476 = ((((llvm_cbe_tmp20459)) + (-40)));
   llvm_cbe_tmp2047920480 = (llvm_cbe_tmp20476);
@@ -8339,7 +8339,7 @@ llvm_cbe_lB0DB:
   V = llvm_cbe_iftmp_2e_4698_2e_0;
   llvm_cbe_tmp2049620497 = (llvm_cbe_tmp20476);
   A = llvm_cbe_tmp2049620497;
-  Z = (((bool )(llvm_cbe_tmp2049620497 == 0)));
+  Z = (((llvm_cbe_tmp2049620497 == 0)));
   N = ((((((llvm_cbe_tmp2049620497) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp2047920480) >> (8u)))))) & 1))) ^ 1)));
   if (llvm_cbe_tmp2049620497 == 0) {
@@ -8352,7 +8352,7 @@ llvm_cbe_lB0C4:
   llvm_cbe_tmp20340 = ((((llvm_cbe_tmp20295)) + (-37)));
   llvm_cbe_tmp2034120342 = (llvm_cbe_tmp20340);
   C = ((((((((((((llvm_cbe_tmp2034120342) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2034120342 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2034120342 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp20340))) >> (7))))));
   if (((llvm_cbe_tmp2034120342 & 255u) == 0u)) {
     goto llvm_cbe_bb20364;
@@ -8365,7 +8365,7 @@ llvm_cbe_lB0BA:
   llvm_cbe_tmp20297 = ((((llvm_cbe_tmp20295)) + (-36)));
   llvm_cbe_tmp2029820299 = (llvm_cbe_tmp20297);
   C = ((((((((((((llvm_cbe_tmp2029820299) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2029820299 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2029820299 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp20297))) >> (7))))));
   if (((llvm_cbe_tmp2029820299 & 255u) == 0u)) {
     goto llvm_cbe_bb20321;
@@ -8393,7 +8393,7 @@ llvm_cbe_bb21127:
   llvm_cbe_tmp21130 = ((llvm_cbe_tmp2110121102 + (-73)));
   llvm_cbe_tmp2113121132 = (llvm_cbe_tmp21130);
   C = ((((((((((((llvm_cbe_tmp2113121132) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2113121132 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2113121132 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp21130))) >> (7))))));
   if (((llvm_cbe_tmp2113121132 & 255u) == 0u)) {
     goto llvm_cbe_lAF08;
@@ -8406,7 +8406,7 @@ llvm_cbe_bb21100:
   llvm_cbe_tmp21103 = ((llvm_cbe_tmp2110121102 + (-201)));
   llvm_cbe_tmp2110421105 = (llvm_cbe_tmp21103);
   C = ((((((((((((llvm_cbe_tmp2110421105) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2110421105 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2110421105 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp21103))) >> (7))))));
   if (((llvm_cbe_tmp2110421105 & 255u) == 0u)) {
     goto llvm_cbe_lB123;
@@ -8418,7 +8418,7 @@ llvm_cbe_bb21180:
   llvm_cbe_tmp21183 = ((((llvm_cbe_tmp21062)) + (-84)));
   llvm_cbe_tmp2118421185 = (llvm_cbe_tmp21183);
   C = ((((((((((((llvm_cbe_tmp2118421185) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2118421185 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2118421185 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp21183))) >> (7))))));
   if (((llvm_cbe_tmp2118421185 & 255u) == 0u)) {
     goto llvm_cbe_lAF08;
@@ -8433,7 +8433,7 @@ llvm_cbe_bb21281:
 llvm_cbe_bb21311:
   llvm_cbe_tmp21313 = ((llvm_cbe_tmp21245 + 1));
   Y = llvm_cbe_tmp21313;
-  Z = (((bool )(llvm_cbe_tmp21313 == 0)));
+  Z = (((llvm_cbe_tmp21313 == 0)));
   N = ((((((llvm_cbe_tmp21313) >> (7))))));
   llvm_cbe_tmp21326_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp21313;   /* for PHI node */
   goto llvm_cbe_lB159;
@@ -8461,7 +8461,7 @@ llvm_cbe_bb23581:
   V = llvm_cbe_iftmp_2e_5486_2e_0;
   llvm_cbe_tmp2358323584 = (llvm_cbe_tmp23559);
   A = llvm_cbe_tmp2358323584;
-  Z = (((bool )(llvm_cbe_tmp2358323584 == 0)));
+  Z = (((llvm_cbe_tmp2358323584 == 0)));
   N = ((((((llvm_cbe_tmp2358323584) >> (7))))));
   llvm_cbe_tmp23598 = ((llvm_cbe_tmp23559)) & 256u;
   C = ((((((llvm_cbe_tmp23598) >> (8u))))));
@@ -8483,7 +8483,7 @@ llvm_cbe_bb23526:
   *((&RAM[(89u)])) = llvm_cbe_tmp2349923500;
   Y = llvm_cbe_tmp2349923500;
   A = llvm_cbe_tmp23436;
-  Z = (((bool )(llvm_cbe_tmp23436 == 0)));
+  Z = (((llvm_cbe_tmp23436 == 0)));
   N = ((((((llvm_cbe_tmp23436) >> (7))))));
   llvm_cbe_tmp23554 = *((&RAM[(88u)]));
   llvm_cbe_tmp23559 = (((((((llvm_cbe_tmp23554)) + ((llvm_cbe_tmp23436))))) + ((llvm_cbe_tmp23514_2e_lobit50157))));
@@ -8498,7 +8498,7 @@ llvm_cbe_bb23497:
   V = llvm_cbe_iftmp_2e_5464_2e_0;
   llvm_cbe_tmp2349923500 = (llvm_cbe_tmp23475);
   A = llvm_cbe_tmp2349923500;
-  Z = (((bool )(llvm_cbe_tmp2349923500 == 0)));
+  Z = (((llvm_cbe_tmp2349923500 == 0)));
   N = ((((((llvm_cbe_tmp2349923500) >> (7))))));
   llvm_cbe_tmp23514 = ((llvm_cbe_tmp23475)) & 256u;
   llvm_cbe_tmp23514_2e_lobit50157 = (((((llvm_cbe_tmp23514) >> (8u)))));
@@ -8537,7 +8537,7 @@ llvm_cbe_lB2A0:
   llvm_cbe_tmp23450 = *((&RAM[(11u)]));
   llvm_cbe_tmp23451 = ((llvm_cbe_tmp23450 + (-1)));
   *((&RAM[(11u)])) = llvm_cbe_tmp23451;
-  Z = (((bool )(llvm_cbe_tmp23450 == 1)));
+  Z = (((llvm_cbe_tmp23450 == 1)));
   N = ((((((llvm_cbe_tmp23451) >> (7))))));
   if (llvm_cbe_tmp23450 == 1) {
     goto llvm_cbe_bb23467;
@@ -8557,7 +8557,7 @@ llvm_cbe_bb23580:
 llvm_cbe_bb23610:
   llvm_cbe_tmp23612 = ((llvm_cbe_tmp2349923500 + 1));
   Y = llvm_cbe_tmp23612;
-  Z = (((bool )(llvm_cbe_tmp23612 == 0)));
+  Z = (((llvm_cbe_tmp23612 == 0)));
   N = ((((((llvm_cbe_tmp23612) >> (7))))));
   if (llvm_cbe_tmp23612 == 0) {
     goto llvm_cbe_lA435;
@@ -8573,7 +8573,7 @@ llvm_cbe_lE39A:
   A = llvm_cbe_tmp47597;
   llvm_cbe_tmp47609 = *((&RAM[(44u)]));
   Y = llvm_cbe_tmp47609;
-  Z = (((bool )(llvm_cbe_tmp47609 == 0)));
+  Z = (((llvm_cbe_tmp47609 == 0)));
   N = ((((((llvm_cbe_tmp47609) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp47060 + (-2)))))) | 256u))])) = (-28);
   *((&RAM[(((((((llvm_cbe_tmp47060 + (-3)))))) | 256u))])) = (40);
@@ -8589,7 +8589,7 @@ llvm_cbe_bb2910:
   llvm_cbe_tmp29162917 = (llvm_cbe_tmp2915);
   llvm_cbe_tmp2918_2e_lobit49717 = ((((((((llvm_cbe_tmp29162917) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp2918_2e_lobit49717 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp29162917 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp29162917 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp2915))) >> (7))))));
   if (llvm_cbe_tmp2918_2e_lobit49717 == 0) {
     goto llvm_cbe_lA412;
@@ -8608,7 +8608,7 @@ llvm_cbe_lB384:
 llvm_cbe_lB37D:
   llvm_cbe_tmp25130 = *((&RAM[(13u)]));
   A = llvm_cbe_tmp25130;
-  Z = (((bool )(llvm_cbe_tmp25130 == 0)));
+  Z = (((llvm_cbe_tmp25130 == 0)));
   N = ((((((llvm_cbe_tmp25130) >> (7))))));
   if (llvm_cbe_tmp25130 == 0) {
     goto llvm_cbe_lB384;
@@ -8626,7 +8626,7 @@ llvm_cbe_lB516:
   X = (16);
   llvm_cbe_tmp27338 = *((&RAM[(15u)]));
   A = llvm_cbe_tmp27338;
-  Z = (((bool )(llvm_cbe_tmp27338 == 0)));
+  Z = (((llvm_cbe_tmp27338 == 0)));
   N = ((((((llvm_cbe_tmp27338) >> (7))))));
   if ((((s8 )llvm_cbe_tmp27338) < ((s8 )0))) {
     goto llvm_cbe_lA437;
@@ -8641,7 +8641,7 @@ llvm_cbe_lB501:
   llvm_cbe_tmp2721627217 = (llvm_cbe_tmp27215);
   llvm_cbe_tmp27218_2e_lobit49829 = ((((((((llvm_cbe_tmp2721627217) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp27218_2e_lobit49829 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2721627217 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2721627217 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27215))) >> (7))))));
   if (llvm_cbe_tmp27218_2e_lobit49829 == 0) {
     goto llvm_cbe_bb27239;
@@ -8658,7 +8658,7 @@ llvm_cbe_bb27156:
   C = llvm_cbe_iftmp_2e_6470_2e_0;
   llvm_cbe_tmp27181 = *((&RAM[(52u)]));
   Y = llvm_cbe_tmp27181;
-  Z = (((bool )(llvm_cbe_tmp27181 == 0)));
+  Z = (((llvm_cbe_tmp27181 == 0)));
   N = ((((((llvm_cbe_tmp27181) >> (7))))));
   if (llvm_cbe_iftmp_2e_6470_2e_0 == 0) {
     goto llvm_cbe_bb27197;
@@ -8683,7 +8683,7 @@ llvm_cbe_lB4F6:
   S = llvm_cbe_tmp27114;
   llvm_cbe_tmp27115not = ((llvm_cbe_tmp27112_2e_rle ^ (-1)));
   A = llvm_cbe_tmp27115not;
-  Z = (((bool )(llvm_cbe_tmp27112_2e_rle == 0xff)));
+  Z = (((llvm_cbe_tmp27112_2e_rle == 0xff)));
   N = ((((((llvm_cbe_tmp27115not) >> (7))))));
   C = 1;
   llvm_cbe_tmp27129 = *((&RAM[(51u)]));
@@ -8704,7 +8704,7 @@ llvm_cbe_lB47D:
   llvm_cbe_tmp27092 = *((&RAM[(15u)]));
   C = (((llvm_cbe_tmp27092 & 1)));
   llvm_cbe_tmp27096 = (((((llvm_cbe_tmp27092) >> (1)))));
-  Z = (((bool )(llvm_cbe_tmp27096 == 0)));
+  Z = (((llvm_cbe_tmp27096 == 0)));
   N = 0;
   *((&RAM[(15u)])) = llvm_cbe_tmp27096;
   llvm_cbe_tmp27112_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp27112_2e_rle51903;   /* for PHI node */
@@ -8717,7 +8717,7 @@ llvm_cbe_lB475:
   X = llvm_cbe_tmp26492;
   llvm_cbe_tmp26504 = *((&RAM[(101u)]));
   Y = llvm_cbe_tmp26504;
-  Z = (((bool )(llvm_cbe_tmp26504 == 0)));
+  Z = (((llvm_cbe_tmp26504 == 0)));
   N = ((((((llvm_cbe_tmp26504) >> (7))))));
   *((&RAM[(80u)])) = llvm_cbe_tmp26492;
   *((&RAM[(81u)])) = llvm_cbe_tmp26504;
@@ -8728,7 +8728,7 @@ llvm_cbe_lAA52:
   Y = 0;
   llvm_cbe_tmp12134 = *((&RAM[(llvm_cbe_tmp11886)]));
   A = llvm_cbe_tmp12134;
-  Z = (((bool )(llvm_cbe_tmp12134 == 0)));
+  Z = (((llvm_cbe_tmp12134 == 0)));
   N = ((((((llvm_cbe_tmp12134) >> (7))))));
   *((&RAM[((((llvm_cbe_tmp12146_2e_rle52114)) | 256u))])) = (-86);
   *((&RAM[(((((((llvm_cbe_tmp12146_2e_rle52114 + (-1)))))) | 256u))])) = (88);
@@ -8750,7 +8750,7 @@ llvm_cbe_lAA3D:
   llvm_cbe_tmp1201912020 = (llvm_cbe_tmp12018);
   llvm_cbe_tmp12021_2e_lobit48502 = ((((((((llvm_cbe_tmp1201912020) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp12021_2e_lobit48502 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1201912020 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1201912020 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp12018))) >> (7))))));
   if (llvm_cbe_tmp12021_2e_lobit48502 == 0) {
     goto llvm_cbe_bb12042;
@@ -8777,7 +8777,7 @@ llvm_cbe_lAA2C:
   llvm_cbe_tmp1190911910 = (llvm_cbe_tmp11908);
   llvm_cbe_tmp11911_2e_lobit48504 = ((((((((llvm_cbe_tmp1190911910) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp11911_2e_lobit48504 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1190911910 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1190911910 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp11908))) >> (7))))));
   if (llvm_cbe_tmp11911_2e_lobit48504 == 0) {
     goto llvm_cbe_bb11932;
@@ -8792,7 +8792,7 @@ llvm_cbe_lA9DA:
   llvm_cbe_tmp11489 = ((((llvm_cbe_tmp11475)) + (-191)));
   llvm_cbe_tmp1149011491 = (llvm_cbe_tmp11489);
   C = ((((((((((((llvm_cbe_tmp1149011491) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1149011491 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1149011491 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp11489))) >> (7))))));
   if (((llvm_cbe_tmp1149011491 & 255u) == 0u)) {
     goto llvm_cbe_bb11513;
@@ -8807,7 +8807,7 @@ llvm_cbe_lA9BF:
   S = llvm_cbe_tmp11458;
   llvm_cbe_tmp11463 = *((&RAM[((((llvm_cbe_tmp11458)) | 256u))]));
   A = llvm_cbe_tmp11463;
-  Z = (((bool )(llvm_cbe_tmp11463 == 0)));
+  Z = (((llvm_cbe_tmp11463 == 0)));
   llvm_cbe_tmp11467_2e_lobit = (((((llvm_cbe_tmp11463) >> (7)))));
   N = llvm_cbe_tmp11467_2e_lobit;
   if (llvm_cbe_tmp11317 == 0) {
@@ -8835,7 +8835,7 @@ llvm_cbe_bb11937:
   llvm_cbe_tmp1197911980 = (llvm_cbe_tmp11978);
   llvm_cbe_tmp11981_2e_lobit48503 = ((((((((llvm_cbe_tmp1197911980) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp11981_2e_lobit48503 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1197911980 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1197911980 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp11978))) >> (7))))));
   if (llvm_cbe_tmp11981_2e_lobit48503 == 0) {
     goto llvm_cbe_lAA3D;
@@ -8850,7 +8850,7 @@ llvm_cbe_bb12047:
   llvm_cbe_tmp1206512066 = (llvm_cbe_tmp12064);
   llvm_cbe_tmp12067_2e_lobit48501 = ((((((((llvm_cbe_tmp1206512066) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp12067_2e_lobit48501 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1206512066 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1206512066 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp12064))) >> (7))))));
   if (llvm_cbe_tmp12067_2e_lobit48501 == 0) {
     goto llvm_cbe_lAA52;
@@ -8890,7 +8890,7 @@ llvm_cbe_bb26745:
   C = llvm_cbe_iftmp_2e_6349_2e_0;
   *((&RAM[(113u)])) = llvm_cbe_tmp2674726748;
   X = llvm_cbe_tmp26565;
-  llvm_cbe_tmp2677326774 = ((bool )(llvm_cbe_tmp26565 == 0));
+  llvm_cbe_tmp2677326774 = ((llvm_cbe_tmp26565 == 0));
   Z = llvm_cbe_tmp2677326774;
   llvm_cbe_tmp26775_2e_lobit = (((((llvm_cbe_tmp26565) >> (7)))));
   N = llvm_cbe_tmp26775_2e_lobit;
@@ -8913,7 +8913,7 @@ llvm_cbe_lB4A9:
   llvm_cbe_tmp26721_2e_rle = llvm_cbe_tmp26721_2e_rle__PHI_TEMPORARY;
   *((&RAM[(97u)])) = llvm_cbe_indvar51812;
   A = llvm_cbe_indvar51812;
-  llvm_cbe_tmp2670626707 = ((bool )(llvm_cbe_indvar51812 == 0));
+  llvm_cbe_tmp2670626707 = ((llvm_cbe_indvar51812 == 0));
   Z = llvm_cbe_tmp2670626707;
   llvm_cbe_tmp26708_2e_lobit = (((((llvm_cbe_indvar51812) >> (7)))));
   N = llvm_cbe_tmp26708_2e_lobit;
@@ -8931,7 +8931,7 @@ llvm_cbe_lB4A4:
   llvm_cbe_tmp2668026681 = (llvm_cbe_tmp26679);
   llvm_cbe_tmp2668326684 = (((((((((((llvm_cbe_tmp2668026681) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp2668326684;
-  Z = (((bool )((llvm_cbe_tmp2668026681 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2668026681 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp26679))) >> (7))))));
   if (((llvm_cbe_tmp2668026681 & 255u) == 0u)) {
     llvm_cbe_tmp26721_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp2668326684;   /* for PHI node */
@@ -9003,7 +9003,7 @@ llvm_cbe_bb14720:
   V = llvm_cbe_iftmp_2e_3204_2e_0;
   llvm_cbe_tmp1472214723 = (llvm_cbe_tmp14703);
   A = llvm_cbe_tmp1472214723;
-  Z = (((bool )(llvm_cbe_tmp1472214723 == 0)));
+  Z = (((llvm_cbe_tmp1472214723 == 0)));
   N = ((((((llvm_cbe_tmp1472214723) >> (7))))));
   llvm_cbe_tmp14737 = ((llvm_cbe_tmp14703)) & 256u;
   C = ((((((llvm_cbe_tmp14737) >> (8u))))));
@@ -9029,7 +9029,7 @@ llvm_cbe_lAC72:
   A = llvm_cbe_tmp14675;
   llvm_cbe_tmp14687 = *((&RAM[(123u)]));
   Y = llvm_cbe_tmp14687;
-  Z = (((bool )(llvm_cbe_tmp14687 == 0)));
+  Z = (((llvm_cbe_tmp14687 == 0)));
   N = ((((((llvm_cbe_tmp14687) >> (7))))));
   llvm_cbe_tmp14703 = (((((s16 )(s8 )llvm_cbe_tmp14701_2e_rle)) + ((llvm_cbe_tmp14675))));
   if ((((s8 )llvm_cbe_tmp14675) < ((s8 )0))) {
@@ -9045,7 +9045,7 @@ llvm_cbe_lAC65:
   llvm_cbe_tmp1462714628 = (llvm_cbe_tmp14626);
   llvm_cbe_tmp1463014631 = (((((((((((llvm_cbe_tmp1462714628) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp1463014631;
-  Z = (((bool )((llvm_cbe_tmp1462714628 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1462714628 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp14626))) >> (7))))));
   if (((llvm_cbe_tmp1462714628 & 255u) == 0u)) {
     llvm_cbe_tmp14701_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp1463014631;   /* for PHI node */
@@ -9057,7 +9057,7 @@ llvm_cbe_lAC65:
 
 llvm_cbe_bb14565:
   llvm_cbe_tmp14566 = *((&RAM[(17u)]));
-  Z = (((bool )(llvm_cbe_tmp14566 == 0)));
+  Z = (((llvm_cbe_tmp14566 == 0)));
   N = ((((((llvm_cbe_tmp14566) >> (7))))));
   llvm_cbe_tmp1458148492 = ((llvm_cbe_tmp14566 & (64)));
   V = ((((((llvm_cbe_tmp1458148492) >> ((6)))))));
@@ -9069,7 +9069,7 @@ llvm_cbe_bb14565:
 
 llvm_cbe_lAC54:
   llvm_cbe_tmp14539 = *((&RAM[(13u)]));
-  Z = (((bool )(llvm_cbe_tmp14539 == 0)));
+  Z = (((llvm_cbe_tmp14539 == 0)));
   llvm_cbe_tmp14539_2e_lobit = (((((llvm_cbe_tmp14539) >> (7)))));
   N = llvm_cbe_tmp14539_2e_lobit;
   V = (((((((((llvm_cbe_tmp14539) >> ((6))))))) & 1)));
@@ -9113,7 +9113,7 @@ llvm_cbe_bb14719:
 llvm_cbe_bb14749:
   llvm_cbe_tmp14751 = ((llvm_cbe_tmp14687 + 1));
   Y = llvm_cbe_tmp14751;
-  Z = (((bool )(llvm_cbe_tmp14751 == 0)));
+  Z = (((llvm_cbe_tmp14751 == 0)));
   N = ((((((llvm_cbe_tmp14751) >> (7))))));
   goto llvm_cbe_lAC7D;
 
@@ -9169,7 +9169,7 @@ llvm_cbe_bb8425:
   Y = (2);
   llvm_cbe_tmp8448 = *((&RAM[(((llvm_cbe_tmp8403 + 2u) & 65535u))]));
   A = llvm_cbe_tmp8448;
-  Z = (((bool )(llvm_cbe_tmp8448 == 0)));
+  Z = (((llvm_cbe_tmp8448 == 0)));
   N = ((((((llvm_cbe_tmp8448) >> (7))))));
   C = 0;
   if (llvm_cbe_tmp8448 == 0) {
@@ -9184,7 +9184,7 @@ llvm_cbe_lA7BE:
   llvm_cbe_tmp8403 = (((llvm_cbe_tmp8346)) << 8u) | ((llvm_cbe_tmp8334));
   llvm_cbe_tmp8409 = *((&RAM[(llvm_cbe_tmp8403)]));
   A = llvm_cbe_tmp8409;
-  Z = (((bool )(llvm_cbe_tmp8409 == 0)));
+  Z = (((llvm_cbe_tmp8409 == 0)));
   N = ((((((llvm_cbe_tmp8409) >> (7))))));
   if (llvm_cbe_tmp8409 == 0) {
     goto llvm_cbe_bb8425;
@@ -9200,7 +9200,7 @@ llvm_cbe_lA7B1:
   llvm_cbe_tmp8360 = ((((llvm_cbe_tmp8346)) + (-2)));
   llvm_cbe_tmp83618362 = (llvm_cbe_tmp8360);
   C = ((((((((((((llvm_cbe_tmp83618362) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp83618362 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp83618362 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp8360))) >> (7))))));
   if (((llvm_cbe_tmp83618362 & 255u) == 0u)) {
     goto llvm_cbe_lA7BE;
@@ -9219,7 +9219,7 @@ llvm_cbe_lA849:
   S = llvm_cbe_tmp9121;
   llvm_cbe_tmp9126 = *((&RAM[((((llvm_cbe_tmp9121)) | 256u))]));
   A = llvm_cbe_tmp9126;
-  Z = (((bool )(llvm_cbe_tmp9126 == 0)));
+  Z = (((llvm_cbe_tmp9126 == 0)));
   N = ((((((llvm_cbe_tmp9126) >> (7))))));
   llvm_cbe_tmp9160_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp9160_2e_rle52111;   /* for PHI node */
   goto llvm_cbe_lA84B;
@@ -9230,11 +9230,11 @@ llvm_cbe_bb9019:
   llvm_cbe_tmp9032 = *((&RAM[(123u)]));
   Y = llvm_cbe_tmp9032;
   llvm_cbe_tmp9044 = *((&RAM[(58u)]));
-  llvm_cbe_tmp90469047 = ((bool )(llvm_cbe_tmp9044 == 0));
+  llvm_cbe_tmp90469047 = ((llvm_cbe_tmp9044 == 0));
   llvm_cbe_tmp9048_2e_lobit = (((((llvm_cbe_tmp9044) >> (7)))));
   llvm_cbe_tmp9057 = ((llvm_cbe_tmp9044 + 1));
   X = llvm_cbe_tmp9057;
-  Z = (((bool )(llvm_cbe_tmp9057 == 0)));
+  Z = (((llvm_cbe_tmp9057 == 0)));
   N = ((((((llvm_cbe_tmp9057) >> (7))))));
   if (llvm_cbe_tmp9057 == 0) {
     goto llvm_cbe_lA849;
@@ -9294,7 +9294,7 @@ llvm_cbe_lA46C:
   llvm_cbe_tmp3485 = *((&RAM[(58u)]));
   llvm_cbe_tmp3498 = ((llvm_cbe_tmp3485 + 1));
   Y = llvm_cbe_tmp3498;
-  Z = (((bool )(llvm_cbe_tmp3498 == 0)));
+  Z = (((llvm_cbe_tmp3498 == 0)));
   N = ((((((llvm_cbe_tmp3498) >> (7))))));
   if (llvm_cbe_tmp3498 == 0) {
     goto llvm_cbe_lA474;
@@ -9316,7 +9316,7 @@ llvm_cbe_lA474:
 llvm_cbe_lE38B:
   llvm_cbe_tmp47024 = X;
   A = llvm_cbe_tmp47024;
-  Z = (((bool )(llvm_cbe_tmp47024 == 0)));
+  Z = (((llvm_cbe_tmp47024 == 0)));
   llvm_cbe_tmp47028_2e_lobit = (((((llvm_cbe_tmp47024) >> (7)))));
   N = llvm_cbe_tmp47028_2e_lobit;
   if ((((s8 )llvm_cbe_tmp47024) < ((s8 )0))) {
@@ -9347,7 +9347,7 @@ llvm_cbe_lAB6B:
 llvm_cbe_lAB62:
   llvm_cbe_tmp13627 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp13627;
-  Z = (((bool )(llvm_cbe_tmp13627 == 0)));
+  Z = (((llvm_cbe_tmp13627 == 0)));
   N = ((((((llvm_cbe_tmp13627) >> (7))))));
   if (llvm_cbe_tmp13627 == 0) {
     goto llvm_cbe_lAB6B;
@@ -9358,7 +9358,7 @@ llvm_cbe_lAB62:
 llvm_cbe_lAB4D:
   llvm_cbe_tmp13564 = *((&RAM[(17u)]));
   A = llvm_cbe_tmp13564;
-  Z = (((bool )(llvm_cbe_tmp13564 == 0)));
+  Z = (((llvm_cbe_tmp13564 == 0)));
   llvm_cbe_tmp13568_2e_lobit = (((((llvm_cbe_tmp13564) >> (7)))));
   N = llvm_cbe_tmp13568_2e_lobit;
   if (llvm_cbe_tmp13564 == 0) {
@@ -9372,7 +9372,7 @@ llvm_cbe_bb14839:
   llvm_cbe_tmp14842 = ((((llvm_cbe_tmp14840)) + (-44)));
   llvm_cbe_tmp1484314844 = (llvm_cbe_tmp14842);
   C = ((((((((((((llvm_cbe_tmp1484314844) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1484314844 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1484314844 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp14842))) >> (7))))));
   if (((llvm_cbe_tmp1484314844 & 255u) == 0u)) {
     goto llvm_cbe_lAC9D;
@@ -9398,7 +9398,7 @@ llvm_cbe_bb15275:
 llvm_cbe_bb15258:
   llvm_cbe_tmp15259 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp15259;
-  Z = (((bool )(llvm_cbe_tmp15259 == 0)));
+  Z = (((llvm_cbe_tmp15259 == 0)));
   N = ((((((llvm_cbe_tmp15259) >> (7))))));
   if (llvm_cbe_tmp15259 == 0) {
     goto llvm_cbe_bb15275;
@@ -9410,7 +9410,7 @@ llvm_cbe_lACEA:
   Y = 0;
   llvm_cbe_tmp15242 = *((&RAM[(((((llvm_cbe_tmp15192)) << 8u) | ((llvm_cbe_tmp15180))))]));
   A = llvm_cbe_tmp15242;
-  Z = (((bool )(llvm_cbe_tmp15242 == 0)));
+  Z = (((llvm_cbe_tmp15242 == 0)));
   N = ((((((llvm_cbe_tmp15242) >> (7))))));
   if (llvm_cbe_tmp15242 == 0) {
     goto llvm_cbe_lACFB;
@@ -9425,7 +9425,7 @@ llvm_cbe_lACDF:
   Y = llvm_cbe_tmp15192;
   llvm_cbe_tmp15204 = *((&RAM[(17u)]));
   X = llvm_cbe_tmp15204;
-  Z = (((bool )(llvm_cbe_tmp15204 == 0)));
+  Z = (((llvm_cbe_tmp15204 == 0)));
   N = ((((((llvm_cbe_tmp15204) >> (7))))));
   if ((((s8 )llvm_cbe_tmp15204) < ((s8 )0))) {
     llvm_cbe_tmp8980_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp15192;   /* for PHI node */
@@ -9456,7 +9456,7 @@ llvm_cbe_bb45362:
   llvm_cbe_tmp45377 = ((((llvm_cbe_tmp45363)) + (-2)));
   llvm_cbe_tmp4537845379 = (llvm_cbe_tmp45377);
   C = ((((((((((((llvm_cbe_tmp4537845379) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4537845379 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4537845379 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp45377))) >> (7))))));
   if (((llvm_cbe_tmp4537845379 & 255u) == 0u)) {
     goto llvm_cbe_lE194;
@@ -9498,7 +9498,7 @@ llvm_cbe_lE1A1:
   llvm_cbe_tmp45497 = ((((llvm_cbe_tmp45483)) + (-2)));
   llvm_cbe_tmp4549845499 = (llvm_cbe_tmp45497);
   C = ((((((((((((llvm_cbe_tmp4549845499) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4549845499 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4549845499 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp45497))) >> (7))))));
   if (((llvm_cbe_tmp4549845499 & 255u) == 0u)) {
     goto llvm_cbe_bb45521;
@@ -9510,7 +9510,7 @@ llvm_cbe_lE198:
   llvm_cbe_tmp45454 = A;
   llvm_cbe_tmp45455 = ((llvm_cbe_tmp45454 & (-65)));
   A = llvm_cbe_tmp45455;
-  Z = (((bool )(llvm_cbe_tmp45455 == 0)));
+  Z = (((llvm_cbe_tmp45455 == 0)));
   N = ((((((llvm_cbe_tmp45455) >> (7))))));
   if (llvm_cbe_tmp45455 == 0) {
     goto llvm_cbe_lE1A1;
@@ -9552,7 +9552,7 @@ llvm_cbe_bb17707:
   V = llvm_cbe_iftmp_2e_3959_2e_0;
   llvm_cbe_tmp1770917710 = (llvm_cbe_tmp17690);
   A = llvm_cbe_tmp1770917710;
-  Z = (((bool )(llvm_cbe_tmp1770917710 == 0)));
+  Z = (((llvm_cbe_tmp1770917710 == 0)));
   N = ((((((llvm_cbe_tmp1770917710) >> (7))))));
   llvm_cbe_tmp17724 = ((llvm_cbe_tmp17690)) & 256u;
   C = ((((((llvm_cbe_tmp17724) >> (8u))))));
@@ -9576,7 +9576,7 @@ llvm_cbe_lAEBD:
   A = llvm_cbe_tmp17662;
   llvm_cbe_tmp17674 = *((&RAM[(123u)]));
   Y = llvm_cbe_tmp17674;
-  Z = (((bool )(llvm_cbe_tmp17674 == 0)));
+  Z = (((llvm_cbe_tmp17674 == 0)));
   N = ((((((llvm_cbe_tmp17674) >> (7))))));
   llvm_cbe_tmp17690 = (((((s16 )(s8 )llvm_cbe_tmp17688_2e_rle)) + ((llvm_cbe_tmp17662))));
   if ((((s8 )llvm_cbe_tmp17662) < ((s8 )0))) {
@@ -9599,7 +9599,7 @@ llvm_cbe_lABBF:
   llvm_cbe_tmp1402614027 = (llvm_cbe_tmp14025);
   llvm_cbe_tmp1402914030 = (((((((((((llvm_cbe_tmp1402614027) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp1402914030;
-  Z = (((bool )((llvm_cbe_tmp1402614027 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1402614027 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp14025))) >> (7))))));
   if (((llvm_cbe_tmp1402614027 & 255u) == 0u)) {
     goto llvm_cbe_bb14049;
@@ -9612,7 +9612,7 @@ llvm_cbe_bb17635:
   llvm_cbe_tmp1763917640 = (llvm_cbe_tmp17638);
   llvm_cbe_tmp1764217643 = (((((((((((llvm_cbe_tmp1763917640) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp1764217643;
-  Z = (((bool )((llvm_cbe_tmp1763917640 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1763917640 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17638))) >> (7))))));
   if (((llvm_cbe_tmp1763917640 & 255u) == 0u)) {
     llvm_cbe_tmp17688_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp1764217643;   /* for PHI node */
@@ -9625,7 +9625,7 @@ llvm_cbe_bb17608:
   llvm_cbe_tmp17611 = ((llvm_cbe_tmp1749617497 + (-170)));
   llvm_cbe_tmp1761217613 = (llvm_cbe_tmp17611);
   C = ((((((((((((llvm_cbe_tmp1761217613) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1761217613 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1761217613 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17611))) >> (7))))));
   if (((llvm_cbe_tmp1761217613 & 255u) == 0u)) {
     goto llvm_cbe_lAE8A;
@@ -9637,7 +9637,7 @@ llvm_cbe_bb17581:
   llvm_cbe_tmp17584 = ((llvm_cbe_tmp1749617497 + (-171)));
   llvm_cbe_tmp1758517586 = (llvm_cbe_tmp17584);
   C = ((((((((((((llvm_cbe_tmp1758517586) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1758517586 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1758517586 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17584))) >> (7))))));
   if (((llvm_cbe_tmp1758517586 & 255u) == 0u)) {
     goto llvm_cbe_lAF0D;
@@ -9649,7 +9649,7 @@ llvm_cbe_lAEAD:
   llvm_cbe_tmp17557 = ((llvm_cbe_tmp1749617497 + (-46)));
   llvm_cbe_tmp1755817559 = (llvm_cbe_tmp17557);
   C = ((((((((((((llvm_cbe_tmp1755817559) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1755817559 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1755817559 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17557))) >> (7))))));
   if (((llvm_cbe_tmp1755817559 & 255u) == 0u)) {
     goto llvm_cbe_lBCF3;
@@ -9663,7 +9663,7 @@ llvm_cbe_lAE9A:
   llvm_cbe_tmp17498 = ((llvm_cbe_tmp1749617497 + (-255)));
   llvm_cbe_tmp1749917500 = (llvm_cbe_tmp17498);
   C = ((((((((((((llvm_cbe_tmp1749917500) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1749917500 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1749917500 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17498))) >> (7))))));
   if (((llvm_cbe_tmp1749917500 & 255u) == 0u)) {
     goto llvm_cbe_bb17522;
@@ -9686,7 +9686,7 @@ llvm_cbe_bb17706:
 llvm_cbe_bb17736:
   llvm_cbe_tmp17738 = ((llvm_cbe_tmp17674 + 1));
   Y = llvm_cbe_tmp17738;
-  Z = (((bool )(llvm_cbe_tmp17738 == 0)));
+  Z = (((llvm_cbe_tmp17738 == 0)));
   N = ((((((llvm_cbe_tmp17738) >> (7))))));
   goto llvm_cbe_lAEC6;
 
@@ -9703,7 +9703,7 @@ llvm_cbe_lB46D:
   S = llvm_cbe_tmp26449;
   llvm_cbe_tmp26454 = *((&RAM[((((llvm_cbe_tmp26449)) | 256u))]));
   A = llvm_cbe_tmp26454;
-  Z = (((bool )(llvm_cbe_tmp26454 == 0)));
+  Z = (((llvm_cbe_tmp26454 == 0)));
   N = ((((((llvm_cbe_tmp26454) >> (7))))));
   goto llvm_cbe_lB46F;
 
@@ -9714,7 +9714,7 @@ llvm_cbe_lB4A8:
 
 llvm_cbe_lB4A8_2e_loopexit:
   Y = llvm_cbe_indvar51812;
-  Z = (((bool )(llvm_cbe_tmp26603 == 0)));
+  Z = (((llvm_cbe_tmp26603 == 0)));
   N = ((((((llvm_cbe_tmp26603) >> (7))))));
   A = llvm_cbe_tmp26603;
   C = llvm_cbe_C_2e_tmp_2e_051559;
@@ -9727,7 +9727,7 @@ llvm_cbe_bb26744:
 llvm_cbe_bb26787:
   llvm_cbe_tmp26789 = ((llvm_cbe_tmp26565 + 1));
   X = llvm_cbe_tmp26789;
-  Z = (((bool )(llvm_cbe_tmp26789 == 0)));
+  Z = (((llvm_cbe_tmp26789 == 0)));
   N = ((((((llvm_cbe_tmp26789) >> (7))))));
   llvm_cbe_tmp26801_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp26789;   /* for PHI node */
   goto llvm_cbe_lB4B5;
@@ -9736,7 +9736,7 @@ llvm_cbe_bb26818:
   llvm_cbe_tmp26821 = ((((llvm_cbe_tmp26565)) + (-2)));
   llvm_cbe_tmp2682226823 = (llvm_cbe_tmp26821);
   C = ((((((((((((llvm_cbe_tmp2682226823) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2682226823 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2682226823 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp26821))) >> (7))))));
   if (((llvm_cbe_tmp2682226823 & 255u) == 0u)) {
     goto llvm_cbe_lB4BF;
@@ -9756,7 +9756,7 @@ llvm_cbe_bb29398:
   V = llvm_cbe_iftmp_2e_7016_2e_0;
   llvm_cbe_tmp2940029401 = (llvm_cbe_tmp29362);
   A = llvm_cbe_tmp2940029401;
-  Z = (((bool )(llvm_cbe_tmp2940029401 == 0)));
+  Z = (((llvm_cbe_tmp2940029401 == 0)));
   N = ((((((llvm_cbe_tmp2940029401) >> (7))))));
   llvm_cbe_tmp29415 = ((llvm_cbe_tmp29362)) & 256u;
   C = ((((((llvm_cbe_tmp29415) >> (8u))))));
@@ -9787,7 +9787,7 @@ llvm_cbe_lB649:
   Y = 0;
   llvm_cbe_tmp29335 = *((&RAM[(((((llvm_cbe_tmp29300)) << 8u) | ((llvm_cbe_tmp29281))))]));
   A = llvm_cbe_tmp29335;
-  Z = (((bool )(llvm_cbe_tmp29335 == 0)));
+  Z = (((llvm_cbe_tmp29335 == 0)));
   N = ((((((llvm_cbe_tmp29335) >> (7))))));
   C = 0;
   llvm_cbe_tmp29349 = *((&RAM[(100u)]));
@@ -9831,7 +9831,7 @@ llvm_cbe_lB70D:
   llvm_cbe_tmp30735_2e_rle52353 = llvm_cbe_tmp30735_2e_rle52353__PHI_TEMPORARY;
   llvm_cbe_tmp30723 = X;
   A = llvm_cbe_tmp30723;
-  Z = (((bool )(llvm_cbe_tmp30723 == 0)));
+  Z = (((llvm_cbe_tmp30723 == 0)));
   N = ((((((llvm_cbe_tmp30723) >> (7))))));
   llvm_cbe_tmp30738_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp30723;   /* for PHI node */
   llvm_cbe_tmp30735_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp30735_2e_rle52353;   /* for PHI node */
@@ -9853,7 +9853,7 @@ llvm_cbe_lB706:
   llvm_cbe_tmp30665_2e_rle = llvm_cbe_tmp30665_2e_rle__PHI_TEMPORARY;
   llvm_cbe_storemerge49002_2e_in_2e_rle = llvm_cbe_storemerge49002_2e_in_2e_rle__PHI_TEMPORARY;
   llvm_cbe_storemerge50321_2e_in = ((llvm_cbe_storemerge50321_2e_in__PHI_TEMPORARY)&1);
-  Z = (((bool )llvm_cbe_storemerge50321_2e_in));
+  Z = ((llvm_cbe_storemerge50321_2e_in));
   N = ((((((llvm_cbe_storemerge49002_2e_in_2e_rle) >> (7))))));
   if (llvm_cbe_tmp30665_2e_rle == 0) {
     llvm_cbe_tmp30720_2e_rle__PHI_TEMPORARY = llvm_cbe_storemerge49002_2e_in_2e_rle;   /* for PHI node */
@@ -9872,7 +9872,7 @@ llvm_cbe_lB703:
   llvm_cbe_tmp3063430635 = (llvm_cbe_tmp30633);
   llvm_cbe_tmp3063730638 = (((((((((((llvm_cbe_tmp3063430635) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3063730638;
-  Z = (((bool )((llvm_cbe_tmp3063430635 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3063430635 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp30633))) >> (7))))));
   A = llvm_cbe_tmp30626;
   llvm_cbe_tmp30676_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp30626;   /* for PHI node */
@@ -9887,7 +9887,7 @@ llvm_cbe_bb30990:
   llvm_cbe_iftmp_2e_7418_2e_0 = llvm_cbe_iftmp_2e_7418_2e_0__PHI_TEMPORARY;
   V = llvm_cbe_iftmp_2e_7418_2e_0;
   llvm_cbe_tmp3099230993 = (llvm_cbe_tmp30956);
-  Z = (((bool )(llvm_cbe_tmp3099230993 == 0)));
+  Z = (((llvm_cbe_tmp3099230993 == 0)));
   N = ((((((llvm_cbe_tmp3099230993) >> (7))))));
   llvm_cbe_tmp3100831009 = (((((((((((llvm_cbe_tmp3096030961) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3100831009;
@@ -9932,7 +9932,7 @@ llvm_cbe_bb30669:
   llvm_cbe_tmp30681 = *((&RAM[(((((((llvm_cbe_tmp30672_2e_rle)) << 8u) | ((llvm_cbe_tmp30670_2e_rle))) + ((llvm_cbe_tmp30676_2e_rle))) & 65535u))]));
   X = llvm_cbe_tmp30681;
   A = llvm_cbe_tmp30676_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp30676_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp30676_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp30676_2e_rle) >> (7))))));
   llvm_cbe_tmp30720_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp30676_2e_rle;   /* for PHI node */
   goto llvm_cbe_lB70C;
@@ -9942,7 +9942,7 @@ llvm_cbe_bb31200:
   V = llvm_cbe_iftmp_2e_7467_2e_0;
   llvm_cbe_tmp3120231203 = (llvm_cbe_tmp31166);
   A = llvm_cbe_tmp3120231203;
-  Z = (((bool )(llvm_cbe_tmp3120231203 == 0)));
+  Z = (((llvm_cbe_tmp3120231203 == 0)));
   N = ((((((llvm_cbe_tmp3120231203) >> (7))))));
   llvm_cbe_tmp31217 = llvm_cbe_tmp3117031171 & 256u;
   C = (((((((((llvm_cbe_tmp31217) >> (8u)))))) ^ 1)));
@@ -10005,7 +10005,7 @@ llvm_cbe_bb31224:
   llvm_cbe_tmp3124231243 = (llvm_cbe_tmp31241);
   llvm_cbe_tmp31244_2e_lobit49044 = ((((((((llvm_cbe_tmp3124231243) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp31244_2e_lobit49044 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3124231243 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3124231243 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp31241))) >> (7))))));
   if ((llvm_cbe_tmp31244_2e_lobit49044 != 0)) {
     llvm_cbe_tmp30738_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp31225not;   /* for PHI node */
@@ -10017,7 +10017,7 @@ llvm_cbe_bb31224:
 
 llvm_cbe_bb31265:
   A = llvm_cbe_tmp31239;
-  Z = (((bool )(llvm_cbe_tmp31239 == 0)));
+  Z = (((llvm_cbe_tmp31239 == 0)));
   N = ((((((llvm_cbe_tmp31239) >> (7))))));
   llvm_cbe_tmp30738_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp31239;   /* for PHI node */
   llvm_cbe_tmp30735_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp31136;   /* for PHI node */
@@ -10030,7 +10030,7 @@ llvm_cbe_lB51F:
   S = llvm_cbe_tmp27378;
   llvm_cbe_tmp27383 = *((&RAM[((((llvm_cbe_tmp27378)) | 256u))]));
   A = llvm_cbe_tmp27383;
-  Z = (((bool )(llvm_cbe_tmp27383 == 0)));
+  Z = (((llvm_cbe_tmp27383 == 0)));
   N = ((((((llvm_cbe_tmp27383) >> (7))))));
   if (llvm_cbe_tmp27383 == 0) {
     goto llvm_cbe_lB526;
@@ -10047,7 +10047,7 @@ llvm_cbe_bb27155:
 llvm_cbe_bb27197:
   llvm_cbe_tmp27199 = ((llvm_cbe_tmp27181 + (-1)));
   Y = llvm_cbe_tmp27199;
-  Z = (((bool )(llvm_cbe_tmp27181 == 1)));
+  Z = (((llvm_cbe_tmp27181 == 1)));
   N = ((((((llvm_cbe_tmp27199) >> (7))))));
   llvm_cbe_tmp27211_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp27199;   /* for PHI node */
   goto llvm_cbe_lB501;
@@ -10058,7 +10058,7 @@ llvm_cbe_bb27244:
   llvm_cbe_tmp2725027251 = (llvm_cbe_tmp27249);
   llvm_cbe_tmp27252_2e_lobit49828 = ((((((((llvm_cbe_tmp2725027251) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp27252_2e_lobit49828 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2725027251 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2725027251 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp27249))) >> (7))))));
   if (llvm_cbe_tmp27252_2e_lobit49828 == 0) {
     goto llvm_cbe_lB50B;
@@ -10086,7 +10086,7 @@ llvm_cbe_lB62B:
   A = llvm_cbe_tmp29170;
   llvm_cbe_tmp29195 = ((llvm_cbe_tmp29108 + (2)));
   Y = llvm_cbe_tmp29195;
-  Z = (((bool )(llvm_cbe_tmp29195 == 0)));
+  Z = (((llvm_cbe_tmp29195 == 0)));
   N = ((((((llvm_cbe_tmp29195) >> (7))))));
   llvm_cbe_tmp29207 = *((&RAM[(78u)]));
   llvm_cbe_tmp29209 = *((&RAM[(79u)]));
@@ -10143,7 +10143,7 @@ llvm_cbe_bb27921:
   Y = (3);
   llvm_cbe_tmp27971 = *((&RAM[(((llvm_cbe_tmp27874 + 3u) & 65535u))]));
   A = llvm_cbe_tmp27971;
-  Z = (((bool )(llvm_cbe_tmp27971 == 0)));
+  Z = (((llvm_cbe_tmp27971 == 0)));
   N = ((((((llvm_cbe_tmp27971) >> (7))))));
   llvm_cbe_tmp27985 = *((&RAM[(89u)]));
   llvm_cbe_tmp27990 = (((((((llvm_cbe_tmp27985)) + ((llvm_cbe_tmp27971))))) + ((llvm_cbe_iftmp_2e_6671_2e_0))));
@@ -10167,7 +10167,7 @@ llvm_cbe_lB57D:
   *((&RAM[(35u)])) = llvm_cbe_tmp27678_2e_rle;
   llvm_cbe_tmp27753 = (((llvm_cbe_tmp27678_2e_rle)) << 8u) | ((llvm_cbe_tmp27735_2e_rle51924));
   llvm_cbe_tmp27759 = *((&RAM[(llvm_cbe_tmp27753)]));
-  llvm_cbe_tmp2776127762 = ((bool )(llvm_cbe_tmp27759 == 0));
+  llvm_cbe_tmp2776127762 = ((llvm_cbe_tmp27759 == 0));
   llvm_cbe_tmp27763_2e_lobit = (((((llvm_cbe_tmp27759) >> (7)))));
   X = llvm_cbe_tmp27759;
   llvm_cbe_tmp27807 = *((&RAM[(((llvm_cbe_tmp27753 + 1u) & 65535u))]));
@@ -10176,7 +10176,7 @@ llvm_cbe_lB57D:
   llvm_cbe_tmp27833 = D;
   llvm_cbe_tmp27838 = I;
   llvm_cbe_tmp27850 = S;
-  *((&RAM[((((llvm_cbe_tmp27850)) | 256u))])) = (((((((((((((((((((((llvm_cbe_tmp27823 << (6)))) | (((llvm_cbe_tmp27807 & (128u))))))) | (((llvm_cbe_tmp27828 << (4))))))) | (((llvm_cbe_tmp27833 << (3))))))) | (((llvm_cbe_tmp27838 << (2))))))) | llvm_cbe_tmp27848_2e_rle))) | ((((((bool )(llvm_cbe_tmp27807 == 0))) << 1))))));
+  *((&RAM[((((llvm_cbe_tmp27850)) | 256u))])) = (((((((((((((((((((((llvm_cbe_tmp27823 << (6)))) | (((llvm_cbe_tmp27807 & (128u))))))) | (((llvm_cbe_tmp27828 << (4))))))) | (((llvm_cbe_tmp27833 << (3))))))) | (((llvm_cbe_tmp27838 << (2))))))) | llvm_cbe_tmp27848_2e_rle))) | ((((((llvm_cbe_tmp27807 == 0))) << 1))))));
   S = (((llvm_cbe_tmp27850 + (-1))));
   Y = (2);
   llvm_cbe_tmp27869 = *((&RAM[(34u)]));
@@ -10184,7 +10184,7 @@ llvm_cbe_lB57D:
   llvm_cbe_tmp27874 = (((llvm_cbe_tmp27871)) << 8u) | ((llvm_cbe_tmp27869));
   llvm_cbe_tmp27880 = *((&RAM[(((llvm_cbe_tmp27874 + 2u) & 65535u))]));
   A = llvm_cbe_tmp27880;
-  Z = (((bool )(llvm_cbe_tmp27880 == 0)));
+  Z = (((llvm_cbe_tmp27880 == 0)));
   N = ((((((llvm_cbe_tmp27880) >> (7))))));
   llvm_cbe_tmp27894 = *((&RAM[(88u)]));
   llvm_cbe_tmp27899 = (((((((llvm_cbe_tmp27894)) + ((llvm_cbe_tmp27880))))) + (((s16 )(s8 )llvm_cbe_tmp27848_2e_rle))));
@@ -10219,7 +10219,7 @@ llvm_cbe_bb28319:
   llvm_cbe_tmp28324 = ((((llvm_cbe_tmp28320)) - ((llvm_cbe_tmp28322))));
   llvm_cbe_tmp2832528326 = (llvm_cbe_tmp28324);
   C = ((((((((((((llvm_cbe_tmp2832528326) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2832528326 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2832528326 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp28324))) >> (7))))));
   if (((llvm_cbe_tmp2832528326 & 255u) == 0u)) {
     llvm_cbe_tmp27735_2e_rle51924__PHI_TEMPORARY = llvm_cbe_tmp28320;   /* for PHI node */
@@ -10235,7 +10235,7 @@ llvm_cbe_lB5B0:
   llvm_cbe_tmp28295 = ((((llvm_cbe_tmp28291)) - ((llvm_cbe_tmp28293))));
   llvm_cbe_tmp2829628297 = (llvm_cbe_tmp28295);
   C = ((((((((((((llvm_cbe_tmp2829628297) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2829628297 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2829628297 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp28295))) >> (7))))));
   if (((llvm_cbe_tmp2829628297 & 255u) == 0u)) {
     goto llvm_cbe_bb28319;
@@ -10246,7 +10246,7 @@ llvm_cbe_lB5B0:
 llvm_cbe_lB5AE:
   llvm_cbe_tmp28279_2e_rle = llvm_cbe_tmp28279_2e_rle__PHI_TEMPORARY;
   X = llvm_cbe_tmp28279_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp28279_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp28279_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp28279_2e_rle) >> (7))))));
   goto llvm_cbe_lB5B0;
 
@@ -10255,7 +10255,7 @@ llvm_cbe_bb28235:
   V = llvm_cbe_iftmp_2e_6732_2e_0;
   llvm_cbe_tmp2823728238 = (llvm_cbe_tmp28213);
   A = llvm_cbe_tmp2823728238;
-  Z = (((bool )(llvm_cbe_tmp2823728238 == 0)));
+  Z = (((llvm_cbe_tmp2823728238 == 0)));
   N = ((((((llvm_cbe_tmp2823728238) >> (7))))));
   llvm_cbe_iftmp_2e_6739_2e_0 = ((((((((((llvm_cbe_tmp28213))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_6739_2e_0;
@@ -10280,7 +10280,7 @@ llvm_cbe_bb28181:
   V = llvm_cbe_iftmp_2e_6722_2e_0;
   llvm_cbe_tmp2818328184 = (llvm_cbe_tmp28163);
   A = llvm_cbe_tmp2818328184;
-  Z = (((bool )(llvm_cbe_tmp2818328184 == 0)));
+  Z = (((llvm_cbe_tmp2818328184 == 0)));
   N = ((((((llvm_cbe_tmp2818328184) >> (7))))));
   llvm_cbe_iftmp_2e_6729_2e_0 = ((((((((((llvm_cbe_tmp28163))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_6729_2e_0;
@@ -10305,7 +10305,7 @@ llvm_cbe_bb28086:
   Y = 0;
   C = llvm_cbe_tmp28115_2e_lobit;
   llvm_cbe_tmp28141 = ((((llvm_cbe_tmp28111)) << (1)));
-  Z = (((bool )((((llvm_cbe_tmp28141)) & 254u) == 0u)));
+  Z = ((((((llvm_cbe_tmp28141)) & 254u) == 0u)));
   N = (((((((((llvm_cbe_tmp28111) >> ((6))))))) & 1)));
   llvm_cbe_tmp2815628157 = (llvm_cbe_tmp28141);
   A = llvm_cbe_tmp2815628157;
@@ -10327,7 +10327,7 @@ llvm_cbe_bb28234:
 llvm_cbe_bb28265:
   llvm_cbe_tmp28267 = ((llvm_cbe_tmp27871 + 1));
   *((&RAM[(35u)])) = llvm_cbe_tmp28267;
-  Z = (((bool )(llvm_cbe_tmp28267 == 0)));
+  Z = (((llvm_cbe_tmp28267 == 0)));
   N = ((((((llvm_cbe_tmp28267) >> (7))))));
   llvm_cbe_tmp28279_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp28267;   /* for PHI node */
   goto llvm_cbe_lB5AE;
@@ -10362,14 +10362,14 @@ llvm_cbe_lA3EC:
   llvm_cbe_tmp2621_2e_rle = llvm_cbe_tmp2621_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp2622 = ((llvm_cbe_tmp2621_2e_rle + (-1)));
   Y = llvm_cbe_tmp2622;
-  Z = (((bool )(llvm_cbe_tmp2621_2e_rle == 1)));
+  Z = (((llvm_cbe_tmp2621_2e_rle == 1)));
   N = ((((((llvm_cbe_tmp2622) >> (7))))));
   llvm_cbe_tmp2639 = *((&RAM[(90u)]));
   llvm_cbe_tmp2641 = *((&RAM[(91u)]));
   llvm_cbe_tmp26452646 = (llvm_cbe_tmp2622);
   llvm_cbe_tmp2650 = *((&RAM[(((((((llvm_cbe_tmp2641)) << 8u) | ((llvm_cbe_tmp2639))) + llvm_cbe_tmp26452646) & 65535u))]));
   A = llvm_cbe_tmp2650;
-  Z = (((bool )(llvm_cbe_tmp2650 == 0)));
+  Z = (((llvm_cbe_tmp2650 == 0)));
   N = ((((((llvm_cbe_tmp2650) >> (7))))));
   llvm_cbe_tmp2662 = *((&RAM[(88u)]));
   llvm_cbe_tmp2664 = *((&RAM[(89u)]));
@@ -10390,7 +10390,7 @@ llvm_cbe_bb2543:
   V = llvm_cbe_iftmp_2e_180_2e_0;
   llvm_cbe_tmp25452546 = (llvm_cbe_tmp2521);
   A = llvm_cbe_tmp25452546;
-  Z = (((bool )(llvm_cbe_tmp25452546 == 0)));
+  Z = (((llvm_cbe_tmp25452546 == 0)));
   N = ((((((llvm_cbe_tmp25452546) >> (7))))));
   llvm_cbe_tmp2560_2e_lobit49796 = ((((((((llvm_cbe_tmp25242525) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp2560_2e_lobit49796 ^ 1)));
@@ -10415,7 +10415,7 @@ llvm_cbe_lA3DC:
   llvm_cbe_tmp2518_2e_rle = llvm_cbe_tmp2518_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp2501 = *((&RAM[(88u)]));
   A = llvm_cbe_tmp2501;
-  Z = (((bool )(llvm_cbe_tmp2501 == 0)));
+  Z = (((llvm_cbe_tmp2501 == 0)));
   N = ((((((llvm_cbe_tmp2501) >> (7))))));
   llvm_cbe_tmp2521 = ((((((((((llvm_cbe_tmp2501)) + (-1)))) - llvm_cbe_tmp24342435))) + (((s16 )(s8 )llvm_cbe_tmp2518_2e_rle))));
   llvm_cbe_tmp25242525 = (llvm_cbe_tmp2521);
@@ -10430,7 +10430,7 @@ llvm_cbe_bb2462:
   V = llvm_cbe_iftmp_2e_164_2e_0;
   llvm_cbe_tmp24642465 = (llvm_cbe_tmp2440);
   A = llvm_cbe_tmp24642465;
-  Z = (((bool )(llvm_cbe_tmp24642465 == 0)));
+  Z = (((llvm_cbe_tmp24642465 == 0)));
   N = ((((((llvm_cbe_tmp24642465) >> (7))))));
   llvm_cbe_tmp2479_2e_lobit49798 = ((((((((llvm_cbe_tmp24432444) >> (8u)))))) & 1));
   llvm_cbe_tmp24802481 = ((llvm_cbe_tmp2479_2e_lobit49798 ^ 1));
@@ -10472,7 +10472,7 @@ llvm_cbe_bb2461:
 llvm_cbe_bb2487:
   llvm_cbe_tmp2489 = ((llvm_cbe_tmp2316 + (-1)));
   *((&RAM[(91u)])) = llvm_cbe_tmp2489;
-  Z = (((bool )(llvm_cbe_tmp2316 == 1)));
+  Z = (((llvm_cbe_tmp2316 == 1)));
   N = ((((((llvm_cbe_tmp2489) >> (7))))));
   C = 1;
   llvm_cbe_tmp2518_2e_rle__PHI_TEMPORARY = 1;   /* for PHI node */
@@ -10486,7 +10486,7 @@ llvm_cbe_bb2568:
   llvm_cbe_tmp2569 = *((&RAM[(89u)]));
   llvm_cbe_tmp2570 = ((llvm_cbe_tmp2569 + (-1)));
   *((&RAM[(89u)])) = llvm_cbe_tmp2570;
-  Z = (((bool )(llvm_cbe_tmp2569 == 1)));
+  Z = (((llvm_cbe_tmp2569 == 1)));
   N = ((((((llvm_cbe_tmp2570) >> (7))))));
   llvm_cbe_tmp2700_2e_rle51869__PHI_TEMPORARY = llvm_cbe_tmp2391;   /* for PHI node */
   llvm_cbe_tmp2621_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp22852286;   /* for PHI node */
@@ -10512,7 +10512,7 @@ llvm_cbe_bb2814:
   llvm_cbe_tmp28332834 = (llvm_cbe_tmp2832);
   llvm_cbe_tmp2835_2e_lobit49553 = ((((((((llvm_cbe_tmp28332834) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp2835_2e_lobit49553 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp28332834 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp28332834 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp2832))) >> (7))))));
   if (llvm_cbe_tmp2835_2e_lobit49553 == 0) {
     goto llvm_cbe_bb2856;
@@ -10525,7 +10525,7 @@ llvm_cbe_bb2785:
   V = llvm_cbe_iftmp_2e_228_2e_0;
   llvm_cbe_tmp27872788 = (llvm_cbe_tmp2767);
   A = llvm_cbe_tmp27872788;
-  Z = (((bool )(llvm_cbe_tmp27872788 == 0)));
+  Z = (((llvm_cbe_tmp27872788 == 0)));
   N = ((((((llvm_cbe_tmp27872788) >> (7))))));
   llvm_cbe_tmp2802 = ((llvm_cbe_tmp2767)) & 256u;
   C = ((((((llvm_cbe_tmp2802) >> (8u))))));
@@ -10549,7 +10549,7 @@ llvm_cbe_lA3FB:
   llvm_cbe_tmp274149554 = (((((llvm_cbe_tmp2738_2e_rle) >> (7)))));
   C = llvm_cbe_tmp274149554;
   llvm_cbe_tmp2745 = ((((llvm_cbe_tmp2738_2e_rle)) << (1)));
-  Z = (((bool )((((llvm_cbe_tmp2745)) & 254u) == 0u)));
+  Z = ((((((llvm_cbe_tmp2745)) & 254u) == 0u)));
   N = (((((((((llvm_cbe_tmp2738_2e_rle) >> ((6))))))) & 1)));
   llvm_cbe_tmp27602761 = (llvm_cbe_tmp2745);
   A = llvm_cbe_tmp27602761;
@@ -10587,7 +10587,7 @@ llvm_cbe_bb7780:
   A = llvm_cbe_tmp77827783;
   C = (((((((((((llvm_cbe_tmp7762))) >> (8u)))))) & 1)));
   X = llvm_cbe_tmp77827783;
-  Z = (((bool )(llvm_cbe_tmp77827783 == 0)));
+  Z = (((llvm_cbe_tmp77827783 == 0)));
   N = ((((((llvm_cbe_tmp77827783) >> (7))))));
   S = llvm_cbe_tmp77827783;
   goto llvm_cbe_lA753;
@@ -10603,7 +10603,7 @@ llvm_cbe_bb7768:
 llvm_cbe_bb7744:
   llvm_cbe_tmp7745 = X;
   A = llvm_cbe_tmp7745;
-  Z = (((bool )(llvm_cbe_tmp7745 == 0)));
+  Z = (((llvm_cbe_tmp7745 == 0)));
   N = ((((((llvm_cbe_tmp7745) >> (7))))));
   llvm_cbe_tmp7759 = C;
   llvm_cbe_tmp7762 = (((((((llvm_cbe_tmp7745)) + (15)))) + (((s16 )(s8 )llvm_cbe_tmp7759))));
@@ -10649,7 +10649,7 @@ llvm_cbe_lADA4:
   *((&RAM[(122u)])) = (((llvm_cbe_tmp15996 + (-1))));
   X = 0;
   llvm_cbe_tmp16050 = *((&RAM[(72u)]));
-  Z = (((bool )(llvm_cbe_tmp16050 == 0)));
+  Z = (((llvm_cbe_tmp16050 == 0)));
   N = ((((((llvm_cbe_tmp16050) >> (7))))));
   V = (((((((((llvm_cbe_tmp16050) >> ((6))))))) & 1)));
   llvm_cbe_tmp16090_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp16090_2e_rle52095;   /* for PHI node */
@@ -10659,7 +10659,7 @@ llvm_cbe_lAD9E:
   llvm_cbe_tmp16090_2e_rle52095 = llvm_cbe_tmp16090_2e_rle52095__PHI_TEMPORARY;
   llvm_cbe_tmp15996 = *((&RAM[(122u)]));
   X = llvm_cbe_tmp15996;
-  Z = (((bool )(llvm_cbe_tmp15996 == 0)));
+  Z = (((llvm_cbe_tmp15996 == 0)));
   N = ((((((llvm_cbe_tmp15996) >> (7))))));
   if (llvm_cbe_tmp15996 == 0) {
     goto llvm_cbe_bb16012;
@@ -10673,7 +10673,7 @@ llvm_cbe_lA9B1:
   *((&RAM[((((llvm_cbe_tmp11229)) | 256u))])) = llvm_cbe_tmp11217;
   llvm_cbe_tmp11235 = *((&RAM[(13u)]));
   A = llvm_cbe_tmp11235;
-  Z = (((bool )(llvm_cbe_tmp11235 == 0)));
+  Z = (((llvm_cbe_tmp11235 == 0)));
   N = ((((((llvm_cbe_tmp11235) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp11229 + (-1)))))) | 256u))])) = llvm_cbe_tmp11235;
   *((&RAM[(((((((llvm_cbe_tmp11229 + (-2)))))) | 256u))])) = (-87);
@@ -10696,7 +10696,7 @@ llvm_cbe_bb12618:
   llvm_cbe_tmp12621 = ((llvm_cbe_tmp1253812539 + (-59)));
   llvm_cbe_tmp1262212623 = (llvm_cbe_tmp12621);
   C = ((((((((((((llvm_cbe_tmp1262212623) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1262212623 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1262212623 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp12621))) >> (7))))));
   if (((llvm_cbe_tmp1262212623 & 255u) == 0u)) {
     goto llvm_cbe_lAB13;
@@ -10708,7 +10708,7 @@ llvm_cbe_bb12591:
   llvm_cbe_tmp12594 = ((llvm_cbe_tmp1253812539 + (-44)));
   llvm_cbe_tmp1259512596 = (llvm_cbe_tmp12594);
   C = ((((((((((((llvm_cbe_tmp1259512596) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1259512596 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1259512596 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp12594))) >> (7))))));
   if (((llvm_cbe_tmp1259512596 & 255u) == 0u)) {
     goto llvm_cbe_lAAE8;
@@ -10718,7 +10718,7 @@ llvm_cbe_bb12591:
 
 llvm_cbe_bb12564:
   llvm_cbe_tmp12567 = ((llvm_cbe_tmp1253812539 + (-166)));
-  llvm_cbe_tmp1257612577 = ((bool )((((llvm_cbe_tmp12567)) & 255u) == 0u));
+  llvm_cbe_tmp1257612577 = (((((llvm_cbe_tmp12567)) & 255u) == 0u));
   Z = llvm_cbe_tmp1257612577;
   llvm_cbe_tmp1257812579_2e_lobit = (((((((llvm_cbe_tmp12567))) >> (7)))));
   N = llvm_cbe_tmp1257812579_2e_lobit;
@@ -10739,7 +10739,7 @@ llvm_cbe_bb12537:
   llvm_cbe_tmp1254112542 = (llvm_cbe_tmp12540);
   llvm_cbe_tmp1254412545 = (((((((((((llvm_cbe_tmp1254112542) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp1254412545;
-  llvm_cbe_tmp1254912550 = ((bool )((llvm_cbe_tmp1254112542 & 255u) == 0u));
+  llvm_cbe_tmp1254912550 = (((llvm_cbe_tmp1254112542 & 255u) == 0u));
   Z = llvm_cbe_tmp1254912550;
   llvm_cbe_tmp1255112552_2e_lobit = (((((((llvm_cbe_tmp12540))) >> (7)))));
   N = llvm_cbe_tmp1255112552_2e_lobit;
@@ -10830,7 +10830,7 @@ llvm_cbe_lB423:
   *((&RAM[(((((((llvm_cbe_tmp25945 + (-2)))))) | 256u))])) = llvm_cbe_tmp26030;
   llvm_cbe_tmp26048 = *((&RAM[(71u)]));
   A = llvm_cbe_tmp26048;
-  Z = (((bool )(llvm_cbe_tmp26048 == 0)));
+  Z = (((llvm_cbe_tmp26048 == 0)));
   N = ((((((llvm_cbe_tmp26048) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp25945 + (-3)))))) | 256u))])) = llvm_cbe_tmp26048;
   *((&RAM[(((((((llvm_cbe_tmp25945 + (-4)))))) | 256u))])) = (-76);
@@ -10890,7 +10890,7 @@ llvm_cbe_lAFBD:
   llvm_cbe_tmp19139 = *((&RAM[(100u)]));
   *((&RAM[((((llvm_cbe_tmp19091)) | 256u))])) = llvm_cbe_tmp19139;
   A = llvm_cbe_tmp19097;
-  Z = (((bool )(llvm_cbe_tmp19097 == 0)));
+  Z = (((llvm_cbe_tmp19097 == 0)));
   N = ((((((llvm_cbe_tmp19097) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp19091 + (-1)))))) | 256u))])) = llvm_cbe_tmp19097;
   *((&RAM[(((((((llvm_cbe_tmp19091 + (-2)))))) | 256u))])) = (-81);
@@ -11000,14 +11000,14 @@ llvm_cbe_bb16012:
   llvm_cbe_tmp16013 = *((&RAM[(123u)]));
   llvm_cbe_tmp16014 = ((llvm_cbe_tmp16013 + (-1)));
   *((&RAM[(123u)])) = llvm_cbe_tmp16014;
-  Z = (((bool )(llvm_cbe_tmp16013 == 1)));
+  Z = (((llvm_cbe_tmp16013 == 1)));
   N = ((((((llvm_cbe_tmp16014) >> (7))))));
   goto llvm_cbe_lADA4;
 
 llvm_cbe_lAE2B:
   llvm_cbe_tmp16952 = *((&RAM[(77u)]));
   A = llvm_cbe_tmp16952;
-  Z = (((bool )(llvm_cbe_tmp16952 == 0)));
+  Z = (((llvm_cbe_tmp16952 == 0)));
   N = ((((((llvm_cbe_tmp16952) >> (7))))));
   llvm_cbe_tmp16072 = S;
   *((&RAM[((((llvm_cbe_tmp16072)) | 256u))])) = llvm_cbe_tmp16952;
@@ -11047,7 +11047,7 @@ llvm_cbe_bb3071:
   llvm_cbe_tmp31253126 = (llvm_cbe_tmp3124);
   llvm_cbe_tmp3127_2e_lobit48012 = ((((((((llvm_cbe_tmp31253126) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp3127_2e_lobit48012 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp31253126 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp31253126 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp3124))) >> (7))))));
   if (llvm_cbe_tmp3127_2e_lobit48012 == 0) {
     goto llvm_cbe_bb3148;
@@ -11084,7 +11084,7 @@ llvm_cbe_bb3153:
   llvm_cbe_tmp31593160 = (llvm_cbe_tmp3158);
   llvm_cbe_tmp3161_2e_lobit48011 = ((((((((llvm_cbe_tmp31593160) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp3161_2e_lobit48011 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp31593160 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp31593160 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp3158))) >> (7))))));
   if (llvm_cbe_tmp3161_2e_lobit48011 == 0) {
     goto llvm_cbe_lA435;
@@ -11129,7 +11129,7 @@ llvm_cbe_lA435_2e_loopexit:
   llvm_cbe_X_2e_tmp_2e_151503 = llvm_cbe_X_2e_tmp_2e_151503__PHI_TEMPORARY;
   X = llvm_cbe_X_2e_tmp_2e_151503;
   A = llvm_cbe_A_2e_tmp_2e_051505;
-  Z = (((bool )(llvm_cbe_Z_2e_tmp_2e_051507_2e_in_2e_in == 0)));
+  Z = (((llvm_cbe_Z_2e_tmp_2e_051507_2e_in_2e_in == 0)));
   N = ((((((llvm_cbe_N_2e_tmp_2e_051508_2e_in) >> (7))))));
   C = llvm_cbe_C_2e_tmp_2e_051509;
   Y = llvm_cbe_Y_2e_tmp_2e_151512;
@@ -11302,7 +11302,7 @@ llvm_cbe_lB331:
   llvm_cbe_tmp24452_2e_rle = llvm_cbe_tmp24452_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp24435 = *((&RAM[(70u)]));
   A = llvm_cbe_tmp24435;
-  Z = (((bool )(llvm_cbe_tmp24435 == 0)));
+  Z = (((llvm_cbe_tmp24435 == 0)));
   N = ((((((llvm_cbe_tmp24435) >> (7))))));
   if ((((s8 )llvm_cbe_tmp24435) < ((s8 )0))) {
     goto llvm_cbe_bb24451;
@@ -11316,7 +11316,7 @@ llvm_cbe_bb24392:
   X = (5);
   llvm_cbe_tmp24405 = *((&RAM[(69u)]));
   A = llvm_cbe_tmp24405;
-  Z = (((bool )(llvm_cbe_tmp24405 == 0)));
+  Z = (((llvm_cbe_tmp24405 == 0)));
   N = ((((((llvm_cbe_tmp24405) >> (7))))));
   if ((((s8 )llvm_cbe_tmp24405) < ((s8 )0))) {
     goto llvm_cbe_bb24421;
@@ -11335,7 +11335,7 @@ llvm_cbe_bb24349:
   llvm_cbe_tmp24375 = *((&RAM[(11u)]));
   llvm_cbe_tmp24376 = ((llvm_cbe_tmp24375 + (-1)));
   *((&RAM[(11u)])) = llvm_cbe_tmp24376;
-  Z = (((bool )(llvm_cbe_tmp24375 == 1)));
+  Z = (((llvm_cbe_tmp24375 == 1)));
   N = ((((((llvm_cbe_tmp24376) >> (7))))));
   if (llvm_cbe_tmp24375 == 1) {
     goto llvm_cbe_bb24392;
@@ -11371,7 +11371,7 @@ llvm_cbe_lB30F:
   llvm_cbe_tmp23992_2e_rle52297 = llvm_cbe_tmp23992_2e_rle52297__PHI_TEMPORARY;
   llvm_cbe_tmp24191 = ((llvm_cbe_tmp23991_2e_rle | llvm_cbe_tmp24189_2e_rle52299));
   A = llvm_cbe_tmp24191;
-  Z = (((bool )(llvm_cbe_tmp24191 == 0)));
+  Z = (((llvm_cbe_tmp24191 == 0)));
   N = ((((((llvm_cbe_tmp24191) >> (7))))));
   C = 0;
   if (llvm_cbe_tmp24191 == 0) {
@@ -11393,7 +11393,7 @@ llvm_cbe_bb24099:
   llvm_cbe_tmp2414124142 = (llvm_cbe_tmp24140);
   llvm_cbe_tmp24143_2e_lobit48840 = ((((((((llvm_cbe_tmp2414124142) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp24143_2e_lobit48840 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2414124142 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2414124142 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp24140))) >> (7))))));
   if (llvm_cbe_tmp24143_2e_lobit48840 == 0) {
     goto llvm_cbe_lB245;
@@ -11435,7 +11435,7 @@ llvm_cbe_lB2F2:
   llvm_cbe_tmp2407124072 = (llvm_cbe_tmp24070);
   llvm_cbe_tmp24073_2e_lobit48841 = ((((((((llvm_cbe_tmp2407124072) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp24073_2e_lobit48841 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2407124072 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2407124072 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp24070))) >> (7))))));
   if (llvm_cbe_tmp24073_2e_lobit48841 == 0) {
     goto llvm_cbe_bb24094;
@@ -11467,7 +11467,7 @@ llvm_cbe_lB256:
   llvm_cbe_tmp22932 = ((((llvm_cbe_tmp22894)) - ((llvm_cbe_tmp22930))));
   llvm_cbe_tmp2293322934 = (llvm_cbe_tmp22932);
   C = ((((((((((((llvm_cbe_tmp2293322934) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2293322934 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2293322934 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp22932))) >> (7))))));
   if (((llvm_cbe_tmp2293322934 & 255u) == 0u)) {
     goto llvm_cbe_lB2EA;
@@ -11489,7 +11489,7 @@ llvm_cbe_bb23893:
   *((&RAM[(((((((llvm_cbe_tmp23865)) << 8u) | ((llvm_cbe_tmp23913))) + 3u) & 65535u))])) = ((llvm_cbe_tmp23871));
   llvm_cbe_tmp23925 = *((&RAM[(12u)]));
   A = llvm_cbe_tmp23925;
-  Z = (((bool )(llvm_cbe_tmp23925 == 0)));
+  Z = (((llvm_cbe_tmp23925 == 0)));
   N = ((((((llvm_cbe_tmp23925) >> (7))))));
   if (llvm_cbe_tmp23925 == 0) {
     goto llvm_cbe_bb23941;
@@ -11539,7 +11539,7 @@ llvm_cbe_bb23739:
   C = 1;
   llvm_cbe_tmp23753 = *((&RAM[(49u)]));
   A = llvm_cbe_tmp23753;
-  Z = (((bool )(llvm_cbe_tmp23753 == 0)));
+  Z = (((llvm_cbe_tmp23753 == 0)));
   N = ((((((llvm_cbe_tmp23753) >> (7))))));
   llvm_cbe_tmp23767 = *((&RAM[(95u)]));
   llvm_cbe_tmp23773 = ((((((((((llvm_cbe_tmp23753)) + (-1)))) - ((llvm_cbe_tmp23767))))) + (1)));
@@ -11557,7 +11557,7 @@ llvm_cbe_lB2CD:
   llvm_cbe_tmp23722 = *((&RAM[(114u)]));
   llvm_cbe_tmp23723 = ((llvm_cbe_tmp23722 + (-1)));
   *((&RAM[(114u)])) = llvm_cbe_tmp23723;
-  Z = (((bool )(llvm_cbe_tmp23722 == 1)));
+  Z = (((llvm_cbe_tmp23722 == 1)));
   N = ((((((llvm_cbe_tmp23723) >> (7))))));
   if (llvm_cbe_tmp23722 == 1) {
     goto llvm_cbe_bb23739;
@@ -11577,7 +11577,7 @@ llvm_cbe_lB2BC:
   *((&RAM[(114u)])) = (((llvm_cbe_tmp23651 + 1)));
   llvm_cbe_tmp23664 = *((&RAM[(113u)]));
   Y = llvm_cbe_tmp23664;
-  Z = (((bool )(llvm_cbe_tmp23664 == 0)));
+  Z = (((llvm_cbe_tmp23664 == 0)));
   N = ((((((llvm_cbe_tmp23664) >> (7))))));
   if (llvm_cbe_tmp23664 == 0) {
     llvm_cbe_Y_2e_promoted51486_2e_rle52328__PHI_TEMPORARY = llvm_cbe_tmp23664;   /* for PHI node */
@@ -11590,7 +11590,7 @@ llvm_cbe_lB2BC:
 
 llvm_cbe_lB2CD_2e_loopexit:
   Y = 0;
-  Z = (((bool )(llvm_cbe_Y_2e_tmp_2e_051489 == 1)));
+  Z = (((llvm_cbe_Y_2e_tmp_2e_051489 == 1)));
   N = 0;
   llvm_cbe_Y_2e_promoted51486_2e_rle52328__PHI_TEMPORARY = 0;   /* for PHI node */
   goto llvm_cbe_lB2CD;
@@ -11624,7 +11624,7 @@ llvm_cbe_bb23892:
 llvm_cbe_lB30E:
   llvm_cbe_tmp24165 = ((llvm_cbe_tmp23992_2e_rle + (2)));
   Y = llvm_cbe_tmp24165;
-  Z = (((bool )(llvm_cbe_tmp24165 == 0)));
+  Z = (((llvm_cbe_tmp24165 == 0)));
   N = ((((((llvm_cbe_tmp24165) >> (7))))));
   llvm_cbe_tmp23992_2e_rle52297__PHI_TEMPORARY = llvm_cbe_tmp24165;   /* for PHI node */
   goto llvm_cbe_lB30F;
@@ -11640,7 +11640,7 @@ llvm_cbe_bb24259:
   A = llvm_cbe_tmp24296;
   llvm_cbe_tmp24308 = *((&RAM[(34u)]));
   Y = llvm_cbe_tmp24308;
-  Z = (((bool )(llvm_cbe_tmp24308 == 0)));
+  Z = (((llvm_cbe_tmp24308 == 0)));
   N = ((((((llvm_cbe_tmp24308) >> (7))))));
   llvm_cbe_phitmp5242852429 = (llvm_cbe_iftmp_2e_5662_2e_0);
   llvm_cbe_tmp24374_2e_rle52312__PHI_TEMPORARY = llvm_cbe_tmp2426124262;   /* for PHI node */
@@ -11660,7 +11660,7 @@ llvm_cbe_bb24247:
 llvm_cbe_lB319:
   llvm_cbe_tmp24218 = X;
   A = llvm_cbe_tmp24218;
-  Z = (((bool )(llvm_cbe_tmp24218 == 0)));
+  Z = (((llvm_cbe_tmp24218 == 0)));
   N = ((((((llvm_cbe_tmp24218) >> (7))))));
   llvm_cbe_tmp24232 = *((&RAM[(100u)]));
   llvm_cbe_tmp24235 = C;
@@ -11689,7 +11689,7 @@ llvm_cbe_bb24421:
 llvm_cbe_bb24451:
   llvm_cbe_tmp24466 = ((llvm_cbe_tmp24452_2e_rle + (-2)));
   X = llvm_cbe_tmp24466;
-  Z = (((bool )((((llvm_cbe_tmp24452_2e_rle + (-1)))) == 1)));
+  Z = ((((((llvm_cbe_tmp24452_2e_rle + (-1)))) == 1)));
   N = ((((((llvm_cbe_tmp24466) >> (7))))));
   llvm_cbe_tmp24478_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp24466;   /* for PHI node */
   goto llvm_cbe_lB337;
@@ -11709,7 +11709,7 @@ llvm_cbe_lB34C:
   Y = llvm_cbe_tmp24704;
   llvm_cbe_tmp24727 = *((&RAM[(((llvm_cbe_tmp24684 + ((llvm_cbe_tmp24704))) & 65535u))]));
   A = llvm_cbe_tmp24727;
-  Z = (((bool )(llvm_cbe_tmp24727 == 0)));
+  Z = (((llvm_cbe_tmp24727 == 0)));
   N = ((((((llvm_cbe_tmp24727) >> (7))))));
   llvm_cbe_tmp25110_2e_rle52303__PHI_TEMPORARY = llvm_cbe_storemerge48823;   /* for PHI node */
   llvm_cbe_tmp24739_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp24727;   /* for PHI node */
@@ -11724,7 +11724,7 @@ llvm_cbe_lB296:
   llvm_cbe_tmp23390 = ((llvm_cbe_tmp23364_2e_rle52316 + (2)));
   Y = llvm_cbe_tmp23390;
   A = llvm_cbe_tmp23402_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp23402_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp23402_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp23402_2e_rle) >> (7))))));
   llvm_cbe_tmp23414 = *((&RAM[(95u)]));
   llvm_cbe_tmp23416 = *((&RAM[(96u)]));
@@ -11743,7 +11743,7 @@ llvm_cbe_lB286:
   X = (11);
   A = 0;
   llvm_cbe_tmp23195 = *((&RAM[(12u)]));
-  Z = (((bool )(llvm_cbe_tmp23195 == 0)));
+  Z = (((llvm_cbe_tmp23195 == 0)));
   N = ((((((llvm_cbe_tmp23195) >> (7))))));
   llvm_cbe_tmp2321048828 = ((llvm_cbe_tmp23195 & (64)));
   V = ((((((llvm_cbe_tmp2321048828) >> ((6)))))));
@@ -11774,7 +11774,7 @@ llvm_cbe_lB274:
   Y = 1;
   llvm_cbe_tmp23054 = *((&RAM[(70u)]));
   A = llvm_cbe_tmp23054;
-  Z = (((bool )(llvm_cbe_tmp23054 == 0)));
+  Z = (((llvm_cbe_tmp23054 == 0)));
   llvm_cbe_tmp23058_2e_lobit = (((((llvm_cbe_tmp23054) >> (7)))));
   N = llvm_cbe_tmp23058_2e_lobit;
   llvm_cbe_tmp23066 = *((&RAM[(95u)]));
@@ -11793,7 +11793,7 @@ llvm_cbe_lB267:
   X = (5);
   llvm_cbe_tmp22999 = *((&RAM[(69u)]));
   A = llvm_cbe_tmp22999;
-  Z = (((bool )(llvm_cbe_tmp22999 == 0)));
+  Z = (((llvm_cbe_tmp22999 == 0)));
   llvm_cbe_tmp23003_2e_lobit = (((((llvm_cbe_tmp22999) >> (7)))));
   N = llvm_cbe_tmp23003_2e_lobit;
   llvm_cbe_tmp23011 = *((&RAM[(95u)]));
@@ -11816,7 +11816,7 @@ llvm_cbe_bb23027:
 llvm_cbe_bb23082:
   llvm_cbe_tmp23097 = ((llvm_cbe_tmp23109_2e_rle52315 + (-2)));
   X = llvm_cbe_tmp23097;
-  Z = (((bool )((((llvm_cbe_tmp23109_2e_rle52315 + (-1)))) == 1)));
+  Z = ((((((llvm_cbe_tmp23109_2e_rle52315 + (-1)))) == 1)));
   N = ((((((llvm_cbe_tmp23097) >> (7))))));
   llvm_cbe_tmp23109_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp23097;   /* for PHI node */
   goto llvm_cbe_lB27D;
@@ -11826,7 +11826,7 @@ llvm_cbe_bb23339:
   V = llvm_cbe_iftmp_2e_5424_2e_0;
   llvm_cbe_tmp2334123342 = (llvm_cbe_tmp23322);
   A = llvm_cbe_tmp2334123342;
-  Z = (((bool )(llvm_cbe_tmp2334123342 == 0)));
+  Z = (((llvm_cbe_tmp2334123342 == 0)));
   N = ((((((llvm_cbe_tmp2334123342) >> (7))))));
   C = (((((((((((llvm_cbe_tmp23322))) >> (8u)))))) & 1)));
   llvm_cbe_tmp23402_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp2326523266;   /* for PHI node */
@@ -11852,7 +11852,7 @@ llvm_cbe_bb23263:
   S = llvm_cbe_tmp23301;
   llvm_cbe_tmp23306 = *((&RAM[((((llvm_cbe_tmp23301)) | 256u))]));
   A = llvm_cbe_tmp23306;
-  Z = (((bool )(llvm_cbe_tmp23306 == 0)));
+  Z = (((llvm_cbe_tmp23306 == 0)));
   N = ((((((llvm_cbe_tmp23306) >> (7))))));
   llvm_cbe_tmp23322 = ((((llvm_cbe_iftmp_2e_5410_2e_0)) + ((llvm_cbe_tmp23306))));
   if ((((s8 )llvm_cbe_tmp23306) < ((s8 )0))) {
@@ -11875,7 +11875,7 @@ llvm_cbe_bb23221:
   S = llvm_cbe_tmp23223;
   llvm_cbe_tmp23228 = *((&RAM[((((llvm_cbe_tmp23223)) | 256u))]));
   A = llvm_cbe_tmp23228;
-  Z = (((bool )(llvm_cbe_tmp23228 == 0)));
+  Z = (((llvm_cbe_tmp23228 == 0)));
   N = ((((((llvm_cbe_tmp23228) >> (7))))));
   C = 0;
   llvm_cbe_tmp23245 = ((((llvm_cbe_tmp23228)) + (1)));
@@ -11916,7 +11916,7 @@ llvm_cbe_bb4979:
   llvm_cbe_tmp50015002 = (llvm_cbe_tmp5000);
   llvm_cbe_tmp5003_2e_lobit48062 = ((((((((llvm_cbe_tmp50015002) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp5003_2e_lobit48062 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp50015002 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp50015002 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp5000))) >> (7))))));
   if (llvm_cbe_tmp5003_2e_lobit48062 == 0) {
     goto llvm_cbe_bb5024;
@@ -11929,7 +11929,7 @@ llvm_cbe_lA565:
   llvm_cbe_tmp4955 = ((((llvm_cbe_tmp4953)) + (-13)));
   llvm_cbe_tmp49564957 = (llvm_cbe_tmp4955);
   C = ((((((((((((llvm_cbe_tmp49564957) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp49564957 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp49564957 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp4955))) >> (7))))));
   if (((llvm_cbe_tmp49564957 & 255u) == 0u)) {
     goto llvm_cbe_lAACA;
@@ -11941,7 +11941,7 @@ llvm_cbe_bb9168:
   X = (26);
   llvm_cbe_tmp9180 = *((&RAM[(62u)]));
   Y = llvm_cbe_tmp9180;
-  Z = (((bool )(llvm_cbe_tmp9180 == 0)));
+  Z = (((llvm_cbe_tmp9180 == 0)));
   N = ((((((llvm_cbe_tmp9180) >> (7))))));
   if (llvm_cbe_tmp9180 == 0) {
     goto llvm_cbe_lA437;
@@ -11960,7 +11960,7 @@ llvm_cbe_lA857:
 llvm_cbe_bb9958:
   X = (12);
   llvm_cbe_tmp9973 = *((&RAM[(4514u)]));
-  Z = (((bool )(llvm_cbe_tmp9973 == 0)));
+  Z = (((llvm_cbe_tmp9973 == 0)));
   N = ((((((llvm_cbe_tmp9973) >> (7))))));
   V = (((((((((llvm_cbe_tmp9973) >> ((6))))))) & 1)));
   goto llvm_cbe_lA437;
@@ -11972,7 +11972,7 @@ llvm_cbe_lA8DB:
   llvm_cbe_tmp9934 = ((((llvm_cbe_tmp9932)) + (-141)));
   llvm_cbe_tmp99359936 = (llvm_cbe_tmp9934);
   C = ((((((((((((llvm_cbe_tmp99359936) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp99359936 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp99359936 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp9934))) >> (7))))));
   if (((llvm_cbe_tmp99359936 & 255u) == 0u)) {
     goto llvm_cbe_lA8EB;
@@ -12037,7 +12037,7 @@ llvm_cbe_bb14982:
   llvm_cbe_tmp15012 = (((llvm_cbe_tmp15009)) << 8u) | ((llvm_cbe_tmp15007));
   llvm_cbe_tmp15018 = *((&RAM[(((llvm_cbe_tmp15012 + ((llvm_cbe_tmp14995))) & 65535u))]));
   A = llvm_cbe_tmp15018;
-  Z = (((bool )(llvm_cbe_tmp15018 == 0)));
+  Z = (((llvm_cbe_tmp15018 == 0)));
   N = ((((((llvm_cbe_tmp15018) >> (7))))));
   if (llvm_cbe_tmp15018 == 0) {
     goto llvm_cbe_lA437;
@@ -12050,7 +12050,7 @@ llvm_cbe_lACBB:
   Y = (((llvm_cbe_tmp14953 + 1)));
   llvm_cbe_tmp14966 = A;
   X = llvm_cbe_tmp14966;
-  Z = (((bool )(llvm_cbe_tmp14966 == 0)));
+  Z = (((llvm_cbe_tmp14966 == 0)));
   N = ((((((llvm_cbe_tmp14966) >> (7))))));
   if (llvm_cbe_tmp14966 == 0) {
     goto llvm_cbe_bb14982;
@@ -12087,7 +12087,7 @@ llvm_cbe_bb15956:
 
 llvm_cbe_lAD90:
   llvm_cbe_tmp15930 = *((&RAM[(13u)]));
-  Z = (((bool )(llvm_cbe_tmp15930 == 0)));
+  Z = (((llvm_cbe_tmp15930 == 0)));
   llvm_cbe_tmp15930_2e_lobit = (((((llvm_cbe_tmp15930) >> (7)))));
   N = llvm_cbe_tmp15930_2e_lobit;
   V = (((((((((llvm_cbe_tmp15930) >> ((6))))))) & 1)));
@@ -12105,7 +12105,7 @@ llvm_cbe_lA9BA:
   llvm_cbe_tmp11285 = C;
   llvm_cbe_tmp11287 = (((((((llvm_cbe_tmp11269)) << (1)))) | (((s16 )(s8 )llvm_cbe_tmp11285))));
   C = ((((((((llvm_cbe_tmp11287) >> ((8)))))))));
-  Z = (((bool )((((llvm_cbe_tmp11287)) & 255u) == 0u)));
+  Z = ((((((llvm_cbe_tmp11287)) & 255u) == 0u)));
   llvm_cbe_tmp1129611297 = (llvm_cbe_tmp11287);
   N = ((((((llvm_cbe_tmp1129611297) >> (7))))));
   A = llvm_cbe_tmp1129611297;
@@ -12117,7 +12117,7 @@ llvm_cbe_lA9BA:
 llvm_cbe_lAD8D:
   C = 0;
   llvm_cbe_tmp15908 = *((&RAM[(56u)]));
-  Z = (((bool )(llvm_cbe_tmp15908 == 0)));
+  Z = (((llvm_cbe_tmp15908 == 0)));
   N = ((((((llvm_cbe_tmp15908) >> (7))))));
   V = (((((((((llvm_cbe_tmp15908) >> ((6))))))) & 1)));
   goto llvm_cbe_lAD90;
@@ -12148,7 +12148,7 @@ llvm_cbe_lADF0:
   llvm_cbe_tmp1663816639 = (llvm_cbe_tmp16637);
   llvm_cbe_tmp16640_2e_lobit48593 = ((((((((llvm_cbe_tmp1663816639) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp16640_2e_lobit48593 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1663816639 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1663816639 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp16637))) >> (7))))));
   if (llvm_cbe_tmp16640_2e_lobit48593 == 0) {
     llvm_cbe_tmp17241_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp16611;   /* for PHI node */
@@ -12165,7 +12165,7 @@ llvm_cbe_bb16573:
   A = llvm_cbe_tmp1657516576;
   C = (((((((((((llvm_cbe_tmp16551))) >> (8u)))))) & 1)));
   Y = llvm_cbe_tmp1657516576;
-  Z = (((bool )(llvm_cbe_tmp1657516576 == 0)));
+  Z = (((llvm_cbe_tmp1657516576 == 0)));
   N = ((((((llvm_cbe_tmp1657516576) >> (7))))));
   llvm_cbe_phitmp52413 = ((llvm_cbe_tmp1657516576)) + 41088u;
   llvm_cbe_tmp16630_2e_rle__PHI_TEMPORARY = llvm_cbe_phitmp52413;   /* for PHI node */
@@ -12188,7 +12188,7 @@ llvm_cbe_bb16494:
   llvm_cbe_tmp1652016521 = ((llvm_cbe_tmp16477 & (255)));
   C = llvm_cbe_tmp16501_2e_lobit;
   llvm_cbe_tmp16527 = ((llvm_cbe_tmp1652016521 << (1)));
-  Z = (((bool )((((llvm_cbe_tmp16527)) & 254u) == 0u)));
+  Z = ((((((llvm_cbe_tmp16527)) & 254u) == 0u)));
   N = (((((((((llvm_cbe_tmp1649616497) >> ((6))))))) & 1)));
   llvm_cbe_tmp1654216543 = (llvm_cbe_tmp16527);
   A = llvm_cbe_tmp1654216543;
@@ -12220,7 +12220,7 @@ llvm_cbe_bb16443:
   V = llvm_cbe_iftmp_2e_3641_2e_0;
   llvm_cbe_tmp1644516446 = (llvm_cbe_tmp16421);
   A = llvm_cbe_tmp1644516446;
-  Z = (((bool )(llvm_cbe_tmp1644516446 == 0)));
+  Z = (((llvm_cbe_tmp1644516446 == 0)));
   N = ((((((llvm_cbe_tmp1644516446) >> (7))))));
   llvm_cbe_iftmp_2e_3648_2e_0 = ((((((((((llvm_cbe_tmp16421))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_3648_2e_0;
@@ -12252,7 +12252,7 @@ llvm_cbe_bb16384:
   V = llvm_cbe_iftmp_2e_3630_2e_0;
   llvm_cbe_tmp1638616387 = (llvm_cbe_tmp16366);
   A = llvm_cbe_tmp1638616387;
-  Z = (((bool )(llvm_cbe_tmp1638616387 == 0)));
+  Z = (((llvm_cbe_tmp1638616387 == 0)));
   N = ((((((llvm_cbe_tmp1638616387) >> (7))))));
   llvm_cbe_tmp16401 = ((llvm_cbe_tmp16366)) & 256u;
   llvm_cbe_tmp16401_2e_lobit50131 = (((((llvm_cbe_tmp16401) >> (8u)))));
@@ -12290,7 +12290,7 @@ llvm_cbe_lADD7:
   llvm_cbe_tmp16356_2e_rle = llvm_cbe_tmp16356_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp16339 = *((&RAM[(77u)]));
   X = llvm_cbe_tmp16339;
-  Z = (((bool )(llvm_cbe_tmp16339 == 0)));
+  Z = (((llvm_cbe_tmp16339 == 0)));
   N = ((((((llvm_cbe_tmp16339) >> (7))))));
   if (llvm_cbe_tmp16339 == 0) {
     goto llvm_cbe_bb16355;
@@ -12306,7 +12306,7 @@ llvm_cbe_lADBB:
   V = (((((((((llvm_cbe_tmp1615716158 ^ ((llvm_cbe_tmp16149))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp16149) < ((s8 )0)))&1))) ? (0) : (1)));
   llvm_cbe_tmp1617416175 = (llvm_cbe_tmp16154);
   A = llvm_cbe_tmp1617416175;
-  Z = (((bool )(llvm_cbe_tmp1617416175 == 0)));
+  Z = (((llvm_cbe_tmp1617416175 == 0)));
   N = ((((((llvm_cbe_tmp1617416175) >> (7))))));
   llvm_cbe_tmp16189 = llvm_cbe_tmp1615716158 & 256u;
   llvm_cbe_tmp1619016191 = ((((((((llvm_cbe_tmp16189) >> (8u)))))) ^ 1));
@@ -12325,7 +12325,7 @@ llvm_cbe_bb16196:
   llvm_cbe_tmp16202_2e_lobit48586 = ((((((((llvm_cbe_tmp1620016201) >> (8u)))))) & 1));
   llvm_cbe_tmp1620316204 = ((llvm_cbe_tmp16202_2e_lobit48586 ^ 1));
   C = llvm_cbe_tmp1620316204;
-  Z = (((bool )((llvm_cbe_tmp1620016201 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1620016201 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp16199))) >> (7))))));
   if (llvm_cbe_tmp16202_2e_lobit48586 == 0) {
     llvm_cbe_tmp16356_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp1620316204;   /* for PHI node */
@@ -12368,7 +12368,7 @@ llvm_cbe_lAE07:
   A = llvm_cbe_tmp1678816789;
   llvm_cbe_tmp16799 = *((&RAM[(122u)]));
   X = llvm_cbe_tmp16799;
-  Z = (((bool )(llvm_cbe_tmp16799 == 0)));
+  Z = (((llvm_cbe_tmp16799 == 0)));
   N = ((((((llvm_cbe_tmp16799) >> (7))))));
   if (llvm_cbe_tmp16799 == 0) {
     goto llvm_cbe_bb16815;
@@ -12380,7 +12380,7 @@ llvm_cbe_bb16815:
   llvm_cbe_tmp16816 = *((&RAM[(123u)]));
   llvm_cbe_tmp16817 = ((llvm_cbe_tmp16816 + (-1)));
   *((&RAM[(123u)])) = llvm_cbe_tmp16817;
-  Z = (((bool )(llvm_cbe_tmp16816 == 1)));
+  Z = (((llvm_cbe_tmp16816 == 1)));
   N = ((((((llvm_cbe_tmp16817) >> (7))))));
   goto llvm_cbe_lAE11;
 
@@ -12396,7 +12396,7 @@ llvm_cbe_lAE5D:
   llvm_cbe_tmp17216 = ((((llvm_cbe_tmp17214_2e_rle)) + (-100)));
   llvm_cbe_tmp1721717218 = (llvm_cbe_tmp17216);
   C = ((((((((((((llvm_cbe_tmp1721717218) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1721717218 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1721717218 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17216))) >> (7))))));
   if (((llvm_cbe_tmp1721717218 & 255u) == 0u)) {
     goto llvm_cbe_lAE64;
@@ -12436,11 +12436,11 @@ llvm_cbe_lADFD:
   S = llvm_cbe_tmp16689;
   llvm_cbe_tmp16694 = *((&RAM[((((llvm_cbe_tmp16689)) | 256u))]));
   A = llvm_cbe_tmp16694;
-  llvm_cbe_tmp1669616697 = ((bool )(llvm_cbe_tmp16694 == 0));
+  llvm_cbe_tmp1669616697 = ((llvm_cbe_tmp16694 == 0));
   llvm_cbe_tmp16698_2e_lobit = (((((llvm_cbe_tmp16694) >> (7)))));
   llvm_cbe_tmp16706 = *((&RAM[(75u)]));
   Y = llvm_cbe_tmp16706;
-  Z = (((bool )(llvm_cbe_tmp16706 == 0)));
+  Z = (((llvm_cbe_tmp16706 == 0)));
   N = ((((((llvm_cbe_tmp16706) >> (7))))));
   if ((((s8 )llvm_cbe_tmp16706) < ((s8 )0))) {
     goto llvm_cbe_bb16722;
@@ -12455,7 +12455,7 @@ llvm_cbe_lAE58:
   S = llvm_cbe_tmp17193;
   llvm_cbe_tmp17198 = *((&RAM[((((llvm_cbe_tmp17193)) | 256u))]));
   A = llvm_cbe_tmp17198;
-  llvm_cbe_tmp1720017201 = ((bool )(llvm_cbe_tmp17198 == 0));
+  llvm_cbe_tmp1720017201 = ((llvm_cbe_tmp17198 == 0));
   Z = llvm_cbe_tmp1720017201;
   N = ((((((llvm_cbe_tmp17198) >> (7))))));
   llvm_cbe_tmp17210_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp1720017201;   /* for PHI node */
@@ -12605,7 +12605,7 @@ llvm_cbe_lA807:
   llvm_cbe_tmp8812 = ((((llvm_cbe_tmp8409)) + (-58)));
   llvm_cbe_tmp88138814 = (llvm_cbe_tmp8812);
   C = ((((((((((((llvm_cbe_tmp88138814) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp88138814 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp88138814 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp8812))) >> (7))))));
   if (((llvm_cbe_tmp88138814 & 255u) == 0u)) {
     goto llvm_cbe_lA7E1;
@@ -12617,7 +12617,7 @@ llvm_cbe_lA80E:
   llvm_cbe_tmp8838 = ((llvm_cbe_tmp87018702 + (-75)));
   llvm_cbe_tmp88398840 = (llvm_cbe_tmp8838);
   C = ((((((((((((llvm_cbe_tmp88398840) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp88398840 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp88398840 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp8838))) >> (7))))));
   if (((llvm_cbe_tmp88398840 & 255u) == 0u)) {
     goto llvm_cbe_bb8862;
@@ -12631,7 +12631,7 @@ llvm_cbe_bb8700:
   llvm_cbe_tmp87048705 = (llvm_cbe_tmp8703);
   llvm_cbe_tmp8706_2e_lobit48262 = ((((((((llvm_cbe_tmp87048705) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp8706_2e_lobit48262 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp87048705 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp87048705 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp8703))) >> (7))))));
   if (llvm_cbe_tmp8706_2e_lobit48262 == 0) {
     goto llvm_cbe_lA80E;
@@ -12647,7 +12647,7 @@ llvm_cbe_lA7EF:
   V = (((((((((llvm_cbe_tmp86628663 ^ ((llvm_cbe_tmp8654))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp8654) < ((s8 )0)))&1))) ? (0) : (1)));
   llvm_cbe_tmp86788679 = (llvm_cbe_tmp8659);
   A = llvm_cbe_tmp86788679;
-  Z = (((bool )(llvm_cbe_tmp86788679 == 0)));
+  Z = (((llvm_cbe_tmp86788679 == 0)));
   llvm_cbe_tmp8683_2e_lobit = (((((llvm_cbe_tmp86788679) >> (7)))));
   N = llvm_cbe_tmp8683_2e_lobit;
   llvm_cbe_tmp8693 = llvm_cbe_tmp86628663 & 256u;
@@ -12686,7 +12686,7 @@ llvm_cbe_bb10599:
   S = llvm_cbe_tmp10601;
   llvm_cbe_tmp10606 = *((&RAM[((((llvm_cbe_tmp10601)) | 256u))]));
   A = llvm_cbe_tmp10606;
-  Z = (((bool )(llvm_cbe_tmp10606 == 0)));
+  Z = (((llvm_cbe_tmp10606 == 0)));
   N = ((((((llvm_cbe_tmp10606) >> (7))))));
   goto llvm_cbe_lA7EF;
 
@@ -12694,7 +12694,7 @@ llvm_cbe_lA957:
   llvm_cbe_tmp10582 = *((&RAM[(101u)]));
   llvm_cbe_tmp10583 = ((llvm_cbe_tmp10582 + (-1)));
   *((&RAM[(101u)])) = llvm_cbe_tmp10583;
-  Z = (((bool )(llvm_cbe_tmp10582 == 1)));
+  Z = (((llvm_cbe_tmp10582 == 1)));
   N = ((((((llvm_cbe_tmp10583) >> (7))))));
   llvm_cbe_tmp10618 = S;
   if (llvm_cbe_tmp10582 == 1) {
@@ -12711,7 +12711,7 @@ llvm_cbe_lA94E:
   llvm_cbe_tmp10532 = ((((llvm_cbe_tmp10527)) + (-141)));
   llvm_cbe_tmp1053310534 = (llvm_cbe_tmp10532);
   C = ((((((((((((llvm_cbe_tmp1053310534) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1053310534 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1053310534 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp10532))) >> (7))))));
   if (((llvm_cbe_tmp1053310534 & 255u) == 0u)) {
     goto llvm_cbe_lA957;
@@ -12725,7 +12725,7 @@ llvm_cbe_lA953:
   llvm_cbe_tmp10558 = ((((llvm_cbe_tmp10556_2e_rle)) + (-137)));
   llvm_cbe_tmp1055910560 = (llvm_cbe_tmp10558);
   C = ((((((((((((llvm_cbe_tmp1055910560) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1055910560 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1055910560 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp10558))) >> (7))))));
   if (((llvm_cbe_tmp1055910560 & 255u) == 0u)) {
     goto llvm_cbe_lA957;
@@ -12746,7 +12746,7 @@ llvm_cbe_bb10720:
   llvm_cbe_tmp1078110782 = (llvm_cbe_tmp10780);
   llvm_cbe_tmp10783_2e_lobit48277 = ((((((((llvm_cbe_tmp1078110782) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp10783_2e_lobit48277 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1078110782 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1078110782 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp10780))) >> (7))))));
   if (llvm_cbe_tmp10783_2e_lobit48277 == 0) {
     llvm_cbe_tmp10556_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp10765;   /* for PHI node */
@@ -12796,7 +12796,7 @@ llvm_cbe_bb3623:
 llvm_cbe_lA48D:
   llvm_cbe_tmp3607 = A;
   X = llvm_cbe_tmp3607;
-  Z = (((bool )(llvm_cbe_tmp3607 == 0)));
+  Z = (((llvm_cbe_tmp3607 == 0)));
   N = ((((((llvm_cbe_tmp3607) >> (7))))));
   if (llvm_cbe_tmp3607 == 0) {
     goto llvm_cbe_lA480;
@@ -12832,7 +12832,7 @@ llvm_cbe_bb6828:
   llvm_cbe_tmp6831 = ((((llvm_cbe_tmp6829)) + (-171)));
   llvm_cbe_tmp68326833 = (llvm_cbe_tmp6831);
   C = ((((((((((((llvm_cbe_tmp68326833) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp68326833 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp68326833 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp6831))) >> (7))))));
   if (((llvm_cbe_tmp68326833 & 255u) == 0u)) {
     goto llvm_cbe_lA6A4;
@@ -12873,7 +12873,7 @@ llvm_cbe_lA965:
   llvm_cbe_tmp10640 = ((((llvm_cbe_tmp10638)) + (-44)));
   llvm_cbe_tmp1064110642 = (llvm_cbe_tmp10640);
   C = ((((((((((((llvm_cbe_tmp1064110642) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1064110642 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1064110642 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp10640))) >> (7))))));
   if (((llvm_cbe_tmp1064110642 & 255u) == 0u)) {
     goto llvm_cbe_lA957;
@@ -12886,7 +12886,7 @@ llvm_cbe_lAB02:
   llvm_cbe_tmp13076 = ((((llvm_cbe_tmp13074)) + (-41)));
   llvm_cbe_tmp1307713078 = (llvm_cbe_tmp13076);
   C = ((((((((((((llvm_cbe_tmp1307713078) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1307713078 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1307713078 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp13076))) >> (7))))));
   if (((llvm_cbe_tmp1307713078 & 255u) == 0u)) {
     goto llvm_cbe_bb13100;
@@ -12902,7 +12902,7 @@ llvm_cbe_bb16223:
   llvm_cbe_tmp1630416305 = (llvm_cbe_tmp16303);
   llvm_cbe_tmp16306_2e_lobit48583 = ((((((((llvm_cbe_tmp1630416305) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp16306_2e_lobit48583 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1630416305 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1630416305 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp16303))) >> (7))))));
   if (llvm_cbe_tmp16306_2e_lobit48583 == 0) {
     goto llvm_cbe_bb16327;
@@ -12919,7 +12919,7 @@ llvm_cbe_lAEFF:
   llvm_cbe_tmp18053 = ((((llvm_cbe_tmp18038_2e_rle)) - ((llvm_cbe_tmp18051))));
   llvm_cbe_tmp1805418055 = (llvm_cbe_tmp18053);
   C = ((((((((((((llvm_cbe_tmp1805418055) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1805418055 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1805418055 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18053))) >> (7))))));
   if (((llvm_cbe_tmp1805418055 & 255u) == 0u)) {
     goto llvm_cbe_bb18077;
@@ -12964,7 +12964,7 @@ llvm_cbe_bb7926:
   S = llvm_cbe_tmp7956;
   llvm_cbe_tmp7957 = *((&RAM[(123u)]));
   A = llvm_cbe_tmp7957;
-  Z = (((bool )(llvm_cbe_tmp7957 == 0)));
+  Z = (((llvm_cbe_tmp7957 == 0)));
   N = ((((((llvm_cbe_tmp7957) >> (7))))));
   llvm_cbe_tmp7973 = ((((llvm_cbe_iftmp_2e_1562_2e_0)) + ((llvm_cbe_tmp7957))));
   if ((((s8 )llvm_cbe_tmp7957) < ((s8 )0))) {
@@ -12985,7 +12985,7 @@ llvm_cbe_lA75D:
   C = 0;
   llvm_cbe_tmp7885 = Y;
   A = llvm_cbe_tmp7885;
-  Z = (((bool )(llvm_cbe_tmp7885 == 0)));
+  Z = (((llvm_cbe_tmp7885 == 0)));
   N = ((((((llvm_cbe_tmp7885) >> (7))))));
   llvm_cbe_tmp7899 = *((&RAM[(122u)]));
   llvm_cbe_tmp7901 = ((((llvm_cbe_tmp7899)) + ((llvm_cbe_tmp7885))));
@@ -13030,7 +13030,7 @@ llvm_cbe_lA92E:
   llvm_cbe_tmp10424 = ((((llvm_cbe_tmp10422)) + (-137)));
   llvm_cbe_tmp1042510426 = (llvm_cbe_tmp10424);
   C = ((((((((((((llvm_cbe_tmp1042510426) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1042510426 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1042510426 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp10424))) >> (7))))));
   if (((llvm_cbe_tmp1042510426 & 255u) == 0u)) {
     goto llvm_cbe_lA937;
@@ -13119,7 +13119,7 @@ llvm_cbe_bb14932:
 llvm_cbe_lAEFC:
   llvm_cbe_tmp18038_2e_rle52097 = llvm_cbe_tmp18038_2e_rle52097__PHI_TEMPORARY;
   llvm_cbe_tmp17994 = *((&RAM[(11433u)]));
-  Z = (((bool )(llvm_cbe_tmp17994 == 0)));
+  Z = (((llvm_cbe_tmp17994 == 0)));
   N = ((((((llvm_cbe_tmp17994) >> (7))))));
   V = (((((((((llvm_cbe_tmp17994) >> ((6))))))) & 1)));
   llvm_cbe_tmp18038_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp18038_2e_rle52097;   /* for PHI node */
@@ -13141,7 +13141,7 @@ llvm_cbe_lAEEA:
   llvm_cbe_tmp1790117902 = (llvm_cbe_tmp17900);
   llvm_cbe_tmp17903_2e_lobit48623 = ((((((((llvm_cbe_tmp1790117902) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp17903_2e_lobit48623 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1790117902 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1790117902 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17900))) >> (7))))));
   if (llvm_cbe_tmp17903_2e_lobit48623 == 0) {
     goto llvm_cbe_lAFA7;
@@ -13153,7 +13153,7 @@ llvm_cbe_lAEE3:
   llvm_cbe_tmp17874 = ((llvm_cbe_tmp1749617497 + (-165)));
   llvm_cbe_tmp1787517876 = (llvm_cbe_tmp17874);
   C = ((((((((((((llvm_cbe_tmp1787517876) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1787517876 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1787517876 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17874))) >> (7))))));
   if (((llvm_cbe_tmp1787517876 & 255u) == 0u)) {
     goto llvm_cbe_lB3F4;
@@ -13165,7 +13165,7 @@ llvm_cbe_lAECC:
   llvm_cbe_tmp17762 = ((llvm_cbe_tmp1749617497 + (-168)));
   llvm_cbe_tmp1776317764 = (llvm_cbe_tmp17762);
   C = ((((((((((((llvm_cbe_tmp1776317764) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1776317764 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1776317764 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp17762))) >> (7))))));
   if (((llvm_cbe_tmp1776317764 & 255u) == 0u)) {
     goto llvm_cbe_bb17786;
@@ -13184,7 +13184,7 @@ llvm_cbe_lAFAD:
   llvm_cbe_tmp1902719028 = (llvm_cbe_tmp19026);
   llvm_cbe_tmp19029_2e_lobit48694 = ((((((((llvm_cbe_tmp1902719028) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp19029_2e_lobit48694 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1902719028 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1902719028 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp19026))) >> (7))))));
   llvm_cbe_tmp19233 = S;
   *((&RAM[((((llvm_cbe_tmp19233)) | 256u))])) = (-81);
@@ -13203,7 +13203,7 @@ llvm_cbe_lB3F7:
   *((&RAM[((((llvm_cbe_tmp25680)) | 256u))])) = llvm_cbe_tmp25668;
   llvm_cbe_tmp25686 = *((&RAM[(78u)]));
   A = llvm_cbe_tmp25686;
-  Z = (((bool )(llvm_cbe_tmp25686 == 0)));
+  Z = (((llvm_cbe_tmp25686 == 0)));
   N = ((((((llvm_cbe_tmp25686) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp25680 + (-1)))))) | 256u))])) = llvm_cbe_tmp25686;
   *((&RAM[(((((((llvm_cbe_tmp25680 + (-2)))))) | 256u))])) = (-77);
@@ -13214,7 +13214,7 @@ llvm_cbe_lB3F7:
 llvm_cbe_lAEF7:
   A = (41);
   llvm_cbe_tmp17958 = *((&RAM[(10409u)]));
-  Z = (((bool )(llvm_cbe_tmp17958 == 0)));
+  Z = (((llvm_cbe_tmp17958 == 0)));
   N = ((((((llvm_cbe_tmp17958) >> (7))))));
   V = (((((((((llvm_cbe_tmp17958) >> ((6))))))) & 1)));
   llvm_cbe_tmp18038_2e_rle52097__PHI_TEMPORARY = (41);   /* for PHI node */
@@ -13234,7 +13234,7 @@ llvm_cbe_lB205:
   llvm_cbe_tmp22315 = ((((llvm_cbe_tmp22313)) + (-44)));
   llvm_cbe_tmp2231622317 = (llvm_cbe_tmp22315);
   C = ((((((((((((llvm_cbe_tmp2231622317) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2231622317 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2231622317 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp22315))) >> (7))))));
   if (((llvm_cbe_tmp2231622317 & 255u) == 0u)) {
     goto llvm_cbe_lB1DB;
@@ -13288,7 +13288,7 @@ llvm_cbe_lB73E:
   llvm_cbe_tmp31046 = ((((llvm_cbe_tmp31044)) + (-41)));
   llvm_cbe_tmp3104731048 = (llvm_cbe_tmp31046);
   C = ((((((((((((llvm_cbe_tmp3104731048) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3104731048 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3104731048 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp31046))) >> (7))))));
   if (((llvm_cbe_tmp3104731048 & 255u) == 0u)) {
     goto llvm_cbe_lB748;
@@ -13499,7 +13499,7 @@ llvm_cbe_lB09A:
 llvm_cbe_bb20364:
   llvm_cbe_tmp20365 = *((&RAM[(16u)]));
   A = llvm_cbe_tmp20365;
-  Z = (((bool )(llvm_cbe_tmp20365 == 0)));
+  Z = (((llvm_cbe_tmp20365 == 0)));
   N = ((((((llvm_cbe_tmp20365) >> (7))))));
   if (llvm_cbe_tmp20365 == 0) {
     goto llvm_cbe_bb20381;
@@ -13526,7 +13526,7 @@ llvm_cbe_lE214:
 llvm_cbe_lB245:
   X = (18);
   llvm_cbe_tmp22823 = *((&RAM[(3746u)]));
-  Z = (((bool )(llvm_cbe_tmp22823 == 0)));
+  Z = (((llvm_cbe_tmp22823 == 0)));
   N = ((((((llvm_cbe_tmp22823) >> (7))))));
   V = (((((((((llvm_cbe_tmp22823) >> ((6))))))) & 1)));
   goto llvm_cbe_lA437;
@@ -13535,7 +13535,7 @@ llvm_cbe_lB245_2e_loopexit:
   X = llvm_cbe_tmp2268022681;
   A = llvm_cbe_tmp2278222783;
   C = ((((((llvm_cbe_tmp22797) >> (8u))))));
-  Z = (((bool )(llvm_cbe_tmp2278222783 == 0)));
+  Z = (((llvm_cbe_tmp2278222783 == 0)));
   N = ((((((llvm_cbe_tmp2278222783) >> (7))))));
   V = llvm_cbe_iftmp_2e_5274_2e_0;
   Y = (3);
@@ -13652,7 +13652,7 @@ llvm_cbe_lB20E:
   X = llvm_cbe_tmp22403;
   llvm_cbe_tmp22415 = *((&RAM[(48u)]));
   A = llvm_cbe_tmp22415;
-  Z = (((bool )(llvm_cbe_tmp22415 == 0)));
+  Z = (((llvm_cbe_tmp22415 == 0)));
   N = ((((((llvm_cbe_tmp22415) >> (7))))));
   llvm_cbe_V_2e_promoted51471 = V;
   llvm_cbe_Y_2e_promoted51472 = Y;
@@ -13673,7 +13673,7 @@ llvm_cbe_lA9E3:
   llvm_cbe_tmp11526 = ((((llvm_cbe_tmp11524)) + (-6)));
   llvm_cbe_tmp1152711528 = (llvm_cbe_tmp11526);
   C = ((((((((((((llvm_cbe_tmp1152711528) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1152711528 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1152711528 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp11526))) >> (7))))));
   if (((llvm_cbe_tmp1152711528 & 255u) == 0u)) {
     goto llvm_cbe_bb11550;
@@ -13700,7 +13700,7 @@ llvm_cbe_lB1CC:
 llvm_cbe_lB1BB:
   llvm_cbe_tmp21916 = *((&RAM[(102u)]));
   A = llvm_cbe_tmp21916;
-  Z = (((bool )(llvm_cbe_tmp21916 == 0)));
+  Z = (((llvm_cbe_tmp21916 == 0)));
   N = ((((((llvm_cbe_tmp21916) >> (7))))));
   if ((((s8 )llvm_cbe_tmp21916) < ((s8 )0))) {
     goto llvm_cbe_lB1CC;
@@ -13719,7 +13719,7 @@ llvm_cbe_lB78E:
 llvm_cbe_lB7A4:
   llvm_cbe_tmp31679 = *((&RAM[(100u)]));
   X = llvm_cbe_tmp31679;
-  Z = (((bool )(llvm_cbe_tmp31679 == 0)));
+  Z = (((llvm_cbe_tmp31679 == 0)));
   N = ((((((llvm_cbe_tmp31679) >> (7))))));
   if (llvm_cbe_tmp31679 == 0) {
     goto llvm_cbe_bb31695;
@@ -13731,7 +13731,7 @@ llvm_cbe_lB7F7:
   llvm_cbe_tmp32105_2e_rle = llvm_cbe_tmp32105_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp32049 = *((&RAM[(102u)]));
   A = llvm_cbe_tmp32049;
-  Z = (((bool )(llvm_cbe_tmp32049 == 0)));
+  Z = (((llvm_cbe_tmp32049 == 0)));
   N = ((((((llvm_cbe_tmp32049) >> (7))))));
   if ((((s8 )llvm_cbe_tmp32049) < ((s8 )0))) {
     goto llvm_cbe_lB248;
@@ -13754,7 +13754,7 @@ llvm_cbe_lB80D:
   *((&RAM[((((llvm_cbe_tmp32173)) | 256u))])) = llvm_cbe_tmp32161;
   llvm_cbe_tmp32179 = *((&RAM[(20u)]));
   A = llvm_cbe_tmp32179;
-  Z = (((bool )(llvm_cbe_tmp32179 == 0)));
+  Z = (((llvm_cbe_tmp32179 == 0)));
   N = ((((((llvm_cbe_tmp32179) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp32173 + (-1)))))) | 256u))])) = llvm_cbe_tmp32179;
   *((&RAM[(((((((llvm_cbe_tmp32173 + (-2)))))) | 256u))])) = (-72);
@@ -13780,7 +13780,7 @@ llvm_cbe_bb32065:
   llvm_cbe_tmp3208132082 = (llvm_cbe_tmp32080);
   llvm_cbe_tmp32083_2e_lobit49433 = ((((((((llvm_cbe_tmp3208132082) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp32083_2e_lobit49433 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3208132082 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3208132082 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp32080))) >> (7))))));
   if (llvm_cbe_tmp32083_2e_lobit49433 == 0) {
     goto llvm_cbe_lB248;
@@ -13810,7 +13810,7 @@ llvm_cbe_lB24D:
   Y = 1;
   X = (19);
   A = llvm_cbe_tmp22390;
-  Z = (((bool )(llvm_cbe_tmp22390 == 0)));
+  Z = (((llvm_cbe_tmp22390 == 0)));
   N = 0;
   if (llvm_cbe_tmp22390 == 0) {
     goto llvm_cbe_bb22883;
@@ -13821,7 +13821,7 @@ llvm_cbe_lB24D:
 llvm_cbe_bb25382:
   X = (21);
   llvm_cbe_tmp25397 = *((&RAM[(7074u)]));
-  Z = (((bool )(llvm_cbe_tmp25397 == 0)));
+  Z = (((llvm_cbe_tmp25397 == 0)));
   N = ((((((llvm_cbe_tmp25397) >> (7))))));
   V = (((((((((llvm_cbe_tmp25397) >> ((6))))))) & 1)));
   goto llvm_cbe_lA437;
@@ -13830,7 +13830,7 @@ llvm_cbe_lB3A6:
   llvm_cbe_tmp25353 = *((&RAM[(58u)]));
   llvm_cbe_tmp25366 = ((llvm_cbe_tmp25353 + 1));
   X = llvm_cbe_tmp25366;
-  Z = (((bool )(llvm_cbe_tmp25366 == 0)));
+  Z = (((llvm_cbe_tmp25366 == 0)));
   N = ((((((llvm_cbe_tmp25366) >> (7))))));
   if (llvm_cbe_tmp25366 == 0) {
     goto llvm_cbe_bb25382;
@@ -13887,7 +13887,7 @@ llvm_cbe_lB403:
   Y = (3);
   llvm_cbe_tmp25833 = *((&RAM[(((llvm_cbe_tmp25778 + 3u) & 65535u))]));
   A = llvm_cbe_tmp25833;
-  Z = (((bool )(llvm_cbe_tmp25833 == 0)));
+  Z = (((llvm_cbe_tmp25833 == 0)));
   N = ((((((llvm_cbe_tmp25833) >> (7))))));
   if (llvm_cbe_tmp25833 == 0) {
     goto llvm_cbe_lB3AE;
@@ -13907,7 +13907,7 @@ llvm_cbe_lB4CA:
   llvm_cbe_tmp26915 = ((((llvm_cbe_tmp26901)) + (-34)));
   llvm_cbe_tmp2691626917 = (llvm_cbe_tmp26915);
   C = ((((((((((((llvm_cbe_tmp2691626917) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2691626917 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2691626917 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp26915))) >> (7))))));
   if (((llvm_cbe_tmp2691626917 & 255u) == 0u)) {
     goto llvm_cbe_bb26939;
@@ -13933,7 +13933,7 @@ llvm_cbe_lB6F6:
   S = llvm_cbe_tmp30591;
   llvm_cbe_tmp30596 = *((&RAM[((((llvm_cbe_tmp30591)) | 256u))]));
   A = llvm_cbe_tmp30596;
-  Z = (((bool )(llvm_cbe_tmp30596 == 0)));
+  Z = (((llvm_cbe_tmp30596 == 0)));
   N = ((((((llvm_cbe_tmp30596) >> (7))))));
   goto llvm_cbe_lB4CA;
 
@@ -13953,7 +13953,7 @@ llvm_cbe_lB938:
   llvm_cbe_tmp34208 = *((&RAM[(97u)]));
   llvm_cbe_tmp34209 = ((llvm_cbe_tmp34208 + 1));
   *((&RAM[(97u)])) = llvm_cbe_tmp34209;
-  Z = (((bool )(llvm_cbe_tmp34209 == 0)));
+  Z = (((llvm_cbe_tmp34209 == 0)));
   N = ((((((llvm_cbe_tmp34209) >> (7))))));
   if (llvm_cbe_tmp34209 == 0) {
     goto llvm_cbe_lB97E;
@@ -13966,7 +13966,7 @@ llvm_cbe_bb33881:
   V = llvm_cbe_iftmp_2e_8192_2e_0;
   llvm_cbe_tmp3388333884 = (llvm_cbe_tmp33859);
   A = llvm_cbe_tmp3388333884;
-  Z = (((bool )(llvm_cbe_tmp3388333884 == 0)));
+  Z = (((llvm_cbe_tmp3388333884 == 0)));
   N = ((((((llvm_cbe_tmp3388333884) >> (7))))));
   llvm_cbe_iftmp_2e_8199_2e_0 = ((((((((((llvm_cbe_tmp33859))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_8199_2e_0;
@@ -13993,7 +13993,7 @@ llvm_cbe_bb33814:
   *((&RAM[(99u)])) = ((llvm_cbe_tmp33792));
   llvm_cbe_tmp33840 = *((&RAM[(98u)]));
   A = llvm_cbe_tmp33840;
-  Z = (((bool )(llvm_cbe_tmp33840 == 0)));
+  Z = (((llvm_cbe_tmp33840 == 0)));
   N = ((((((llvm_cbe_tmp33840) >> (7))))));
   llvm_cbe_tmp33854 = *((&RAM[(106u)]));
   llvm_cbe_tmp33859 = (((((((llvm_cbe_tmp33854)) + ((llvm_cbe_tmp33840))))) + ((llvm_cbe_iftmp_2e_8184_2e_0))));
@@ -14019,7 +14019,7 @@ llvm_cbe_bb33747:
   *((&RAM[(100u)])) = ((llvm_cbe_tmp33725));
   llvm_cbe_tmp33773 = *((&RAM[(99u)]));
   A = llvm_cbe_tmp33773;
-  Z = (((bool )(llvm_cbe_tmp33773 == 0)));
+  Z = (((llvm_cbe_tmp33773 == 0)));
   N = ((((((llvm_cbe_tmp33773) >> (7))))));
   llvm_cbe_tmp33787 = *((&RAM[(107u)]));
   llvm_cbe_tmp33792 = (((((((llvm_cbe_tmp33787)) + ((llvm_cbe_tmp33773))))) + ((llvm_cbe_iftmp_2e_8169_2e_0))));
@@ -14045,7 +14045,7 @@ llvm_cbe_bb33680:
   *((&RAM[(101u)])) = ((llvm_cbe_tmp33658));
   llvm_cbe_tmp33706 = *((&RAM[(100u)]));
   A = llvm_cbe_tmp33706;
-  Z = (((bool )(llvm_cbe_tmp33706 == 0)));
+  Z = (((llvm_cbe_tmp33706 == 0)));
   N = ((((((llvm_cbe_tmp33706) >> (7))))));
   llvm_cbe_tmp33720 = *((&RAM[(108u)]));
   llvm_cbe_tmp33725 = (((((((llvm_cbe_tmp33720)) + ((llvm_cbe_tmp33706))))) + ((llvm_cbe_iftmp_2e_8154_2e_0))));
@@ -14071,7 +14071,7 @@ llvm_cbe_bb33613:
   *((&RAM[(112u)])) = ((llvm_cbe_tmp33591));
   llvm_cbe_tmp33639 = *((&RAM[(101u)]));
   A = llvm_cbe_tmp33639;
-  Z = (((bool )(llvm_cbe_tmp33639 == 0)));
+  Z = (((llvm_cbe_tmp33639 == 0)));
   N = ((((((llvm_cbe_tmp33639) >> (7))))));
   llvm_cbe_tmp33653 = *((&RAM[(109u)]));
   llvm_cbe_tmp33658 = (((((((llvm_cbe_tmp33653)) + ((llvm_cbe_tmp33639))))) + ((llvm_cbe_iftmp_2e_8139_2e_0))));
@@ -14102,7 +14102,7 @@ llvm_cbe_lB8FE:
 
 llvm_cbe_lB8A3:
   llvm_cbe_tmp32914 = *((&RAM[(111u)]));
-  Z = (((bool )(llvm_cbe_tmp32914 == 0)));
+  Z = (((llvm_cbe_tmp32914 == 0)));
   llvm_cbe_tmp32914_2e_lobit = (((((llvm_cbe_tmp32914) >> (7)))));
   N = llvm_cbe_tmp32914_2e_lobit;
   V = (((((((((llvm_cbe_tmp32914) >> ((6))))))) & 1)));
@@ -14125,7 +14125,7 @@ llvm_cbe_bb32685:
   V = llvm_cbe_iftmp_2e_7904_2e_0;
   llvm_cbe_tmp3268732688 = (llvm_cbe_tmp32663);
   A = llvm_cbe_tmp3268732688;
-  Z = (((bool )(llvm_cbe_tmp3268732688 == 0)));
+  Z = (((llvm_cbe_tmp3268732688 == 0)));
   N = ((((((llvm_cbe_tmp3268732688) >> (7))))));
   llvm_cbe_tmp32702_2e_lobit49631 = ((((((((llvm_cbe_tmp3266632667) >> (8u)))))) & 1));
   llvm_cbe_tmp3270332704 = ((llvm_cbe_tmp32702_2e_lobit49631 ^ 1));
@@ -14159,7 +14159,7 @@ llvm_cbe_lB877:
   llvm_cbe_tmp32638_2e_rle = llvm_cbe_tmp32638_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp34896_2e_rle52125 = llvm_cbe_tmp34896_2e_rle52125__PHI_TEMPORARY;
   Y = llvm_cbe_tmp32638_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp32638_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp32638_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp32638_2e_rle) >> (7))))));
   if (llvm_cbe_tmp32638_2e_rle == 0) {
     goto llvm_cbe_lB848;
@@ -14173,7 +14173,7 @@ llvm_cbe_lB86F:
   X = (105);
   llvm_cbe_tmp32626 = *((&RAM[(105u)]));
   A = llvm_cbe_tmp32626;
-  Z = (((bool )(llvm_cbe_tmp32626 == 0)));
+  Z = (((llvm_cbe_tmp32626 == 0)));
   N = ((((((llvm_cbe_tmp32626) >> (7))))));
   llvm_cbe_tmp32638_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp32626;   /* for PHI node */
   llvm_cbe_tmp34896_2e_rle52125__PHI_TEMPORARY = (105);   /* for PHI node */
@@ -14187,7 +14187,7 @@ llvm_cbe_lB853:
   *((&RAM[(111u)])) = (((llvm_cbe_tmp32547 ^ llvm_cbe_tmp32534not)));
   llvm_cbe_tmp32562 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp32562;
-  Z = (((bool )(llvm_cbe_tmp32562 == 0)));
+  Z = (((llvm_cbe_tmp32562 == 0)));
   N = ((((((llvm_cbe_tmp32562) >> (7))))));
   if (llvm_cbe_tmp32562 == 0) {
     goto llvm_cbe_lBBFC;
@@ -14200,7 +14200,7 @@ llvm_cbe_bb43878:
   Y = llvm_cbe_tmp43837;
   llvm_cbe_tmp43879 = *((&RAM[(86u)]));
   A = llvm_cbe_tmp43879;
-  Z = (((bool )(llvm_cbe_tmp43879 == 0)));
+  Z = (((llvm_cbe_tmp43879 == 0)));
   N = ((((((llvm_cbe_tmp43879) >> (7))))));
   *((&RAM[(112u)])) = llvm_cbe_tmp43879;
   *((&RAM[((((llvm_cbe_tmp43803)) | 256u))])) = (-32);
@@ -14251,7 +14251,7 @@ llvm_cbe_bb43725:
   V = llvm_cbe_iftmp_2e_10546_2e_0;
   llvm_cbe_tmp4372743728 = (llvm_cbe_tmp43707);
   A = llvm_cbe_tmp4372743728;
-  Z = (((bool )(llvm_cbe_tmp4372743728 == 0)));
+  Z = (((llvm_cbe_tmp4372743728 == 0)));
   N = ((((((llvm_cbe_tmp4372743728) >> (7))))));
   C = (((((((((((llvm_cbe_tmp43707))) >> (8u)))))) & 1)));
   if (llvm_cbe_tmp4372743728 == 0) {
@@ -14271,7 +14271,7 @@ llvm_cbe_bb43713:
 llvm_cbe_lE011:
   llvm_cbe_tmp43690 = *((&RAM[(7u)]));
   A = llvm_cbe_tmp43690;
-  Z = (((bool )(llvm_cbe_tmp43690 == 0)));
+  Z = (((llvm_cbe_tmp43690 == 0)));
   N = ((((((llvm_cbe_tmp43690) >> (7))))));
   C = 0;
   llvm_cbe_tmp43707 = ((((llvm_cbe_tmp43690)) + (129)));
@@ -14312,7 +14312,7 @@ llvm_cbe_lBD86:
   *((&RAM[(111u)])) = llvm_cbe_tmp40775;
   llvm_cbe_tmp40788 = *((&RAM[(97u)]));
   X = llvm_cbe_tmp40788;
-  Z = (((bool )(llvm_cbe_tmp40788 == 0)));
+  Z = (((llvm_cbe_tmp40788 == 0)));
   N = ((((((llvm_cbe_tmp40788) >> (7))))));
   if (llvm_cbe_tmp40788 == 0) {
     goto llvm_cbe_lBBFC;
@@ -14338,7 +14338,7 @@ llvm_cbe_bb11646:
   llvm_cbe_tmp11648 = ((llvm_cbe_tmp11630 + 1));
   X = llvm_cbe_tmp11648;
   A = llvm_cbe_tmp11648;
-  Z = (((bool )(llvm_cbe_tmp11648 == 0)));
+  Z = (((llvm_cbe_tmp11648 == 0)));
   N = ((((((llvm_cbe_tmp11648) >> (7))))));
   llvm_cbe_tmp11672 = S;
   *((&RAM[((((llvm_cbe_tmp11672)) | 256u))])) = (-86);
@@ -14350,7 +14350,7 @@ llvm_cbe_bb11646:
 llvm_cbe_lA9FF:
   llvm_cbe_tmp11630 = A;
   X = llvm_cbe_tmp11630;
-  Z = (((bool )(llvm_cbe_tmp11630 == 0)));
+  Z = (((llvm_cbe_tmp11630 == 0)));
   N = ((((((llvm_cbe_tmp11630) >> (7))))));
   if (llvm_cbe_tmp11630 == 0) {
     goto llvm_cbe_lAA07;
@@ -14363,7 +14363,7 @@ llvm_cbe_bb36749:
   V = llvm_cbe_iftmp_2e_8838_2e_0;
   llvm_cbe_tmp3675136752 = (llvm_cbe_tmp36731);
   A = llvm_cbe_tmp3675136752;
-  Z = (((bool )(llvm_cbe_tmp3675136752 == 0)));
+  Z = (((llvm_cbe_tmp3675136752 == 0)));
   N = ((((((llvm_cbe_tmp3675136752) >> (7))))));
   llvm_cbe_tmp36766 = ((llvm_cbe_tmp36731)) & 256u;
   C = ((((((llvm_cbe_tmp36766) >> (8u))))));
@@ -14394,7 +14394,7 @@ llvm_cbe_bb36725:
 llvm_cbe_lBAE5:
   llvm_cbe_tmp36709 = A;
   X = llvm_cbe_tmp36709;
-  Z = (((bool )(llvm_cbe_tmp36709 == 0)));
+  Z = (((llvm_cbe_tmp36709 == 0)));
   N = ((((((llvm_cbe_tmp36709) >> (7))))));
   if (llvm_cbe_tmp36709 == 0) {
     goto llvm_cbe_lBAF8;
@@ -14435,7 +14435,7 @@ llvm_cbe_bb34178:
   V = llvm_cbe_iftmp_2e_8238_2e_0;
   llvm_cbe_tmp3418034181 = (llvm_cbe_tmp34160);
   A = llvm_cbe_tmp3418034181;
-  Z = (((bool )(llvm_cbe_tmp3418034181 == 0)));
+  Z = (((llvm_cbe_tmp3418034181 == 0)));
   N = ((((((llvm_cbe_tmp3418034181) >> (7))))));
   llvm_cbe_iftmp_2e_8245_2e_0 = ((((((((((llvm_cbe_tmp34160))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_8245_2e_0;
@@ -14457,7 +14457,7 @@ llvm_cbe_bb34166:
 llvm_cbe_bb34142:
   llvm_cbe_tmp34143not = ((llvm_cbe_tmp3412034121 ^ (-1)));
   A = llvm_cbe_tmp34143not;
-  Z = (((bool )(llvm_cbe_tmp3412034121 == 0xff)));
+  Z = (((llvm_cbe_tmp3412034121 == 0xff)));
   N = ((((((llvm_cbe_tmp34143not) >> (7))))));
   llvm_cbe_tmp34160 = (((((((llvm_cbe_tmp34143not)) + (1)))) + ((llvm_cbe_tmp3413634137))));
   if ((((s8 )llvm_cbe_tmp3412034121) > ((s8 )(-1)))) {
@@ -14471,7 +14471,7 @@ llvm_cbe_bb34118:
   V = llvm_cbe_iftmp_2e_8223_2e_0;
   llvm_cbe_tmp3412034121 = (llvm_cbe_tmp34096);
   A = llvm_cbe_tmp3412034121;
-  Z = (((bool )(llvm_cbe_tmp3412034121 == 0)));
+  Z = (((llvm_cbe_tmp3412034121 == 0)));
   N = ((((((llvm_cbe_tmp3412034121) >> (7))))));
   llvm_cbe_tmp34135 = llvm_cbe_tmp3409934100 & 256u;
   llvm_cbe_tmp3413634137 = ((((((((llvm_cbe_tmp34135) >> (8u)))))) ^ 1));
@@ -14506,7 +14506,7 @@ llvm_cbe_lB929_2e_preheader:
   llvm_cbe_tmp33411_2e_lobit = (((((llvm_cbe__2e_tmp_2e_051427) >> (7)))));
   *((&RAM[(98u)])) = llvm_cbe__2e_tmp_2e_051427;
   X = llvm_cbe__2e_tmp_2e_051427;
-  Z = (((bool )(llvm_cbe__2e_tmp_2e_051427 == 0)));
+  Z = (((llvm_cbe__2e_tmp_2e_051427 == 0)));
   N = llvm_cbe_tmp33411_2e_lobit;
   V = llvm_cbe_V_2e_tmp_2e_051428;
   A = llvm_cbe_A_2e_tmp_2e_051429;
@@ -14613,7 +14613,7 @@ llvm_cbe_bb33348:
   V = llvm_cbe_iftmp_2e_8059_2e_0;
   llvm_cbe_tmp3335033351 = (llvm_cbe_tmp33321);
   A = llvm_cbe_tmp3335033351;
-  Z = (((bool )(llvm_cbe_tmp3335033351 == 0)));
+  Z = (((llvm_cbe_tmp3335033351 == 0)));
   N = ((((((llvm_cbe_tmp3335033351) >> (7))))));
   llvm_cbe_tmp33365_2e_lobit49599 = ((((((((llvm_cbe_tmp3332433325) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp33365_2e_lobit49599 ^ 1)));
@@ -14640,7 +14640,7 @@ llvm_cbe_bb33270:
   *((&RAM[(99u)])) = ((llvm_cbe_tmp33243));
   llvm_cbe_tmp33296 = *((&RAM[((llvm_cbe_tmp33057_2e_rle52150 + 1u))]));
   A = llvm_cbe_tmp33296;
-  Z = (((bool )(llvm_cbe_tmp33296 == 0)));
+  Z = (((llvm_cbe_tmp33296 == 0)));
   N = ((((((llvm_cbe_tmp33296) >> (7))))));
   llvm_cbe_tmp33315 = *((&RAM[(((llvm_cbe_tmp3307633077 + 1u) & 255u))]));
   llvm_cbe_tmp33321 = ((((((((((llvm_cbe_tmp33296)) + (-1)))) - ((llvm_cbe_tmp33315))))) + ((llvm_cbe_tmp3328833289))));
@@ -14667,7 +14667,7 @@ llvm_cbe_bb33192:
   *((&RAM[(100u)])) = ((llvm_cbe_tmp33165));
   llvm_cbe_tmp33218 = *((&RAM[((llvm_cbe_tmp33057_2e_rle52150 + 2u))]));
   A = llvm_cbe_tmp33218;
-  Z = (((bool )(llvm_cbe_tmp33218 == 0)));
+  Z = (((llvm_cbe_tmp33218 == 0)));
   N = ((((((llvm_cbe_tmp33218) >> (7))))));
   llvm_cbe_tmp33237 = *((&RAM[(((llvm_cbe_tmp3307633077 + 2u) & 255u))]));
   llvm_cbe_tmp33243 = ((((((((((llvm_cbe_tmp33218)) + (-1)))) - ((llvm_cbe_tmp33237))))) + ((llvm_cbe_tmp3321033211))));
@@ -14694,7 +14694,7 @@ llvm_cbe_bb33114:
   *((&RAM[(101u)])) = ((llvm_cbe_tmp33087));
   llvm_cbe_tmp33140 = *((&RAM[((llvm_cbe_tmp33057_2e_rle52150 + 3u))]));
   A = llvm_cbe_tmp33140;
-  Z = (((bool )(llvm_cbe_tmp33140 == 0)));
+  Z = (((llvm_cbe_tmp33140 == 0)));
   N = ((((((llvm_cbe_tmp33140) >> (7))))));
   llvm_cbe_tmp33159 = *((&RAM[(((llvm_cbe_tmp3307633077 + 3u) & 255u))]));
   llvm_cbe_tmp33165 = ((((((((((llvm_cbe_tmp33140)) + (-1)))) - ((llvm_cbe_tmp33159))))) + ((llvm_cbe_tmp3313233133))));
@@ -14721,7 +14721,7 @@ llvm_cbe_bb33031:
   *((&RAM[(112u)])) = ((llvm_cbe_tmp33009));
   llvm_cbe_tmp33062 = *((&RAM[((llvm_cbe_tmp33057_2e_rle52150 + 4u))]));
   A = llvm_cbe_tmp33062;
-  Z = (((bool )(llvm_cbe_tmp33062 == 0)));
+  Z = (((llvm_cbe_tmp33062 == 0)));
   N = ((((((llvm_cbe_tmp33062) >> (7))))));
   llvm_cbe_tmp3307633077 = (llvm_cbe_tmp32952);
   llvm_cbe_tmp33081 = *((&RAM[(((llvm_cbe_tmp3307633077 + 4u) & 255u))]));
@@ -14747,7 +14747,7 @@ llvm_cbe_lB8AF:
   llvm_cbe_tmp32990 = A;
   llvm_cbe_tmp32990not = ((llvm_cbe_tmp32990 ^ (-1)));
   A = llvm_cbe_tmp32990not;
-  Z = (((bool )(llvm_cbe_tmp32990 == 0xff)));
+  Z = (((llvm_cbe_tmp32990 == 0xff)));
   N = ((((((llvm_cbe_tmp32990not) >> (7))))));
   llvm_cbe_tmp33004 = *((&RAM[(86u)]));
   llvm_cbe_tmp33009 = (((((((llvm_cbe_tmp33004)) + ((llvm_cbe_tmp32990not))))) + (1)));
@@ -14763,7 +14763,7 @@ llvm_cbe_bb32940:
   llvm_cbe_tmp32954 = ((((llvm_cbe_tmp32952)) + (-105)));
   llvm_cbe_tmp3295532956 = (llvm_cbe_tmp32954);
   C = ((((((((((((llvm_cbe_tmp3295532956) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3295532956 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3295532956 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp32954))) >> (7))))));
   if (((llvm_cbe_tmp3295532956 & 255u) == 0u)) {
     llvm_cbe_tmp33057_2e_rle52150__PHI_TEMPORARY = 97u;   /* for PHI node */
@@ -14808,7 +14808,7 @@ llvm_cbe_lBB8F:
   *((&RAM[(100u)])) = llvm_cbe_tmp37942;
   llvm_cbe_tmp37955 = *((&RAM[(41u)]));
   A = llvm_cbe_tmp37955;
-  Z = (((bool )(llvm_cbe_tmp37955 == 0)));
+  Z = (((llvm_cbe_tmp37955 == 0)));
   N = ((((((llvm_cbe_tmp37955) >> (7))))));
   *((&RAM[(101u)])) = llvm_cbe_tmp37955;
   goto llvm_cbe_lB8D7;
@@ -14890,7 +14890,7 @@ llvm_cbe_lBB4F:
   llvm_cbe_tmp37402 = *((&RAM[(106u)]));
   llvm_cbe_tmp37408 = (((((((llvm_cbe_tmp37402)) << (1)))) | ((((((llvm_cbe_tmp37382) >> ((8)))))))));
   llvm_cbe_tmp3741037411 = (((((((llvm_cbe_tmp37408) >> ((8))))))));
-  llvm_cbe_tmp3741537416 = ((bool )((((llvm_cbe_tmp37408)) & 255u) == 0u));
+  llvm_cbe_tmp3741537416 = (((((llvm_cbe_tmp37408)) & 255u) == 0u));
   llvm_cbe_tmp3741737418 = (llvm_cbe_tmp37408);
   llvm_cbe_tmp3741737418_2e_lobit = (((((llvm_cbe_tmp3741737418) >> (7)))));
   *((&RAM[(106u)])) = llvm_cbe_tmp3741737418;
@@ -15036,7 +15036,7 @@ llvm_cbe_lBB3F_2e_preheader:
   llvm_cbe_C_2e_tmp_2e_051405_2e_in_2e_in_2e_in_2e_in_2e_in = llvm_cbe_C_2e_tmp_2e_051405_2e_in_2e_in_2e_in_2e_in_2e_in__PHI_TEMPORARY;
   llvm_cbe_Z_2e_tmp_2e_051404_2e_in = ((llvm_cbe_Z_2e_tmp_2e_051404_2e_in__PHI_TEMPORARY)&1);
   llvm_cbe_N_2e_tmp_2e_051399_2e_in_2e_in = llvm_cbe_N_2e_tmp_2e_051399_2e_in_2e_in__PHI_TEMPORARY;
-  llvm_cbe_Z_2e_tmp_2e_051404 = ((bool )llvm_cbe_Z_2e_tmp_2e_051404_2e_in);
+  llvm_cbe_Z_2e_tmp_2e_051404 = (llvm_cbe_Z_2e_tmp_2e_051404_2e_in);
   llvm_cbe_C_2e_tmp_2e_051405 = (((((((((((((llvm_cbe_C_2e_tmp_2e_051405_2e_in_2e_in_2e_in_2e_in_2e_in))) >> (8u)))))) & 1))) ^ 1));
   llvm_cbe_N_2e_tmp_2e_051399 = (((((((llvm_cbe_N_2e_tmp_2e_051399_2e_in_2e_in))) >> (7)))));
   llvm_cbe_Y_2e_tmp_2e_151409__PHI_TEMPORARY = llvm_cbe_Y_2e_tmp_2e_251410;   /* for PHI node */
@@ -15112,7 +15112,7 @@ llvm_cbe_lBB21:
   llvm_cbe_tmp36988 = *((&RAM[(97u)]));
   llvm_cbe_tmp36989 = ((llvm_cbe_tmp36988 + 1));
   *((&RAM[(97u)])) = llvm_cbe_tmp36989;
-  Z = (((bool )(llvm_cbe_tmp36989 == 0)));
+  Z = (((llvm_cbe_tmp36989 == 0)));
   N = ((((((llvm_cbe_tmp36989) >> (7))))));
   if (llvm_cbe_tmp36989 == 0) {
     goto llvm_cbe_lB97E;
@@ -15164,7 +15164,7 @@ llvm_cbe_lBC44:
   llvm_cbe_tmp38908 = C;
   llvm_cbe_tmp38910 = ((((((((((llvm_cbe_tmp38880_2e_rle ^ (-1)))))) << (1)))) | (((s16 )(s8 )llvm_cbe_tmp38908))));
   C = ((((((((llvm_cbe_tmp38910) >> ((8)))))))));
-  Z = (((bool )((((llvm_cbe_tmp38910)) & 255u) == 0u)));
+  Z = ((((((llvm_cbe_tmp38910)) & 255u) == 0u)));
   llvm_cbe_tmp3891938920 = (llvm_cbe_tmp38910);
   N = ((((((llvm_cbe_tmp3891938920) >> (7))))));
   A = llvm_cbe_tmp3891938920;
@@ -15189,7 +15189,7 @@ llvm_cbe_lAED7:
   llvm_cbe_tmp17848 = *((&RAM[(100u)]));
   llvm_cbe_tmp17860not = ((llvm_cbe_tmp17848 ^ (-1)));
   A = llvm_cbe_tmp17860not;
-  Z = (((bool )(llvm_cbe_tmp17848 == 0xff)));
+  Z = (((llvm_cbe_tmp17848 == 0xff)));
   N = ((((((llvm_cbe_tmp17860not) >> (7))))));
   llvm_cbe_tmp25315_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp17860not;   /* for PHI node */
   goto llvm_cbe_lB391;
@@ -15201,14 +15201,14 @@ llvm_cbe_bb18630:
   llvm_cbe_tmp18701 = *((&RAM[(((llvm_cbe_tmp18647 + 1u) & 65535u))]));
   Y = llvm_cbe_tmp18701;
   A = llvm_cbe_tmp18653;
-  Z = (((bool )(llvm_cbe_tmp18653 == 0)));
+  Z = (((llvm_cbe_tmp18653 == 0)));
   N = ((((((llvm_cbe_tmp18653) >> (7))))));
   llvm_cbe_tmp25315_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp18653;   /* for PHI node */
   goto llvm_cbe_lB391;
 
 llvm_cbe_lAF5D:
   llvm_cbe_tmp18604 = *((&RAM[(14u)]));
-  Z = (((bool )(llvm_cbe_tmp18604 == 0)));
+  Z = (((llvm_cbe_tmp18604 == 0)));
   llvm_cbe_tmp18604_2e_lobit = (((((llvm_cbe_tmp18604) >> (7)))));
   N = llvm_cbe_tmp18604_2e_lobit;
   V = (((((((((llvm_cbe_tmp18604) >> ((6))))))) & 1)));
@@ -15229,7 +15229,7 @@ llvm_cbe_lAF2B:
   Y = llvm_cbe_tmp18416;
   llvm_cbe_tmp18428 = *((&RAM[(13u)]));
   A = llvm_cbe_tmp18428;
-  Z = (((bool )(llvm_cbe_tmp18428 == 0)));
+  Z = (((llvm_cbe_tmp18428 == 0)));
   N = ((((((llvm_cbe_tmp18428) >> (7))))));
   if (llvm_cbe_tmp18428 == 0) {
     goto llvm_cbe_lAF5D;
@@ -15247,7 +15247,7 @@ llvm_cbe_lB002:
   llvm_cbe_tmp19545 = (((((llvm_cbe_tmp19517 ^ llvm_cbe_tmp19463))) & llvm_cbe_tmp19543));
   llvm_cbe_tmp19559 = ((llvm_cbe_tmp19545 ^ llvm_cbe_tmp19463));
   A = llvm_cbe_tmp19559;
-  Z = (((bool )(llvm_cbe_tmp19463 == llvm_cbe_tmp19545)));
+  Z = (((llvm_cbe_tmp19463 == llvm_cbe_tmp19545)));
   N = ((((((llvm_cbe_tmp19559) >> (7))))));
   llvm_cbe_tmp25315_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp19559;   /* for PHI node */
   goto llvm_cbe_lB391;
@@ -15257,7 +15257,7 @@ llvm_cbe_bb25283:
   V = llvm_cbe_iftmp_2e_5915_2e_0;
   llvm_cbe_tmp2528525286 = (llvm_cbe_tmp25261);
   A = llvm_cbe_tmp2528525286;
-  Z = (((bool )(llvm_cbe_tmp2528525286 == 0)));
+  Z = (((llvm_cbe_tmp2528525286 == 0)));
   N = ((((((llvm_cbe_tmp2528525286) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp2526425265) >> (8u)))))) & 1))) ^ 1)));
   llvm_cbe_tmp25315_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp2528525286;   /* for PHI node */
@@ -15279,7 +15279,7 @@ llvm_cbe_bb25209:
   Y = ((llvm_cbe_tmp25187));
   llvm_cbe_tmp25241 = *((&RAM[(52u)]));
   A = llvm_cbe_tmp25241;
-  Z = (((bool )(llvm_cbe_tmp25241 == 0)));
+  Z = (((llvm_cbe_tmp25241 == 0)));
   N = ((((((llvm_cbe_tmp25241) >> (7))))));
   llvm_cbe_tmp25255 = *((&RAM[(50u)]));
   llvm_cbe_tmp25261 = ((((((((((llvm_cbe_tmp25241)) + (-1)))) - ((llvm_cbe_tmp25255))))) + ((llvm_cbe_tmp2522725228))));
@@ -15302,7 +15302,7 @@ llvm_cbe_lB387:
   C = 1;
   llvm_cbe_tmp25167 = *((&RAM[(51u)]));
   A = llvm_cbe_tmp25167;
-  Z = (((bool )(llvm_cbe_tmp25167 == 0)));
+  Z = (((llvm_cbe_tmp25167 == 0)));
   N = ((((((llvm_cbe_tmp25167) >> (7))))));
   llvm_cbe_tmp25181 = *((&RAM[(49u)]));
   llvm_cbe_tmp25187 = ((((((((((llvm_cbe_tmp25167)) + (-1)))) - ((llvm_cbe_tmp25181))))) + (1)));
@@ -15334,7 +15334,7 @@ llvm_cbe_bb31602:
   llvm_cbe_tmp31625 = *((&RAM[(((((llvm_cbe_tmp31616)) << 8u) | ((llvm_cbe_tmp31614))))]));
   A = llvm_cbe_tmp31625;
   Y = llvm_cbe_tmp31625;
-  Z = (((bool )(llvm_cbe_tmp31625 == 0)));
+  Z = (((llvm_cbe_tmp31625 == 0)));
   N = ((((((llvm_cbe_tmp31625) >> (7))))));
   goto llvm_cbe_lB3A2;
 
@@ -15350,7 +15350,7 @@ llvm_cbe_lB816:
   S = llvm_cbe_tmp32273;
   llvm_cbe_tmp32278 = *((&RAM[((((llvm_cbe_tmp32273)) | 256u))]));
   A = llvm_cbe_tmp32278;
-  Z = (((bool )(llvm_cbe_tmp32278 == 0)));
+  Z = (((llvm_cbe_tmp32278 == 0)));
   N = ((((((llvm_cbe_tmp32278) >> (7))))));
   *((&RAM[(21u)])) = llvm_cbe_tmp32278;
   goto llvm_cbe_lB3A2;
@@ -15376,7 +15376,7 @@ llvm_cbe_lB072:
   llvm_cbe_tmp20068 = *((&RAM[(18u)]));
   llvm_cbe_tmp20070 = ((((llvm_cbe_tmp20048)) & llvm_cbe_tmp20068));
   A = llvm_cbe_tmp20070;
-  Z = (((bool )(llvm_cbe_tmp20070 == 0)));
+  Z = (((llvm_cbe_tmp20070 == 0)));
   N = ((((((llvm_cbe_tmp20070) >> (7))))));
   if (llvm_cbe_tmp20070 == 0) {
     goto llvm_cbe_lBC3C;
@@ -15388,7 +15388,7 @@ llvm_cbe_lB061:
   llvm_cbe_storemerge50372 = llvm_cbe_storemerge50372__PHI_TEMPORARY;
   llvm_cbe_storemerge50305_2e_in_2e_in = llvm_cbe_storemerge50305_2e_in_2e_in__PHI_TEMPORARY;
   X = llvm_cbe_storemerge50372;
-  Z = (((bool )(llvm_cbe_storemerge50305_2e_in_2e_in == 0)));
+  Z = (((llvm_cbe_storemerge50305_2e_in_2e_in == 0)));
   llvm_cbe_storemerge48725 = (((((llvm_cbe_storemerge50372) >> (7)))));
   N = llvm_cbe_storemerge48725;
   if (llvm_cbe_storemerge48725 == 0) {
@@ -15406,7 +15406,7 @@ llvm_cbe_lB02A:
 
 llvm_cbe_bb19905:
   Y = llvm_cbe_indvar51739;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_051350 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_051350 == 1)));
   N = ((((((llvm_cbe_tmp19889) >> (7))))));
   X = llvm_cbe_tmp19889;
   A = llvm_cbe_A_2e_tmp_2e_051351;
@@ -15455,7 +15455,7 @@ llvm_cbe_lB056:
   Y = (-1);
   llvm_cbe_tmp19863 = ((llvm_cbe_tmp19862_2e_rle + 1));
   X = llvm_cbe_tmp19863;
-  Z = (((bool )(llvm_cbe_tmp19863 == 0)));
+  Z = (((llvm_cbe_tmp19863 == 0)));
   N = ((((((llvm_cbe_tmp19863) >> (7))))));
   llvm_cbe_indvar51739__PHI_TEMPORARY = 0;   /* for PHI node */
   llvm_cbe_C_2e_tmp_2e_051352__PHI_TEMPORARY = llvm_cbe_tmp1980419805;   /* for PHI node */
@@ -15467,7 +15467,7 @@ llvm_cbe_bb19786:
   V = llvm_cbe_iftmp_2e_4503_2e_0;
   llvm_cbe_tmp1978819789 = (llvm_cbe_tmp19764);
   A = llvm_cbe_tmp1978819789;
-  Z = (((bool )(llvm_cbe_tmp1978819789 == 0)));
+  Z = (((llvm_cbe_tmp1978819789 == 0)));
   N = ((((((llvm_cbe_tmp1978819789) >> (7))))));
   llvm_cbe_tmp19803_2e_lobit48730 = ((((((((llvm_cbe_tmp1976719768) >> (8u)))))) & 1));
   llvm_cbe_tmp1980419805 = ((llvm_cbe_tmp19803_2e_lobit48730 ^ 1));
@@ -15495,7 +15495,7 @@ llvm_cbe_lB044:
   *((&RAM[(109u)])) = llvm_cbe_tmp19743;
   llvm_cbe_tmp19744 = A;
   X = llvm_cbe_tmp19744;
-  Z = (((bool )(llvm_cbe_tmp19744 == 0)));
+  Z = (((llvm_cbe_tmp19744 == 0)));
   N = ((((((llvm_cbe_tmp19744) >> (7))))));
   C = 1;
   llvm_cbe_tmp19758 = *((&RAM[(97u)]));
@@ -15569,7 +15569,7 @@ llvm_cbe_lBD82:
   llvm_cbe_tmp40738 = (&RAM[(((((((llvm_cbe_tmp40733 + 1))))) | 256u))]);
   llvm_cbe_tmp40739 = *llvm_cbe_tmp40738;
   A = llvm_cbe_tmp40739;
-  Z = (((bool )(llvm_cbe_tmp40739 == 0)));
+  Z = (((llvm_cbe_tmp40739 == 0)));
   N = ((((((llvm_cbe_tmp40739) >> (7))))));
   *llvm_cbe_tmp40738 = (-67);
   *((&RAM[((((llvm_cbe_tmp40733)) | 256u))])) = (-123);
@@ -15608,7 +15608,7 @@ llvm_cbe_bb7193:
   llvm_cbe_tmp71997200 = (llvm_cbe_tmp7198);
   llvm_cbe_tmp72027203 = (((((((((((llvm_cbe_tmp71997200) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp72027203;
-  Z = (((bool )((llvm_cbe_tmp71997200 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp71997200 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp7198))) >> (7))))));
   if (((llvm_cbe_tmp71997200 & 255u) == 0u)) {
     goto llvm_cbe_lA6E8;
@@ -15633,7 +15633,7 @@ llvm_cbe_lA6D7:
   llvm_cbe_tmp71707171 = (llvm_cbe_tmp7169);
   llvm_cbe_tmp71737174 = (((((((((((llvm_cbe_tmp71707171) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp71737174;
-  Z = (((bool )((llvm_cbe_tmp71707171 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp71707171 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp7169))) >> (7))))));
   if (((llvm_cbe_tmp71707171 & 255u) == 0u)) {
     goto llvm_cbe_bb7193;
@@ -15655,7 +15655,7 @@ llvm_cbe_lBDC9:
   A = llvm_cbe_tmp41165;
   llvm_cbe_tmp41177 = *((&RAM[(57u)]));
   X = llvm_cbe_tmp41177;
-  Z = (((bool )(llvm_cbe_tmp41177 == 0)));
+  Z = (((llvm_cbe_tmp41177 == 0)));
   N = ((((((llvm_cbe_tmp41177) >> (7))))));
   llvm_cbe_tmp41190_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp41177;   /* for PHI node */
   llvm_cbe_tmp41189_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp41165;   /* for PHI node */
@@ -15666,7 +15666,7 @@ llvm_cbe_bb47779:
   V = llvm_cbe_iftmp_2e_11656_2e_0;
   llvm_cbe_tmp4778147782 = (llvm_cbe_tmp47757);
   A = llvm_cbe_tmp4778147782;
-  Z = (((bool )(llvm_cbe_tmp4778147782 == 0)));
+  Z = (((llvm_cbe_tmp4778147782 == 0)));
   N = ((((((llvm_cbe_tmp4778147782) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp4776047761) >> (8u)))))) & 1))) ^ 1)));
   llvm_cbe_tmp47799 = S;
@@ -15694,7 +15694,7 @@ llvm_cbe_bb47705:
   X = llvm_cbe_tmp4770747708;
   llvm_cbe_tmp47737 = *((&RAM[(56u)]));
   A = llvm_cbe_tmp47737;
-  Z = (((bool )(llvm_cbe_tmp47737 == 0)));
+  Z = (((llvm_cbe_tmp47737 == 0)));
   N = ((((((llvm_cbe_tmp47737) >> (7))))));
   llvm_cbe_tmp47751 = *((&RAM[(44u)]));
   llvm_cbe_tmp47757 = ((((((((((llvm_cbe_tmp47737)) + (-1)))) - ((llvm_cbe_tmp47751))))) + ((llvm_cbe_tmp4772347724))));
@@ -15716,7 +15716,7 @@ llvm_cbe_bb47693:
 llvm_cbe_lE430:
   llvm_cbe_tmp47663 = *((&RAM[(55u)]));
   A = llvm_cbe_tmp47663;
-  Z = (((bool )(llvm_cbe_tmp47663 == 0)));
+  Z = (((llvm_cbe_tmp47663 == 0)));
   N = ((((((llvm_cbe_tmp47663) >> (7))))));
   C = 1;
   llvm_cbe_tmp47677 = *((&RAM[(43u)]));
@@ -15747,7 +15747,7 @@ llvm_cbe_lBCD5:
   *((&RAM[(97u)])) = (-96);
   llvm_cbe_tmp39885 = *((&RAM[(101u)]));
   A = llvm_cbe_tmp39885;
-  Z = (((bool )(llvm_cbe_tmp39885 == 0)));
+  Z = (((llvm_cbe_tmp39885 == 0)));
   N = ((((((llvm_cbe_tmp39885) >> (7))))));
   *((&RAM[(7u)])) = llvm_cbe_tmp39885;
   if (llvm_cbe_tmp3985539856 == 0) {
@@ -15785,7 +15785,7 @@ llvm_cbe_lE0A1:
   Y = (9);
   llvm_cbe_tmp44508 = *((&RAM[(((llvm_cbe_tmp44393 + 9u) & 65535u))]));
   A = llvm_cbe_tmp44508;
-  Z = (((bool )(llvm_cbe_tmp44508 == 0)));
+  Z = (((llvm_cbe_tmp44508 == 0)));
   N = ((((((llvm_cbe_tmp44508) >> (7))))));
   *((&RAM[(101u)])) = llvm_cbe_tmp44508;
   goto llvm_cbe_lE0E3;
@@ -15799,7 +15799,7 @@ llvm_cbe_lE0D3:
   X = llvm_cbe_tmp44643;
   llvm_cbe_tmp44655 = *((&RAM[(100u)]));
   A = llvm_cbe_tmp44655;
-  Z = (((bool )(llvm_cbe_tmp44655 == 0)));
+  Z = (((llvm_cbe_tmp44655 == 0)));
   N = ((((((llvm_cbe_tmp44655) >> (7))))));
   *((&RAM[(99u)])) = llvm_cbe_tmp44655;
   *((&RAM[(100u)])) = llvm_cbe_tmp44643;
@@ -15855,7 +15855,7 @@ llvm_cbe_bb33930:
   llvm_cbe_tmp3405534056 = (llvm_cbe_tmp34037);
   llvm_cbe_tmp34063 = (((((((llvm_cbe__2e_tmp51446_2e_0)) << (1)))) | ((((((llvm_cbe_tmp34037) >> ((8)))))))));
   llvm_cbe_tmp3406534066 = (((((((llvm_cbe_tmp34063) >> ((8))))))));
-  llvm_cbe_tmp3407034071 = ((bool )((((llvm_cbe_tmp34063)) & 255u) == 0u));
+  llvm_cbe_tmp3407034071 = (((((llvm_cbe_tmp34063)) & 255u) == 0u));
   llvm_cbe_tmp3407234073 = (llvm_cbe_tmp34063);
   llvm_cbe_tmp3407234073_2e_lobit = (((((llvm_cbe_tmp3407234073) >> (7)))));
   if (llvm_cbe_tmp3407234073_2e_lobit == 0) {
@@ -15912,7 +15912,7 @@ llvm_cbe_bb36486:
   V = llvm_cbe_iftmp_2e_8773_2e_0;
   llvm_cbe_tmp3648836489 = (llvm_cbe_tmp36461);
   A = llvm_cbe_tmp3648836489;
-  Z = (((bool )(llvm_cbe_tmp3648836489 == 0)));
+  Z = (((llvm_cbe_tmp3648836489 == 0)));
   llvm_cbe_tmp36493_2e_lobit = (((((llvm_cbe_tmp3648836489) >> (7)))));
   N = llvm_cbe_tmp36493_2e_lobit;
   llvm_cbe_tmp36503 = ((llvm_cbe_tmp36461)) & 256u;
@@ -15950,7 +15950,7 @@ llvm_cbe_lBAB7:
   S = llvm_cbe_storemerge49130;
   llvm_cbe_tmp36440 = *((&RAM[(105u)]));
   A = llvm_cbe_tmp36440;
-  Z = (((bool )(llvm_cbe_tmp36440 == 0)));
+  Z = (((llvm_cbe_tmp36440 == 0)));
   N = ((((((llvm_cbe_tmp36440) >> (7))))));
   if (llvm_cbe_tmp36440 == 0) {
     llvm_cbe_tmp36663_2e_rle__PHI_TEMPORARY = llvm_cbe_storemerge49130;   /* for PHI node */
@@ -15983,7 +15983,7 @@ llvm_cbe_bb36957:
   V = llvm_cbe_iftmp_2e_8889_2e_0;
   llvm_cbe_tmp3695936960 = (llvm_cbe_tmp36935);
   A = llvm_cbe_tmp3695936960;
-  Z = (((bool )(llvm_cbe_tmp3695936960 == 0)));
+  Z = (((llvm_cbe_tmp3695936960 == 0)));
   N = ((((((llvm_cbe_tmp3695936960) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp3693836939) >> (8u)))))) & 1))) ^ 1)));
   *((&RAM[(97u)])) = llvm_cbe_tmp3695936960;
@@ -16027,7 +16027,7 @@ llvm_cbe_lE03A:
   llvm_cbe_tmp43961 = (&RAM[(((((((llvm_cbe_tmp43956 + 1))))) | 256u))]);
   llvm_cbe_tmp43962 = *llvm_cbe_tmp43961;
   A = llvm_cbe_tmp43962;
-  Z = (((bool )(llvm_cbe_tmp43962 == 0)));
+  Z = (((llvm_cbe_tmp43962 == 0)));
   N = ((((((llvm_cbe_tmp43962) >> (7))))));
   *llvm_cbe_tmp43961 = (-32);
   *((&RAM[((((llvm_cbe_tmp43956)) | 256u))])) = (65);
@@ -16050,7 +16050,7 @@ llvm_cbe_lBAF4:
   llvm_cbe_tmp36800 = *((&RAM[(97u)]));
   llvm_cbe_tmp36801 = ((llvm_cbe_tmp36800 + 1));
   *((&RAM[(97u)])) = llvm_cbe_tmp36801;
-  Z = (((bool )(llvm_cbe_tmp36801 == 0)));
+  Z = (((llvm_cbe_tmp36801 == 0)));
   N = ((((((llvm_cbe_tmp36801) >> (7))))));
   if (llvm_cbe_tmp36801 == 0) {
     goto llvm_cbe_lB97E;
@@ -16061,7 +16061,7 @@ llvm_cbe_lBAF4:
 llvm_cbe_bb40838:
   A = (100);
   llvm_cbe_tmp40850 = *((&RAM[(96u)]));
-  Z = (((bool )(llvm_cbe_tmp40850 == 0)));
+  Z = (((llvm_cbe_tmp40850 == 0)));
   llvm_cbe_tmp40850_2e_lobit = (((((llvm_cbe_tmp40850) >> (7)))));
   N = llvm_cbe_tmp40850_2e_lobit;
   V = (((((((((llvm_cbe_tmp40850) >> ((6))))))) & 1)));
@@ -16079,7 +16079,7 @@ llvm_cbe_lBD91:
   llvm_cbe_tmp4081540816 = (llvm_cbe_tmp40814);
   llvm_cbe_tmp40817_2e_lobit49262 = ((((((((llvm_cbe_tmp4081540816) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp40817_2e_lobit49262 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4081540816 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4081540816 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40814))) >> (7))))));
   if (llvm_cbe_tmp40817_2e_lobit49262 == 0) {
     goto llvm_cbe_bb40838;
@@ -16112,7 +16112,7 @@ llvm_cbe_lE00B:
   llvm_cbe_tmp36635 = *((&RAM[(102u)]));
   llvm_cbe_tmp36647not = ((llvm_cbe_tmp36635 ^ (-1)));
   A = llvm_cbe_tmp36647not;
-  Z = (((bool )(llvm_cbe_tmp36635 == 0xff)));
+  Z = (((llvm_cbe_tmp36635 == 0xff)));
   N = ((((((llvm_cbe_tmp36647not) >> (7))))));
   if ((((s8 )llvm_cbe_tmp36635) > ((s8 )(-1)))) {
     goto llvm_cbe_lB97E;
@@ -16128,7 +16128,7 @@ llvm_cbe_lE005:
   llvm_cbe_tmp4364743648 = (llvm_cbe_tmp43646);
   llvm_cbe_tmp43649_2e_lobit49365 = ((((((((llvm_cbe_tmp4364743648) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp43649_2e_lobit49365 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4364743648 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4364743648 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp43646))) >> (7))))));
   if (llvm_cbe_tmp43649_2e_lobit49365 == 0) {
     goto llvm_cbe_lE00B;
@@ -16152,7 +16152,7 @@ llvm_cbe_lBB12:
 
 llvm_cbe_lE104:
   X = llvm_cbe_tmp44738;
-  Z = (((bool )(llvm_cbe_tmp44738 == 0)));
+  Z = (((llvm_cbe_tmp44738 == 0)));
   N = ((((((llvm_cbe_tmp44738) >> (7))))));
   if (llvm_cbe_tmp44738 == 0) {
     goto llvm_cbe_bb44783;
@@ -16165,7 +16165,7 @@ llvm_cbe_lE0F9:
   llvm_cbe_tmp44740 = ((((llvm_cbe_tmp44738)) + (-240)));
   llvm_cbe_tmp4474144742 = (llvm_cbe_tmp44740);
   C = ((((((((((((llvm_cbe_tmp4474144742) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4474144742 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4474144742 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp44740))) >> (7))))));
   if (((llvm_cbe_tmp4474144742 & 255u) == 0u)) {
     goto llvm_cbe_bb44764;
@@ -16303,7 +16303,7 @@ llvm_cbe_lA53C:
   llvm_cbe_V_2e_tmp_2e_0 = llvm_cbe_V_2e_tmp_2e_0__PHI_TEMPORARY;
   llvm_cbe_tmp4634 = (((llvm_cbe_tmp4631_2e_rle)) << 8u) | ((llvm_cbe_tmp4629_2e_rle));
   llvm_cbe_tmp4640 = *((&RAM[(((llvm_cbe_tmp4634 + 1u) & 65535u))]));
-  llvm_cbe_tmp46424643 = ((bool )(llvm_cbe_tmp4640 == 0));
+  llvm_cbe_tmp46424643 = ((llvm_cbe_tmp4640 == 0));
   llvm_cbe_tmp4644_2e_lobit = (((((llvm_cbe_tmp4640) >> (7)))));
   if (llvm_cbe_tmp4640 == 0) {
     llvm_cbe_X_2e_tmp_2e_151342__PHI_TEMPORARY = llvm_cbe_X_2e_tmp_2e_051341;   /* for PHI node */
@@ -16397,7 +16397,7 @@ llvm_cbe_lA533:
   A = llvm_cbe_tmp4592;
   llvm_cbe_tmp4604 = *((&RAM[(44u)]));
   Y = llvm_cbe_tmp4604;
-  Z = (((bool )(llvm_cbe_tmp4604 == 0)));
+  Z = (((llvm_cbe_tmp4604 == 0)));
   N = ((((((llvm_cbe_tmp4604) >> (7))))));
   *((&RAM[(34u)])) = llvm_cbe_tmp4592;
   *((&RAM[(35u)])) = llvm_cbe_tmp4604;
@@ -16875,7 +16875,7 @@ llvm_cbe_lA640:
   llvm_cbe_Z_2e_tmp_2e_051293_2e_in = ((llvm_cbe_Z_2e_tmp_2e_051293_2e_in__PHI_TEMPORARY)&1);
   llvm_cbe_Y_2e_tmp_2e_051290 = llvm_cbe_Y_2e_tmp_2e_051290__PHI_TEMPORARY;
   Y = llvm_cbe_Y_2e_tmp_2e_051290;
-  Z = (((bool )llvm_cbe_Z_2e_tmp_2e_051293_2e_in));
+  Z = ((llvm_cbe_Z_2e_tmp_2e_051293_2e_in));
   N = ((((((llvm_cbe_N_2e_tmp_2e_051294_2e_in) >> (7))))));
   A = llvm_cbe_A_2e_tmp_2e_151296;
   X = llvm_cbe_X_2e_tmp_2e_151298;
@@ -16933,7 +16933,7 @@ llvm_cbe_bb5989:
   llvm_cbe_tmp60446045 = (llvm_cbe_tmp6043);
   llvm_cbe_tmp6046_2e_lobit48212 = ((((((((llvm_cbe_tmp60446045) >> (8u)))))) & 1));
   llvm_cbe_tmp60476048 = ((llvm_cbe_tmp6046_2e_lobit48212 ^ 1));
-  llvm_cbe_tmp60526053 = ((bool )((llvm_cbe_tmp60446045 & 255u) == 0u));
+  llvm_cbe_tmp60526053 = (((llvm_cbe_tmp60446045 & 255u) == 0u));
   llvm_cbe_tmp60546055_2e_lobit = (((((((llvm_cbe_tmp6043))) >> (7)))));
   if (llvm_cbe_tmp6046_2e_lobit48212 == 0) {
     goto llvm_cbe_bb6067;
@@ -16966,7 +16966,7 @@ llvm_cbe_lA62E:
   llvm_cbe_tmp61316132 = (llvm_cbe_tmp6130);
   llvm_cbe_tmp6133_2e_lobit48211 = ((((((((llvm_cbe_tmp61316132) >> (8u)))))) & 1));
   llvm_cbe_tmp61346135 = ((llvm_cbe_tmp6133_2e_lobit48211 ^ 1));
-  llvm_cbe_tmp61396140 = ((bool )((llvm_cbe_tmp61316132 & 255u) == 0u));
+  llvm_cbe_tmp61396140 = (((llvm_cbe_tmp61316132 & 255u) == 0u));
   llvm_cbe_tmp61416142_2e_lobit = (((((((llvm_cbe_tmp6130))) >> (7)))));
   if (llvm_cbe_tmp6133_2e_lobit48211 == 0) {
     goto llvm_cbe_bb6154;
@@ -16987,7 +16987,7 @@ llvm_cbe_lA613:
   A = llvm_cbe_tmp5925;
   llvm_cbe_tmp5937 = *((&RAM[(44u)]));
   X = llvm_cbe_tmp5937;
-  Z = (((bool )(llvm_cbe_tmp5937 == 0)));
+  Z = (((llvm_cbe_tmp5937 == 0)));
   N = ((((((llvm_cbe_tmp5937) >> (7))))));
   llvm_cbe_X_2e_tmp_2e_051297__PHI_TEMPORARY = llvm_cbe_tmp5937;   /* for PHI node */
   llvm_cbe_A_2e_tmp_2e_051295__PHI_TEMPORARY = llvm_cbe_tmp5925;   /* for PHI node */
@@ -17033,7 +17033,7 @@ llvm_cbe_bb9675:
   C = llvm_cbe_iftmp_2e_2019_2e_0;
   llvm_cbe_tmp9700 = *((&RAM[(123u)]));
   X = llvm_cbe_tmp9700;
-  Z = (((bool )(llvm_cbe_tmp9700 == 0)));
+  Z = (((llvm_cbe_tmp9700 == 0)));
   N = ((((((llvm_cbe_tmp9700) >> (7))))));
   if (llvm_cbe_iftmp_2e_2019_2e_0 == 0) {
     llvm_cbe_X_2e_promoted51288_2e_rle51978__PHI_TEMPORARY = llvm_cbe_tmp9700;   /* for PHI node */
@@ -17054,7 +17054,7 @@ llvm_cbe_bb9663:
 llvm_cbe_bb9633:
   llvm_cbe_tmp9634 = Y;
   A = llvm_cbe_tmp9634;
-  Z = (((bool )(llvm_cbe_tmp9634 == 0)));
+  Z = (((llvm_cbe_tmp9634 == 0)));
   N = ((((((llvm_cbe_tmp9634) >> (7))))));
   C = 1;
   llvm_cbe_tmp9648 = *((&RAM[(122u)]));
@@ -17070,7 +17070,7 @@ llvm_cbe_bb9609:
   V = llvm_cbe_iftmp_2e_1997_2e_0;
   llvm_cbe_tmp96119612 = (llvm_cbe_tmp9587);
   A = llvm_cbe_tmp96119612;
-  Z = (((bool )(llvm_cbe_tmp96119612 == 0)));
+  Z = (((llvm_cbe_tmp96119612 == 0)));
   N = ((((((llvm_cbe_tmp96119612) >> (7))))));
   llvm_cbe_tmp9626 = llvm_cbe_tmp95909591 & 256u;
   C = (((((((((llvm_cbe_tmp9626) >> (8u)))))) ^ 1)));
@@ -17095,7 +17095,7 @@ llvm_cbe_bb9547:
   C = llvm_cbe_tmp95659566;
   llvm_cbe_tmp9567 = *((&RAM[(58u)]));
   A = llvm_cbe_tmp9567;
-  Z = (((bool )(llvm_cbe_tmp9567 == 0)));
+  Z = (((llvm_cbe_tmp9567 == 0)));
   N = ((((((llvm_cbe_tmp9567) >> (7))))));
   llvm_cbe_tmp9581 = *((&RAM[(21u)]));
   llvm_cbe_tmp9587 = ((((((((((llvm_cbe_tmp9567)) + (-1)))) - ((llvm_cbe_tmp9581))))) + ((llvm_cbe_tmp95659566))));
@@ -17118,7 +17118,7 @@ llvm_cbe_lA8A6:
   C = 1;
   llvm_cbe_tmp9505 = *((&RAM[(57u)]));
   A = llvm_cbe_tmp9505;
-  Z = (((bool )(llvm_cbe_tmp9505 == 0)));
+  Z = (((llvm_cbe_tmp9505 == 0)));
   N = ((((((llvm_cbe_tmp9505) >> (7))))));
   llvm_cbe_tmp9519 = *((&RAM[(20u)]));
   llvm_cbe_tmp95289529 = ((((((((((((llvm_cbe_tmp9505)) + (-1)))) - ((llvm_cbe_tmp9519))))) + (1)))));
@@ -17143,7 +17143,7 @@ llvm_cbe_bb9674:
 llvm_cbe_bb9716:
   llvm_cbe_tmp9718 = ((llvm_cbe_tmp9700 + 1));
   X = llvm_cbe_tmp9718;
-  Z = (((bool )(llvm_cbe_tmp9718 == 0)));
+  Z = (((llvm_cbe_tmp9718 == 0)));
   N = ((((((llvm_cbe_tmp9718) >> (7))))));
   llvm_cbe_X_2e_promoted51288_2e_rle51978__PHI_TEMPORARY = llvm_cbe_tmp9718;   /* for PHI node */
   llvm_cbe_A_2e_promoted51287_2e_rle51977__PHI_TEMPORARY = llvm_cbe_tmp96779678;   /* for PHI node */
@@ -17154,7 +17154,7 @@ llvm_cbe_lA8BC:
   A = llvm_cbe_tmp9734;
   llvm_cbe_tmp9746 = *((&RAM[(44u)]));
   X = llvm_cbe_tmp9746;
-  Z = (((bool )(llvm_cbe_tmp9746 == 0)));
+  Z = (((llvm_cbe_tmp9746 == 0)));
   N = ((((((llvm_cbe_tmp9746) >> (7))))));
   llvm_cbe_X_2e_promoted51288_2e_rle51978__PHI_TEMPORARY = llvm_cbe_tmp9746;   /* for PHI node */
   llvm_cbe_A_2e_promoted51287_2e_rle51977__PHI_TEMPORARY = llvm_cbe_tmp9734;   /* for PHI node */
@@ -17187,7 +17187,7 @@ llvm_cbe_bb6889:
   llvm_cbe_tmp6892 = ((((llvm_cbe_tmp6890)) + (-171)));
   llvm_cbe_tmp68936894 = (llvm_cbe_tmp6892);
   C = ((((((((((((llvm_cbe_tmp68936894) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp68936894 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp68936894 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp6892))) >> (7))))));
   if (((llvm_cbe_tmp68936894 & 255u) == 0u)) {
     goto llvm_cbe_bb6916;
@@ -17272,7 +17272,7 @@ llvm_cbe_lA45E:
   llvm_cbe_tmp3425 = (&RAM[((((llvm_cbe_tmp3421)) | 256u))]);
   llvm_cbe_tmp3426 = *llvm_cbe_tmp3425;
   A = llvm_cbe_tmp3426;
-  Z = (((bool )(llvm_cbe_tmp3426 == 0)));
+  Z = (((llvm_cbe_tmp3426 == 0)));
   N = ((((((llvm_cbe_tmp3426) >> (7))))));
   if ((((s8 )llvm_cbe_tmp3426) < ((s8 )0))) {
     goto llvm_cbe_bb3442;
@@ -17285,7 +17285,7 @@ llvm_cbe_bb6773:
   V = llvm_cbe_iftmp_2e_1258_2e_0;
   llvm_cbe_tmp67756776 = (llvm_cbe_tmp6756);
   A = llvm_cbe_tmp67756776;
-  Z = (((bool )(llvm_cbe_tmp67756776 == 0)));
+  Z = (((llvm_cbe_tmp67756776 == 0)));
   N = ((((((llvm_cbe_tmp67756776) >> (7))))));
   C = (((((((((((llvm_cbe_tmp6756))) >> (8u)))))) & 1)));
   *((&RAM[(123u)])) = llvm_cbe_tmp67756776;
@@ -17317,7 +17317,7 @@ llvm_cbe_bb6713:
   *((&RAM[(122u)])) = ((llvm_cbe_tmp6696));
   llvm_cbe_tmp6739 = *((&RAM[(44u)]));
   A = llvm_cbe_tmp6739;
-  Z = (((bool )(llvm_cbe_tmp6739 == 0)));
+  Z = (((llvm_cbe_tmp6739 == 0)));
   N = ((((((llvm_cbe_tmp6739) >> (7))))));
   llvm_cbe_tmp6756 = (((((((llvm_cbe_tmp6739)) + (255)))) + ((llvm_cbe_iftmp_2e_1250_2e_0))));
   if ((((s8 )llvm_cbe_tmp6739) > ((s8 )(-1)))) {
@@ -17340,7 +17340,7 @@ llvm_cbe_lA68E:
   C = 0;
   llvm_cbe_tmp6679 = *((&RAM[(43u)]));
   A = llvm_cbe_tmp6679;
-  Z = (((bool )(llvm_cbe_tmp6679 == 0)));
+  Z = (((llvm_cbe_tmp6679 == 0)));
   N = ((((((llvm_cbe_tmp6679) >> (7))))));
   llvm_cbe_tmp6696 = ((((llvm_cbe_tmp6679)) + (255)));
   if ((((s8 )llvm_cbe_tmp6679) > ((s8 )(-1)))) {
@@ -17376,7 +17376,7 @@ llvm_cbe_lA4A7:
 llvm_cbe_lA4ED_2e_loopexit:
   Y = llvm_cbe_tmp4236;
   A = llvm_cbe_tmp4211;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_151283 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_151283 == 1)));
   N = ((((((llvm_cbe_tmp4280) >> (7))))));
   X = llvm_cbe_tmp4280;
   goto llvm_cbe_lA4ED;
@@ -17427,7 +17427,7 @@ llvm_cbe_bb4157:
   V = llvm_cbe_iftmp_2e_576_2e_0;
   llvm_cbe_tmp41594160 = (llvm_cbe_tmp4132);
   A = llvm_cbe_tmp41594160;
-  Z = (((bool )(llvm_cbe_tmp41594160 == 0)));
+  Z = (((llvm_cbe_tmp41594160 == 0)));
   N = ((((((llvm_cbe_tmp41594160) >> (7))))));
   llvm_cbe_tmp4174 = ((llvm_cbe_tmp4132)) & 256u;
   C = ((((((llvm_cbe_tmp4174) >> (8u))))));
@@ -17465,7 +17465,7 @@ llvm_cbe_bb4065:
   llvm_cbe_tmp4082_2e_lobit48047 = ((((((((llvm_cbe_tmp40464047) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp4082_2e_lobit48047 ^ 1)));
   Y = llvm_cbe_tmp40674068;
-  Z = (((bool )(llvm_cbe_tmp40674068 == 0)));
+  Z = (((llvm_cbe_tmp40674068 == 0)));
   N = ((((((llvm_cbe_tmp40674068) >> (7))))));
   if (llvm_cbe_tmp4082_2e_lobit48047 == 0) {
     llvm_cbe_X_2e_promoted51280_2e_rle52034__PHI_TEMPORARY = llvm_cbe_tmp39933994;   /* for PHI node */
@@ -17512,7 +17512,7 @@ llvm_cbe_bb3935:
   V = llvm_cbe_iftmp_2e_526_2e_0;
   llvm_cbe_tmp39373938 = (llvm_cbe_tmp3918);
   A = llvm_cbe_tmp39373938;
-  Z = (((bool )(llvm_cbe_tmp39373938 == 0)));
+  Z = (((llvm_cbe_tmp39373938 == 0)));
   N = ((((((llvm_cbe_tmp39373938) >> (7))))));
   llvm_cbe_iftmp_2e_533_2e_0 = ((((((((((llvm_cbe_tmp3918))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_533_2e_0;
@@ -17542,7 +17542,7 @@ llvm_cbe_bb3874:
   *((&RAM[(36u)])) = llvm_cbe_tmp38763877;
   llvm_cbe_tmp3901 = *((&RAM[(46u)]));
   A = llvm_cbe_tmp3901;
-  Z = (((bool )(llvm_cbe_tmp3901 == 0)));
+  Z = (((llvm_cbe_tmp3901 == 0)));
   N = ((((((llvm_cbe_tmp3901) >> (7))))));
   llvm_cbe_tmp3918 = (((((((llvm_cbe_tmp3901)) + (255)))) + ((llvm_cbe_iftmp_2e_517_2e_0))));
   if ((((s8 )llvm_cbe_tmp3901) > ((s8 )(-1)))) {
@@ -17564,7 +17564,7 @@ llvm_cbe_bb3825:
   V = llvm_cbe_iftmp_2e_500_2e_0;
   llvm_cbe_tmp38273828 = (llvm_cbe_tmp3792);
   A = llvm_cbe_tmp38273828;
-  Z = (((bool )(llvm_cbe_tmp38273828 == 0)));
+  Z = (((llvm_cbe_tmp38273828 == 0)));
   N = ((((((llvm_cbe_tmp38273828) >> (7))))));
   C = 0;
   llvm_cbe_tmp38473848 = (llvm_cbe_tmp3722);
@@ -17594,7 +17594,7 @@ llvm_cbe_bb3686:
   *((&RAM[(34u)])) = llvm_cbe_tmp3722;
   *((&RAM[(37u)])) = llvm_cbe_tmp3700;
   A = llvm_cbe_tmp3698;
-  llvm_cbe_tmp37503751 = ((bool )(llvm_cbe_tmp3698 == 0));
+  llvm_cbe_tmp37503751 = ((llvm_cbe_tmp3698 == 0));
   llvm_cbe_tmp3752_2e_lobit = (((((llvm_cbe_tmp3698) >> (7)))));
   Y = 0;
   Z = 1;
@@ -17633,7 +17633,7 @@ llvm_cbe_bb4101:
   X = llvm_cbe_tmp4103;
   llvm_cbe_tmp4116 = ((llvm_cbe_tmp3700 + (-1)));
   *((&RAM[(37u)])) = llvm_cbe_tmp4116;
-  Z = (((bool )(llvm_cbe_tmp3700 == 1)));
+  Z = (((llvm_cbe_tmp3700 == 1)));
   N = ((((((llvm_cbe_tmp4116) >> (7))))));
   llvm_cbe_X_2e_promoted51280_2e_rle52034__PHI_TEMPORARY = llvm_cbe_tmp4103;   /* for PHI node */
   goto llvm_cbe_lA4D7;
@@ -17645,7 +17645,7 @@ llvm_cbe_bb4156:
 llvm_cbe_bb4186:
   llvm_cbe_tmp4188 = ((llvm_cbe_tmp3709 + (-1)));
   *((&RAM[(35u)])) = llvm_cbe_tmp4188;
-  Z = (((bool )(llvm_cbe_tmp3709 == 1)));
+  Z = (((llvm_cbe_tmp3709 == 1)));
   N = ((((((llvm_cbe_tmp4188) >> (7))))));
   C = 0;
   llvm_cbe_indvar51724__PHI_TEMPORARY = 0;   /* for PHI node */
@@ -17662,7 +17662,7 @@ llvm_cbe_lA52A:
 llvm_cbe_lA52A_2e_loopexit:
   Y = llvm_cbe_tmp4556;
   A = llvm_cbe_tmp4531;
-  Z = (((bool )(llvm_cbe_Y_2e_tmp_2e_051275 == 1)));
+  Z = (((llvm_cbe_Y_2e_tmp_2e_051275 == 1)));
   N = ((((((llvm_cbe_tmp4556) >> (7))))));
   goto llvm_cbe_lA52A;
 
@@ -17697,7 +17697,7 @@ llvm_cbe_lA50D:
   llvm_cbe_tmp4501 = *((&RAM[(11u)]));
   llvm_cbe_tmp4514 = ((llvm_cbe_tmp4501 + (-1)));
   Y = llvm_cbe_tmp4514;
-  Z = (((bool )(llvm_cbe_tmp4501 == 1)));
+  Z = (((llvm_cbe_tmp4501 == 1)));
   N = ((((((llvm_cbe_tmp4514) >> (7))))));
   llvm_cbe_indvar51720__PHI_TEMPORARY = 0;   /* for PHI node */
   goto llvm_cbe_lA522;
@@ -17707,7 +17707,7 @@ llvm_cbe_bb6425:
   V = llvm_cbe_iftmp_2e_1147_2e_0;
   llvm_cbe_tmp64276428 = (llvm_cbe_tmp6408);
   A = llvm_cbe_tmp64276428;
-  Z = (((bool )(llvm_cbe_tmp64276428 == 0)));
+  Z = (((llvm_cbe_tmp64276428 == 0)));
   N = ((((((llvm_cbe_tmp64276428) >> (7))))));
   C = (((((((((((llvm_cbe_tmp6408))) >> (8u)))))) & 1)));
   *((&RAM[(46u)])) = llvm_cbe_tmp64276428;
@@ -17729,7 +17729,7 @@ llvm_cbe_bb6366:
   *((&RAM[(45u)])) = ((llvm_cbe_tmp6348));
   llvm_cbe_tmp6392 = *((&RAM[(44u)]));
   A = llvm_cbe_tmp6392;
-  Z = (((bool )(llvm_cbe_tmp6392 == 0)));
+  Z = (((llvm_cbe_tmp6392 == 0)));
   N = ((((((llvm_cbe_tmp6392) >> (7))))));
   llvm_cbe_tmp6408 = ((((llvm_cbe_iftmp_2e_1139_2e_0)) + ((llvm_cbe_tmp6392))));
   if ((((s8 )llvm_cbe_tmp6392) < ((s8 )0))) {
@@ -17756,7 +17756,7 @@ llvm_cbe_lA644:
   *((&RAM[(((((((llvm_cbe_tmp6321)) << 8u) | ((llvm_cbe_tmp6319))) + 1u) & 65535u))])) = 0;
   llvm_cbe_tmp6331 = *((&RAM[(43u)]));
   A = llvm_cbe_tmp6331;
-  Z = (((bool )(llvm_cbe_tmp6331 == 0)));
+  Z = (((llvm_cbe_tmp6331 == 0)));
   N = ((((((llvm_cbe_tmp6331) >> (7))))));
   C = 0;
   llvm_cbe_tmp6348 = ((((llvm_cbe_tmp6331)) + (2)));
@@ -17828,7 +17828,7 @@ llvm_cbe_bb7352:
   llvm_cbe_tmp7358 = (((llvm_cbe_tmp7355)) << 8u) | ((llvm_cbe_tmp7353));
   llvm_cbe_tmp7364 = *((&RAM[(((llvm_cbe_tmp7358 + ((llvm_cbe_tmp7336))) & 65535u))]));
   A = llvm_cbe_tmp7364;
-  Z = (((bool )(llvm_cbe_tmp7364 == 0)));
+  Z = (((llvm_cbe_tmp7364 == 0)));
   N = ((((((llvm_cbe_tmp7364) >> (7))))));
   if (llvm_cbe_tmp7364 == 0) {
     goto llvm_cbe_bb7380;
@@ -17840,7 +17840,7 @@ llvm_cbe_lA700:
   llvm_cbe_tmp7335 = Y;
   llvm_cbe_tmp7336 = ((llvm_cbe_tmp7335 + 1));
   Y = llvm_cbe_tmp7336;
-  Z = (((bool )(llvm_cbe_tmp7336 == 0)));
+  Z = (((llvm_cbe_tmp7336 == 0)));
   N = ((((((llvm_cbe_tmp7336) >> (7))))));
   if (llvm_cbe_tmp7336 == 0) {
     goto llvm_cbe_lE386;
@@ -17853,7 +17853,7 @@ llvm_cbe_lA6F6:
   llvm_cbe_tmp7285 = ((((llvm_cbe_tmp7283)) + (-34)));
   llvm_cbe_tmp72867287 = (llvm_cbe_tmp7285);
   C = ((((((((((((llvm_cbe_tmp72867287) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp72867287 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp72867287 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp7285))) >> (7))))));
   if (((llvm_cbe_tmp72867287 & 255u) == 0u)) {
     goto llvm_cbe_bb7309;
@@ -17865,7 +17865,7 @@ llvm_cbe_bb7309:
   llvm_cbe_tmp7310 = *((&RAM[(15u)]));
   llvm_cbe_tmp7322not = ((llvm_cbe_tmp7310 ^ (-1)));
   A = llvm_cbe_tmp7322not;
-  Z = (((bool )(llvm_cbe_tmp7310 == 0xff)));
+  Z = (((llvm_cbe_tmp7310 == 0xff)));
   N = ((((((llvm_cbe_tmp7322not) >> (7))))));
   *((&RAM[(15u)])) = llvm_cbe_tmp7322not;
   goto llvm_cbe_lA700;
@@ -17886,7 +17886,7 @@ llvm_cbe_bb8579:
   V = llvm_cbe_iftmp_2e_1734_2e_0;
   llvm_cbe_tmp85818582 = (llvm_cbe_tmp8557);
   A = llvm_cbe_tmp85818582;
-  Z = (((bool )(llvm_cbe_tmp85818582 == 0)));
+  Z = (((llvm_cbe_tmp85818582 == 0)));
   N = ((((((llvm_cbe_tmp85818582) >> (7))))));
   llvm_cbe_iftmp_2e_1741_2e_0 = ((((((((((llvm_cbe_tmp8557))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_1741_2e_0;
@@ -17928,7 +17928,7 @@ llvm_cbe_bb8578:
 llvm_cbe_bb8609:
   llvm_cbe_tmp8611 = ((llvm_cbe_tmp8346 + 1));
   *((&RAM[(123u)])) = llvm_cbe_tmp8611;
-  Z = (((bool )(llvm_cbe_tmp8611 == 0)));
+  Z = (((llvm_cbe_tmp8611 == 0)));
   N = ((((((llvm_cbe_tmp8611) >> (7))))));
   goto llvm_cbe_lA7E1;
 
@@ -17957,7 +17957,7 @@ llvm_cbe_lA81D:
   C = 1;
   llvm_cbe_tmp8894 = *((&RAM[(43u)]));
   A = llvm_cbe_tmp8894;
-  Z = (((bool )(llvm_cbe_tmp8894 == 0)));
+  Z = (((llvm_cbe_tmp8894 == 0)));
   N = ((((((llvm_cbe_tmp8894) >> (7))))));
   llvm_cbe_tmp8911 = ((((llvm_cbe_tmp8894)) + (-1)));
   llvm_cbe_tmp89148915 = (llvm_cbe_tmp8911);
@@ -17968,7 +17968,7 @@ llvm_cbe_lA81D:
   C = (((llvm_cbe_tmp8946_2e_lobit49490 ^ 1)));
   llvm_cbe_tmp8949 = *((&RAM[(44u)]));
   Y = llvm_cbe_tmp8949;
-  Z = (((bool )(llvm_cbe_tmp8949 == 0)));
+  Z = (((llvm_cbe_tmp8949 == 0)));
   N = ((((((llvm_cbe_tmp8949) >> (7))))));
   if (llvm_cbe_tmp8946_2e_lobit49490 == 0) {
     llvm_cbe_tmp8980_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp8949;   /* for PHI node */
@@ -17994,7 +17994,7 @@ llvm_cbe_lA663:
   A = llvm_cbe_tmp6512;
   llvm_cbe_tmp6524 = *((&RAM[(46u)]));
   Y = llvm_cbe_tmp6524;
-  Z = (((bool )(llvm_cbe_tmp6524 == 0)));
+  Z = (((llvm_cbe_tmp6524 == 0)));
   N = ((((((llvm_cbe_tmp6524) >> (7))))));
   *((&RAM[(47u)])) = llvm_cbe_tmp6512;
   *((&RAM[(48u)])) = llvm_cbe_tmp6524;
@@ -18012,7 +18012,7 @@ llvm_cbe_bb44764:
 llvm_cbe_bb8965:
   llvm_cbe_tmp8967 = ((llvm_cbe_tmp8949 + (-1)));
   Y = llvm_cbe_tmp8967;
-  Z = (((bool )(llvm_cbe_tmp8949 == 1)));
+  Z = (((llvm_cbe_tmp8949 == 1)));
   N = ((((((llvm_cbe_tmp8967) >> (7))))));
   llvm_cbe_tmp8980_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp8967;   /* for PHI node */
   llvm_cbe_tmp8979_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp89318932;   /* for PHI node */
@@ -18040,7 +18040,7 @@ llvm_cbe_lA862:
   A = llvm_cbe_tmp9210;
   llvm_cbe_tmp9222 = *((&RAM[(60u)]));
   Y = llvm_cbe_tmp9222;
-  Z = (((bool )(llvm_cbe_tmp9222 == 0)));
+  Z = (((llvm_cbe_tmp9222 == 0)));
   N = ((((((llvm_cbe_tmp9222) >> (7))))));
   *((&RAM[(57u)])) = llvm_cbe_tmp9210;
   *((&RAM[(58u)])) = llvm_cbe_tmp9222;
@@ -18063,7 +18063,7 @@ llvm_cbe_lA8D1:
 llvm_cbe_bb9772:
   llvm_cbe_tmp9773 = *((&RAM[(95u)]));
   A = llvm_cbe_tmp9773;
-  Z = (((bool )(llvm_cbe_tmp9773 == 0)));
+  Z = (((llvm_cbe_tmp9773 == 0)));
   N = ((((((llvm_cbe_tmp9773) >> (7))))));
   llvm_cbe_tmp9790 = (((((((llvm_cbe_tmp9773)) + (-2)))) + (((s16 )(s8 )llvm_cbe_tmp9768))));
   llvm_cbe_tmp97939794 = (llvm_cbe_tmp9790);
@@ -18073,14 +18073,14 @@ llvm_cbe_bb9772:
   *((&RAM[(122u)])) = ((llvm_cbe_tmp9790));
   llvm_cbe_tmp9829 = *((&RAM[(96u)]));
   A = llvm_cbe_tmp9829;
-  Z = (((bool )(llvm_cbe_tmp9829 == 0)));
+  Z = (((llvm_cbe_tmp9829 == 0)));
   N = ((((((llvm_cbe_tmp9829) >> (7))))));
   llvm_cbe_tmp9846 = (((((((llvm_cbe_tmp9829)) + (-1)))) + ((llvm_cbe_tmp98269827))));
   llvm_cbe_tmp98499850 = (llvm_cbe_tmp9846);
   V = (((((((((llvm_cbe_tmp98499850 ^ ((llvm_cbe_tmp9829))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp9829) > ((s8 )(-1))))&1))) ? (0) : (1)));
   llvm_cbe_tmp98659866 = (llvm_cbe_tmp9846);
   A = llvm_cbe_tmp98659866;
-  Z = (((bool )(llvm_cbe_tmp98659866 == 0)));
+  Z = (((llvm_cbe_tmp98659866 == 0)));
   N = ((((((llvm_cbe_tmp98659866) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp98499850) >> (8u)))))) & 1))) ^ 1)));
   *((&RAM[(123u)])) = llvm_cbe_tmp98659866;
@@ -18105,7 +18105,7 @@ llvm_cbe_bb10151:
   V = llvm_cbe_iftmp_2e_2139_2e_0;
   llvm_cbe_tmp1015310154 = (llvm_cbe_tmp10126);
   A = llvm_cbe_tmp1015310154;
-  Z = (((bool )(llvm_cbe_tmp1015310154 == 0)));
+  Z = (((llvm_cbe_tmp1015310154 == 0)));
   N = ((((((llvm_cbe_tmp1015310154) >> (7))))));
   llvm_cbe_iftmp_2e_2146_2e_0 = ((((((((((llvm_cbe_tmp10126))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_2146_2e_0;
@@ -18127,7 +18127,7 @@ llvm_cbe_bb10139:
 llvm_cbe_lA8FB:
   llvm_cbe_tmp10110 = Y;
   A = llvm_cbe_tmp10110;
-  Z = (((bool )(llvm_cbe_tmp10110 == 0)));
+  Z = (((llvm_cbe_tmp10110 == 0)));
   N = ((((((llvm_cbe_tmp10110) >> (7))))));
   C = 0;
   llvm_cbe_tmp10124 = *((&RAM[(122u)]));
@@ -18160,7 +18160,7 @@ llvm_cbe_bb15034:
   A = llvm_cbe_tmp15096;
   llvm_cbe_tmp15109 = ((llvm_cbe_tmp14953 + (5)));
   Y = llvm_cbe_tmp15109;
-  Z = (((bool )(llvm_cbe_tmp15109 == 0)));
+  Z = (((llvm_cbe_tmp15109 == 0)));
   N = ((((((llvm_cbe_tmp15109) >> (7))))));
   *((&RAM[(64u)])) = llvm_cbe_tmp15096;
   goto llvm_cbe_lACD1;
@@ -18173,7 +18173,7 @@ llvm_cbe_bb10181:
   llvm_cbe_tmp10182 = *((&RAM[(123u)]));
   llvm_cbe_tmp10183 = ((llvm_cbe_tmp10182 + 1));
   *((&RAM[(123u)])) = llvm_cbe_tmp10183;
-  Z = (((bool )(llvm_cbe_tmp10183 == 0)));
+  Z = (((llvm_cbe_tmp10183 == 0)));
   N = ((((((llvm_cbe_tmp10183) >> (7))))));
   goto llvm_cbe_lA905;
 
@@ -18184,7 +18184,7 @@ llvm_cbe_lA905_2e_loopexit:
   X = llvm_cbe_tmp10287_2e_rle;
   Y = llvm_cbe_Y_2e_tmp_2e_051530;
   A = llvm_cbe_tmp10312;
-  Z = (((bool )llvm_cbe_Z_2e_tmp_2e_051531_2e_in));
+  Z = ((llvm_cbe_Z_2e_tmp_2e_051531_2e_in));
   N = ((((((llvm_cbe_N_2e_tmp_2e_051532_2e_in) >> (7))))));
   C = llvm_cbe_C_2e_tmp_2e_151534;
   goto llvm_cbe_lA905;
@@ -18224,7 +18224,7 @@ llvm_cbe_bb10357:
   llvm_cbe_tmp10373 = ((llvm_cbe_tmp1032910330 + (-34)));
   llvm_cbe_tmp1037410375 = (llvm_cbe_tmp10373);
   llvm_cbe_tmp1037710378 = (((((((((((llvm_cbe_tmp1037410375) >> (8u)))))) & 1))) ^ 1));
-  llvm_cbe_tmp1038210383 = ((bool )((llvm_cbe_tmp1037410375 & 255u) == 0u));
+  llvm_cbe_tmp1038210383 = (((llvm_cbe_tmp1037410375 & 255u) == 0u));
   llvm_cbe_tmp1038410385_2e_lobit = (((((((llvm_cbe_tmp10373))) >> (7)))));
   llvm_cbe_indvar_2e_next51800 = ((llvm_cbe_indvar51799 + 1));
   if (((llvm_cbe_tmp1037410375 & 255u) == 0u)) {
@@ -18273,7 +18273,7 @@ llvm_cbe_lA90B:
 llvm_cbe_lA906:
   X = (58);
   llvm_cbe_tmp10229 = *((&RAM[(162u)]));
-  Z = (((bool )(llvm_cbe_tmp10229 == 0)));
+  Z = (((llvm_cbe_tmp10229 == 0)));
   N = ((((((llvm_cbe_tmp10229) >> (7))))));
   V = (((((((((llvm_cbe_tmp10229) >> ((6))))))) & 1)));
   llvm_cbe_tmp10262_2e_rle__PHI_TEMPORARY = (58);   /* for PHI node */
@@ -18304,7 +18304,7 @@ llvm_cbe_lA8EB:
   S = llvm_cbe_tmp10082;
   llvm_cbe_tmp10087 = *((&RAM[((((llvm_cbe_tmp10082)) | 256u))]));
   A = llvm_cbe_tmp10087;
-  Z = (((bool )(llvm_cbe_tmp10087 == 0)));
+  Z = (((llvm_cbe_tmp10087 == 0)));
   N = ((((((llvm_cbe_tmp10087) >> (7))))));
   *((&RAM[(123u)])) = llvm_cbe_tmp10087;
   goto llvm_cbe_lA8F8;
@@ -18321,7 +18321,7 @@ llvm_cbe_lB3CE:
   *((&RAM[(((((((llvm_cbe_tmp25523 + (-3)))))) | 256u))])) = llvm_cbe_tmp25565;
   llvm_cbe_tmp25583 = *((&RAM[(122u)]));
   A = llvm_cbe_tmp25583;
-  Z = (((bool )(llvm_cbe_tmp25583 == 0)));
+  Z = (((llvm_cbe_tmp25583 == 0)));
   N = ((((((llvm_cbe_tmp25583) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp25523 + (-4)))))) | 256u))])) = llvm_cbe_tmp25583;
   *((&RAM[(((((((llvm_cbe_tmp25523 + (-5)))))) | 256u))])) = (-77);
@@ -18339,7 +18339,7 @@ llvm_cbe_bb14217:
 llvm_cbe_bb14200:
   llvm_cbe_tmp14201 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp14201;
-  Z = (((bool )(llvm_cbe_tmp14201 == 0)));
+  Z = (((llvm_cbe_tmp14201 == 0)));
   N = ((((((llvm_cbe_tmp14201) >> (7))))));
   if (llvm_cbe_tmp14201 == 0) {
     goto llvm_cbe_bb14217;
@@ -18350,7 +18350,7 @@ llvm_cbe_bb14200:
 llvm_cbe_lABEA:
   llvm_cbe_tmp14184 = *((&RAM[(512u)]));
   A = llvm_cbe_tmp14184;
-  Z = (((bool )(llvm_cbe_tmp14184 == 0)));
+  Z = (((llvm_cbe_tmp14184 == 0)));
   N = ((((((llvm_cbe_tmp14184) >> (7))))));
   if (llvm_cbe_tmp14184 == 0) {
     goto llvm_cbe_bb14200;
@@ -18361,7 +18361,7 @@ llvm_cbe_lABEA:
 llvm_cbe_lABD9:
   llvm_cbe_tmp14126 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp14126;
-  Z = (((bool )(llvm_cbe_tmp14126 == 0)));
+  Z = (((llvm_cbe_tmp14126 == 0)));
   N = ((((((llvm_cbe_tmp14126) >> (7))))));
   if (llvm_cbe_tmp14126 == 0) {
     goto llvm_cbe_lABEA;
@@ -18398,7 +18398,7 @@ llvm_cbe_lAC41:
 
 llvm_cbe_bb14417:
   llvm_cbe_tmp14418 = *((&RAM[(17u)]));
-  Z = (((bool )(llvm_cbe_tmp14418 == 0)));
+  Z = (((llvm_cbe_tmp14418 == 0)));
   llvm_cbe_tmp14418_2e_lobit = (((((llvm_cbe_tmp14418) >> (7)))));
   N = llvm_cbe_tmp14418_2e_lobit;
   llvm_cbe_tmp1443348472 = ((llvm_cbe_tmp14418 & (64)));
@@ -18423,7 +18423,7 @@ llvm_cbe_lACD7:
   llvm_cbe_tmp15156 = ((((llvm_cbe_tmp15142)) + (-131)));
   llvm_cbe_tmp1515715158 = (llvm_cbe_tmp15156);
   C = ((((((((((((llvm_cbe_tmp1515715158) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1515715158 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1515715158 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp15156))) >> (7))))));
   if (((llvm_cbe_tmp1515715158 & 255u) == 0u)) {
     goto llvm_cbe_lAC51;
@@ -18461,7 +18461,7 @@ llvm_cbe_lA93B:
 llvm_cbe_lA937:
   llvm_cbe_tmp10470 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp10470;
-  Z = (((bool )(llvm_cbe_tmp10470 == 0)));
+  Z = (((llvm_cbe_tmp10470 == 0)));
   N = ((((((llvm_cbe_tmp10470) >> (7))))));
   if (llvm_cbe_tmp10470 == 0) {
     goto llvm_cbe_lA93B;
@@ -18489,7 +18489,7 @@ llvm_cbe_bb10664:
   S = llvm_cbe_tmp10666;
   llvm_cbe_tmp10671 = *((&RAM[((((llvm_cbe_tmp10666)) | 256u))]));
   A = llvm_cbe_tmp10671;
-  Z = (((bool )(llvm_cbe_tmp10671 == 0)));
+  Z = (((llvm_cbe_tmp10671 == 0)));
   N = ((((((llvm_cbe_tmp10671) >> (7))))));
   goto llvm_cbe_lA96A;
 
@@ -18501,7 +18501,7 @@ llvm_cbe_lA9CA:
   Y = 1;
   llvm_cbe_tmp11413 = *((&RAM[(101u)]));
   A = llvm_cbe_tmp11413;
-  Z = (((bool )(llvm_cbe_tmp11413 == 0)));
+  Z = (((llvm_cbe_tmp11413 == 0)));
   N = ((((((llvm_cbe_tmp11413) >> (7))))));
   llvm_cbe_tmp11425 = *((&RAM[(73u)]));
   llvm_cbe_tmp11427 = *((&RAM[(74u)]));
@@ -18537,7 +18537,7 @@ llvm_cbe_lAA6F:
   llvm_cbe_tmp12335 = *((&RAM[(81u)]));
   llvm_cbe_tmp12344 = *((&RAM[(((((((llvm_cbe_tmp12335)) << 8u) | ((llvm_cbe_tmp12333))) + 2u) & 65535u))]));
   A = llvm_cbe_tmp12344;
-  Z = (((bool )(llvm_cbe_tmp12344 == 0)));
+  Z = (((llvm_cbe_tmp12344 == 0)));
   N = ((((((llvm_cbe_tmp12344) >> (7))))));
   llvm_cbe_tmp12356 = *((&RAM[(73u)]));
   llvm_cbe_tmp12358 = *((&RAM[(74u)]));
@@ -18576,7 +18576,7 @@ llvm_cbe_lAACA:
   Y = 1;
   llvm_cbe_tmp12765 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp12765;
-  Z = (((bool )(llvm_cbe_tmp12765 == 0)));
+  Z = (((llvm_cbe_tmp12765 == 0)));
   N = ((((((llvm_cbe_tmp12765) >> (7))))));
   if (llvm_cbe_tmp12765 == 0) {
     goto llvm_cbe_lAAD7;
@@ -18596,13 +18596,13 @@ llvm_cbe_lAAE5:
   llvm_cbe_tmp12850 = A;
   llvm_cbe_tmp12850not = ((llvm_cbe_tmp12850 ^ (-1)));
   A = llvm_cbe_tmp12850not;
-  Z = (((bool )(llvm_cbe_tmp12850 == 0xff)));
+  Z = (((llvm_cbe_tmp12850 == 0xff)));
   N = ((((((llvm_cbe_tmp12850not) >> (7))))));
   goto llvm_cbe_lAAE7;
 
 llvm_cbe_lAADC:
   llvm_cbe_tmp12802 = *((&RAM[(19u)]));
-  Z = (((bool )(llvm_cbe_tmp12802 == 0)));
+  Z = (((llvm_cbe_tmp12802 == 0)));
   llvm_cbe_tmp12802_2e_lobit = (((((llvm_cbe_tmp12802) >> (7)))));
   N = llvm_cbe_tmp12802_2e_lobit;
   V = (((((((((llvm_cbe_tmp12802) >> ((6))))))) & 1)));
@@ -18626,7 +18626,7 @@ llvm_cbe_lAB30:
   llvm_cbe_tmp13387 = ((((llvm_cbe_tmp13385)) + (-13)));
   llvm_cbe_tmp1338813389 = (llvm_cbe_tmp13387);
   C = ((((((((((((llvm_cbe_tmp1338813389) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1338813389 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1338813389 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp13387))) >> (7))))));
   if (((llvm_cbe_tmp1338813389 & 255u) == 0u)) {
     goto llvm_cbe_bb13411;
@@ -18638,7 +18638,7 @@ llvm_cbe_lAB28:
   llvm_cbe_tmp13321 = X;
   llvm_cbe_tmp13322 = ((llvm_cbe_tmp13321 + (-1)));
   X = llvm_cbe_tmp13322;
-  Z = (((bool )(llvm_cbe_tmp13321 == 1)));
+  Z = (((llvm_cbe_tmp13321 == 1)));
   N = ((((((llvm_cbe_tmp13322) >> (7))))));
   if (llvm_cbe_tmp13321 == 1) {
     goto llvm_cbe_lAAE7;
@@ -18651,13 +18651,13 @@ llvm_cbe_lAB24:
   Y = 0;
   llvm_cbe_tmp13309 = ((llvm_cbe_tmp13285 + 1));
   X = llvm_cbe_tmp13309;
-  Z = (((bool )(llvm_cbe_tmp13309 == 0)));
+  Z = (((llvm_cbe_tmp13309 == 0)));
   N = ((((((llvm_cbe_tmp13309) >> (7))))));
   goto llvm_cbe_lAB28;
 
 llvm_cbe_lAB4A:
   llvm_cbe_tmp13532 = A;
-  Z = (((bool )(llvm_cbe_tmp13532 == 0)));
+  Z = (((llvm_cbe_tmp13532 == 0)));
   N = ((((((llvm_cbe_tmp13532) >> (7))))));
   llvm_cbe_tmp13544 = S;
   llvm_cbe_tmp13550 = *((&RAM[(((((((llvm_cbe_tmp13544 + 1))))) | 256u))]));
@@ -18677,7 +18677,7 @@ llvm_cbe_lAB72:
   A = llvm_cbe_tmp13687;
   llvm_cbe_tmp13699 = *((&RAM[(62u)]));
   Y = llvm_cbe_tmp13699;
-  Z = (((bool )(llvm_cbe_tmp13699 == 0)));
+  Z = (((llvm_cbe_tmp13699 == 0)));
   N = ((((((llvm_cbe_tmp13699) >> (7))))));
   *((&RAM[(122u)])) = llvm_cbe_tmp13687;
   *((&RAM[(123u)])) = llvm_cbe_tmp13699;
@@ -18711,7 +18711,7 @@ llvm_cbe_bb13896:
 llvm_cbe_lABA0:
   llvm_cbe_tmp13880 = *((&RAM[(19u)]));
   X = llvm_cbe_tmp13880;
-  Z = (((bool )(llvm_cbe_tmp13880 == 0)));
+  Z = (((llvm_cbe_tmp13880 == 0)));
   N = ((((((llvm_cbe_tmp13880) >> (7))))));
   if (llvm_cbe_tmp13880 == 0) {
     goto llvm_cbe_bb13896;
@@ -18777,7 +18777,7 @@ llvm_cbe_lAE46:
   *((&RAM[(((((((llvm_cbe_tmp17096 + (-3)))))) | 256u))])) = llvm_cbe_tmp17138;
   llvm_cbe_tmp17156 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp17156;
-  Z = (((bool )(llvm_cbe_tmp17156 == 0)));
+  Z = (((llvm_cbe_tmp17156 == 0)));
   N = ((((((llvm_cbe_tmp17156) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp17096 + (-4)))))) | 256u))])) = llvm_cbe_tmp17156;
   S = (((llvm_cbe_tmp17096 + (-5))));
@@ -18795,7 +18795,7 @@ llvm_cbe_lAE80:
   llvm_cbe_tmp17429_2e_rle = llvm_cbe_tmp17429_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp17417 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp17417;
-  Z = (((bool )(llvm_cbe_tmp17417 == 0)));
+  Z = (((llvm_cbe_tmp17417 == 0)));
   N = ((((((llvm_cbe_tmp17417) >> (7))))));
   llvm_cbe_tmp17435 = *((&RAM[(((((((llvm_cbe_tmp17429_2e_rle + 1))))) | 256u))]));
   llvm_cbe_tmp17438 = ((llvm_cbe_tmp17429_2e_rle + (2)));
@@ -18831,7 +18831,7 @@ llvm_cbe_lAE66:
   llvm_cbe_tmp17402 = *((&RAM[(102u)]));
   llvm_cbe_tmp17404 = ((llvm_cbe_tmp17389 ^ llvm_cbe_tmp17402));
   A = llvm_cbe_tmp17404;
-  Z = (((bool )(llvm_cbe_tmp17402 == llvm_cbe_tmp17389)));
+  Z = (((llvm_cbe_tmp17402 == llvm_cbe_tmp17389)));
   N = ((((((llvm_cbe_tmp17404) >> (7))))));
   *((&RAM[(111u)])) = llvm_cbe_tmp17404;
   llvm_cbe_tmp17429_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp17384;   /* for PHI node */
@@ -18843,7 +18843,7 @@ llvm_cbe_lAE19:
   llvm_cbe_tmp1686816869 = (llvm_cbe_tmp16867);
   llvm_cbe_tmp16870_2e_lobit48596 = ((((((((llvm_cbe_tmp1686816869) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp16870_2e_lobit48596 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1686816869 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1686816869 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp16867))) >> (7))))));
   if ((llvm_cbe_tmp16870_2e_lobit48596 != 0)) {
     goto llvm_cbe_lADF9;
@@ -18884,7 +18884,7 @@ llvm_cbe_lB63D:
   *((&RAM[((((llvm_cbe_tmp29231)) | 256u))])) = llvm_cbe_tmp29219;
   llvm_cbe_tmp29237 = *((&RAM[(100u)]));
   A = llvm_cbe_tmp29237;
-  Z = (((bool )(llvm_cbe_tmp29237 == 0)));
+  Z = (((llvm_cbe_tmp29237 == 0)));
   N = ((((((llvm_cbe_tmp29237) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp29231 + (-1)))))) | 256u))])) = llvm_cbe_tmp29237;
   *((&RAM[(((((((llvm_cbe_tmp29231 + (-2)))))) | 256u))])) = (-74);
@@ -18913,14 +18913,14 @@ llvm_cbe_lAF14:
   C = 1;
   llvm_cbe_tmp18136 = *((&RAM[(100u)]));
   A = llvm_cbe_tmp18136;
-  Z = (((bool )(llvm_cbe_tmp18136 == 0)));
+  Z = (((llvm_cbe_tmp18136 == 0)));
   N = ((((((llvm_cbe_tmp18136) >> (7))))));
   llvm_cbe_tmp1814818149 = (llvm_cbe_tmp18136);
   V = 0;
   C = 1;
   llvm_cbe_tmp18190 = *((&RAM[(101u)]));
   A = llvm_cbe_tmp18190;
-  Z = (((bool )(llvm_cbe_tmp18190 == 0)));
+  Z = (((llvm_cbe_tmp18190 == 0)));
   N = ((((((llvm_cbe_tmp18190) >> (7))))));
   llvm_cbe_tmp1820218203 = (llvm_cbe_tmp18190);
   llvm_cbe_tmp18207 = ((llvm_cbe_tmp1820218203 + (-160)));
@@ -18928,7 +18928,7 @@ llvm_cbe_lAF14:
   V = (((((((((llvm_cbe_tmp1821018211 ^ ((llvm_cbe_tmp18190))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp18190) < ((s8 )0)))&1))) ? (0) : (1)));
   llvm_cbe_tmp1822718228 = (llvm_cbe_tmp18207);
   A = llvm_cbe_tmp1822718228;
-  Z = (((bool )(llvm_cbe_tmp1822718228 == 0)));
+  Z = (((llvm_cbe_tmp1822718228 == 0)));
   N = ((((((llvm_cbe_tmp1822718228) >> (7))))));
   llvm_cbe_tmp18242 = llvm_cbe_tmp1821018211 & 256u;
   llvm_cbe_tmp1824318244 = ((((((((llvm_cbe_tmp18242) >> (8u)))))) ^ 1));
@@ -18966,7 +18966,7 @@ llvm_cbe_bb18352:
   V = llvm_cbe_iftmp_2e_4106_2e_0;
   llvm_cbe_tmp1835418355 = (llvm_cbe_tmp18330);
   A = llvm_cbe_tmp1835418355;
-  Z = (((bool )(llvm_cbe_tmp1835418355 == 0)));
+  Z = (((llvm_cbe_tmp1835418355 == 0)));
   N = ((((((llvm_cbe_tmp1835418355) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp1833318334) >> (8u)))))) & 1))) ^ 1)));
   goto llvm_cbe_lAF27;
@@ -19049,7 +19049,7 @@ llvm_cbe_bb18471:
   llvm_cbe_tmp18474 = ((((llvm_cbe_tmp18472)) + (-84)));
   llvm_cbe_tmp1847518476 = (llvm_cbe_tmp18474);
   C = ((((((((((((llvm_cbe_tmp1847518476) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1847518476 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1847518476 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18474))) >> (7))))));
   if (((llvm_cbe_tmp1847518476 & 255u) == 0u)) {
     goto llvm_cbe_bb18498;
@@ -19062,7 +19062,7 @@ llvm_cbe_bb18498:
   llvm_cbe_tmp18501 = ((((llvm_cbe_tmp18499)) + (-201)));
   llvm_cbe_tmp1850218503 = (llvm_cbe_tmp18501);
   C = ((((((((((((llvm_cbe_tmp1850218503) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1850218503 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1850218503 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18501))) >> (7))))));
   if (((llvm_cbe_tmp1850218503 & 255u) == 0u)) {
     goto llvm_cbe_bb18525;
@@ -19129,7 +19129,7 @@ llvm_cbe_lB113:
   llvm_cbe_tmp20830_2e_lobit48771 = ((((((((llvm_cbe_tmp2082820829) >> (8u)))))) & 1));
   llvm_cbe_tmp2083120832 = ((llvm_cbe_tmp20830_2e_lobit48771 ^ 1));
   C = llvm_cbe_tmp2083120832;
-  Z = (((bool )((llvm_cbe_tmp2082820829 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2082820829 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp20827))) >> (7))))));
   if (llvm_cbe_tmp20830_2e_lobit48771 == 0) {
     goto llvm_cbe_bb20851;
@@ -19204,7 +19204,7 @@ llvm_cbe_bb20851:
   V = (((((((((((llvm_cbe_tmp20857)) ^ ((llvm_cbe_tmp20825))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp20825) > ((s8 )(-1))))&1))) ? (0) : (1)));
   llvm_cbe_tmp2087720878 = (llvm_cbe_tmp20857);
   A = llvm_cbe_tmp2087720878;
-  Z = (((bool )(llvm_cbe_tmp2087720878 == 0)));
+  Z = (((llvm_cbe_tmp2087720878 == 0)));
   N = ((((((llvm_cbe_tmp2087720878) >> (7))))));
   C = 1;
   llvm_cbe_tmp20900 = (((((llvm_cbe_tmp20857 & (255)))) + (-165)));
@@ -19212,7 +19212,7 @@ llvm_cbe_bb20851:
   V = (((((((((llvm_cbe_tmp2090320904 ^ ((llvm_cbe_tmp2087720878))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp2087720878) < ((s8 )0)))&1))) ? (0) : (1)));
   llvm_cbe_tmp2092020921 = (llvm_cbe_tmp20900);
   A = llvm_cbe_tmp2092020921;
-  Z = (((bool )(llvm_cbe_tmp2092020921 == 0)));
+  Z = (((llvm_cbe_tmp2092020921 == 0)));
   N = ((((((llvm_cbe_tmp2092020921) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp2090320904) >> (8u)))))) & 1))) ^ 1)));
   goto llvm_cbe_lB11C;
@@ -19260,7 +19260,7 @@ llvm_cbe_bb21619:
   C = llvm_cbe_iftmp_2e_4975_2e_0;
   llvm_cbe_tmp21644 = *((&RAM[(96u)]));
   Y = llvm_cbe_tmp21644;
-  Z = (((bool )(llvm_cbe_tmp21644 == 0)));
+  Z = (((llvm_cbe_tmp21644 == 0)));
   N = ((((((llvm_cbe_tmp21644) >> (7))))));
   if (llvm_cbe_iftmp_2e_4975_2e_0 == 0) {
     llvm_cbe_tmp21675_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp21644;   /* for PHI node */
@@ -19280,7 +19280,7 @@ llvm_cbe_bb21607:
 llvm_cbe_lB185:
   llvm_cbe_tmp21584 = *((&RAM[(95u)]));
   A = llvm_cbe_tmp21584;
-  Z = (((bool )(llvm_cbe_tmp21584 == 0)));
+  Z = (((llvm_cbe_tmp21584 == 0)));
   N = ((((((llvm_cbe_tmp21584) >> (7))))));
   C = 0;
   llvm_cbe_tmp21601 = ((((llvm_cbe_tmp21584)) + (2)));
@@ -19328,7 +19328,7 @@ llvm_cbe_lB185_2e_loopexit:
   X = llvm_cbe_X_2e_tmp_2e_051590;
   A = llvm_cbe_tmp20456;
   C = ((((((((((((llvm_cbe_tmp2071120712) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2071120712 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2071120712 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp20705))) >> (7))))));
   V = llvm_cbe_V_2e_tmp_2e_051573;
   Y = 1;
@@ -19341,7 +19341,7 @@ llvm_cbe_bb21618:
 llvm_cbe_bb21660:
   llvm_cbe_tmp21662 = ((llvm_cbe_tmp21644 + 1));
   Y = llvm_cbe_tmp21662;
-  Z = (((bool )(llvm_cbe_tmp21662 == 0)));
+  Z = (((llvm_cbe_tmp21662 == 0)));
   N = ((((((llvm_cbe_tmp21662) >> (7))))));
   llvm_cbe_tmp21675_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp21662;   /* for PHI node */
   goto llvm_cbe_lB18F;
@@ -19371,7 +19371,7 @@ llvm_cbe_bb21809:
   C = llvm_cbe_iftmp_2e_5018_2e_0;
   llvm_cbe_tmp21834 = *((&RAM[(96u)]));
   Y = llvm_cbe_tmp21834;
-  Z = (((bool )(llvm_cbe_tmp21834 == 0)));
+  Z = (((llvm_cbe_tmp21834 == 0)));
   N = ((((((llvm_cbe_tmp21834) >> (7))))));
   if (llvm_cbe_iftmp_2e_5018_2e_0 == 0) {
     llvm_cbe_tmp21865_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp21834;   /* for PHI node */
@@ -19393,7 +19393,7 @@ llvm_cbe_bb21755:
   V = llvm_cbe_iftmp_2e_5001_2e_0;
   llvm_cbe_tmp2175721758 = (llvm_cbe_tmp21737);
   A = llvm_cbe_tmp2175721758;
-  Z = (((bool )(llvm_cbe_tmp2175721758 == 0)));
+  Z = (((llvm_cbe_tmp2175721758 == 0)));
   N = ((((((llvm_cbe_tmp2175721758) >> (7))))));
   llvm_cbe_iftmp_2e_5008_2e_0 = ((((((((((llvm_cbe_tmp21737))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_5008_2e_0;
@@ -19419,7 +19419,7 @@ llvm_cbe_lB194:
   llvm_cbe_tmp21700_2e_lobit = (((((llvm_cbe_tmp21696) >> (7)))));
   C = llvm_cbe_tmp21700_2e_lobit;
   llvm_cbe_tmp21715 = ((((llvm_cbe_tmp21696)) << (1)));
-  Z = (((bool )((((llvm_cbe_tmp21715)) & 254u) == 0u)));
+  Z = ((((((llvm_cbe_tmp21715)) & 254u) == 0u)));
   N = (((((((((llvm_cbe_tmp21696) >> ((6))))))) & 1)));
   llvm_cbe_tmp2173021731 = (llvm_cbe_tmp21715);
   A = llvm_cbe_tmp2173021731;
@@ -19440,7 +19440,7 @@ llvm_cbe_lB261:
   X = llvm_cbe_X_2e_tmp_2e_051473;
   A = llvm_cbe_A_2e_tmp_2e_051474;
   C = ((((((((((((llvm_cbe_tmp2246822469) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2246822469 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2246822469 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp22462))) >> (7))))));
   V = llvm_cbe_V_2e_tmp_2e_051475;
   Y = llvm_cbe_Y_2e_tmp_2e_051476;
@@ -19460,7 +19460,7 @@ llvm_cbe_bb21808:
 llvm_cbe_bb21850:
   llvm_cbe_tmp21852 = ((llvm_cbe_tmp21834 + 1));
   Y = llvm_cbe_tmp21852;
-  Z = (((bool )(llvm_cbe_tmp21852 == 0)));
+  Z = (((llvm_cbe_tmp21852 == 0)));
   N = ((((((llvm_cbe_tmp21852) >> (7))))));
   llvm_cbe_tmp21865_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp21852;   /* for PHI node */
   goto llvm_cbe_lB1A0;
@@ -19503,14 +19503,14 @@ llvm_cbe_bb24541:
   llvm_cbe_iftmp_2e_5734_2e_0 = llvm_cbe_iftmp_2e_5734_2e_0__PHI_TEMPORARY;
   V = llvm_cbe_iftmp_2e_5734_2e_0;
   llvm_cbe_tmp2454324544 = (llvm_cbe_tmp24519);
-  llvm_cbe_tmp2454624547 = ((bool )(llvm_cbe_tmp2454324544 == 0));
+  llvm_cbe_tmp2454624547 = ((llvm_cbe_tmp2454324544 == 0));
   llvm_cbe_tmp24548_2e_lobit = (((((llvm_cbe_tmp2454324544) >> (7)))));
   llvm_cbe_iftmp_2e_5741_2e_0 = ((((((((((llvm_cbe_tmp24519))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_5741_2e_0;
   *((&RAM[(71u)])) = llvm_cbe_tmp2454324544;
   llvm_cbe_tmp24567 = Y;
   A = llvm_cbe_tmp24567;
-  Z = (((bool )(llvm_cbe_tmp24567 == 0)));
+  Z = (((llvm_cbe_tmp24567 == 0)));
   N = ((((((llvm_cbe_tmp24567) >> (7))))));
   llvm_cbe_tmp24581 = *((&RAM[(89u)]));
   llvm_cbe_tmp24586 = (((((((llvm_cbe_tmp24581)) + ((llvm_cbe_tmp24567))))) + ((llvm_cbe_iftmp_2e_5741_2e_0))));
@@ -19531,7 +19531,7 @@ llvm_cbe_bb24529:
 llvm_cbe_lB33E:
   llvm_cbe_tmp24500 = X;
   A = llvm_cbe_tmp24500;
-  Z = (((bool )(llvm_cbe_tmp24500 == 0)));
+  Z = (((llvm_cbe_tmp24500 == 0)));
   N = ((((((llvm_cbe_tmp24500) >> (7))))));
   llvm_cbe_tmp24514 = *((&RAM[(88u)]));
   llvm_cbe_tmp24517 = C;
@@ -19553,7 +19553,7 @@ llvm_cbe_bb24607:
 llvm_cbe_bb25109:
   X = llvm_cbe_X_2e_tmp_2e_251504;
   A = llvm_cbe_A_2e_tmp_2e_151506;
-  Z = (((bool )(llvm_cbe__2e_tmp_2e_051514 == 1)));
+  Z = (((llvm_cbe__2e_tmp_2e_051514 == 1)));
   N = ((((((llvm_cbe_tmp25093) >> (7))))));
   C = llvm_cbe_C_2e_tmp_2e_151510;
   Y = llvm_cbe_Y_2e_tmp_2e_251513;
@@ -19619,7 +19619,7 @@ llvm_cbe_lB449:
   S = llvm_cbe_tmp26148;
   llvm_cbe_tmp26153 = *((&RAM[((((llvm_cbe_tmp26148)) | 256u))]));
   A = llvm_cbe_tmp26153;
-  Z = (((bool )(llvm_cbe_tmp26153 == 0)));
+  Z = (((llvm_cbe_tmp26153 == 0)));
   N = ((((((llvm_cbe_tmp26153) >> (7))))));
   *((&RAM[(123u)])) = llvm_cbe_tmp26153;
   goto llvm_cbe_lB44F;
@@ -19661,7 +19661,7 @@ llvm_cbe_lB4D5:
   *((&RAM[(23u)])) = llvm_cbe_tmp26901;
   llvm_cbe_tmp27059 = ((llvm_cbe_tmp26901 + (3)));
   X = llvm_cbe_tmp27059;
-  Z = (((bool )(llvm_cbe_tmp27059 == 0)));
+  Z = (((llvm_cbe_tmp27059 == 0)));
   N = ((((((llvm_cbe_tmp27059) >> (7))))));
   *((&RAM[(22u)])) = llvm_cbe_tmp27059;
   llvm_cbe_tmp27072 = S;
@@ -19685,7 +19685,7 @@ llvm_cbe_lB50B:
   X = llvm_cbe_tmp2715827159;
   llvm_cbe_tmp27295 = *((&RAM[((((llvm_cbe_tmp27109_2e_rle)) | 256u))]));
   A = llvm_cbe_tmp27295;
-  Z = (((bool )(llvm_cbe_tmp27295 == 0)));
+  Z = (((llvm_cbe_tmp27295 == 0)));
   N = ((((((llvm_cbe_tmp27295) >> (7))))));
   llvm_cbe_tmp27313 = *((&RAM[(((((((llvm_cbe_tmp27109_2e_rle + 1))))) | 256u))]));
   llvm_cbe_tmp27316 = ((llvm_cbe_tmp27109_2e_rle + (2)));
@@ -19723,7 +19723,7 @@ llvm_cbe_bb28762:
   V = llvm_cbe_iftmp_2e_6846_2e_0;
   llvm_cbe_tmp2876428765 = (llvm_cbe_tmp28737);
   A = llvm_cbe_tmp2876428765;
-  Z = (((bool )(llvm_cbe_tmp2876428765 == 0)));
+  Z = (((llvm_cbe_tmp2876428765 == 0)));
   N = ((((((llvm_cbe_tmp2876428765) >> (7))))));
   llvm_cbe_iftmp_2e_6853_2e_0 = ((((((((((llvm_cbe_tmp28737))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_6853_2e_0;
@@ -19747,7 +19747,7 @@ llvm_cbe_lB5F6:
   llvm_cbe_tmp28735_2e_rle = llvm_cbe_tmp28735_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp28721 = *((&RAM[(83u)]));
   A = llvm_cbe_tmp28721;
-  Z = (((bool )(llvm_cbe_tmp28721 == 0)));
+  Z = (((llvm_cbe_tmp28721 == 0)));
   N = ((((((llvm_cbe_tmp28721) >> (7))))));
   C = 0;
   llvm_cbe_tmp28737 = ((((llvm_cbe_tmp28735_2e_rle)) + ((llvm_cbe_tmp28721))));
@@ -19764,7 +19764,7 @@ llvm_cbe_lB5BD:
   llvm_cbe_tmp28368 = Y;
   llvm_cbe_tmp28373 = *((&RAM[(((llvm_cbe_tmp28367 + ((llvm_cbe_tmp28368))) & 65535u))]));
   A = llvm_cbe_tmp28373;
-  Z = (((bool )(llvm_cbe_tmp28373 == 0)));
+  Z = (((llvm_cbe_tmp28373 == 0)));
   N = ((((((llvm_cbe_tmp28373) >> (7))))));
   if ((((s8 )llvm_cbe_tmp28373) < ((s8 )0))) {
     llvm_cbe_tmp28793_2e_rle51918__PHI_TEMPORARY = llvm_cbe_tmp28364;   /* for PHI node */
@@ -19786,7 +19786,7 @@ llvm_cbe_bb28389:
   Y = llvm_cbe_tmp28391;
   llvm_cbe_tmp28414 = *((&RAM[(((llvm_cbe_tmp28367 + ((llvm_cbe_tmp28391))) & 65535u))]));
   A = llvm_cbe_tmp28414;
-  Z = (((bool )(llvm_cbe_tmp28414 == 0)));
+  Z = (((llvm_cbe_tmp28414 == 0)));
   N = ((((((llvm_cbe_tmp28414) >> (7))))));
   if ((((s8 )llvm_cbe_tmp28414) < ((s8 )0))) {
     goto llvm_cbe_bb28430;
@@ -19803,7 +19803,7 @@ llvm_cbe_lB5C7:
   llvm_cbe_tmp28450 = Y;
   llvm_cbe_tmp28455 = *((&RAM[(((llvm_cbe_tmp28449 + ((llvm_cbe_tmp28450))) & 65535u))]));
   A = llvm_cbe_tmp28455;
-  Z = (((bool )(llvm_cbe_tmp28455 == 0)));
+  Z = (((llvm_cbe_tmp28455 == 0)));
   N = ((((((llvm_cbe_tmp28455) >> (7))))));
   if (llvm_cbe_tmp28455 == 0) {
     llvm_cbe_tmp28793_2e_rle51918__PHI_TEMPORARY = llvm_cbe_tmp28446;   /* for PHI node */
@@ -19830,7 +19830,7 @@ llvm_cbe_lB5B8:
 llvm_cbe_bb28430:
   llvm_cbe_tmp28432 = ((llvm_cbe_tmp28368 + (2)));
   Y = llvm_cbe_tmp28432;
-  Z = (((bool )(llvm_cbe_tmp28432 == 0)));
+  Z = (((llvm_cbe_tmp28432 == 0)));
   N = ((((((llvm_cbe_tmp28432) >> (7))))));
   goto llvm_cbe_lB5C7;
 
@@ -19856,7 +19856,7 @@ llvm_cbe_bb28471:
   llvm_cbe_tmp2856128562 = (llvm_cbe_tmp28560);
   llvm_cbe_tmp28563_2e_lobit49819 = ((((((((llvm_cbe_tmp2856128562) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp28563_2e_lobit49819 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2856128562 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2856128562 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp28560))) >> (7))))));
   if (llvm_cbe_tmp28563_2e_lobit49819 == 0) {
     goto llvm_cbe_bb28584;
@@ -19870,7 +19870,7 @@ llvm_cbe_bb28589:
   llvm_cbe_tmp2859528596 = (llvm_cbe_tmp28594);
   llvm_cbe_tmp28597_2e_lobit49818 = ((((((((llvm_cbe_tmp2859528596) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp28597_2e_lobit49818 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2859528596 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2859528596 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp28594))) >> (7))))));
   if (llvm_cbe_tmp28597_2e_lobit49818 == 0) {
     llvm_cbe_tmp28793_2e_rle51918__PHI_TEMPORARY = llvm_cbe_tmp28446;   /* for PHI node */
@@ -19886,7 +19886,7 @@ llvm_cbe_lB5DC:
   llvm_cbe_tmp2862328624 = (llvm_cbe_tmp28622);
   llvm_cbe_tmp28625_2e_lobit49817 = ((((((((llvm_cbe_tmp2862328624) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp28625_2e_lobit49817 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2862328624 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2862328624 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp28622))) >> (7))))));
   if (llvm_cbe_tmp28625_2e_lobit49817 == 0) {
     goto llvm_cbe_bb28646;
@@ -19902,7 +19902,7 @@ llvm_cbe_bb28651:
   llvm_cbe_tmp2865728658 = (llvm_cbe_tmp28656);
   llvm_cbe_tmp28659_2e_lobit49816 = ((((((((llvm_cbe_tmp2865728658) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp28659_2e_lobit49816 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2865728658 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2865728658 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp28656))) >> (7))))));
   if (llvm_cbe_tmp28659_2e_lobit49816 == 0) {
     goto llvm_cbe_lB5E6;
@@ -19927,7 +19927,7 @@ llvm_cbe_lB5E6:
   *((&RAM[(79u)])) = llvm_cbe_tmp28446;
   llvm_cbe_tmp28708 = *((&RAM[(83u)]));
   A = llvm_cbe_tmp28708;
-  Z = (((bool )(llvm_cbe_tmp28708 == 0)));
+  Z = (((llvm_cbe_tmp28708 == 0)));
   N = ((((((llvm_cbe_tmp28708) >> (7))))));
   *((&RAM[(85u)])) = llvm_cbe_tmp28708;
   llvm_cbe_tmp28793_2e_rle51918__PHI_TEMPORARY = llvm_cbe_tmp28446;   /* for PHI node */
@@ -19941,7 +19941,7 @@ llvm_cbe_bb28761:
 llvm_cbe_bb28792:
   llvm_cbe_tmp28794 = ((llvm_cbe_tmp28793_2e_rle51918 + 1));
   *((&RAM[(35u)])) = llvm_cbe_tmp28794;
-  Z = (((bool )(llvm_cbe_tmp28794 == 0)));
+  Z = (((llvm_cbe_tmp28794 == 0)));
   N = ((((((llvm_cbe_tmp28794) >> (7))))));
   goto llvm_cbe_lB601;
 
@@ -19963,7 +19963,7 @@ llvm_cbe_bb29838:
   V = llvm_cbe_iftmp_2e_7141_2e_0;
   llvm_cbe_tmp2984029841 = (llvm_cbe_tmp29813);
   A = llvm_cbe_tmp2984029841;
-  Z = (((bool )(llvm_cbe_tmp2984029841 == 0)));
+  Z = (((llvm_cbe_tmp2984029841 == 0)));
   N = ((((((llvm_cbe_tmp2984029841) >> (7))))));
   llvm_cbe_iftmp_2e_7148_2e_0 = ((((((((((llvm_cbe_tmp29813))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_7148_2e_0;
@@ -19997,7 +19997,7 @@ llvm_cbe_lB68C:
   llvm_cbe_tmp29720_2e_rle = llvm_cbe_tmp29720_2e_rle__PHI_TEMPORARY;
   llvm_cbe_tmp29703 = A;
   Y = llvm_cbe_tmp29703;
-  Z = (((bool )(llvm_cbe_tmp29703 == 0)));
+  Z = (((llvm_cbe_tmp29703 == 0)));
   N = ((((((llvm_cbe_tmp29703) >> (7))))));
   if (llvm_cbe_tmp29703 == 0) {
     llvm_cbe_tmp29809_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp29703;   /* for PHI node */
@@ -20011,7 +20011,7 @@ llvm_cbe_lB4C3:
   X = llvm_cbe_tmp26867;
   llvm_cbe_tmp26879 = *((&RAM[(112u)]));
   Y = llvm_cbe_tmp26879;
-  Z = (((bool )(llvm_cbe_tmp26879 == 0)));
+  Z = (((llvm_cbe_tmp26879 == 0)));
   N = ((((((llvm_cbe_tmp26879) >> (7))))));
   llvm_cbe_tmp26891 = S;
   *((&RAM[((((llvm_cbe_tmp26891)) | 256u))])) = (-76);
@@ -20049,7 +20049,7 @@ llvm_cbe_lB67A:
   S = llvm_cbe_storemerge48316;
   llvm_cbe_tmp29689 = *((&RAM[((((llvm_cbe_storemerge48316)) | 256u))]));
   A = llvm_cbe_tmp29689;
-  Z = (((bool )(llvm_cbe_tmp29689 == 0)));
+  Z = (((llvm_cbe_tmp29689 == 0)));
   N = ((((((llvm_cbe_tmp29689) >> (7))))));
   *((&RAM[(34u)])) = llvm_cbe_tmp29611;
   *((&RAM[(35u)])) = llvm_cbe_tmp29659;
@@ -20061,7 +20061,7 @@ llvm_cbe_lAA59:
   A = llvm_cbe_tmp12156;
   llvm_cbe_tmp12168 = *((&RAM[(81u)]));
   Y = llvm_cbe_tmp12168;
-  Z = (((bool )(llvm_cbe_tmp12168 == 0)));
+  Z = (((llvm_cbe_tmp12168 == 0)));
   N = ((((((llvm_cbe_tmp12168) >> (7))))));
   *((&RAM[(111u)])) = llvm_cbe_tmp12156;
   *((&RAM[(112u)])) = llvm_cbe_tmp12168;
@@ -20097,7 +20097,7 @@ llvm_cbe_bb30862:
   V = llvm_cbe_iftmp_2e_7395_2e_0;
   llvm_cbe_tmp3086430865 = (llvm_cbe_tmp30837);
   A = llvm_cbe_tmp3086430865;
-  Z = (((bool )(llvm_cbe_tmp3086430865 == 0)));
+  Z = (((llvm_cbe_tmp3086430865 == 0)));
   N = ((((((llvm_cbe_tmp3086430865) >> (7))))));
   llvm_cbe_iftmp_2e_7402_2e_0 = ((((((((((llvm_cbe_tmp30837))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_7402_2e_0;
@@ -20120,7 +20120,7 @@ llvm_cbe_lB719:
   llvm_cbe_tmp30785 = S;
   llvm_cbe_tmp30786 = ((llvm_cbe_tmp30785 + 1));
   llvm_cbe_tmp30791 = *((&RAM[((((llvm_cbe_tmp30786)) | 256u))]));
-  llvm_cbe_tmp3079330794 = ((bool )(llvm_cbe_tmp30791 == 0));
+  llvm_cbe_tmp3079330794 = ((llvm_cbe_tmp30791 == 0));
   llvm_cbe_tmp30795_2e_lobit = (((((llvm_cbe_tmp30791) >> (7)))));
   Y = llvm_cbe_tmp30791;
   llvm_cbe_tmp30816 = ((llvm_cbe_tmp30785 + (2)));
@@ -20128,7 +20128,7 @@ llvm_cbe_lB719:
   llvm_cbe_tmp30820 = (&RAM[((((llvm_cbe_tmp30816)) | 256u))]);
   llvm_cbe_tmp30821 = *llvm_cbe_tmp30820;
   A = llvm_cbe_tmp30821;
-  Z = (((bool )(llvm_cbe_tmp30821 == 0)));
+  Z = (((llvm_cbe_tmp30821 == 0)));
   N = ((((((llvm_cbe_tmp30821) >> (7))))));
   C = 0;
   llvm_cbe_tmp30835 = *((&RAM[(34u)]));
@@ -20147,7 +20147,7 @@ llvm_cbe_bb30892:
   llvm_cbe_tmp30893 = *((&RAM[(35u)]));
   llvm_cbe_tmp30894 = ((llvm_cbe_tmp30893 + 1));
   *((&RAM[(35u)])) = llvm_cbe_tmp30894;
-  Z = (((bool )(llvm_cbe_tmp30894 == 0)));
+  Z = (((llvm_cbe_tmp30894 == 0)));
   N = ((((((llvm_cbe_tmp30894) >> (7))))));
   goto llvm_cbe_lB725;
 
@@ -20156,7 +20156,7 @@ llvm_cbe_bb29790:
   S = llvm_cbe_tmp29720_2e_rle;
   llvm_cbe_tmp29797 = *((&RAM[((((llvm_cbe_tmp29720_2e_rle)) | 256u))]));
   A = llvm_cbe_tmp29797;
-  Z = (((bool )(llvm_cbe_tmp29797 == 0)));
+  Z = (((llvm_cbe_tmp29797 == 0)));
   N = ((((((llvm_cbe_tmp29797) >> (7))))));
   llvm_cbe_tmp29809_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp29797;   /* for PHI node */
   goto llvm_cbe_lB699;
@@ -20194,7 +20194,7 @@ llvm_cbe_bb29868:
   llvm_cbe_tmp29869 = *((&RAM[(54u)]));
   llvm_cbe_tmp29870 = ((llvm_cbe_tmp29869 + 1));
   *((&RAM[(54u)])) = llvm_cbe_tmp29870;
-  Z = (((bool )(llvm_cbe_tmp29870 == 0)));
+  Z = (((llvm_cbe_tmp29870 == 0)));
   N = ((((((llvm_cbe_tmp29870) >> (7))))));
   goto llvm_cbe_lB6A2;
 
@@ -20259,7 +20259,7 @@ llvm_cbe_bb30170:
   llvm_cbe_tmp30175 = ((((llvm_cbe_tmp30097)) - ((llvm_cbe_tmp30173))));
   llvm_cbe_tmp3017630177 = (llvm_cbe_tmp30175);
   C = ((((((((((((llvm_cbe_tmp3017630177) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3017630177 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3017630177 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp30175))) >> (7))))));
   if (((llvm_cbe_tmp3017630177 & 255u) == 0u)) {
     goto llvm_cbe_bb30199;
@@ -20272,7 +20272,7 @@ llvm_cbe_bb30199:
   llvm_cbe_tmp30204 = ((((llvm_cbe_tmp30049)) - ((llvm_cbe_tmp30202))));
   llvm_cbe_tmp3020530206 = (llvm_cbe_tmp30204);
   C = ((((((((((((llvm_cbe_tmp3020530206) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3020530206 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3020530206 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp30204))) >> (7))))));
   if (((llvm_cbe_tmp3020530206 & 255u) == 0u)) {
     goto llvm_cbe_bb30228;
@@ -20284,7 +20284,7 @@ llvm_cbe_lB6D5:
   S = llvm_cbe_tmp29979;
   llvm_cbe_tmp30314 = *((&RAM[((((llvm_cbe_tmp29979)) | 256u))]));
   A = llvm_cbe_tmp30314;
-  Z = (((bool )(llvm_cbe_tmp30314 == 0)));
+  Z = (((llvm_cbe_tmp30314 == 0)));
   N = ((((((llvm_cbe_tmp30314) >> (7))))));
   goto llvm_cbe_lB6D6;
 
@@ -20293,7 +20293,7 @@ llvm_cbe_bb30264:
   V = llvm_cbe_iftmp_2e_7240_2e_0;
   llvm_cbe_tmp3026630267 = (llvm_cbe_tmp30239);
   A = llvm_cbe_tmp3026630267;
-  Z = (((bool )(llvm_cbe_tmp3026630267 == 0)));
+  Z = (((llvm_cbe_tmp3026630267 == 0)));
   N = ((((((llvm_cbe_tmp3026630267) >> (7))))));
   llvm_cbe_iftmp_2e_7247_2e_0 = ((((((((((llvm_cbe_tmp30239))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_7247_2e_0;
@@ -20332,7 +20332,7 @@ llvm_cbe_bb30294:
   llvm_cbe_tmp30295 = *((&RAM[(52u)]));
   llvm_cbe_tmp30296 = ((llvm_cbe_tmp30295 + 1));
   *((&RAM[(52u)])) = llvm_cbe_tmp30296;
-  Z = (((bool )(llvm_cbe_tmp30296 == 0)));
+  Z = (((llvm_cbe_tmp30296 == 0)));
   N = ((((((llvm_cbe_tmp30296) >> (7))))));
   goto llvm_cbe_lB6D5;
 
@@ -20358,7 +20358,7 @@ llvm_cbe_lB6DB:
   llvm_cbe_tmp30352 = ((((llvm_cbe_tmp30348_2e_rle)) - ((llvm_cbe_tmp30350))));
   llvm_cbe_tmp3035330354 = (llvm_cbe_tmp30352);
   C = ((((((((((((llvm_cbe_tmp3035330354) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3035330354 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3035330354 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp30352))) >> (7))))));
   if (((llvm_cbe_tmp3035330354 & 255u) == 0u)) {
     goto llvm_cbe_bb30376;
@@ -20386,10 +20386,10 @@ llvm_cbe_lAA68:
 
 llvm_cbe_lAA4B:
   A = llvm_cbe_tmp11881;
-  Z = (((bool )(llvm_cbe_tmp11881 == 0)));
+  Z = (((llvm_cbe_tmp11881 == 0)));
   N = ((((((llvm_cbe_tmp11881) >> (7))))));
   Y = llvm_cbe_tmp11883;
-  llvm_cbe_tmp1210212103 = ((bool )(llvm_cbe_tmp11883 == 0));
+  llvm_cbe_tmp1210212103 = ((llvm_cbe_tmp11883 == 0));
   llvm_cbe_tmp12214_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp11881;   /* for PHI node */
   llvm_cbe_storemerge48319_2e_in_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp11883;   /* for PHI node */
   llvm_cbe_storemerge50296__PHI_TEMPORARY = llvm_cbe_tmp1210212103;   /* for PHI node */
@@ -20431,7 +20431,7 @@ llvm_cbe_lB037:
   A = llvm_cbe_tmp19708;
   llvm_cbe_tmp19720 = *((&RAM[(109u)]));
   Y = llvm_cbe_tmp19720;
-  Z = (((bool )(llvm_cbe_tmp19720 == 0)));
+  Z = (((llvm_cbe_tmp19720 == 0)));
   N = ((((((llvm_cbe_tmp19720) >> (7))))));
   llvm_cbe_tmp19732 = S;
   *((&RAM[((((llvm_cbe_tmp19732)) | 256u))])) = (-80);
@@ -20446,7 +20446,7 @@ llvm_cbe_lB663:
   A = llvm_cbe_tmp29459;
   llvm_cbe_tmp29471 = *((&RAM[(81u)]));
   Y = llvm_cbe_tmp29471;
-  Z = (((bool )(llvm_cbe_tmp29471 == 0)));
+  Z = (((llvm_cbe_tmp29471 == 0)));
   N = ((((((llvm_cbe_tmp29471) >> (7))))));
   llvm_cbe_tmp29483 = S;
   *((&RAM[((((llvm_cbe_tmp29483)) | 256u))])) = (-74);
@@ -20461,7 +20461,7 @@ llvm_cbe_lB66D:
   A = llvm_cbe_tmp29503;
   llvm_cbe_tmp29515 = *((&RAM[(112u)]));
   Y = llvm_cbe_tmp29515;
-  Z = (((bool )(llvm_cbe_tmp29515 == 0)));
+  Z = (((llvm_cbe_tmp29515 == 0)));
   N = ((((((llvm_cbe_tmp29515) >> (7))))));
   llvm_cbe_tmp29527 = S;
   *((&RAM[((((llvm_cbe_tmp29527)) | 256u))])) = (-74);
@@ -20476,7 +20476,7 @@ llvm_cbe_lB6A6:
   A = llvm_cbe_tmp29912;
   llvm_cbe_tmp29924 = *((&RAM[(101u)]));
   Y = llvm_cbe_tmp29924;
-  Z = (((bool )(llvm_cbe_tmp29924 == 0)));
+  Z = (((llvm_cbe_tmp29924 == 0)));
   N = ((((((llvm_cbe_tmp29924) >> (7))))));
   llvm_cbe_tmp29937_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp29924;   /* for PHI node */
   llvm_cbe_tmp29936_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp29912;   /* for PHI node */
@@ -20502,7 +20502,7 @@ llvm_cbe_lAA9A:
 
 llvm_cbe_lAAB8:
   llvm_cbe_tmp12656 = *((&RAM[(13u)]));
-  Z = (((bool )(llvm_cbe_tmp12656 == 0)));
+  Z = (((llvm_cbe_tmp12656 == 0)));
   llvm_cbe_tmp12656_2e_lobit = (((((llvm_cbe_tmp12656) >> (7)))));
   N = llvm_cbe_tmp12656_2e_lobit;
   V = (((((((((llvm_cbe_tmp12656) >> ((6))))))) & 1)));
@@ -20537,7 +20537,7 @@ llvm_cbe_lB02E:
   llvm_cbe_tmp19682 = *((&RAM[(77u)]));
   llvm_cbe_tmp19683 = ((llvm_cbe_tmp19682 + (-1)));
   *((&RAM[(77u)])) = llvm_cbe_tmp19683;
-  Z = (((bool )(llvm_cbe_tmp19682 == 1)));
+  Z = (((llvm_cbe_tmp19682 == 1)));
   N = ((((((llvm_cbe_tmp19683) >> (7))))));
   llvm_cbe_tmp19695 = S;
   *((&RAM[((((llvm_cbe_tmp19695)) | 256u))])) = (-80);
@@ -20565,7 +20565,7 @@ llvm_cbe_lB712:
   A = llvm_cbe_tmp30751;
   llvm_cbe_tmp30763 = *((&RAM[(81u)]));
   Y = llvm_cbe_tmp30763;
-  Z = (((bool )(llvm_cbe_tmp30763 == 0)));
+  Z = (((llvm_cbe_tmp30763 == 0)));
   N = ((((((llvm_cbe_tmp30763) >> (7))))));
   llvm_cbe_tmp30775 = S;
   *((&RAM[((((llvm_cbe_tmp30775)) | 256u))])) = (-73);
@@ -20582,7 +20582,7 @@ llvm_cbe_bb30376:
   llvm_cbe_tmp3038230383 = (llvm_cbe_tmp30381);
   llvm_cbe_tmp3038530386 = (((((((((((llvm_cbe_tmp3038230383) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3038530386;
-  Z = (((bool )((llvm_cbe_tmp3038230383 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3038230383 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp30381))) >> (7))))));
   if (((llvm_cbe_tmp3038230383 & 255u) == 0u)) {
     goto llvm_cbe_bb30405;
@@ -20622,7 +20622,7 @@ llvm_cbe_lB764:
   *((&RAM[((((llvm_cbe_tmp31408)) | 256u))])) = llvm_cbe_tmp31298;
   Y = 0;
   A = llvm_cbe_tmp31383;
-  Z = (((bool )(llvm_cbe_tmp31383 == 0)));
+  Z = (((llvm_cbe_tmp31383 == 0)));
   N = ((((((llvm_cbe_tmp31383) >> (7))))));
   llvm_cbe_tmp31510 = *((&RAM[((((llvm_cbe_tmp31408)) | 256u))]));
   S = llvm_cbe_tmp31427;
@@ -20640,7 +20640,7 @@ llvm_cbe_lB785:
   *((&RAM[(13u)])) = 0;
   llvm_cbe_tmp31556 = A;
   Y = llvm_cbe_tmp31556;
-  Z = (((bool )(llvm_cbe_tmp31556 == 0)));
+  Z = (((llvm_cbe_tmp31556 == 0)));
   N = ((((((llvm_cbe_tmp31556) >> (7))))));
   llvm_cbe_tmp31568 = S;
   llvm_cbe_tmp31574 = *((&RAM[(((((((llvm_cbe_tmp31568 + 1))))) | 256u))]));
@@ -20660,7 +20660,7 @@ llvm_cbe_lB7E2:
   X = llvm_cbe_tmp31973;
   llvm_cbe_tmp31985 = *((&RAM[(114u)]));
   Y = llvm_cbe_tmp31985;
-  Z = (((bool )(llvm_cbe_tmp31985 == 0)));
+  Z = (((llvm_cbe_tmp31985 == 0)));
   N = ((((((llvm_cbe_tmp31985) >> (7))))));
   *((&RAM[(122u)])) = llvm_cbe_tmp31973;
   *((&RAM[(123u)])) = llvm_cbe_tmp31985;
@@ -20703,7 +20703,7 @@ llvm_cbe_lB804:
   A = llvm_cbe_tmp32115;
   llvm_cbe_tmp32127 = *((&RAM[(101u)]));
   Y = llvm_cbe_tmp32127;
-  Z = (((bool )(llvm_cbe_tmp32127 == 0)));
+  Z = (((llvm_cbe_tmp32127 == 0)));
   N = ((((((llvm_cbe_tmp32127) >> (7))))));
   *((&RAM[(20u)])) = llvm_cbe_tmp32127;
   *((&RAM[(21u)])) = llvm_cbe_tmp32115;
@@ -20758,7 +20758,7 @@ llvm_cbe_lB848:
 
 llvm_cbe_lB848_2e_loopexit:
   A = llvm_cbe_tmp32454;
-  Z = (((bool )(llvm_cbe_tmp32454 == 0)));
+  Z = (((llvm_cbe_tmp32454 == 0)));
   N = ((((((llvm_cbe_tmp32454) >> (7))))));
   goto llvm_cbe_lB848;
 
@@ -20824,7 +20824,7 @@ llvm_cbe_lB7B0:
 llvm_cbe_lB8F7_2e_loopexit:
   *((&RAM[(98u)])) = llvm_cbe__2e_tmp51412_2e_0;
   X = llvm_cbe__2e_tmp51415_2e_0;
-  Z = (((bool )((llvm_cbe_tmp3352833529 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3352833529 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp33527))) >> (7))))));
   V = llvm_cbe_iftmp_2e_8108_2e_0;
   A = llvm_cbe_tmp3350233503;
@@ -20838,7 +20838,7 @@ llvm_cbe_lB8F7_2e_loopexit:
 llvm_cbe_bb43196:
   llvm_cbe_tmp43197 = *((&RAM[(105u)]));
   A = llvm_cbe_tmp43197;
-  Z = (((bool )(llvm_cbe_tmp43197 == 0)));
+  Z = (((llvm_cbe_tmp43197 == 0)));
   N = ((((((llvm_cbe_tmp43197) >> (7))))));
   if (llvm_cbe_tmp43197 == 0) {
     llvm_cbe_tmp33562_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp43197;   /* for PHI node */
@@ -20860,7 +20860,7 @@ llvm_cbe_bb36572:
   V = llvm_cbe_iftmp_2e_8786_2e_0;
   llvm_cbe_tmp3657436575 = (llvm_cbe_tmp36555);
   A = llvm_cbe_tmp3657436575;
-  Z = (((bool )(llvm_cbe_tmp3657436575 == 0)));
+  Z = (((llvm_cbe_tmp3657436575 == 0)));
   N = ((((((llvm_cbe_tmp3657436575) >> (7))))));
   C = (((((((((((llvm_cbe_tmp36555))) >> (8u)))))) & 1)));
   *((&RAM[(97u)])) = llvm_cbe_tmp3657436575;
@@ -20891,7 +20891,7 @@ llvm_cbe_lBAC6:
 llvm_cbe_bb36520:
   C = 0;
   llvm_cbe_tmp36524 = *((&RAM[(5136u)]));
-  Z = (((bool )(llvm_cbe_tmp36524 == 0)));
+  Z = (((llvm_cbe_tmp36524 == 0)));
   N = ((((((llvm_cbe_tmp36524) >> (7))))));
   V = (((((((((llvm_cbe_tmp36524) >> ((6))))))) & 1)));
   llvm_cbe_tmp36552_2e_rle__PHI_TEMPORARY = 0;   /* for PHI node */
@@ -20952,7 +20952,7 @@ llvm_cbe_bb34225:
   llvm_cbe_tmp34344 = ((((((((((((llvm_cbe_tmp34316)) & 1))))) << (8)))) | ((llvm_cbe_tmp34338))));
   C = (((((llvm_cbe_tmp34344)) & 1)));
   llvm_cbe_tmp34349 = (((((llvm_cbe_tmp34344) >> ((1))))));
-  Z = (((bool )((((llvm_cbe_tmp34349)) & 255u) == 0u)));
+  Z = ((((((llvm_cbe_tmp34349)) & 255u) == 0u)));
   N = (((((((((((llvm_cbe_tmp34344) >> ((8))))))))) & 1)));
   *((&RAM[(112u)])) = ((llvm_cbe_tmp34349));
   goto llvm_cbe_lB946;
@@ -20985,7 +20985,7 @@ llvm_cbe_lB94D:
   A = (((llvm_cbe_tmp34511 ^ (-1))));
   llvm_cbe_tmp34537 = ((-(llvm_cbe_tmp34511)));
   *((&RAM[(112u)])) = llvm_cbe_tmp34537;
-  Z = (((bool )(llvm_cbe_tmp34511 == 0)));
+  Z = (((llvm_cbe_tmp34511 == 0)));
   N = ((((((llvm_cbe_tmp34537) >> (7))))));
   if (llvm_cbe_tmp34511 == 0) {
     llvm_cbe_tmp34620_2e_rle52083__PHI_TEMPORARY = llvm_cbe_tmp34620_2e_rle52084;   /* for PHI node */
@@ -21004,7 +21004,7 @@ llvm_cbe_bb33373:
   llvm_cbe_tmp34386 = *((&RAM[(102u)]));
   llvm_cbe_tmp34398not = ((llvm_cbe_tmp34386 ^ (-1)));
   A = llvm_cbe_tmp34398not;
-  Z = (((bool )(llvm_cbe_tmp34386 == 0xff)));
+  Z = (((llvm_cbe_tmp34386 == 0xff)));
   N = ((((((llvm_cbe_tmp34398not) >> (7))))));
   *((&RAM[(102u)])) = llvm_cbe_tmp34398not;
   llvm_cbe_tmp34620_2e_rle52084__PHI_TEMPORARY = llvm_cbe_tmp33383;   /* for PHI node */
@@ -21029,7 +21029,7 @@ llvm_cbe_bb39509:
   A = llvm_cbe_tmp3951139512;
   C = ((((((((((((llvm_cbe_tmp3949439495) >> (8u)))))) & 1))) ^ 1)));
   llvm_cbe_tmp39529 = *((&RAM[(102u)]));
-  Z = (((bool )(llvm_cbe_tmp39529 == 0)));
+  Z = (((llvm_cbe_tmp39529 == 0)));
   llvm_cbe_tmp39529_2e_lobit = (((((llvm_cbe_tmp39529) >> (7)))));
   N = llvm_cbe_tmp39529_2e_lobit;
   V = (((((((((llvm_cbe_tmp39529) >> ((6))))))) & 1)));
@@ -21053,7 +21053,7 @@ llvm_cbe_bb39485:
 llvm_cbe_lBC9B:
   llvm_cbe_tmp39469 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp39469;
-  llvm_cbe_tmp3947139472 = ((bool )(llvm_cbe_tmp39469 == 0));
+  llvm_cbe_tmp3947139472 = ((llvm_cbe_tmp39469 == 0));
   Z = llvm_cbe_tmp3947139472;
   llvm_cbe_tmp39473_2e_lobit = (((((llvm_cbe_tmp39469) >> (7)))));
   N = llvm_cbe_tmp39473_2e_lobit;
@@ -21077,7 +21077,7 @@ llvm_cbe_lB1BF:
   llvm_cbe_tmp2194721948 = (llvm_cbe_tmp21946);
   llvm_cbe_tmp21949_2e_lobit48785 = ((((((((llvm_cbe_tmp2194721948) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp21949_2e_lobit48785 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp2194721948 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp2194721948 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp21946))) >> (7))))));
   if (llvm_cbe_tmp21949_2e_lobit48785 == 0) {
     goto llvm_cbe_bb21970;
@@ -21104,7 +21104,7 @@ llvm_cbe_lAFEB:
 llvm_cbe_lAFE6:
   Y = (-1);
   llvm_cbe_tmp19333 = *((&RAM[(160u)]));
-  Z = (((bool )(llvm_cbe_tmp19333 == 0)));
+  Z = (((llvm_cbe_tmp19333 == 0)));
   N = ((((((llvm_cbe_tmp19333) >> (7))))));
   V = (((((((((llvm_cbe_tmp19333) >> ((6))))))) & 1)));
   llvm_cbe_tmp19366_2e_rle__PHI_TEMPORARY = (-1);   /* for PHI node */
@@ -21151,7 +21151,7 @@ llvm_cbe_lBCCC:
   llvm_cbe_tmp3978639787 = (llvm_cbe_tmp39785);
   llvm_cbe_tmp39788_2e_lobit49589 = ((((((((llvm_cbe_tmp3978639787) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp39788_2e_lobit49589 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3978639787 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3978639787 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp39785))) >> (7))))));
   if (llvm_cbe_tmp39788_2e_lobit49589 == 0) {
     goto llvm_cbe_lBCF2;
@@ -21169,7 +21169,7 @@ llvm_cbe_bb43261:
 llvm_cbe_lBF8B:
   llvm_cbe_tmp43245 = *((&RAM[(110u)]));
   A = llvm_cbe_tmp43245;
-  Z = (((bool )(llvm_cbe_tmp43245 == 0)));
+  Z = (((llvm_cbe_tmp43245 == 0)));
   N = ((((((llvm_cbe_tmp43245) >> (7))))));
   if ((((s8 )llvm_cbe_tmp43245) < ((s8 )0))) {
     goto llvm_cbe_bb43261;
@@ -21214,7 +21214,7 @@ llvm_cbe_lB96F:
   llvm_cbe_tmp34553 = *((&RAM[(101u)]));
   llvm_cbe_tmp34554 = ((llvm_cbe_tmp34553 + 1));
   *((&RAM[(101u)])) = llvm_cbe_tmp34554;
-  Z = (((bool )(llvm_cbe_tmp34554 == 0)));
+  Z = (((llvm_cbe_tmp34554 == 0)));
   N = ((((((llvm_cbe_tmp34554) >> (7))))));
   if (llvm_cbe_tmp34554 == 0) {
     goto llvm_cbe_bb34570;
@@ -21237,7 +21237,7 @@ llvm_cbe_bb38702:
   llvm_cbe_tmp3870649682 = (((((llvm_cbe_tmp38703) >> (7)))));
   C = llvm_cbe_tmp3870649682;
   llvm_cbe_tmp38710 = ((((llvm_cbe_tmp38703)) << (1)));
-  Z = (((bool )((((llvm_cbe_tmp38710)) & 254u) == 0u)));
+  Z = ((((((llvm_cbe_tmp38710)) & 254u) == 0u)));
   N = (((((((((llvm_cbe_tmp38703) >> ((6))))))) & 1)));
   *((&RAM[(112u)])) = ((llvm_cbe_tmp38710));
   if (llvm_cbe_tmp3870649682 == 0) {
@@ -21251,7 +21251,7 @@ llvm_cbe_lBC1B:
   llvm_cbe_tmp38731_2e_rle52098 = llvm_cbe_tmp38731_2e_rle52098__PHI_TEMPORARY;
   llvm_cbe_tmp38686 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp38686;
-  Z = (((bool )(llvm_cbe_tmp38686 == 0)));
+  Z = (((llvm_cbe_tmp38686 == 0)));
   N = ((((((llvm_cbe_tmp38686) >> (7))))));
   if (llvm_cbe_tmp38686 == 0) {
     goto llvm_cbe_lBC1A;
@@ -21279,7 +21279,7 @@ llvm_cbe_lA9C2:
 llvm_cbe_lAC8C:
   llvm_cbe_tmp14803 = *((&RAM[(14u)]));
   A = llvm_cbe_tmp14803;
-  Z = (((bool )(llvm_cbe_tmp14803 == 0)));
+  Z = (((llvm_cbe_tmp14803 == 0)));
   llvm_cbe_tmp14807_2e_lobit = (((((llvm_cbe_tmp14803) >> (7)))));
   N = llvm_cbe_tmp14807_2e_lobit;
   llvm_cbe_tmp14815 = S;
@@ -21326,7 +21326,7 @@ llvm_cbe_lAE38:
   llvm_cbe_tmp17043 = *llvm_cbe_tmp17042;
   *((&RAM[(35u)])) = llvm_cbe_tmp17043;
   A = llvm_cbe_tmp16993;
-  Z = (((bool )(llvm_cbe_tmp16993 == 0)));
+  Z = (((llvm_cbe_tmp16993 == 0)));
   N = ((((((llvm_cbe_tmp16993) >> (7))))));
   *llvm_cbe_tmp17042 = llvm_cbe_tmp16993;
   S = llvm_cbe_tmp17006;
@@ -21361,7 +21361,7 @@ llvm_cbe_lADFA:
   A = llvm_cbe_tmp16964;
   llvm_cbe_tmp16981 = *((&RAM[((llvm_cbe_tmp1689616897 + 41088u))]));
   X = llvm_cbe_tmp16981;
-  Z = (((bool )(llvm_cbe_tmp16981 == 0)));
+  Z = (((llvm_cbe_tmp16981 == 0)));
   N = ((((((llvm_cbe_tmp16981) >> (7))))));
   llvm_cbe_tmp17005_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp16951;   /* for PHI node */
   goto llvm_cbe_lAE38;
@@ -21381,7 +21381,7 @@ llvm_cbe_lAF0F:
   S = llvm_cbe_tmp18119;
   llvm_cbe_tmp18124 = *((&RAM[((((llvm_cbe_tmp18119)) | 256u))]));
   A = llvm_cbe_tmp18124;
-  Z = (((bool )(llvm_cbe_tmp18124 == 0)));
+  Z = (((llvm_cbe_tmp18124 == 0)));
   N = ((((((llvm_cbe_tmp18124) >> (7))))));
   llvm_cbe_tmp16678_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp18119;   /* for PHI node */
   goto llvm_cbe_lADFA;
@@ -21420,7 +21420,7 @@ llvm_cbe_bb25910:
   A = llvm_cbe_tmp25875;
   llvm_cbe_tmp25911 = *((&RAM[(72u)]));
   Y = llvm_cbe_tmp25911;
-  Z = (((bool )(llvm_cbe_tmp25911 == 0)));
+  Z = (((llvm_cbe_tmp25911 == 0)));
   N = ((((((llvm_cbe_tmp25911) >> (7))))));
   *((&RAM[(((((((llvm_cbe_S_2e_tmp_2e_0 + (-1)))))) | 256u))])) = (-76);
   *((&RAM[(((((((llvm_cbe_S_2e_tmp_2e_0 + (-2)))))) | 256u))])) = (34);
@@ -21508,7 +21508,7 @@ llvm_cbe_lE2A7:
   llvm_cbe_tmp46537 = (&RAM[((((llvm_cbe_tmp46533)) | 256u))]);
   llvm_cbe_tmp46538 = *llvm_cbe_tmp46537;
   A = llvm_cbe_tmp46538;
-  Z = (((bool )(llvm_cbe_tmp46538 == 0)));
+  Z = (((llvm_cbe_tmp46538 == 0)));
   N = ((((((llvm_cbe_tmp46538) >> (7))))));
   if ((((s8 )llvm_cbe_tmp46538) < ((s8 )0))) {
     goto llvm_cbe_bb46554;
@@ -21540,7 +21540,7 @@ llvm_cbe_lE316:
   llvm_cbe_tmp4679946800 = (llvm_cbe_tmp46798);
   llvm_cbe_tmp46801_2e_lobit49676 = ((((((((llvm_cbe_tmp4679946800) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp46801_2e_lobit49676 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4679946800 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4679946800 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp46798))) >> (7))))));
   if (llvm_cbe_tmp46801_2e_lobit49676 == 0) {
     goto llvm_cbe_bb46822;
@@ -21551,7 +21551,7 @@ llvm_cbe_lE316:
 llvm_cbe_lE30E:
   llvm_cbe_tmp46745 = *((&RAM[(102u)]));
   A = llvm_cbe_tmp46745;
-  Z = (((bool )(llvm_cbe_tmp46745 == 0)));
+  Z = (((llvm_cbe_tmp46745 == 0)));
   llvm_cbe_tmp46749_2e_lobit = (((((llvm_cbe_tmp46745) >> (7)))));
   N = llvm_cbe_tmp46749_2e_lobit;
   llvm_cbe_tmp46757 = S;
@@ -21580,7 +21580,7 @@ llvm_cbe_lE05D:
   S = (((llvm_cbe_tmp44071_2e_rle + (-2))));
   X = (92);
   llvm_cbe_tmp38202 = *((&RAM[(22434u)]));
-  Z = (((bool )(llvm_cbe_tmp38202 == 0)));
+  Z = (((llvm_cbe_tmp38202 == 0)));
   N = ((((((llvm_cbe_tmp38202) >> (7))))));
   V = (((((((((llvm_cbe_tmp38202) >> ((6))))))) & 1)));
   goto llvm_cbe_lBBCC;
@@ -21614,7 +21614,7 @@ llvm_cbe_lBBD0:
   X = llvm_cbe_tmp38250;
   llvm_cbe_tmp38262 = *((&RAM[(74u)]));
   Y = llvm_cbe_tmp38262;
-  Z = (((bool )(llvm_cbe_tmp38262 == 0)));
+  Z = (((llvm_cbe_tmp38262 == 0)));
   N = ((((((llvm_cbe_tmp38262) >> (7))))));
   goto llvm_cbe_lBBD4;
 
@@ -21706,7 +21706,7 @@ llvm_cbe_lAA07:
   llvm_cbe_tmp11709 = ((((llvm_cbe_tmp11695)) + (-6)));
   llvm_cbe_tmp1171011711 = (llvm_cbe_tmp11709);
   C = ((((((((((((llvm_cbe_tmp1171011711) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1171011711 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1171011711 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp11709))) >> (7))))));
   if (((llvm_cbe_tmp1171011711 & 255u) == 0u)) {
     goto llvm_cbe_bb11733;
@@ -21736,7 +21736,7 @@ llvm_cbe_bb40464:
   V = llvm_cbe_iftmp_2e_9702_2e_0;
   llvm_cbe_tmp4046640467 = (llvm_cbe_tmp40442);
   A = llvm_cbe_tmp4046640467;
-  Z = (((bool )(llvm_cbe_tmp4046640467 == 0)));
+  Z = (((llvm_cbe_tmp4046640467 == 0)));
   llvm_cbe_tmp40471_2e_lobit = (((((llvm_cbe_tmp4046640467) >> (7)))));
   N = llvm_cbe_tmp40471_2e_lobit;
   C = ((((((((((((llvm_cbe_tmp4044540446) >> (8u)))))) & 1))) ^ 1)));
@@ -21772,7 +21772,7 @@ llvm_cbe_bb40348:
   V = llvm_cbe_iftmp_2e_9683_2e_0;
   llvm_cbe_tmp4035040351 = (llvm_cbe_tmp40326);
   A = llvm_cbe_tmp4035040351;
-  Z = (((bool )(llvm_cbe_tmp4035040351 == 0)));
+  Z = (((llvm_cbe_tmp4035040351 == 0)));
   N = ((((((llvm_cbe_tmp4035040351) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp4032940330) >> (8u)))))) & 1))) ^ 1)));
   llvm_cbe_tmp40434_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp4035040351;   /* for PHI node */
@@ -21802,7 +21802,7 @@ llvm_cbe_bb40306:
 
 llvm_cbe_lBD35:
   llvm_cbe_tmp40280 = *((&RAM[(96u)]));
-  Z = (((bool )(llvm_cbe_tmp40280 == 0)));
+  Z = (((llvm_cbe_tmp40280 == 0)));
   llvm_cbe_tmp40280_2e_lobit = (((((llvm_cbe_tmp40280) >> (7)))));
   N = llvm_cbe_tmp40280_2e_lobit;
   V = (((((((((llvm_cbe_tmp40280) >> ((6))))))) & 1)));
@@ -21816,7 +21816,7 @@ llvm_cbe_bb40206:
   llvm_cbe_tmp40209 = ((llvm_cbe_tmp4012640127 + (-43)));
   llvm_cbe_tmp4021040211 = (llvm_cbe_tmp40209);
   C = ((((((((((((llvm_cbe_tmp4021040211) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4021040211 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4021040211 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40209))) >> (7))))));
   if (((llvm_cbe_tmp4021040211 & 255u) == 0u)) {
     goto llvm_cbe_lBD30;
@@ -21828,7 +21828,7 @@ llvm_cbe_bb40179:
   llvm_cbe_tmp40182 = ((llvm_cbe_tmp4012640127 + (-170)));
   llvm_cbe_tmp4018340184 = (llvm_cbe_tmp40182);
   C = ((((((((((((llvm_cbe_tmp4018340184) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4018340184 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4018340184 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40182))) >> (7))))));
   if (((llvm_cbe_tmp4018340184 & 255u) == 0u)) {
     goto llvm_cbe_lBD30;
@@ -21841,7 +21841,7 @@ llvm_cbe_bb40152:
   llvm_cbe_tmp4015640157 = (llvm_cbe_tmp40155);
   llvm_cbe_tmp4015940160 = (((((((((((llvm_cbe_tmp4015640157) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp4015940160;
-  Z = (((bool )((llvm_cbe_tmp4015640157 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4015640157 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40155))) >> (7))))));
   if (((llvm_cbe_tmp4015640157 & 255u) == 0u)) {
     llvm_cbe_tmp40240_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp4015940160;   /* for PHI node */
@@ -21857,7 +21857,7 @@ llvm_cbe_bb40125:
   llvm_cbe_tmp4012940130 = (llvm_cbe_tmp40128);
   llvm_cbe_tmp4013240133 = (((((((((((llvm_cbe_tmp4012940130) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp4013240133;
-  Z = (((bool )((llvm_cbe_tmp4012940130 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4012940130 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40128))) >> (7))))));
   if (((llvm_cbe_tmp4012940130 & 255u) == 0u)) {
     llvm_cbe_tmp40240_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp4013240133;   /* for PHI node */
@@ -21873,7 +21873,7 @@ llvm_cbe_bb40347:
 llvm_cbe_lBD47:
   llvm_cbe_tmp40422 = *((&RAM[(94u)]));
   A = llvm_cbe_tmp40422;
-  Z = (((bool )(llvm_cbe_tmp40422 == 0)));
+  Z = (((llvm_cbe_tmp40422 == 0)));
   N = ((((((llvm_cbe_tmp40422) >> (7))))));
   llvm_cbe_tmp40434_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp40422;   /* for PHI node */
   goto llvm_cbe_lBD49;
@@ -21882,7 +21882,7 @@ llvm_cbe_bb40083:
   llvm_cbe_tmp40086 = ((llvm_cbe_tmp4005740058 + (-69)));
   llvm_cbe_tmp4008740088 = (llvm_cbe_tmp40086);
   C = ((((((((((((llvm_cbe_tmp4008740088) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4008740088 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4008740088 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40086))) >> (7))))));
   if (((llvm_cbe_tmp4008740088 & 255u) == 0u)) {
     goto llvm_cbe_bb40110;
@@ -21897,7 +21897,7 @@ llvm_cbe_lBD0F:
   llvm_cbe_tmp4006040061 = (llvm_cbe_tmp40059);
   llvm_cbe_tmp4006340064 = (((((((((((llvm_cbe_tmp4006040061) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp4006340064;
-  Z = (((bool )((llvm_cbe_tmp4006040061 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4006040061 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40059))) >> (7))))));
   if (((llvm_cbe_tmp4006040061 & 255u) == 0u)) {
     goto llvm_cbe_lBD41;
@@ -21909,7 +21909,7 @@ llvm_cbe_lBD06:
   llvm_cbe_tmp40019 = ((llvm_cbe_tmp3998539986 + (-43)));
   llvm_cbe_tmp4002040021 = (llvm_cbe_tmp40019);
   C = ((((((((((((llvm_cbe_tmp4002040021) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4002040021 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4002040021 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp40019))) >> (7))))));
   if (((llvm_cbe_tmp4002040021 & 255u) == 0u)) {
     goto llvm_cbe_lBD0A;
@@ -21923,7 +21923,7 @@ llvm_cbe_bb39984:
   llvm_cbe_tmp39987 = ((llvm_cbe_tmp3998539986 + (-45)));
   llvm_cbe_tmp3998839989 = (llvm_cbe_tmp39987);
   C = ((((((((((((llvm_cbe_tmp3998839989) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3998839989 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3998839989 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp39987))) >> (7))))));
   if (((llvm_cbe_tmp3998839989 & 255u) == 0u)) {
     goto llvm_cbe_bb40011;
@@ -21933,7 +21933,7 @@ llvm_cbe_bb39984:
 
 llvm_cbe_bb39979:
   X = llvm_cbe_tmp39963;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_051257 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_051257 == 1)));
   N = ((((((llvm_cbe_tmp39963) >> (7))))));
   llvm_cbe_tmp39980 = C;
   if (llvm_cbe_tmp39980 == 0) {
@@ -21992,7 +21992,7 @@ llvm_cbe_lBD41:
   C = (((((llvm_cbe_tmp40374)) & 1)));
   llvm_cbe_tmp4039440395 = (((((((llvm_cbe_tmp40374) >> ((1))))))));
   *((&RAM[(95u)])) = llvm_cbe_tmp4039440395;
-  Z = (((bool )(llvm_cbe_tmp4039440395 == 0)));
+  Z = (((llvm_cbe_tmp4039440395 == 0)));
   N = (((((((((((llvm_cbe_tmp40374) >> ((8))))))))) & 1)));
   llvm_cbe_tmp404114923449237 = ((llvm_cbe_tmp40374 & (128)));
   V = ((((((((llvm_cbe_tmp404114923449237))) >> (7))))));
@@ -22010,7 +22010,7 @@ llvm_cbe_lBD5E:
   llvm_cbe_tmp40536 = *((&RAM[(94u)]));
   llvm_cbe_tmp40537 = ((llvm_cbe_tmp40536 + (-1)));
   *((&RAM[(94u)])) = llvm_cbe_tmp40537;
-  Z = (((bool )(llvm_cbe_tmp40536 == 1)));
+  Z = (((llvm_cbe_tmp40536 == 1)));
   N = ((((((llvm_cbe_tmp40537) >> (7))))));
   if (llvm_cbe_tmp40536 == 1) {
     goto llvm_cbe_lBD62;
@@ -22033,7 +22033,7 @@ llvm_cbe_lBD6A:
   llvm_cbe_tmp40595 = ((llvm_cbe_tmp40590 + (-1)));
   S = llvm_cbe_tmp40595;
   llvm_cbe_tmp40596 = *((&RAM[(95u)]));
-  Z = (((bool )(llvm_cbe_tmp40596 == 0)));
+  Z = (((llvm_cbe_tmp40596 == 0)));
   llvm_cbe_tmp40596_2e_lobit = (((((llvm_cbe_tmp40596) >> (7)))));
   N = llvm_cbe_tmp40596_2e_lobit;
   V = (((((((((llvm_cbe_tmp40596) >> ((6))))))) & 1)));
@@ -22047,7 +22047,7 @@ llvm_cbe_bb40622:
   llvm_cbe_tmp40623 = *((&RAM[(93u)]));
   llvm_cbe_tmp40624 = ((llvm_cbe_tmp40623 + 1));
   *((&RAM[(93u)])) = llvm_cbe_tmp40624;
-  Z = (((bool )(llvm_cbe_tmp40624 == 0)));
+  Z = (((llvm_cbe_tmp40624 == 0)));
   N = ((((((llvm_cbe_tmp40624) >> (7))))));
   goto llvm_cbe_lBD71;
 
@@ -22098,7 +22098,7 @@ llvm_cbe_lBD55:
   llvm_cbe_tmp40504 = *((&RAM[(94u)]));
   llvm_cbe_tmp40505 = ((llvm_cbe_tmp40504 + 1));
   *((&RAM[(94u)])) = llvm_cbe_tmp40505;
-  Z = (((bool )(llvm_cbe_tmp40505 == 0)));
+  Z = (((llvm_cbe_tmp40505 == 0)));
   N = ((((((llvm_cbe_tmp40505) >> (7))))));
   if (llvm_cbe_tmp40505 == 0) {
     goto llvm_cbe_lBD62;
@@ -22127,7 +22127,7 @@ llvm_cbe_lBE24:
   llvm_cbe_tmp41508 = *((&RAM[(93u)]));
   llvm_cbe_tmp41509 = ((llvm_cbe_tmp41508 + (-1)));
   *((&RAM[(93u)])) = llvm_cbe_tmp41509;
-  Z = (((bool )(llvm_cbe_tmp41508 == 1)));
+  Z = (((llvm_cbe_tmp41508 == 1)));
   N = ((((((llvm_cbe_tmp41509) >> (7))))));
   if (llvm_cbe_tmp41508 == 1) {
     goto llvm_cbe_lBE28;
@@ -22153,7 +22153,7 @@ llvm_cbe_lAA27:
   V = (((((((((llvm_cbe_tmp1183511836 ^ ((llvm_cbe_tmp11827))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp11827) > ((s8 )(-1))))&1))) ? (0) : (1)));
   llvm_cbe_tmp1185211853 = (llvm_cbe_tmp11832);
   A = llvm_cbe_tmp1185211853;
-  Z = (((bool )(llvm_cbe_tmp1185211853 == 0)));
+  Z = (((llvm_cbe_tmp1185211853 == 0)));
   N = ((((((llvm_cbe_tmp1185211853) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp1183511836) >> (8u)))))) & 1))) ^ 1)));
   llvm_cbe_tmp40720_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp1185211853;   /* for PHI node */
@@ -22164,7 +22164,7 @@ llvm_cbe_lBA20:
   llvm_cbe_tmp35476 = (&RAM[(((((((llvm_cbe_tmp35471 + 1))))) | 256u))]);
   llvm_cbe_tmp35477 = *llvm_cbe_tmp35476;
   A = llvm_cbe_tmp35477;
-  Z = (((bool )(llvm_cbe_tmp35477 == 0)));
+  Z = (((llvm_cbe_tmp35477 == 0)));
   N = ((((((llvm_cbe_tmp35477) >> (7))))));
   *llvm_cbe_tmp35476 = (-70);
   *((&RAM[((((llvm_cbe_tmp35471)) | 256u))])) = (35);
@@ -22179,7 +22179,7 @@ llvm_cbe_lBD74:
   llvm_cbe_tmp40651 = (&RAM[((((llvm_cbe_tmp40647)) | 256u))]);
   llvm_cbe_tmp40652 = *llvm_cbe_tmp40651;
   A = llvm_cbe_tmp40652;
-  Z = (((bool )(llvm_cbe_tmp40652 == 0)));
+  Z = (((llvm_cbe_tmp40652 == 0)));
   N = ((((((llvm_cbe_tmp40652) >> (7))))));
   C = 1;
   llvm_cbe_tmp40669 = ((((llvm_cbe_tmp40652)) + (-48)));
@@ -22187,7 +22187,7 @@ llvm_cbe_lBD74:
   V = (((((((((llvm_cbe_tmp4067240673 ^ ((llvm_cbe_tmp40652))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp40652) > ((s8 )(-1))))&1))) ? (0) : (1)));
   llvm_cbe_tmp4068940690 = (llvm_cbe_tmp40669);
   A = llvm_cbe_tmp4068940690;
-  Z = (((bool )(llvm_cbe_tmp4068940690 == 0)));
+  Z = (((llvm_cbe_tmp4068940690 == 0)));
   N = ((((((llvm_cbe_tmp4068940690) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp4067240673) >> (8u)))))) & 1))) ^ 1)));
   *llvm_cbe_tmp40651 = (-67);
@@ -22248,7 +22248,7 @@ llvm_cbe_bb43581:
   V = llvm_cbe_iftmp_2e_10515_2e_0;
   llvm_cbe_tmp4358343584 = (llvm_cbe_tmp43563);
   A = llvm_cbe_tmp4358343584;
-  Z = (((bool )(llvm_cbe_tmp4358343584 == 0)));
+  Z = (((llvm_cbe_tmp4358343584 == 0)));
   N = ((((((llvm_cbe_tmp4358343584) >> (7))))));
   llvm_cbe_tmp43598 = ((llvm_cbe_tmp43563)) & 256u;
   C = ((((((llvm_cbe_tmp43598) >> (8u))))));
@@ -22269,7 +22269,7 @@ llvm_cbe_bb43569:
 llvm_cbe_lBFF4:
   llvm_cbe_tmp43546 = *((&RAM[(112u)]));
   A = llvm_cbe_tmp43546;
-  Z = (((bool )(llvm_cbe_tmp43546 == 0)));
+  Z = (((llvm_cbe_tmp43546 == 0)));
   N = ((((((llvm_cbe_tmp43546) >> (7))))));
   llvm_cbe_tmp43560 = C;
   llvm_cbe_tmp43563 = (((((((llvm_cbe_tmp43546)) + (80)))) + (((s16 )(s8 )llvm_cbe_tmp43560))));
@@ -22287,7 +22287,7 @@ llvm_cbe_bb34570:
   llvm_cbe_tmp34571 = *((&RAM[(100u)]));
   llvm_cbe_tmp34572 = ((llvm_cbe_tmp34571 + 1));
   *((&RAM[(100u)])) = llvm_cbe_tmp34572;
-  Z = (((bool )(llvm_cbe_tmp34572 == 0)));
+  Z = (((llvm_cbe_tmp34572 == 0)));
   N = ((((((llvm_cbe_tmp34572) >> (7))))));
   if (llvm_cbe_tmp34572 == 0) {
     goto llvm_cbe_bb34588;
@@ -22300,7 +22300,7 @@ llvm_cbe_bb34588:
   llvm_cbe_tmp34589 = *((&RAM[(99u)]));
   llvm_cbe_tmp34590 = ((llvm_cbe_tmp34589 + 1));
   *((&RAM[(99u)])) = llvm_cbe_tmp34590;
-  Z = (((bool )(llvm_cbe_tmp34590 == 0)));
+  Z = (((llvm_cbe_tmp34590 == 0)));
   N = ((((((llvm_cbe_tmp34590) >> (7))))));
   if (llvm_cbe_tmp34590 == 0) {
     goto llvm_cbe_bb34606;
@@ -22313,7 +22313,7 @@ llvm_cbe_bb34606:
   llvm_cbe_tmp34607 = *((&RAM[(98u)]));
   llvm_cbe_tmp34608 = ((llvm_cbe_tmp34607 + 1));
   *((&RAM[(98u)])) = llvm_cbe_tmp34608;
-  Z = (((bool )(llvm_cbe_tmp34608 == 0)));
+  Z = (((llvm_cbe_tmp34608 == 0)));
   N = ((((((llvm_cbe_tmp34608) >> (7))))));
   llvm_cbe_tmp34620_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp34620_2e_rle52083;   /* for PHI node */
   goto llvm_cbe_lB97D;
@@ -22343,7 +22343,7 @@ llvm_cbe_bb34824:
   Y = llvm_cbe_tmp3485034851;
   llvm_cbe_tmp34880 = *((&RAM[(112u)]));
   A = llvm_cbe_tmp34880;
-  Z = (((bool )(llvm_cbe_tmp34880 == 0)));
+  Z = (((llvm_cbe_tmp34880 == 0)));
   N = ((((((llvm_cbe_tmp34880) >> (7))))));
   if (llvm_cbe_tmp34865_2e_lobit49610 == 0) {
     llvm_cbe_tmp35199_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp35199_2e_rle52138;   /* for PHI node */
@@ -22361,7 +22361,7 @@ llvm_cbe_bb34790:
   V = llvm_cbe_iftmp_2e_8382_2e_0;
   llvm_cbe_tmp3479234793 = (llvm_cbe_tmp34772);
   A = llvm_cbe_tmp3479234793;
-  Z = (((bool )(llvm_cbe_tmp3479234793 == 0)));
+  Z = (((llvm_cbe_tmp3479234793 == 0)));
   llvm_cbe_tmp34797_2e_lobit = (((((llvm_cbe_tmp3479234793) >> (7)))));
   N = llvm_cbe_tmp34797_2e_lobit;
   llvm_cbe_iftmp_2e_8389_2e_0 = ((((((((((llvm_cbe_tmp34772))) >> (8u)))))) & 1));
@@ -22412,7 +22412,7 @@ llvm_cbe_lB897:
   llvm_cbe_tmp32828 = ((((llvm_cbe_tmp32826_2e_rle)) + (-249)));
   llvm_cbe_tmp3282932830 = (llvm_cbe_tmp32828);
   C = ((((((((((((llvm_cbe_tmp3282932830) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3282932830 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3282932830 & 255u) == 0u)));
   llvm_cbe_tmp3283932840 = (llvm_cbe_tmp32828);
   N = ((((((llvm_cbe_tmp3283932840) >> (7))))));
   if ((((s8 )llvm_cbe_tmp3283932840) < ((s8 )0))) {
@@ -22451,7 +22451,7 @@ llvm_cbe_bb32714:
   *((&RAM[(102u)])) = llvm_cbe_tmp32716;
   llvm_cbe_tmp32729not = ((llvm_cbe_tmp3268732688 ^ (-1)));
   A = llvm_cbe_tmp32729not;
-  Z = (((bool )(llvm_cbe_tmp3268732688 == 0xff)));
+  Z = (((llvm_cbe_tmp3268732688 == 0xff)));
   N = ((((((llvm_cbe_tmp32729not) >> (7))))));
   llvm_cbe_tmp32745 = ((((llvm_cbe_tmp3270332704)) + ((llvm_cbe_tmp32729not))));
   if ((((s8 )llvm_cbe_tmp3268732688) > ((s8 )(-1)))) {
@@ -22499,7 +22499,7 @@ llvm_cbe_lB985:
   *llvm_cbe_tmp34707 = llvm_cbe_tmp34731;
   llvm_cbe_tmp34749 = *((&RAM[(104u)]));
   Y = llvm_cbe_tmp34749;
-  Z = (((bool )(llvm_cbe_tmp34749 == 0)));
+  Z = (((llvm_cbe_tmp34749 == 0)));
   N = ((((((llvm_cbe_tmp34749) >> (7))))));
   *llvm_cbe_tmp34730 = llvm_cbe_tmp34749;
   llvm_cbe_tmp35199_2e_rle52138__PHI_TEMPORARY = llvm_cbe_tmp35199_2e_rle52139;   /* for PHI node */
@@ -22525,7 +22525,7 @@ llvm_cbe_lBA33:
   *((&RAM[(41u)])) = 0;
   llvm_cbe_tmp35560 = *((&RAM[(112u)]));
   A = llvm_cbe_tmp35560;
-  Z = (((bool )(llvm_cbe_tmp35560 == 0)));
+  Z = (((llvm_cbe_tmp35560 == 0)));
   N = ((((((llvm_cbe_tmp35560) >> (7))))));
   llvm_cbe_tmp35572 = S;
   *((&RAM[((((llvm_cbe_tmp35572)) | 256u))])) = (-70);
@@ -22544,7 +22544,7 @@ llvm_cbe_lBA33:
 llvm_cbe_lBA42:
   llvm_cbe_tmp35582 = *((&RAM[(101u)]));
   A = llvm_cbe_tmp35582;
-  Z = (((bool )(llvm_cbe_tmp35582 == 0)));
+  Z = (((llvm_cbe_tmp35582 == 0)));
   N = ((((((llvm_cbe_tmp35582) >> (7))))));
   llvm_cbe_tmp35594 = S;
   *((&RAM[((((llvm_cbe_tmp35594)) | 256u))])) = (-70);
@@ -22563,7 +22563,7 @@ llvm_cbe_lBA42:
 llvm_cbe_lBA47:
   llvm_cbe_tmp35604 = *((&RAM[(100u)]));
   A = llvm_cbe_tmp35604;
-  Z = (((bool )(llvm_cbe_tmp35604 == 0)));
+  Z = (((llvm_cbe_tmp35604 == 0)));
   N = ((((((llvm_cbe_tmp35604) >> (7))))));
   llvm_cbe_tmp35616 = S;
   *((&RAM[((((llvm_cbe_tmp35616)) | 256u))])) = (-70);
@@ -22582,7 +22582,7 @@ llvm_cbe_lBA47:
 llvm_cbe_lBA4C:
   llvm_cbe_tmp35626 = *((&RAM[(99u)]));
   A = llvm_cbe_tmp35626;
-  Z = (((bool )(llvm_cbe_tmp35626 == 0)));
+  Z = (((llvm_cbe_tmp35626 == 0)));
   N = ((((((llvm_cbe_tmp35626) >> (7))))));
   llvm_cbe_tmp35638 = S;
   *((&RAM[((((llvm_cbe_tmp35638)) | 256u))])) = (-70);
@@ -22615,7 +22615,7 @@ llvm_cbe_lBCAF:
   llvm_cbe_tmp39615 = ((((llvm_cbe_tmp39613_2e_rle)) + (-249)));
   llvm_cbe_tmp3961639617 = (llvm_cbe_tmp39615);
   C = ((((((((((((llvm_cbe_tmp3961639617) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp3961639617 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3961639617 & 255u) == 0u)));
   llvm_cbe_tmp3962639627 = (llvm_cbe_tmp39615);
   N = ((((((llvm_cbe_tmp3962639627) >> (7))))));
   if ((((s8 )llvm_cbe_tmp3962639627) < ((s8 )0))) {
@@ -22627,7 +22627,7 @@ llvm_cbe_lBCAF:
 llvm_cbe_lBCAE:
   llvm_cbe_tmp39590 = X;
   A = llvm_cbe_tmp39590;
-  Z = (((bool )(llvm_cbe_tmp39590 == 0)));
+  Z = (((llvm_cbe_tmp39590 == 0)));
   N = ((((((llvm_cbe_tmp39590) >> (7))))));
   llvm_cbe_tmp39613_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp39590;   /* for PHI node */
   goto llvm_cbe_lBCAF;
@@ -22661,7 +22661,7 @@ llvm_cbe_lB9B0:
   A = llvm_cbe_tmp3518035181;
   llvm_cbe_tmp35183 = ((llvm_cbe_tmp35182_2e_rle + 1));
   Y = llvm_cbe_tmp35183;
-  Z = (((bool )(llvm_cbe_tmp35183 == 0)));
+  Z = (((llvm_cbe_tmp35183 == 0)));
   N = ((((((llvm_cbe_tmp35183) >> (7))))));
   if (llvm_cbe_tmp35183 == 0) {
     llvm_cbe_tmp35199_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp35199_2e_rle52133;   /* for PHI node */
@@ -22683,7 +22683,7 @@ llvm_cbe_bb32852:
   llvm_cbe_tmp32884 = ((llvm_cbe_tmp32882 & 1));
   C = llvm_cbe_tmp32884;
   llvm_cbe_tmp32886 = (((((llvm_cbe_tmp32882) >> (1)))));
-  Z = (((bool )(llvm_cbe_tmp32886 == 0)));
+  Z = (((llvm_cbe_tmp32886 == 0)));
   N = 0;
   *llvm_cbe_tmp32881 = llvm_cbe_tmp32886;
   llvm_cbe_tmp32904 = S;
@@ -22705,7 +22705,7 @@ llvm_cbe_lB9AC:
   llvm_cbe_tmp35016 = ((((llvm_cbe_tmp35013)) & 1));
   C = llvm_cbe_tmp35016;
   llvm_cbe_tmp35018 = (((((llvm_cbe_tmp35013) >> ((1))))));
-  Z = (((bool )((((llvm_cbe_tmp35018)) & 255u) == 0u)));
+  Z = ((((((llvm_cbe_tmp35018)) & 255u) == 0u)));
   N = (((((((((((llvm_cbe_tmp35013) >> ((8))))))))) & 1)));
   *llvm_cbe_tmp34900 = ((llvm_cbe_tmp35018));
   llvm_cbe_tmp35199_2e_rle52133__PHI_TEMPORARY = llvm_cbe_tmp35199_2e_rle52135;   /* for PHI node */
@@ -22725,7 +22725,7 @@ llvm_cbe_lB9A6:
   llvm_cbe_tmp3490449617 = (((((llvm_cbe_tmp34901) >> (7)))));
   C = llvm_cbe_tmp3490449617;
   llvm_cbe_tmp34908 = ((((llvm_cbe_tmp34901)) << (1)));
-  Z = (((bool )((((llvm_cbe_tmp34908)) & 254u) == 0u)));
+  Z = ((((((llvm_cbe_tmp34908)) & 254u) == 0u)));
   N = (((((((((llvm_cbe_tmp34901) >> ((6))))))) & 1)));
   llvm_cbe_tmp3492734928 = (llvm_cbe_tmp34908);
   *llvm_cbe_tmp34900 = llvm_cbe_tmp3492734928;
@@ -22752,7 +22752,7 @@ llvm_cbe_lBCBB:
   C = llvm_cbe_tmp39710;
   llvm_cbe_tmp39727 = ((((((((llvm_cbe_tmp39708) >> (1)))))) | (((llvm_cbe_tmp39683 & (128u))))));
   A = llvm_cbe_tmp39727;
-  Z = (((bool )(llvm_cbe_tmp39727 == 0)));
+  Z = (((llvm_cbe_tmp39727 == 0)));
   N = ((((((llvm_cbe_tmp39727) >> (7))))));
   *((&RAM[(98u)])) = llvm_cbe_tmp39727;
   llvm_cbe_tmp39740 = S;
@@ -22784,7 +22784,7 @@ llvm_cbe_lBA8B:
 llvm_cbe_lBA8B_2e_loopexit:
   A = llvm_cbe_tmp36145;
   Y = llvm_cbe_A_2e_tmp_2e_051250;
-  Z = (((bool )(llvm_cbe_tmp36145 == 0)));
+  Z = (((llvm_cbe_tmp36145 == 0)));
   N = 0;
   C = llvm_cbe_tmp36143;
   *((&RAM[(38u)])) = llvm_cbe_tmp3601536016;
@@ -22975,7 +22975,7 @@ llvm_cbe_lBA5E:
 llvm_cbe_lBA51:
   llvm_cbe_tmp35648 = *((&RAM[(98u)]));
   A = llvm_cbe_tmp35648;
-  Z = (((bool )(llvm_cbe_tmp35648 == 0)));
+  Z = (((llvm_cbe_tmp35648 == 0)));
   N = ((((((llvm_cbe_tmp35648) >> (7))))));
   llvm_cbe_tmp35660 = S;
   *((&RAM[((((llvm_cbe_tmp35660)) | 256u))])) = (-70);
@@ -23007,7 +23007,7 @@ llvm_cbe_lBA8C:
   *((&RAM[(105u)])) = llvm_cbe_tmp36395;
   llvm_cbe_tmp36408 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp36408;
-  Z = (((bool )(llvm_cbe_tmp36408 == 0)));
+  Z = (((llvm_cbe_tmp36408 == 0)));
   N = ((((((llvm_cbe_tmp36408) >> (7))))));
   llvm_cbe_tmp36426 = *((&RAM[(((((((llvm_cbe_tmp36420_2e_rle + 1))))) | 256u))]));
   llvm_cbe_tmp36429 = ((llvm_cbe_tmp36420_2e_rle + (2)));
@@ -23079,7 +23079,7 @@ llvm_cbe_lE32B:
   llvm_cbe_tmp4690846909 = (llvm_cbe_tmp46907);
   llvm_cbe_tmp46910_2e_lobit49695 = ((((((((llvm_cbe_tmp4690846909) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp46910_2e_lobit49695 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4690846909 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4690846909 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp46907))) >> (7))))));
   if (llvm_cbe_tmp46910_2e_lobit49695 == 0) {
     goto llvm_cbe_bb46931;
@@ -23106,7 +23106,7 @@ llvm_cbe_lAD45:
   A = llvm_cbe_tmp15560;
   llvm_cbe_tmp15572 = *((&RAM[(74u)]));
   Y = llvm_cbe_tmp15572;
-  Z = (((bool )(llvm_cbe_tmp15572 == 0)));
+  Z = (((llvm_cbe_tmp15572 == 0)));
   N = ((((((llvm_cbe_tmp15572) >> (7))))));
   *((&RAM[((llvm_cbe_tmp1554315544 | 256u))])) = (-83);
   *((&RAM[(((((((llvm_cbe_tmp15531 + (-1)))))) | 256u))])) = (81);
@@ -23135,7 +23135,7 @@ llvm_cbe_lBE2B:
   llvm_cbe_tmp41535 = *((&RAM[(93u)]));
   llvm_cbe_tmp41536 = ((llvm_cbe_tmp41535 + 1));
   *((&RAM[(93u)])) = llvm_cbe_tmp41536;
-  Z = (((bool )(llvm_cbe_tmp41536 == 0)));
+  Z = (((llvm_cbe_tmp41536 == 0)));
   N = ((((((llvm_cbe_tmp41536) >> (7))))));
   if (llvm_cbe_tmp41536 == 0) {
     goto llvm_cbe_lBE2F;
@@ -23154,7 +23154,7 @@ llvm_cbe_bb46437:
 llvm_cbe_lE28B:
   llvm_cbe_tmp46415 = *((&RAM[(102u)]));
   A = llvm_cbe_tmp46415;
-  Z = (((bool )(llvm_cbe_tmp46415 == 0)));
+  Z = (((llvm_cbe_tmp46415 == 0)));
   llvm_cbe_tmp46419_2e_lobit = (((((llvm_cbe_tmp46415) >> (7)))));
   N = llvm_cbe_tmp46419_2e_lobit;
   llvm_cbe_tmp46427 = S;
@@ -23170,7 +23170,7 @@ llvm_cbe_lE28B:
 llvm_cbe_lB9F4:
   llvm_cbe_tmp35238 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp35238;
-  Z = (((bool )(llvm_cbe_tmp35238 == 0)));
+  Z = (((llvm_cbe_tmp35238 == 0)));
   N = ((((((llvm_cbe_tmp35238) >> (7))))));
   llvm_cbe_tmp35252 = C;
   llvm_cbe_tmp35255 = (((((((llvm_cbe_tmp35238)) + (-128)))) + (((s16 )(s8 )llvm_cbe_tmp35252))));
@@ -23215,7 +23215,7 @@ llvm_cbe_bb44230:
   V = llvm_cbe_iftmp_2e_10690_2e_0;
   llvm_cbe_tmp4423244233 = (llvm_cbe_tmp44212);
   A = llvm_cbe_tmp4423244233;
-  Z = (((bool )(llvm_cbe_tmp4423244233 == 0)));
+  Z = (((llvm_cbe_tmp4423244233 == 0)));
   N = ((((((llvm_cbe_tmp4423244233) >> (7))))));
   llvm_cbe_tmp44247 = ((llvm_cbe_tmp44212)) & 256u;
   C = ((((((llvm_cbe_tmp44247) >> (8u))))));
@@ -23239,7 +23239,7 @@ llvm_cbe_lE073:
   A = llvm_cbe_tmp44183;
   llvm_cbe_tmp44195 = *((&RAM[(114u)]));
   Y = llvm_cbe_tmp44195;
-  Z = (((bool )(llvm_cbe_tmp44195 == 0)));
+  Z = (((llvm_cbe_tmp44195 == 0)));
   N = ((((((llvm_cbe_tmp44195) >> (7))))));
   C = 0;
   llvm_cbe_tmp44212 = ((((llvm_cbe_tmp44183)) + (5)));
@@ -23256,7 +23256,7 @@ llvm_cbe_bb44229:
 llvm_cbe_bb44259:
   llvm_cbe_tmp44261 = ((llvm_cbe_tmp44195 + 1));
   Y = llvm_cbe_tmp44261;
-  Z = (((bool )(llvm_cbe_tmp44261 == 0)));
+  Z = (((llvm_cbe_tmp44261 == 0)));
   N = ((((((llvm_cbe_tmp44261) >> (7))))));
   llvm_cbe_tmp44274_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp44261;   /* for PHI node */
   goto llvm_cbe_lE07D;
@@ -23297,7 +23297,7 @@ llvm_cbe_lE2A0:
 llvm_cbe_lE293:
   llvm_cbe_tmp46448 = *((&RAM[(102u)]));
   A = llvm_cbe_tmp46448;
-  Z = (((bool )(llvm_cbe_tmp46448 == 0)));
+  Z = (((llvm_cbe_tmp46448 == 0)));
   N = ((((((llvm_cbe_tmp46448) >> (7))))));
   if ((((s8 )llvm_cbe_tmp46448) < ((s8 )0))) {
     goto llvm_cbe_lE2A0;
@@ -23337,7 +23337,7 @@ llvm_cbe_lBDF8:
   llvm_cbe_tmp4134441345 = (llvm_cbe_tmp41343);
   llvm_cbe_tmp41346_2e_lobit49290 = ((((((((llvm_cbe_tmp4134441345) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp41346_2e_lobit49290 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4134441345 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4134441345 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp41343))) >> (7))))));
   if (((((((((llvm_cbe_tmp4134441345 & 255u) == 0u) ^ 1)&1)) & (llvm_cbe_tmp41346_2e_lobit49290 == 0))&1))) {
     llvm_cbe_tmp41415_2e_rle__PHI_TEMPORARY = 0;   /* for PHI node */
@@ -23357,7 +23357,7 @@ llvm_cbe_lBDE7:
   A = (48);
   llvm_cbe_tmp41314 = *((&RAM[(97u)]));
   X = llvm_cbe_tmp41314;
-  Z = (((bool )(llvm_cbe_tmp41314 == 0)));
+  Z = (((llvm_cbe_tmp41314 == 0)));
   N = ((((((llvm_cbe_tmp41314) >> (7))))));
   if (llvm_cbe_tmp41314 == 0) {
     goto llvm_cbe_lBF04;
@@ -23369,7 +23369,7 @@ llvm_cbe_lBDDF:
   llvm_cbe_tmp41394_2e_rle52184 = llvm_cbe_tmp41394_2e_rle52184__PHI_TEMPORARY;
   A = (32);
   llvm_cbe_tmp41244 = *((&RAM[(102u)]));
-  Z = (((bool )(llvm_cbe_tmp41244 == 0)));
+  Z = (((llvm_cbe_tmp41244 == 0)));
   llvm_cbe_tmp41244_2e_lobit = (((((llvm_cbe_tmp41244) >> (7)))));
   N = llvm_cbe_tmp41244_2e_lobit;
   V = (((((((((llvm_cbe_tmp41244) >> ((6))))))) & 1)));
@@ -23475,7 +23475,7 @@ llvm_cbe_lE06C:
   llvm_cbe_tmp44161_2e_rle = llvm_cbe_tmp44161_2e_rle__PHI_TEMPORARY;
   *((&RAM[(113u)])) = llvm_cbe_tmp44118;
   Y = llvm_cbe_tmp44161_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp44161_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp44161_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp44161_2e_rle) >> (7))))));
   goto llvm_cbe_lE070;
 
@@ -23488,7 +23488,7 @@ llvm_cbe_lE060:
   llvm_cbe_tmp44118 = ((llvm_cbe_tmp44081 + 1));
   Y = llvm_cbe_tmp44118;
   A = llvm_cbe_tmp44118;
-  Z = (((bool )(llvm_cbe_tmp44118 == 0)));
+  Z = (((llvm_cbe_tmp44118 == 0)));
   N = ((((((llvm_cbe_tmp44118) >> (7))))));
   if (llvm_cbe_tmp44118 == 0) {
     goto llvm_cbe_bb44146;
@@ -23500,7 +23500,7 @@ llvm_cbe_lE060:
 llvm_cbe_bb44146:
   llvm_cbe_tmp44148 = ((llvm_cbe_tmp44083 + 1));
   *((&RAM[(114u)])) = llvm_cbe_tmp44148;
-  Z = (((bool )(llvm_cbe_tmp44148 == 0)));
+  Z = (((llvm_cbe_tmp44148 == 0)));
   N = ((((((llvm_cbe_tmp44148) >> (7))))));
   llvm_cbe_tmp44161_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp44148;   /* for PHI node */
   goto llvm_cbe_lE06C;
@@ -23511,7 +23511,7 @@ llvm_cbe_lE084:
   llvm_cbe_tmp44307 = *((&RAM[(103u)]));
   llvm_cbe_tmp44308 = ((llvm_cbe_tmp44307 + (-1)));
   *((&RAM[(103u)])) = llvm_cbe_tmp44308;
-  Z = (((bool )(llvm_cbe_tmp44307 == 1)));
+  Z = (((llvm_cbe_tmp44307 == 1)));
   N = ((((((llvm_cbe_tmp44308) >> (7))))));
   if (llvm_cbe_tmp44307 == 1) {
     goto llvm_cbe_bb44324;
@@ -23570,7 +23570,7 @@ llvm_cbe_bb46822:
 llvm_cbe_lBACF:
   llvm_cbe_tmp36602 = *((&RAM[(111u)]));
   A = llvm_cbe_tmp36602;
-  Z = (((bool )(llvm_cbe_tmp36602 == 0)));
+  Z = (((llvm_cbe_tmp36602 == 0)));
   N = ((((((llvm_cbe_tmp36602) >> (7))))));
   *((&RAM[(102u)])) = llvm_cbe_tmp36602;
   llvm_cbe_tmp36621 = *((&RAM[(((((((llvm_cbe_tmp36615_2e_rle52360 + 1))))) | 256u))]));
@@ -23617,7 +23617,7 @@ llvm_cbe_lBBA2:
   Y = 0;
   llvm_cbe_tmp38154 = *((&RAM[(llvm_cbe_tmp37986)]));
   A = llvm_cbe_tmp38154;
-  Z = (((bool )(llvm_cbe_tmp38154 == 0)));
+  Z = (((llvm_cbe_tmp38154 == 0)));
   N = ((((((llvm_cbe_tmp38154) >> (7))))));
   *((&RAM[(97u)])) = llvm_cbe_tmp38154;
   *((&RAM[(112u)])) = 0;
@@ -23678,7 +23678,7 @@ llvm_cbe_bb15412:
   V = llvm_cbe_iftmp_2e_3397_2e_0;
   llvm_cbe_tmp1541415415 = (llvm_cbe_tmp15394);
   A = llvm_cbe_tmp1541415415;
-  Z = (((bool )(llvm_cbe_tmp1541415415 == 0)));
+  Z = (((llvm_cbe_tmp1541415415 == 0)));
   N = ((((((llvm_cbe_tmp1541415415) >> (7))))));
   llvm_cbe_iftmp_2e_3404_2e_0 = ((((((((((llvm_cbe_tmp15394))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_3404_2e_0;
@@ -23704,7 +23704,7 @@ llvm_cbe_lAD35:
   llvm_cbe_tmp15376 = X;
   S = llvm_cbe_tmp15376;
   A = llvm_cbe_tmp15376;
-  Z = (((bool )(llvm_cbe_tmp15376 == 0)));
+  Z = (((llvm_cbe_tmp15376 == 0)));
   N = ((((((llvm_cbe_tmp15376) >> (7))))));
   C = 0;
   llvm_cbe_tmp15394 = ((((llvm_cbe_tmp15376)) + (4)));
@@ -23740,7 +23740,7 @@ llvm_cbe_lAFA0:
   A = llvm_cbe_tmp18948;
   llvm_cbe_tmp18960 = *((&RAM[(101u)]));
   Y = llvm_cbe_tmp18960;
-  Z = (((bool )(llvm_cbe_tmp18960 == 0)));
+  Z = (((llvm_cbe_tmp18960 == 0)));
   N = ((((((llvm_cbe_tmp18960) >> (7))))));
   llvm_cbe_tmp37969_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp18960;   /* for PHI node */
   llvm_cbe_tmp37968_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp18948;   /* for PHI node */
@@ -23759,7 +23759,7 @@ llvm_cbe_bb18778:
   llvm_cbe_tmp18781 = ((((llvm_cbe_tmp18779)) + (-73)));
   llvm_cbe_tmp1878218783 = (llvm_cbe_tmp18781);
   C = ((((((((((((llvm_cbe_tmp1878218783) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1878218783 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1878218783 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18781))) >> (7))))));
   if (((llvm_cbe_tmp1878218783 & 255u) == 0u)) {
     goto llvm_cbe_bb18805;
@@ -23773,7 +23773,7 @@ llvm_cbe_bb18751:
   llvm_cbe_tmp18754 = ((llvm_cbe_tmp1875218753 + (-84)));
   llvm_cbe_tmp1875518756 = (llvm_cbe_tmp18754);
   C = ((((((((((((llvm_cbe_tmp1875518756) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1875518756 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1875518756 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18754))) >> (7))))));
   if (((llvm_cbe_tmp1875518756 & 255u) == 0u)) {
     goto llvm_cbe_bb18778;
@@ -23785,7 +23785,7 @@ llvm_cbe_lAF92:
   llvm_cbe_tmp18886 = ((llvm_cbe_tmp1875218753 + (-83)));
   llvm_cbe_tmp1888718888 = (llvm_cbe_tmp18886);
   C = ((((((((((((llvm_cbe_tmp1888718888) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1888718888 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1888718888 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18886))) >> (7))))));
   if (((llvm_cbe_tmp1888718888 & 255u) == 0u)) {
     goto llvm_cbe_bb18910;
@@ -23798,7 +23798,7 @@ llvm_cbe_bb18910:
   llvm_cbe_tmp18913 = ((((llvm_cbe_tmp18911)) + (-84)));
   llvm_cbe_tmp1891418915 = (llvm_cbe_tmp18913);
   C = ((((((((((((llvm_cbe_tmp1891418915) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1891418915 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1891418915 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp18913))) >> (7))))));
   if (((llvm_cbe_tmp1891418915 & 255u) == 0u)) {
     goto llvm_cbe_bb18937;
@@ -23835,7 +23835,7 @@ llvm_cbe_lE26E:
   Y = (-30);
   llvm_cbe_tmp46319 = *((&RAM[(110u)]));
   X = llvm_cbe_tmp46319;
-  Z = (((bool )(llvm_cbe_tmp46319 == 0)));
+  Z = (((llvm_cbe_tmp46319 == 0)));
   N = ((((((llvm_cbe_tmp46319) >> (7))))));
   llvm_cbe_tmp46331 = S;
   *((&RAM[((((llvm_cbe_tmp46331)) | 256u))])) = (-30);
@@ -23916,7 +23916,7 @@ llvm_cbe_lBBD7:
   Y = 0;
   llvm_cbe_tmp38472 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp38472;
-  Z = (((bool )(llvm_cbe_tmp38472 == 0)));
+  Z = (((llvm_cbe_tmp38472 == 0)));
   N = ((((((llvm_cbe_tmp38472) >> (7))))));
   llvm_cbe_tmp38484 = *((&RAM[(34u)]));
   llvm_cbe_tmp38486 = *((&RAM[(35u)]));
@@ -23938,7 +23938,7 @@ llvm_cbe_lBBD7:
 llvm_cbe_bb38581:
   X = 0;
   A = llvm_cbe_tmp38546;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_051235 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_051235 == 1)));
   N = 0;
   *((&RAM[(112u)])) = 0;
   llvm_cbe_tmp38583 = S;
@@ -23982,7 +23982,7 @@ llvm_cbe_lBBFE:
 llvm_cbe_lBBFC:
   llvm_cbe_tmp38517 = *((&RAM[(110u)]));
   A = llvm_cbe_tmp38517;
-  Z = (((bool )(llvm_cbe_tmp38517 == 0)));
+  Z = (((llvm_cbe_tmp38517 == 0)));
   N = ((((((llvm_cbe_tmp38517) >> (7))))));
   goto llvm_cbe_lBBFE;
 
@@ -23993,7 +23993,7 @@ llvm_cbe_lAFF0:
   llvm_cbe_tmp19404 = *((&RAM[(101u)]));
   llvm_cbe_tmp19418 = ((llvm_cbe_tmp19404 ^ llvm_cbe_tmp19389));
   A = llvm_cbe_tmp19418;
-  Z = (((bool )(llvm_cbe_tmp19389 == llvm_cbe_tmp19404)));
+  Z = (((llvm_cbe_tmp19389 == llvm_cbe_tmp19404)));
   N = ((((((llvm_cbe_tmp19418) >> (7))))));
   *((&RAM[(8u)])) = llvm_cbe_tmp19418;
   llvm_cbe_tmp19431 = S;
@@ -24022,7 +24022,7 @@ llvm_cbe_bb43308:
   A = llvm_cbe_tmp43309;
   llvm_cbe_tmp43321 = *((&RAM[(7u)]));
   Y = llvm_cbe_tmp43321;
-  Z = (((bool )(llvm_cbe_tmp43321 == 0)));
+  Z = (((llvm_cbe_tmp43321 == 0)));
   N = ((((((llvm_cbe_tmp43321) >> (7))))));
   goto llvm_cbe_lBF9E;
 
@@ -24043,7 +24043,7 @@ llvm_cbe_lBC1A:
 llvm_cbe_bb38664:
   X = 0;
   A = llvm_cbe_tmp38629;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_051230 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_051230 == 1)));
   N = 0;
   *((&RAM[(112u)])) = 0;
   goto llvm_cbe_lBC1A;
@@ -24098,7 +24098,7 @@ llvm_cbe_lBC2B:
   llvm_cbe_tmp38826_2e_rle52107 = llvm_cbe_tmp38826_2e_rle52107__PHI_TEMPORARY;
   llvm_cbe_tmp38745 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp38745;
-  Z = (((bool )(llvm_cbe_tmp38745 == 0)));
+  Z = (((llvm_cbe_tmp38745 == 0)));
   N = ((((((llvm_cbe_tmp38745) >> (7))))));
   if (llvm_cbe_tmp38745 == 0) {
     llvm_cbe_tmp38826_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp38826_2e_rle52107;   /* for PHI node */
@@ -24122,7 +24122,7 @@ llvm_cbe_lA795:
   llvm_cbe_tmp8206 = ((((llvm_cbe_tmp8204)) + (-169)));
   llvm_cbe_tmp82078208 = (llvm_cbe_tmp8206);
   C = ((((((((((((llvm_cbe_tmp82078208) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp82078208 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp82078208 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp8206))) >> (7))))));
   if (((llvm_cbe_tmp82078208 & 255u) == 0u)) {
     goto llvm_cbe_bb8230;
@@ -24142,7 +24142,7 @@ llvm_cbe_lB9EA:
 llvm_cbe_lBFA1:
   llvm_cbe_tmp43343 = Y;
   A = llvm_cbe_tmp43343;
-  Z = (((bool )(llvm_cbe_tmp43343 == 0)));
+  Z = (((llvm_cbe_tmp43343 == 0)));
   N = ((((((llvm_cbe_tmp43343) >> (7))))));
   llvm_cbe_tmp43355 = S;
   *((&RAM[((((llvm_cbe_tmp43355)) | 256u))])) = llvm_cbe_tmp43343;
@@ -24170,7 +24170,7 @@ llvm_cbe_lBC5D:
   A = llvm_cbe_tmp39007;
   Y = 1;
   X = llvm_cbe_tmp39007;
-  Z = (((bool )(llvm_cbe_tmp39007 == 0)));
+  Z = (((llvm_cbe_tmp39007 == 0)));
   N = ((((((llvm_cbe_tmp39007) >> (7))))));
   if (llvm_cbe_tmp39007 == 0){
     llvm_cbe_tmp38826_2e_rle52107__PHI_TEMPORARY = llvm_cbe_tmp38826_2e_rle52104;   /* for PHI node */
@@ -24311,7 +24311,7 @@ llvm_cbe_lBC2F:
   llvm_cbe_tmp38826_2e_rle52106 = llvm_cbe_tmp38826_2e_rle52106__PHI_TEMPORARY;
   llvm_cbe_tmp38761 = *((&RAM[(102u)]));
   A = llvm_cbe_tmp38761;
-  Z = (((bool )(llvm_cbe_tmp38761 == 0)));
+  Z = (((llvm_cbe_tmp38761 == 0)));
   N = ((((((llvm_cbe_tmp38761) >> (7))))));
   llvm_cbe_tmp38826_2e_rle52101__PHI_TEMPORARY = llvm_cbe_tmp38826_2e_rle52106;   /* for PHI node */
   llvm_cbe_tmp38773_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp38761;   /* for PHI node */
@@ -24322,7 +24322,7 @@ llvm_cbe_bb39048:
   llvm_cbe_tmp39072 = *((&RAM[(102u)]));
   llvm_cbe_tmp39074 = ((llvm_cbe_tmp39060 ^ llvm_cbe_tmp39072));
   A = llvm_cbe_tmp39074;
-  Z = (((bool )(llvm_cbe_tmp39072 == llvm_cbe_tmp39060)));
+  Z = (((llvm_cbe_tmp39072 == llvm_cbe_tmp39060)));
   N = ((((((llvm_cbe_tmp39074) >> (7))))));
   if ((((s8 )llvm_cbe_tmp39074) < ((s8 )0))) {
     llvm_cbe_tmp38826_2e_rle52106__PHI_TEMPORARY = llvm_cbe_tmp38826_2e_rle52104;   /* for PHI node */
@@ -24334,7 +24334,7 @@ llvm_cbe_bb39048:
 llvm_cbe_lBC92:
   llvm_cbe_tmp39452_2e_rle = llvm_cbe_tmp39452_2e_rle__PHI_TEMPORARY;
   A = llvm_cbe_tmp39072;
-  Z = (((bool )(llvm_cbe_tmp39072 == 0)));
+  Z = (((llvm_cbe_tmp39072 == 0)));
   N = ((((((llvm_cbe_tmp39072) >> (7))))));
   if (llvm_cbe_tmp39452_2e_rle == 0){
     llvm_cbe_tmp38826_2e_rle52101__PHI_TEMPORARY = llvm_cbe_tmp38826_2e_rle52104;   /* for PHI node */
@@ -24350,7 +24350,7 @@ llvm_cbe_bb39090:
   llvm_cbe_tmp3909639097 = (llvm_cbe_tmp39095);
   llvm_cbe_tmp3909939100 = (((((((((((llvm_cbe_tmp3909639097) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3909939100;
-  Z = (((bool )((llvm_cbe_tmp3909639097 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3909639097 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp39095))) >> (7))))));
   if (((llvm_cbe_tmp3909639097 & 255u) == 0u)) {
     goto llvm_cbe_bb39119;
@@ -24367,7 +24367,7 @@ llvm_cbe_bb39119:
   llvm_cbe_tmp3916139162 = (llvm_cbe_tmp39160);
   llvm_cbe_tmp3916439165 = (((((((((((llvm_cbe_tmp3916139162) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3916439165;
-  Z = (((bool )((llvm_cbe_tmp3916139162 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3916139162 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp39160))) >> (7))))));
   if (((llvm_cbe_tmp3916139162 & 255u) == 0u)) {
     goto llvm_cbe_bb39184;
@@ -24385,7 +24385,7 @@ llvm_cbe_bb39184:
   llvm_cbe_tmp3922639227 = (llvm_cbe_tmp39225);
   llvm_cbe_tmp3922939230 = (((((((((((llvm_cbe_tmp3922639227) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3922939230;
-  Z = (((bool )((llvm_cbe_tmp3922639227 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3922639227 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp39225))) >> (7))))));
   if (((llvm_cbe_tmp3922639227 & 255u) == 0u)) {
     goto llvm_cbe_bb39249;
@@ -24403,7 +24403,7 @@ llvm_cbe_bb39249:
   llvm_cbe_tmp3929139292 = (llvm_cbe_tmp39290);
   llvm_cbe_tmp3929439295 = (((((((((((llvm_cbe_tmp3929139292) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3929439295;
-  Z = (((bool )((llvm_cbe_tmp3929139292 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp3929139292 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp39290))) >> (7))))));
   if (((llvm_cbe_tmp3929139292 & 255u) == 0u)) {
     goto llvm_cbe_bb39314;
@@ -24417,7 +24417,7 @@ llvm_cbe_bb39416:
   V = llvm_cbe_iftmp_2e_9472_2e_0;
   llvm_cbe_tmp3941839419 = (llvm_cbe_tmp39394);
   A = llvm_cbe_tmp3941839419;
-  Z = (((bool )(llvm_cbe_tmp3941839419 == 0)));
+  Z = (((llvm_cbe_tmp3941839419 == 0)));
   N = ((((((llvm_cbe_tmp3941839419) >> (7))))));
   llvm_cbe_tmp3943439435 = (((((((((((llvm_cbe_tmp3939739398) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp3943439435;
@@ -24443,7 +24443,7 @@ llvm_cbe_bb39314:
   C = llvm_cbe_tmp3934739348;
   llvm_cbe_tmp39374 = *((&RAM[(((llvm_cbe_tmp39001 + 4u) & 65535u))]));
   A = llvm_cbe_tmp39374;
-  Z = (((bool )(llvm_cbe_tmp39374 == 0)));
+  Z = (((llvm_cbe_tmp39374 == 0)));
   N = ((((((llvm_cbe_tmp39374) >> (7))))));
   llvm_cbe_tmp39388 = *((&RAM[(101u)]));
   llvm_cbe_tmp39394 = ((((((((((llvm_cbe_tmp39374)) + (-1)))) - ((llvm_cbe_tmp39388))))) + ((llvm_cbe_tmp3934739348))));
@@ -24461,7 +24461,7 @@ llvm_cbe_bb39415:
 llvm_cbe_bb39456:
   llvm_cbe_tmp39457not = ((llvm_cbe_tmp39072 ^ (-1)));
   A = llvm_cbe_tmp39457not;
-  Z = (((bool )(llvm_cbe_tmp39072 == 0xff)));
+  Z = (((llvm_cbe_tmp39072 == 0xff)));
   N = ((((((llvm_cbe_tmp39457not) >> (7))))));
   llvm_cbe_tmp38826_2e_rle52101__PHI_TEMPORARY = llvm_cbe_tmp38826_2e_rle52104;   /* for PHI node */
   llvm_cbe_tmp38773_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp39457not;   /* for PHI node */
@@ -24478,7 +24478,7 @@ llvm_cbe_lBC58:
   llvm_cbe_tmp38946 = *((&RAM[(102u)]));
   C = (((llvm_cbe_tmp38946 & 1)));
   llvm_cbe_tmp38950 = (((((llvm_cbe_tmp38946) >> (1)))));
-  Z = (((bool )(llvm_cbe_tmp38950 == 0)));
+  Z = (((llvm_cbe_tmp38950 == 0)));
   N = 0;
   *((&RAM[(102u)])) = llvm_cbe_tmp38950;
   llvm_cbe_tmp38963 = S;
@@ -24570,7 +24570,7 @@ llvm_cbe_bb40569:
 llvm_cbe_lBD62:
   llvm_cbe_tmp40553 = *((&RAM[(103u)]));
   A = llvm_cbe_tmp40553;
-  Z = (((bool )(llvm_cbe_tmp40553 == 0)));
+  Z = (((llvm_cbe_tmp40553 == 0)));
   N = ((((((llvm_cbe_tmp40553) >> (7))))));
   if ((((s8 )llvm_cbe_tmp40553) < ((s8 )0))) {
     goto llvm_cbe_lBFB4;
@@ -24619,7 +24619,7 @@ llvm_cbe_bb43003:
 
 llvm_cbe_bb42991:
   X = llvm_cbe_tmp42932;
-  Z = (((bool )(llvm_cbe_tmp4296942970 == 0)));
+  Z = (((llvm_cbe_tmp4296942970 == 0)));
   N = ((((((llvm_cbe_tmp4296942970) >> (7))))));
   A = llvm_cbe_tmp4296942970;
   C = llvm_cbe_tmp4298542986;
@@ -24683,7 +24683,7 @@ llvm_cbe_lBED3:
   A = (43);
   llvm_cbe_tmp42779 = *((&RAM[(94u)]));
   X = llvm_cbe_tmp42779;
-  Z = (((bool )(llvm_cbe_tmp42779 == 0)));
+  Z = (((llvm_cbe_tmp42779 == 0)));
   llvm_cbe_tmp42783_2e_lobit = (((((llvm_cbe_tmp42779) >> (7)))));
   N = llvm_cbe_tmp42783_2e_lobit;
   if (llvm_cbe_tmp42779 == 0){
@@ -24700,7 +24700,7 @@ llvm_cbe_bb42727:
   llvm_cbe_tmp42730 = ((llvm_cbe_tmp4270142702 + (-46)));
   llvm_cbe_tmp4273142732 = (llvm_cbe_tmp42730);
   C = ((((((((((((llvm_cbe_tmp4273142732) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4273142732 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4273142732 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp42730))) >> (7))))));
   if (((llvm_cbe_tmp4273142732 & 255u) == 0u)) {
     llvm_cbe_tmp43102_2e_rle52185__PHI_TEMPORARY = llvm_cbe_tmp42689;   /* for PHI node */
@@ -24730,7 +24730,7 @@ llvm_cbe_lBEC4:
   V = llvm_cbe_iftmp_2e_10161_2e_0;
   X = llvm_cbe_tmp42582;
   Y = llvm_cbe_Y_2e_tmp_2e_2;
-  Z = (((bool )(llvm_cbe_Y_2e_tmp_2e_2 == 0)));
+  Z = (((llvm_cbe_Y_2e_tmp_2e_2 == 0)));
   N = ((((((llvm_cbe_Y_2e_tmp_2e_2) >> (7))))));
   llvm_cbe_indvar51690__PHI_TEMPORARY = 0;   /* for PHI node */
   goto llvm_cbe_lBEC6;
@@ -24962,7 +24962,7 @@ llvm_cbe_lBE48:
   *((&RAM[(94u)])) = ((llvm_cbe_tmp41750));
   *((&RAM[(93u)])) = llvm_cbe_tmp41789_2e_rle52367;
   A = llvm_cbe_tmp41789_2e_rle52367;
-  llvm_cbe_tmp4179241793 = ((bool )(llvm_cbe_tmp41789_2e_rle52367 == 0));
+  llvm_cbe_tmp4179241793 = ((llvm_cbe_tmp41789_2e_rle52367 == 0));
   Z = llvm_cbe_tmp4179241793;
   llvm_cbe_tmp41794_2e_lobit = (((((llvm_cbe_tmp41789_2e_rle52367) >> (7)))));
   N = llvm_cbe_tmp41794_2e_lobit;
@@ -24979,7 +24979,7 @@ llvm_cbe_bb41647:
   llvm_cbe_tmp41653_2e_lobit49327 = ((((((((llvm_cbe_tmp4165141652) >> (8u)))))) & 1));
   llvm_cbe_tmp4165441655 = ((llvm_cbe_tmp41653_2e_lobit49327 ^ 1));
   C = llvm_cbe_tmp4165441655;
-  Z = (((bool )((llvm_cbe_tmp4165141652 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4165141652 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp41650))) >> (7))))));
   if (llvm_cbe_tmp41653_2e_lobit49327 == 0){
     llvm_cbe_tmp41789_2e_rle52367__PHI_TEMPORARY = 1;   /* for PHI node */
@@ -24995,7 +24995,7 @@ llvm_cbe_bb41618:
   V = llvm_cbe_iftmp_2e_9971_2e_0;
   llvm_cbe_tmp4162041621 = (llvm_cbe_tmp41600);
   A = llvm_cbe_tmp4162041621;
-  Z = (((bool )(llvm_cbe_tmp4162041621 == 0)));
+  Z = (((llvm_cbe_tmp4162041621 == 0)));
   llvm_cbe_tmp41625_2e_lobit = (((((llvm_cbe_tmp4162041621) >> (7)))));
   N = llvm_cbe_tmp41625_2e_lobit;
   C = (((((((((((llvm_cbe_tmp41600))) >> (8u)))))) & 1)));
@@ -25019,7 +25019,7 @@ llvm_cbe_lBE35:
   X = 1;
   llvm_cbe_tmp41583 = *((&RAM[(93u)]));
   A = llvm_cbe_tmp41583;
-  Z = (((bool )(llvm_cbe_tmp41583 == 0)));
+  Z = (((llvm_cbe_tmp41583 == 0)));
   N = ((((((llvm_cbe_tmp41583) >> (7))))));
   C = 0;
   llvm_cbe_tmp41600 = ((((llvm_cbe_tmp41583)) + (10)));
@@ -25099,7 +25099,7 @@ llvm_cbe_bb41869:
   A = (48);
   llvm_cbe_tmp41882 = ((llvm_cbe_tmp41811 + (2)));
   Y = llvm_cbe_tmp41882;
-  Z = (((bool )(llvm_cbe_tmp41882 == 0)));
+  Z = (((llvm_cbe_tmp41882 == 0)));
   N = ((((((llvm_cbe_tmp41882) >> (7))))));
   *((&RAM[((((llvm_cbe_tmp41882)) + 255u))])) = (48);
   llvm_cbe_tmp41900_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp41882;   /* for PHI node */
@@ -25107,7 +25107,7 @@ llvm_cbe_bb41869:
 
 llvm_cbe_bb42754:
   Y = llvm_cbe_Y_2e_tmp_2e_051216;
-  Z = (((bool )(llvm_cbe_Y_2e_tmp_2e_2 == llvm_cbe_indvar51690)));
+  Z = (((llvm_cbe_Y_2e_tmp_2e_2 == llvm_cbe_indvar51690)));
   N = ((((((llvm_cbe_Y_2e_tmp_2e_051216) >> (7))))));
   llvm_cbe_tmp43102_2e_rle52185__PHI_TEMPORARY = llvm_cbe_Y_2e_tmp_2e_051216;   /* for PHI node */
   goto llvm_cbe_lBED3;
@@ -25189,7 +25189,7 @@ llvm_cbe_lBFB0:
   llvm_cbe_tmp43433 = ((llvm_cbe_tmp43419 & 1));
   C = llvm_cbe_tmp43433;
   llvm_cbe_tmp43435 = (((((llvm_cbe_tmp43419) >> (1)))));
-  Z = (((bool )(llvm_cbe_tmp43435 == 0)));
+  Z = (((llvm_cbe_tmp43435 == 0)));
   N = 0;
   A = llvm_cbe_tmp43435;
   if (llvm_cbe_tmp43433 == 0){
@@ -25201,7 +25201,7 @@ llvm_cbe_lBFB0:
 llvm_cbe_lBFB4:
   llvm_cbe_tmp43452 = *((&RAM[(97u)]));
   A = llvm_cbe_tmp43452;
-  Z = (((bool )(llvm_cbe_tmp43452 == 0)));
+  Z = (((llvm_cbe_tmp43452 == 0)));
   N = ((((((llvm_cbe_tmp43452) >> (7))))));
   if (llvm_cbe_tmp43452 == 0){
     goto llvm_cbe_lBFBE;
@@ -25227,7 +25227,7 @@ llvm_cbe_bb46464:
   llvm_cbe_tmp46465 = *((&RAM[(18u)]));
   llvm_cbe_tmp46477not = ((llvm_cbe_tmp46465 ^ (-1)));
   A = llvm_cbe_tmp46477not;
-  Z = (((bool )(llvm_cbe_tmp46465 == 0xff)));
+  Z = (((llvm_cbe_tmp46465 == 0xff)));
   N = ((((((llvm_cbe_tmp46477not) >> (7))))));
   *((&RAM[(18u)])) = llvm_cbe_tmp46477not;
   goto llvm_cbe_lE29D;
@@ -25236,7 +25236,7 @@ llvm_cbe_lE2CC:
   *((&RAM[(102u)])) = 0;
   llvm_cbe_tmp46695 = *((&RAM[(18u)]));
   A = llvm_cbe_tmp46695;
-  Z = (((bool )(llvm_cbe_tmp46695 == 0)));
+  Z = (((llvm_cbe_tmp46695 == 0)));
   N = ((((((llvm_cbe_tmp46695) >> (7))))));
   llvm_cbe_tmp46707 = S;
   *((&RAM[((((llvm_cbe_tmp46707)) | 256u))])) = (-30);
@@ -25263,7 +25263,7 @@ llvm_cbe_lE337:
   S = llvm_cbe_tmp46965;
   llvm_cbe_tmp46970 = *((&RAM[((((llvm_cbe_tmp46965)) | 256u))]));
   A = llvm_cbe_tmp46970;
-  Z = (((bool )(llvm_cbe_tmp46970 == 0)));
+  Z = (((llvm_cbe_tmp46970 == 0)));
   N = ((((((llvm_cbe_tmp46970) >> (7))))));
   if ((((s8 )llvm_cbe_tmp46970) < ((s8 )0))) {
     goto llvm_cbe_lBFB4;
@@ -25275,7 +25275,7 @@ llvm_cbe_bb43468:
   llvm_cbe_tmp43469 = *((&RAM[(102u)]));
   llvm_cbe_tmp43481not = ((llvm_cbe_tmp43469 ^ (-1)));
   A = llvm_cbe_tmp43481not;
-  Z = (((bool )(llvm_cbe_tmp43469 == 0xff)));
+  Z = (((llvm_cbe_tmp43469 == 0xff)));
   N = ((((((llvm_cbe_tmp43481not) >> (7))))));
   *((&RAM[(102u)])) = llvm_cbe_tmp43481not;
   goto llvm_cbe_lBFBE;
@@ -25480,7 +25480,7 @@ llvm_cbe_bb45852:
   S = llvm_cbe_tmp45872;
   llvm_cbe_tmp45877 = *((&RAM[((((llvm_cbe_tmp45872)) | 256u))]));
   A = llvm_cbe_tmp45877;
-  Z = (((bool )(llvm_cbe_tmp45877 == 0)));
+  Z = (((llvm_cbe_tmp45877 == 0)));
   N = ((((((llvm_cbe_tmp45877) >> (7))))));
   goto llvm_cbe_lE20D;
 
@@ -25518,7 +25518,7 @@ llvm_cbe_lA6C9:
   llvm_cbe_tmp7035 = *((&RAM[(96u)]));
   llvm_cbe_tmp7044 = *((&RAM[(((((((llvm_cbe_tmp7035)) << 8u) | ((llvm_cbe_tmp7033))) + 1u) & 65535u))]));
   A = llvm_cbe_tmp7044;
-  Z = (((bool )(llvm_cbe_tmp7044 == 0)));
+  Z = (((llvm_cbe_tmp7044 == 0)));
   N = ((((((llvm_cbe_tmp7044) >> (7))))));
   if (llvm_cbe_tmp7044 == 0){
     goto llvm_cbe_lE386;
@@ -25533,7 +25533,7 @@ llvm_cbe_lA6BB:
   llvm_cbe_tmp6989 = *((&RAM[(21u)]));
   llvm_cbe_tmp6991 = ((llvm_cbe_tmp6977 | llvm_cbe_tmp6989));
   A = llvm_cbe_tmp6991;
-  Z = (((bool )(llvm_cbe_tmp6991 == 0)));
+  Z = (((llvm_cbe_tmp6991 == 0)));
   N = ((((((llvm_cbe_tmp6991) >> (7))))));
   if (llvm_cbe_tmp6991 == 0){
     goto llvm_cbe_bb7007;
@@ -25556,7 +25556,7 @@ llvm_cbe_bb7380:
   Y = llvm_cbe_tmp7429;
   llvm_cbe_tmp7452 = *((&RAM[(((llvm_cbe_tmp7358 + ((llvm_cbe_tmp7429))) & 65535u))]));
   A = llvm_cbe_tmp7452;
-  Z = (((bool )(llvm_cbe_tmp7452 == 0)));
+  Z = (((llvm_cbe_tmp7452 == 0)));
   N = ((((((llvm_cbe_tmp7452) >> (7))))));
   *((&RAM[(95u)])) = llvm_cbe_tmp7404;
   *((&RAM[(96u)])) = llvm_cbe_tmp7452;
@@ -25602,7 +25602,7 @@ llvm_cbe_lE40E:
   llvm_cbe_tmp47546 = *((&RAM[(43u)]));
   llvm_cbe_tmp47547 = ((llvm_cbe_tmp47546 + 1));
   *((&RAM[(43u)])) = llvm_cbe_tmp47547;
-  Z = (((bool )(llvm_cbe_tmp47547 == 0)));
+  Z = (((llvm_cbe_tmp47547 == 0)));
   N = ((((((llvm_cbe_tmp47547) >> (7))))));
   if (llvm_cbe_tmp47547 == 0){
     goto llvm_cbe_bb47563;
@@ -25614,7 +25614,7 @@ llvm_cbe_bb47563:
   llvm_cbe_tmp47564 = *((&RAM[(44u)]));
   llvm_cbe_tmp47565 = ((llvm_cbe_tmp47564 + 1));
   *((&RAM[(44u)])) = llvm_cbe_tmp47565;
-  Z = (((bool )(llvm_cbe_tmp47565 == 0)));
+  Z = (((llvm_cbe_tmp47565 == 0)));
   N = ((((((llvm_cbe_tmp47565) >> (7))))));
   goto llvm_cbe_lE421;
 
@@ -25634,14 +25634,14 @@ llvm_cbe_lE4B6:
 llvm_cbe_lE4B1:
   llvm_cbe_tmp47927 = A;
   X = llvm_cbe_tmp47927;
-  llvm_cbe_tmp4792947930 = ((bool )(llvm_cbe_tmp47927 == 0));
+  llvm_cbe_tmp4792947930 = ((llvm_cbe_tmp47927 == 0));
   llvm_cbe_tmp47931_2e_lobit = (((((llvm_cbe_tmp47927) >> (7)))));
   llvm_cbe_tmp47939 = S;
   llvm_cbe_tmp47940 = ((llvm_cbe_tmp47939 + 1));
   S = llvm_cbe_tmp47940;
   llvm_cbe_tmp47945 = *((&RAM[((((llvm_cbe_tmp47940)) | 256u))]));
   A = llvm_cbe_tmp47945;
-  Z = (((bool )(llvm_cbe_tmp47945 == 0)));
+  Z = (((llvm_cbe_tmp47945 == 0)));
   N = ((((((llvm_cbe_tmp47945) >> (7))))));
   llvm_cbe_tmp47957 = C;
   if (llvm_cbe_tmp47957 == 0){
@@ -25720,7 +25720,7 @@ llvm_cbe_lA43A:
   *((&RAM[(34u)])) = llvm_cbe_tmp3272;
   llvm_cbe_tmp3289 = *((&RAM[((llvm_cbe_tmp32683269 + 41767u))]));
   A = llvm_cbe_tmp3289;
-  Z = (((bool )(llvm_cbe_tmp3289 == 0)));
+  Z = (((llvm_cbe_tmp3289 == 0)));
   N = ((((((llvm_cbe_tmp3289) >> (7))))));
   *((&RAM[(35u)])) = llvm_cbe_tmp3289;
   llvm_cbe_tmp3302 = S;
@@ -25785,7 +25785,7 @@ llvm_cbe_lABF9:
   S = llvm_cbe_storemerge48452;
   llvm_cbe_tmp14228 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp14228;
-  Z = (((bool )(llvm_cbe_tmp14228 == 0)));
+  Z = (((llvm_cbe_tmp14228 == 0)));
   N = ((((((llvm_cbe_tmp14228) >> (7))))));
   if (llvm_cbe_tmp14228 == 0){
     goto llvm_cbe_bb14244;
@@ -25821,7 +25821,7 @@ llvm_cbe_lAC4A:
 llvm_cbe_bb14489:
   llvm_cbe_tmp14490 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp14490;
-  Z = (((bool )(llvm_cbe_tmp14490 == 0)));
+  Z = (((llvm_cbe_tmp14490 == 0)));
   N = ((((((llvm_cbe_tmp14490) >> (7))))));
   if (llvm_cbe_tmp14490 == 0){
     goto llvm_cbe_bb14506;
@@ -25893,7 +25893,7 @@ llvm_cbe_bb8727:
   *((&RAM[((((llvm_cbe_tmp8781)) | 256u))])) = llvm_cbe_tmp8769;
   llvm_cbe_tmp8792 = *((&RAM[((llvm_cbe_tmp87648765 + 40972u))]));
   A = llvm_cbe_tmp8792;
-  Z = (((bool )(llvm_cbe_tmp8792 == 0)));
+  Z = (((llvm_cbe_tmp8792 == 0)));
   N = ((((((llvm_cbe_tmp8792) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp8781 + (-1)))))) | 256u))])) = llvm_cbe_tmp8792;
   S = (((llvm_cbe_tmp8781 + (-2))));
@@ -25956,7 +25956,7 @@ llvm_cbe_bb15699:
   *((&RAM[(122u)])) = llvm_cbe_tmp15738;
   llvm_cbe_tmp15755 = *((&RAM[((llvm_cbe_tmp1563915640 + 273u))]));
   A = llvm_cbe_tmp15755;
-  Z = (((bool )(llvm_cbe_tmp15755 == 0)));
+  Z = (((llvm_cbe_tmp15755 == 0)));
   N = ((((((llvm_cbe_tmp15755) >> (7))))));
   *((&RAM[(123u)])) = llvm_cbe_tmp15755;
   goto llvm_cbe_lA7AE;
@@ -25966,7 +25966,7 @@ llvm_cbe_bb15675:
   V = llvm_cbe_iftmp_2e_3467_2e_0;
   llvm_cbe_tmp1567715678 = (llvm_cbe_tmp15649);
   A = llvm_cbe_tmp1567715678;
-  Z = (((bool )(llvm_cbe_tmp1567715678 == 0)));
+  Z = (((llvm_cbe_tmp1567715678 == 0)));
   N = ((((((llvm_cbe_tmp1567715678) >> (7))))));
   llvm_cbe_tmp1569315694 = (((((((((((llvm_cbe_tmp1565215653) >> (8u)))))) & 1))) ^ 1));
   C = llvm_cbe_tmp1569315694;
@@ -25987,7 +25987,7 @@ llvm_cbe_bb15659:
 llvm_cbe_lAD5A:
   llvm_cbe_tmp15625 = S;
   X = llvm_cbe_tmp15625;
-  llvm_cbe_tmp1562715628 = ((bool )(llvm_cbe_tmp15625 == 0));
+  llvm_cbe_tmp1562715628 = ((llvm_cbe_tmp15625 == 0));
   Z = llvm_cbe_tmp1562715628;
   llvm_cbe_tmp15629_2e_lobit = (((((llvm_cbe_tmp15625) >> (7)))));
   N = llvm_cbe_tmp15629_2e_lobit;
@@ -26012,7 +26012,7 @@ llvm_cbe_lAD80:
   llvm_cbe_tmp15853 = ((((llvm_cbe_tmp15851)) + (-44)));
   llvm_cbe_tmp1585415855 = (llvm_cbe_tmp15853);
   C = ((((((((((((llvm_cbe_tmp1585415855) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1585415855 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1585415855 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp15853))) >> (7))))));
   if (((llvm_cbe_tmp1585415855 & 255u) == 0u)) {
     goto llvm_cbe_bb15877;
@@ -26100,7 +26100,7 @@ llvm_cbe_bb11130:
   V = llvm_cbe_iftmp_2e_2329_2e_0;
   llvm_cbe_tmp1113211133 = (llvm_cbe_tmp11108);
   A = llvm_cbe_tmp1113211133;
-  Z = (((bool )(llvm_cbe_tmp1113211133 == 0)));
+  Z = (((llvm_cbe_tmp1113211133 == 0)));
   N = ((((((llvm_cbe_tmp1113211133) >> (7))))));
   llvm_cbe_iftmp_2e_2336_2e_0 = ((((((((((llvm_cbe_tmp11108))) >> (8u)))))) & 1));
   C = llvm_cbe_iftmp_2e_2336_2e_0;
@@ -26132,7 +26132,7 @@ llvm_cbe_bb11013:
   llvm_cbe_tmp1107811079 = (llvm_cbe_tmp11069);
   *((&RAM[(21u)])) = llvm_cbe_tmp1107811079;
   A = llvm_cbe_tmp1106111062;
-  Z = (((bool )(llvm_cbe_tmp1106111062 == 0)));
+  Z = (((llvm_cbe_tmp1106111062 == 0)));
   N = (((((((((((llvm_cbe_tmp1103911040))) >> ((6))))))) & 1)));
   llvm_cbe_tmp11108 = ((((((((llvm_cbe_tmp10726 & (255)))) + (((llvm_cbe_tmp11046 & (254))))))) + llvm_cbe_tmp11071));
   if ((((((((((llvm_cbe_tmp10726 ^ llvm_cbe_tmp11046))))))) & 128u) == 0u)) {
@@ -26158,7 +26158,7 @@ llvm_cbe_bb10946:
   C = llvm_cbe_iftmp_2e_2303_2e_0;
   *((&RAM[(20u)])) = llvm_cbe_tmp1094810949;
   A = llvm_cbe_tmp1090610907;
-  Z = (((bool )(llvm_cbe_tmp1090610907 == 0)));
+  Z = (((llvm_cbe_tmp1090610907 == 0)));
   N = llvm_cbe_tmp1090610907_2e_lobit;
   llvm_cbe_tmp10991 = (((((llvm_cbe_tmp1077810779 + (((llvm_cbe_tmp10897 & (255))))))) + ((llvm_cbe_iftmp_2e_2303_2e_0))));
   if ((((((((llvm_cbe_tmp10765 ^ llvm_cbe_tmp1090610907))))) & 128u) == 0u)) {
@@ -26184,7 +26184,7 @@ llvm_cbe_bb10804:
   llvm_cbe_tmp10897 = ((((((((((((((llvm_cbe_tmp1077810779 << (1)))) | ((((((((llvm_cbe_tmp10805) >> (7))))))))))) << (1)))) & (510)))) | (((((((((llvm_cbe_tmp1081710818) >> ((6))))))) & (1))))));
   llvm_cbe_tmp10899 = (((((llvm_cbe_tmp10897) >> ((8))))));
   C = ((llvm_cbe_tmp10899));
-  Z = (((bool )((((llvm_cbe_tmp10897)) & 255u) == 0u)));
+  Z = ((((((llvm_cbe_tmp10897)) & 255u) == 0u)));
   llvm_cbe_tmp1090610907 = (llvm_cbe_tmp10897);
   llvm_cbe_tmp1090610907_2e_lobit = (((((llvm_cbe_tmp1090610907) >> (7)))));
   N = llvm_cbe_tmp1090610907_2e_lobit;
@@ -26211,7 +26211,7 @@ llvm_cbe_bb11129:
 llvm_cbe_bb11160:
   llvm_cbe_tmp11162 = ((llvm_cbe_tmp1107811079 + 1));
   *((&RAM[(21u)])) = llvm_cbe_tmp11162;
-  Z = (((bool )(llvm_cbe_tmp11162 == 0)));
+  Z = (((llvm_cbe_tmp11162 == 0)));
   N = ((((((llvm_cbe_tmp11162) >> (7))))));
   goto llvm_cbe_lA99F;
 
@@ -26222,7 +26222,7 @@ llvm_cbe_lAA14:
   Y = llvm_cbe_tmp11766;
   llvm_cbe_tmp11778 = *((&RAM[(101u)]));
   A = llvm_cbe_tmp11778;
-  Z = (((bool )(llvm_cbe_tmp11778 == 0)));
+  Z = (((llvm_cbe_tmp11778 == 0)));
   N = ((((((llvm_cbe_tmp11778) >> (7))))));
   PC = (-37);
   goto llvm_cbe_not_found;
@@ -26234,7 +26234,7 @@ llvm_cbe_lAA1D:
   llvm_cbe_tmp11792 = *((&RAM[(35u)]));
   llvm_cbe_tmp11801 = *((&RAM[(((((((llvm_cbe_tmp11792)) << 8u) | ((llvm_cbe_tmp11790))) + ((llvm_cbe_tmp11796_2e_rle))) & 65535u))]));
   A = llvm_cbe_tmp11801;
-  Z = (((bool )(llvm_cbe_tmp11801 == 0)));
+  Z = (((llvm_cbe_tmp11801 == 0)));
   N = ((((((llvm_cbe_tmp11801) >> (7))))));
   *((&RAM[(((((((llvm_cbe_storemerge48299_2e_in + (-1)))))) | 256u))])) = (-86);
   *((&RAM[(((((((llvm_cbe_storemerge48299_2e_in + (-2)))))) | 256u))])) = (33);
@@ -26268,7 +26268,7 @@ llvm_cbe_lA9F5:
   llvm_cbe_tmp11586 = ((llvm_cbe_tmp11585 + 1));
   *((&RAM[(113u)])) = llvm_cbe_tmp11586;
   Y = llvm_cbe_tmp11586;
-  Z = (((bool )(llvm_cbe_tmp11586 == 0)));
+  Z = (((llvm_cbe_tmp11586 == 0)));
   N = ((((((llvm_cbe_tmp11586) >> (7))))));
   llvm_cbe_tmp11610 = S;
   *((&RAM[((((llvm_cbe_tmp11610)) | 256u))])) = (-87);
@@ -26342,7 +26342,7 @@ llvm_cbe_bb12987:
   V = llvm_cbe_iftmp_2e_2767_2e_0;
   llvm_cbe_tmp1298912990 = (llvm_cbe_tmp12969);
   A = llvm_cbe_tmp1298912990;
-  llvm_cbe_tmp1299212993 = ((bool )(llvm_cbe_tmp1298912990 == 0));
+  llvm_cbe_tmp1299212993 = ((llvm_cbe_tmp1298912990 == 0));
   Z = llvm_cbe_tmp1299212993;
   llvm_cbe_tmp12994_2e_lobit = (((((llvm_cbe_tmp1298912990) >> (7)))));
   N = llvm_cbe_tmp12994_2e_lobit;
@@ -26371,7 +26371,7 @@ llvm_cbe_bb12951:
   V = llvm_cbe_iftmp_2e_2752_2e_0;
   llvm_cbe_tmp12952not = ((llvm_cbe_tmp1292912930 ^ (-1)));
   A = llvm_cbe_tmp12952not;
-  Z = (((bool )(llvm_cbe_tmp1292912930 == 0xff)));
+  Z = (((llvm_cbe_tmp1292912930 == 0xff)));
   N = ((((((llvm_cbe_tmp12952not) >> (7))))));
   llvm_cbe_tmp12969 = (((((((llvm_cbe_tmp12952not)) + (1)))) + ((llvm_cbe_tmp1294512946))));
   if ((((s8 )llvm_cbe_tmp1292912930) > ((s8 )(-1)))) {
@@ -26402,7 +26402,7 @@ llvm_cbe_lAAEE:
 llvm_cbe_lAAEC:
   llvm_cbe_tmp12892 = Y;
   A = llvm_cbe_tmp12892;
-  Z = (((bool )(llvm_cbe_tmp12892 == 0)));
+  Z = (((llvm_cbe_tmp12892 == 0)));
   N = ((((((llvm_cbe_tmp12892) >> (7))))));
   C = 1;
   llvm_cbe_C_2e_tmp_2e_0__PHI_TEMPORARY = 1;   /* for PHI node */
@@ -26438,7 +26438,7 @@ llvm_cbe_bb13175:
   V = llvm_cbe_iftmp_2e_2803_2e_0;
   llvm_cbe_tmp1317713178 = (llvm_cbe_tmp13153);
   A = llvm_cbe_tmp1317713178;
-  Z = (((bool )(llvm_cbe_tmp1317713178 == 0)));
+  Z = (((llvm_cbe_tmp1317713178 == 0)));
   N = ((((((llvm_cbe_tmp1317713178) >> (7))))));
   llvm_cbe_tmp13192 = llvm_cbe_tmp1315613157 & 256u;
   C = (((((((((llvm_cbe_tmp13192) >> (8u)))))) ^ 1)));
@@ -26460,7 +26460,7 @@ llvm_cbe_bb13163:
 llvm_cbe_bb13132:
   llvm_cbe_tmp13133 = X;
   A = llvm_cbe_tmp13133;
-  Z = (((bool )(llvm_cbe_tmp13133 == 0)));
+  Z = (((llvm_cbe_tmp13133 == 0)));
   N = ((((((llvm_cbe_tmp13133) >> (7))))));
   llvm_cbe_tmp13147 = *((&RAM[(9u)]));
   llvm_cbe_tmp13153 = ((((((((((llvm_cbe_tmp13133)) + (-1)))) - ((llvm_cbe_tmp13147))))) + ((llvm_cbe_tmp13127))));
@@ -26498,7 +26498,7 @@ llvm_cbe_lAB10:
   llvm_cbe_tmp13224 = X;
   llvm_cbe_tmp13225 = ((llvm_cbe_tmp13224 + (-1)));
   X = llvm_cbe_tmp13225;
-  Z = (((bool )(llvm_cbe_tmp13224 == 1)));
+  Z = (((llvm_cbe_tmp13224 == 1)));
   N = ((((((llvm_cbe_tmp13225) >> (7))))));
   if (llvm_cbe_tmp13224 == 1) {
     goto llvm_cbe_lAB13;
@@ -26510,14 +26510,14 @@ llvm_cbe_lAB0F:
   llvm_cbe_tmp13211 = X;
   llvm_cbe_tmp13212 = ((llvm_cbe_tmp13211 + 1));
   X = llvm_cbe_tmp13212;
-  Z = (((bool )(llvm_cbe_tmp13212 == 0)));
+  Z = (((llvm_cbe_tmp13212 == 0)));
   N = ((((((llvm_cbe_tmp13212) >> (7))))));
   goto llvm_cbe_lAB10;
 
 llvm_cbe_lAB0E:
   llvm_cbe_tmp13199_2e_rle = llvm_cbe_tmp13199_2e_rle__PHI_TEMPORARY;
   X = llvm_cbe_tmp13199_2e_rle;
-  Z = (((bool )(llvm_cbe_tmp13199_2e_rle == 0)));
+  Z = (((llvm_cbe_tmp13199_2e_rle == 0)));
   N = ((((((llvm_cbe_tmp13199_2e_rle) >> (7))))));
   goto llvm_cbe_lAB0F;
 
@@ -26552,7 +26552,7 @@ llvm_cbe_lA456:
   *((&RAM[((((llvm_cbe_tmp3378)) | 256u))])) = llvm_cbe_tmp3366;
   llvm_cbe_tmp3385 = ((llvm_cbe_tmp3366 & (127)));
   A = llvm_cbe_tmp3385;
-  Z = (((bool )(llvm_cbe_tmp3385 == 0)));
+  Z = (((llvm_cbe_tmp3385 == 0)));
   N = 0;
   *((&RAM[(((((((llvm_cbe_tmp3378 + (-1)))))) | 256u))])) = (-92);
   *((&RAM[(((((((llvm_cbe_tmp3378 + (-2)))))) | 256u))])) = (93);
@@ -26588,7 +26588,7 @@ llvm_cbe_lA6EF:
   Y = llvm_cbe_tmp7248;
   llvm_cbe_tmp7261 = ((llvm_cbe_tmp7260_2e_rle & (127)));
   A = llvm_cbe_tmp7261;
-  Z = (((bool )(llvm_cbe_tmp7261 == 0)));
+  Z = (((llvm_cbe_tmp7261 == 0)));
   N = 0;
   goto llvm_cbe_lA6F3;
 
@@ -26605,7 +26605,7 @@ llvm_cbe_lA737:
   Y = llvm_cbe_tmp7660;
   llvm_cbe_tmp7677 = *((&RAM[((((llvm_cbe_tmp7660)) + 41118u))]));
   A = llvm_cbe_tmp7677;
-  Z = (((bool )(llvm_cbe_tmp7677 == 0)));
+  Z = (((llvm_cbe_tmp7677 == 0)));
   N = ((((((llvm_cbe_tmp7677) >> (7))))));
   if ((((s8 )llvm_cbe_tmp7677) < ((s8 )0))) {
     llvm_cbe_tmp7260_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp7677;   /* for PHI node */
@@ -26620,7 +26620,7 @@ llvm_cbe_lA737_2e_loopexit:
   llvm_cbe_Z_2e_tmp_2e_0_2e_in = ((llvm_cbe_Z_2e_tmp_2e_0_2e_in__PHI_TEMPORARY)&1);
   llvm_cbe_Y_2e_tmp_2e_1 = llvm_cbe_Y_2e_tmp_2e_1__PHI_TEMPORARY;
   Y = llvm_cbe_Y_2e_tmp_2e_1;
-  Z = (((bool )llvm_cbe_Z_2e_tmp_2e_0_2e_in));
+  Z = ((llvm_cbe_Z_2e_tmp_2e_0_2e_in));
   N = llvm_cbe_N_2e_tmp_2e_0;
   A = llvm_cbe_A_2e_tmp_2e_1;
   X = llvm_cbe_tmp7604;
@@ -26696,7 +26696,7 @@ llvm_cbe_bb7535:
 
 llvm_cbe_bb7508:
   llvm_cbe_tmp7509 = *((&RAM[(15u)]));
-  Z = (((bool )(llvm_cbe_tmp7509 == 0)));
+  Z = (((llvm_cbe_tmp7509 == 0)));
   llvm_cbe_tmp7509_2e_lobit = (((((llvm_cbe_tmp7509) >> (7)))));
   N = llvm_cbe_tmp7509_2e_lobit;
   V = (((((((((llvm_cbe_tmp7509) >> ((6))))))) & 1)));
@@ -26712,7 +26712,7 @@ llvm_cbe_bb7481:
   llvm_cbe_tmp7484 = ((llvm_cbe_tmp74827483 + (-255)));
   llvm_cbe_tmp74857486 = (llvm_cbe_tmp7484);
   C = ((((((((((((llvm_cbe_tmp74857486) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp74857486 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp74857486 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp7484))) >> (7))))));
   if (((llvm_cbe_tmp74857486 & 255u) == 0u)) {
     goto llvm_cbe_lA6F3;
@@ -26793,7 +26793,7 @@ llvm_cbe_bb13338:
   llvm_cbe_tmp13345 = Y;
   llvm_cbe_tmp13350 = *((&RAM[(((((((llvm_cbe_tmp13341)) << 8u) | ((llvm_cbe_tmp13339))) + ((llvm_cbe_tmp13345))) & 65535u))]));
   A = llvm_cbe_tmp13350;
-  Z = (((bool )(llvm_cbe_tmp13350 == 0)));
+  Z = (((llvm_cbe_tmp13350 == 0)));
   N = ((((((llvm_cbe_tmp13350) >> (7))))));
   llvm_cbe_tmp13362 = S;
   *((&RAM[((((llvm_cbe_tmp13362)) | 256u))])) = (-85);
@@ -26805,7 +26805,7 @@ llvm_cbe_bb13338:
 
 llvm_cbe_lAB44:
   llvm_cbe_tmp13489 = *((&RAM[(16297u)]));
-  Z = (((bool )(llvm_cbe_tmp13489 == 0)));
+  Z = (((llvm_cbe_tmp13489 == 0)));
   N = ((((((llvm_cbe_tmp13489) >> (7))))));
   V = (((((((((llvm_cbe_tmp13489) >> ((6))))))) & 1)));
   llvm_cbe_tmp13522_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp13522_2e_rle51878;   /* for PHI node */
@@ -26814,7 +26814,7 @@ llvm_cbe_lAB44:
 llvm_cbe_bb13438:
   A = (32);
   llvm_cbe_tmp13453 = *((&RAM[(7593u)]));
-  Z = (((bool )(llvm_cbe_tmp13453 == 0)));
+  Z = (((llvm_cbe_tmp13453 == 0)));
   N = ((((((llvm_cbe_tmp13453) >> (7))))));
   V = (((((((((llvm_cbe_tmp13453) >> ((6))))))) & 1)));
   goto llvm_cbe_lAB44;
@@ -26823,7 +26823,7 @@ llvm_cbe_lAB3B:
   llvm_cbe_tmp13522_2e_rle51878 = llvm_cbe_tmp13522_2e_rle51878__PHI_TEMPORARY;
   llvm_cbe_tmp13422 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp13422;
-  Z = (((bool )(llvm_cbe_tmp13422 == 0)));
+  Z = (((llvm_cbe_tmp13422 == 0)));
   N = ((((((llvm_cbe_tmp13422) >> (7))))));
   if (llvm_cbe_tmp13422 == 0) {
     goto llvm_cbe_lAB42;
@@ -26900,7 +26900,7 @@ llvm_cbe_lAB7E:
   llvm_cbe_tmp13745 = ((((llvm_cbe_tmp13743)) + (-35)));
   llvm_cbe_tmp1374613747 = (llvm_cbe_tmp13745);
   C = ((((((((((((llvm_cbe_tmp1374613747) >> (8u)))))) & 1))) ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp1374613747 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp1374613747 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp13745))) >> (7))))));
   if (((llvm_cbe_tmp1374613747 & 255u) == 0u)) {
     goto llvm_cbe_bb13769;
@@ -26919,7 +26919,7 @@ llvm_cbe_lABB7:
 llvm_cbe_lABB5:
   llvm_cbe_tmp13969 = *((&RAM[(19u)]));
   A = llvm_cbe_tmp13969;
-  Z = (((bool )(llvm_cbe_tmp13969 == 0)));
+  Z = (((llvm_cbe_tmp13969 == 0)));
   N = ((((((llvm_cbe_tmp13969) >> (7))))));
   goto llvm_cbe_lABB7;
 
@@ -26952,7 +26952,7 @@ llvm_cbe_lAC18:
   X = llvm_cbe_tmp14377;
   llvm_cbe_tmp14389 = *((&RAM[(68u)]));
   Y = llvm_cbe_tmp14389;
-  Z = (((bool )(llvm_cbe_tmp14389 == 0)));
+  Z = (((llvm_cbe_tmp14389 == 0)));
   N = ((((((llvm_cbe_tmp14389) >> (7))))));
   *((&RAM[(122u)])) = llvm_cbe_tmp14377;
   *((&RAM[(123u)])) = llvm_cbe_tmp14389;
@@ -27014,7 +27014,7 @@ llvm_cbe_lAC9D:
   A = llvm_cbe_tmp14892;
   llvm_cbe_tmp14904 = *((&RAM[(76u)]));
   Y = llvm_cbe_tmp14904;
-  Z = (((bool )(llvm_cbe_tmp14904 == 0)));
+  Z = (((llvm_cbe_tmp14904 == 0)));
   N = ((((((llvm_cbe_tmp14904) >> (7))))));
   *((&RAM[(122u)])) = llvm_cbe_tmp14892;
   *((&RAM[(123u)])) = llvm_cbe_tmp14904;
@@ -27040,7 +27040,7 @@ llvm_cbe_bb15803:
   A = llvm_cbe_tmp1580515806;
   C = (((((((((((llvm_cbe_tmp15785))) >> (8u)))))) & 1)));
   X = llvm_cbe_tmp1580515806;
-  Z = (((bool )(llvm_cbe_tmp1580515806 == 0)));
+  Z = (((llvm_cbe_tmp1580515806 == 0)));
   N = ((((((llvm_cbe_tmp1580515806) >> (7))))));
   *((&RAM[((((llvm_cbe_tmp1580515806)) | 256u))])) = (-83);
   *((&RAM[(((((((llvm_cbe_tmp1580515806 + (-1)))))) | 256u))])) = (127);
@@ -27167,7 +27167,7 @@ llvm_cbe_lAFA7:
   llvm_cbe_tmp18996 = S;
   *((&RAM[((((llvm_cbe_tmp18996)) | 256u))])) = llvm_cbe_tmp1899418995;
   X = llvm_cbe_tmp1899418995;
-  Z = (((bool )(llvm_cbe_tmp1899418995 == 0)));
+  Z = (((llvm_cbe_tmp1899418995 == 0)));
   N = (((((((((llvm_cbe_tmp17496) >> ((6))))))) & 1)));
   *((&RAM[(((((((llvm_cbe_tmp18996 + (-1)))))) | 256u))])) = (-81);
   *((&RAM[(((((((llvm_cbe_tmp18996 + (-2)))))) | 256u))])) = (-84);
@@ -27183,7 +27183,7 @@ llvm_cbe_lAFD6:
   *((&RAM[(85u)])) = llvm_cbe_tmp19278;
   llvm_cbe_tmp19296 = *((&RAM[((llvm_cbe_tmp1927319274 + 40939u))]));
   A = llvm_cbe_tmp19296;
-  Z = (((bool )(llvm_cbe_tmp19296 == 0)));
+  Z = (((llvm_cbe_tmp19296 == 0)));
   N = ((((((llvm_cbe_tmp19296) >> (7))))));
   *((&RAM[(86u)])) = llvm_cbe_tmp19296;
   *((&RAM[((((llvm_cbe_tmp19309_2e_rle)) | 256u))])) = (-81);
@@ -27199,7 +27199,7 @@ llvm_cbe_lAFCA:
   Y = llvm_cbe_tmp19191;
   llvm_cbe_tmp19215 = X;
   A = llvm_cbe_tmp19215;
-  Z = (((bool )(llvm_cbe_tmp19215 == 0)));
+  Z = (((llvm_cbe_tmp19215 == 0)));
   N = ((((((llvm_cbe_tmp19215) >> (7))))));
   *llvm_cbe_tmp19190 = llvm_cbe_tmp19215;
   S = llvm_cbe_tmp19185;
@@ -27214,7 +27214,7 @@ llvm_cbe_lAFD4:
   llvm_cbe_tmp19249 = *((&RAM[((((llvm_cbe_tmp19244)) | 256u))]));
   A = llvm_cbe_tmp19249;
   Y = llvm_cbe_tmp19249;
-  Z = (((bool )(llvm_cbe_tmp19249 == 0)));
+  Z = (((llvm_cbe_tmp19249 == 0)));
   N = ((((((llvm_cbe_tmp19249) >> (7))))));
   llvm_cbe_tmp19309_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp19244;   /* for PHI node */
   llvm_cbe_tmp19273_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp19249;   /* for PHI node */
@@ -27298,7 +27298,7 @@ llvm_cbe_lAC06:
   Y = llvm_cbe_tmp14277;
   A = (-104);
   llvm_cbe_tmp14303 = *((&RAM[(169u)]));
-  Z = (((bool )(llvm_cbe_tmp14303 == 0)));
+  Z = (((llvm_cbe_tmp14303 == 0)));
   N = ((((((llvm_cbe_tmp14303) >> (7))))));
   V = (((((((((llvm_cbe_tmp14303) >> ((6))))))) & 1)));
   llvm_cbe_tmp14336_2e_rle__PHI_TEMPORARY = (-104);   /* for PHI node */
@@ -27362,7 +27362,7 @@ llvm_cbe_lB092:
 llvm_cbe_lB081:
   llvm_cbe_tmp20108 = A;
   X = llvm_cbe_tmp20108;
-  Z = (((bool )(llvm_cbe_tmp20108 == 0)));
+  Z = (((llvm_cbe_tmp20108 == 0)));
   N = ((((((llvm_cbe_tmp20108) >> (7))))));
   llvm_cbe_tmp20120 = S;
   *((&RAM[((((llvm_cbe_tmp20120)) | 256u))])) = (-80);
@@ -27413,7 +27413,7 @@ llvm_cbe_lB0B0:
 llvm_cbe_lB0AF:
   llvm_cbe_tmp20254 = A;
   X = llvm_cbe_tmp20254;
-  Z = (((bool )(llvm_cbe_tmp20254 == 0)));
+  Z = (((llvm_cbe_tmp20254 == 0)));
   N = ((((((llvm_cbe_tmp20254) >> (7))))));
   goto llvm_cbe_lB0B0;
 
@@ -27456,7 +27456,7 @@ llvm_cbe_lB1DB:
   *((&RAM[(((((((llvm_cbe_tmp22080 + (-1)))))) | 256u))])) = llvm_cbe_tmp22086;
   llvm_cbe_tmp22104 = *((&RAM[(69u)]));
   A = llvm_cbe_tmp22104;
-  Z = (((bool )(llvm_cbe_tmp22104 == 0)));
+  Z = (((llvm_cbe_tmp22104 == 0)));
   N = ((((((llvm_cbe_tmp22104) >> (7))))));
   *((&RAM[(((((((llvm_cbe_tmp22080 + (-2)))))) | 256u))])) = llvm_cbe_tmp22104;
   *((&RAM[(((((((llvm_cbe_tmp22080 + (-3)))))) | 256u))])) = (-79);
@@ -27507,7 +27507,7 @@ llvm_cbe_lB1E6:
   *llvm_cbe_tmp22237 = llvm_cbe_tmp22273;
   llvm_cbe_tmp22291 = ((llvm_cbe_tmp22176 + 1));
   Y = llvm_cbe_tmp22291;
-  Z = (((bool )(llvm_cbe_tmp22291 == 0)));
+  Z = (((llvm_cbe_tmp22291 == 0)));
   N = ((((((llvm_cbe_tmp22291) >> (7))))));
   *((&RAM[((((llvm_cbe_tmp22133)) | 256u))])) = (-78);
   *((&RAM[((((llvm_cbe_tmp22132)) | 256u))])) = (4);
@@ -27532,7 +27532,7 @@ llvm_cbe_lB43B:
   llvm_cbe_tmp26100 = (&RAM[(((((((llvm_cbe_tmp26076 + (2)))))) | 256u))]);
   llvm_cbe_tmp26101 = *llvm_cbe_tmp26100;
   A = llvm_cbe_tmp26101;
-  Z = (((bool )(llvm_cbe_tmp26101 == 0)));
+  Z = (((llvm_cbe_tmp26101 == 0)));
   N = ((((((llvm_cbe_tmp26101) >> (7))))));
   *((&RAM[(79u)])) = llvm_cbe_tmp26101;
   *llvm_cbe_tmp26100 = (-76);
@@ -27556,7 +27556,7 @@ llvm_cbe_lB737:
 llvm_cbe_bb31695:
   llvm_cbe_tmp31696 = *((&RAM[(101u)]));
   X = llvm_cbe_tmp31696;
-  Z = (((bool )(llvm_cbe_tmp31696 == 0)));
+  Z = (((llvm_cbe_tmp31696 == 0)));
   N = ((((((llvm_cbe_tmp31696) >> (7))))));
   PC = (121);
   goto llvm_cbe_not_found;
@@ -27590,7 +27590,7 @@ llvm_cbe_bb31790:
   *((&RAM[(36u)])) = llvm_cbe_tmp3179231793;
   llvm_cbe_tmp31816 = *((&RAM[(35u)]));
   X = llvm_cbe_tmp31816;
-  Z = (((bool )(llvm_cbe_tmp31816 == 0)));
+  Z = (((llvm_cbe_tmp31816 == 0)));
   N = ((((((llvm_cbe_tmp31816) >> (7))))));
   *((&RAM[(123u)])) = llvm_cbe_tmp31816;
   if (llvm_cbe_iftmp_2e_7651_2e_0 == 0) {
@@ -27616,7 +27616,7 @@ llvm_cbe_lB7B5:
   *((&RAM[(114u)])) = llvm_cbe_tmp31734;
   llvm_cbe_tmp31748 = *((&RAM[(34u)]));
   X = llvm_cbe_tmp31748;
-  Z = (((bool )(llvm_cbe_tmp31748 == 0)));
+  Z = (((llvm_cbe_tmp31748 == 0)));
   N = ((((((llvm_cbe_tmp31748) >> (7))))));
   *((&RAM[(122u)])) = llvm_cbe_tmp31748;
   C = 0;
@@ -27635,7 +27635,7 @@ llvm_cbe_bb31789:
 llvm_cbe_bb31833:
   llvm_cbe_tmp31835 = ((llvm_cbe_tmp31816 + 1));
   X = llvm_cbe_tmp31835;
-  Z = (((bool )(llvm_cbe_tmp31835 == 0)));
+  Z = (((llvm_cbe_tmp31835 == 0)));
   N = ((((((llvm_cbe_tmp31835) >> (7))))));
   llvm_cbe_tmp31847_2e_rle__PHI_TEMPORARY = llvm_cbe_tmp31835;   /* for PHI node */
   goto llvm_cbe_lB7CD;
@@ -27687,7 +27687,7 @@ llvm_cbe_lBD2E:
   llvm_cbe_tmp40244 = (((((((llvm_cbe_tmp40240_2e_rle)) << (8)))) | ((llvm_cbe_tmp40238))));
   C = (((((llvm_cbe_tmp40244)) & 1)));
   llvm_cbe_tmp40249 = (((((llvm_cbe_tmp40244) >> ((1))))));
-  Z = (((bool )((((llvm_cbe_tmp40249)) & 255u) == 0u)));
+  Z = ((((((llvm_cbe_tmp40249)) & 255u) == 0u)));
   N = (((((((((((llvm_cbe_tmp40244) >> ((8))))))))) & 1)));
   *((&RAM[(96u)])) = ((llvm_cbe_tmp40249));
   goto llvm_cbe_lBD30;
@@ -27697,7 +27697,7 @@ llvm_cbe_bb41064:
   V = llvm_cbe_iftmp_2e_9821_2e_0;
   llvm_cbe_tmp4106641067 = (llvm_cbe_tmp41028);
   A = llvm_cbe_tmp4106641067;
-  Z = (((bool )(llvm_cbe_tmp4106641067 == 0)));
+  Z = (((llvm_cbe_tmp4106641067 == 0)));
   N = ((((((llvm_cbe_tmp4106641067) >> (7))))));
   C = 1;
   llvm_cbe_tmp41094 = (((((llvm_cbe_tmp41028 & (255)))) + (-48)));
@@ -27705,7 +27705,7 @@ llvm_cbe_bb41064:
   V = (((((((((llvm_cbe_tmp4109741098 ^ ((llvm_cbe_tmp4106641067))) & 128u) == 0u) | (((s8 )llvm_cbe_tmp4106641067) > ((s8 )(-1))))&1))) ? (0) : (1)));
   llvm_cbe_tmp4111441115 = (llvm_cbe_tmp41094);
   A = llvm_cbe_tmp4111441115;
-  Z = (((bool )(llvm_cbe_tmp4111441115 == 0)));
+  Z = (((llvm_cbe_tmp4111441115 == 0)));
   N = ((((((llvm_cbe_tmp4111441115) >> (7))))));
   C = ((((((((((((llvm_cbe_tmp4109741098) >> (8u)))))) & 1))) ^ 1)));
   *((&RAM[(94u)])) = llvm_cbe_tmp4111441115;
@@ -27750,7 +27750,7 @@ llvm_cbe_bb40941:
 llvm_cbe_lBDA0:
   llvm_cbe_tmp4090040901 = ((llvm_cbe_tmp4081240813 << (2)));
   llvm_cbe_tmp40907 = ((llvm_cbe_tmp4090040901 & (508)));
-  Z = (((bool )((((llvm_cbe_tmp40907)) & 252u) == 0u)));
+  Z = ((((((llvm_cbe_tmp40907)) & 252u) == 0u)));
   llvm_cbe_tmp4091340914 = (llvm_cbe_tmp40907);
   N = ((((((llvm_cbe_tmp4091340914) >> (7))))));
   A = llvm_cbe_tmp4091340914;
@@ -27834,7 +27834,7 @@ llvm_cbe_lE16F:
   X = llvm_cbe_tmp45268;
   llvm_cbe_tmp45280 = *((&RAM[(44u)]));
   Y = llvm_cbe_tmp45280;
-  Z = (((bool )(llvm_cbe_tmp45280 == 0)));
+  Z = (((llvm_cbe_tmp45280 == 0)));
   N = ((((((llvm_cbe_tmp45280) >> (7))))));
   llvm_cbe_tmp45292 = S;
   *((&RAM[((((llvm_cbe_tmp45292)) | 256u))])) = (-31);
@@ -27857,7 +27857,7 @@ llvm_cbe_bb45323:
 llvm_cbe_bb45306:
   llvm_cbe_tmp45307 = *((&RAM[(10u)]));
   A = llvm_cbe_tmp45307;
-  Z = (((bool )(llvm_cbe_tmp45307 == 0)));
+  Z = (((llvm_cbe_tmp45307 == 0)));
   N = ((((((llvm_cbe_tmp45307) >> (7))))));
   if (llvm_cbe_tmp45307 == 0) {
     goto llvm_cbe_lE195;
@@ -27884,7 +27884,7 @@ llvm_cbe_lE1C1:
 llvm_cbe_lE1CA:
   llvm_cbe_tmp45631 = *((&RAM[(73u)]));
   A = llvm_cbe_tmp45631;
-  Z = (((bool )(llvm_cbe_tmp45631 == 0)));
+  Z = (((llvm_cbe_tmp45631 == 0)));
   N = ((((((llvm_cbe_tmp45631) >> (7))))));
   llvm_cbe_tmp45643 = S;
   *((&RAM[((((llvm_cbe_tmp45643)) | 256u))])) = (-31);
@@ -27927,7 +27927,7 @@ llvm_cbe_lE16A:
 llvm_cbe_lE165:
   A = 1;
   llvm_cbe_tmp45212 = *((&RAM[(169u)]));
-  Z = (((bool )(llvm_cbe_tmp45212 == 0)));
+  Z = (((llvm_cbe_tmp45212 == 0)));
   N = ((((((llvm_cbe_tmp45212) >> (7))))));
   V = (((((((((llvm_cbe_tmp45212) >> ((6))))))) & 1)));
   llvm_cbe_tmp45245_2e_rle__PHI_TEMPORARY = 1;   /* for PHI node */
@@ -27971,7 +27971,7 @@ llvm_cbe_lE1F9:
   Y = llvm_cbe_tmp45792;
   llvm_cbe_tmp45816 = *((&RAM[(73u)]));
   X = llvm_cbe_tmp45816;
-  Z = (((bool )(llvm_cbe_tmp45816 == 0)));
+  Z = (((llvm_cbe_tmp45816 == 0)));
   N = ((((((llvm_cbe_tmp45816) >> (7))))));
   PC = (-70);
   goto llvm_cbe_not_found;
@@ -28115,7 +28115,7 @@ llvm_cbe_lE234:
   llvm_cbe_tmp4606646067 = (llvm_cbe_tmp46065);
   llvm_cbe_tmp46068_2e_lobit49532 = ((((((((llvm_cbe_tmp4606646067) >> (8u)))))) & 1));
   C = (((llvm_cbe_tmp46068_2e_lobit49532 ^ 1)));
-  Z = (((bool )((llvm_cbe_tmp4606646067 & 255u) == 0u)));
+  Z = ((((llvm_cbe_tmp4606646067 & 255u) == 0u)));
   N = ((((((((llvm_cbe_tmp46065))) >> (7))))));
   if (llvm_cbe_tmp46068_2e_lobit49532 == 0) {
     goto llvm_cbe_bb46089;
@@ -28136,7 +28136,7 @@ llvm_cbe_lE248:
   X = llvm_cbe_tmp46157;
   llvm_cbe_tmp46169 = *((&RAM[(73u)]));
   A = llvm_cbe_tmp46169;
-  Z = (((bool )(llvm_cbe_tmp46169 == 0)));
+  Z = (((llvm_cbe_tmp46169 == 0)));
   N = ((((((llvm_cbe_tmp46169) >> (7))))));
   llvm_cbe_tmp46181 = S;
   *((&RAM[((((llvm_cbe_tmp46181)) | 256u))])) = (-30);
@@ -28150,7 +28150,7 @@ llvm_cbe_lE25D:
   X = llvm_cbe_tmp46231;
   llvm_cbe_tmp46243 = *((&RAM[(35u)]));
   Y = llvm_cbe_tmp46243;
-  Z = (((bool )(llvm_cbe_tmp46243 == 0)));
+  Z = (((llvm_cbe_tmp46243 == 0)));
   N = ((((((llvm_cbe_tmp46243) >> (7))))));
   PC = (-67);
   goto llvm_cbe_not_found;
@@ -28227,7 +28227,7 @@ llvm_cbe_lE406:
 llvm_cbe_bb47890:
   X = llvm_cbe_tmp47874;
   A = llvm_cbe_tmp47856;
-  Z = (((bool )(llvm_cbe_X_2e_tmp_2e_0 == 1)));
+  Z = (((llvm_cbe_X_2e_tmp_2e_0 == 1)));
   N = ((((((llvm_cbe_tmp47874) >> (7))))));
   llvm_cbe_tmp47897 = *((&RAM[(((((((llvm_cbe_tmp47040 + (-1)))))) | 256u))]));
   S = llvm_cbe_tmp47040;
