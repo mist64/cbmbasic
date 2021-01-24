@@ -102,37 +102,6 @@ typedef signed int s32;
 typedef u8 bool;
 #endif
 
-/* Support for floating point constants */
-typedef unsigned long long ConstantDoubleTy;
-typedef u32        ConstantFloatTy;
-typedef struct { unsigned long long f1; u16 f2; u16 pad[3]; } ConstantFP80Ty;
-typedef struct { unsigned long long f1; unsigned long long f2; } ConstantFP128Ty;
-
-
-/* Global Declarations */
-/* Helper union for bitcasts */
-typedef union {
-  u32 Int32;
-  unsigned long long Int64;
-  float Float;
-  double Double;
-} llvmBitCastUnion;
-
-/* External Global Variable Declarations */
-extern u8 A;
-extern u8 RAM[65536];
-extern u16 PC;
-extern u8 S;
-extern u8 X;
-extern u8 Z;
-extern u8 N;
-extern u8 C;
-extern u8 V;
-extern u8 Y;
-extern u8 B;
-extern u8 D;
-extern u8 I;
-
 /* Function Declarations */
 double fmod(double, double);
 float fmodf(float, float);
@@ -142,22 +111,7 @@ int init_os(int , char **);
 u32 kernal_dispatch(void);
 
 
-/* Global Variable Declarations */
-extern u8 A;
-extern u8 RAM[65536];
-extern u16 PC;
-extern u8 S;
-extern u8 X;
-extern u8 Z;
-extern u8 N;
-extern u8 C;
-extern u8 V;
-extern u8 Y;
-extern u8 B;
-extern u8 D;
-extern u8 I;
 static u16 _ZZ4mainE11case_labels[17591];
-
 
 /* Global Variable Definitions and Initialization */
 u8 A;
