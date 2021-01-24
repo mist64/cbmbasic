@@ -32,64 +32,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#ifdef _MSC_VER
-#define inline _inline
-#endif
-
 #ifndef __GNUC__  /* Can only support "linkonce" vars with GCC */
 #define __attribute__(X)
 #endif
-
-#if defined(__GNUC__) && defined(__APPLE_CC__)
-#define __EXTERNAL_WEAK__ __attribute__((weak_import))
-#elif defined(__GNUC__)
-#define __EXTERNAL_WEAK__ __attribute__((weak))
-#else
-#define __EXTERNAL_WEAK__
-#endif
-
-#if defined(__GNUC__) && defined(__APPLE_CC__)
-#define __ATTRIBUTE_WEAK__
-#elif defined(__GNUC__)
-#define __ATTRIBUTE_WEAK__ __attribute__((weak))
-#else
-#define __ATTRIBUTE_WEAK__
-#endif
-
-#if defined(__GNUC__)
-#define __HIDDEN__ __attribute__((visibility("hidden")))
-#endif
-
-#ifdef __GNUC__
-#define LLVM_NAN(NanStr)   __builtin_nan(NanStr)   /* Double */
-#define LLVM_NANF(NanStr)  __builtin_nanf(NanStr)  /* Float */
-#define LLVM_NANS(NanStr)  __builtin_nans(NanStr)  /* Double */
-#define LLVM_NANSF(NanStr) __builtin_nansf(NanStr) /* Float */
-#define LLVM_INF           __builtin_inf()         /* Double */
-#define LLVM_INFF          __builtin_inff()        /* Float */
-#define LLVM_PREFETCH(addr,rw,locality) __builtin_prefetch(addr,rw,locality)
-#define __ATTRIBUTE_CTOR__ __attribute__((constructor))
-#define __ATTRIBUTE_DTOR__ __attribute__((destructor))
-#define LLVM_ASM           __asm__
-#else
-#define LLVM_NAN(NanStr)   ((double)0.0)           /* Double */
-#define LLVM_NANF(NanStr)  0.0F                    /* Float */
-#define LLVM_NANS(NanStr)  ((double)0.0)           /* Double */
-#define LLVM_NANSF(NanStr) 0.0F                    /* Float */
-#define LLVM_INF           ((double)0.0)           /* Double */
-#define LLVM_INFF          0.0F                    /* Float */
-#define LLVM_PREFETCH(addr,rw,locality)            /* PREFETCH */
-#define __ATTRIBUTE_CTOR__
-#define __ATTRIBUTE_DTOR__
-#define LLVM_ASM(X)
-#endif
-
-#if __GNUC__ < 4 /* Old GCC's, or compilers not GCC */ 
-#define __builtin_stack_save() 0   /* not implemented */
-#define __builtin_stack_restore(X) /* noop */
-#endif
-
-#define CODE_FOR_MAIN() /* Any target-specific code for main()*/
 
 typedef unsigned char u8;
 typedef unsigned short u16;
@@ -5067,7 +5012,6 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   u8 llvm_cbe_tmp10402;
   u8 llvm_cbe_tmp10411;
 
-  CODE_FOR_MAIN();
   llvm_cbe_ROM499 = (&llvm_cbe_ROM[(0u)]);
   ltmp_0_1 = memset(llvm_cbe_ROM499, ((0)), 17591u);
   *llvm_cbe_ROM499 = (-108);
