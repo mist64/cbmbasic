@@ -58,7 +58,7 @@ static u16 _ZZ4mainE11case_labels[17591];
 u8 A;
 u8 RAM[65536];
 u16 PC;
-u8 S = (-1);
+u8 S = -1;
 u8 X;
 u8 Z;
 u8 N;
@@ -5010,10 +5010,10 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
 
   llvm_cbe_ROM499 = (&llvm_cbe_ROM[0u]);
   ltmp_0_1 = memset(llvm_cbe_ROM499, 0, 17591u);
-  *llvm_cbe_ROM499 = (-108);
-  *((&llvm_cbe_ROM[1u])) = (-29);
+  *llvm_cbe_ROM499 = -108;
+  *((&llvm_cbe_ROM[1u])) = -29;
   *((&llvm_cbe_ROM[2u])) = 123;
-  *((&llvm_cbe_ROM[3u])) = (-29);
+  *((&llvm_cbe_ROM[3u])) = -29;
   *((&llvm_cbe_ROM[4u])) = 67;
   *((&llvm_cbe_ROM[5u])) = 66;
   *((&llvm_cbe_ROM[6u])) = 77;
@@ -5023,405 +5023,405 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[10u])) = 73;
   *((&llvm_cbe_ROM[11u])) = 67;
   *((&llvm_cbe_ROM[12u])) = 48;
-  *((&llvm_cbe_ROM[13u])) = (-88);
+  *((&llvm_cbe_ROM[13u])) = -88;
   *((&llvm_cbe_ROM[14u])) = 65;
-  *((&llvm_cbe_ROM[15u])) = (-89);
+  *((&llvm_cbe_ROM[15u])) = -89;
   *((&llvm_cbe_ROM[16u])) = 29;
-  *((&llvm_cbe_ROM[17u])) = (-83);
-  *((&llvm_cbe_ROM[18u])) = (-9);
-  *((&llvm_cbe_ROM[19u])) = (-88);
-  *((&llvm_cbe_ROM[20u])) = (-92);
-  *((&llvm_cbe_ROM[21u])) = (-85);
-  *((&llvm_cbe_ROM[22u])) = (-66);
-  *((&llvm_cbe_ROM[23u])) = (-85);
+  *((&llvm_cbe_ROM[17u])) = -83;
+  *((&llvm_cbe_ROM[18u])) = -9;
+  *((&llvm_cbe_ROM[19u])) = -88;
+  *((&llvm_cbe_ROM[20u])) = -92;
+  *((&llvm_cbe_ROM[21u])) = -85;
+  *((&llvm_cbe_ROM[22u])) = -66;
+  *((&llvm_cbe_ROM[23u])) = -85;
   *((&llvm_cbe_ROM[24u])) = 128u;
-  *((&llvm_cbe_ROM[25u])) = (-80);
+  *((&llvm_cbe_ROM[25u])) = -80;
   *((&llvm_cbe_ROM[26u])) = 5;
-  *((&llvm_cbe_ROM[27u])) = (-84);
-  *((&llvm_cbe_ROM[28u])) = (-92);
-  *((&llvm_cbe_ROM[29u])) = (-87);
-  *((&llvm_cbe_ROM[30u])) = (-97);
-  *((&llvm_cbe_ROM[31u])) = (-88);
+  *((&llvm_cbe_ROM[27u])) = -84;
+  *((&llvm_cbe_ROM[28u])) = -92;
+  *((&llvm_cbe_ROM[29u])) = -87;
+  *((&llvm_cbe_ROM[30u])) = -97;
+  *((&llvm_cbe_ROM[31u])) = -88;
   *((&llvm_cbe_ROM[32u])) = 112;
-  *((&llvm_cbe_ROM[33u])) = (-88);
+  *((&llvm_cbe_ROM[33u])) = -88;
   *((&llvm_cbe_ROM[34u])) = 39;
-  *((&llvm_cbe_ROM[35u])) = (-87);
+  *((&llvm_cbe_ROM[35u])) = -87;
   *((&llvm_cbe_ROM[36u])) = 28;
-  *((&llvm_cbe_ROM[37u])) = (-88);
-  *((&llvm_cbe_ROM[38u])) = (-126);
-  *((&llvm_cbe_ROM[39u])) = (-88);
-  *((&llvm_cbe_ROM[40u])) = (-47);
-  *((&llvm_cbe_ROM[41u])) = (-88);
+  *((&llvm_cbe_ROM[37u])) = -88;
+  *((&llvm_cbe_ROM[38u])) = -126;
+  *((&llvm_cbe_ROM[39u])) = -88;
+  *((&llvm_cbe_ROM[40u])) = -47;
+  *((&llvm_cbe_ROM[41u])) = -88;
   *((&llvm_cbe_ROM[42u])) = 58;
-  *((&llvm_cbe_ROM[43u])) = (-87);
+  *((&llvm_cbe_ROM[43u])) = -87;
   *((&llvm_cbe_ROM[44u])) = 46;
-  *((&llvm_cbe_ROM[45u])) = (-88);
+  *((&llvm_cbe_ROM[45u])) = -88;
   *((&llvm_cbe_ROM[46u])) = 74;
-  *((&llvm_cbe_ROM[47u])) = (-87);
+  *((&llvm_cbe_ROM[47u])) = -87;
   *((&llvm_cbe_ROM[48u])) = 44;
-  *((&llvm_cbe_ROM[49u])) = (-72);
+  *((&llvm_cbe_ROM[49u])) = -72;
   *((&llvm_cbe_ROM[50u])) = 103;
-  *((&llvm_cbe_ROM[51u])) = (-31);
+  *((&llvm_cbe_ROM[51u])) = -31;
   *((&llvm_cbe_ROM[52u])) = 85;
-  *((&llvm_cbe_ROM[53u])) = (-31);
+  *((&llvm_cbe_ROM[53u])) = -31;
   *((&llvm_cbe_ROM[54u])) = 100;
-  *((&llvm_cbe_ROM[55u])) = (-31);
-  *((&llvm_cbe_ROM[56u])) = (-78);
-  *((&llvm_cbe_ROM[57u])) = (-77);
+  *((&llvm_cbe_ROM[55u])) = -31;
+  *((&llvm_cbe_ROM[56u])) = -78;
+  *((&llvm_cbe_ROM[57u])) = -77;
   *((&llvm_cbe_ROM[58u])) = 35;
-  *((&llvm_cbe_ROM[59u])) = (-72);
+  *((&llvm_cbe_ROM[59u])) = -72;
   *((&llvm_cbe_ROM[60u])) = 127;
-  *((&llvm_cbe_ROM[61u])) = (-86);
-  *((&llvm_cbe_ROM[62u])) = (-97);
-  *((&llvm_cbe_ROM[63u])) = (-86);
+  *((&llvm_cbe_ROM[61u])) = -86;
+  *((&llvm_cbe_ROM[62u])) = -97;
+  *((&llvm_cbe_ROM[63u])) = -86;
   *((&llvm_cbe_ROM[64u])) = 86;
-  *((&llvm_cbe_ROM[65u])) = (-88);
-  *((&llvm_cbe_ROM[66u])) = (-101);
-  *((&llvm_cbe_ROM[67u])) = (-90);
+  *((&llvm_cbe_ROM[65u])) = -88;
+  *((&llvm_cbe_ROM[66u])) = -101;
+  *((&llvm_cbe_ROM[67u])) = -90;
   *((&llvm_cbe_ROM[68u])) = 93;
-  *((&llvm_cbe_ROM[69u])) = (-90);
-  *((&llvm_cbe_ROM[70u])) = (-123);
-  *((&llvm_cbe_ROM[71u])) = (-86);
+  *((&llvm_cbe_ROM[69u])) = -90;
+  *((&llvm_cbe_ROM[70u])) = -123;
+  *((&llvm_cbe_ROM[71u])) = -86;
   *((&llvm_cbe_ROM[72u])) = 41;
-  *((&llvm_cbe_ROM[73u])) = (-31);
-  *((&llvm_cbe_ROM[74u])) = (-67);
-  *((&llvm_cbe_ROM[75u])) = (-31);
-  *((&llvm_cbe_ROM[76u])) = (-58);
-  *((&llvm_cbe_ROM[77u])) = (-31);
+  *((&llvm_cbe_ROM[73u])) = -31;
+  *((&llvm_cbe_ROM[74u])) = -67;
+  *((&llvm_cbe_ROM[75u])) = -31;
+  *((&llvm_cbe_ROM[76u])) = -58;
+  *((&llvm_cbe_ROM[77u])) = -31;
   *((&llvm_cbe_ROM[78u])) = 122;
-  *((&llvm_cbe_ROM[79u])) = (-85);
+  *((&llvm_cbe_ROM[79u])) = -85;
   *((&llvm_cbe_ROM[80u])) = 65;
-  *((&llvm_cbe_ROM[81u])) = (-90);
+  *((&llvm_cbe_ROM[81u])) = -90;
   *((&llvm_cbe_ROM[82u])) = 57;
-  *((&llvm_cbe_ROM[83u])) = (-68);
-  *((&llvm_cbe_ROM[84u])) = (-52);
-  *((&llvm_cbe_ROM[85u])) = (-68);
+  *((&llvm_cbe_ROM[83u])) = -68;
+  *((&llvm_cbe_ROM[84u])) = -52;
+  *((&llvm_cbe_ROM[85u])) = -68;
   *((&llvm_cbe_ROM[86u])) = 88;
-  *((&llvm_cbe_ROM[87u])) = (-68);
+  *((&llvm_cbe_ROM[87u])) = -68;
   *((&llvm_cbe_ROM[88u])) = 16;
   *((&llvm_cbe_ROM[89u])) = 3;
   *((&llvm_cbe_ROM[90u])) = 125;
-  *((&llvm_cbe_ROM[91u])) = (-77);
-  *((&llvm_cbe_ROM[92u])) = (-98);
-  *((&llvm_cbe_ROM[93u])) = (-77);
+  *((&llvm_cbe_ROM[91u])) = -77;
+  *((&llvm_cbe_ROM[92u])) = -98;
+  *((&llvm_cbe_ROM[93u])) = -77;
   *((&llvm_cbe_ROM[94u])) = 113;
-  *((&llvm_cbe_ROM[95u])) = (-65);
-  *((&llvm_cbe_ROM[96u])) = (-105);
-  *((&llvm_cbe_ROM[97u])) = (-32);
-  *((&llvm_cbe_ROM[98u])) = (-22);
-  *((&llvm_cbe_ROM[99u])) = (-71);
-  *((&llvm_cbe_ROM[100u])) = (-19);
-  *((&llvm_cbe_ROM[101u])) = (-65);
+  *((&llvm_cbe_ROM[95u])) = -65;
+  *((&llvm_cbe_ROM[96u])) = -105;
+  *((&llvm_cbe_ROM[97u])) = -32;
+  *((&llvm_cbe_ROM[98u])) = -22;
+  *((&llvm_cbe_ROM[99u])) = -71;
+  *((&llvm_cbe_ROM[100u])) = -19;
+  *((&llvm_cbe_ROM[101u])) = -65;
   *((&llvm_cbe_ROM[102u])) = 100;
-  *((&llvm_cbe_ROM[103u])) = (-30);
+  *((&llvm_cbe_ROM[103u])) = -30;
   *((&llvm_cbe_ROM[104u])) = 107;
-  *((&llvm_cbe_ROM[105u])) = (-30);
-  *((&llvm_cbe_ROM[106u])) = (-76);
-  *((&llvm_cbe_ROM[107u])) = (-30);
+  *((&llvm_cbe_ROM[105u])) = -30;
+  *((&llvm_cbe_ROM[106u])) = -76;
+  *((&llvm_cbe_ROM[107u])) = -30;
   *((&llvm_cbe_ROM[108u])) = 14;
-  *((&llvm_cbe_ROM[109u])) = (-29);
+  *((&llvm_cbe_ROM[109u])) = -29;
   *((&llvm_cbe_ROM[110u])) = 13;
-  *((&llvm_cbe_ROM[111u])) = (-72);
+  *((&llvm_cbe_ROM[111u])) = -72;
   *((&llvm_cbe_ROM[112u])) = 124;
-  *((&llvm_cbe_ROM[113u])) = (-73);
+  *((&llvm_cbe_ROM[113u])) = -73;
   *((&llvm_cbe_ROM[114u])) = 101;
-  *((&llvm_cbe_ROM[115u])) = (-76);
-  *((&llvm_cbe_ROM[116u])) = (-83);
-  *((&llvm_cbe_ROM[117u])) = (-73);
-  *((&llvm_cbe_ROM[118u])) = (-117);
-  *((&llvm_cbe_ROM[119u])) = (-73);
-  *((&llvm_cbe_ROM[120u])) = (-20);
-  *((&llvm_cbe_ROM[121u])) = (-74);
-  *((&llvm_cbe_ROM[123u])) = (-73);
+  *((&llvm_cbe_ROM[115u])) = -76;
+  *((&llvm_cbe_ROM[116u])) = -83;
+  *((&llvm_cbe_ROM[117u])) = -73;
+  *((&llvm_cbe_ROM[118u])) = -117;
+  *((&llvm_cbe_ROM[119u])) = -73;
+  *((&llvm_cbe_ROM[120u])) = -20;
+  *((&llvm_cbe_ROM[121u])) = -74;
+  *((&llvm_cbe_ROM[123u])) = -73;
   *((&llvm_cbe_ROM[124u])) = 44;
-  *((&llvm_cbe_ROM[125u])) = (-73);
+  *((&llvm_cbe_ROM[125u])) = -73;
   *((&llvm_cbe_ROM[126u])) = 55;
-  *((&llvm_cbe_ROM[127u])) = (-73);
+  *((&llvm_cbe_ROM[127u])) = -73;
   *((&llvm_cbe_ROM[128u])) = 121;
   *((&llvm_cbe_ROM[129u])) = 105;
-  *((&llvm_cbe_ROM[130u])) = (-72);
+  *((&llvm_cbe_ROM[130u])) = -72;
   *((&llvm_cbe_ROM[131u])) = 121;
   *((&llvm_cbe_ROM[132u])) = 82;
-  *((&llvm_cbe_ROM[133u])) = (-72);
+  *((&llvm_cbe_ROM[133u])) = -72;
   *((&llvm_cbe_ROM[134u])) = 123;
   *((&llvm_cbe_ROM[135u])) = 42;
-  *((&llvm_cbe_ROM[136u])) = (-70);
+  *((&llvm_cbe_ROM[136u])) = -70;
   *((&llvm_cbe_ROM[137u])) = 123;
   *((&llvm_cbe_ROM[138u])) = 17;
-  *((&llvm_cbe_ROM[139u])) = (-69);
+  *((&llvm_cbe_ROM[139u])) = -69;
   *((&llvm_cbe_ROM[140u])) = 127;
   *((&llvm_cbe_ROM[141u])) = 122;
-  *((&llvm_cbe_ROM[142u])) = (-65);
+  *((&llvm_cbe_ROM[142u])) = -65;
   *((&llvm_cbe_ROM[143u])) = 80;
-  *((&llvm_cbe_ROM[144u])) = (-24);
-  *((&llvm_cbe_ROM[145u])) = (-81);
+  *((&llvm_cbe_ROM[144u])) = -24;
+  *((&llvm_cbe_ROM[145u])) = -81;
   *((&llvm_cbe_ROM[146u])) = 70;
-  *((&llvm_cbe_ROM[147u])) = (-27);
-  *((&llvm_cbe_ROM[148u])) = (-81);
+  *((&llvm_cbe_ROM[147u])) = -27;
+  *((&llvm_cbe_ROM[148u])) = -81;
   *((&llvm_cbe_ROM[149u])) = 125;
-  *((&llvm_cbe_ROM[150u])) = (-77);
-  *((&llvm_cbe_ROM[151u])) = (-65);
+  *((&llvm_cbe_ROM[150u])) = -77;
+  *((&llvm_cbe_ROM[151u])) = -65;
   *((&llvm_cbe_ROM[152u])) = 90;
-  *((&llvm_cbe_ROM[153u])) = (-45);
-  *((&llvm_cbe_ROM[154u])) = (-82);
+  *((&llvm_cbe_ROM[153u])) = -45;
+  *((&llvm_cbe_ROM[154u])) = -82;
   *((&llvm_cbe_ROM[155u])) = 100;
   *((&llvm_cbe_ROM[156u])) = 21;
-  *((&llvm_cbe_ROM[157u])) = (-80);
+  *((&llvm_cbe_ROM[157u])) = -80;
   *((&llvm_cbe_ROM[158u])) = 69;
   *((&llvm_cbe_ROM[159u])) = 78;
-  *((&llvm_cbe_ROM[160u])) = (-60);
+  *((&llvm_cbe_ROM[160u])) = -60;
   *((&llvm_cbe_ROM[161u])) = 70;
   *((&llvm_cbe_ROM[162u])) = 79;
-  *((&llvm_cbe_ROM[163u])) = (-46);
+  *((&llvm_cbe_ROM[163u])) = -46;
   *((&llvm_cbe_ROM[164u])) = 78;
   *((&llvm_cbe_ROM[165u])) = 69;
   *((&llvm_cbe_ROM[166u])) = 88;
-  *((&llvm_cbe_ROM[167u])) = (-44);
+  *((&llvm_cbe_ROM[167u])) = -44;
   *((&llvm_cbe_ROM[168u])) = 68;
   *((&llvm_cbe_ROM[169u])) = 65;
   *((&llvm_cbe_ROM[170u])) = 84;
-  *((&llvm_cbe_ROM[171u])) = (-63);
+  *((&llvm_cbe_ROM[171u])) = -63;
   *((&llvm_cbe_ROM[172u])) = 73;
   *((&llvm_cbe_ROM[173u])) = 78;
   *((&llvm_cbe_ROM[174u])) = 80;
   *((&llvm_cbe_ROM[175u])) = 85;
   *((&llvm_cbe_ROM[176u])) = 84;
-  *((&llvm_cbe_ROM[177u])) = (-93);
+  *((&llvm_cbe_ROM[177u])) = -93;
   *((&llvm_cbe_ROM[178u])) = 73;
   *((&llvm_cbe_ROM[179u])) = 78;
   *((&llvm_cbe_ROM[180u])) = 80;
   *((&llvm_cbe_ROM[181u])) = 85;
-  *((&llvm_cbe_ROM[182u])) = (-44);
+  *((&llvm_cbe_ROM[182u])) = -44;
   *((&llvm_cbe_ROM[183u])) = 68;
   *((&llvm_cbe_ROM[184u])) = 73;
-  *((&llvm_cbe_ROM[185u])) = (-51);
+  *((&llvm_cbe_ROM[185u])) = -51;
   *((&llvm_cbe_ROM[186u])) = 82;
   *((&llvm_cbe_ROM[187u])) = 69;
   *((&llvm_cbe_ROM[188u])) = 65;
-  *((&llvm_cbe_ROM[189u])) = (-60);
+  *((&llvm_cbe_ROM[189u])) = -60;
   *((&llvm_cbe_ROM[190u])) = 76;
   *((&llvm_cbe_ROM[191u])) = 69;
-  *((&llvm_cbe_ROM[192u])) = (-44);
+  *((&llvm_cbe_ROM[192u])) = -44;
   *((&llvm_cbe_ROM[193u])) = 71;
   *((&llvm_cbe_ROM[194u])) = 79;
   *((&llvm_cbe_ROM[195u])) = 84;
-  *((&llvm_cbe_ROM[196u])) = (-49);
+  *((&llvm_cbe_ROM[196u])) = -49;
   *((&llvm_cbe_ROM[197u])) = 82;
   *((&llvm_cbe_ROM[198u])) = 85;
-  *((&llvm_cbe_ROM[199u])) = (-50);
+  *((&llvm_cbe_ROM[199u])) = -50;
   *((&llvm_cbe_ROM[200u])) = 73;
-  *((&llvm_cbe_ROM[201u])) = (-58);
+  *((&llvm_cbe_ROM[201u])) = -58;
   *((&llvm_cbe_ROM[202u])) = 82;
   *((&llvm_cbe_ROM[203u])) = 69;
   *((&llvm_cbe_ROM[204u])) = 83;
   *((&llvm_cbe_ROM[205u])) = 84;
   *((&llvm_cbe_ROM[206u])) = 79;
   *((&llvm_cbe_ROM[207u])) = 82;
-  *((&llvm_cbe_ROM[208u])) = (-59);
+  *((&llvm_cbe_ROM[208u])) = -59;
   *((&llvm_cbe_ROM[209u])) = 71;
   *((&llvm_cbe_ROM[210u])) = 79;
   *((&llvm_cbe_ROM[211u])) = 83;
   *((&llvm_cbe_ROM[212u])) = 85;
-  *((&llvm_cbe_ROM[213u])) = (-62);
+  *((&llvm_cbe_ROM[213u])) = -62;
   *((&llvm_cbe_ROM[214u])) = 82;
   *((&llvm_cbe_ROM[215u])) = 69;
   *((&llvm_cbe_ROM[216u])) = 84;
   *((&llvm_cbe_ROM[217u])) = 85;
   *((&llvm_cbe_ROM[218u])) = 82;
-  *((&llvm_cbe_ROM[219u])) = (-50);
+  *((&llvm_cbe_ROM[219u])) = -50;
   *((&llvm_cbe_ROM[220u])) = 82;
   *((&llvm_cbe_ROM[221u])) = 69;
-  *((&llvm_cbe_ROM[222u])) = (-51);
+  *((&llvm_cbe_ROM[222u])) = -51;
   *((&llvm_cbe_ROM[223u])) = 83;
   *((&llvm_cbe_ROM[224u])) = 84;
   *((&llvm_cbe_ROM[225u])) = 79;
-  *((&llvm_cbe_ROM[226u])) = (-48);
+  *((&llvm_cbe_ROM[226u])) = -48;
   *((&llvm_cbe_ROM[227u])) = 79;
-  *((&llvm_cbe_ROM[228u])) = (-50);
+  *((&llvm_cbe_ROM[228u])) = -50;
   *((&llvm_cbe_ROM[229u])) = 87;
   *((&llvm_cbe_ROM[230u])) = 65;
   *((&llvm_cbe_ROM[231u])) = 73;
-  *((&llvm_cbe_ROM[232u])) = (-44);
+  *((&llvm_cbe_ROM[232u])) = -44;
   *((&llvm_cbe_ROM[233u])) = 76;
   *((&llvm_cbe_ROM[234u])) = 79;
   *((&llvm_cbe_ROM[235u])) = 65;
-  *((&llvm_cbe_ROM[236u])) = (-60);
+  *((&llvm_cbe_ROM[236u])) = -60;
   *((&llvm_cbe_ROM[237u])) = 83;
   *((&llvm_cbe_ROM[238u])) = 65;
   *((&llvm_cbe_ROM[239u])) = 86;
-  *((&llvm_cbe_ROM[240u])) = (-59);
+  *((&llvm_cbe_ROM[240u])) = -59;
   *((&llvm_cbe_ROM[241u])) = 86;
   *((&llvm_cbe_ROM[242u])) = 69;
   *((&llvm_cbe_ROM[243u])) = 82;
   *((&llvm_cbe_ROM[244u])) = 73;
   *((&llvm_cbe_ROM[245u])) = 70;
-  *((&llvm_cbe_ROM[246u])) = (-39);
+  *((&llvm_cbe_ROM[246u])) = -39;
   *((&llvm_cbe_ROM[247u])) = 68;
   *((&llvm_cbe_ROM[248u])) = 69;
-  *((&llvm_cbe_ROM[249u])) = (-58);
+  *((&llvm_cbe_ROM[249u])) = -58;
   *((&llvm_cbe_ROM[250u])) = 80;
   *((&llvm_cbe_ROM[251u])) = 79;
   *((&llvm_cbe_ROM[252u])) = 75;
-  *((&llvm_cbe_ROM[253u])) = (-59);
+  *((&llvm_cbe_ROM[253u])) = -59;
   *((&llvm_cbe_ROM[254u])) = 80;
   *((&llvm_cbe_ROM[255u])) = 82;
   *((&llvm_cbe_ROM[256u])) = 73;
   *((&llvm_cbe_ROM[257u])) = 78;
   *((&llvm_cbe_ROM[258u])) = 84;
-  *((&llvm_cbe_ROM[259u])) = (-93);
+  *((&llvm_cbe_ROM[259u])) = -93;
   *((&llvm_cbe_ROM[260u])) = 80;
   *((&llvm_cbe_ROM[261u])) = 82;
   *((&llvm_cbe_ROM[262u])) = 73;
   *((&llvm_cbe_ROM[263u])) = 78;
-  *((&llvm_cbe_ROM[264u])) = (-44);
+  *((&llvm_cbe_ROM[264u])) = -44;
   *((&llvm_cbe_ROM[265u])) = 67;
   *((&llvm_cbe_ROM[266u])) = 79;
   *((&llvm_cbe_ROM[267u])) = 78;
-  *((&llvm_cbe_ROM[268u])) = (-44);
+  *((&llvm_cbe_ROM[268u])) = -44;
   *((&llvm_cbe_ROM[269u])) = 76;
   *((&llvm_cbe_ROM[270u])) = 73;
   *((&llvm_cbe_ROM[271u])) = 83;
-  *((&llvm_cbe_ROM[272u])) = (-44);
+  *((&llvm_cbe_ROM[272u])) = -44;
   *((&llvm_cbe_ROM[273u])) = 67;
   *((&llvm_cbe_ROM[274u])) = 76;
-  *((&llvm_cbe_ROM[275u])) = (-46);
+  *((&llvm_cbe_ROM[275u])) = -46;
   *((&llvm_cbe_ROM[276u])) = 67;
   *((&llvm_cbe_ROM[277u])) = 77;
-  *((&llvm_cbe_ROM[278u])) = (-60);
+  *((&llvm_cbe_ROM[278u])) = -60;
   *((&llvm_cbe_ROM[279u])) = 83;
   *((&llvm_cbe_ROM[280u])) = 89;
-  *((&llvm_cbe_ROM[281u])) = (-45);
+  *((&llvm_cbe_ROM[281u])) = -45;
   *((&llvm_cbe_ROM[282u])) = 79;
   *((&llvm_cbe_ROM[283u])) = 80;
   *((&llvm_cbe_ROM[284u])) = 69;
-  *((&llvm_cbe_ROM[285u])) = (-50);
+  *((&llvm_cbe_ROM[285u])) = -50;
   *((&llvm_cbe_ROM[286u])) = 67;
   *((&llvm_cbe_ROM[287u])) = 76;
   *((&llvm_cbe_ROM[288u])) = 79;
   *((&llvm_cbe_ROM[289u])) = 83;
-  *((&llvm_cbe_ROM[290u])) = (-59);
+  *((&llvm_cbe_ROM[290u])) = -59;
   *((&llvm_cbe_ROM[291u])) = 71;
   *((&llvm_cbe_ROM[292u])) = 69;
-  *((&llvm_cbe_ROM[293u])) = (-44);
+  *((&llvm_cbe_ROM[293u])) = -44;
   *((&llvm_cbe_ROM[294u])) = 78;
   *((&llvm_cbe_ROM[295u])) = 69;
-  *((&llvm_cbe_ROM[296u])) = (-41);
+  *((&llvm_cbe_ROM[296u])) = -41;
   *((&llvm_cbe_ROM[297u])) = 84;
   *((&llvm_cbe_ROM[298u])) = 65;
   *((&llvm_cbe_ROM[299u])) = 66;
-  *((&llvm_cbe_ROM[300u])) = (-88);
+  *((&llvm_cbe_ROM[300u])) = -88;
   *((&llvm_cbe_ROM[301u])) = 84;
-  *((&llvm_cbe_ROM[302u])) = (-49);
+  *((&llvm_cbe_ROM[302u])) = -49;
   *((&llvm_cbe_ROM[303u])) = 70;
-  *((&llvm_cbe_ROM[304u])) = (-50);
+  *((&llvm_cbe_ROM[304u])) = -50;
   *((&llvm_cbe_ROM[305u])) = 83;
   *((&llvm_cbe_ROM[306u])) = 80;
   *((&llvm_cbe_ROM[307u])) = 67;
-  *((&llvm_cbe_ROM[308u])) = (-88);
+  *((&llvm_cbe_ROM[308u])) = -88;
   *((&llvm_cbe_ROM[309u])) = 84;
   *((&llvm_cbe_ROM[310u])) = 72;
   *((&llvm_cbe_ROM[311u])) = 69;
-  *((&llvm_cbe_ROM[312u])) = (-50);
+  *((&llvm_cbe_ROM[312u])) = -50;
   *((&llvm_cbe_ROM[313u])) = 78;
   *((&llvm_cbe_ROM[314u])) = 79;
-  *((&llvm_cbe_ROM[315u])) = (-44);
+  *((&llvm_cbe_ROM[315u])) = -44;
   *((&llvm_cbe_ROM[316u])) = 83;
   *((&llvm_cbe_ROM[317u])) = 84;
   *((&llvm_cbe_ROM[318u])) = 69;
-  *((&llvm_cbe_ROM[319u])) = (-48);
-  *((&llvm_cbe_ROM[320u])) = (-85);
-  *((&llvm_cbe_ROM[321u])) = (-83);
-  *((&llvm_cbe_ROM[322u])) = (-86);
-  *((&llvm_cbe_ROM[323u])) = (-81);
-  *((&llvm_cbe_ROM[324u])) = (-34);
+  *((&llvm_cbe_ROM[319u])) = -48;
+  *((&llvm_cbe_ROM[320u])) = -85;
+  *((&llvm_cbe_ROM[321u])) = -83;
+  *((&llvm_cbe_ROM[322u])) = -86;
+  *((&llvm_cbe_ROM[323u])) = -81;
+  *((&llvm_cbe_ROM[324u])) = -34;
   *((&llvm_cbe_ROM[325u])) = 65;
   *((&llvm_cbe_ROM[326u])) = 78;
-  *((&llvm_cbe_ROM[327u])) = (-60);
+  *((&llvm_cbe_ROM[327u])) = -60;
   *((&llvm_cbe_ROM[328u])) = 79;
-  *((&llvm_cbe_ROM[329u])) = (-46);
-  *((&llvm_cbe_ROM[330u])) = (-66);
-  *((&llvm_cbe_ROM[331u])) = (-67);
-  *((&llvm_cbe_ROM[332u])) = (-68);
+  *((&llvm_cbe_ROM[329u])) = -46;
+  *((&llvm_cbe_ROM[330u])) = -66;
+  *((&llvm_cbe_ROM[331u])) = -67;
+  *((&llvm_cbe_ROM[332u])) = -68;
   *((&llvm_cbe_ROM[333u])) = 83;
   *((&llvm_cbe_ROM[334u])) = 71;
-  *((&llvm_cbe_ROM[335u])) = (-50);
+  *((&llvm_cbe_ROM[335u])) = -50;
   *((&llvm_cbe_ROM[336u])) = 73;
   *((&llvm_cbe_ROM[337u])) = 78;
-  *((&llvm_cbe_ROM[338u])) = (-44);
+  *((&llvm_cbe_ROM[338u])) = -44;
   *((&llvm_cbe_ROM[339u])) = 65;
   *((&llvm_cbe_ROM[340u])) = 66;
-  *((&llvm_cbe_ROM[341u])) = (-45);
+  *((&llvm_cbe_ROM[341u])) = -45;
   *((&llvm_cbe_ROM[342u])) = 85;
   *((&llvm_cbe_ROM[343u])) = 83;
-  *((&llvm_cbe_ROM[344u])) = (-46);
+  *((&llvm_cbe_ROM[344u])) = -46;
   *((&llvm_cbe_ROM[345u])) = 70;
   *((&llvm_cbe_ROM[346u])) = 82;
-  *((&llvm_cbe_ROM[347u])) = (-59);
+  *((&llvm_cbe_ROM[347u])) = -59;
   *((&llvm_cbe_ROM[348u])) = 80;
   *((&llvm_cbe_ROM[349u])) = 79;
-  *((&llvm_cbe_ROM[350u])) = (-45);
+  *((&llvm_cbe_ROM[350u])) = -45;
   *((&llvm_cbe_ROM[351u])) = 83;
   *((&llvm_cbe_ROM[352u])) = 81;
-  *((&llvm_cbe_ROM[353u])) = (-46);
+  *((&llvm_cbe_ROM[353u])) = -46;
   *((&llvm_cbe_ROM[354u])) = 82;
   *((&llvm_cbe_ROM[355u])) = 78;
-  *((&llvm_cbe_ROM[356u])) = (-60);
+  *((&llvm_cbe_ROM[356u])) = -60;
   *((&llvm_cbe_ROM[357u])) = 76;
   *((&llvm_cbe_ROM[358u])) = 79;
-  *((&llvm_cbe_ROM[359u])) = (-57);
+  *((&llvm_cbe_ROM[359u])) = -57;
   *((&llvm_cbe_ROM[360u])) = 69;
   *((&llvm_cbe_ROM[361u])) = 88;
-  *((&llvm_cbe_ROM[362u])) = (-48);
+  *((&llvm_cbe_ROM[362u])) = -48;
   *((&llvm_cbe_ROM[363u])) = 67;
   *((&llvm_cbe_ROM[364u])) = 79;
-  *((&llvm_cbe_ROM[365u])) = (-45);
+  *((&llvm_cbe_ROM[365u])) = -45;
   *((&llvm_cbe_ROM[366u])) = 83;
   *((&llvm_cbe_ROM[367u])) = 73;
-  *((&llvm_cbe_ROM[368u])) = (-50);
+  *((&llvm_cbe_ROM[368u])) = -50;
   *((&llvm_cbe_ROM[369u])) = 84;
   *((&llvm_cbe_ROM[370u])) = 65;
-  *((&llvm_cbe_ROM[371u])) = (-50);
+  *((&llvm_cbe_ROM[371u])) = -50;
   *((&llvm_cbe_ROM[372u])) = 65;
   *((&llvm_cbe_ROM[373u])) = 84;
-  *((&llvm_cbe_ROM[374u])) = (-50);
+  *((&llvm_cbe_ROM[374u])) = -50;
   *((&llvm_cbe_ROM[375u])) = 80;
   *((&llvm_cbe_ROM[376u])) = 69;
   *((&llvm_cbe_ROM[377u])) = 69;
-  *((&llvm_cbe_ROM[378u])) = (-53);
+  *((&llvm_cbe_ROM[378u])) = -53;
   *((&llvm_cbe_ROM[379u])) = 76;
   *((&llvm_cbe_ROM[380u])) = 69;
-  *((&llvm_cbe_ROM[381u])) = (-50);
+  *((&llvm_cbe_ROM[381u])) = -50;
   *((&llvm_cbe_ROM[382u])) = 83;
   *((&llvm_cbe_ROM[383u])) = 84;
   *((&llvm_cbe_ROM[384u])) = 82;
-  *((&llvm_cbe_ROM[385u])) = (-92);
+  *((&llvm_cbe_ROM[385u])) = -92;
   *((&llvm_cbe_ROM[386u])) = 86;
   *((&llvm_cbe_ROM[387u])) = 65;
-  *((&llvm_cbe_ROM[388u])) = (-52);
+  *((&llvm_cbe_ROM[388u])) = -52;
   *((&llvm_cbe_ROM[389u])) = 65;
   *((&llvm_cbe_ROM[390u])) = 83;
-  *((&llvm_cbe_ROM[391u])) = (-61);
+  *((&llvm_cbe_ROM[391u])) = -61;
   *((&llvm_cbe_ROM[392u])) = 67;
   *((&llvm_cbe_ROM[393u])) = 72;
   *((&llvm_cbe_ROM[394u])) = 82;
-  *((&llvm_cbe_ROM[395u])) = (-92);
+  *((&llvm_cbe_ROM[395u])) = -92;
   *((&llvm_cbe_ROM[396u])) = 76;
   *((&llvm_cbe_ROM[397u])) = 69;
   *((&llvm_cbe_ROM[398u])) = 70;
   *((&llvm_cbe_ROM[399u])) = 84;
-  *((&llvm_cbe_ROM[400u])) = (-92);
+  *((&llvm_cbe_ROM[400u])) = -92;
   *((&llvm_cbe_ROM[401u])) = 82;
   *((&llvm_cbe_ROM[402u])) = 73;
   *((&llvm_cbe_ROM[403u])) = 71;
   *((&llvm_cbe_ROM[404u])) = 72;
   *((&llvm_cbe_ROM[405u])) = 84;
-  *((&llvm_cbe_ROM[406u])) = (-92);
+  *((&llvm_cbe_ROM[406u])) = -92;
   *((&llvm_cbe_ROM[407u])) = 77;
   *((&llvm_cbe_ROM[408u])) = 73;
   *((&llvm_cbe_ROM[409u])) = 68;
-  *((&llvm_cbe_ROM[410u])) = (-92);
+  *((&llvm_cbe_ROM[410u])) = -92;
   *((&llvm_cbe_ROM[411u])) = 71;
-  *((&llvm_cbe_ROM[412u])) = (-49);
+  *((&llvm_cbe_ROM[412u])) = -49;
   *((&llvm_cbe_ROM[414u])) = 84;
   *((&llvm_cbe_ROM[415u])) = 79;
   *((&llvm_cbe_ROM[416u])) = 79;
@@ -5435,7 +5435,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[424u])) = 73;
   *((&llvm_cbe_ROM[425u])) = 76;
   *((&llvm_cbe_ROM[426u])) = 69;
-  *((&llvm_cbe_ROM[427u])) = (-45);
+  *((&llvm_cbe_ROM[427u])) = -45;
   *((&llvm_cbe_ROM[428u])) = 70;
   *((&llvm_cbe_ROM[429u])) = 73;
   *((&llvm_cbe_ROM[430u])) = 76;
@@ -5444,7 +5444,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[433u])) = 79;
   *((&llvm_cbe_ROM[434u])) = 80;
   *((&llvm_cbe_ROM[435u])) = 69;
-  *((&llvm_cbe_ROM[436u])) = (-50);
+  *((&llvm_cbe_ROM[436u])) = -50;
   *((&llvm_cbe_ROM[437u])) = 70;
   *((&llvm_cbe_ROM[438u])) = 73;
   *((&llvm_cbe_ROM[439u])) = 76;
@@ -5457,7 +5457,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[446u])) = 79;
   *((&llvm_cbe_ROM[447u])) = 80;
   *((&llvm_cbe_ROM[448u])) = 69;
-  *((&llvm_cbe_ROM[449u])) = (-50);
+  *((&llvm_cbe_ROM[449u])) = -50;
   *((&llvm_cbe_ROM[450u])) = 70;
   *((&llvm_cbe_ROM[451u])) = 73;
   *((&llvm_cbe_ROM[452u])) = 76;
@@ -5471,7 +5471,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[460u])) = 79;
   *((&llvm_cbe_ROM[461u])) = 85;
   *((&llvm_cbe_ROM[462u])) = 78;
-  *((&llvm_cbe_ROM[463u])) = (-60);
+  *((&llvm_cbe_ROM[463u])) = -60;
   *((&llvm_cbe_ROM[464u])) = 68;
   *((&llvm_cbe_ROM[465u])) = 69;
   *((&llvm_cbe_ROM[466u])) = 86;
@@ -5489,7 +5489,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[478u])) = 83;
   *((&llvm_cbe_ROM[479u])) = 69;
   *((&llvm_cbe_ROM[480u])) = 78;
-  *((&llvm_cbe_ROM[481u])) = (-44);
+  *((&llvm_cbe_ROM[481u])) = -44;
   *((&llvm_cbe_ROM[482u])) = 78;
   *((&llvm_cbe_ROM[483u])) = 79;
   *((&llvm_cbe_ROM[484u])) = 84;
@@ -5503,7 +5503,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[492u])) = 70;
   *((&llvm_cbe_ROM[493u])) = 73;
   *((&llvm_cbe_ROM[494u])) = 76;
-  *((&llvm_cbe_ROM[495u])) = (-59);
+  *((&llvm_cbe_ROM[495u])) = -59;
   *((&llvm_cbe_ROM[496u])) = 78;
   *((&llvm_cbe_ROM[497u])) = 79;
   *((&llvm_cbe_ROM[498u])) = 84;
@@ -5518,7 +5518,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[507u])) = 70;
   *((&llvm_cbe_ROM[508u])) = 73;
   *((&llvm_cbe_ROM[509u])) = 76;
-  *((&llvm_cbe_ROM[510u])) = (-59);
+  *((&llvm_cbe_ROM[510u])) = -59;
   *((&llvm_cbe_ROM[511u])) = 77;
   *((&llvm_cbe_ROM[512u])) = 73;
   *((&llvm_cbe_ROM[513u])) = 83;
@@ -5535,7 +5535,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[524u])) = 78;
   *((&llvm_cbe_ROM[525u])) = 65;
   *((&llvm_cbe_ROM[526u])) = 77;
-  *((&llvm_cbe_ROM[527u])) = (-59);
+  *((&llvm_cbe_ROM[527u])) = -59;
   *((&llvm_cbe_ROM[528u])) = 73;
   *((&llvm_cbe_ROM[529u])) = 76;
   *((&llvm_cbe_ROM[530u])) = 76;
@@ -5556,7 +5556,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[545u])) = 77;
   *((&llvm_cbe_ROM[546u])) = 66;
   *((&llvm_cbe_ROM[547u])) = 69;
-  *((&llvm_cbe_ROM[548u])) = (-46);
+  *((&llvm_cbe_ROM[548u])) = -46;
   *((&llvm_cbe_ROM[549u])) = 78;
   *((&llvm_cbe_ROM[550u])) = 69;
   *((&llvm_cbe_ROM[551u])) = 88;
@@ -5572,13 +5572,13 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[561u])) = 32;
   *((&llvm_cbe_ROM[562u])) = 70;
   *((&llvm_cbe_ROM[563u])) = 79;
-  *((&llvm_cbe_ROM[564u])) = (-46);
+  *((&llvm_cbe_ROM[564u])) = -46;
   *((&llvm_cbe_ROM[565u])) = 83;
   *((&llvm_cbe_ROM[566u])) = 89;
   *((&llvm_cbe_ROM[567u])) = 78;
   *((&llvm_cbe_ROM[568u])) = 84;
   *((&llvm_cbe_ROM[569u])) = 65;
-  *((&llvm_cbe_ROM[570u])) = (-40);
+  *((&llvm_cbe_ROM[570u])) = -40;
   *((&llvm_cbe_ROM[571u])) = 82;
   *((&llvm_cbe_ROM[572u])) = 69;
   *((&llvm_cbe_ROM[573u])) = 84;
@@ -5598,7 +5598,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[587u])) = 79;
   *((&llvm_cbe_ROM[588u])) = 83;
   *((&llvm_cbe_ROM[589u])) = 85;
-  *((&llvm_cbe_ROM[590u])) = (-62);
+  *((&llvm_cbe_ROM[590u])) = -62;
   *((&llvm_cbe_ROM[591u])) = 79;
   *((&llvm_cbe_ROM[592u])) = 85;
   *((&llvm_cbe_ROM[593u])) = 84;
@@ -5609,7 +5609,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[598u])) = 68;
   *((&llvm_cbe_ROM[599u])) = 65;
   *((&llvm_cbe_ROM[600u])) = 84;
-  *((&llvm_cbe_ROM[601u])) = (-63);
+  *((&llvm_cbe_ROM[601u])) = -63;
   *((&llvm_cbe_ROM[602u])) = 73;
   *((&llvm_cbe_ROM[603u])) = 76;
   *((&llvm_cbe_ROM[604u])) = 76;
@@ -5625,7 +5625,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[614u])) = 84;
   *((&llvm_cbe_ROM[615u])) = 73;
   *((&llvm_cbe_ROM[616u])) = 84;
-  *((&llvm_cbe_ROM[617u])) = (-39);
+  *((&llvm_cbe_ROM[617u])) = -39;
   *((&llvm_cbe_ROM[618u])) = 79;
   *((&llvm_cbe_ROM[619u])) = 86;
   *((&llvm_cbe_ROM[620u])) = 69;
@@ -5633,7 +5633,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[622u])) = 70;
   *((&llvm_cbe_ROM[623u])) = 76;
   *((&llvm_cbe_ROM[624u])) = 79;
-  *((&llvm_cbe_ROM[625u])) = (-41);
+  *((&llvm_cbe_ROM[625u])) = -41;
   *((&llvm_cbe_ROM[626u])) = 79;
   *((&llvm_cbe_ROM[627u])) = 85;
   *((&llvm_cbe_ROM[628u])) = 84;
@@ -5646,7 +5646,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[635u])) = 77;
   *((&llvm_cbe_ROM[636u])) = 79;
   *((&llvm_cbe_ROM[637u])) = 82;
-  *((&llvm_cbe_ROM[638u])) = (-39);
+  *((&llvm_cbe_ROM[638u])) = -39;
   *((&llvm_cbe_ROM[639u])) = 85;
   *((&llvm_cbe_ROM[640u])) = 78;
   *((&llvm_cbe_ROM[641u])) = 68;
@@ -5663,7 +5663,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[652u])) = 77;
   *((&llvm_cbe_ROM[653u])) = 69;
   *((&llvm_cbe_ROM[654u])) = 78;
-  *((&llvm_cbe_ROM[655u])) = (-44);
+  *((&llvm_cbe_ROM[655u])) = -44;
   *((&llvm_cbe_ROM[656u])) = 66;
   *((&llvm_cbe_ROM[657u])) = 65;
   *((&llvm_cbe_ROM[658u])) = 68;
@@ -5676,7 +5676,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[665u])) = 82;
   *((&llvm_cbe_ROM[666u])) = 73;
   *((&llvm_cbe_ROM[667u])) = 80;
-  *((&llvm_cbe_ROM[668u])) = (-44);
+  *((&llvm_cbe_ROM[668u])) = -44;
   *((&llvm_cbe_ROM[669u])) = 82;
   *((&llvm_cbe_ROM[670u])) = 69;
   *((&llvm_cbe_ROM[671u])) = 68;
@@ -5689,7 +5689,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[678u])) = 82;
   *((&llvm_cbe_ROM[679u])) = 82;
   *((&llvm_cbe_ROM[680u])) = 65;
-  *((&llvm_cbe_ROM[681u])) = (-39);
+  *((&llvm_cbe_ROM[681u])) = -39;
   *((&llvm_cbe_ROM[682u])) = 68;
   *((&llvm_cbe_ROM[683u])) = 73;
   *((&llvm_cbe_ROM[684u])) = 86;
@@ -5705,7 +5705,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[694u])) = 90;
   *((&llvm_cbe_ROM[695u])) = 69;
   *((&llvm_cbe_ROM[696u])) = 82;
-  *((&llvm_cbe_ROM[697u])) = (-49);
+  *((&llvm_cbe_ROM[697u])) = -49;
   *((&llvm_cbe_ROM[698u])) = 73;
   *((&llvm_cbe_ROM[699u])) = 76;
   *((&llvm_cbe_ROM[700u])) = 76;
@@ -5719,7 +5719,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[708u])) = 82;
   *((&llvm_cbe_ROM[709u])) = 69;
   *((&llvm_cbe_ROM[710u])) = 67;
-  *((&llvm_cbe_ROM[711u])) = (-44);
+  *((&llvm_cbe_ROM[711u])) = -44;
   *((&llvm_cbe_ROM[712u])) = 84;
   *((&llvm_cbe_ROM[713u])) = 89;
   *((&llvm_cbe_ROM[714u])) = 80;
@@ -5732,7 +5732,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[721u])) = 65;
   *((&llvm_cbe_ROM[722u])) = 84;
   *((&llvm_cbe_ROM[723u])) = 67;
-  *((&llvm_cbe_ROM[724u])) = (-56);
+  *((&llvm_cbe_ROM[724u])) = -56;
   *((&llvm_cbe_ROM[725u])) = 83;
   *((&llvm_cbe_ROM[726u])) = 84;
   *((&llvm_cbe_ROM[727u])) = 82;
@@ -5747,7 +5747,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[736u])) = 76;
   *((&llvm_cbe_ROM[737u])) = 79;
   *((&llvm_cbe_ROM[738u])) = 78;
-  *((&llvm_cbe_ROM[739u])) = (-57);
+  *((&llvm_cbe_ROM[739u])) = -57;
   *((&llvm_cbe_ROM[740u])) = 70;
   *((&llvm_cbe_ROM[741u])) = 73;
   *((&llvm_cbe_ROM[742u])) = 76;
@@ -5756,7 +5756,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[745u])) = 68;
   *((&llvm_cbe_ROM[746u])) = 65;
   *((&llvm_cbe_ROM[747u])) = 84;
-  *((&llvm_cbe_ROM[748u])) = (-63);
+  *((&llvm_cbe_ROM[748u])) = -63;
   *((&llvm_cbe_ROM[749u])) = 70;
   *((&llvm_cbe_ROM[750u])) = 79;
   *((&llvm_cbe_ROM[751u])) = 82;
@@ -5775,7 +5775,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[764u])) = 80;
   *((&llvm_cbe_ROM[765u])) = 76;
   *((&llvm_cbe_ROM[766u])) = 69;
-  *((&llvm_cbe_ROM[767u])) = (-40);
+  *((&llvm_cbe_ROM[767u])) = -40;
   *((&llvm_cbe_ROM[768u])) = 67;
   *((&llvm_cbe_ROM[769u])) = 65;
   *((&llvm_cbe_ROM[770u])) = 78;
@@ -5789,7 +5789,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[778u])) = 73;
   *((&llvm_cbe_ROM[779u])) = 78;
   *((&llvm_cbe_ROM[780u])) = 85;
-  *((&llvm_cbe_ROM[781u])) = (-59);
+  *((&llvm_cbe_ROM[781u])) = -59;
   *((&llvm_cbe_ROM[782u])) = 85;
   *((&llvm_cbe_ROM[783u])) = 78;
   *((&llvm_cbe_ROM[784u])) = 68;
@@ -5805,76 +5805,76 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[794u])) = 84;
   *((&llvm_cbe_ROM[795u])) = 73;
   *((&llvm_cbe_ROM[796u])) = 79;
-  *((&llvm_cbe_ROM[797u])) = (-50);
+  *((&llvm_cbe_ROM[797u])) = -50;
   *((&llvm_cbe_ROM[798u])) = 86;
   *((&llvm_cbe_ROM[799u])) = 69;
   *((&llvm_cbe_ROM[800u])) = 82;
   *((&llvm_cbe_ROM[801u])) = 73;
   *((&llvm_cbe_ROM[802u])) = 70;
-  *((&llvm_cbe_ROM[803u])) = (-39);
+  *((&llvm_cbe_ROM[803u])) = -39;
   *((&llvm_cbe_ROM[804u])) = 76;
   *((&llvm_cbe_ROM[805u])) = 79;
   *((&llvm_cbe_ROM[806u])) = 65;
-  *((&llvm_cbe_ROM[807u])) = (-60);
-  *((&llvm_cbe_ROM[808u])) = (-98);
-  *((&llvm_cbe_ROM[809u])) = (-95);
-  *((&llvm_cbe_ROM[810u])) = (-84);
-  *((&llvm_cbe_ROM[811u])) = (-95);
-  *((&llvm_cbe_ROM[812u])) = (-75);
-  *((&llvm_cbe_ROM[813u])) = (-95);
-  *((&llvm_cbe_ROM[814u])) = (-62);
-  *((&llvm_cbe_ROM[815u])) = (-95);
-  *((&llvm_cbe_ROM[816u])) = (-48);
-  *((&llvm_cbe_ROM[817u])) = (-95);
-  *((&llvm_cbe_ROM[818u])) = (-30);
-  *((&llvm_cbe_ROM[819u])) = (-95);
-  *((&llvm_cbe_ROM[820u])) = (-16);
-  *((&llvm_cbe_ROM[821u])) = (-95);
-  *((&llvm_cbe_ROM[822u])) = (-1);
-  *((&llvm_cbe_ROM[823u])) = (-95);
+  *((&llvm_cbe_ROM[807u])) = -60;
+  *((&llvm_cbe_ROM[808u])) = -98;
+  *((&llvm_cbe_ROM[809u])) = -95;
+  *((&llvm_cbe_ROM[810u])) = -84;
+  *((&llvm_cbe_ROM[811u])) = -95;
+  *((&llvm_cbe_ROM[812u])) = -75;
+  *((&llvm_cbe_ROM[813u])) = -95;
+  *((&llvm_cbe_ROM[814u])) = -62;
+  *((&llvm_cbe_ROM[815u])) = -95;
+  *((&llvm_cbe_ROM[816u])) = -48;
+  *((&llvm_cbe_ROM[817u])) = -95;
+  *((&llvm_cbe_ROM[818u])) = -30;
+  *((&llvm_cbe_ROM[819u])) = -95;
+  *((&llvm_cbe_ROM[820u])) = -16;
+  *((&llvm_cbe_ROM[821u])) = -95;
+  *((&llvm_cbe_ROM[822u])) = -1;
+  *((&llvm_cbe_ROM[823u])) = -95;
   *((&llvm_cbe_ROM[824u])) = 16;
-  *((&llvm_cbe_ROM[825u])) = (-94);
+  *((&llvm_cbe_ROM[825u])) = -94;
   *((&llvm_cbe_ROM[826u])) = 37;
-  *((&llvm_cbe_ROM[827u])) = (-94);
+  *((&llvm_cbe_ROM[827u])) = -94;
   *((&llvm_cbe_ROM[828u])) = 53;
-  *((&llvm_cbe_ROM[829u])) = (-94);
+  *((&llvm_cbe_ROM[829u])) = -94;
   *((&llvm_cbe_ROM[830u])) = 59;
-  *((&llvm_cbe_ROM[831u])) = (-94);
+  *((&llvm_cbe_ROM[831u])) = -94;
   *((&llvm_cbe_ROM[832u])) = 79;
-  *((&llvm_cbe_ROM[833u])) = (-94);
+  *((&llvm_cbe_ROM[833u])) = -94;
   *((&llvm_cbe_ROM[834u])) = 90;
-  *((&llvm_cbe_ROM[835u])) = (-94);
+  *((&llvm_cbe_ROM[835u])) = -94;
   *((&llvm_cbe_ROM[836u])) = 106;
-  *((&llvm_cbe_ROM[837u])) = (-94);
+  *((&llvm_cbe_ROM[837u])) = -94;
   *((&llvm_cbe_ROM[838u])) = 114;
-  *((&llvm_cbe_ROM[839u])) = (-94);
+  *((&llvm_cbe_ROM[839u])) = -94;
   *((&llvm_cbe_ROM[840u])) = 127;
-  *((&llvm_cbe_ROM[841u])) = (-94);
-  *((&llvm_cbe_ROM[842u])) = (-112);
-  *((&llvm_cbe_ROM[843u])) = (-94);
-  *((&llvm_cbe_ROM[844u])) = (-99);
-  *((&llvm_cbe_ROM[845u])) = (-94);
-  *((&llvm_cbe_ROM[846u])) = (-86);
-  *((&llvm_cbe_ROM[847u])) = (-94);
-  *((&llvm_cbe_ROM[848u])) = (-70);
-  *((&llvm_cbe_ROM[849u])) = (-94);
-  *((&llvm_cbe_ROM[850u])) = (-56);
-  *((&llvm_cbe_ROM[851u])) = (-94);
-  *((&llvm_cbe_ROM[852u])) = (-43);
-  *((&llvm_cbe_ROM[853u])) = (-94);
-  *((&llvm_cbe_ROM[854u])) = (-28);
-  *((&llvm_cbe_ROM[855u])) = (-94);
-  *((&llvm_cbe_ROM[856u])) = (-19);
-  *((&llvm_cbe_ROM[857u])) = (-94);
-  *((&llvm_cbe_ROM[859u])) = (-93);
+  *((&llvm_cbe_ROM[841u])) = -94;
+  *((&llvm_cbe_ROM[842u])) = -112;
+  *((&llvm_cbe_ROM[843u])) = -94;
+  *((&llvm_cbe_ROM[844u])) = -99;
+  *((&llvm_cbe_ROM[845u])) = -94;
+  *((&llvm_cbe_ROM[846u])) = -86;
+  *((&llvm_cbe_ROM[847u])) = -94;
+  *((&llvm_cbe_ROM[848u])) = -70;
+  *((&llvm_cbe_ROM[849u])) = -94;
+  *((&llvm_cbe_ROM[850u])) = -56;
+  *((&llvm_cbe_ROM[851u])) = -94;
+  *((&llvm_cbe_ROM[852u])) = -43;
+  *((&llvm_cbe_ROM[853u])) = -94;
+  *((&llvm_cbe_ROM[854u])) = -28;
+  *((&llvm_cbe_ROM[855u])) = -94;
+  *((&llvm_cbe_ROM[856u])) = -19;
+  *((&llvm_cbe_ROM[857u])) = -94;
+  *((&llvm_cbe_ROM[859u])) = -93;
   *((&llvm_cbe_ROM[860u])) = 14;
-  *((&llvm_cbe_ROM[861u])) = (-93);
+  *((&llvm_cbe_ROM[861u])) = -93;
   *((&llvm_cbe_ROM[862u])) = 30;
-  *((&llvm_cbe_ROM[863u])) = (-93);
+  *((&llvm_cbe_ROM[863u])) = -93;
   *((&llvm_cbe_ROM[864u])) = 36;
-  *((&llvm_cbe_ROM[865u])) = (-93);
-  *((&llvm_cbe_ROM[866u])) = (-125);
-  *((&llvm_cbe_ROM[867u])) = (-93);
+  *((&llvm_cbe_ROM[865u])) = -93;
+  *((&llvm_cbe_ROM[866u])) = -125;
+  *((&llvm_cbe_ROM[867u])) = -93;
   *((&llvm_cbe_ROM[868u])) = 13;
   *((&llvm_cbe_ROM[869u])) = 79;
   *((&llvm_cbe_ROM[870u])) = 75;
@@ -5907,7 +5907,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[901u])) = 69;
   *((&llvm_cbe_ROM[902u])) = 65;
   *((&llvm_cbe_ROM[903u])) = 75;
-  *((&llvm_cbe_ROM[905u])) = (-96);
+  *((&llvm_cbe_ROM[905u])) = -96;
   *((&llvm_cbe_ROM[3324u])) = 63;
   *((&llvm_cbe_ROM[3325u])) = 69;
   *((&llvm_cbe_ROM[3326u])) = 88;
@@ -5940,52 +5940,52 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[3354u])) = 82;
   *((&llvm_cbe_ROM[3355u])) = 84;
   *((&llvm_cbe_ROM[3356u])) = 13;
-  *((&llvm_cbe_ROM[3752u])) = (-126);
+  *((&llvm_cbe_ROM[3752u])) = -126;
   *((&llvm_cbe_ROM[3753u])) = 73;
   *((&llvm_cbe_ROM[3754u])) = 15;
-  *((&llvm_cbe_ROM[3755u])) = (-38);
-  *((&llvm_cbe_ROM[3756u])) = (-95);
-  *((&llvm_cbe_ROM[4517u])) = (-112);
+  *((&llvm_cbe_ROM[3755u])) = -38;
+  *((&llvm_cbe_ROM[3756u])) = -95;
+  *((&llvm_cbe_ROM[4517u])) = -112;
   *((&llvm_cbe_ROM[4518u])) = 128u;
   *((&llvm_cbe_ROM[4522u])) = 32;
-  *((&llvm_cbe_ROM[4523u])) = (-65);
-  *((&llvm_cbe_ROM[4524u])) = (-79);
-  *((&llvm_cbe_ROM[4525u])) = (-91);
+  *((&llvm_cbe_ROM[4523u])) = -65;
+  *((&llvm_cbe_ROM[4524u])) = -79;
+  *((&llvm_cbe_ROM[4525u])) = -91;
   *((&llvm_cbe_ROM[4526u])) = 100;
-  *((&llvm_cbe_ROM[4527u])) = (-92);
+  *((&llvm_cbe_ROM[4527u])) = -92;
   *((&llvm_cbe_ROM[4528u])) = 101;
   *((&llvm_cbe_ROM[4529u])) = 96;
-  *((&llvm_cbe_ROM[6588u])) = (-127);
+  *((&llvm_cbe_ROM[6588u])) = -127;
   *((&llvm_cbe_ROM[6593u])) = 3;
   *((&llvm_cbe_ROM[6594u])) = 127;
   *((&llvm_cbe_ROM[6595u])) = 94;
   *((&llvm_cbe_ROM[6596u])) = 86;
-  *((&llvm_cbe_ROM[6597u])) = (-53);
+  *((&llvm_cbe_ROM[6597u])) = -53;
   *((&llvm_cbe_ROM[6598u])) = 121;
   *((&llvm_cbe_ROM[6599u])) = 128u;
   *((&llvm_cbe_ROM[6600u])) = 19;
-  *((&llvm_cbe_ROM[6601u])) = (-101);
+  *((&llvm_cbe_ROM[6601u])) = -101;
   *((&llvm_cbe_ROM[6602u])) = 11;
   *((&llvm_cbe_ROM[6603u])) = 100;
   *((&llvm_cbe_ROM[6604u])) = 128u;
   *((&llvm_cbe_ROM[6605u])) = 118;
   *((&llvm_cbe_ROM[6606u])) = 56;
-  *((&llvm_cbe_ROM[6607u])) = (-109);
+  *((&llvm_cbe_ROM[6607u])) = -109;
   *((&llvm_cbe_ROM[6608u])) = 22;
-  *((&llvm_cbe_ROM[6609u])) = (-126);
+  *((&llvm_cbe_ROM[6609u])) = -126;
   *((&llvm_cbe_ROM[6610u])) = 56;
-  *((&llvm_cbe_ROM[6611u])) = (-86);
+  *((&llvm_cbe_ROM[6611u])) = -86;
   *((&llvm_cbe_ROM[6612u])) = 59;
   *((&llvm_cbe_ROM[6613u])) = 32;
   *((&llvm_cbe_ROM[6614u])) = 128u;
   *((&llvm_cbe_ROM[6615u])) = 53;
   *((&llvm_cbe_ROM[6616u])) = 4;
-  *((&llvm_cbe_ROM[6617u])) = (-13);
+  *((&llvm_cbe_ROM[6617u])) = -13;
   *((&llvm_cbe_ROM[6618u])) = 52;
-  *((&llvm_cbe_ROM[6619u])) = (-127);
+  *((&llvm_cbe_ROM[6619u])) = -127;
   *((&llvm_cbe_ROM[6620u])) = 53;
   *((&llvm_cbe_ROM[6621u])) = 4;
-  *((&llvm_cbe_ROM[6622u])) = (-13);
+  *((&llvm_cbe_ROM[6622u])) = -13;
   *((&llvm_cbe_ROM[6623u])) = 52;
   *((&llvm_cbe_ROM[6624u])) = 128u;
   *((&llvm_cbe_ROM[6625u])) = 128u;
@@ -5993,71 +5993,71 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[6630u])) = 49;
   *((&llvm_cbe_ROM[6631u])) = 114;
   *((&llvm_cbe_ROM[6632u])) = 23;
-  *((&llvm_cbe_ROM[6633u])) = (-8);
-  *((&llvm_cbe_ROM[6905u])) = (-124);
+  *((&llvm_cbe_ROM[6633u])) = -8;
+  *((&llvm_cbe_ROM[6905u])) = -124;
   *((&llvm_cbe_ROM[6906u])) = 32;
-  *((&llvm_cbe_ROM[7603u])) = (-101);
+  *((&llvm_cbe_ROM[7603u])) = -101;
   *((&llvm_cbe_ROM[7604u])) = 62;
-  *((&llvm_cbe_ROM[7605u])) = (-68);
+  *((&llvm_cbe_ROM[7605u])) = -68;
   *((&llvm_cbe_ROM[7606u])) = 31;
-  *((&llvm_cbe_ROM[7607u])) = (-3);
-  *((&llvm_cbe_ROM[7608u])) = (-98);
+  *((&llvm_cbe_ROM[7607u])) = -3;
+  *((&llvm_cbe_ROM[7608u])) = -98;
   *((&llvm_cbe_ROM[7609u])) = 110;
   *((&llvm_cbe_ROM[7610u])) = 107;
   *((&llvm_cbe_ROM[7611u])) = 39;
-  *((&llvm_cbe_ROM[7612u])) = (-3);
-  *((&llvm_cbe_ROM[7613u])) = (-98);
+  *((&llvm_cbe_ROM[7612u])) = -3;
+  *((&llvm_cbe_ROM[7613u])) = -98;
   *((&llvm_cbe_ROM[7614u])) = 110;
   *((&llvm_cbe_ROM[7615u])) = 107;
   *((&llvm_cbe_ROM[7616u])) = 40;
   *((&llvm_cbe_ROM[7953u])) = 128u;
-  *((&llvm_cbe_ROM[7958u])) = (-6);
+  *((&llvm_cbe_ROM[7958u])) = -6;
   *((&llvm_cbe_ROM[7959u])) = 10;
   *((&llvm_cbe_ROM[7960u])) = 31;
-  *((&llvm_cbe_ROM[7963u])) = (-104);
-  *((&llvm_cbe_ROM[7964u])) = (-106);
+  *((&llvm_cbe_ROM[7963u])) = -104;
+  *((&llvm_cbe_ROM[7964u])) = -106;
   *((&llvm_cbe_ROM[7965u])) = 128u;
-  *((&llvm_cbe_ROM[7966u])) = (-1);
-  *((&llvm_cbe_ROM[7967u])) = (-16);
-  *((&llvm_cbe_ROM[7968u])) = (-67);
-  *((&llvm_cbe_ROM[7969u])) = (-64);
+  *((&llvm_cbe_ROM[7966u])) = -1;
+  *((&llvm_cbe_ROM[7967u])) = -16;
+  *((&llvm_cbe_ROM[7968u])) = -67;
+  *((&llvm_cbe_ROM[7969u])) = -64;
   *((&llvm_cbe_ROM[7971u])) = 1;
-  *((&llvm_cbe_ROM[7972u])) = (-122);
-  *((&llvm_cbe_ROM[7973u])) = (-96);
-  *((&llvm_cbe_ROM[7974u])) = (-1);
-  *((&llvm_cbe_ROM[7975u])) = (-1);
-  *((&llvm_cbe_ROM[7976u])) = (-40);
-  *((&llvm_cbe_ROM[7977u])) = (-16);
+  *((&llvm_cbe_ROM[7972u])) = -122;
+  *((&llvm_cbe_ROM[7973u])) = -96;
+  *((&llvm_cbe_ROM[7974u])) = -1;
+  *((&llvm_cbe_ROM[7975u])) = -1;
+  *((&llvm_cbe_ROM[7976u])) = -40;
+  *((&llvm_cbe_ROM[7977u])) = -16;
   *((&llvm_cbe_ROM[7980u])) = 3;
-  *((&llvm_cbe_ROM[7981u])) = (-24);
-  *((&llvm_cbe_ROM[7982u])) = (-1);
-  *((&llvm_cbe_ROM[7983u])) = (-1);
-  *((&llvm_cbe_ROM[7984u])) = (-1);
-  *((&llvm_cbe_ROM[7985u])) = (-100);
+  *((&llvm_cbe_ROM[7981u])) = -24;
+  *((&llvm_cbe_ROM[7982u])) = -1;
+  *((&llvm_cbe_ROM[7983u])) = -1;
+  *((&llvm_cbe_ROM[7984u])) = -1;
+  *((&llvm_cbe_ROM[7985u])) = -100;
   *((&llvm_cbe_ROM[7989u])) = 10;
-  ltmp_1_1 = memset(((&llvm_cbe_ROM[7990u])), (((-1))), 5ull);
-  *((&llvm_cbe_ROM[7995u])) = (-33);
+  ltmp_1_1 = memset(((&llvm_cbe_ROM[7990u])), ((-1)), 5ull);
+  *((&llvm_cbe_ROM[7995u])) = -33;
   *((&llvm_cbe_ROM[7996u])) = 10;
   *((&llvm_cbe_ROM[7997u])) = 128u;
   *((&llvm_cbe_ROM[7999u])) = 3;
   *((&llvm_cbe_ROM[8000u])) = 75;
-  *((&llvm_cbe_ROM[8001u])) = (-64);
-  *((&llvm_cbe_ROM[8002u])) = (-1);
-  *((&llvm_cbe_ROM[8003u])) = (-1);
+  *((&llvm_cbe_ROM[8001u])) = -64;
+  *((&llvm_cbe_ROM[8002u])) = -1;
+  *((&llvm_cbe_ROM[8003u])) = -1;
   *((&llvm_cbe_ROM[8004u])) = 115;
   *((&llvm_cbe_ROM[8005u])) = 96;
   *((&llvm_cbe_ROM[8008u])) = 14;
   *((&llvm_cbe_ROM[8009u])) = 16;
-  *((&llvm_cbe_ROM[8010u])) = (-1);
-  *((&llvm_cbe_ROM[8011u])) = (-1);
-  *((&llvm_cbe_ROM[8012u])) = (-3);
-  *((&llvm_cbe_ROM[8013u])) = (-88);
+  *((&llvm_cbe_ROM[8010u])) = -1;
+  *((&llvm_cbe_ROM[8011u])) = -1;
+  *((&llvm_cbe_ROM[8012u])) = -3;
+  *((&llvm_cbe_ROM[8013u])) = -88;
   *((&llvm_cbe_ROM[8017u])) = 60;
-  *((&llvm_cbe_ROM[8018u])) = (-20);
-  ltmp_2_1 = memset(((&llvm_cbe_ROM[8019u])), (((-86))), 30ull);
-  *((&llvm_cbe_ROM[8127u])) = (-127);
+  *((&llvm_cbe_ROM[8018u])) = -20;
+  ltmp_2_1 = memset(((&llvm_cbe_ROM[8019u])), ((-86)), 30ull);
+  *((&llvm_cbe_ROM[8127u])) = -127;
   *((&llvm_cbe_ROM[8128u])) = 56;
-  *((&llvm_cbe_ROM[8129u])) = (-86);
+  *((&llvm_cbe_ROM[8129u])) = -86;
   *((&llvm_cbe_ROM[8130u])) = 59;
   *((&llvm_cbe_ROM[8131u])) = 41;
   *((&llvm_cbe_ROM[8132u])) = 7;
@@ -6069,16 +6069,16 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[8138u])) = 116;
   *((&llvm_cbe_ROM[8139u])) = 22;
   *((&llvm_cbe_ROM[8140u])) = 126;
-  *((&llvm_cbe_ROM[8141u])) = (-77);
+  *((&llvm_cbe_ROM[8141u])) = -77;
   *((&llvm_cbe_ROM[8142u])) = 27;
   *((&llvm_cbe_ROM[8143u])) = 119;
   *((&llvm_cbe_ROM[8144u])) = 47;
-  *((&llvm_cbe_ROM[8145u])) = (-18);
-  *((&llvm_cbe_ROM[8146u])) = (-29);
-  *((&llvm_cbe_ROM[8147u])) = (-123);
+  *((&llvm_cbe_ROM[8145u])) = -18;
+  *((&llvm_cbe_ROM[8146u])) = -29;
+  *((&llvm_cbe_ROM[8147u])) = -123;
   *((&llvm_cbe_ROM[8148u])) = 122;
   *((&llvm_cbe_ROM[8149u])) = 29;
-  *((&llvm_cbe_ROM[8150u])) = (-124);
+  *((&llvm_cbe_ROM[8150u])) = -124;
   *((&llvm_cbe_ROM[8151u])) = 28;
   *((&llvm_cbe_ROM[8152u])) = 42;
   *((&llvm_cbe_ROM[8153u])) = 124;
@@ -6088,164 +6088,164 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[8157u])) = 10;
   *((&llvm_cbe_ROM[8158u])) = 126;
   *((&llvm_cbe_ROM[8159u])) = 117;
-  *((&llvm_cbe_ROM[8160u])) = (-3);
-  *((&llvm_cbe_ROM[8161u])) = (-25);
-  *((&llvm_cbe_ROM[8162u])) = (-58);
+  *((&llvm_cbe_ROM[8160u])) = -3;
+  *((&llvm_cbe_ROM[8161u])) = -25;
+  *((&llvm_cbe_ROM[8162u])) = -58;
   *((&llvm_cbe_ROM[8163u])) = 128u;
   *((&llvm_cbe_ROM[8164u])) = 49;
   *((&llvm_cbe_ROM[8165u])) = 114;
   *((&llvm_cbe_ROM[8166u])) = 24;
   *((&llvm_cbe_ROM[8167u])) = 16;
-  *((&llvm_cbe_ROM[8168u])) = (-127);
-  *((&llvm_cbe_ROM[16525u])) = (-104);
+  *((&llvm_cbe_ROM[8168u])) = -127;
+  *((&llvm_cbe_ROM[16525u])) = -104;
   *((&llvm_cbe_ROM[16526u])) = 53;
   *((&llvm_cbe_ROM[16527u])) = 68;
   *((&llvm_cbe_ROM[16528u])) = 122;
   *((&llvm_cbe_ROM[16530u])) = 104;
   *((&llvm_cbe_ROM[16531u])) = 40;
-  *((&llvm_cbe_ROM[16532u])) = (-79);
+  *((&llvm_cbe_ROM[16532u])) = -79;
   *((&llvm_cbe_ROM[16533u])) = 70;
   *((&llvm_cbe_ROM[16711u])) = 8;
-  *((&llvm_cbe_ROM[16712u])) = (-115);
+  *((&llvm_cbe_ROM[16712u])) = -115;
   *((&llvm_cbe_ROM[16713u])) = 12;
   *((&llvm_cbe_ROM[16714u])) = 3;
-  *((&llvm_cbe_ROM[16715u])) = (-114);
+  *((&llvm_cbe_ROM[16715u])) = -114;
   *((&llvm_cbe_ROM[16716u])) = 13;
   *((&llvm_cbe_ROM[16717u])) = 3;
-  *((&llvm_cbe_ROM[16718u])) = (-116);
+  *((&llvm_cbe_ROM[16718u])) = -116;
   *((&llvm_cbe_ROM[16719u])) = 14;
   *((&llvm_cbe_ROM[16720u])) = 3;
   *((&llvm_cbe_ROM[16721u])) = 104;
-  *((&llvm_cbe_ROM[16722u])) = (-115);
+  *((&llvm_cbe_ROM[16722u])) = -115;
   *((&llvm_cbe_ROM[16723u])) = 15;
   *((&llvm_cbe_ROM[16724u])) = 3;
   *((&llvm_cbe_ROM[16725u])) = 96;
-  *((&llvm_cbe_ROM[17120u])) = (-127);
+  *((&llvm_cbe_ROM[17120u])) = -127;
   *((&llvm_cbe_ROM[17121u])) = 73;
   *((&llvm_cbe_ROM[17122u])) = 15;
-  *((&llvm_cbe_ROM[17123u])) = (-38);
-  *((&llvm_cbe_ROM[17124u])) = (-94);
-  *((&llvm_cbe_ROM[17125u])) = (-125);
+  *((&llvm_cbe_ROM[17123u])) = -38;
+  *((&llvm_cbe_ROM[17124u])) = -94;
+  *((&llvm_cbe_ROM[17125u])) = -125;
   *((&llvm_cbe_ROM[17126u])) = 73;
   *((&llvm_cbe_ROM[17127u])) = 15;
-  *((&llvm_cbe_ROM[17128u])) = (-38);
-  *((&llvm_cbe_ROM[17129u])) = (-94);
+  *((&llvm_cbe_ROM[17128u])) = -38;
+  *((&llvm_cbe_ROM[17129u])) = -94;
   *((&llvm_cbe_ROM[17130u])) = 127;
   *((&llvm_cbe_ROM[17135u])) = 5;
-  *((&llvm_cbe_ROM[17136u])) = (-124);
-  *((&llvm_cbe_ROM[17137u])) = (-26);
+  *((&llvm_cbe_ROM[17136u])) = -124;
+  *((&llvm_cbe_ROM[17137u])) = -26;
   *((&llvm_cbe_ROM[17138u])) = 26;
   *((&llvm_cbe_ROM[17139u])) = 45;
   *((&llvm_cbe_ROM[17140u])) = 27;
-  *((&llvm_cbe_ROM[17141u])) = (-122);
+  *((&llvm_cbe_ROM[17141u])) = -122;
   *((&llvm_cbe_ROM[17142u])) = 40;
   *((&llvm_cbe_ROM[17143u])) = 7;
-  *((&llvm_cbe_ROM[17144u])) = (-5);
-  *((&llvm_cbe_ROM[17145u])) = (-8);
-  *((&llvm_cbe_ROM[17146u])) = (-121);
-  *((&llvm_cbe_ROM[17147u])) = (-103);
+  *((&llvm_cbe_ROM[17144u])) = -5;
+  *((&llvm_cbe_ROM[17145u])) = -8;
+  *((&llvm_cbe_ROM[17146u])) = -121;
+  *((&llvm_cbe_ROM[17147u])) = -103;
   *((&llvm_cbe_ROM[17148u])) = 104;
-  *((&llvm_cbe_ROM[17149u])) = (-119);
+  *((&llvm_cbe_ROM[17149u])) = -119;
   *((&llvm_cbe_ROM[17150u])) = 1;
-  *((&llvm_cbe_ROM[17151u])) = (-121);
+  *((&llvm_cbe_ROM[17151u])) = -121;
   *((&llvm_cbe_ROM[17152u])) = 35;
   *((&llvm_cbe_ROM[17153u])) = 53;
-  *((&llvm_cbe_ROM[17154u])) = (-33);
-  *((&llvm_cbe_ROM[17155u])) = (-31);
-  *((&llvm_cbe_ROM[17156u])) = (-122);
-  *((&llvm_cbe_ROM[17157u])) = (-91);
+  *((&llvm_cbe_ROM[17154u])) = -33;
+  *((&llvm_cbe_ROM[17155u])) = -31;
+  *((&llvm_cbe_ROM[17156u])) = -122;
+  *((&llvm_cbe_ROM[17157u])) = -91;
   *((&llvm_cbe_ROM[17158u])) = 93;
-  *((&llvm_cbe_ROM[17159u])) = (-25);
+  *((&llvm_cbe_ROM[17159u])) = -25;
   *((&llvm_cbe_ROM[17160u])) = 40;
-  *((&llvm_cbe_ROM[17161u])) = (-125);
+  *((&llvm_cbe_ROM[17161u])) = -125;
   *((&llvm_cbe_ROM[17162u])) = 73;
   *((&llvm_cbe_ROM[17163u])) = 15;
-  *((&llvm_cbe_ROM[17164u])) = (-38);
-  *((&llvm_cbe_ROM[17165u])) = (-94);
+  *((&llvm_cbe_ROM[17164u])) = -38;
+  *((&llvm_cbe_ROM[17165u])) = -94;
   *((&llvm_cbe_ROM[17214u])) = 11;
   *((&llvm_cbe_ROM[17215u])) = 118;
-  *((&llvm_cbe_ROM[17216u])) = (-77);
-  *((&llvm_cbe_ROM[17217u])) = (-125);
-  *((&llvm_cbe_ROM[17218u])) = (-67);
-  *((&llvm_cbe_ROM[17219u])) = (-45);
+  *((&llvm_cbe_ROM[17216u])) = -77;
+  *((&llvm_cbe_ROM[17217u])) = -125;
+  *((&llvm_cbe_ROM[17218u])) = -67;
+  *((&llvm_cbe_ROM[17219u])) = -45;
   *((&llvm_cbe_ROM[17220u])) = 121;
   *((&llvm_cbe_ROM[17221u])) = 30;
-  *((&llvm_cbe_ROM[17222u])) = (-12);
-  *((&llvm_cbe_ROM[17223u])) = (-90);
-  *((&llvm_cbe_ROM[17224u])) = (-11);
+  *((&llvm_cbe_ROM[17222u])) = -12;
+  *((&llvm_cbe_ROM[17223u])) = -90;
+  *((&llvm_cbe_ROM[17224u])) = -11;
   *((&llvm_cbe_ROM[17225u])) = 123;
-  *((&llvm_cbe_ROM[17226u])) = (-125);
-  *((&llvm_cbe_ROM[17227u])) = (-4);
-  *((&llvm_cbe_ROM[17228u])) = (-80);
+  *((&llvm_cbe_ROM[17226u])) = -125;
+  *((&llvm_cbe_ROM[17227u])) = -4;
+  *((&llvm_cbe_ROM[17228u])) = -80;
   *((&llvm_cbe_ROM[17229u])) = 16;
   *((&llvm_cbe_ROM[17230u])) = 124;
   *((&llvm_cbe_ROM[17231u])) = 12;
   *((&llvm_cbe_ROM[17232u])) = 31;
   *((&llvm_cbe_ROM[17233u])) = 103;
-  *((&llvm_cbe_ROM[17234u])) = (-54);
+  *((&llvm_cbe_ROM[17234u])) = -54;
   *((&llvm_cbe_ROM[17235u])) = 124;
-  *((&llvm_cbe_ROM[17236u])) = (-34);
+  *((&llvm_cbe_ROM[17236u])) = -34;
   *((&llvm_cbe_ROM[17237u])) = 83;
-  *((&llvm_cbe_ROM[17238u])) = (-53);
-  *((&llvm_cbe_ROM[17239u])) = (-63);
+  *((&llvm_cbe_ROM[17238u])) = -53;
+  *((&llvm_cbe_ROM[17239u])) = -63;
   *((&llvm_cbe_ROM[17240u])) = 125;
   *((&llvm_cbe_ROM[17241u])) = 20;
   *((&llvm_cbe_ROM[17242u])) = 100;
   *((&llvm_cbe_ROM[17243u])) = 112;
   *((&llvm_cbe_ROM[17244u])) = 76;
   *((&llvm_cbe_ROM[17245u])) = 125;
-  *((&llvm_cbe_ROM[17246u])) = (-73);
-  *((&llvm_cbe_ROM[17247u])) = (-22);
+  *((&llvm_cbe_ROM[17246u])) = -73;
+  *((&llvm_cbe_ROM[17247u])) = -22;
   *((&llvm_cbe_ROM[17248u])) = 81;
   *((&llvm_cbe_ROM[17249u])) = 122;
   *((&llvm_cbe_ROM[17250u])) = 125;
   *((&llvm_cbe_ROM[17251u])) = 99;
   *((&llvm_cbe_ROM[17252u])) = 48;
-  *((&llvm_cbe_ROM[17253u])) = (-120);
+  *((&llvm_cbe_ROM[17253u])) = -120;
   *((&llvm_cbe_ROM[17254u])) = 126;
   *((&llvm_cbe_ROM[17255u])) = 126;
-  *((&llvm_cbe_ROM[17256u])) = (-110);
+  *((&llvm_cbe_ROM[17256u])) = -110;
   *((&llvm_cbe_ROM[17257u])) = 68;
-  *((&llvm_cbe_ROM[17258u])) = (-103);
+  *((&llvm_cbe_ROM[17258u])) = -103;
   *((&llvm_cbe_ROM[17259u])) = 58;
   *((&llvm_cbe_ROM[17260u])) = 126;
   *((&llvm_cbe_ROM[17261u])) = 76;
-  *((&llvm_cbe_ROM[17262u])) = (-52);
-  *((&llvm_cbe_ROM[17263u])) = (-111);
-  *((&llvm_cbe_ROM[17264u])) = (-57);
+  *((&llvm_cbe_ROM[17262u])) = -52;
+  *((&llvm_cbe_ROM[17263u])) = -111;
+  *((&llvm_cbe_ROM[17264u])) = -57;
   *((&llvm_cbe_ROM[17265u])) = 127;
-  *((&llvm_cbe_ROM[17266u])) = (-86);
-  *((&llvm_cbe_ROM[17267u])) = (-86);
-  *((&llvm_cbe_ROM[17268u])) = (-86);
+  *((&llvm_cbe_ROM[17266u])) = -86;
+  *((&llvm_cbe_ROM[17267u])) = -86;
+  *((&llvm_cbe_ROM[17268u])) = -86;
   *((&llvm_cbe_ROM[17269u])) = 19;
-  *((&llvm_cbe_ROM[17270u])) = (-127);
+  *((&llvm_cbe_ROM[17270u])) = -127;
   *((&llvm_cbe_ROM[17275u])) = 32;
-  *((&llvm_cbe_ROM[17276u])) = (-52);
-  *((&llvm_cbe_ROM[17277u])) = (-1);
-  *((&llvm_cbe_ROM[17278u])) = (-87);
-  *((&llvm_cbe_ROM[17280u])) = (-123);
+  *((&llvm_cbe_ROM[17276u])) = -52;
+  *((&llvm_cbe_ROM[17277u])) = -1;
+  *((&llvm_cbe_ROM[17278u])) = -87;
+  *((&llvm_cbe_ROM[17280u])) = -123;
   *((&llvm_cbe_ROM[17281u])) = 19;
   *((&llvm_cbe_ROM[17282u])) = 32;
   *((&llvm_cbe_ROM[17283u])) = 122;
-  *((&llvm_cbe_ROM[17284u])) = (-90);
+  *((&llvm_cbe_ROM[17284u])) = -90;
   *((&llvm_cbe_ROM[17285u])) = 88;
   *((&llvm_cbe_ROM[17338u])) = 128u;
   *((&llvm_cbe_ROM[17339u])) = 79;
-  *((&llvm_cbe_ROM[17340u])) = (-57);
+  *((&llvm_cbe_ROM[17340u])) = -57;
   *((&llvm_cbe_ROM[17341u])) = 82;
   *((&llvm_cbe_ROM[17342u])) = 88;
-  *((&llvm_cbe_ROM[17479u])) = (-117);
-  *((&llvm_cbe_ROM[17480u])) = (-29);
-  *((&llvm_cbe_ROM[17481u])) = (-125);
-  *((&llvm_cbe_ROM[17482u])) = (-92);
+  *((&llvm_cbe_ROM[17479u])) = -117;
+  *((&llvm_cbe_ROM[17480u])) = -29;
+  *((&llvm_cbe_ROM[17481u])) = -125;
+  *((&llvm_cbe_ROM[17482u])) = -92;
   *((&llvm_cbe_ROM[17483u])) = 124;
-  *((&llvm_cbe_ROM[17484u])) = (-91);
+  *((&llvm_cbe_ROM[17484u])) = -91;
   *((&llvm_cbe_ROM[17485u])) = 26;
-  *((&llvm_cbe_ROM[17486u])) = (-89);
-  *((&llvm_cbe_ROM[17487u])) = (-28);
-  *((&llvm_cbe_ROM[17488u])) = (-89);
-  *((&llvm_cbe_ROM[17489u])) = (-122);
-  *((&llvm_cbe_ROM[17490u])) = (-82);
+  *((&llvm_cbe_ROM[17486u])) = -89;
+  *((&llvm_cbe_ROM[17487u])) = -28;
+  *((&llvm_cbe_ROM[17488u])) = -89;
+  *((&llvm_cbe_ROM[17489u])) = -122;
+  *((&llvm_cbe_ROM[17490u])) = -82;
   *((&llvm_cbe_ROM[17504u])) = 32;
   *((&llvm_cbe_ROM[17505u])) = 66;
   *((&llvm_cbe_ROM[17506u])) = 65;
@@ -6264,7 +6264,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[17519u])) = 69;
   *((&llvm_cbe_ROM[17520u])) = 69;
   *((&llvm_cbe_ROM[17521u])) = 13;
-  *((&llvm_cbe_ROM[17523u])) = (-109);
+  *((&llvm_cbe_ROM[17523u])) = -109;
   *((&llvm_cbe_ROM[17524u])) = 13;
   ((struct __attribute__ ((packed, aligned(1))) {u32 data; } *)(((u32 *)((&llvm_cbe_ROM[17525u])))))->data = 538976288u;
   ((struct __attribute__ ((packed, aligned(1))) {u32 data; } *)(((u32 *)((&llvm_cbe_ROM[17529u])))))->data = 707406378u;
@@ -6311,7 +6311,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[17576u])) = 77;
   *((&llvm_cbe_ROM[17577u])) = 32;
   *((&llvm_cbe_ROM[17578u])) = 32;
-  *((&llvm_cbe_ROM[17580u])) = (-127);
+  *((&llvm_cbe_ROM[17580u])) = -127;
   llvm_cbe_tmp1845 = memcpy(((&RAM[40960u])), llvm_cbe_ROM499, 17591u);
   PC = init_os(llvm_cbe_argc, llvm_cbe_argv);
   switch (PC) { /* different entry points */
@@ -6341,8 +6341,8 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   do {     /* Syntactic loop 'lE394' to make GCC happy */
 llvm_cbe_lE394:
   v4858 = S;
-  *((&RAM[((v4858 | 256u))])) = (-29);
-  *((&RAM[(((((((v4858 - 1))))) | 256u))])) = (-106);
+  *((&RAM[((v4858 | 256u))])) = -29;
+  *((&RAM[(((((((v4858 - 1))))) | 256u))])) = -106;
   S = (((v4858 - 2)));
   X = 11;
   Z = 0;
@@ -7555,7 +7555,7 @@ llvm_cbe_lA38A:
 
 llvm_cbe_lA749:
   v737 = S;
-  *((&RAM[((v737 | 256u))])) = (-89);
+  *((&RAM[((v737 | 256u))])) = -89;
   *((&RAM[(((((((v737 - 1))))) | 256u))])) = 75;
   v738 = ((v737 - 2));
   S = v738;
@@ -7563,13 +7563,13 @@ llvm_cbe_lA749:
   goto llvm_cbe_lA38A;
 
 llvm_cbe_bb9908:
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
-  *((&RAM[74u])) = (-1);
+  *((&RAM[74u])) = -1;
   v939 = S;
-  *((&RAM[((v939 | 256u))])) = (-88);
-  *((&RAM[(((((((v939 - 1))))) | 256u))])) = (-38);
+  *((&RAM[((v939 | 256u))])) = -88;
+  *((&RAM[(((((((v939 - 1))))) | 256u))])) = -38;
   v940 = ((v939 - 2));
   S = v940;
   v16 = v940;   /* for PHI node */
@@ -7589,7 +7589,7 @@ llvm_cbe_lAD27:
   v1542 = Y;
   *((&RAM[74u])) = v1542;
   v1543 = S;
-  *((&RAM[((v1543 | 256u))])) = (-83);
+  *((&RAM[((v1543 | 256u))])) = -83;
   *((&RAM[(((((((v1543 - 1))))) | 256u))])) = 45;
   v1544 = ((v1543 - 2));
   S = v1544;
@@ -7739,7 +7739,7 @@ llvm_cbe_bb29046:
   *((&RAM[88u])) = v2920;
   *((&RAM[89u])) = v2921;
   v2922 = S;
-  *((&RAM[((v2922 | 256u))])) = (-74);
+  *((&RAM[((v2922 | 256u))])) = -74;
   *((&RAM[(((((((v2922 - 1))))) | 256u))])) = 42;
   S = (((v2922 - 2)));
   goto llvm_cbe_lA3BF;
@@ -7954,7 +7954,7 @@ llvm_cbe_bb3008:
   X = v172;
   Z = (((v170 == 1)));
   N = (((((v172 >> 7)))));
-  *((&RAM[(((((((v169 - 1))))) | 256u))])) = (-92);
+  *((&RAM[(((((((v169 - 1))))) | 256u))])) = -92;
   *((&RAM[(((((((v169 - 2))))) | 256u))])) = 30;
   S = (((v169 - 3)));
   goto llvm_cbe_lB526;
@@ -8016,8 +8016,8 @@ llvm_cbe_lA408:
 
 llvm_cbe_lA3B8:
   v63 = v64;
-  *((&RAM[(((((((v63 - 1))))) | 256u))])) = (-93);
-  *((&RAM[(((((((v63 - 2))))) | 256u))])) = (-70);
+  *((&RAM[(((((((v63 - 1))))) | 256u))])) = -93;
+  *((&RAM[(((((((v63 - 2))))) | 256u))])) = -70;
   v65 = ((v63 - 3));
   S = v65;
   v152 = v65;   /* for PHI node */
@@ -8027,7 +8027,7 @@ llvm_cbe_lA508:
   v340 = v341;
   *((&RAM[89u])) = v340;
   v342 = S;
-  *((&RAM[((v342 | 256u))])) = (-91);
+  *((&RAM[((v342 | 256u))])) = -91;
   v343 = ((v342 - 1));
   S = v343;
   *((&RAM[((v343 | 256u))])) = 12;
@@ -8104,7 +8104,7 @@ llvm_cbe_lB159:
   v2138 = v2139;
   *((&RAM[88u])) = v2135;
   *((&RAM[89u])) = v2138;
-  *((&RAM[((v2104 | 256u))])) = (-79);
+  *((&RAM[((v2104 | 256u))])) = -79;
   v2140 = ((v2104 - 1));
   S = v2140;
   *((&RAM[((v2140 | 256u))])) = 95;
@@ -8335,7 +8335,7 @@ llvm_cbe_lB0DB:
   N = (((((v2050 >> 7)))));
   v2051 = ((v2050 - 40));
   v2052 = v2051;
-  v2053 = ((((((((v2052 ^ v2050) & 128u) == 0u) | (((s8 )v2050) > ((s8 )(-1))))&1))) ? 0 : 1);
+  v2053 = ((((((((v2052 ^ v2050) & 128u) == 0u) | (((s8 )v2050) > ((s8 )-1)))&1))) ? 0 : 1);
   V = v2053;
   v2054 = v2051;
   A = v2054;
@@ -8440,7 +8440,7 @@ llvm_cbe_bb21311:
 
 llvm_cbe_lB264:
   v2283 = S;
-  *((&RAM[((v2283 | 256u))])) = (-78);
+  *((&RAM[((v2283 | 256u))])) = -78;
   *((&RAM[(((((((v2283 - 1))))) | 256u))])) = 102;
   v2284 = ((v2283 - 2));
   S = v2284;
@@ -8449,8 +8449,8 @@ llvm_cbe_lB264:
 
 llvm_cbe_lB2B9:
   v2350 = S;
-  *((&RAM[((v2350 | 256u))])) = (-78);
-  *((&RAM[(((((((v2350 - 1))))) | 256u))])) = (-69);
+  *((&RAM[((v2350 | 256u))])) = -78;
+  *((&RAM[(((((((v2350 - 1))))) | 256u))])) = -69;
   v2351 = ((v2350 - 2));
   S = v2351;
   v152 = v2351;   /* for PHI node */
@@ -8567,15 +8567,15 @@ llvm_cbe_bb23610:
 
 llvm_cbe_lE39A:
   v4861 = S;
-  *((&RAM[((v4861 | 256u))])) = (-29);
-  *((&RAM[(((((((v4861 - 1))))) | 256u))])) = (-100);
+  *((&RAM[((v4861 | 256u))])) = -29;
+  *((&RAM[(((((((v4861 - 1))))) | 256u))])) = -100;
   v4862 = *((&RAM[43u]));
   A = v4862;
   v4863 = *((&RAM[44u]));
   Y = v4863;
   Z = (((v4863 == 0)));
   N = (((((v4863 >> 7)))));
-  *((&RAM[(((((((v4861 - 2))))) | 256u))])) = (-28);
+  *((&RAM[(((((((v4861 - 2))))) | 256u))])) = -28;
   *((&RAM[(((((((v4861 - 3))))) | 256u))])) = 40;
   v4864 = ((v4861 - 4));
   S = v4864;
@@ -8600,8 +8600,8 @@ llvm_cbe_bb2910:
 
 llvm_cbe_lB384:
   v2539 = S;
-  *((&RAM[((v2539 | 256u))])) = (-77);
-  *((&RAM[(((((((v2539 - 1))))) | 256u))])) = (-122);
+  *((&RAM[((v2539 | 256u))])) = -77;
+  *((&RAM[(((((((v2539 - 1))))) | 256u))])) = -122;
   S = (((v2539 - 2)));
   goto llvm_cbe_lB526;
 
@@ -8617,7 +8617,7 @@ llvm_cbe_lB37D:
   }
 
 llvm_cbe_bb27354:
-  *((&RAM[((v2726 | 256u))])) = (-75);
+  *((&RAM[((v2726 | 256u))])) = -75;
   *((&RAM[(((((((v2724 - 2))))) | 256u))])) = 30;
   S = (((v2724 - 3)));
   goto llvm_cbe_lB526;
@@ -8681,7 +8681,7 @@ llvm_cbe_lB4F6:
   *((&RAM[((v2724 | 256u))])) = v2722;
   v2726 = ((v2724 - 1));
   S = v2726;
-  v2727 = ((v2722 ^ (-1)));
+  v2727 = ((v2722 ^ -1));
   A = v2727;
   Z = (((v2722 == 0xff)));
   N = (((((v2727 >> 7)))));
@@ -8697,7 +8697,7 @@ llvm_cbe_lB4F6:
 llvm_cbe_lB47D:
   v2655 = v2656;
   v2657 = S;
-  *((&RAM[((v2657 | 256u))])) = (-76);
+  *((&RAM[((v2657 | 256u))])) = -76;
   *((&RAM[(((((((v2657 - 1))))) | 256u))])) = 127;
   v2658 = ((v2657 - 2));
   S = v2658;
@@ -8730,7 +8730,7 @@ llvm_cbe_lAA52:
   A = v1184;
   Z = (((v1184 == 0)));
   N = (((((v1184 >> 7)))));
-  *((&RAM[((v1117 | 256u))])) = (-86);
+  *((&RAM[((v1117 | 256u))])) = -86;
   *((&RAM[(((((((v1117 - 1))))) | 256u))])) = 88;
   S = (((v1117 - 2)));
   v2652 = v1184;   /* for PHI node */
@@ -8819,8 +8819,8 @@ llvm_cbe_lA9BF:
 
 llvm_cbe_lAC83:
   v1493 = S;
-  *((&RAM[((v1493 | 256u))])) = (-84);
-  *((&RAM[(((((((v1493 - 1))))) | 256u))])) = (-123);
+  *((&RAM[((v1493 | 256u))])) = -84;
+  *((&RAM[(((((((v1493 - 1))))) | 256u))])) = -123;
   v1494 = ((v1493 - 2));
   S = v1494;
   v1118 = v1494;   /* for PHI node */
@@ -8863,8 +8863,8 @@ llvm_cbe_lB4BF:
   Z = v2690;
   N = v2691;
   v2704 = S;
-  *((&RAM[((v2704 | 256u))])) = (-76);
-  *((&RAM[(((((((v2704 - 1))))) | 256u))])) = (-62);
+  *((&RAM[((v2704 | 256u))])) = -76;
+  *((&RAM[(((((((v2704 - 1))))) | 256u))])) = -62;
   S = (((v2704 - 2)));
   v2652 = v2673;   /* for PHI node */
   goto llvm_cbe_lB475;
@@ -8982,7 +8982,7 @@ llvm_cbe_lB48D:
   *((&RAM[112u])) = v2670;
   *((&RAM[98u])) = v2669;
   *((&RAM[99u])) = v2670;
-  Y = (-1);
+  Y = -1;
   Z = 0;
   N = 1;
   v2671 = (v2670 << 8u) | v2669;
@@ -8993,7 +8993,7 @@ llvm_cbe_lB48D:
 
 llvm_cbe_lAC7D:
   v1491 = S;
-  *((&RAM[((v1491 | 256u))])) = (-84);
+  *((&RAM[((v1491 | 256u))])) = -84;
   *((&RAM[(((((((v1491 - 1))))) | 256u))])) = 127;
   S = (((v1491 - 2)));
   goto llvm_cbe_lB48D;
@@ -9127,36 +9127,36 @@ llvm_cbe_lB487:
 
 llvm_cbe_lAABF:
   v1260 = S;
-  *((&RAM[((v1260 | 256u))])) = (-86);
-  *((&RAM[(((((((v1260 - 1))))) | 256u))])) = (-63);
+  *((&RAM[((v1260 | 256u))])) = -86;
+  *((&RAM[(((((((v1260 - 1))))) | 256u))])) = -63;
   S = (((v1260 - 2)));
   goto llvm_cbe_lB487;
 
 llvm_cbe_lAB1E:
   v1338 = S;
-  *((&RAM[((v1338 | 256u))])) = (-85);
+  *((&RAM[((v1338 | 256u))])) = -85;
   *((&RAM[(((((((v1338 - 1))))) | 256u))])) = 32;
   S = (((v1338 - 2)));
   goto llvm_cbe_lB487;
 
 llvm_cbe_lA469:
   v239 = S;
-  *((&RAM[((v239 | 256u))])) = (-92);
+  *((&RAM[((v239 | 256u))])) = -92;
   *((&RAM[(((((((v239 - 1))))) | 256u))])) = 107;
   S = (((v239 - 2)));
   goto llvm_cbe_lAB1E;
 
 llvm_cbe_lA465:
   A = 105;
-  Y = (-93);
+  Y = -93;
   Z = 0;
   N = 1;
   goto llvm_cbe_lA469;
 
 llvm_cbe_lA84B:
   v857 = v858;
-  A = (-127);
-  Y = (-93);
+  A = -127;
+  Y = -93;
   Z = 0;
   N = 1;
   if (v857 == 0) {
@@ -9279,14 +9279,14 @@ llvm_cbe_bb9073:
 
 llvm_cbe_bb3514:
   v242 = S;
-  *((&RAM[((v242 | 256u))])) = (-92);
+  *((&RAM[((v242 | 256u))])) = -92;
   *((&RAM[(((((((v242 - 1))))) | 256u))])) = 115;
   A = 113;
-  Y = (-93);
+  Y = -93;
   Z = 0;
   N = 1;
-  *((&RAM[(((((((v242 - 2))))) | 256u))])) = (-67);
-  *((&RAM[(((((((v242 - 3))))) | 256u))])) = (-56);
+  *((&RAM[(((((((v242 - 2))))) | 256u))])) = -67;
+  *((&RAM[(((((((v242 - 3))))) | 256u))])) = -56;
   S = (((v242 - 4)));
   goto llvm_cbe_lAB1E;
 
@@ -9304,11 +9304,11 @@ llvm_cbe_lA46C:
 
 llvm_cbe_lA474:
   A = 118;
-  Y = (-93);
+  Y = -93;
   Z = 0;
   N = 1;
   v243 = S;
-  *((&RAM[((v243 | 256u))])) = (-92);
+  *((&RAM[((v243 | 256u))])) = -92;
   *((&RAM[(((((((v243 - 1))))) | 256u))])) = 122;
   S = (((v243 - 2)));
   goto llvm_cbe_lAB1E;
@@ -9335,11 +9335,11 @@ llvm_cbe_lAB1C:
 
 llvm_cbe_lAB6B:
   A = 12;
-  Y = (-83);
+  Y = -83;
   Z = 0;
   N = 1;
   v1373 = S;
-  *((&RAM[((v1373 | 256u))])) = (-85);
+  *((&RAM[((v1373 | 256u))])) = -85;
   *((&RAM[(((((((v1373 - 1))))) | 256u))])) = 113;
   S = (((v1373 - 2)));
   goto llvm_cbe_lAB1E;
@@ -9389,8 +9389,8 @@ llvm_cbe_lAC94:
   }
 
 llvm_cbe_bb15275:
-  A = (-4);
-  Y = (-84);
+  A = -4;
+  Y = -84;
   Z = 0;
   N = 1;
   goto llvm_cbe_lAB1E;
@@ -9445,7 +9445,7 @@ llvm_cbe_lACB0:
 
 llvm_cbe_bb45401:
   A = 100;
-  Y = (-93);
+  Y = -93;
   Z = 0;
   N = 1;
   goto llvm_cbe_lAB1E;
@@ -9483,12 +9483,12 @@ llvm_cbe_bb45521:
   v4705 = Y;
   *((&RAM[46u])) = v4705;
   A = 118;
-  Y = (-93);
+  Y = -93;
   Z = 0;
   N = 1;
   v4706 = S;
-  *((&RAM[((v4706 | 256u))])) = (-31);
-  *((&RAM[(((((((v4706 - 1))))) | 256u))])) = (-79);
+  *((&RAM[((v4706 | 256u))])) = -31;
+  *((&RAM[(((((((v4706 - 1))))) | 256u))])) = -79;
   S = (((v4706 - 2)));
   goto llvm_cbe_lAB1E;
 
@@ -9508,7 +9508,7 @@ llvm_cbe_lE1A1:
 
 llvm_cbe_lE198:
   v4699 = A;
-  v4700 = ((v4699 & (-65)));
+  v4700 = ((v4699 & -65));
   A = v4700;
   Z = (((v4700 == 0)));
   N = (((((v4700 >> 7)))));
@@ -9520,30 +9520,30 @@ llvm_cbe_lE198:
 
 llvm_cbe_lE429:
   A = 115;
-  Y = (-28);
+  Y = -28;
   Z = 0;
   N = 1;
   v4886 = S;
-  *((&RAM[((v4886 | 256u))])) = (-28);
+  *((&RAM[((v4886 | 256u))])) = -28;
   *((&RAM[(((((((v4886 - 1))))) | 256u))])) = 47;
   S = (((v4886 - 2)));
   goto llvm_cbe_lAB1E;
 
 llvm_cbe_lE43D:
   A = 96;
-  Y = (-28);
+  Y = -28;
   Z = 0;
   N = 1;
   v4903 = S;
-  *((&RAM[((v4903 | 256u))])) = (-28);
+  *((&RAM[((v4903 | 256u))])) = -28;
   *((&RAM[(((((((v4903 - 1))))) | 256u))])) = 67;
   S = (((v4903 - 2)));
   goto llvm_cbe_lAB1E;
 
 llvm_cbe_lAEC6:
   v1788 = S;
-  *((&RAM[((v1788 | 256u))])) = (-82);
-  *((&RAM[(((((((v1788 - 1))))) | 256u))])) = (-56);
+  *((&RAM[((v1788 | 256u))])) = -82;
+  *((&RAM[(((((((v1788 - 1))))) | 256u))])) = -56;
   S = (((v1788 - 2)));
   goto llvm_cbe_lB487;
 
@@ -9587,8 +9587,8 @@ llvm_cbe_lAEBD:
 
 llvm_cbe_bb14049:
   v1415 = S;
-  *((&RAM[((v1415 | 256u))])) = (-85);
-  *((&RAM[(((((((v1415 - 1))))) | 256u))])) = (-59);
+  *((&RAM[((v1415 | 256u))])) = -85;
+  *((&RAM[(((((((v1415 - 1))))) | 256u))])) = -59;
   S = (((v1415 - 2)));
   v1779 = v1414;   /* for PHI node */
   goto llvm_cbe_lAEBD;
@@ -9691,7 +9691,7 @@ llvm_cbe_bb17736:
   goto llvm_cbe_lAEC6;
 
 llvm_cbe_lB46F:
-  A = (-1);
+  A = -1;
   Y = 0;
   Z = 1;
   N = 0;
@@ -9745,7 +9745,7 @@ llvm_cbe_bb26818:
   }
 
 llvm_cbe_lB65D:
-  *llvm_cbe_tmp29299 = (-74);
+  *llvm_cbe_tmp29299 = -74;
   *((&RAM[((v2938 | 256u))])) = 95;
   S = v2937;
   v2652 = v2950;   /* for PHI node */
@@ -9811,8 +9811,8 @@ llvm_cbe_lB6EF:
   A = 1;
   Z = 0;
   N = 0;
-  *((&RAM[(((((((v3075 - 1))))) | 256u))])) = (-74);
-  *((&RAM[(((((((v3075 - 2))))) | 256u))])) = (-11);
+  *((&RAM[(((((((v3075 - 1))))) | 256u))])) = -74;
+  *((&RAM[(((((((v3075 - 2))))) | 256u))])) = -11;
   S = (((v3075 - 3)));
   v2656 = 1;   /* for PHI node */
   goto llvm_cbe_lB47D;
@@ -9821,7 +9821,7 @@ llvm_cbe_lB70E:
   v3112 = v3113;
   v3114 = v3115;
   *((&RAM[((v3114 | 256u))])) = v3112;
-  *((&RAM[(((((((v3114 - 1))))) | 256u))])) = (-73);
+  *((&RAM[(((((((v3114 - 1))))) | 256u))])) = -73;
   *((&RAM[(((((((v3114 - 2))))) | 256u))])) = 17;
   S = (((v3114 - 3)));
   v2656 = v3112;   /* for PHI node */
@@ -9891,7 +9891,7 @@ llvm_cbe_bb30990:
   N = (((((v3146 >> 7)))));
   v3147 = ((((((((((v3143 >> 8u))))) & 1))) ^ 1));
   C = v3147;
-  v3148 = ((v3146 ^ (-1)));
+  v3148 = ((v3146 ^ -1));
   A = v3148;
   v3093 = v3140;   /* for PHI node */
   v3095 = v3139;   /* for PHI node */
@@ -9998,7 +9998,7 @@ llvm_cbe_bb31199:
   goto llvm_cbe_bb31200;
 
 llvm_cbe_bb31224:
-  v3172 = ((v3170 ^ (-1)));
+  v3172 = ((v3170 ^ -1));
   A = v3172;
   v3173 = *((&RAM[101u]));
   v3174 = ((v3172 - v3173));
@@ -10565,7 +10565,7 @@ llvm_cbe_lA753:
   A = 9;
   Z = 0;
   N = 0;
-  *((&RAM[(((((((v746 + 2))))) | 256u))])) = (-89);
+  *((&RAM[(((((((v746 + 2))))) | 256u))])) = -89;
   *((&RAM[(((((((v746 + 1))))) | 256u))])) = 89;
   S = v746;
   v133 = v746;   /* for PHI node */
@@ -10622,8 +10622,8 @@ llvm_cbe_lA883:
   Z = 0;
   N = 0;
   v882 = S;
-  *((&RAM[((v882 | 256u))])) = (-88);
-  *((&RAM[(((((((v882 - 1))))) | 256u))])) = (-121);
+  *((&RAM[((v882 | 256u))])) = -88;
+  *((&RAM[(((((((v882 - 1))))) | 256u))])) = -121;
   v883 = ((v882 - 2));
   S = v883;
   v133 = v883;   /* for PHI node */
@@ -10637,8 +10637,8 @@ llvm_cbe_lADAA:
   A = 1;
   Z = 0;
   N = 0;
-  *((&RAM[(((((((v1608 - 1))))) | 256u))])) = (-83);
-  *((&RAM[(((((((v1608 - 2))))) | 256u))])) = (-80);
+  *((&RAM[(((((((v1608 - 1))))) | 256u))])) = -83;
+  *((&RAM[(((((((v1608 - 2))))) | 256u))])) = -80;
   v1611 = ((v1608 - 3));
   S = v1611;
   v133 = v1611;   /* for PHI node */
@@ -10676,8 +10676,8 @@ llvm_cbe_lA9B1:
   Z = (((v1089 == 0)));
   N = (((((v1089 >> 7)))));
   *((&RAM[(((((((v1088 - 1))))) | 256u))])) = v1089;
-  *((&RAM[(((((((v1088 - 2))))) | 256u))])) = (-87);
-  *((&RAM[(((((((v1088 - 3))))) | 256u))])) = (-71);
+  *((&RAM[(((((((v1088 - 2))))) | 256u))])) = -87;
+  *((&RAM[(((((((v1088 - 3))))) | 256u))])) = -71;
   v1090 = ((v1088 - 4));
   S = v1090;
   v1603 = v1090;   /* for PHI node */
@@ -10685,8 +10685,8 @@ llvm_cbe_lA9B1:
 
 llvm_cbe_bb12645:
   v1252 = S;
-  *((&RAM[((v1252 | 256u))])) = (-86);
-  *((&RAM[(((((((v1252 - 1))))) | 256u))])) = (-73);
+  *((&RAM[((v1252 | 256u))])) = -86;
+  *((&RAM[(((((((v1252 - 1))))) | 256u))])) = -73;
   v1253 = ((v1252 - 2));
   S = v1253;
   v1603 = v1253;   /* for PHI node */
@@ -10789,8 +10789,8 @@ llvm_cbe_lAAA0:
 
 llvm_cbe_lAD8A:
   v1591 = S;
-  *((&RAM[((v1591 | 256u))])) = (-83);
-  *((&RAM[(((((((v1591 - 1))))) | 256u))])) = (-116);
+  *((&RAM[((v1591 | 256u))])) = -83;
+  *((&RAM[(((((((v1591 - 1))))) | 256u))])) = -116;
   v1592 = ((v1591 - 2));
   S = v1592;
   v1603 = v1592;   /* for PHI node */
@@ -10798,15 +10798,15 @@ llvm_cbe_lAD8A:
 
 llvm_cbe_lA775:
   v763 = S;
-  *((&RAM[((v763 | 256u))])) = (-89);
+  *((&RAM[((v763 | 256u))])) = -89;
   *((&RAM[(((((((v763 - 1))))) | 256u))])) = 119;
   S = (((v763 - 2)));
   goto llvm_cbe_lAD8A;
 
 llvm_cbe_lA79C:
   v772 = S;
-  *((&RAM[((v772 | 256u))])) = (-89);
-  *((&RAM[(((((((v772 - 1))))) | 256u))])) = (-98);
+  *((&RAM[((v772 | 256u))])) = -89;
+  *((&RAM[(((((((v772 - 1))))) | 256u))])) = -98;
   S = (((v772 - 2)));
   goto llvm_cbe_lAD8A;
 
@@ -10833,50 +10833,50 @@ llvm_cbe_lB423:
   Z = (((v2614 == 0)));
   N = (((((v2614 >> 7)))));
   *((&RAM[(((((((v2604 - 3))))) | 256u))])) = v2614;
-  *((&RAM[(((((((v2604 - 4))))) | 256u))])) = (-76);
+  *((&RAM[(((((((v2604 - 4))))) | 256u))])) = -76;
   *((&RAM[(((((((v2604 - 5))))) | 256u))])) = 58;
   S = (((v2604 - 6)));
   goto llvm_cbe_lAD8A;
 
 llvm_cbe_lB79E:
   v3208 = S;
-  *((&RAM[((v3208 | 256u))])) = (-73);
-  *((&RAM[(((((((v3208 - 1))))) | 256u))])) = (-96);
+  *((&RAM[((v3208 | 256u))])) = -73;
+  *((&RAM[(((((((v3208 - 1))))) | 256u))])) = -96;
   S = (((v3208 - 2)));
   goto llvm_cbe_lAD8A;
 
 llvm_cbe_lA94B:
   v1018 = S;
-  *((&RAM[((v1018 | 256u))])) = (-87);
+  *((&RAM[((v1018 | 256u))])) = -87;
   *((&RAM[(((((((v1018 - 1))))) | 256u))])) = 77;
   S = (((v1018 - 2)));
   goto llvm_cbe_lB79E;
 
 llvm_cbe_lAA86:
   v1218 = S;
-  *((&RAM[((v1218 | 256u))])) = (-86);
-  *((&RAM[(((((((v1218 - 1))))) | 256u))])) = (-120);
+  *((&RAM[((v1218 | 256u))])) = -86;
+  *((&RAM[(((((((v1218 - 1))))) | 256u))])) = -120;
   S = (((v1218 - 2)));
   goto llvm_cbe_lB79E;
 
 llvm_cbe_lAA80:
   v1217 = S;
-  *((&RAM[((v1217 | 256u))])) = (-86);
-  *((&RAM[(((((((v1217 - 1))))) | 256u))])) = (-126);
+  *((&RAM[((v1217 | 256u))])) = -86;
+  *((&RAM[(((((((v1217 - 1))))) | 256u))])) = -126;
   S = (((v1217 - 2)));
   goto llvm_cbe_lAA86;
 
 llvm_cbe_lAB85:
   v1386 = S;
-  *((&RAM[((v1386 | 256u))])) = (-85);
-  *((&RAM[(((((((v1386 - 1))))) | 256u))])) = (-121);
+  *((&RAM[((v1386 | 256u))])) = -85;
+  *((&RAM[(((((((v1386 - 1))))) | 256u))])) = -121;
   S = (((v1386 - 2)));
   goto llvm_cbe_lB79E;
 
 llvm_cbe_lABA5:
   v1398 = S;
-  *((&RAM[((v1398 | 256u))])) = (-85);
-  *((&RAM[(((((((v1398 - 1))))) | 256u))])) = (-89);
+  *((&RAM[((v1398 | 256u))])) = -85;
+  *((&RAM[(((((((v1398 - 1))))) | 256u))])) = -89;
   S = (((v1398 - 2)));
   goto llvm_cbe_lB79E;
 
@@ -10893,35 +10893,35 @@ llvm_cbe_lAFBD:
   Z = (((v1916 == 0)));
   N = (((((v1916 >> 7)))));
   *((&RAM[(((((((v1914 - 1))))) | 256u))])) = v1916;
-  *((&RAM[(((((((v1914 - 2))))) | 256u))])) = (-81);
-  *((&RAM[(((((((v1914 - 3))))) | 256u))])) = (-55);
+  *((&RAM[(((((((v1914 - 2))))) | 256u))])) = -81;
+  *((&RAM[(((((((v1914 - 3))))) | 256u))])) = -55;
   S = (((v1914 - 4)));
   goto llvm_cbe_lB79E;
 
 llvm_cbe_lB745:
   v3154 = S;
-  *((&RAM[((v3154 | 256u))])) = (-73);
+  *((&RAM[((v3154 | 256u))])) = -73;
   *((&RAM[(((((((v3154 - 1))))) | 256u))])) = 71;
   S = (((v3154 - 2)));
   goto llvm_cbe_lB79E;
 
 llvm_cbe_lE221:
   v4764 = S;
-  *((&RAM[((v4764 | 256u))])) = (-30);
+  *((&RAM[((v4764 | 256u))])) = -30;
   *((&RAM[(((((((v4764 - 1))))) | 256u))])) = 35;
   S = (((v4764 - 2)));
   goto llvm_cbe_lB79E;
 
 llvm_cbe_lB7EB:
   v3245 = v3246;
-  *((&RAM[(((((((v3245 - 1))))) | 256u))])) = (-73);
-  *((&RAM[(((((((v3245 - 2))))) | 256u))])) = (-19);
+  *((&RAM[(((((((v3245 - 1))))) | 256u))])) = -73;
+  *((&RAM[(((((((v3245 - 2))))) | 256u))])) = -19;
   S = (((v3245 - 3)));
   goto llvm_cbe_lAD8A;
 
 llvm_cbe_lB824:
   v3275 = S;
-  *((&RAM[((v3275 | 256u))])) = (-72);
+  *((&RAM[((v3275 | 256u))])) = -72;
   v3276 = ((v3275 - 1));
   S = v3276;
   *((&RAM[((v3276 | 256u))])) = 38;
@@ -10930,7 +10930,7 @@ llvm_cbe_lB824:
 
 llvm_cbe_lB82D:
   v3285 = S;
-  *((&RAM[((v3285 | 256u))])) = (-72);
+  *((&RAM[((v3285 | 256u))])) = -72;
   v3286 = ((v3285 - 1));
   S = v3286;
   *((&RAM[((v3286 | 256u))])) = 47;
@@ -10939,15 +10939,15 @@ llvm_cbe_lB82D:
 
 llvm_cbe_lE12A:
   v4651 = S;
-  *((&RAM[((v4651 | 256u))])) = (-31);
+  *((&RAM[((v4651 | 256u))])) = -31;
   *((&RAM[(((((((v4651 - 1))))) | 256u))])) = 44;
   S = (((v4651 - 2)));
   goto llvm_cbe_lAD8A;
 
 llvm_cbe_lAEF4:
   v1800 = S;
-  *((&RAM[((v1800 | 256u))])) = (-82);
-  *((&RAM[(((((((v1800 - 1))))) | 256u))])) = (-10);
+  *((&RAM[((v1800 | 256u))])) = -82;
+  *((&RAM[(((((((v1800 - 1))))) | 256u))])) = -10;
   v1801 = ((v1800 - 2));
   S = v1801;
   v1603 = v1801;   /* for PHI node */
@@ -10955,8 +10955,8 @@ llvm_cbe_lAEF4:
 
 llvm_cbe_lAFB4:
   v1910 = S;
-  *((&RAM[((v1910 | 256u))])) = (-81);
-  *((&RAM[(((((((v1910 - 1))))) | 256u))])) = (-74);
+  *((&RAM[((v1910 | 256u))])) = -81;
+  *((&RAM[(((((((v1910 - 1))))) | 256u))])) = -74;
   v1911 = ((v1910 - 2));
   S = v1911;
   v1603 = v1911;   /* for PHI node */
@@ -10964,8 +10964,8 @@ llvm_cbe_lAFB4:
 
 llvm_cbe_lB1B5:
   v2197 = S;
-  *((&RAM[((v2197 | 256u))])) = (-79);
-  *((&RAM[(((((((v2197 - 1))))) | 256u))])) = (-73);
+  *((&RAM[((v2197 | 256u))])) = -79;
+  *((&RAM[(((((((v2197 - 1))))) | 256u))])) = -73;
   v2198 = ((v2197 - 2));
   S = v2198;
   v1603 = v2198;   /* for PHI node */
@@ -10973,7 +10973,7 @@ llvm_cbe_lB1B5:
 
 llvm_cbe_lE257:
   v4789 = S;
-  *((&RAM[((v4789 | 256u))])) = (-30);
+  *((&RAM[((v4789 | 256u))])) = -30;
   *((&RAM[(((((((v4789 - 1))))) | 256u))])) = 89;
   v4790 = ((v4789 - 2));
   S = v4790;
@@ -10982,14 +10982,14 @@ llvm_cbe_lE257:
 
 llvm_cbe_lE1E3:
   v4730 = S;
-  *((&RAM[((v4730 | 256u))])) = (-31);
-  *((&RAM[(((((((v4730 - 1))))) | 256u))])) = (-27);
+  *((&RAM[((v4730 | 256u))])) = -31;
+  *((&RAM[(((((((v4730 - 1))))) | 256u))])) = -27;
   S = (((v4730 - 2)));
   goto llvm_cbe_lE257;
 
 llvm_cbe_bb48000_2e_lA928_crit_edge:
   v4927 = S;
-  *((&RAM[((v4927 | 256u))])) = (-87);
+  *((&RAM[((v4927 | 256u))])) = -87;
   *((&RAM[(((((((v4927 - 1))))) | 256u))])) = 42;
   v4928 = ((v4927 - 2));
   S = v4928;
@@ -11071,7 +11071,7 @@ llvm_cbe_lA421:
 
   } while (1); /* end of syntactic loop 'lA421' */
 llvm_cbe_lA41F:
-  X = (-9);
+  X = -9;
   Z = 0;
   N = 1;
   v173 = S;
@@ -11290,7 +11290,7 @@ llvm_cbe_lB337:
   Z = 1;
   N = 0;
   v2450 = S;
-  *((&RAM[((v2450 | 256u))])) = (-77);
+  *((&RAM[((v2450 | 256u))])) = -77;
   *((&RAM[(((((((v2450 - 1))))) | 256u))])) = 61;
   v2451 = ((v2450 - 2));
   S = v2451;
@@ -11730,10 +11730,10 @@ llvm_cbe_lB296:
   v2327 = *((&RAM[96u]));
   *((&RAM[(((((v2327 << 8u) | v2326) + v2325) & 65535u))])) = v2319;
   v2328 = S;
-  *((&RAM[((v2328 | 256u))])) = (-78);
+  *((&RAM[((v2328 | 256u))])) = -78;
   v2329 = ((v2328 - 1));
   S = v2329;
-  *((&RAM[((v2329 | 256u))])) = (-97);
+  *((&RAM[((v2329 | 256u))])) = -97;
   v2474 = v2325;   /* for PHI node */
   v2476 = v2329;   /* for PHI node */
   goto llvm_cbe_lB34C;
@@ -11894,7 +11894,7 @@ llvm_cbe_bb23338:
   goto llvm_cbe_bb23339;
 
 llvm_cbe_bb24207:
-  *llvm_cbe_tmp24041 = (-77);
+  *llvm_cbe_tmp24041 = -77;
   S = v2396;
   *((&RAM[((v2396 | 256u))])) = 24;
   v2474 = v2414;   /* for PHI node */
@@ -11995,9 +11995,9 @@ llvm_cbe_lA8C3:
   }
 
 llvm_cbe_bb13585:
-  Y = (-1);
+  Y = -1;
   *((&RAM[57u])) = v1368;
-  *((&RAM[58u])) = (-1);
+  *((&RAM[58u])) = -1;
   X = 11;
   Z = 0;
   N = 0;
@@ -12109,8 +12109,8 @@ llvm_cbe_lA9BA:
   v1096 = v1095;
   N = (((((v1096 >> 7)))));
   A = v1096;
-  *llvm_cbe_tmp11268 = (-87);
-  *((&RAM[((v1091 | 256u))])) = (-66);
+  *llvm_cbe_tmp11268 = -87;
+  *((&RAM[((v1091 | 256u))])) = -66;
   S = (((v1091 - 1)));
   goto llvm_cbe_lAD90;
 
@@ -12124,14 +12124,14 @@ llvm_cbe_lAD8D:
 
 llvm_cbe_lA772:
   v762 = S;
-  *((&RAM[((v762 | 256u))])) = (-89);
+  *((&RAM[((v762 | 256u))])) = -89;
   *((&RAM[(((((((v762 - 1))))) | 256u))])) = 116;
   S = (((v762 - 2)));
   goto llvm_cbe_lAD8D;
 
 llvm_cbe_bb16661:
-  *llvm_cbe_tmp16615 = (-83);
-  *((&RAM[((v1662 | 256u))])) = (-8);
+  *llvm_cbe_tmp16615 = -83;
+  *((&RAM[((v1662 | 256u))])) = -8;
   S = (((v1662 - 1)));
   goto llvm_cbe_lAD8D;
 
@@ -12209,7 +12209,7 @@ llvm_cbe_bb16482:
 
 llvm_cbe_lADE8:
   v1647 = ((((((((v1642 & 255))) + 255))) + v1646));
-  if ((((s8 )v1645) > ((s8 )(-1)))) {
+  if ((((s8 )v1645) > ((s8 )-1))) {
     goto llvm_cbe_bb16493;
   } else {
     goto llvm_cbe_bb16482;
@@ -12385,7 +12385,7 @@ llvm_cbe_bb16815:
   goto llvm_cbe_lAE11;
 
 llvm_cbe_bb17240:
-  *((&RAM[((v1730 | 256u))])) = (-82);
+  *((&RAM[((v1730 | 256u))])) = -82;
   *((&RAM[(((((((v1730 - 1))))) | 256u))])) = 99;
   S = (((v1730 - 2)));
   goto llvm_cbe_lAD8D;
@@ -12449,7 +12449,7 @@ llvm_cbe_lADFD:
   }
 
 llvm_cbe_lAE58:
-  Y = (-1);
+  Y = -1;
   v1720 = S;
   v1721 = ((v1720 + 1));
   S = v1721;
@@ -12465,29 +12465,29 @@ llvm_cbe_lAE58:
 
 llvm_cbe_lB1B8:
   v2199 = S;
-  *((&RAM[((v2199 | 256u))])) = (-79);
-  *((&RAM[(((((((v2199 - 1))))) | 256u))])) = (-70);
+  *((&RAM[((v2199 | 256u))])) = -79;
+  *((&RAM[(((((((v2199 - 1))))) | 256u))])) = -70;
   S = (((v2199 - 2)));
   goto llvm_cbe_lAD8D;
 
 llvm_cbe_lB7A1:
   v3209 = S;
-  *((&RAM[((v3209 | 256u))])) = (-73);
-  *((&RAM[(((((((v3209 - 1))))) | 256u))])) = (-93);
+  *((&RAM[((v3209 | 256u))])) = -73;
+  *((&RAM[(((((((v3209 - 1))))) | 256u))])) = -93;
   S = (((v3209 - 2)));
   goto llvm_cbe_lB1B8;
 
 llvm_cbe_lB6EC:
   v3073 = S;
-  *((&RAM[((v3073 | 256u))])) = (-74);
-  *((&RAM[(((((((v3073 - 1))))) | 256u))])) = (-18);
+  *((&RAM[((v3073 | 256u))])) = -74;
+  *((&RAM[(((((((v3073 - 1))))) | 256u))])) = -18;
   S = (((v3073 - 2)));
   goto llvm_cbe_lB7A1;
 
 llvm_cbe_lB3C3:
   v2566 = S;
-  *((&RAM[((v2566 | 256u))])) = (-77);
-  *((&RAM[(((((((v2566 - 1))))) | 256u))])) = (-59);
+  *((&RAM[((v2566 | 256u))])) = -77;
+  *((&RAM[(((((((v2566 - 1))))) | 256u))])) = -59;
   S = (((v2566 - 2)));
   goto llvm_cbe_lAD8D;
 
@@ -12500,36 +12500,36 @@ llvm_cbe_lB3ED:
 
 llvm_cbe_lB400:
   v2587 = S;
-  *((&RAM[((v2587 | 256u))])) = (-76);
+  *((&RAM[((v2587 | 256u))])) = -76;
   *((&RAM[(((((((v2587 - 1))))) | 256u))])) = 2;
   S = (((v2587 - 2)));
   goto llvm_cbe_lAD8D;
 
 llvm_cbe_lB465:
   v2645 = S;
-  *((&RAM[((v2645 | 256u))])) = (-76);
+  *((&RAM[((v2645 | 256u))])) = -76;
   *((&RAM[(((((((v2645 - 1))))) | 256u))])) = 103;
   S = (((v2645 - 2)));
   goto llvm_cbe_lAD8D;
 
 llvm_cbe_lAFBA:
   v1913 = S;
-  *((&RAM[((v1913 | 256u))])) = (-81);
-  *((&RAM[(((((((v1913 - 1))))) | 256u))])) = (-68);
+  *((&RAM[((v1913 | 256u))])) = -81;
+  *((&RAM[(((((((v1913 - 1))))) | 256u))])) = -68;
   S = (((v1913 - 2)));
   C = 1;
   goto llvm_cbe_lAD90;
 
 llvm_cbe_lB016:
   v1950 = S;
-  *((&RAM[((v1950 | 256u))])) = (-80);
+  *((&RAM[((v1950 | 256u))])) = -80;
   *((&RAM[(((((((v1950 - 1))))) | 256u))])) = 24;
   S = (((v1950 - 2)));
   goto llvm_cbe_lAD90;
 
 llvm_cbe_lB646:
   v2936 = S;
-  *((&RAM[((v2936 | 256u))])) = (-74);
+  *((&RAM[((v2936 | 256u))])) = -74;
   *((&RAM[(((((((v2936 - 1))))) | 256u))])) = 72;
   S = (((v2936 - 2)));
   C = 1;
@@ -12537,24 +12537,24 @@ llvm_cbe_lB646:
 
 llvm_cbe_lB6A3:
   v3002 = v3003;
-  *((&RAM[(((((((v3002 - 1))))) | 256u))])) = (-74);
-  *((&RAM[(((((((v3002 - 2))))) | 256u))])) = (-91);
+  *((&RAM[(((((((v3002 - 1))))) | 256u))])) = -74;
+  *((&RAM[(((((((v3002 - 2))))) | 256u))])) = -91;
   S = (((v3002 - 3)));
   C = 1;
   goto llvm_cbe_lAD90;
 
 llvm_cbe_lB782:
   v3193 = v3194;
-  *((&RAM[((v3193 | 256u))])) = (-73);
+  *((&RAM[((v3193 | 256u))])) = -73;
   v3195 = ((v3193 - 1));
   S = v3195;
-  *((&RAM[((v3195 | 256u))])) = (-124);
+  *((&RAM[((v3195 | 256u))])) = -124;
   v3003 = v3195;   /* for PHI node */
   goto llvm_cbe_lB6A3;
 
 llvm_cbe_lB77C:
   v3191 = S;
-  *((&RAM[((v3191 | 256u))])) = (-73);
+  *((&RAM[((v3191 | 256u))])) = -73;
   *((&RAM[(((((((v3191 - 1))))) | 256u))])) = 126;
   v3192 = ((v3191 - 2));
   S = v3192;
@@ -12563,8 +12563,8 @@ llvm_cbe_lB77C:
 
 llvm_cbe_lB78B:
   v3202 = S;
-  *((&RAM[((v3202 | 256u))])) = (-73);
-  *((&RAM[(((((((v3202 - 1))))) | 256u))])) = (-115);
+  *((&RAM[((v3202 | 256u))])) = -73;
+  *((&RAM[(((((((v3202 - 1))))) | 256u))])) = -115;
   v3203 = ((v3202 - 2));
   S = v3203;
   v3194 = v3203;   /* for PHI node */
@@ -12572,8 +12572,8 @@ llvm_cbe_lB78B:
 
 llvm_cbe_lB7AD:
   v3212 = S;
-  *((&RAM[((v3212 | 256u))])) = (-73);
-  *((&RAM[(((((((v3212 - 1))))) | 256u))])) = (-81);
+  *((&RAM[((v3212 | 256u))])) = -73;
+  *((&RAM[(((((((v3212 - 1))))) | 256u))])) = -81;
   v3213 = ((v3212 - 2));
   S = v3213;
   v3194 = v3213;   /* for PHI node */
@@ -12581,7 +12581,7 @@ llvm_cbe_lB7AD:
 
 llvm_cbe_lE25A:
   v4791 = S;
-  *((&RAM[((v4791 | 256u))])) = (-30);
+  *((&RAM[((v4791 | 256u))])) = -30;
   v4792 = ((v4791 - 1));
   S = v4792;
   *((&RAM[((v4792 | 256u))])) = 92;
@@ -12668,8 +12668,8 @@ llvm_cbe_lA7ED:
 
 llvm_cbe_lA7E7:
   v801 = S;
-  *((&RAM[((v801 | 256u))])) = (-89);
-  *((&RAM[(((((((v801 - 1))))) | 256u))])) = (-23);
+  *((&RAM[((v801 | 256u))])) = -89;
+  *((&RAM[(((((((v801 - 1))))) | 256u))])) = -23;
   S = (((v801 - 2)));
   goto llvm_cbe_lA7ED;
 
@@ -12736,7 +12736,7 @@ llvm_cbe_lA953:
 llvm_cbe_bb10720:
   v1045 = A;
   v1046 = (((((v1045 - 48))) + (((s16 )(s8 )v1044))));
-  V = (((((((((v1046 ^ v1045) & 128u) == 0u) | (((s8 )v1045) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v1046 ^ v1045) & 128u) == 0u) | (((s8 )v1045) > ((s8 )-1)))&1))) ? 0 : 1));
   *((&RAM[7u])) = v1046;
   v1047 = *((&RAM[21u]));
   A = v1047;
@@ -12772,18 +12772,18 @@ llvm_cbe_lA96B:
   goto llvm_cbe_lA971;
 
 llvm_cbe_lA49C:
-  *llvm_cbe_tmp3659 = (-98);
+  *llvm_cbe_tmp3659 = -98;
   S = (((v254 - 2)));
   goto llvm_cbe_lA96B;
 
 llvm_cbe_bb3623:
-  X = (-1);
+  X = -1;
   Z = 0;
   N = 1;
-  *((&RAM[58u])) = (-1);
+  *((&RAM[58u])) = -1;
   v253 = C;
   v254 = S;
-  *((&RAM[((v254 | 256u))])) = (-92);
+  *((&RAM[((v254 | 256u))])) = -92;
   v255 = ((v254 - 1));
   S = v255;
   llvm_cbe_tmp3659 = (&RAM[((v255 | 256u))]);
@@ -12806,8 +12806,8 @@ llvm_cbe_lA48D:
 
 llvm_cbe_lA6A4:
   v634 = S;
-  *((&RAM[((v634 | 256u))])) = (-90);
-  *((&RAM[(((((((v634 - 1))))) | 256u))])) = (-90);
+  *((&RAM[((v634 | 256u))])) = -90;
+  *((&RAM[(((((((v634 - 1))))) | 256u))])) = -90;
   S = (((v634 - 2)));
   goto llvm_cbe_lA96B;
 
@@ -12842,28 +12842,28 @@ llvm_cbe_bb6828:
 
 llvm_cbe_lA6B6:
   v643 = S;
-  *((&RAM[((v643 | 256u))])) = (-90);
-  *((&RAM[(((((((v643 - 1))))) | 256u))])) = (-72);
+  *((&RAM[((v643 | 256u))])) = -90;
+  *((&RAM[(((((((v643 - 1))))) | 256u))])) = -72;
   S = (((v643 - 2)));
   goto llvm_cbe_lA96B;
 
 llvm_cbe_lA8A0:
   v891 = S;
-  *((&RAM[((v891 | 256u))])) = (-88);
-  *((&RAM[(((((((v891 - 1))))) | 256u))])) = (-94);
+  *((&RAM[((v891 | 256u))])) = -88;
+  *((&RAM[(((((((v891 - 1))))) | 256u))])) = -94;
   S = (((v891 - 2)));
   goto llvm_cbe_lA96B;
 
 llvm_cbe_lA89A:
   v890 = S;
-  *((&RAM[((v890 | 256u))])) = (-88);
-  *((&RAM[(((((((v890 - 1))))) | 256u))])) = (-100);
+  *((&RAM[((v890 | 256u))])) = -88;
+  *((&RAM[(((((((v890 - 1))))) | 256u))])) = -100;
   S = (((v890 - 2)));
   goto llvm_cbe_lA8A0;
 
 llvm_cbe_lA962:
   v1032 = S;
-  *((&RAM[((v1032 | 256u))])) = (-87);
+  *((&RAM[((v1032 | 256u))])) = -87;
   *((&RAM[(((((((v1032 - 1))))) | 256u))])) = 100;
   S = (((v1032 - 2)));
   goto llvm_cbe_lA96B;
@@ -12936,13 +12936,13 @@ llvm_cbe_bb7990:
   *((&RAM[(((((((v754 - 2))))) | 256u))])) = v760;
   v761 = *((&RAM[57u]));
   *((&RAM[(((((((v754 - 3))))) | 256u))])) = v761;
-  A = (-92);
+  A = -92;
   Z = 0;
   N = 1;
-  *((&RAM[(((((((v754 - 4))))) | 256u))])) = (-89);
+  *((&RAM[(((((((v754 - 4))))) | 256u))])) = -89;
   *((&RAM[(((((((v754 - 5))))) | 256u))])) = 113;
   S = (((v754 - 6)));
-  v1807 = (-92);   /* for PHI node */
+  v1807 = -92;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb7978:
@@ -13004,25 +13004,25 @@ llvm_cbe_bb7989:
   goto llvm_cbe_bb7990;
 
 llvm_cbe_lA815:
-  A = (-92);
+  A = -92;
   Z = 0;
   N = 1;
   v824 = S;
-  *((&RAM[((v824 | 256u))])) = (-88);
+  *((&RAM[((v824 | 256u))])) = -88;
   *((&RAM[(((((((v824 - 1))))) | 256u))])) = 25;
   S = (((v824 - 2)));
-  v1807 = (-92);   /* for PHI node */
+  v1807 = -92;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb10448:
-  A = (-89);
+  A = -89;
   Z = 0;
   N = 1;
   v1011 = S;
-  *((&RAM[((v1011 | 256u))])) = (-87);
+  *((&RAM[((v1011 | 256u))])) = -87;
   *((&RAM[(((((((v1011 - 1))))) | 256u))])) = 54;
   S = (((v1011 - 2)));
-  v1807 = (-89);   /* for PHI node */
+  v1807 = -89;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lA92E:
@@ -13043,14 +13043,14 @@ llvm_cbe_lA9A8:
   *((&RAM[73u])) = v1084;
   v1085 = Y;
   *((&RAM[74u])) = v1085;
-  A = (-78);
+  A = -78;
   Z = 0;
   N = 1;
   v1086 = S;
-  *((&RAM[((v1086 | 256u))])) = (-87);
-  *((&RAM[(((((((v1086 - 1))))) | 256u))])) = (-80);
+  *((&RAM[((v1086 | 256u))])) = -87;
+  *((&RAM[(((((((v1086 - 1))))) | 256u))])) = -80;
   S = (((v1086 - 2)));
-  v1807 = (-78);   /* for PHI node */
+  v1807 = -78;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb12412:
@@ -13058,8 +13058,8 @@ llvm_cbe_bb12412:
   Z = 0;
   N = 0;
   v1220 = S;
-  *((&RAM[((v1220 | 256u))])) = (-86);
-  *((&RAM[(((((((v1220 - 1))))) | 256u))])) = (-113);
+  *((&RAM[((v1220 | 256u))])) = -86;
+  *((&RAM[(((((((v1220 - 1))))) | 256u))])) = -113;
   S = (((v1220 - 2)));
   v1807 = 44;   /* for PHI node */
   goto llvm_cbe_lAEFF;
@@ -13077,8 +13077,8 @@ llvm_cbe_lAB88:
   Z = 0;
   N = 0;
   v1387 = S;
-  *((&RAM[((v1387 | 256u))])) = (-85);
-  *((&RAM[(((((((v1387 - 1))))) | 256u))])) = (-116);
+  *((&RAM[((v1387 | 256u))])) = -85;
+  *((&RAM[(((((((v1387 - 1))))) | 256u))])) = -116;
   S = (((v1387 - 2)));
   v1807 = 44;   /* for PHI node */
   goto llvm_cbe_lAEFF;
@@ -13088,8 +13088,8 @@ llvm_cbe_lABA8:
   Z = 0;
   N = 0;
   v1399 = S;
-  *((&RAM[((v1399 | 256u))])) = (-85);
-  *((&RAM[(((((((v1399 - 1))))) | 256u))])) = (-84);
+  *((&RAM[((v1399 | 256u))])) = -85;
+  *((&RAM[(((((((v1399 - 1))))) | 256u))])) = -84;
   S = (((v1399 - 2)));
   v1807 = 44;   /* for PHI node */
   goto llvm_cbe_lAEFF;
@@ -13099,16 +13099,16 @@ llvm_cbe_lABC6:
   Z = 0;
   N = 0;
   v1416 = S;
-  *((&RAM[((v1416 | 256u))])) = (-85);
-  *((&RAM[(((((((v1416 - 1))))) | 256u))])) = (-54);
+  *((&RAM[((v1416 | 256u))])) = -85;
+  *((&RAM[(((((((v1416 - 1))))) | 256u))])) = -54;
   S = (((v1416 - 2)));
   v1807 = 59;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb14932:
   v1511 = S;
-  *((&RAM[((v1511 | 256u))])) = (-84);
-  *((&RAM[(((((((v1511 - 1))))) | 256u))])) = (-76);
+  *((&RAM[((v1511 | 256u))])) = -84;
+  *((&RAM[(((((((v1511 - 1))))) | 256u))])) = -76;
   S = (((v1511 - 2)));
   A = 44;
   Z = 0;
@@ -13127,8 +13127,8 @@ llvm_cbe_lAEFC:
 
 llvm_cbe_lAEF1:
   v1799 = S;
-  *((&RAM[((v1799 | 256u))])) = (-82);
-  *((&RAM[(((((((v1799 - 1))))) | 256u))])) = (-13);
+  *((&RAM[((v1799 | 256u))])) = -82;
+  *((&RAM[(((((((v1799 - 1))))) | 256u))])) = -13;
   S = (((v1799 - 2)));
   A = 40;
   Z = 0;
@@ -13174,7 +13174,7 @@ llvm_cbe_lAECC:
   }
 
 llvm_cbe_lAFD1:
-  *llvm_cbe_tmp19241 = (-45);
+  *llvm_cbe_tmp19241 = -45;
   S = (((v1907 - 2)));
   goto llvm_cbe_lAEF1;
 
@@ -13187,7 +13187,7 @@ llvm_cbe_lAFAD:
   Z = ((((v1905 & 255u) == 0u)));
   N = (((((v1904 >> 7)))));
   v1907 = S;
-  *((&RAM[((v1907 | 256u))])) = (-81);
+  *((&RAM[((v1907 | 256u))])) = -81;
   v1908 = ((v1907 - 1));
   S = v1908;
   llvm_cbe_tmp19241 = (&RAM[((v1908 | 256u))]);
@@ -13206,8 +13206,8 @@ llvm_cbe_lB3F7:
   Z = (((v2586 == 0)));
   N = (((((v2586 >> 7)))));
   *((&RAM[(((((((v2585 - 1))))) | 256u))])) = v2586;
-  *((&RAM[(((((((v2585 - 2))))) | 256u))])) = (-77);
-  *((&RAM[(((((((v2585 - 3))))) | 256u))])) = (-1);
+  *((&RAM[(((((((v2585 - 2))))) | 256u))])) = -77;
+  *((&RAM[(((((((v2585 - 3))))) | 256u))])) = -1;
   S = (((v2585 - 4)));
   goto llvm_cbe_lAEF1;
 
@@ -13224,7 +13224,7 @@ llvm_cbe_bb22339:
   v2235 = Y;
   *((&RAM[11u])) = v2235;
   v2236 = S;
-  *((&RAM[((v2236 | 256u))])) = (-78);
+  *((&RAM[((v2236 | 256u))])) = -78;
   *((&RAM[(((((((v2236 - 1))))) | 256u))])) = 13;
   S = (((v2236 - 2)));
   goto llvm_cbe_lAEF7;
@@ -13244,21 +13244,21 @@ llvm_cbe_lB205:
 
 llvm_cbe_lB3C6:
   v2567 = S;
-  *((&RAM[((v2567 | 256u))])) = (-77);
-  *((&RAM[(((((((v2567 - 1))))) | 256u))])) = (-56);
+  *((&RAM[((v2567 | 256u))])) = -77;
+  *((&RAM[(((((((v2567 - 1))))) | 256u))])) = -56;
   S = (((v2567 - 2)));
   goto llvm_cbe_lAEF7;
 
 llvm_cbe_lB761:
   v3177 = v3178;
-  *((&RAM[((v3177 | 256u))])) = (-73);
+  *((&RAM[((v3177 | 256u))])) = -73;
   *((&RAM[(((((((v3177 - 1))))) | 256u))])) = 99;
   S = (((v3177 - 2)));
   goto llvm_cbe_lAEF7;
 
 llvm_cbe_lB700:
   v3082 = S;
-  *((&RAM[((v3082 | 256u))])) = (-73);
+  *((&RAM[((v3082 | 256u))])) = -73;
   *((&RAM[(((((((v3082 - 1))))) | 256u))])) = 2;
   v3083 = ((v3082 - 2));
   S = v3083;
@@ -13267,7 +13267,7 @@ llvm_cbe_lB700:
 
 llvm_cbe_lB72C:
   v3135 = S;
-  *((&RAM[((v3135 | 256u))])) = (-73);
+  *((&RAM[((v3135 | 256u))])) = -73;
   *((&RAM[(((((((v3135 - 1))))) | 256u))])) = 46;
   v3136 = ((v3135 - 2));
   S = v3136;
@@ -13276,7 +13276,7 @@ llvm_cbe_lB72C:
 
 llvm_cbe_lB748:
   v3155 = S;
-  *((&RAM[((v3155 | 256u))])) = (-73);
+  *((&RAM[((v3155 | 256u))])) = -73;
   *((&RAM[(((((((v3155 - 1))))) | 256u))])) = 74;
   v3156 = ((v3155 - 2));
   S = v3156;
@@ -13297,7 +13297,7 @@ llvm_cbe_lB73E:
   }
 
 llvm_cbe_bb19050:
-  *llvm_cbe_tmp19241 = (-77);
+  *llvm_cbe_tmp19241 = -77;
   S = (((v1907 - 2)));
   A = 40;
   Z = 0;
@@ -13307,8 +13307,8 @@ llvm_cbe_bb19050:
 
 llvm_cbe_lB3B9:
   v2563 = S;
-  *((&RAM[((v2563 | 256u))])) = (-77);
-  *((&RAM[(((((((v2563 - 1))))) | 256u))])) = (-69);
+  *((&RAM[((v2563 | 256u))])) = -77;
+  *((&RAM[(((((((v2563 - 1))))) | 256u))])) = -69;
   S = (((v2563 - 2)));
   A = 40;
   Z = 0;
@@ -13318,8 +13318,8 @@ llvm_cbe_lB3B9:
 
 llvm_cbe_lAFB7:
   v1912 = S;
-  *((&RAM[((v1912 | 256u))])) = (-81);
-  *((&RAM[(((((((v1912 - 1))))) | 256u))])) = (-71);
+  *((&RAM[((v1912 | 256u))])) = -81;
+  *((&RAM[(((((((v1912 - 1))))) | 256u))])) = -71;
   S = (((v1912 - 2)));
   A = 44;
   Z = 0;
@@ -13328,7 +13328,7 @@ llvm_cbe_lAFB7:
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB07E:
-  *((&RAM[((v2015 | 256u))])) = (-80);
+  *((&RAM[((v2015 | 256u))])) = -80;
   *((&RAM[(((((((v2015 - 1))))) | 256u))])) = 128u;
   S = (((v2015 - 2)));
   A = 44;
@@ -13347,48 +13347,48 @@ llvm_cbe_lB088:
   }
 
 llvm_cbe_lB3C9:
-  A = (-78);
+  A = -78;
   Z = 0;
   N = 1;
   v2568 = S;
-  *((&RAM[((v2568 | 256u))])) = (-77);
-  *((&RAM[(((((((v2568 - 1))))) | 256u))])) = (-51);
+  *((&RAM[((v2568 | 256u))])) = -77;
+  *((&RAM[(((((((v2568 - 1))))) | 256u))])) = -51;
   S = (((v2568 - 2)));
-  v1807 = (-78);   /* for PHI node */
+  v1807 = -78;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB3E1:
   v2575 = v2576;
-  A = (-91);
+  A = -91;
   Z = 0;
   N = 1;
-  *((&RAM[(((((((v2575 - 1))))) | 256u))])) = (-77);
-  *((&RAM[(((((((v2575 - 2))))) | 256u))])) = (-27);
+  *((&RAM[(((((((v2575 - 1))))) | 256u))])) = -77;
+  *((&RAM[(((((((v2575 - 2))))) | 256u))])) = -27;
   S = (((v2575 - 3)));
-  v1807 = (-91);   /* for PHI node */
+  v1807 = -91;   /* for PHI node */
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB3B3:
   v2560 = S;
-  *((&RAM[((v2560 | 256u))])) = (-77);
+  *((&RAM[((v2560 | 256u))])) = -77;
   v2561 = ((v2560 - 1));
   S = v2561;
-  *((&RAM[((v2561 | 256u))])) = (-75);
+  *((&RAM[((v2561 | 256u))])) = -75;
   v2576 = v2561;   /* for PHI node */
   goto llvm_cbe_lB3E1;
 
 llvm_cbe_lB3F4:
   v2582 = S;
-  *((&RAM[((v2582 | 256u))])) = (-77);
+  *((&RAM[((v2582 | 256u))])) = -77;
   v2583 = ((v2582 - 1));
   S = v2583;
-  *((&RAM[((v2583 | 256u))])) = (-10);
+  *((&RAM[((v2583 | 256u))])) = -10;
   v2576 = v2583;   /* for PHI node */
   goto llvm_cbe_lB3E1;
 
 llvm_cbe_bb31070:
   v3153 = S;
-  *((&RAM[((v3153 | 256u))])) = (-73);
+  *((&RAM[((v3153 | 256u))])) = -73;
   *((&RAM[(((((((v3153 - 1))))) | 256u))])) = 68;
   S = (((v3153 - 2)));
   A = 44;
@@ -13399,8 +13399,8 @@ llvm_cbe_bb31070:
 
 llvm_cbe_lB7F1:
   v3249 = S;
-  *((&RAM[((v3249 | 256u))])) = (-73);
-  *((&RAM[(((((((v3249 - 1))))) | 256u))])) = (-13);
+  *((&RAM[((v3249 | 256u))])) = -73;
+  *((&RAM[(((((((v3249 - 1))))) | 256u))])) = -13;
   S = (((v3249 - 2)));
   A = 44;
   Z = 0;
@@ -13410,7 +13410,7 @@ llvm_cbe_lB7F1:
 
 llvm_cbe_bb32392:
   v3290 = S;
-  *((&RAM[((v3290 | 256u))])) = (-72);
+  *((&RAM[((v3290 | 256u))])) = -72;
   *((&RAM[(((((((v3290 - 1))))) | 256u))])) = 59;
   S = (((v3290 - 2)));
   goto llvm_cbe_lB7F1;
@@ -13425,7 +13425,7 @@ llvm_cbe_lB837:
 
 llvm_cbe_lE20E:
   v4757 = v4758;
-  *((&RAM[(((((((v4757 - 1))))) | 256u))])) = (-30);
+  *((&RAM[(((((((v4757 - 1))))) | 256u))])) = -30;
   *((&RAM[(((((((v4757 - 2))))) | 256u))])) = 16;
   S = (((v4757 - 3)));
   A = 44;
@@ -13436,7 +13436,7 @@ llvm_cbe_lE20E:
 
 llvm_cbe_lE200:
   v4743 = v4744;
-  *((&RAM[((v4743 | 256u))])) = (-30);
+  *((&RAM[((v4743 | 256u))])) = -30;
   v4745 = ((v4743 - 1));
   S = v4745;
   *((&RAM[((v4745 | 256u))])) = 2;
@@ -13445,8 +13445,8 @@ llvm_cbe_lE200:
 
 llvm_cbe_lE1E9:
   v4733 = S;
-  *((&RAM[((v4733 | 256u))])) = (-31);
-  *((&RAM[(((((((v4733 - 1))))) | 256u))])) = (-21);
+  *((&RAM[((v4733 | 256u))])) = -31;
+  *((&RAM[(((((((v4733 - 1))))) | 256u))])) = -21;
   v4734 = ((v4733 - 2));
   S = v4734;
   v4744 = v4734;   /* for PHI node */
@@ -13454,8 +13454,8 @@ llvm_cbe_lE1E9:
 
 llvm_cbe_lE1F6:
   v4739 = S;
-  *((&RAM[((v4739 | 256u))])) = (-31);
-  *((&RAM[(((((((v4739 - 1))))) | 256u))])) = (-8);
+  *((&RAM[((v4739 | 256u))])) = -31;
+  *((&RAM[(((((((v4739 - 1))))) | 256u))])) = -8;
   v4740 = ((v4739 - 2));
   S = v4740;
   v4744 = v4740;   /* for PHI node */
@@ -13463,7 +13463,7 @@ llvm_cbe_lE1F6:
 
 llvm_cbe_lE231:
   v4769 = S;
-  *((&RAM[((v4769 | 256u))])) = (-30);
+  *((&RAM[((v4769 | 256u))])) = -30;
   *((&RAM[(((((((v4769 - 1))))) | 256u))])) = 51;
   v4770 = ((v4769 - 2));
   S = v4770;
@@ -13472,7 +13472,7 @@ llvm_cbe_lE231:
 
 llvm_cbe_lE245:
   v4779 = S;
-  *((&RAM[((v4779 | 256u))])) = (-30);
+  *((&RAM[((v4779 | 256u))])) = -30;
   *((&RAM[(((((((v4779 - 1))))) | 256u))])) = 71;
   v4780 = ((v4779 - 2));
   S = v4780;
@@ -13481,7 +13481,7 @@ llvm_cbe_lE245:
 
 llvm_cbe_lE254:
   v4787 = S;
-  *((&RAM[((v4787 | 256u))])) = (-30);
+  *((&RAM[((v4787 | 256u))])) = -30;
   v4788 = ((v4787 - 1));
   S = v4788;
   *((&RAM[((v4788 | 256u))])) = 86;
@@ -13741,8 +13741,8 @@ llvm_cbe_lB7F7:
 
 llvm_cbe_lB7EE:
   v3247 = S;
-  *((&RAM[((v3247 | 256u))])) = (-73);
-  *((&RAM[(((((((v3247 - 1))))) | 256u))])) = (-16);
+  *((&RAM[((v3247 | 256u))])) = -73;
+  *((&RAM[(((((((v3247 - 1))))) | 256u))])) = -16;
   v3248 = ((v3247 - 2));
   S = v3248;
   v3251 = v3248;   /* for PHI node */
@@ -13757,7 +13757,7 @@ llvm_cbe_lB80D:
   Z = (((v3266 == 0)));
   N = (((((v3266 >> 7)))));
   *((&RAM[(((((((v3265 - 1))))) | 256u))])) = v3266;
-  *((&RAM[(((((((v3265 - 2))))) | 256u))])) = (-72);
+  *((&RAM[(((((((v3265 - 2))))) | 256u))])) = -72;
   *((&RAM[(((((((v3265 - 3))))) | 256u))])) = 21;
   v3267 = ((v3265 - 4));
   S = v3267;
@@ -13766,7 +13766,7 @@ llvm_cbe_lB80D:
 
 llvm_cbe_lE12D:
   v4652 = S;
-  *((&RAM[((v4652 | 256u))])) = (-31);
+  *((&RAM[((v4652 | 256u))])) = -31;
   *((&RAM[(((((((v4652 - 1))))) | 256u))])) = 47;
   v4653 = ((v4652 - 2));
   S = v4653;
@@ -13840,29 +13840,29 @@ llvm_cbe_lB3A6:
 
 llvm_cbe_lAB7B:
   v1381 = S;
-  *((&RAM[((v1381 | 256u))])) = (-85);
+  *((&RAM[((v1381 | 256u))])) = -85;
   *((&RAM[(((((((v1381 - 1))))) | 256u))])) = 125;
   S = (((v1381 - 2)));
   goto llvm_cbe_lB3A6;
 
 llvm_cbe_lABCE:
   v1418 = S;
-  *((&RAM[((v1418 | 256u))])) = (-85);
-  *((&RAM[(((((((v1418 - 1))))) | 256u))])) = (-48);
+  *((&RAM[((v1418 | 256u))])) = -85;
+  *((&RAM[(((((((v1418 - 1))))) | 256u))])) = -48;
   S = (((v1418 - 2)));
   goto llvm_cbe_lB3A6;
 
 llvm_cbe_lABB2:
   v1403 = S;
-  *((&RAM[((v1403 | 256u))])) = (-85);
-  *((&RAM[(((((((v1403 - 1))))) | 256u))])) = (-76);
+  *((&RAM[((v1403 | 256u))])) = -85;
+  *((&RAM[(((((((v1403 - 1))))) | 256u))])) = -76;
   S = (((v1403 - 2)));
   goto llvm_cbe_lABCE;
 
 llvm_cbe_lB3B6:
   v2562 = S;
-  *((&RAM[((v2562 | 256u))])) = (-77);
-  *((&RAM[(((((((v2562 - 1))))) | 256u))])) = (-72);
+  *((&RAM[((v2562 | 256u))])) = -77;
+  *((&RAM[(((((((v2562 - 1))))) | 256u))])) = -72;
   S = (((v2562 - 2)));
   goto llvm_cbe_lB3A6;
 
@@ -13917,7 +13917,7 @@ llvm_cbe_lB4CA:
 
 llvm_cbe_lB674:
   v2962 = S;
-  *((&RAM[((v2962 | 256u))])) = (-74);
+  *((&RAM[((v2962 | 256u))])) = -74;
   *((&RAM[(((((((v2962 - 1))))) | 256u))])) = 118;
   S = (((v2962 - 2)));
   goto llvm_cbe_lB4CA;
@@ -14181,7 +14181,7 @@ llvm_cbe_lB86F:
 
 llvm_cbe_lB853:
   v3307 = *((&RAM[102u]));
-  v3308 = ((v3307 ^ (-1)));
+  v3308 = ((v3307 ^ -1));
   *((&RAM[102u])) = v3308;
   v3309 = *((&RAM[110u]));
   *((&RAM[111u])) = (((v3309 ^ v3308)));
@@ -14203,7 +14203,7 @@ llvm_cbe_bb43878:
   Z = (((v4541 == 0)));
   N = (((((v4541 >> 7)))));
   *((&RAM[112u])) = v4541;
-  *((&RAM[((v4531 | 256u))])) = (-32);
+  *((&RAM[((v4531 | 256u))])) = -32;
   *((&RAM[(((((((v4530 - 2))))) | 256u))])) = 47;
   S = (((v4530 - 3)));
   goto llvm_cbe_lB853;
@@ -14232,7 +14232,7 @@ llvm_cbe_bb43754:
   C = 1;
   v4527 = (((((v4523 & 255))) - 1));
   v4528 = v4527;
-  V = (((((((((v4528 ^ v4526) & 128u) == 0u) | (((s8 )v4526) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v4528 ^ v4526) & 128u) == 0u) | (((s8 )v4526) > ((s8 )-1)))&1))) ? 0 : 1));
   v4529 = v4527;
   A = v4529;
   C = (((((((((((v4528 >> 8u))))) & 1))) ^ 1)));
@@ -14275,7 +14275,7 @@ llvm_cbe_lE011:
   N = (((((v4522 >> 7)))));
   C = 0;
   v4523 = ((v4522 + 129));
-  if ((((s8 )v4522) > ((s8 )(-1)))) {
+  if ((((s8 )v4522) > ((s8 )-1))) {
     goto llvm_cbe_bb43724;
   } else {
     goto llvm_cbe_bb43713;
@@ -14291,8 +14291,8 @@ llvm_cbe_lE27D:
   N = 0;
   *((&RAM[111u])) = 0;
   v4803 = S;
-  *((&RAM[((v4803 | 256u))])) = (-30);
-  *((&RAM[(((((((v4803 - 1))))) | 256u))])) = (-125);
+  *((&RAM[((v4803 | 256u))])) = -30;
+  *((&RAM[(((((((v4803 - 1))))) | 256u))])) = -125;
   S = (((v4803 - 2)));
   goto llvm_cbe_lB853;
 
@@ -14327,8 +14327,8 @@ llvm_cbe_lBAED:
   N = 0;
   *((&RAM[111u])) = 0;
   v3809 = S;
-  *((&RAM[((v3809 | 256u))])) = (-70);
-  *((&RAM[(((((((v3809 - 1))))) | 256u))])) = (-13);
+  *((&RAM[((v3809 | 256u))])) = -70;
+  *((&RAM[(((((((v3809 - 1))))) | 256u))])) = -13;
   S = (((v3809 - 2)));
   v3320 = v3807;   /* for PHI node */
   v3322 = 0;   /* for PHI node */
@@ -14341,7 +14341,7 @@ llvm_cbe_bb11646:
   Z = (((v1138 == 0)));
   N = (((((v1138 >> 7)))));
   v1139 = S;
-  *((&RAM[((v1139 | 256u))])) = (-86);
+  *((&RAM[((v1139 | 256u))])) = -86;
   *((&RAM[(((((((v1139 - 1))))) | 256u))])) = 6;
   S = (((v1139 - 2)));
   v3808 = v1138;   /* for PHI node */
@@ -14455,12 +14455,12 @@ llvm_cbe_bb34166:
   }
 
 llvm_cbe_bb34142:
-  v3510 = ((v3507 ^ (-1)));
+  v3510 = ((v3507 ^ -1));
   A = v3510;
   Z = (((v3507 == 0xff)));
   N = (((((v3510 >> 7)))));
   v3511 = (((((v3510 + 1))) + v3509));
-  if ((((s8 )v3507) > ((s8 )(-1)))) {
+  if ((((s8 )v3507) > ((s8 )-1))) {
     goto llvm_cbe_bb34177;
   } else {
     goto llvm_cbe_bb34166;
@@ -14745,7 +14745,7 @@ llvm_cbe_lB8AF:
   v3356 = v3357;
   C = 1;
   v3358 = A;
-  v3359 = ((v3358 ^ (-1)));
+  v3359 = ((v3358 ^ -1));
   A = v3359;
   Z = (((v3358 == 0xff)));
   N = (((((v3359 >> 7)))));
@@ -15091,7 +15091,7 @@ llvm_cbe_bb37150:
 
   } while (1); /* end of syntactic loop 'lBB29' */
 llvm_cbe_bb37005:
-  X = (-4);
+  X = -4;
   A = 1;
   Z = 0;
   N = 0;
@@ -15100,7 +15100,7 @@ llvm_cbe_bb37005:
   v3844 = D;
   v3845 = I;
   v3846 = S;
-  v3848 = (-4);   /* for PHI node */
+  v3848 = -4;   /* for PHI node */
   v3850 = 1;   /* for PHI node */
   v3852 = v3845;   /* for PHI node */
   v3854 = v3844;   /* for PHI node */
@@ -15136,11 +15136,11 @@ llvm_cbe_lBC4F:
 llvm_cbe_lAF7E:
   v1882 = Y;
   A = v1882;
-  X = (-96);
+  X = -96;
   Z = 0;
   N = 1;
   v4070 = v1882;   /* for PHI node */
-  v4072 = (-96);   /* for PHI node */
+  v4072 = -96;   /* for PHI node */
   goto llvm_cbe_lBC4F;
 
 llvm_cbe_lBC49:
@@ -15162,7 +15162,7 @@ llvm_cbe_lBC44:
   *((&RAM[99u])) = v4063;
   X = v4061;
   v4064 = C;
-  v4065 = ((((((((((v4057 ^ (-1)))))) << 1))) | (((s16 )(s8 )v4064))));
+  v4065 = ((((((((((v4057 ^ -1))))) << 1))) | (((s16 )(s8 )v4064))));
   C = (((((((v4065 >> 8)))))));
   Z = ((((v4065 & 255u) == 0u)));
   v4066 = v4065;
@@ -15180,14 +15180,14 @@ llvm_cbe_lB391:
   *((&RAM[98u])) = v2554;
   v4058 = v2554;   /* for PHI node */
   llvm_cbe_storemerge50334_2e_in__PHI_TEMPORARY = (&Y);   /* for PHI node */
-  v4062 = (-112);   /* for PHI node */
+  v4062 = -112;   /* for PHI node */
   goto llvm_cbe_lBC44;
 
 llvm_cbe_lAED7:
   v1791 = *((&RAM[101u]));
-  Y = (((v1791 ^ (-1))));
+  Y = (((v1791 ^ -1)));
   v1792 = *((&RAM[100u]));
-  v1793 = ((v1792 ^ (-1)));
+  v1793 = ((v1792 ^ -1));
   A = v1793;
   Z = (((v1792 == 0xff)));
   N = (((((v1793 >> 7)))));
@@ -15363,7 +15363,7 @@ llvm_cbe_lBC3C:
   N = 0;
   v4058 = v4056;   /* for PHI node */
   llvm_cbe_storemerge50334_2e_in__PHI_TEMPORARY = (&A);   /* for PHI node */
-  v4062 = (-120);   /* for PHI node */
+  v4062 = -120;   /* for PHI node */
   goto llvm_cbe_lBC44;
 
 llvm_cbe_lB072:
@@ -15452,7 +15452,7 @@ llvm_cbe_lB056:
   v1977 = v1978;
   v1979 = v1980;
   *((&RAM[102u])) = v1979;
-  Y = (-1);
+  Y = -1;
   v1981 = ((v1977 + 1));
   X = v1981;
   Z = (((v1981 == 0)));
@@ -15525,11 +15525,11 @@ llvm_cbe_bb19810:
 
 llvm_cbe_bb19826:
   X = v1969;
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
   v1978 = v1969;   /* for PHI node */
-  v1980 = (-1);   /* for PHI node */
+  v1980 = -1;   /* for PHI node */
   goto llvm_cbe_lB056;
 
 llvm_cbe_bb19922:
@@ -15541,11 +15541,11 @@ llvm_cbe_bb19989:
   Y = v1982;
   A = v1996;
   C = v2002;
-  X = (-1);
+  X = -1;
   Z = 0;
   N = 1;
   if (v2001 == 0) {
-    v2005 = (-1);   /* for PHI node */
+    v2005 = -1;   /* for PHI node */
     goto llvm_cbe_lB072;
   } else {
     goto llvm_cbe_bb20005;
@@ -15559,7 +15559,7 @@ llvm_cbe_bb20005:
   goto llvm_cbe_lB072;
 
 llvm_cbe_bb20086:
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
   goto llvm_cbe_lBC3C;
@@ -15571,8 +15571,8 @@ llvm_cbe_lBD82:
   A = v4272;
   Z = (((v4272 == 0)));
   N = (((((v4272 >> 7)))));
-  *llvm_cbe_tmp40738 = (-67);
-  *((&RAM[((v4270 | 256u))])) = (-123);
+  *llvm_cbe_tmp40738 = -67;
+  *((&RAM[((v4270 | 256u))])) = -123;
   S = (((v4270 - 1)));
   goto llvm_cbe_lBC3C;
 
@@ -15581,22 +15581,22 @@ llvm_cbe_lBDCD:
   v4306 = v4307;
   *((&RAM[98u])) = v4306;
   *((&RAM[99u])) = v4304;
-  X = (-112);
+  X = -112;
   Z = 0;
   N = 1;
   C = 1;
   v4308 = S;
-  *((&RAM[((v4308 | 256u))])) = (-67);
-  *((&RAM[(((((((v4308 - 1))))) | 256u))])) = (-42);
+  *((&RAM[((v4308 | 256u))])) = -67;
+  *((&RAM[(((((((v4308 - 1))))) | 256u))])) = -42;
   S = (((v4308 - 2)));
-  v4068 = (-112);   /* for PHI node */
+  v4068 = -112;   /* for PHI node */
   goto llvm_cbe_lBC49;
 
 llvm_cbe_lA6E8:
   *((&RAM[73u])) = v660;
   v672 = S;
-  *((&RAM[((v672 | 256u))])) = (-90);
-  *((&RAM[(((((((v672 - 1))))) | 256u))])) = (-20);
+  *((&RAM[((v672 | 256u))])) = -90;
+  *((&RAM[(((((((v672 - 1))))) | 256u))])) = -20;
   S = (((v672 - 2)));
   v4305 = v659;   /* for PHI node */
   v4307 = v661;   /* for PHI node */
@@ -15670,7 +15670,7 @@ llvm_cbe_bb47779:
   N = (((((v4901 >> 7)))));
   C = (((((((((((v4898 >> 8u))))) & 1))) ^ 1)));
   v4902 = S;
-  *((&RAM[((v4902 | 256u))])) = (-28);
+  *((&RAM[((v4902 | 256u))])) = -28;
   *((&RAM[(((((((v4902 - 1))))) | 256u))])) = 60;
   S = (((v4902 - 2)));
   v4305 = v4893;   /* for PHI node */
@@ -15744,7 +15744,7 @@ llvm_cbe_lBCD5:
   v4166 = C;
   v4167 = ((((((((((((((((((v4165 ^ 128u))))) << 1))) | (((s16 )(s8 )v4166)))))) >> 8))))));
   C = v4167;
-  *((&RAM[97u])) = (-96);
+  *((&RAM[97u])) = -96;
   v4168 = *((&RAM[101u]));
   A = v4168;
   Z = (((v4168 == 0)));
@@ -15765,8 +15765,8 @@ llvm_cbe_lE0E3:
   N = 1;
   *((&RAM[97u])) = 128u;
   v4613 = S;
-  *((&RAM[((v4613 | 256u))])) = (-32);
-  *((&RAM[(((((((v4613 - 1))))) | 256u))])) = (-15);
+  *((&RAM[((v4613 | 256u))])) = -32;
+  *((&RAM[(((((((v4613 - 1))))) | 256u))])) = -15;
   S = (((v4613 - 2)));
   goto llvm_cbe_lB8D7;
 
@@ -15963,7 +15963,7 @@ llvm_cbe_lBAB7:
 
 llvm_cbe_lBA30:
   v3666 = S;
-  *((&RAM[((v3666 | 256u))])) = (-70);
+  *((&RAM[((v3666 | 256u))])) = -70;
   v3667 = ((v3666 - 1));
   S = v3667;
   *((&RAM[((v3667 | 256u))])) = 50;
@@ -15988,7 +15988,7 @@ llvm_cbe_bb36957:
   C = (((((((((((v3834 >> 8u))))) & 1))) ^ 1)));
   *((&RAM[97u])) = v3837;
   v3838 = S;
-  *((&RAM[((v3838 | 256u))])) = (-69);
+  *((&RAM[((v3838 | 256u))])) = -69;
   v3839 = ((v3838 - 1));
   S = v3839;
   *((&RAM[((v3839 | 256u))])) = 32;
@@ -16029,7 +16029,7 @@ llvm_cbe_lE03A:
   A = v4547;
   Z = (((v4547 == 0)));
   N = (((((v4547 >> 7)))));
-  *llvm_cbe_tmp43961 = (-32);
+  *llvm_cbe_tmp43961 = -32;
   *((&RAM[((v4545 | 256u))])) = 65;
   v4548 = ((v4545 - 1));
   S = v4548;
@@ -16105,16 +16105,16 @@ llvm_cbe_lBD1A:
 
 llvm_cbe_lE00B:
   v4517 = S;
-  *((&RAM[((v4517 | 256u))])) = (-32);
+  *((&RAM[((v4517 | 256u))])) = -32;
   *((&RAM[(((((((v4517 - 1))))) | 256u))])) = 13;
   v4518 = ((v4517 - 2));
   S = v4518;
   v4519 = *((&RAM[102u]));
-  v4520 = ((v4519 ^ (-1)));
+  v4520 = ((v4519 ^ -1));
   A = v4520;
   Z = (((v4519 == 0xff)));
   N = (((((v4520 >> 7)))));
-  if ((((s8 )v4519) > ((s8 )(-1)))) {
+  if ((((s8 )v4519) > ((s8 )-1))) {
     goto llvm_cbe_lB97E;
   } else {
     v3797 = v4518;   /* for PHI node */
@@ -16413,8 +16413,8 @@ llvm_cbe_lA533:
 
 llvm_cbe_lA4F0:
   v328 = S;
-  *((&RAM[((v328 | 256u))])) = (-92);
-  *((&RAM[(((((((v328 - 1))))) | 256u))])) = (-14);
+  *((&RAM[((v328 | 256u))])) = -92;
+  *((&RAM[(((((((v328 - 1))))) | 256u))])) = -14;
   v329 = ((v328 - 2));
   S = v329;
   v362 = v329;   /* for PHI node */
@@ -16422,7 +16422,7 @@ llvm_cbe_lA4F0:
 
 llvm_cbe_lA52D:
   v359 = S;
-  *((&RAM[((v359 | 256u))])) = (-91);
+  *((&RAM[((v359 | 256u))])) = -91;
   *((&RAM[(((((((v359 - 1))))) | 256u))])) = 47;
   v360 = ((v359 - 2));
   S = v360;
@@ -16431,8 +16431,8 @@ llvm_cbe_lA52D:
 
 llvm_cbe_lE1B8:
   v4709 = S;
-  *((&RAM[((v4709 | 256u))])) = (-31);
-  *((&RAM[(((((((v4709 - 1))))) | 256u))])) = (-70);
+  *((&RAM[((v4709 | 256u))])) = -31;
+  *((&RAM[(((((((v4709 - 1))))) | 256u))])) = -70;
   v4710 = ((v4709 - 2));
   S = v4710;
   v362 = v4710;   /* for PHI node */
@@ -16452,16 +16452,16 @@ llvm_cbe_lA579:
   }
 
 llvm_cbe_bb3640:
-  *llvm_cbe_tmp3659 = (-104);
+  *llvm_cbe_tmp3659 = -104;
   v420 = v255;   /* for PHI node */
   goto llvm_cbe_lA579;
 
 llvm_cbe_lA49F:
   v257 = S;
-  *((&RAM[((v257 | 256u))])) = (-92);
+  *((&RAM[((v257 | 256u))])) = -92;
   v258 = ((v257 - 1));
   S = v258;
-  *((&RAM[((v258 | 256u))])) = (-95);
+  *((&RAM[((v258 | 256u))])) = -95;
   v420 = v258;   /* for PHI node */
   goto llvm_cbe_lA579;
 
@@ -16474,10 +16474,10 @@ llvm_cbe_lA609:
   *((&RAM[((v518 + 509u))])) = v516;
   v520 = *((&RAM[123u]));
   *((&RAM[123u])) = (((v520 - 1)));
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
-  *((&RAM[122u])) = (-1);
+  *((&RAM[122u])) = -1;
   v521 = S;
   v522 = *((&RAM[(((((((v521 + 1))))) | 256u))]));
   v523 = ((v521 + 2));
@@ -16530,7 +16530,7 @@ llvm_cbe_lA5DE:
   C = 1;
   v484 = (((((v480 & 255))) - 85));
   v485 = v484;
-  V = (((((((((v485 ^ v482) & 128u) == 0u) | (((s8 )v482) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v485 ^ v482) & 128u) == 0u) | (((s8 )v482) > ((s8 )-1)))&1))) ? 0 : 1));
   v486 = v484;
   C = (((((((((((v485 >> 8u))))) & 1))) ^ 1)));
   if (v486 == 0) {
@@ -16554,7 +16554,7 @@ llvm_cbe_bb5562:
   C = 1;
   v480 = ((v474 - 58));
   v481 = v480;
-  V = (((((((((v481 ^ v474) & 128u) == 0u) | (((s8 )v474) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v481 ^ v474) & 128u) == 0u) | (((s8 )v474) > ((s8 )-1)))&1))) ? 0 : 1));
   v482 = v480;
   C = (((((((((((v481 >> 8u))))) & 1))) ^ 1)));
   if (v482 == 0) {
@@ -16624,7 +16624,7 @@ llvm_cbe_bb5213:
   C = (((((((((((v439 >> 8u))))) & 1))) ^ 1)));
   if (((v439 & 255u) == 0u)) {
     v473 = v432;   /* for PHI node */
-    v475 = (-103);   /* for PHI node */
+    v475 = -103;   /* for PHI node */
     v477 = v427;   /* for PHI node */
     goto llvm_cbe_lA5C9;
   } else {
@@ -16733,7 +16733,7 @@ llvm_cbe_lA5AC:
   v443 = ((v432 - 1));
   v445 = 0;   /* for PHI node */
   v447 = v443;   /* for PHI node */
-  v449 = (-1);   /* for PHI node */
+  v449 = -1;   /* for PHI node */
   goto llvm_cbe_lA5B6;
 
 llvm_cbe_bb5831:
@@ -16997,19 +16997,19 @@ llvm_cbe_lA4A2:
   v259 = Y;
   *((&RAM[11u])) = v259;
   v260 = S;
-  *((&RAM[((v260 | 256u))])) = (-92);
+  *((&RAM[((v260 | 256u))])) = -92;
   v261 = ((v260 - 1));
   S = v261;
-  *((&RAM[((v261 | 256u))])) = (-90);
+  *((&RAM[((v261 | 256u))])) = -90;
   v527 = v261;   /* for PHI node */
   goto llvm_cbe_lA613;
 
 llvm_cbe_lA6A7:
   v635 = S;
-  *((&RAM[((v635 | 256u))])) = (-90);
+  *((&RAM[((v635 | 256u))])) = -90;
   v636 = ((v635 - 1));
   S = v636;
-  *((&RAM[((v636 | 256u))])) = (-87);
+  *((&RAM[((v636 | 256u))])) = -87;
   v527 = v636;   /* for PHI node */
   goto llvm_cbe_lA613;
 
@@ -17017,8 +17017,8 @@ llvm_cbe_lA8C0:
   v919 = v920;
   v921 = v922;
   v923 = S;
-  *((&RAM[((v923 | 256u))])) = (-88);
-  *((&RAM[(((((((v923 - 1))))) | 256u))])) = (-62);
+  *((&RAM[((v923 | 256u))])) = -88;
+  *((&RAM[(((((((v923 - 1))))) | 256u))])) = -62;
   S = (((v923 - 2)));
   v531 = v919;   /* for PHI node */
   v533 = v921;   /* for PHI node */
@@ -17245,10 +17245,10 @@ llvm_cbe_lA67A:
   v606 = *((&RAM[(((((((v605 + 1))))) | 256u))]));
   Y = v606;
   v607 = *((&RAM[(((((((v605 + 2))))) | 256u))]));
-  X = (-6);
+  X = -6;
   *((&RAM[506u])) = v607;
   *((&RAM[505u])) = v606;
-  S = (-8);
+  S = -8;
   A = 0;
   Z = 1;
   N = 0;
@@ -17257,7 +17257,7 @@ llvm_cbe_lA67A:
   goto llvm_cbe_lA68D;
 
 llvm_cbe_bb3442:
-  *llvm_cbe_tmp3425 = (-92);
+  *llvm_cbe_tmp3425 = -92;
   *((&RAM[((v235 | 256u))])) = 100;
   S = (((v235 - 1)));
   goto llvm_cbe_lA67A;
@@ -17320,7 +17320,7 @@ llvm_cbe_bb6713:
   Z = (((v620 == 0)));
   N = (((((v620 >> 7)))));
   v621 = (((((v620 + 255))) + v619));
-  if ((((s8 )v620) > ((s8 )(-1)))) {
+  if ((((s8 )v620) > ((s8 )-1))) {
     goto llvm_cbe_bb6772;
   } else {
     goto llvm_cbe_bb6761;
@@ -17343,7 +17343,7 @@ llvm_cbe_lA68E:
   Z = (((v615 == 0)));
   N = (((((v615 >> 7)))));
   v616 = ((v615 + 255));
-  if ((((s8 )v615) > ((s8 )(-1)))) {
+  if ((((s8 )v615) > ((s8 )-1))) {
     goto llvm_cbe_bb6712;
   } else {
     goto llvm_cbe_bb6701;
@@ -17351,7 +17351,7 @@ llvm_cbe_lA68E:
 
 llvm_cbe_lA659:
   v596 = S;
-  *((&RAM[((v596 | 256u))])) = (-90);
+  *((&RAM[((v596 | 256u))])) = -90;
   v597 = ((v596 - 1));
   S = v597;
   *((&RAM[((v597 | 256u))])) = 91;
@@ -17360,8 +17360,8 @@ llvm_cbe_lA659:
 
 llvm_cbe_lA4ED:
   v327 = S;
-  *((&RAM[((v327 | 256u))])) = (-92);
-  *((&RAM[(((((((v327 - 1))))) | 256u))])) = (-17);
+  *((&RAM[((v327 | 256u))])) = -92;
+  *((&RAM[(((((((v327 - 1))))) | 256u))])) = -17;
   S = (((v327 - 2)));
   goto llvm_cbe_lA659;
 
@@ -17545,7 +17545,7 @@ llvm_cbe_bb3874:
   Z = (((v283 == 0)));
   N = (((((v283 >> 7)))));
   v284 = (((((v283 + 255))) + v282));
-  if ((((s8 )v283) > ((s8 )(-1)))) {
+  if ((((s8 )v283) > ((s8 )-1))) {
     goto llvm_cbe_bb3934;
   } else {
     goto llvm_cbe_bb3923;
@@ -17654,7 +17654,7 @@ llvm_cbe_bb4186:
 
 llvm_cbe_lA52A:
   v358 = S;
-  *((&RAM[((v358 | 256u))])) = (-91);
+  *((&RAM[((v358 | 256u))])) = -91;
   *((&RAM[(((((((v358 - 1))))) | 256u))])) = 44;
   S = (((v358 - 2)));
   goto llvm_cbe_lA659;
@@ -17796,10 +17796,10 @@ llvm_cbe_lA877:
 
 llvm_cbe_lE1B5:
   v4707 = S;
-  *((&RAM[((v4707 | 256u))])) = (-31);
+  *((&RAM[((v4707 | 256u))])) = -31;
   v4708 = ((v4707 - 1));
   S = v4708;
-  *((&RAM[((v4708 | 256u))])) = (-73);
+  *((&RAM[((v4708 | 256u))])) = -73;
   v614 = v4708;   /* for PHI node */
   goto llvm_cbe_lA68E;
 
@@ -17863,7 +17863,7 @@ llvm_cbe_lA6F6:
 
 llvm_cbe_bb7309:
   v682 = *((&RAM[15u]));
-  v683 = ((v682 ^ (-1)));
+  v683 = ((v682 ^ -1));
   A = v683;
   Z = (((v682 == 0xff)));
   N = (((((v683 >> 7)))));
@@ -17961,7 +17961,7 @@ llvm_cbe_lA81D:
   N = (((((v825 >> 7)))));
   v826 = ((v825 - 1));
   v827 = v826;
-  V = (((((((((v827 ^ v825) & 128u) == 0u) | (((s8 )v825) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v827 ^ v825) & 128u) == 0u) | (((s8 )v825) > ((s8 )-1)))&1))) ? 0 : 1));
   v828 = v826;
   A = v828;
   v829 = (((((((v827 >> 8u))))) & 1));
@@ -17980,7 +17980,7 @@ llvm_cbe_lA81D:
 
 llvm_cbe_lA677:
   v604 = S;
-  *((&RAM[((v604 | 256u))])) = (-90);
+  *((&RAM[((v604 | 256u))])) = -90;
   *((&RAM[(((((((v604 - 1))))) | 256u))])) = 121;
   S = (((v604 - 2)));
   goto llvm_cbe_lA81D;
@@ -18067,7 +18067,7 @@ llvm_cbe_bb9772:
   N = (((((v925 >> 7)))));
   v926 = (((((v925 - 2))) + (((s16 )(s8 )v924))));
   v927 = v926;
-  V = (((((((((v927 ^ v925) & 128u) == 0u) | (((s8 )v925) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v927 ^ v925) & 128u) == 0u) | (((s8 )v925) > ((s8 )-1)))&1))) ? 0 : 1));
   v928 = ((((((((((v927 >> 8u))))) & 1))) ^ 1));
   C = v928;
   *((&RAM[122u])) = v926;
@@ -18077,7 +18077,7 @@ llvm_cbe_bb9772:
   N = (((((v929 >> 7)))));
   v930 = (((((v929 - 1))) + v928));
   v931 = v930;
-  V = (((((((((v931 ^ v929) & 128u) == 0u) | (((s8 )v929) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v931 ^ v929) & 128u) == 0u) | (((s8 )v929) > ((s8 )-1)))&1))) ? 0 : 1));
   v932 = v930;
   A = v932;
   Z = (((v932 == 0)));
@@ -18148,8 +18148,8 @@ llvm_cbe_lA93E:
 
 llvm_cbe_lACD1:
   v1523 = S;
-  *((&RAM[((v1523 | 256u))])) = (-84);
-  *((&RAM[(((((((v1523 - 1))))) | 256u))])) = (-45);
+  *((&RAM[((v1523 | 256u))])) = -84;
+  *((&RAM[(((((((v1523 - 1))))) | 256u))])) = -45;
   S = (((v1523 - 2)));
   goto llvm_cbe_lA8FB;
 
@@ -18281,15 +18281,15 @@ llvm_cbe_lA906:
 
 llvm_cbe_lA75A:
   v747 = S;
-  *((&RAM[((v747 | 256u))])) = (-89);
+  *((&RAM[((v747 | 256u))])) = -89;
   *((&RAM[(((((((v747 - 1))))) | 256u))])) = 92;
   S = (((v747 - 2)));
   goto llvm_cbe_lA906;
 
 llvm_cbe_lA8F8:
   v951 = S;
-  *((&RAM[((v951 | 256u))])) = (-88);
-  *((&RAM[(((((((v951 - 1))))) | 256u))])) = (-6);
+  *((&RAM[((v951 | 256u))])) = -88;
+  *((&RAM[(((((((v951 - 1))))) | 256u))])) = -6;
   S = (((v951 - 2)));
   goto llvm_cbe_lA906;
 
@@ -18324,15 +18324,15 @@ llvm_cbe_lB3CE:
   Z = (((v2574 == 0)));
   N = (((((v2574 >> 7)))));
   *((&RAM[(((((((v2569 - 4))))) | 256u))])) = v2574;
-  *((&RAM[(((((((v2569 - 5))))) | 256u))])) = (-77);
-  *((&RAM[(((((((v2569 - 6))))) | 256u))])) = (-35);
+  *((&RAM[(((((((v2569 - 5))))) | 256u))])) = -77;
+  *((&RAM[(((((((v2569 - 6))))) | 256u))])) = -35;
   S = (((v2569 - 7)));
   goto llvm_cbe_lA8F8;
 
 llvm_cbe_bb14217:
   v1429 = S;
-  *((&RAM[((v1429 | 256u))])) = (-85);
-  *((&RAM[(((((((v1429 - 1))))) | 256u))])) = (-11);
+  *((&RAM[((v1429 | 256u))])) = -85;
+  *((&RAM[(((((((v1429 - 1))))) | 256u))])) = -11;
   S = (((v1429 - 2)));
   goto llvm_cbe_lA906;
 
@@ -18384,8 +18384,8 @@ llvm_cbe_lABE0:
 
 llvm_cbe_lACB8:
   v1512 = S;
-  *((&RAM[((v1512 | 256u))])) = (-84);
-  *((&RAM[(((((((v1512 - 1))))) | 256u))])) = (-70);
+  *((&RAM[((v1512 | 256u))])) = -84;
+  *((&RAM[(((((((v1512 - 1))))) | 256u))])) = -70;
   S = (((v1512 - 2)));
   goto llvm_cbe_lA906;
 
@@ -18442,16 +18442,16 @@ llvm_cbe_lA909:
 
 llvm_cbe_lA8A3:
   v892 = S;
-  *((&RAM[((v892 | 256u))])) = (-88);
+  *((&RAM[((v892 | 256u))])) = -88;
   v893 = ((v892 - 1));
   S = v893;
-  *((&RAM[((v893 | 256u))])) = (-91);
+  *((&RAM[((v893 | 256u))])) = -91;
   v974 = v893;   /* for PHI node */
   goto llvm_cbe_lA909;
 
 llvm_cbe_lA93B:
   v1013 = S;
-  *((&RAM[((v1013 | 256u))])) = (-87);
+  *((&RAM[((v1013 | 256u))])) = -87;
   v1014 = ((v1013 - 1));
   S = v1014;
   *((&RAM[((v1014 | 256u))])) = 61;
@@ -18572,7 +18572,7 @@ llvm_cbe_lAAE7:
 llvm_cbe_lAACA:
   v1265 = X;
   *((&RAM[((v1265 | 512u))])) = 0;
-  X = (-1);
+  X = -1;
   Y = 1;
   v1266 = *((&RAM[19u]));
   A = v1266;
@@ -18594,7 +18594,7 @@ llvm_cbe_lAAC8:
 
 llvm_cbe_lAAE5:
   v1273 = A;
-  v1274 = ((v1273 ^ (-1)));
+  v1274 = ((v1273 ^ -1));
   A = v1274;
   Z = (((v1273 == 0xff)));
   N = (((((v1274 >> 7)))));
@@ -18614,7 +18614,7 @@ llvm_cbe_lAADC:
 
 llvm_cbe_bb13411:
   v1354 = S;
-  *((&RAM[((v1354 | 256u))])) = (-85);
+  *((&RAM[((v1354 | 256u))])) = -85;
   *((&RAM[(((((((v1354 - 1))))) | 256u))])) = 55;
   S = (((v1354 - 2)));
   goto llvm_cbe_lAAE5;
@@ -18871,10 +18871,10 @@ llvm_cbe_lAE83:
 
 llvm_cbe_lADB1:
   v1612 = S;
-  *((&RAM[((v1612 | 256u))])) = (-83);
+  *((&RAM[((v1612 | 256u))])) = -83;
   v1613 = ((v1612 - 1));
   S = v1613;
-  *((&RAM[((v1613 | 256u))])) = (-77);
+  *((&RAM[((v1613 | 256u))])) = -77;
   v1756 = v1613;   /* for PHI node */
   goto llvm_cbe_lAE83;
 
@@ -18887,7 +18887,7 @@ llvm_cbe_lB63D:
   Z = (((v2934 == 0)));
   N = (((((v2934 >> 7)))));
   *((&RAM[(((((((v2933 - 1))))) | 256u))])) = v2934;
-  *((&RAM[(((((((v2933 - 2))))) | 256u))])) = (-74);
+  *((&RAM[(((((((v2933 - 2))))) | 256u))])) = -74;
   v2935 = ((v2933 - 3));
   S = v2935;
   *((&RAM[((v2935 | 256u))])) = 69;
@@ -18945,7 +18945,7 @@ llvm_cbe_bb18444:
   N = 0;
   *((&RAM[112u])) = 0;
   v1847 = S;
-  *((&RAM[((v1847 | 256u))])) = (-81);
+  *((&RAM[((v1847 | 256u))])) = -81;
   v1848 = ((v1847 - 1));
   S = v1848;
   *((&RAM[((v1848 | 256u))])) = 61;
@@ -18954,7 +18954,7 @@ llvm_cbe_bb18444:
 
 llvm_cbe_lAF6E:
   v1870 = S;
-  *((&RAM[((v1870 | 256u))])) = (-81);
+  *((&RAM[((v1870 | 256u))])) = -81;
   v1871 = ((v1870 - 1));
   S = v1871;
   *((&RAM[((v1871 | 256u))])) = 112;
@@ -18984,7 +18984,7 @@ llvm_cbe_bb18291:
   V = v1828;
   v1830 = ((((((((((v1827 >> 8u))))) & 1))) ^ 1));
   C = v1830;
-  A = (-29);
+  A = -29;
   Z = 0;
   N = 1;
   v1831 = (((((226 - v1821))) + v1830));
@@ -19004,7 +19004,7 @@ llvm_cbe_bb18279:
   }
 
 llvm_cbe_bb18249:
-  A = (-94);
+  A = -94;
   Z = 0;
   N = 1;
   v1827 = (((((((161 - v1819))) + v1826))));
@@ -19139,8 +19139,8 @@ llvm_cbe_lB113:
 
 llvm_cbe_lAE92:
   v1762 = S;
-  *((&RAM[((v1762 | 256u))])) = (-82);
-  *((&RAM[(((((((v1762 - 1))))) | 256u))])) = (-108);
+  *((&RAM[((v1762 | 256u))])) = -82;
+  *((&RAM[(((((((v1762 - 1))))) | 256u))])) = -108;
   S = (((v1762 - 2)));
   goto llvm_cbe_lB113;
 
@@ -19154,15 +19154,15 @@ llvm_cbe_lAE8D:
 
 llvm_cbe_lB097:
   v2025 = S;
-  *((&RAM[((v2025 | 256u))])) = (-80);
-  *((&RAM[(((((((v2025 - 1))))) | 256u))])) = (-103);
+  *((&RAM[((v2025 | 256u))])) = -80;
+  *((&RAM[(((((((v2025 - 1))))) | 256u))])) = -103;
   S = (((v2025 - 2)));
   goto llvm_cbe_lB113;
 
 llvm_cbe_bb20239:
   v2029 = S;
-  *((&RAM[((v2029 | 256u))])) = (-80);
-  *((&RAM[(((((((v2029 - 1))))) | 256u))])) = (-84);
+  *((&RAM[((v2029 | 256u))])) = -80;
+  *((&RAM[(((((((v2029 - 1))))) | 256u))])) = -84;
   S = (((v2029 - 2)));
   goto llvm_cbe_lB113;
 
@@ -19176,8 +19176,8 @@ llvm_cbe_lB0A8:
 
 llvm_cbe_bb20280:
   v2034 = S;
-  *((&RAM[((v2034 | 256u))])) = (-80);
-  *((&RAM[(((((((v2034 - 1))))) | 256u))])) = (-73);
+  *((&RAM[((v2034 | 256u))])) = -80;
+  *((&RAM[(((((((v2034 - 1))))) | 256u))])) = -73;
   S = (((v2034 - 2)));
   goto llvm_cbe_lB113;
 
@@ -19201,7 +19201,7 @@ llvm_cbe_lB113_2e_loopexit:
 
 llvm_cbe_bb20851:
   v2094 = (((((v2089 - 92))) + v2093));
-  V = (((((((((v2094 ^ v2088) & 128u) == 0u) | (((s8 )v2088) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v2094 ^ v2088) & 128u) == 0u) | (((s8 )v2088) > ((s8 )-1)))&1))) ? 0 : 1));
   v2095 = v2094;
   A = v2095;
   Z = (((v2095 == 0)));
@@ -19219,7 +19219,7 @@ llvm_cbe_bb20851:
 
 llvm_cbe_lB123:
   A = 19;
-  Y = (-65);
+  Y = -65;
   Z = 0;
   N = 1;
   v2110 = *((&RAM[((v2105 | 256u))]));
@@ -19431,7 +19431,7 @@ llvm_cbe_lB194:
   }
 
 llvm_cbe_bb22883:
-  *((&RAM[((v2240 | 256u))])) = (-78);
+  *((&RAM[((v2240 | 256u))])) = -78;
   S = v2238;
   *((&RAM[((v2238 | 256u))])) = 85;
   goto llvm_cbe_lB194;
@@ -19444,7 +19444,7 @@ llvm_cbe_lB261:
   N = (((((v2259 >> 7)))));
   V = v2250;
   Y = v2248;
-  *llvm_cbe_tmp22375 = (-78);
+  *llvm_cbe_tmp22375 = -78;
   S = v2238;
   *((&RAM[((v2238 | 256u))])) = 99;
   goto llvm_cbe_lB194;
@@ -19656,8 +19656,8 @@ llvm_cbe_lB4D5:
   *((&RAM[100u])) = v2709;
   *((&RAM[101u])) = 0;
   *((&RAM[112u])) = 0;
-  Y = (-1);
-  *((&RAM[13u])) = (-1);
+  Y = -1;
+  *((&RAM[13u])) = -1;
   *((&RAM[23u])) = v2709;
   v2716 = ((v2709 + 3));
   X = v2716;
@@ -19776,7 +19776,7 @@ llvm_cbe_lB5BD:
 
 llvm_cbe_lB561:
   v2779 = S;
-  *((&RAM[((v2779 | 256u))])) = (-75);
+  *((&RAM[((v2779 | 256u))])) = -75;
   *((&RAM[(((((((v2779 - 1))))) | 256u))])) = 99;
   S = (((v2779 - 2)));
   goto llvm_cbe_lB5BD;
@@ -19815,15 +19815,15 @@ llvm_cbe_lB5C7:
 
 llvm_cbe_bb27516:
   v2767 = S;
-  *((&RAM[((v2767 | 256u))])) = (-75);
+  *((&RAM[((v2767 | 256u))])) = -75;
   *((&RAM[(((((((v2767 - 1))))) | 256u))])) = 74;
   S = (((v2767 - 2)));
   goto llvm_cbe_lB5C7;
 
 llvm_cbe_lB5B8:
   v2852 = S;
-  *((&RAM[((v2852 | 256u))])) = (-75);
-  *((&RAM[(((((((v2852 - 1))))) | 256u))])) = (-70);
+  *((&RAM[((v2852 | 256u))])) = -75;
+  *((&RAM[(((((((v2852 - 1))))) | 256u))])) = -70;
   S = (((v2852 - 2)));
   goto llvm_cbe_lB5C7;
 
@@ -20014,8 +20014,8 @@ llvm_cbe_lB4C3:
   Z = (((v2706 == 0)));
   N = (((((v2706 >> 7)))));
   v2707 = S;
-  *((&RAM[((v2707 | 256u))])) = (-76);
-  *((&RAM[(((((((v2707 - 1))))) | 256u))])) = (-55);
+  *((&RAM[((v2707 | 256u))])) = -76;
+  *((&RAM[(((((((v2707 - 1))))) | 256u))])) = -55;
   v2708 = ((v2707 - 2));
   S = v2708;
   *((&RAM[34u])) = v2705;
@@ -20025,7 +20025,7 @@ llvm_cbe_lB4C3:
 
 llvm_cbe_lB66A:
   v2957 = S;
-  *((&RAM[((v2957 | 256u))])) = (-74);
+  *((&RAM[((v2957 | 256u))])) = -74;
   *((&RAM[(((((((v2957 - 1))))) | 256u))])) = 108;
   v2958 = ((v2957 - 2));
   S = v2958;
@@ -20066,7 +20066,7 @@ llvm_cbe_lAA59:
   *((&RAM[111u])) = v1185;
   *((&RAM[112u])) = v1186;
   v1187 = S;
-  *((&RAM[((v1187 | 256u))])) = (-86);
+  *((&RAM[((v1187 | 256u))])) = -86;
   v1188 = ((v1187 - 1));
   S = v1188;
   *((&RAM[((v1188 | 256u))])) = 99;
@@ -20075,7 +20075,7 @@ llvm_cbe_lAA59:
 
 llvm_cbe_lB660:
   v2952 = S;
-  *((&RAM[((v2952 | 256u))])) = (-74);
+  *((&RAM[((v2952 | 256u))])) = -74;
   v2953 = ((v2952 - 1));
   S = v2953;
   *((&RAM[((v2953 | 256u))])) = 98;
@@ -20086,7 +20086,7 @@ llvm_cbe_lB725:
   A = v3121;
   Z = v3122;
   N = v3123;
-  *llvm_cbe_tmp30820 = (-73);
+  *llvm_cbe_tmp30820 = -73;
   *((&RAM[((v3120 | 256u))])) = 40;
   S = v3119;
   v2976 = v3119;   /* for PHI node */
@@ -20375,7 +20375,7 @@ llvm_cbe_lAA68:
   *((&RAM[80u])) = v1189;
   *((&RAM[81u])) = v1191;
   v1195 = S;
-  *((&RAM[((v1195 | 256u))])) = (-86);
+  *((&RAM[((v1195 | 256u))])) = -86;
   v1196 = ((v1195 - 1));
   S = v1196;
   *((&RAM[((v1196 | 256u))])) = 110;
@@ -20411,10 +20411,10 @@ llvm_cbe_lB6AA:
   *((&RAM[34u])) = v3008;
   *((&RAM[35u])) = v3006;
   v3010 = S;
-  *((&RAM[((v3010 | 256u))])) = (-74);
+  *((&RAM[((v3010 | 256u))])) = -74;
   v3011 = ((v3010 - 1));
   S = v3011;
-  *((&RAM[((v3011 | 256u))])) = (-80);
+  *((&RAM[((v3011 | 256u))])) = -80;
   v3053 = v3008;   /* for PHI node */
   v3055 = v3006;   /* for PHI node */
   v3057 = v3011;   /* for PHI node */
@@ -20434,7 +20434,7 @@ llvm_cbe_lB037:
   Z = (((v1964 == 0)));
   N = (((((v1964 >> 7)))));
   v1965 = S;
-  *((&RAM[((v1965 | 256u))])) = (-80);
+  *((&RAM[((v1965 | 256u))])) = -80;
   *((&RAM[(((((((v1965 - 1))))) | 256u))])) = 67;
   S = (((v1965 - 2)));
   v3007 = v1964;   /* for PHI node */
@@ -20449,7 +20449,7 @@ llvm_cbe_lB663:
   Z = (((v2955 == 0)));
   N = (((((v2955 >> 7)))));
   v2956 = S;
-  *((&RAM[((v2956 | 256u))])) = (-74);
+  *((&RAM[((v2956 | 256u))])) = -74;
   *((&RAM[(((((((v2956 - 1))))) | 256u))])) = 105;
   S = (((v2956 - 2)));
   v3007 = v2955;   /* for PHI node */
@@ -20464,7 +20464,7 @@ llvm_cbe_lB66D:
   Z = (((v2960 == 0)));
   N = (((((v2960 >> 7)))));
   v2961 = S;
-  *((&RAM[((v2961 | 256u))])) = (-74);
+  *((&RAM[((v2961 | 256u))])) = -74;
   *((&RAM[(((((((v2961 - 1))))) | 256u))])) = 115;
   S = (((v2961 - 2)));
   v3007 = v2960;   /* for PHI node */
@@ -20483,20 +20483,20 @@ llvm_cbe_lB6A6:
   goto llvm_cbe_lB6AA;
 
 llvm_cbe_bb11513:
-  *((&RAM[((v1117 | 256u))])) = (-87);
-  *((&RAM[(((((((v1117 - 1))))) | 256u))])) = (-30);
+  *((&RAM[((v1117 | 256u))])) = -87;
+  *((&RAM[(((((((v1117 - 1))))) | 256u))])) = -30;
   S = (((v1117 - 2)));
   goto llvm_cbe_lB6A6;
 
 llvm_cbe_lAB21:
   v1339 = S;
-  *((&RAM[((v1339 | 256u))])) = (-85);
+  *((&RAM[((v1339 | 256u))])) = -85;
   *((&RAM[(((((((v1339 - 1))))) | 256u))])) = 35;
   S = (((v1339 - 2)));
   goto llvm_cbe_lB6A6;
 
 llvm_cbe_lAA9A:
-  *llvm_cbe_tmp12517 = (-100);
+  *llvm_cbe_tmp12517 = -100;
   S = (((v1256 - 2)));
   goto llvm_cbe_lAB21;
 
@@ -20507,7 +20507,7 @@ llvm_cbe_lAAB8:
   N = v1255;
   V = ((((((((v1254 >> 6))))) & 1)));
   v1256 = S;
-  *((&RAM[((v1256 | 256u))])) = (-86);
+  *((&RAM[((v1256 | 256u))])) = -86;
   v1257 = ((v1256 - 1));
   S = v1257;
   llvm_cbe_tmp12517 = (&RAM[((v1257 | 256u))]);
@@ -20519,15 +20519,15 @@ llvm_cbe_lAAB8:
 
 llvm_cbe_lAAC2:
   v1261 = S;
-  *((&RAM[((v1261 | 256u))])) = (-86);
-  *((&RAM[(((((((v1261 - 1))))) | 256u))])) = (-60);
+  *((&RAM[((v1261 | 256u))])) = -86;
+  *((&RAM[(((((((v1261 - 1))))) | 256u))])) = -60;
   S = (((v1261 - 2)));
   goto llvm_cbe_lAB21;
 
 llvm_cbe_lABCB:
   v1417 = S;
-  *((&RAM[((v1417 | 256u))])) = (-85);
-  *((&RAM[(((((((v1417 - 1))))) | 256u))])) = (-51);
+  *((&RAM[((v1417 | 256u))])) = -85;
+  *((&RAM[(((((((v1417 - 1))))) | 256u))])) = -51;
   S = (((v1417 - 2)));
   goto llvm_cbe_lAB21;
 
@@ -20540,7 +20540,7 @@ llvm_cbe_lB02E:
   Z = (((v1957 == 1)));
   N = (((((v1958 >> 7)))));
   v1959 = S;
-  *((&RAM[((v1959 | 256u))])) = (-80);
+  *((&RAM[((v1959 | 256u))])) = -80;
   *((&RAM[(((((((v1959 - 1))))) | 256u))])) = 54;
   S = (((v1959 - 2)));
   goto llvm_cbe_lB6A6;
@@ -20555,8 +20555,8 @@ llvm_cbe_lB019:
 
 llvm_cbe_bb25146:
   v2538 = S;
-  *((&RAM[((v2538 | 256u))])) = (-77);
-  *((&RAM[(((((((v2538 - 1))))) | 256u))])) = (-125);
+  *((&RAM[((v2538 | 256u))])) = -77;
+  *((&RAM[(((((((v2538 - 1))))) | 256u))])) = -125;
   S = (((v2538 - 2)));
   goto llvm_cbe_lB6A6;
 
@@ -20568,7 +20568,7 @@ llvm_cbe_lB712:
   Z = (((v3117 == 0)));
   N = (((((v3117 >> 7)))));
   v3118 = S;
-  *((&RAM[((v3118 | 256u))])) = (-73);
+  *((&RAM[((v3118 | 256u))])) = -73;
   *((&RAM[(((((((v3118 - 1))))) | 256u))])) = 24;
   S = (((v3118 - 2)));
   v3007 = v3117;   /* for PHI node */
@@ -20594,7 +20594,7 @@ llvm_cbe_bb30405:
   *((&RAM[22u])) = v3052;
   v3066 = (((((v3061 - 4))) + v3065));
   v3067 = v3066;
-  V = (((((((((v3067 ^ v3052) & 128u) == 0u) | (((s8 )v3052) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v3067 ^ v3052) & 128u) == 0u) | (((s8 )v3052) > ((s8 )-1)))&1))) ? 0 : 1));
   v3068 = v3066;
   A = v3068;
   C = (((((((((((v3067 >> 8u))))) & 1))) ^ 1)));
@@ -20679,8 +20679,8 @@ llvm_cbe_lB7E2:
 
 llvm_cbe_lAC80:
   v1492 = S;
-  *((&RAM[((v1492 | 256u))])) = (-84);
-  *((&RAM[(((((((v1492 - 1))))) | 256u))])) = (-126);
+  *((&RAM[((v1492 | 256u))])) = -84;
+  *((&RAM[(((((((v1492 - 1))))) | 256u))])) = -126;
   S = (((v1492 - 2)));
   goto llvm_cbe_lB7E2;
 
@@ -20882,7 +20882,7 @@ llvm_cbe_bb36560:
 llvm_cbe_lBAC6:
   v3785 = v3786;
   v3787 = ((((((((v3777 & 255))) + 128))) + (((s16 )(s8 )v3785))));
-  if ((((s8 )v3780) > ((s8 )(-1)))) {
+  if ((((s8 )v3780) > ((s8 )-1))) {
     goto llvm_cbe_bb36571;
   } else {
     goto llvm_cbe_bb36560;
@@ -20974,15 +20974,15 @@ llvm_cbe_lB97D:
 llvm_cbe_lB94D:
   v3535 = v3536;
   v3537 = *((&RAM[98u]));
-  *((&RAM[98u])) = (((v3537 ^ (-1))));
+  *((&RAM[98u])) = (((v3537 ^ -1)));
   v3538 = *((&RAM[99u]));
-  *((&RAM[99u])) = (((v3538 ^ (-1))));
+  *((&RAM[99u])) = (((v3538 ^ -1)));
   v3539 = *((&RAM[100u]));
-  *((&RAM[100u])) = (((v3539 ^ (-1))));
+  *((&RAM[100u])) = (((v3539 ^ -1)));
   v3540 = *((&RAM[101u]));
-  *((&RAM[101u])) = (((v3540 ^ (-1))));
+  *((&RAM[101u])) = (((v3540 ^ -1)));
   v3541 = *((&RAM[112u]));
-  A = (((v3541 ^ (-1))));
+  A = (((v3541 ^ -1)));
   v3542 = ((-v3541));
   *((&RAM[112u])) = v3542;
   Z = (((v3541 == 0)));
@@ -20997,12 +20997,12 @@ llvm_cbe_lB94D:
 
 llvm_cbe_bb33373:
   v3395 = S;
-  *((&RAM[((v3395 | 256u))])) = (-72);
-  *((&RAM[(((((((v3395 - 1))))) | 256u))])) = (-42);
+  *((&RAM[((v3395 | 256u))])) = -72;
+  *((&RAM[(((((((v3395 - 1))))) | 256u))])) = -42;
   v3396 = ((v3395 - 2));
   S = v3396;
   v3397 = *((&RAM[102u]));
-  v3398 = ((v3397 ^ (-1)));
+  v3398 = ((v3397 ^ -1));
   A = v3398;
   Z = (((v3397 == 0xff)));
   N = (((((v3398 >> 7)))));
@@ -21012,13 +21012,13 @@ llvm_cbe_bb33373:
 
 llvm_cbe_bb39555:
   X = v4128;
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
-  *((&RAM[104u])) = (-1);
+  *((&RAM[104u])) = -1;
   v4131 = S;
-  *((&RAM[((v4131 | 256u))])) = (-68);
-  *((&RAM[(((((((v4131 - 1))))) | 256u))])) = (-83);
+  *((&RAM[((v4131 | 256u))])) = -68;
+  *((&RAM[(((((((v4131 - 1))))) | 256u))])) = -83;
   v4132 = ((v4131 - 2));
   S = v4132;
   v3536 = v4132;   /* for PHI node */
@@ -21065,7 +21065,7 @@ llvm_cbe_lBC9B:
 
 llvm_cbe_lAA11:
   v1146 = S;
-  *((&RAM[((v1146 | 256u))])) = (-86);
+  *((&RAM[((v1146 | 256u))])) = -86;
   *((&RAM[(((((((v1146 - 1))))) | 256u))])) = 19;
   S = (((v1146 - 2)));
   goto llvm_cbe_lBC9B;
@@ -21087,8 +21087,8 @@ llvm_cbe_lB1BF:
 
 llvm_cbe_lA9C7:
   v1105 = S;
-  *((&RAM[((v1105 | 256u))])) = (-87);
-  *((&RAM[(((((((v1105 - 1))))) | 256u))])) = (-55);
+  *((&RAM[((v1105 | 256u))])) = -87;
+  *((&RAM[(((((((v1105 - 1))))) | 256u))])) = -55;
   S = (((v1105 - 2)));
   goto llvm_cbe_lB1BF;
 
@@ -21096,18 +21096,18 @@ llvm_cbe_lAFEB:
   v1934 = v1935;
   *((&RAM[11u])) = v1934;
   v1936 = S;
-  *((&RAM[((v1936 | 256u))])) = (-81);
-  *((&RAM[(((((((v1936 - 1))))) | 256u))])) = (-17);
+  *((&RAM[((v1936 | 256u))])) = -81;
+  *((&RAM[(((((((v1936 - 1))))) | 256u))])) = -17;
   S = (((v1936 - 2)));
   goto llvm_cbe_lB1BF;
 
 llvm_cbe_lAFE6:
-  Y = (-1);
+  Y = -1;
   v1933 = *((&RAM[160u]));
   Z = (((v1933 == 0)));
   N = (((((v1933 >> 7)))));
   V = ((((((((v1933 >> 6))))) & 1)));
-  v1935 = (-1);   /* for PHI node */
+  v1935 = -1;   /* for PHI node */
   goto llvm_cbe_lAFEB;
 
 llvm_cbe_lAFE9:
@@ -21119,28 +21119,28 @@ llvm_cbe_lAFE9:
 
 llvm_cbe_lAFFF:
   v1942 = S;
-  *((&RAM[((v1942 | 256u))])) = (-80);
+  *((&RAM[((v1942 | 256u))])) = -80;
   *((&RAM[(((((((v1942 - 1))))) | 256u))])) = 1;
   S = (((v1942 - 2)));
   goto llvm_cbe_lB1BF;
 
 llvm_cbe_bb48000_2e_lAED4_crit_edge:
   v4926 = S;
-  *((&RAM[((v4926 | 256u))])) = (-82);
-  *((&RAM[(((((((v4926 - 1))))) | 256u))])) = (-42);
+  *((&RAM[((v4926 | 256u))])) = -82;
+  *((&RAM[(((((((v4926 - 1))))) | 256u))])) = -42;
   S = (((v4926 - 2)));
   goto llvm_cbe_lB1BF;
 
 llvm_cbe_bb32104:
-  *((&RAM[((v3250 | 256u))])) = (-72);
+  *((&RAM[((v3250 | 256u))])) = -72;
   *((&RAM[(((((((v3250 - 1))))) | 256u))])) = 3;
   S = (((v3250 - 2)));
   goto llvm_cbe_lBC9B;
 
 llvm_cbe_bb39809:
   v4163 = S;
-  *((&RAM[((v4163 | 256u))])) = (-68);
-  *((&RAM[(((((((v4163 - 1))))) | 256u))])) = (-44);
+  *((&RAM[((v4163 | 256u))])) = -68;
+  *((&RAM[(((((((v4163 - 1))))) | 256u))])) = -44;
   S = (((v4163 - 2)));
   goto llvm_cbe_lBC9B;
 
@@ -21161,8 +21161,8 @@ llvm_cbe_lBCCC:
 
 llvm_cbe_bb43261:
   v4477 = S;
-  *((&RAM[((v4477 | 256u))])) = (-65);
-  *((&RAM[(((((((v4477 - 1))))) | 256u))])) = (-111);
+  *((&RAM[((v4477 | 256u))])) = -65;
+  *((&RAM[(((((((v4477 - 1))))) | 256u))])) = -111;
   S = (((v4477 - 2)));
   goto llvm_cbe_lBCCC;
 
@@ -21179,21 +21179,21 @@ llvm_cbe_lBF8B:
 
 llvm_cbe_lE00E:
   v4521 = S;
-  *((&RAM[((v4521 | 256u))])) = (-32);
+  *((&RAM[((v4521 | 256u))])) = -32;
   *((&RAM[(((((((v4521 - 1))))) | 256u))])) = 16;
   S = (((v4521 - 2)));
   goto llvm_cbe_lBCCC;
 
 llvm_cbe_lE27A:
   v4802 = S;
-  *((&RAM[((v4802 | 256u))])) = (-30);
+  *((&RAM[((v4802 | 256u))])) = -30;
   *((&RAM[(((((((v4802 - 1))))) | 256u))])) = 124;
   S = (((v4802 - 2)));
   goto llvm_cbe_lBCCC;
 
 llvm_cbe_lBE32:
   v4343 = S;
-  *((&RAM[((v4343 | 256u))])) = (-66);
+  *((&RAM[((v4343 | 256u))])) = -66;
   *((&RAM[(((((((v4343 - 1))))) | 256u))])) = 52;
   S = (((v4343 - 2)));
   goto llvm_cbe_lBC9B;
@@ -21225,7 +21225,7 @@ llvm_cbe_lB96F:
 
 llvm_cbe_lBC23:
   v4032 = v4033;
-  *((&RAM[((v4032 | 256u))])) = (-68);
+  *((&RAM[((v4032 | 256u))])) = -68;
   *((&RAM[(((((((v4032 - 1))))) | 256u))])) = 37;
   v4034 = ((v4032 - 2));
   S = v4034;
@@ -21261,8 +21261,8 @@ llvm_cbe_lBC1B:
 
 llvm_cbe_bb11344:
   v1102 = v1103;
-  *((&RAM[((v1102 | 256u))])) = (-87);
-  *((&RAM[(((((((v1102 - 1))))) | 256u))])) = (-58);
+  *((&RAM[((v1102 | 256u))])) = -87;
+  *((&RAM[(((((((v1102 - 1))))) | 256u))])) = -58;
   v1104 = ((v1102 - 2));
   S = v1104;
   v4027 = v1104;   /* for PHI node */
@@ -21283,8 +21283,8 @@ llvm_cbe_lAC8C:
   v1497 = ((((v1496 >> 7))));
   N = v1497;
   v1498 = S;
-  *((&RAM[((v1498 | 256u))])) = (-84);
-  *((&RAM[(((((((v1498 - 1))))) | 256u))])) = (-112);
+  *((&RAM[((v1498 | 256u))])) = -84;
+  *((&RAM[(((((((v1498 - 1))))) | 256u))])) = -112;
   v1499 = ((v1498 - 2));
   S = v1499;
   if (v1497 == 0) {
@@ -21296,7 +21296,7 @@ llvm_cbe_lAC8C:
 
 llvm_cbe_lAE43:
   v1709 = S;
-  *((&RAM[((v1709 | 256u))])) = (-82);
+  *((&RAM[((v1709 | 256u))])) = -82;
   *((&RAM[(((((((v1709 - 1))))) | 256u))])) = 69;
   v1710 = ((v1709 - 2));
   S = v1710;
@@ -21307,12 +21307,12 @@ llvm_cbe_lA778:
   v764 = *((&RAM[102u]));
   v765 = *((&RAM[98u]));
   *((&RAM[98u])) = ((((((v764 | 127))) & v765)));
-  A = (-117);
-  Y = (-89);
+  A = -117;
+  Y = -89;
   Z = 0;
   N = 1;
-  *((&RAM[34u])) = (-117);
-  *((&RAM[35u])) = (-89);
+  *((&RAM[34u])) = -117;
+  *((&RAM[35u])) = -89;
   goto llvm_cbe_lAE43;
 
 llvm_cbe_lAE38:
@@ -21334,8 +21334,8 @@ llvm_cbe_lAE38:
 
 llvm_cbe_lA7A2:
   v775 = S;
-  *((&RAM[((v775 | 256u))])) = (-89);
-  *((&RAM[(((((((v775 - 1))))) | 256u))])) = (-92);
+  *((&RAM[((v775 | 256u))])) = -89;
+  *((&RAM[(((((((v775 - 1))))) | 256u))])) = -92;
   v776 = ((v775 - 2));
   S = v776;
   v1703 = v776;   /* for PHI node */
@@ -21343,8 +21343,8 @@ llvm_cbe_lA7A2:
 
 llvm_cbe_lADFA:
   v1673 = v1674;
-  *((&RAM[((v1673 | 256u))])) = (-83);
-  *((&RAM[(((((((v1673 - 1))))) | 256u))])) = (-4);
+  *((&RAM[((v1673 | 256u))])) = -83;
+  *((&RAM[(((((((v1673 - 1))))) | 256u))])) = -4;
   S = (((v1673 - 2)));
   v1675 = Y;
   v1676 = v1675;
@@ -21353,7 +21353,7 @@ llvm_cbe_lADFA:
   *((&RAM[((v1678 | 256u))])) = v1677;
   v1679 = *((&RAM[((v1676 + 41089u))]));
   *((&RAM[(((((((v1678 - 1))))) | 256u))])) = v1679;
-  *((&RAM[(((((((v1678 - 2))))) | 256u))])) = (-82);
+  *((&RAM[(((((((v1678 - 2))))) | 256u))])) = -82;
   *((&RAM[(((((((v1678 - 3))))) | 256u))])) = 42;
   v1680 = ((v1678 - 4));
   S = v1680;
@@ -21400,7 +21400,7 @@ llvm_cbe_lAF0D:
 
 llvm_cbe_bb36905:
   v3830 = S;
-  *((&RAM[((v3830 | 256u))])) = (-69);
+  *((&RAM[((v3830 | 256u))])) = -69;
   *((&RAM[(((((((v3830 - 1))))) | 256u))])) = 22;
   v3831 = ((v3830 - 2));
   S = v3831;
@@ -21409,8 +21409,8 @@ llvm_cbe_bb36905:
 
 llvm_cbe_lBBD4:
   v3976 = S;
-  *((&RAM[((v3976 | 256u))])) = (-69);
-  *((&RAM[(((((((v3976 - 1))))) | 256u))])) = (-42);
+  *((&RAM[((v3976 | 256u))])) = -69;
+  *((&RAM[(((((((v3976 - 1))))) | 256u))])) = -42;
   v3977 = ((v3976 - 2));
   S = v3977;
   v4027 = v3977;   /* for PHI node */
@@ -21422,7 +21422,7 @@ llvm_cbe_bb25910:
   Y = v2602;
   Z = (((v2602 == 0)));
   N = (((((v2602 >> 7)))));
-  *((&RAM[(((((((v2598 - 1))))) | 256u))])) = (-76);
+  *((&RAM[(((((((v2598 - 1))))) | 256u))])) = -76;
   *((&RAM[(((((((v2598 - 2))))) | 256u))])) = 34;
   S = (((v2598 - 3)));
   goto llvm_cbe_lBBD4;
@@ -21472,7 +21472,7 @@ llvm_cbe_lE043:
   *((&RAM[113u])) = v4556;
   *((&RAM[114u])) = v4554;
   v4558 = S;
-  *((&RAM[((v4558 | 256u))])) = (-32);
+  *((&RAM[((v4558 | 256u))])) = -32;
   v4559 = ((v4558 - 1));
   S = v4559;
   *((&RAM[((v4559 | 256u))])) = 73;
@@ -21480,25 +21480,25 @@ llvm_cbe_lE043:
   goto llvm_cbe_lBBCA;
 
 llvm_cbe_lBA12:
-  A = (-63);
-  Y = (-71);
+  A = -63;
+  Y = -71;
   Z = 0;
   N = 1;
   v3658 = S;
-  *((&RAM[((v3658 | 256u))])) = (-70);
+  *((&RAM[((v3658 | 256u))])) = -70;
   *((&RAM[(((((((v3658 - 1))))) | 256u))])) = 24;
   S = (((v3658 - 2)));
-  v4555 = (-71);   /* for PHI node */
-  v4557 = (-63);   /* for PHI node */
+  v4555 = -71;   /* for PHI node */
+  v4557 = -63;   /* for PHI node */
   goto llvm_cbe_lE043;
 
 llvm_cbe_lE2AD:
-  A = (-17);
-  Y = (-30);
+  A = -17;
+  Y = -30;
   Z = 0;
   N = 1;
-  v4555 = (-30);   /* for PHI node */
-  v4557 = (-17);   /* for PHI node */
+  v4555 = -30;   /* for PHI node */
+  v4557 = -17;   /* for PHI node */
   goto llvm_cbe_lE043;
 
 llvm_cbe_lE2A7:
@@ -21518,14 +21518,14 @@ llvm_cbe_lE2A7:
 
 llvm_cbe_lE324:
   A = 62;
-  Y = (-29);
+  Y = -29;
   Z = 0;
   N = 1;
   v4837 = S;
-  *((&RAM[((v4837 | 256u))])) = (-29);
+  *((&RAM[((v4837 | 256u))])) = -29;
   *((&RAM[(((((((v4837 - 1))))) | 256u))])) = 42;
   S = (((v4837 - 2)));
-  v4555 = (-29);   /* for PHI node */
+  v4555 = -29;   /* for PHI node */
   v4557 = 62;   /* for PHI node */
   goto llvm_cbe_lE043;
 
@@ -21566,16 +21566,16 @@ llvm_cbe_lE30E:
 
 llvm_cbe_lE2B4:
   v4820 = S;
-  *((&RAM[((v4820 | 256u))])) = (-30);
+  *((&RAM[((v4820 | 256u))])) = -30;
   v4821 = ((v4820 - 1));
   S = v4821;
-  *((&RAM[((v4821 | 256u))])) = (-74);
+  *((&RAM[((v4821 | 256u))])) = -74;
   v3973 = v4821;   /* for PHI node */
   goto llvm_cbe_lBBCA;
 
 llvm_cbe_lE05D:
   v4563 = v4564;
-  *((&RAM[((v4563 | 256u))])) = (-32);
+  *((&RAM[((v4563 | 256u))])) = -32;
   *((&RAM[(((((((v4563 - 1))))) | 256u))])) = 95;
   S = (((v4563 - 2)));
   X = 92;
@@ -21586,23 +21586,23 @@ llvm_cbe_lE05D:
   goto llvm_cbe_lBBCC;
 
 llvm_cbe_lE033:
-  A = (-60);
-  Y = (-65);
+  A = -60;
+  Y = -65;
   Z = 0;
   N = 1;
   v4543 = S;
-  *((&RAM[((v4543 | 256u))])) = (-32);
+  *((&RAM[((v4543 | 256u))])) = -32;
   *((&RAM[(((((((v4543 - 1))))) | 256u))])) = 57;
   v4544 = ((v4543 - 2));
   S = v4544;
-  *((&RAM[113u])) = (-60);
-  *((&RAM[114u])) = (-65);
+  *((&RAM[113u])) = -60;
+  *((&RAM[114u])) = -65;
   v4564 = v4544;   /* for PHI node */
   goto llvm_cbe_lE05D;
 
 llvm_cbe_lE04F:
   v4561 = S;
-  *((&RAM[((v4561 | 256u))])) = (-32);
+  *((&RAM[((v4561 | 256u))])) = -32;
   *((&RAM[(((((((v4561 - 1))))) | 256u))])) = 81;
   v4562 = ((v4561 - 2));
   S = v4562;
@@ -21620,7 +21620,7 @@ llvm_cbe_lBBD0:
 
 llvm_cbe_lAD52:
   v1563 = S;
-  *((&RAM[((v1563 | 256u))])) = (-83);
+  *((&RAM[((v1563 | 256u))])) = -83;
   *((&RAM[(((((((v1563 - 1))))) | 256u))])) = 84;
   S = (((v1563 - 2)));
   goto llvm_cbe_lBBD0;
@@ -21631,13 +21631,13 @@ llvm_cbe_lBF84:
   Z = 1;
   N = 0;
   v4475 = S;
-  *((&RAM[((v4475 | 256u))])) = (-65);
-  *((&RAM[(((((((v4475 - 1))))) | 256u))])) = (-118);
+  *((&RAM[((v4475 | 256u))])) = -65;
+  *((&RAM[(((((((v4475 - 1))))) | 256u))])) = -118;
   S = (((v4475 - 2)));
   goto llvm_cbe_lBBD4;
 
 llvm_cbe_lE0F2:
-  X = (-117);
+  X = -117;
   Y = 0;
   Z = 1;
   N = 0;
@@ -21649,14 +21649,14 @@ llvm_cbe_lE2BE:
   Z = 1;
   N = 0;
   v4823 = S;
-  *((&RAM[((v4823 | 256u))])) = (-30);
-  *((&RAM[(((((((v4823 - 1))))) | 256u))])) = (-60);
+  *((&RAM[((v4823 | 256u))])) = -30;
+  *((&RAM[(((((((v4823 - 1))))) | 256u))])) = -60;
   S = (((v4823 - 2)));
   goto llvm_cbe_lBBD4;
 
 llvm_cbe_lBC0C:
   v4012 = v4013;
-  *((&RAM[((v4012 | 256u))])) = (-68);
+  *((&RAM[((v4012 | 256u))])) = -68;
   *((&RAM[(((((((v4012 - 1))))) | 256u))])) = 14;
   v4014 = ((v4012 - 2));
   S = v4014;
@@ -21665,8 +21665,8 @@ llvm_cbe_lBC0C:
 
 llvm_cbe_lA9FC:
   v1135 = S;
-  *((&RAM[((v1135 | 256u))])) = (-87);
-  *((&RAM[(((((((v1135 - 1))))) | 256u))])) = (-2);
+  *((&RAM[((v1135 | 256u))])) = -87;
+  *((&RAM[(((((((v1135 - 1))))) | 256u))])) = -2;
   v1136 = ((v1135 - 2));
   S = v1136;
   v4013 = v1136;   /* for PHI node */
@@ -21674,8 +21674,8 @@ llvm_cbe_lA9FC:
 
 llvm_cbe_lBAE2:
   v3798 = v3799;
-  *((&RAM[((v3798 | 256u))])) = (-70);
-  *((&RAM[(((((((v3798 - 1))))) | 256u))])) = (-28);
+  *((&RAM[((v3798 | 256u))])) = -70;
+  *((&RAM[(((((((v3798 - 1))))) | 256u))])) = -28;
   v3800 = ((v3798 - 2));
   S = v3800;
   v4013 = v3800;   /* for PHI node */
@@ -21683,8 +21683,8 @@ llvm_cbe_lBAE2:
 
 llvm_cbe_lA9F2:
   v1129 = S;
-  *((&RAM[((v1129 | 256u))])) = (-87);
-  *((&RAM[(((((((v1129 - 1))))) | 256u))])) = (-12);
+  *((&RAM[((v1129 | 256u))])) = -87;
+  *((&RAM[(((((((v1129 - 1))))) | 256u))])) = -12;
   v1130 = ((v1129 - 2));
   S = v1130;
   v3799 = v1130;   /* for PHI node */
@@ -21692,7 +21692,7 @@ llvm_cbe_lA9F2:
 
 llvm_cbe_bb11733:
   v1144 = S;
-  *((&RAM[((v1144 | 256u))])) = (-86);
+  *((&RAM[((v1144 | 256u))])) = -86;
   *((&RAM[(((((((v1144 - 1))))) | 256u))])) = 16;
   v1145 = ((v1144 - 2));
   S = v1145;
@@ -21717,7 +21717,7 @@ llvm_cbe_lAA07:
 
 llvm_cbe_lBD5B:
   v4241 = S;
-  *((&RAM[((v4241 | 256u))])) = (-67);
+  *((&RAM[((v4241 | 256u))])) = -67;
   *((&RAM[(((((((v4241 - 1))))) | 256u))])) = 93;
   v4242 = ((v4241 - 2));
   S = v4242;
@@ -21966,15 +21966,15 @@ llvm_cbe_lBCF3:
 
 llvm_cbe_lAC89:
   v1495 = S;
-  *((&RAM[((v1495 | 256u))])) = (-84);
-  *((&RAM[(((((((v1495 - 1))))) | 256u))])) = (-117);
+  *((&RAM[((v1495 | 256u))])) = -84;
+  *((&RAM[(((((((v1495 - 1))))) | 256u))])) = -117;
   S = (((v1495 - 2)));
   goto llvm_cbe_lBCF3;
 
 llvm_cbe_lB7DA:
   v3232 = S;
-  *((&RAM[((v3232 | 256u))])) = (-73);
-  *((&RAM[(((((((v3232 - 1))))) | 256u))])) = (-36);
+  *((&RAM[((v3232 | 256u))])) = -73;
+  *((&RAM[(((((((v3232 - 1))))) | 256u))])) = -36;
   S = (((v3232 - 2)));
   goto llvm_cbe_lBCF3;
 
@@ -22019,7 +22019,7 @@ llvm_cbe_lBD5E:
   }
 
 llvm_cbe_lBD71:
-  *((&RAM[((v4253 | 256u))])) = (-67);
+  *((&RAM[((v4253 | 256u))])) = -67;
   *((&RAM[(((((((v4251 - 2))))) | 256u))])) = 115;
   v4258 = ((v4251 - 3));
   S = v4258;
@@ -22053,7 +22053,7 @@ llvm_cbe_bb40622:
 
 llvm_cbe_lBE21:
   v4333 = S;
-  *((&RAM[((v4333 | 256u))])) = (-66);
+  *((&RAM[((v4333 | 256u))])) = -66;
   *((&RAM[(((((((v4333 - 1))))) | 256u))])) = 35;
   v4334 = ((v4333 - 2));
   S = v4334;
@@ -22078,7 +22078,7 @@ llvm_cbe_bb41493:
 
 llvm_cbe_lBAFE:
   v3817 = v3818;
-  *((&RAM[(((((((v3817 - 1))))) | 256u))])) = (-69);
+  *((&RAM[(((((((v3817 - 1))))) | 256u))])) = -69;
   *((&RAM[(((((((v3817 - 2))))) | 256u))])) = 0;
   v3819 = ((v3817 - 3));
   S = v3819;
@@ -22087,7 +22087,7 @@ llvm_cbe_lBAFE:
 
 llvm_cbe_lBD52:
   v4237 = S;
-  *((&RAM[((v4237 | 256u))])) = (-67);
+  *((&RAM[((v4237 | 256u))])) = -67;
   v4238 = ((v4237 - 1));
   S = v4238;
   *((&RAM[((v4238 | 256u))])) = 84;
@@ -22108,7 +22108,7 @@ llvm_cbe_lBD55:
 
 llvm_cbe_lBE28:
   v4337 = S;
-  *((&RAM[((v4337 | 256u))])) = (-66);
+  *((&RAM[((v4337 | 256u))])) = -66;
   v4338 = ((v4337 - 1));
   S = v4338;
   *((&RAM[((v4338 | 256u))])) = 42;
@@ -22139,8 +22139,8 @@ llvm_cbe_lBD7E:
   v4266 = v4267;
   v4268 = S;
   *((&RAM[((v4268 | 256u))])) = v4266;
-  *((&RAM[(((((((v4268 - 1))))) | 256u))])) = (-67);
-  *((&RAM[(((((((v4268 - 2))))) | 256u))])) = (-127);
+  *((&RAM[(((((((v4268 - 1))))) | 256u))])) = -67;
+  *((&RAM[(((((((v4268 - 2))))) | 256u))])) = -127;
   v4269 = ((v4268 - 3));
   S = v4269;
   v4013 = v4269;   /* for PHI node */
@@ -22150,7 +22150,7 @@ llvm_cbe_lAA27:
   v1158 = A;
   v1159 = (((((v1158 - 48))) + (((s16 )(s8 )v1157))));
   v1160 = v1159;
-  V = (((((((((v1160 ^ v1158) & 128u) == 0u) | (((s8 )v1158) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v1160 ^ v1158) & 128u) == 0u) | (((s8 )v1158) > ((s8 )-1)))&1))) ? 0 : 1));
   v1161 = v1159;
   A = v1161;
   Z = (((v1161 == 0)));
@@ -22166,7 +22166,7 @@ llvm_cbe_lBA20:
   A = v3662;
   Z = (((v3662 == 0)));
   N = (((((v3662 >> 7)))));
-  *llvm_cbe_tmp35476 = (-70);
+  *llvm_cbe_tmp35476 = -70;
   *((&RAM[((v3660 | 256u))])) = 35;
   S = (((v3660 - 1)));
   v4267 = v3662;   /* for PHI node */
@@ -22184,13 +22184,13 @@ llvm_cbe_lBD74:
   C = 1;
   v4263 = ((v4262 - 48));
   v4264 = v4263;
-  V = (((((((((v4264 ^ v4262) & 128u) == 0u) | (((s8 )v4262) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v4264 ^ v4262) & 128u) == 0u) | (((s8 )v4262) > ((s8 )-1)))&1))) ? 0 : 1));
   v4265 = v4263;
   A = v4265;
   Z = (((v4265 == 0)));
   N = (((((v4265 >> 7)))));
   C = (((((((((((v4264 >> 8u))))) & 1))) ^ 1)));
-  *llvm_cbe_tmp40651 = (-67);
+  *llvm_cbe_tmp40651 = -67;
   *((&RAM[((v4259 | 256u))])) = 122;
   S = (((v4259 - 1)));
   v4267 = v4265;   /* for PHI node */
@@ -22198,7 +22198,7 @@ llvm_cbe_lBD74:
 
 llvm_cbe_lBF71:
   v4470 = S;
-  *((&RAM[((v4470 | 256u))])) = (-65);
+  *((&RAM[((v4470 | 256u))])) = -65;
   *((&RAM[(((((((v4470 - 1))))) | 256u))])) = 115;
   v4471 = ((v4470 - 2));
   S = v4471;
@@ -22207,7 +22207,7 @@ llvm_cbe_lBF71:
 
 llvm_cbe_lE26B:
   v4796 = S;
-  *((&RAM[((v4796 | 256u))])) = (-30);
+  *((&RAM[((v4796 | 256u))])) = -30;
   *((&RAM[(((((((v4796 - 1))))) | 256u))])) = 109;
   v4797 = ((v4796 - 2));
   S = v4797;
@@ -22220,14 +22220,14 @@ llvm_cbe_lE2B7:
   N = 0;
   *((&RAM[18u])) = 0;
   v4822 = S;
-  *((&RAM[((v4822 | 256u))])) = (-30);
-  *((&RAM[(((((((v4822 - 1))))) | 256u))])) = (-67);
+  *((&RAM[((v4822 | 256u))])) = -30;
+  *((&RAM[(((((((v4822 - 1))))) | 256u))])) = -67;
   S = (((v4822 - 2)));
   goto llvm_cbe_lE26B;
 
 llvm_cbe_lE277:
   v4800 = S;
-  *((&RAM[((v4800 | 256u))])) = (-30);
+  *((&RAM[((v4800 | 256u))])) = -30;
   *((&RAM[(((((((v4800 - 1))))) | 256u))])) = 121;
   v4801 = ((v4800 - 2));
   S = v4801;
@@ -22236,8 +22236,8 @@ llvm_cbe_lE277:
 
 llvm_cbe_bb43610:
   v4509 = S;
-  *((&RAM[((v4509 | 256u))])) = (-65);
-  *((&RAM[(((((((v4509 - 1))))) | 256u))])) = (-4);
+  *((&RAM[((v4509 | 256u))])) = -65;
+  *((&RAM[(((((((v4509 - 1))))) | 256u))])) = -4;
   v4510 = ((v4509 - 2));
   S = v4510;
   v4033 = v4510;   /* for PHI node */
@@ -22336,7 +22336,7 @@ llvm_cbe_lB9BA:
 llvm_cbe_bb34824:
   v3592 = ((((((((v3586 & 255))) - 9))) + v3591));
   v3593 = v3592;
-  V = (((((((((v3593 ^ v3589) & 128u) == 0u) | (((s8 )v3589) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v3593 ^ v3589) & 128u) == 0u) | (((s8 )v3589) > ((s8 )-1)))&1))) ? 0 : 1));
   v3594 = v3592;
   v3595 = (((((((v3593 >> 8u))))) & 1));
   C = (((v3595 ^ 1)));
@@ -22397,7 +22397,7 @@ llvm_cbe_lB999:
 
 llvm_cbe_lB862:
   v3311 = S;
-  *((&RAM[((v3311 | 256u))])) = (-72);
+  *((&RAM[((v3311 | 256u))])) = -72;
   *((&RAM[(((((((v3311 - 1))))) | 256u))])) = 100;
   v3312 = ((v3311 - 2));
   S = v3312;
@@ -22449,12 +22449,12 @@ llvm_cbe_bb32714:
   v3331 = *((&RAM[110u]));
   Y = v3331;
   *((&RAM[102u])) = v3331;
-  v3332 = ((v3328 ^ (-1)));
+  v3332 = ((v3328 ^ -1));
   A = v3332;
   Z = (((v3328 == 0xff)));
   N = (((((v3332 >> 7)))));
   v3333 = ((v3330 + v3332));
-  if ((((s8 )v3328) > ((s8 )(-1)))) {
+  if ((((s8 )v3328) > ((s8 )-1))) {
     goto llvm_cbe_bb32761;
   } else {
     goto llvm_cbe_bb32750;
@@ -22528,7 +22528,7 @@ llvm_cbe_lBA33:
   Z = (((v3668 == 0)));
   N = (((((v3668 >> 7)))));
   v3669 = S;
-  *((&RAM[((v3669 | 256u))])) = (-70);
+  *((&RAM[((v3669 | 256u))])) = -70;
   *((&RAM[(((((((v3669 - 1))))) | 256u))])) = 65;
   v3670 = ((v3669 - 2));
   S = v3670;
@@ -22547,7 +22547,7 @@ llvm_cbe_lBA42:
   Z = (((v3671 == 0)));
   N = (((((v3671 >> 7)))));
   v3672 = S;
-  *((&RAM[((v3672 | 256u))])) = (-70);
+  *((&RAM[((v3672 | 256u))])) = -70;
   *((&RAM[(((((((v3672 - 1))))) | 256u))])) = 70;
   v3673 = ((v3672 - 2));
   S = v3673;
@@ -22566,7 +22566,7 @@ llvm_cbe_lBA47:
   Z = (((v3674 == 0)));
   N = (((((v3674 >> 7)))));
   v3675 = S;
-  *((&RAM[((v3675 | 256u))])) = (-70);
+  *((&RAM[((v3675 | 256u))])) = -70;
   *((&RAM[(((((((v3675 - 1))))) | 256u))])) = 75;
   v3676 = ((v3675 - 2));
   S = v3676;
@@ -22585,7 +22585,7 @@ llvm_cbe_lBA4C:
   Z = (((v3677 == 0)));
   N = (((((v3677 >> 7)))));
   v3678 = S;
-  *((&RAM[((v3678 | 256u))])) = (-70);
+  *((&RAM[((v3678 | 256u))])) = -70;
   *((&RAM[(((((((v3678 - 1))))) | 256u))])) = 80;
   v3679 = ((v3678 - 2));
   S = v3679;
@@ -22600,8 +22600,8 @@ llvm_cbe_lBA4C:
 
 llvm_cbe_bb39639:
   v4139 = S;
-  *((&RAM[((v4139 | 256u))])) = (-68);
-  *((&RAM[(((((((v4139 - 1))))) | 256u))])) = (-73);
+  *((&RAM[((v4139 | 256u))])) = -68;
+  *((&RAM[(((((((v4139 - 1))))) | 256u))])) = -73;
   v4140 = ((v4139 - 2));
   S = v4140;
   v3580 = v4140;   /* for PHI node */
@@ -22687,8 +22687,8 @@ llvm_cbe_bb32852:
   N = 0;
   *llvm_cbe_tmp32881 = v3348;
   v3349 = S;
-  *((&RAM[((v3349 | 256u))])) = (-72);
-  *((&RAM[(((((((v3349 - 1))))) | 256u))])) = (-94);
+  *((&RAM[((v3349 | 256u))])) = -72;
+  *((&RAM[(((((((v3349 - 1))))) | 256u))])) = -94;
   v3350 = ((v3349 - 2));
   S = v3350;
   v3618 = v3350;   /* for PHI node */
@@ -22756,8 +22756,8 @@ llvm_cbe_lBCBB:
   N = (((((v4150 >> 7)))));
   *((&RAM[98u])) = v4150;
   v4151 = S;
-  *((&RAM[((v4151 | 256u))])) = (-68);
-  *((&RAM[(((((((v4151 - 1))))) | 256u))])) = (-56);
+  *((&RAM[((v4151 | 256u))])) = -68;
+  *((&RAM[(((((((v4151 - 1))))) | 256u))])) = -56;
   v4152 = ((v4151 - 2));
   S = v4152;
   v3618 = v4152;   /* for PHI node */
@@ -22978,7 +22978,7 @@ llvm_cbe_lBA51:
   Z = (((v3680 == 0)));
   N = (((((v3680 >> 7)))));
   v3681 = S;
-  *((&RAM[((v3681 | 256u))])) = (-70);
+  *((&RAM[((v3681 | 256u))])) = -70;
   *((&RAM[(((((((v3681 - 1))))) | 256u))])) = 85;
   S = (((v3681 - 2)));
   v3683 = v3680;   /* for PHI node */
@@ -23023,7 +23023,7 @@ llvm_cbe_lBA8C:
 
 llvm_cbe_lB850:
   v3304 = v3305;
-  *((&RAM[((v3304 | 256u))])) = (-72);
+  *((&RAM[((v3304 | 256u))])) = -72;
   *((&RAM[(((((((v3304 - 1))))) | 256u))])) = 82;
   v3306 = ((v3304 - 2));
   S = v3306;
@@ -23031,12 +23031,12 @@ llvm_cbe_lB850:
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lBA0B:
-  A = (-68);
-  Y = (-71);
+  A = -68;
+  Y = -71;
   Z = 0;
   N = 1;
   v3656 = S;
-  *((&RAM[((v3656 | 256u))])) = (-70);
+  *((&RAM[((v3656 | 256u))])) = -70;
   *((&RAM[(((((((v3656 - 1))))) | 256u))])) = 17;
   v3657 = ((v3656 - 2));
   S = v3657;
@@ -23044,24 +23044,24 @@ llvm_cbe_lBA0B:
   goto llvm_cbe_lB850;
 
 llvm_cbe_lE284:
-  A = (-22);
-  Y = (-30);
+  A = -22;
+  Y = -30;
   Z = 0;
   N = 1;
   v4804 = S;
-  *((&RAM[((v4804 | 256u))])) = (-30);
-  *((&RAM[(((((((v4804 - 1))))) | 256u))])) = (-118);
+  *((&RAM[((v4804 | 256u))])) = -30;
+  *((&RAM[(((((((v4804 - 1))))) | 256u))])) = -118;
   v4805 = ((v4804 - 2));
   S = v4805;
   v3305 = v4805;   /* for PHI node */
   goto llvm_cbe_lB850;
 
 llvm_cbe_bb46931:
-  A = (-32);
-  Y = (-30);
+  A = -32;
+  Y = -30;
   Z = 0;
   N = 1;
-  *llvm_cbe_tmp46892 = (-29);
+  *llvm_cbe_tmp46892 = -29;
   *((&RAM[((v4838 | 256u))])) = 54;
   v4845 = ((v4838 - 1));
   S = v4845;
@@ -23089,7 +23089,7 @@ llvm_cbe_lE32B:
 
 llvm_cbe_lB867:
   v3314 = S;
-  *((&RAM[((v3314 | 256u))])) = (-72);
+  *((&RAM[((v3314 | 256u))])) = -72;
   *((&RAM[(((((((v3314 - 1))))) | 256u))])) = 105;
   v3315 = ((v3314 - 2));
   S = v3315;
@@ -23108,7 +23108,7 @@ llvm_cbe_lAD45:
   Y = v1562;
   Z = (((v1562 == 0)));
   N = (((((v1562 >> 7)))));
-  *((&RAM[((v1559 | 256u))])) = (-83);
+  *((&RAM[((v1559 | 256u))])) = -83;
   *((&RAM[(((((((v1558 - 1))))) | 256u))])) = 81;
   S = (((v1558 - 2)));
   goto llvm_cbe_lB867;
@@ -23117,14 +23117,14 @@ llvm_cbe_lB849:
   v3302 = v3303;
   S = (((v3302 - 1)));
   A = 17;
-  Y = (-65);
+  Y = -65;
   Z = 0;
   N = 1;
   goto llvm_cbe_lB867;
 
 llvm_cbe_lBE2F:
   v4341 = S;
-  *((&RAM[((v4341 | 256u))])) = (-66);
+  *((&RAM[((v4341 | 256u))])) = -66;
   v4342 = ((v4341 - 1));
   S = v4342;
   *((&RAM[((v4342 | 256u))])) = 49;
@@ -23144,10 +23144,10 @@ llvm_cbe_lBE2B:
   }
 
 llvm_cbe_bb46437:
-  *((&RAM[((v4809 | 256u))])) = (-30);
+  *((&RAM[((v4809 | 256u))])) = -30;
   v4810 = ((v4808 - 2));
   S = v4810;
-  *((&RAM[((v4810 | 256u))])) = (-110);
+  *((&RAM[((v4810 | 256u))])) = -110;
   v3303 = v4810;   /* for PHI node */
   goto llvm_cbe_lB849;
 
@@ -23175,27 +23175,27 @@ llvm_cbe_lB9F4:
   v3651 = C;
   v3652 = (((((v3650 - 128))) + (((s16 )(s8 )v3651))));
   v3653 = v3652;
-  V = (((((((((v3653 ^ v3650) & 128u) == 0u) | (((s8 )v3650) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v3653 ^ v3650) & 128u) == 0u) | (((s8 )v3650) > ((s8 )-1)))&1))) ? 0 : 1));
   C = (((((((((((v3653 >> 8u))))) & 1))) ^ 1)));
   v3654 = S;
   *((&RAM[((v3654 | 256u))])) = v3652;
   *((&RAM[97u])) = 128u;
-  A = (-42);
-  Y = (-71);
+  A = -42;
+  Y = -71;
   Z = 0;
   N = 1;
-  *((&RAM[(((((((v3654 - 1))))) | 256u))])) = (-70);
+  *((&RAM[(((((((v3654 - 1))))) | 256u))])) = -70;
   *((&RAM[(((((((v3654 - 2))))) | 256u))])) = 3;
   S = (((v3654 - 3)));
   goto llvm_cbe_lB867;
 
 llvm_cbe_lBA19:
-  A = (-32);
-  Y = (-71);
+  A = -32;
+  Y = -71;
   Z = 0;
   N = 1;
   v3659 = S;
-  *((&RAM[((v3659 | 256u))])) = (-70);
+  *((&RAM[((v3659 | 256u))])) = -70;
   *((&RAM[(((((((v3659 - 1))))) | 256u))])) = 31;
   S = (((v3659 - 2)));
   goto llvm_cbe_lB867;
@@ -23205,8 +23205,8 @@ llvm_cbe_lE07D:
   *((&RAM[113u])) = v4580;
   *((&RAM[114u])) = v4583;
   v4585 = S;
-  *((&RAM[((v4585 | 256u))])) = (-32);
-  *((&RAM[(((((((v4585 - 1))))) | 256u))])) = (-125);
+  *((&RAM[((v4585 | 256u))])) = -32;
+  *((&RAM[(((((((v4585 - 1))))) | 256u))])) = -125;
   S = (((v4585 - 2)));
   goto llvm_cbe_lB867;
 
@@ -23262,35 +23262,35 @@ llvm_cbe_bb44259:
   goto llvm_cbe_lE07D;
 
 llvm_cbe_lE0CC:
-  A = (-110);
-  Y = (-32);
+  A = -110;
+  Y = -32;
   Z = 0;
   N = 1;
   v4607 = S;
-  *((&RAM[((v4607 | 256u))])) = (-32);
-  *((&RAM[(((((((v4607 - 1))))) | 256u))])) = (-46);
+  *((&RAM[((v4607 | 256u))])) = -32;
+  *((&RAM[(((((((v4607 - 1))))) | 256u))])) = -46;
   S = (((v4607 - 2)));
   goto llvm_cbe_lB867;
 
 llvm_cbe_lE264:
-  A = (-32);
-  Y = (-30);
+  A = -32;
+  Y = -30;
   Z = 0;
   N = 1;
   v4795 = S;
-  *((&RAM[((v4795 | 256u))])) = (-30);
+  *((&RAM[((v4795 | 256u))])) = -30;
   *((&RAM[(((((((v4795 - 1))))) | 256u))])) = 106;
   S = (((v4795 - 2)));
   goto llvm_cbe_lB867;
 
 llvm_cbe_lE2A0:
-  A = (-22);
-  Y = (-30);
+  A = -22;
+  Y = -30;
   Z = 0;
   N = 1;
   v4815 = S;
-  *((&RAM[((v4815 | 256u))])) = (-30);
-  *((&RAM[(((((((v4815 - 1))))) | 256u))])) = (-90);
+  *((&RAM[((v4815 | 256u))])) = -30;
+  *((&RAM[(((((((v4815 - 1))))) | 256u))])) = -90;
   S = (((v4815 - 2)));
   goto llvm_cbe_lB867;
 
@@ -23307,7 +23307,7 @@ llvm_cbe_lE293:
 
 llvm_cbe_lBA28:
   v3663 = S;
-  *((&RAM[((v3663 | 256u))])) = (-70);
+  *((&RAM[((v3663 | 256u))])) = -70;
   *((&RAM[(((((((v3663 - 1))))) | 256u))])) = 42;
   v3664 = ((v3663 - 2));
   S = v3664;
@@ -23315,18 +23315,18 @@ llvm_cbe_lBA28:
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lBA24:
-  A = (-27);
-  Y = (-71);
+  A = -27;
+  Y = -71;
   Z = 0;
   N = 1;
   goto llvm_cbe_lBA28;
 
 llvm_cbe_lBE00:
-  A = (-67);
-  Y = (-67);
+  A = -67;
+  Y = -67;
   Z = 0;
   N = 1;
-  *((&RAM[((v4311 | 256u))])) = (-66);
+  *((&RAM[((v4311 | 256u))])) = -66;
   *((&RAM[(((((((v4311 - 1))))) | 256u))])) = 6;
   S = (((v4311 - 2)));
   goto llvm_cbe_lBA28;
@@ -23381,7 +23381,7 @@ llvm_cbe_lBDDF:
   }
 
 llvm_cbe_bb12682:
-  *llvm_cbe_tmp12517 = (-66);
+  *llvm_cbe_tmp12517 = -66;
   v1259 = ((v1256 - 2));
   S = v1259;
   Y = 1;
@@ -23395,7 +23395,7 @@ llvm_cbe_lB468:
   Z = 1;
   N = 0;
   v2646 = S;
-  *((&RAM[((v2646 | 256u))])) = (-76);
+  *((&RAM[((v2646 | 256u))])) = -76;
   *((&RAM[(((((((v2646 - 1))))) | 256u))])) = 108;
   v2647 = ((v2646 - 2));
   S = v2647;
@@ -23404,8 +23404,8 @@ llvm_cbe_lB468:
 
 llvm_cbe_lBDD7:
   v4309 = S;
-  *((&RAM[((v4309 | 256u))])) = (-67);
-  *((&RAM[(((((((v4309 - 1))))) | 256u))])) = (-39);
+  *((&RAM[((v4309 | 256u))])) = -67;
+  *((&RAM[(((((((v4309 - 1))))) | 256u))])) = -39;
   v4310 = ((v4309 - 2));
   S = v4310;
   v4312 = v4310;   /* for PHI node */
@@ -23424,26 +23424,26 @@ llvm_cbe_lBFA6:
   Z = 1;
   N = 0;
   v4486 = S;
-  *((&RAM[((v4486 | 256u))])) = (-65);
-  *((&RAM[(((((((v4486 - 1))))) | 256u))])) = (-84);
+  *((&RAM[((v4486 | 256u))])) = -65;
+  *((&RAM[(((((((v4486 - 1))))) | 256u))])) = -84;
   S = (((v4486 - 2)));
   goto llvm_cbe_lBA28;
 
 llvm_cbe_lBFED:
-  A = (-65);
-  Y = (-65);
+  A = -65;
+  Y = -65;
   Z = 0;
   N = 1;
   v4501 = S;
-  *((&RAM[((v4501 | 256u))])) = (-65);
-  *((&RAM[(((((((v4501 - 1))))) | 256u))])) = (-13);
+  *((&RAM[((v4501 | 256u))])) = -65;
+  *((&RAM[(((((((v4501 - 1))))) | 256u))])) = -13;
   S = (((v4501 - 2)));
   goto llvm_cbe_lBA28;
 
 llvm_cbe_lBFAD:
   v4487 = S;
-  *((&RAM[((v4487 | 256u))])) = (-65);
-  *((&RAM[(((((((v4487 - 1))))) | 256u))])) = (-81);
+  *((&RAM[((v4487 | 256u))])) = -65;
+  *((&RAM[(((((((v4487 - 1))))) | 256u))])) = -81;
   S = (((v4487 - 2)));
   goto llvm_cbe_lBFED;
 
@@ -23452,7 +23452,7 @@ llvm_cbe_lE04A:
   Z = 0;
   N = 0;
   v4560 = S;
-  *((&RAM[((v4560 | 256u))])) = (-32);
+  *((&RAM[((v4560 | 256u))])) = -32;
   *((&RAM[(((((((v4560 - 1))))) | 256u))])) = 78;
   S = (((v4560 - 2)));
   goto llvm_cbe_lBA28;
@@ -23466,7 +23466,7 @@ llvm_cbe_lE052:
 
 llvm_cbe_lE070:
   v4574 = S;
-  *((&RAM[((v4574 | 256u))])) = (-32);
+  *((&RAM[((v4574 | 256u))])) = -32;
   *((&RAM[(((((((v4574 - 1))))) | 256u))])) = 114;
   S = (((v4574 - 2)));
   goto llvm_cbe_lBA28;
@@ -23520,19 +23520,19 @@ llvm_cbe_lE084:
   }
 
 llvm_cbe_lE0C5:
-  A = (-115);
-  Y = (-32);
+  A = -115;
+  Y = -32;
   Z = 0;
   N = 1;
   v4606 = S;
-  *((&RAM[((v4606 | 256u))])) = (-32);
-  *((&RAM[(((((((v4606 - 1))))) | 256u))])) = (-53);
+  *((&RAM[((v4606 | 256u))])) = -32;
+  *((&RAM[(((((((v4606 - 1))))) | 256u))])) = -53;
   S = (((v4606 - 2)));
   goto llvm_cbe_lBA28;
 
 llvm_cbe_lBB0F:
   v3827 = S;
-  *((&RAM[((v3827 | 256u))])) = (-69);
+  *((&RAM[((v3827 | 256u))])) = -69;
   *((&RAM[(((((((v3827 - 1))))) | 256u))])) = 17;
   v3828 = ((v3827 - 2));
   S = v3828;
@@ -23540,12 +23540,12 @@ llvm_cbe_lBB0F:
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lBA04:
-  A = (-37);
-  Y = (-71);
+  A = -37;
+  Y = -71;
   Z = 0;
   N = 1;
   v3655 = S;
-  *((&RAM[((v3655 | 256u))])) = (-70);
+  *((&RAM[((v3655 | 256u))])) = -70;
   *((&RAM[(((((((v3655 - 1))))) | 256u))])) = 10;
   S = (((v3655 - 2)));
   goto llvm_cbe_lBB0F;
@@ -23558,11 +23558,11 @@ llvm_cbe_lE2D5:
   goto llvm_cbe_lBB0F;
 
 llvm_cbe_bb46822:
-  A = (-68);
-  Y = (-71);
+  A = -68;
+  Y = -71;
   Z = 0;
   N = 1;
-  *((&RAM[((v4833 | 256u))])) = (-29);
+  *((&RAM[((v4833 | 256u))])) = -29;
   *((&RAM[(((((((v4832 - 2))))) | 256u))])) = 35;
   S = (((v4832 - 3)));
   goto llvm_cbe_lBB0F;
@@ -23635,16 +23635,16 @@ llvm_cbe_lBBA2:
   }
 
 llvm_cbe_lA78B:
-  A = (-68);
-  Y = (-71);
+  A = -68;
+  Y = -71;
   Z = 0;
   N = 1;
   v766 = S;
-  *((&RAM[((v766 | 256u))])) = (-89);
-  *((&RAM[(((((((v766 - 1))))) | 256u))])) = (-111);
+  *((&RAM[((v766 | 256u))])) = -89;
+  *((&RAM[(((((((v766 - 1))))) | 256u))])) = -111;
   S = (((v766 - 2)));
-  v3958 = (-71);   /* for PHI node */
-  v3960 = (-68);   /* for PHI node */
+  v3958 = -71;   /* for PHI node */
+  v3960 = -68;   /* for PHI node */
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_bb15466:
@@ -23658,7 +23658,7 @@ llvm_cbe_bb15466:
   Y = 1;
   Z = 0;
   N = 0;
-  *llvm_cbe_tmp15497 = (-83);
+  *llvm_cbe_tmp15497 = -83;
   *((&RAM[((v1552 | 256u))])) = 68;
   S = (((v1546 - 2)));
   v3958 = 1;   /* for PHI node */
@@ -23723,16 +23723,16 @@ llvm_cbe_bb15465:
   goto llvm_cbe_bb15466;
 
 llvm_cbe_bb17522:
-  A = (-88);
-  Y = (-82);
+  A = -88;
+  Y = -82;
   Z = 0;
   N = 1;
   v1768 = S;
-  *((&RAM[((v1768 | 256u))])) = (-82);
-  *((&RAM[(((((((v1768 - 1))))) | 256u))])) = (-92);
+  *((&RAM[((v1768 | 256u))])) = -82;
+  *((&RAM[(((((((v1768 - 1))))) | 256u))])) = -92;
   S = (((v1768 - 2)));
-  v3958 = (-82);   /* for PHI node */
-  v3960 = (-88);   /* for PHI node */
+  v3958 = -82;   /* for PHI node */
+  v3960 = -88;   /* for PHI node */
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lAFA0:
@@ -23812,7 +23812,7 @@ llvm_cbe_lBB07:
   v3824 = v3825;
   *((&RAM[111u])) = v3820;
   v3826 = S;
-  *((&RAM[((v3826 | 256u))])) = (-69);
+  *((&RAM[((v3826 | 256u))])) = -69;
   *((&RAM[(((((((v3826 - 1))))) | 256u))])) = 11;
   S = (((v3826 - 2)));
   v3958 = v3822;   /* for PHI node */
@@ -23820,56 +23820,56 @@ llvm_cbe_lBB07:
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lBB01:
-  A = (-7);
-  Y = (-70);
+  A = -7;
+  Y = -70;
   X = 0;
   Z = 1;
   N = 0;
   v3821 = 0;   /* for PHI node */
-  v3823 = (-70);   /* for PHI node */
-  v3825 = (-7);   /* for PHI node */
+  v3823 = -70;   /* for PHI node */
+  v3825 = -7;   /* for PHI node */
   goto llvm_cbe_lBB07;
 
 llvm_cbe_lE26E:
-  A = (-27);
-  Y = (-30);
+  A = -27;
+  Y = -30;
   v4798 = *((&RAM[110u]));
   X = v4798;
   Z = (((v4798 == 0)));
   N = (((((v4798 >> 7)))));
   v4799 = S;
-  *((&RAM[((v4799 | 256u))])) = (-30);
+  *((&RAM[((v4799 | 256u))])) = -30;
   *((&RAM[(((((((v4799 - 1))))) | 256u))])) = 118;
   S = (((v4799 - 2)));
   v3821 = v4798;   /* for PHI node */
-  v3823 = (-30);   /* for PHI node */
-  v3825 = (-27);   /* for PHI node */
+  v3823 = -30;   /* for PHI node */
+  v3825 = -27;   /* for PHI node */
   goto llvm_cbe_lBB07;
 
 llvm_cbe_lBF74:
   A = 17;
-  Y = (-65);
+  Y = -65;
   Z = 0;
   N = 1;
   v4472 = S;
-  *((&RAM[((v4472 | 256u))])) = (-65);
+  *((&RAM[((v4472 | 256u))])) = -65;
   *((&RAM[(((((((v4472 - 1))))) | 256u))])) = 122;
   S = (((v4472 - 2)));
-  v3958 = (-65);   /* for PHI node */
+  v3958 = -65;   /* for PHI node */
   v3960 = 17;   /* for PHI node */
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lE0BE:
-  A = (-117);
+  A = -117;
   Y = 0;
   Z = 1;
   N = 0;
   v4605 = S;
-  *((&RAM[((v4605 | 256u))])) = (-32);
-  *((&RAM[(((((((v4605 - 1))))) | 256u))])) = (-60);
+  *((&RAM[((v4605 | 256u))])) = -32;
+  *((&RAM[(((((((v4605 - 1))))) | 256u))])) = -60;
   S = (((v4605 - 2)));
   v3958 = 0;   /* for PHI node */
-  v3960 = (-117);   /* for PHI node */
+  v3960 = -117;   /* for PHI node */
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_bb44359:
@@ -23886,8 +23886,8 @@ llvm_cbe_lE2C5:
   Z = 1;
   N = 0;
   v4824 = S;
-  *((&RAM[((v4824 | 256u))])) = (-30);
-  *((&RAM[(((((((v4824 - 1))))) | 256u))])) = (-53);
+  *((&RAM[((v4824 | 256u))])) = -30;
+  *((&RAM[(((((((v4824 - 1))))) | 256u))])) = -53;
   S = (((v4824 - 2)));
   v3958 = 0;   /* for PHI node */
   v3960 = 87;   /* for PHI node */
@@ -23997,15 +23997,15 @@ llvm_cbe_lAFF0:
   N = (((((v1940 >> 7)))));
   *((&RAM[8u])) = v1940;
   v1941 = S;
-  *((&RAM[((v1941 | 256u))])) = (-81);
-  *((&RAM[(((((((v1941 - 1))))) | 256u))])) = (-2);
+  *((&RAM[((v1941 | 256u))])) = -81;
+  *((&RAM[(((((((v1941 - 1))))) | 256u))])) = -2;
   S = (((v1941 - 2)));
   goto llvm_cbe_lBBFC;
 
 llvm_cbe_lBF9E:
   v4483 = S;
-  *((&RAM[((v4483 | 256u))])) = (-65);
-  *((&RAM[(((((((v4483 - 1))))) | 256u))])) = (-96);
+  *((&RAM[((v4483 | 256u))])) = -65;
+  *((&RAM[(((((((v4483 - 1))))) | 256u))])) = -96;
   S = (((v4483 - 2)));
   goto llvm_cbe_lBBFE;
 
@@ -24075,7 +24075,7 @@ llvm_cbe_lE000:
   v4511 = A;
   *((&RAM[86u])) = v4511;
   v4512 = S;
-  *((&RAM[((v4512 | 256u))])) = (-32);
+  *((&RAM[((v4512 | 256u))])) = -32;
   *((&RAM[(((((((v4512 - 1))))) | 256u))])) = 4;
   S = (((v4512 - 2)));
   goto llvm_cbe_lBC11_2e_preheader;
@@ -24110,8 +24110,8 @@ llvm_cbe_lBC2B:
 
 llvm_cbe_lA79F:
   v773 = S;
-  *((&RAM[((v773 | 256u))])) = (-89);
-  *((&RAM[(((((((v773 - 1))))) | 256u))])) = (-95);
+  *((&RAM[((v773 | 256u))])) = -89;
+  *((&RAM[(((((((v773 - 1))))) | 256u))])) = -95;
   v774 = ((v773 - 2));
   S = v774;
   v4037 = v774;   /* for PHI node */
@@ -24132,8 +24132,8 @@ llvm_cbe_lA795:
 
 llvm_cbe_lB9EA:
   v3646 = S;
-  *((&RAM[((v3646 | 256u))])) = (-71);
-  *((&RAM[(((((((v3646 - 1))))) | 256u))])) = (-20);
+  *((&RAM[((v3646 | 256u))])) = -71;
+  *((&RAM[(((((((v3646 - 1))))) | 256u))])) = -20;
   v3647 = ((v3646 - 2));
   S = v3647;
   v4037 = v3647;   /* for PHI node */
@@ -24146,14 +24146,14 @@ llvm_cbe_lBFA1:
   N = (((((v4484 >> 7)))));
   v4485 = S;
   *((&RAM[((v4485 | 256u))])) = v4484;
-  *((&RAM[(((((((v4485 - 1))))) | 256u))])) = (-65);
-  *((&RAM[(((((((v4485 - 2))))) | 256u))])) = (-91);
+  *((&RAM[(((((((v4485 - 1))))) | 256u))])) = -65;
+  *((&RAM[(((((((v4485 - 2))))) | 256u))])) = -91;
   S = (((v4485 - 3)));
   goto llvm_cbe_lB9EA;
 
 llvm_cbe_lBC39:
   v4054 = S;
-  *((&RAM[((v4054 | 256u))])) = (-68);
+  *((&RAM[((v4054 | 256u))])) = -68;
   *((&RAM[(((((((v4054 - 1))))) | 256u))])) = 59;
   v4055 = ((v4054 - 2));
   S = v4055;
@@ -24184,7 +24184,7 @@ llvm_cbe_lAD55:
   Z = 0;
   N = 0;
   v1564 = S;
-  *((&RAM[((v1564 | 256u))])) = (-83);
+  *((&RAM[((v1564 | 256u))])) = -83;
   *((&RAM[(((((((v1564 - 1))))) | 256u))])) = 89;
   v1565 = ((v1564 - 2));
   S = v1565;
@@ -24201,7 +24201,7 @@ llvm_cbe_bb19585:
   Z = 1;
   N = 0;
   v1954 = S;
-  *((&RAM[((v1954 | 256u))])) = (-80);
+  *((&RAM[((v1954 | 256u))])) = -80;
   *((&RAM[(((((((v1954 - 1))))) | 256u))])) = 41;
   v1955 = ((v1954 - 2));
   S = v1955;
@@ -24211,32 +24211,32 @@ llvm_cbe_bb19585:
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_bb21970:
-  A = (-91);
-  Y = (-79);
+  A = -91;
+  Y = -79;
   Z = 0;
   N = 1;
   v2205 = S;
-  *((&RAM[((v2205 | 256u))])) = (-79);
-  *((&RAM[(((((((v2205 - 1))))) | 256u))])) = (-53);
+  *((&RAM[((v2205 | 256u))])) = -79;
+  *((&RAM[(((((((v2205 - 1))))) | 256u))])) = -53;
   v2206 = ((v2205 - 2));
   S = v2206;
-  *((&RAM[36u])) = (-91);
-  v4082 = (-79);   /* for PHI node */
+  *((&RAM[36u])) = -91;
+  v4082 = -79;   /* for PHI node */
   v4084 = v2206;   /* for PHI node */
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_lBE0B:
-  A = (-72);
-  Y = (-67);
+  A = -72;
+  Y = -67;
   Z = 0;
   N = 1;
   v4325 = S;
-  *((&RAM[((v4325 | 256u))])) = (-66);
+  *((&RAM[((v4325 | 256u))])) = -66;
   *((&RAM[(((((((v4325 - 1))))) | 256u))])) = 17;
   v4326 = ((v4325 - 2));
   S = v4326;
-  *((&RAM[36u])) = (-72);
-  v4082 = (-67);   /* for PHI node */
+  *((&RAM[36u])) = -72;
+  v4082 = -67;   /* for PHI node */
   v4084 = v4326;   /* for PHI node */
   goto llvm_cbe_lBC5D;
 
@@ -24246,24 +24246,24 @@ llvm_cbe_lBE09:
   goto llvm_cbe_lBE0B;
 
 llvm_cbe_lBE07:
-  A = (-9);
+  A = -9;
   Z = 0;
   N = 1;
-  v4324 = (-9);   /* for PHI node */
+  v4324 = -9;   /* for PHI node */
   goto llvm_cbe_lBE09;
 
 llvm_cbe_lBE16:
-  A = (-77);
-  Y = (-67);
+  A = -77;
+  Y = -67;
   Z = 0;
   N = 1;
   v4329 = S;
-  *((&RAM[((v4329 | 256u))])) = (-66);
+  *((&RAM[((v4329 | 256u))])) = -66;
   *((&RAM[(((((((v4329 - 1))))) | 256u))])) = 28;
   v4330 = ((v4329 - 2));
   S = v4330;
-  *((&RAM[36u])) = (-77);
-  v4082 = (-67);   /* for PHI node */
+  *((&RAM[36u])) = -77;
+  v4082 = -67;   /* for PHI node */
   v4084 = v4330;   /* for PHI node */
   goto llvm_cbe_lBC5D;
 
@@ -24273,8 +24273,8 @@ llvm_cbe_lBF92:
   Z = 1;
   N = 0;
   v4478 = S;
-  *((&RAM[((v4478 | 256u))])) = (-65);
-  *((&RAM[(((((((v4478 - 1))))) | 256u))])) = (-104);
+  *((&RAM[((v4478 | 256u))])) = -65;
+  *((&RAM[(((((((v4478 - 1))))) | 256u))])) = -104;
   v4479 = ((v4478 - 2));
   S = v4479;
   *((&RAM[36u])) = 78;
@@ -24284,8 +24284,8 @@ llvm_cbe_lBF92:
 
 llvm_cbe_lE097:
   v4593 = S;
-  *((&RAM[((v4593 | 256u))])) = (-32);
-  *((&RAM[(((((((v4593 - 1))))) | 256u))])) = (-103);
+  *((&RAM[((v4593 | 256u))])) = -32;
+  *((&RAM[(((((((v4593 - 1))))) | 256u))])) = -103;
   v4594 = ((v4593 - 2));
   S = v4594;
   v4037 = v4594;   /* for PHI node */
@@ -24297,7 +24297,7 @@ llvm_cbe_lBC31:
   v4046 = C;
   v4047 = (((((((((((((v4044 << 1))) | (((s16 )(s8 )v4046)))))) >> 8))))));
   C = v4047;
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
   if (v4047 == 0) {
@@ -24459,7 +24459,7 @@ llvm_cbe_bb39415:
   goto llvm_cbe_bb39416;
 
 llvm_cbe_bb39456:
-  v4122 = ((v4089 ^ (-1)));
+  v4122 = ((v4089 ^ -1));
   A = v4122;
   Z = (((v4089 == 0xff)));
   N = (((((v4122 >> 7)))));
@@ -24639,7 +24639,7 @@ llvm_cbe_lBEEF:
   v4452 = ((v4446 + 48));
   v4453 = (((((v4450 - 11))) + (((s16 )(s8 )v4448))));
   v4454 = v4453;
-  v4455 = ((((((((v4454 ^ v4450) & 128u) == 0u) | (((s8 )v4450) > ((s8 )(-1))))&1))) ? 0 : 1);
+  v4455 = ((((((((v4454 ^ v4450) & 128u) == 0u) | (((s8 )v4450) > ((s8 )-1)))&1))) ? 0 : 1);
   v4456 = v4453;
   v4457 = v4454 & 256u;
   v4458 = (((((((v4457 >> 8u))))) ^ 1));
@@ -24898,9 +24898,9 @@ llvm_cbe_bb42314:
   goto llvm_cbe_lBE97;
 
 llvm_cbe_bb42278:
-  v4399 = (((-2) - v4380));
+  v4399 = ((-2 - v4380));
   v4400 = (((((v4399 + 10))) + v4397));
-  if ((((s8 )v4398) > ((s8 )(-1)))) {
+  if ((((s8 )v4398) > ((s8 )-1))) {
     goto llvm_cbe_bb42314;
   } else {
     goto llvm_cbe_bb42302;
@@ -24938,7 +24938,7 @@ llvm_cbe_lAF4B:
   Z = 0;
   N = 0;
   v1859 = S;
-  *((&RAM[((v1859 | 256u))])) = (-81);
+  *((&RAM[((v1859 | 256u))])) = -81;
   *((&RAM[(((((((v1859 - 1))))) | 256u))])) = 88;
   S = (((v1859 - 2)));
   v4379 = 36;   /* for PHI node */
@@ -24957,7 +24957,7 @@ llvm_cbe_lBE48:
   v4367 = v4368;
   v4369 = (((((v4367 - 3))) + (((s16 )(s8 )v4365))));
   v4370 = v4369;
-  V = (((((((((v4370 ^ v4367) & 128u) == 0u) | (((s8 )v4367) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v4370 ^ v4367) & 128u) == 0u) | (((s8 )v4367) > ((s8 )-1)))&1))) ? 0 : 1));
   C = (((((((((((v4370 >> 8u))))) & 1))) ^ 1)));
   *((&RAM[94u])) = v4369;
   *((&RAM[93u])) = v4363;
@@ -25065,7 +25065,7 @@ llvm_cbe_bb41685:
 
 llvm_cbe_bb41674:
   v4355 = (((((v4350 + 255))) + v4354));
-  if ((((s8 )v4348) > ((s8 )(-1)))) {
+  if ((((s8 )v4348) > ((s8 )-1))) {
     goto llvm_cbe_bb41696;
   } else {
     goto llvm_cbe_bb41685;
@@ -25211,21 +25211,21 @@ llvm_cbe_lBFB4:
 
 llvm_cbe_lE030:
   v4542 = S;
-  *((&RAM[((v4542 | 256u))])) = (-32);
+  *((&RAM[((v4542 | 256u))])) = -32;
   *((&RAM[(((((((v4542 - 1))))) | 256u))])) = 50;
   S = (((v4542 - 2)));
   goto llvm_cbe_lBFB4;
 
 llvm_cbe_lE29D:
   v4814 = S;
-  *((&RAM[((v4814 | 256u))])) = (-30);
-  *((&RAM[(((((((v4814 - 1))))) | 256u))])) = (-97);
+  *((&RAM[((v4814 | 256u))])) = -30;
+  *((&RAM[(((((((v4814 - 1))))) | 256u))])) = -97;
   S = (((v4814 - 2)));
   goto llvm_cbe_lBFB4;
 
 llvm_cbe_bb46464:
   v4812 = *((&RAM[18u]));
-  v4813 = ((v4812 ^ (-1)));
+  v4813 = ((v4812 ^ -1));
   A = v4813;
   Z = (((v4812 == 0xff)));
   N = (((((v4813 >> 7)))));
@@ -25239,20 +25239,20 @@ llvm_cbe_lE2CC:
   Z = (((v4825 == 0)));
   N = (((((v4825 >> 7)))));
   v4826 = S;
-  *((&RAM[((v4826 | 256u))])) = (-30);
-  *((&RAM[(((((((v4826 - 1))))) | 256u))])) = (-44);
+  *((&RAM[((v4826 | 256u))])) = -30;
+  *((&RAM[(((((((v4826 - 1))))) | 256u))])) = -44;
   *((&RAM[(((((((v4826 - 2))))) | 256u))])) = v4825;
   S = (((v4826 - 3)));
   goto llvm_cbe_lE29D;
 
 llvm_cbe_bb46554:
-  *llvm_cbe_tmp46537 = (-30);
-  *((&RAM[((v4816 | 256u))])) = (-84);
+  *llvm_cbe_tmp46537 = -30;
+  *((&RAM[((v4816 | 256u))])) = -84;
   S = (((v4816 - 1)));
   goto llvm_cbe_lBFB4;
 
 llvm_cbe_bb46767:
-  *((&RAM[((v4830 | 256u))])) = (-29);
+  *((&RAM[((v4830 | 256u))])) = -29;
   *((&RAM[(((((((v4829 - 2))))) | 256u))])) = 21;
   S = (((v4829 - 3)));
   goto llvm_cbe_lBFB4;
@@ -25273,7 +25273,7 @@ llvm_cbe_lE337:
 
 llvm_cbe_bb43468:
   v4494 = *((&RAM[102u]));
-  v4495 = ((v4494 ^ (-1)));
+  v4495 = ((v4494 ^ -1));
   A = v4495;
   Z = (((v4494 == 0xff)));
   N = (((((v4495 >> 7)))));
@@ -25380,7 +25380,7 @@ llvm_cbe_bb44949:
 
 llvm_cbe_lE130:
   v4654 = S;
-  *((&RAM[((v4654 | 256u))])) = (-31);
+  *((&RAM[((v4654 | 256u))])) = -31;
   *((&RAM[(((((((v4654 - 1))))) | 256u))])) = 70;
   v4655 = ((v4654 - 2));
   v4656 = *((&RAM[783u]));
@@ -25542,11 +25542,11 @@ llvm_cbe_lA6BB:
   }
 
 llvm_cbe_bb7007:
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
-  *((&RAM[20u])) = (-1);
-  *((&RAM[21u])) = (-1);
+  *((&RAM[20u])) = -1;
+  *((&RAM[21u])) = -1;
   goto llvm_cbe_lA6C9;
 
 llvm_cbe_bb7380:
@@ -25567,10 +25567,10 @@ llvm_cbe_bb7380:
   }
 
 llvm_cbe_lE39D:
-  X = (-5);
+  X = -5;
   Z = 0;
   N = 1;
-  S = (-5);
+  S = -5;
   goto llvm_cbe_lE386;
 
 llvm_cbe_lE421:
@@ -25724,10 +25724,10 @@ llvm_cbe_lA43A:
   N = (((((v219 >> 7)))));
   *((&RAM[35u])) = v219;
   v220 = S;
-  *((&RAM[((v220 | 256u))])) = (-92);
+  *((&RAM[((v220 | 256u))])) = -92;
   *((&RAM[(((((((v220 - 1))))) | 256u))])) = 73;
   S = (((v220 - 2)));
-  PC = (-52);
+  PC = -52;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA47B:
@@ -25735,10 +25735,10 @@ llvm_cbe_lA47B:
   Z = 0;
   N = 1;
   v244 = S;
-  *((&RAM[((v244 | 256u))])) = (-92);
+  *((&RAM[((v244 | 256u))])) = -92;
   *((&RAM[(((((((v244 - 1))))) | 256u))])) = 127;
   S = (((v244 - 2)));
-  PC = (-112);
+  PC = -112;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA486:
@@ -25747,26 +25747,26 @@ llvm_cbe_lA486:
   v250 = Y;
   *((&RAM[123u])) = v250;
   v251 = S;
-  *((&RAM[((v251 | 256u))])) = (-92);
-  *((&RAM[(((((((v251 - 1))))) | 256u))])) = (-116);
+  *((&RAM[((v251 | 256u))])) = -92;
+  *((&RAM[(((((((v251 - 1))))) | 256u))])) = -116;
   S = (((v251 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA562:
   v410 = S;
-  *((&RAM[((v410 | 256u))])) = (-91);
+  *((&RAM[((v410 | 256u))])) = -91;
   *((&RAM[(((((((v410 - 1))))) | 256u))])) = 100;
-  *((&RAM[(((((((v410 - 2))))) | 256u))])) = (-31);
+  *((&RAM[(((((((v410 - 2))))) | 256u))])) = -31;
   *((&RAM[(((((((v410 - 3))))) | 256u))])) = 20;
   S = (((v410 - 4)));
-  PC = (-49);
+  PC = -49;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA483:
   v248 = S;
-  *((&RAM[((v248 | 256u))])) = (-92);
-  *((&RAM[(((((((v248 - 1))))) | 256u))])) = (-123);
+  *((&RAM[((v248 | 256u))])) = -92;
+  *((&RAM[(((((((v248 - 1))))) | 256u))])) = -123;
   S = (((v248 - 2)));
   X = 0;
   Z = 1;
@@ -25795,10 +25795,10 @@ llvm_cbe_lABF9:
 
 llvm_cbe_lABD6:
   v1419 = S;
-  *((&RAM[((v1419 | 256u))])) = (-85);
+  *((&RAM[((v1419 | 256u))])) = -85;
   v1420 = ((v1419 - 1));
   S = v1420;
-  *((&RAM[((v1420 | 256u))])) = (-40);
+  *((&RAM[((v1420 | 256u))])) = -40;
   v1431 = v1420;   /* for PHI node */
   goto llvm_cbe_lABF9;
 
@@ -25811,7 +25811,7 @@ llvm_cbe_lABD1:
 
 llvm_cbe_lAC4A:
   v1462 = S;
-  *((&RAM[((v1462 | 256u))])) = (-84);
+  *((&RAM[((v1462 | 256u))])) = -84;
   v1463 = ((v1462 - 1));
   S = v1463;
   *((&RAM[((v1463 | 256u))])) = 76;
@@ -25831,54 +25831,54 @@ llvm_cbe_bb14489:
 
 llvm_cbe_lA660:
   v599 = S;
-  *((&RAM[((v599 | 256u))])) = (-90);
+  *((&RAM[((v599 | 256u))])) = -90;
   *((&RAM[(((((((v599 - 1))))) | 256u))])) = 98;
   S = (((v599 - 2)));
-  PC = (-25);
+  PC = -25;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA87D:
-  *llvm_cbe_tmp9319 = (-88);
+  *llvm_cbe_tmp9319 = -88;
   *((&RAM[((v877 | 256u))])) = 127;
   S = (((v877 - 1)));
   goto llvm_cbe_lA660;
 
 llvm_cbe_lA6AA:
   v637 = S;
-  *((&RAM[((v637 | 256u))])) = (-90);
-  *((&RAM[(((((((v637 - 1))))) | 256u))])) = (-84);
+  *((&RAM[((v637 | 256u))])) = -90;
+  *((&RAM[(((((((v637 - 1))))) | 256u))])) = -84;
   S = (((v637 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb6916:
   v642 = S;
-  *((&RAM[((v642 | 256u))])) = (-90);
-  *((&RAM[(((((((v642 - 1))))) | 256u))])) = (-75);
+  *((&RAM[((v642 | 256u))])) = -90;
+  *((&RAM[(((((((v642 - 1))))) | 256u))])) = -75;
   S = (((v642 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA792:
   v767 = S;
-  *((&RAM[((v767 | 256u))])) = (-89);
-  *((&RAM[(((((((v767 - 1))))) | 256u))])) = (-108);
+  *((&RAM[((v767 | 256u))])) = -89;
+  *((&RAM[(((((((v767 - 1))))) | 256u))])) = -108;
   S = (((v767 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb8230:
   v771 = S;
-  *((&RAM[((v771 | 256u))])) = (-89);
-  *((&RAM[(((((((v771 - 1))))) | 256u))])) = (-101);
+  *((&RAM[((v771 | 256u))])) = -89;
+  *((&RAM[(((((((v771 - 1))))) | 256u))])) = -101;
   S = (((v771 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA7E4:
   v800 = S;
-  *((&RAM[((v800 | 256u))])) = (-89);
-  *((&RAM[(((((((v800 - 1))))) | 256u))])) = (-26);
+  *((&RAM[((v800 | 256u))])) = -89;
+  *((&RAM[(((((((v800 - 1))))) | 256u))])) = -26;
   S = (((v800 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -25902,7 +25902,7 @@ llvm_cbe_bb8727:
 
 llvm_cbe_bb8862:
   v823 = S;
-  *((&RAM[((v823 | 256u))])) = (-88);
+  *((&RAM[((v823 | 256u))])) = -88;
   *((&RAM[(((((((v823 - 1))))) | 256u))])) = 20;
   S = (((v823 - 2)));
   PC = 115;
@@ -25910,27 +25910,27 @@ llvm_cbe_bb8862:
 
 llvm_cbe_lA82C:
   v841 = v842;
-  *((&RAM[(((((((v841 - 1))))) | 256u))])) = (-88);
+  *((&RAM[(((((((v841 - 1))))) | 256u))])) = -88;
   *((&RAM[(((((((v841 - 2))))) | 256u))])) = 46;
   S = (((v841 - 3)));
-  PC = (-31);
+  PC = -31;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb7060:
   v652 = S;
-  *((&RAM[((v652 | 256u))])) = (-90);
+  *((&RAM[((v652 | 256u))])) = -90;
   v653 = ((v652 - 1));
   S = v653;
-  *((&RAM[((v653 | 256u))])) = (-45);
+  *((&RAM[((v653 | 256u))])) = -45;
   v842 = v653;   /* for PHI node */
   goto llvm_cbe_lA82C;
 
 llvm_cbe_lA7AE:
   v780 = S;
-  *((&RAM[((v780 | 256u))])) = (-89);
+  *((&RAM[((v780 | 256u))])) = -89;
   v781 = ((v780 - 1));
   S = v781;
-  *((&RAM[((v781 | 256u))])) = (-80);
+  *((&RAM[((v781 | 256u))])) = -80;
   v842 = v781;   /* for PHI node */
   goto llvm_cbe_lA82C;
 
@@ -25940,10 +25940,10 @@ llvm_cbe_lA7A5:
   *((&RAM[((v778 | 256u))])) = v777;
   v779 = *((&RAM[73u]));
   *((&RAM[(((((((v778 - 1))))) | 256u))])) = v779;
-  A = (-127);
+  A = -127;
   Z = 0;
   N = 1;
-  *((&RAM[(((((((v778 - 2))))) | 256u))])) = (-127);
+  *((&RAM[(((((((v778 - 2))))) | 256u))])) = -127;
   S = (((v778 - 3)));
   goto llvm_cbe_lA7AE;
 
@@ -26033,16 +26033,16 @@ llvm_cbe_lA871:
   A = 0;
   Z = 1;
   N = 0;
-  *((&RAM[(((((((v876 - 1))))) | 256u))])) = (-88);
+  *((&RAM[(((((((v876 - 1))))) | 256u))])) = -88;
   *((&RAM[(((((((v876 - 2))))) | 256u))])) = 118;
   S = (((v876 - 3)));
-  PC = (-112);
+  PC = -112;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA897:
   v889 = S;
-  *((&RAM[((v889 | 256u))])) = (-88);
-  *((&RAM[(((((((v889 - 1))))) | 256u))])) = (-103);
+  *((&RAM[((v889 | 256u))])) = -88;
+  *((&RAM[(((((((v889 - 1))))) | 256u))])) = -103;
   S = (((v889 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -26057,16 +26057,16 @@ llvm_cbe_lA888:
   *((&RAM[(((((((v885 - 2))))) | 256u))])) = v887;
   v888 = *((&RAM[57u]));
   *((&RAM[(((((((v885 - 3))))) | 256u))])) = v888;
-  A = (-115);
+  A = -115;
   Z = 0;
   N = 1;
-  *((&RAM[(((((((v885 - 4))))) | 256u))])) = (-115);
+  *((&RAM[(((((((v885 - 4))))) | 256u))])) = -115;
   S = (((v885 - 5)));
   goto llvm_cbe_lA897;
 
 llvm_cbe_lA92B:
   v1007 = S;
-  *((&RAM[((v1007 | 256u))])) = (-87);
+  *((&RAM[((v1007 | 256u))])) = -87;
   *((&RAM[(((((((v1007 - 1))))) | 256u))])) = 45;
   S = (((v1007 - 2)));
   PC = 121;
@@ -26074,14 +26074,14 @@ llvm_cbe_lA92B:
 
 llvm_cbe_lA940:
   v1016 = S;
-  *((&RAM[((v1016 | 256u))])) = (-87);
+  *((&RAM[((v1016 | 256u))])) = -87;
   *((&RAM[(((((((v1016 - 1))))) | 256u))])) = 66;
   S = (((v1016 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA95F:
-  *((&RAM[((v1029 | 256u))])) = (-87);
+  *((&RAM[((v1029 | 256u))])) = -87;
   *((&RAM[(((((((v1029 - 1))))) | 256u))])) = 97;
   S = (((v1029 - 2)));
   PC = 115;
@@ -26089,8 +26089,8 @@ llvm_cbe_lA95F:
 
 llvm_cbe_lA99F:
   v1081 = S;
-  *((&RAM[((v1081 | 256u))])) = (-87);
-  *((&RAM[(((((((v1081 - 1))))) | 256u))])) = (-95);
+  *((&RAM[((v1081 | 256u))])) = -87;
+  *((&RAM[(((((((v1081 - 1))))) | 256u))])) = -95;
   S = (((v1081 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -26224,7 +26224,7 @@ llvm_cbe_lAA14:
   A = v1149;
   Z = (((v1149 == 0)));
   N = (((((v1149 >> 7)))));
-  PC = (-37);
+  PC = -37;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAA1D:
@@ -26236,7 +26236,7 @@ llvm_cbe_lAA1D:
   A = v1156;
   Z = (((v1156 == 0)));
   N = (((((v1156 >> 7)))));
-  *((&RAM[(((((((v1152 - 1))))) | 256u))])) = (-86);
+  *((&RAM[(((((((v1152 - 1))))) | 256u))])) = -86;
   *((&RAM[(((((((v1152 - 2))))) | 256u))])) = 33;
   S = (((v1152 - 3)));
   PC = 128;
@@ -26246,10 +26246,10 @@ llvm_cbe_lA9ED:
   v1125 = v1126;
   *((&RAM[113u])) = v1125;
   v1127 = S;
-  *((&RAM[((v1127 | 256u))])) = (-87);
+  *((&RAM[((v1127 | 256u))])) = -87;
   v1128 = ((v1127 - 1));
   S = v1128;
-  *((&RAM[((v1128 | 256u))])) = (-15);
+  *((&RAM[((v1128 | 256u))])) = -15;
   v1151 = v1125;   /* for PHI node */
   v1153 = v1128;   /* for PHI node */
   goto llvm_cbe_lAA1D;
@@ -26271,10 +26271,10 @@ llvm_cbe_lA9F5:
   Z = (((v1132 == 0)));
   N = (((((v1132 >> 7)))));
   v1133 = S;
-  *((&RAM[((v1133 | 256u))])) = (-87);
+  *((&RAM[((v1133 | 256u))])) = -87;
   v1134 = ((v1133 - 1));
   S = v1134;
-  *((&RAM[((v1134 | 256u))])) = (-5);
+  *((&RAM[((v1134 | 256u))])) = -5;
   v1151 = v1132;   /* for PHI node */
   v1153 = v1134;   /* for PHI node */
   goto llvm_cbe_lAA1D;
@@ -26291,22 +26291,22 @@ llvm_cbe_lAA90:
   *((&RAM[((v1228 | 256u))])) = (((((((((((((((((((((v1222 << 6))) | (((v1221 << 7)))))) | (((v1223 << 4)))))) | (((v1224 << 3)))))) | (((v1225 << 2)))))) | v1227))) | (((v1226 << 1))))));
   v1229 = X;
   *((&RAM[19u])) = v1229;
-  *((&RAM[(((((((v1228 - 1))))) | 256u))])) = (-86);
-  *((&RAM[(((((((v1228 - 2))))) | 256u))])) = (-107);
-  *((&RAM[(((((((v1228 - 3))))) | 256u))])) = (-31);
+  *((&RAM[(((((((v1228 - 1))))) | 256u))])) = -86;
+  *((&RAM[(((((((v1228 - 2))))) | 256u))])) = -107;
+  *((&RAM[(((((((v1228 - 3))))) | 256u))])) = -31;
   *((&RAM[(((((((v1228 - 4))))) | 256u))])) = 26;
   v1230 = A;
   *((&RAM[(((((((v1228 - 5))))) | 256u))])) = v1230;
-  *((&RAM[(((((((v1228 - 6))))) | 256u))])) = (-28);
-  *((&RAM[(((((((v1228 - 7))))) | 256u))])) = (-80);
+  *((&RAM[(((((((v1228 - 6))))) | 256u))])) = -28;
+  *((&RAM[(((((((v1228 - 7))))) | 256u))])) = -80;
   S = (((v1228 - 8)));
-  PC = (-55);
+  PC = -55;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAA9D:
   v1235 = S;
-  *((&RAM[((v1235 | 256u))])) = (-86);
-  *((&RAM[(((((((v1235 - 1))))) | 256u))])) = (-97);
+  *((&RAM[((v1235 | 256u))])) = -86;
+  *((&RAM[(((((((v1235 - 1))))) | 256u))])) = -97;
   S = (((v1235 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -26314,10 +26314,10 @@ llvm_cbe_lAA9D:
 llvm_cbe_lAAE8:
   C = 1;
   v1280 = S;
-  *((&RAM[((v1280 | 256u))])) = (-86);
-  *((&RAM[(((((((v1280 - 1))))) | 256u))])) = (-21);
+  *((&RAM[((v1280 | 256u))])) = -86;
+  *((&RAM[(((((((v1280 - 1))))) | 256u))])) = -21;
   S = (((v1280 - 2)));
-  PC = (-16);
+  PC = -16;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAAF8:
@@ -26331,10 +26331,10 @@ llvm_cbe_lAAF8:
   v1310 = S;
   *((&RAM[((v1310 | 256u))])) = (((((((((((((((((((((v1306 << 6))) | (((v1304 << 7)))))) | (((v1307 << 4)))))) | (((v1308 << 3)))))) | (((v1309 << 2)))))) | v1300))) | (((v1302 << 1))))));
   C = 1;
-  *((&RAM[(((((((v1310 - 1))))) | 256u))])) = (-86);
-  *((&RAM[(((((((v1310 - 2))))) | 256u))])) = (-4);
+  *((&RAM[(((((((v1310 - 1))))) | 256u))])) = -86;
+  *((&RAM[(((((((v1310 - 2))))) | 256u))])) = -4;
   S = (((v1310 - 3)));
-  PC = (-16);
+  PC = -16;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb12987:
@@ -26369,12 +26369,12 @@ llvm_cbe_bb12975:
 llvm_cbe_bb12951:
   C = v1291;
   V = v1288;
-  v1292 = ((v1289 ^ (-1)));
+  v1292 = ((v1289 ^ -1));
   A = v1292;
   Z = (((v1289 == 0xff)));
   N = (((((v1292 >> 7)))));
   v1293 = (((((v1292 + 1))) + v1291));
-  if ((((s8 )v1289) > ((s8 )(-1)))) {
+  if ((((s8 )v1289) > ((s8 )-1))) {
     goto llvm_cbe_bb12986;
   } else {
     goto llvm_cbe_bb12975;
@@ -26386,7 +26386,7 @@ llvm_cbe_lAAEE:
   v1284 = v1285;
   v1286 = (((((v1284 - 11))) + (((s16 )(s8 )v1282))));
   v1287 = v1286;
-  v1288 = ((((((((v1287 ^ v1284) & 128u) == 0u) | (((s8 )v1284) > ((s8 )(-1))))&1))) ? 0 : 1);
+  v1288 = ((((((((v1287 ^ v1284) & 128u) == 0u) | (((s8 )v1284) > ((s8 )-1)))&1))) ? 0 : 1);
   v1289 = v1286;
   v1290 = v1287 & 256u;
   v1291 = (((((((v1290 >> 8u))))) ^ 1));
@@ -26417,17 +26417,17 @@ llvm_cbe_lAAFD:
   v1311 = Y;
   *((&RAM[9u])) = v1311;
   v1312 = S;
-  *((&RAM[((v1312 | 256u))])) = (-85);
+  *((&RAM[((v1312 | 256u))])) = -85;
   *((&RAM[(((((((v1312 - 1))))) | 256u))])) = 1;
-  *((&RAM[(((((((v1312 - 2))))) | 256u))])) = (-73);
-  *((&RAM[(((((((v1312 - 3))))) | 256u))])) = (-99);
+  *((&RAM[(((((((v1312 - 2))))) | 256u))])) = -73;
+  *((&RAM[(((((((v1312 - 3))))) | 256u))])) = -99;
   S = (((v1312 - 4)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAB13:
   v1334 = S;
-  *((&RAM[((v1334 | 256u))])) = (-85);
+  *((&RAM[((v1334 | 256u))])) = -85;
   *((&RAM[(((((((v1334 - 1))))) | 256u))])) = 21;
   S = (((v1334 - 2)));
   PC = 115;
@@ -26523,17 +26523,17 @@ llvm_cbe_lAB0E:
 
 llvm_cbe_lAB47:
   v1360 = v1361;
-  *((&RAM[((v1360 | 256u))])) = (-85);
+  *((&RAM[((v1360 | 256u))])) = -85;
   *((&RAM[(((((((v1360 - 1))))) | 256u))])) = 73;
-  *((&RAM[(((((((v1360 - 2))))) | 256u))])) = (-31);
+  *((&RAM[(((((((v1360 - 2))))) | 256u))])) = -31;
   *((&RAM[(((((((v1360 - 3))))) | 256u))])) = 14;
   S = (((v1360 - 4)));
-  PC = (-46);
+  PC = -46;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA451:
   v222 = S;
-  *((&RAM[((v222 | 256u))])) = (-92);
+  *((&RAM[((v222 | 256u))])) = -92;
   *((&RAM[(((((((v222 - 1))))) | 256u))])) = 83;
   v223 = ((v222 - 2));
   S = v223;
@@ -26554,7 +26554,7 @@ llvm_cbe_lA456:
   A = v231;
   Z = (((v231 == 0)));
   N = 0;
-  *((&RAM[(((((((v230 - 1))))) | 256u))])) = (-92);
+  *((&RAM[(((((((v230 - 1))))) | 256u))])) = -92;
   *((&RAM[(((((((v230 - 2))))) | 256u))])) = 93;
   v232 = ((v230 - 3));
   S = v232;
@@ -26575,8 +26575,8 @@ llvm_cbe_lA456_2e_loopexit:
 
 llvm_cbe_lA6F3:
   v677 = S;
-  *((&RAM[((v677 | 256u))])) = (-90);
-  *((&RAM[(((((((v677 - 1))))) | 256u))])) = (-11);
+  *((&RAM[((v677 | 256u))])) = -90;
+  *((&RAM[(((((((v677 - 1))))) | 256u))])) = -11;
   v678 = ((v677 - 2));
   S = v678;
   v1361 = v678;   /* for PHI node */
@@ -26679,19 +26679,19 @@ llvm_cbe_bb7535:
   C = 1;
   v703 = ((v698 - 127));
   v704 = v703;
-  V = (((((((((v704 ^ v697) & 128u) == 0u) | (((s8 )v697) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v704 ^ v697) & 128u) == 0u) | (((s8 )v697) > ((s8 )-1)))&1))) ? 0 : 1));
   v705 = v703;
   A = v705;
   C = (((((((((((v704 >> 8u))))) & 1))) ^ 1)));
   X = v705;
   v706 = Y;
   *((&RAM[73u])) = v706;
-  Y = (-1);
+  Y = -1;
   Z = 0;
   N = 1;
   v708 = 0;   /* for PHI node */
   v710 = v705;   /* for PHI node */
-  v712 = (-1);   /* for PHI node */
+  v712 = -1;   /* for PHI node */
   goto llvm_cbe_lA72C;
 
 llvm_cbe_bb7508:
@@ -26738,7 +26738,7 @@ llvm_cbe_lA740:
 
 llvm_cbe_bb7693:
   v733 = S;
-  *((&RAM[((v733 | 256u))])) = (-89);
+  *((&RAM[((v733 | 256u))])) = -89;
   *((&RAM[(((((((v733 - 1))))) | 256u))])) = 63;
   v734 = ((v733 - 2));
   S = v734;
@@ -26750,8 +26750,8 @@ llvm_cbe_lAAD7:
   Z = 0;
   N = 0;
   v1267 = S;
-  *((&RAM[((v1267 | 256u))])) = (-86);
-  *((&RAM[(((((((v1267 - 1))))) | 256u))])) = (-37);
+  *((&RAM[((v1267 | 256u))])) = -86;
+  *((&RAM[(((((((v1267 - 1))))) | 256u))])) = -37;
   v1268 = ((v1267 - 2));
   S = v1268;
   v1361 = v1268;   /* for PHI node */
@@ -26763,15 +26763,15 @@ llvm_cbe_lA44A:
   N = 0;
   *((&RAM[19u])) = 0;
   v221 = S;
-  *((&RAM[((v221 | 256u))])) = (-92);
+  *((&RAM[((v221 | 256u))])) = -92;
   *((&RAM[(((((((v221 - 1))))) | 256u))])) = 80;
   S = (((v221 - 2)));
   goto llvm_cbe_lAAD7;
 
 llvm_cbe_lA6D4:
   v654 = S;
-  *((&RAM[((v654 | 256u))])) = (-90);
-  *((&RAM[(((((((v654 - 1))))) | 256u))])) = (-42);
+  *((&RAM[((v654 | 256u))])) = -90;
+  *((&RAM[(((((((v654 - 1))))) | 256u))])) = -42;
   S = (((v654 - 2)));
   goto llvm_cbe_lAAD7;
 
@@ -26780,8 +26780,8 @@ llvm_cbe_bb12828:
   Z = 0;
   N = 0;
   v1271 = S;
-  *((&RAM[((v1271 | 256u))])) = (-86);
-  *((&RAM[(((((((v1271 - 1))))) | 256u))])) = (-28);
+  *((&RAM[((v1271 | 256u))])) = -86;
+  *((&RAM[(((((((v1271 - 1))))) | 256u))])) = -28;
   v1272 = ((v1271 - 2));
   S = v1272;
   v1361 = v1272;   /* for PHI node */
@@ -26796,7 +26796,7 @@ llvm_cbe_bb13338:
   Z = (((v1347 == 0)));
   N = (((((v1347 >> 7)))));
   v1348 = S;
-  *((&RAM[((v1348 | 256u))])) = (-85);
+  *((&RAM[((v1348 | 256u))])) = -85;
   *((&RAM[(((((((v1348 - 1))))) | 256u))])) = 47;
   v1349 = ((v1348 - 2));
   S = v1349;
@@ -26833,8 +26833,8 @@ llvm_cbe_lAB3B:
 
 llvm_cbe_lAAC5:
   v1262 = S;
-  *((&RAM[((v1262 | 256u))])) = (-86);
-  *((&RAM[(((((((v1262 - 1))))) | 256u))])) = (-57);
+  *((&RAM[((v1262 | 256u))])) = -86;
+  *((&RAM[(((((((v1262 - 1))))) | 256u))])) = -57;
   v1263 = ((v1262 - 2));
   S = v1263;
   v1356 = v1263;   /* for PHI node */
@@ -26842,7 +26842,7 @@ llvm_cbe_lAAC5:
 
 llvm_cbe_lAB19:
   v1335 = S;
-  *((&RAM[((v1335 | 256u))])) = (-85);
+  *((&RAM[((v1335 | 256u))])) = -85;
   *((&RAM[(((((((v1335 - 1))))) | 256u))])) = 27;
   v1336 = ((v1335 - 2));
   S = v1336;
@@ -26851,7 +26851,7 @@ llvm_cbe_lAB19:
 
 llvm_cbe_lAC00:
   v1435 = S;
-  *((&RAM[((v1435 | 256u))])) = (-84);
+  *((&RAM[((v1435 | 256u))])) = -84;
   *((&RAM[(((((((v1435 - 1))))) | 256u))])) = 2;
   v1436 = ((v1435 - 2));
   S = v1436;
@@ -26865,8 +26865,8 @@ llvm_cbe_lAB42:
   goto llvm_cbe_lAB44;
 
 llvm_cbe_bb14244:
-  *((&RAM[((v1432 | 256u))])) = (-85);
-  *((&RAM[(((((((v1430 - 2))))) | 256u))])) = (-1);
+  *((&RAM[((v1432 | 256u))])) = -85;
+  *((&RAM[(((((((v1430 - 2))))) | 256u))])) = -1;
   v1434 = ((v1430 - 3));
   S = v1434;
   A = 63;
@@ -26877,7 +26877,7 @@ llvm_cbe_bb14244:
 
 llvm_cbe_bb14506:
   v1460 = S;
-  *((&RAM[((v1460 | 256u))])) = (-84);
+  *((&RAM[((v1460 | 256u))])) = -84;
   *((&RAM[(((((((v1460 - 1))))) | 256u))])) = 73;
   v1461 = ((v1460 - 2));
   S = v1461;
@@ -26889,8 +26889,8 @@ llvm_cbe_bb14506:
 
 llvm_cbe_bb13769:
   v1385 = S;
-  *((&RAM[((v1385 | 256u))])) = (-85);
-  *((&RAM[(((((((v1385 - 1))))) | 256u))])) = (-124);
+  *((&RAM[((v1385 | 256u))])) = -85;
+  *((&RAM[(((((((v1385 - 1))))) | 256u))])) = -124;
   S = (((v1385 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -26910,10 +26910,10 @@ llvm_cbe_lAB7E:
 
 llvm_cbe_lABB7:
   v1405 = S;
-  *((&RAM[((v1405 | 256u))])) = (-85);
-  *((&RAM[(((((((v1405 - 1))))) | 256u))])) = (-71);
+  *((&RAM[((v1405 | 256u))])) = -85;
+  *((&RAM[(((((((v1405 - 1))))) | 256u))])) = -71;
   S = (((v1405 - 2)));
-  PC = (-52);
+  PC = -52;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lABB5:
@@ -26925,17 +26925,17 @@ llvm_cbe_lABB5:
 
 llvm_cbe_bb14170:
   v1426 = S;
-  *((&RAM[((v1426 | 256u))])) = (-85);
-  *((&RAM[(((((((v1426 - 1))))) | 256u))])) = (-26);
+  *((&RAM[((v1426 | 256u))])) = -85;
+  *((&RAM[(((((((v1426 - 1))))) | 256u))])) = -26;
   S = (((v1426 - 2)));
   goto llvm_cbe_lABB5;
 
 llvm_cbe_bb14142:
   v1422 = S;
-  *((&RAM[((v1422 | 256u))])) = (-85);
-  *((&RAM[(((((((v1422 - 1))))) | 256u))])) = (-33);
+  *((&RAM[((v1422 | 256u))])) = -85;
+  *((&RAM[(((((((v1422 - 1))))) | 256u))])) = -33;
   S = (((v1422 - 2)));
-  PC = (-73);
+  PC = -73;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAC18:
@@ -26957,7 +26957,7 @@ llvm_cbe_lAC18:
   *((&RAM[122u])) = v1450;
   *((&RAM[123u])) = v1451;
   v1452 = S;
-  *((&RAM[((v1452 | 256u))])) = (-84);
+  *((&RAM[((v1452 | 256u))])) = -84;
   *((&RAM[(((((((v1452 - 1))))) | 256u))])) = 46;
   S = (((v1452 - 2)));
   PC = 121;
@@ -26965,17 +26965,17 @@ llvm_cbe_lAC18:
 
 llvm_cbe_bb14444:
   v1457 = S;
-  *((&RAM[((v1457 | 256u))])) = (-84);
+  *((&RAM[((v1457 | 256u))])) = -84;
   *((&RAM[(((((((v1457 - 1))))) | 256u))])) = 55;
-  *((&RAM[(((((((v1457 - 2))))) | 256u))])) = (-31);
+  *((&RAM[(((((((v1457 - 2))))) | 256u))])) = -31;
   *((&RAM[(((((((v1457 - 3))))) | 256u))])) = 38;
   S = (((v1457 - 4)));
-  PC = (-28);
+  PC = -28;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAC51:
   v1466 = S;
-  *((&RAM[((v1466 | 256u))])) = (-84);
+  *((&RAM[((v1466 | 256u))])) = -84;
   *((&RAM[(((((((v1466 - 1))))) | 256u))])) = 83;
   S = (((v1466 - 2)));
   PC = 115;
@@ -26991,7 +26991,7 @@ llvm_cbe_lAC4D:
 llvm_cbe_lAC38:
   v1458 = A;
   *((&RAM[512u])) = v1458;
-  X = (-1);
+  X = -1;
   Y = 1;
   Z = 0;
   N = 0;
@@ -26999,8 +26999,8 @@ llvm_cbe_lAC38:
 
 llvm_cbe_lAC91:
   v1500 = S;
-  *((&RAM[((v1500 | 256u))])) = (-84);
-  *((&RAM[(((((((v1500 - 1))))) | 256u))])) = (-109);
+  *((&RAM[((v1500 | 256u))])) = -84;
+  *((&RAM[(((((((v1500 - 1))))) | 256u))])) = -109;
   S = (((v1500 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -27019,16 +27019,16 @@ llvm_cbe_lAC9D:
   *((&RAM[122u])) = v1507;
   *((&RAM[123u])) = v1508;
   v1509 = S;
-  *((&RAM[((v1509 | 256u))])) = (-84);
-  *((&RAM[(((((((v1509 - 1))))) | 256u))])) = (-81);
+  *((&RAM[((v1509 | 256u))])) = -84;
+  *((&RAM[(((((((v1509 - 1))))) | 256u))])) = -81;
   S = (((v1509 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lACD4:
   v1524 = S;
-  *((&RAM[((v1524 | 256u))])) = (-84);
-  *((&RAM[(((((((v1524 - 1))))) | 256u))])) = (-42);
+  *((&RAM[((v1524 | 256u))])) = -84;
+  *((&RAM[(((((((v1524 - 1))))) | 256u))])) = -42;
   S = (((v1524 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -27042,7 +27042,7 @@ llvm_cbe_bb15803:
   X = v1585;
   Z = (((v1585 == 0)));
   N = (((((v1585 >> 7)))));
-  *((&RAM[((v1585 | 256u))])) = (-83);
+  *((&RAM[((v1585 | 256u))])) = -83;
   *((&RAM[(((((((v1585 - 1))))) | 256u))])) = 127;
   S = (((v1585 - 2)));
   PC = 121;
@@ -27073,16 +27073,16 @@ llvm_cbe_bb15802:
 
 llvm_cbe_bb15877:
   v1589 = S;
-  *((&RAM[((v1589 | 256u))])) = (-83);
-  *((&RAM[(((((((v1589 - 1))))) | 256u))])) = (-122);
+  *((&RAM[((v1589 | 256u))])) = -83;
+  *((&RAM[(((((((v1589 - 1))))) | 256u))])) = -122;
   S = (((v1589 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lADB8:
   v1614 = S;
-  *((&RAM[((v1614 | 256u))])) = (-83);
-  *((&RAM[(((((((v1614 - 1))))) | 256u))])) = (-70);
+  *((&RAM[((v1614 | 256u))])) = -83;
+  *((&RAM[(((((((v1614 - 1))))) | 256u))])) = -70;
   S = (((v1614 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -27097,16 +27097,16 @@ llvm_cbe_lADB4:
 llvm_cbe_bb16327:
   *((&RAM[77u])) = v1627;
   v1631 = S;
-  *((&RAM[((v1631 | 256u))])) = (-83);
-  *((&RAM[(((((((v1631 - 1))))) | 256u))])) = (-45);
+  *((&RAM[((v1631 | 256u))])) = -83;
+  *((&RAM[(((((((v1631 - 1))))) | 256u))])) = -45;
   S = (((v1631 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAE8A:
   v1760 = S;
-  *((&RAM[((v1760 | 256u))])) = (-82);
-  *((&RAM[(((((((v1760 - 1))))) | 256u))])) = (-116);
+  *((&RAM[((v1760 | 256u))])) = -82;
+  *((&RAM[(((((((v1760 - 1))))) | 256u))])) = -116;
   S = (((v1760 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -27128,15 +27128,15 @@ llvm_cbe_bb18077:
 
 llvm_cbe_lAF84:
   v1883 = v1884;
-  *((&RAM[(((((((v1883 - 1))))) | 256u))])) = (-81);
-  *((&RAM[(((((((v1883 - 2))))) | 256u))])) = (-122);
+  *((&RAM[(((((((v1883 - 1))))) | 256u))])) = -81;
+  *((&RAM[(((((((v1883 - 2))))) | 256u))])) = -122;
   S = (((v1883 - 3)));
-  PC = (-34);
+  PC = -34;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb18525:
   v1856 = S;
-  *((&RAM[((v1856 | 256u))])) = (-81);
+  *((&RAM[((v1856 | 256u))])) = -81;
   v1857 = ((v1856 - 1));
   S = v1857;
   *((&RAM[((v1857 | 256u))])) = 74;
@@ -27145,7 +27145,7 @@ llvm_cbe_bb18525:
 
 llvm_cbe_bb18805:
   v1880 = S;
-  *((&RAM[((v1880 | 256u))])) = (-81);
+  *((&RAM[((v1880 | 256u))])) = -81;
   v1881 = ((v1880 - 1));
   S = v1881;
   *((&RAM[((v1881 | 256u))])) = 125;
@@ -27154,10 +27154,10 @@ llvm_cbe_bb18805:
 
 llvm_cbe_bb18937:
   v1898 = S;
-  *((&RAM[((v1898 | 256u))])) = (-81);
-  *((&RAM[(((((((v1898 - 1))))) | 256u))])) = (-100);
+  *((&RAM[((v1898 | 256u))])) = -81;
+  *((&RAM[(((((((v1898 - 1))))) | 256u))])) = -100;
   S = (((v1898 - 2)));
-  PC = (-73);
+  PC = -73;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAFA7:
@@ -27169,8 +27169,8 @@ llvm_cbe_lAFA7:
   X = v1901;
   Z = (((v1901 == 0)));
   N = ((((((((v1764 >> 6))))) & 1)));
-  *((&RAM[(((((((v1902 - 1))))) | 256u))])) = (-81);
-  *((&RAM[(((((((v1902 - 2))))) | 256u))])) = (-84);
+  *((&RAM[(((((((v1902 - 1))))) | 256u))])) = -81;
+  *((&RAM[(((((((v1902 - 2))))) | 256u))])) = -84;
   S = (((v1902 - 3)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -27186,8 +27186,8 @@ llvm_cbe_lAFD6:
   Z = (((v1932 == 0)));
   N = (((((v1932 >> 7)))));
   *((&RAM[86u])) = v1932;
-  *((&RAM[((v1926 | 256u))])) = (-81);
-  *((&RAM[(((((((v1926 - 1))))) | 256u))])) = (-30);
+  *((&RAM[((v1926 | 256u))])) = -81;
+  *((&RAM[(((((((v1926 - 1))))) | 256u))])) = -30;
   S = (((v1926 - 2)));
   PC = 84;
   goto llvm_cbe_not_found;
@@ -27222,8 +27222,8 @@ llvm_cbe_lAFD4:
 
 llvm_cbe_lB085:
   v2013 = S;
-  *((&RAM[((v2013 | 256u))])) = (-80);
-  *((&RAM[(((((((v2013 - 1))))) | 256u))])) = (-121);
+  *((&RAM[((v2013 | 256u))])) = -80;
+  *((&RAM[(((((((v2013 - 1))))) | 256u))])) = -121;
   S = (((v2013 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -27233,16 +27233,16 @@ llvm_cbe_lB08B:
   X = 0;
   Z = 1;
   N = 0;
-  *((&RAM[((v2020 | 256u))])) = (-80);
-  *((&RAM[(((((((v2020 - 1))))) | 256u))])) = (-113);
+  *((&RAM[((v2020 | 256u))])) = -80;
+  *((&RAM[(((((((v2020 - 1))))) | 256u))])) = -113;
   S = (((v2020 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lA9A5:
   v1082 = S;
-  *((&RAM[((v1082 | 256u))])) = (-87);
-  *((&RAM[(((((((v1082 - 1))))) | 256u))])) = (-89);
+  *((&RAM[((v1082 | 256u))])) = -87;
+  *((&RAM[(((((((v1082 - 1))))) | 256u))])) = -89;
   v1083 = ((v1082 - 2));
   S = v1083;
   v2021 = v1083;   /* for PHI node */
@@ -27254,14 +27254,14 @@ llvm_cbe_lA742:
   N = 1;
   *((&RAM[16u])) = 128u;
   v736 = S;
-  *((&RAM[((v736 | 256u))])) = (-89);
+  *((&RAM[((v736 | 256u))])) = -89;
   *((&RAM[(((((((v736 - 1))))) | 256u))])) = 72;
   S = (((v736 - 2)));
   goto llvm_cbe_lA9A5;
 
 llvm_cbe_lAC15:
   v1444 = S;
-  *((&RAM[((v1444 | 256u))])) = (-84);
+  *((&RAM[((v1444 | 256u))])) = -84;
   *((&RAM[(((((((v1444 - 1))))) | 256u))])) = 23;
   v1445 = ((v1444 - 2));
   S = v1445;
@@ -27285,8 +27285,8 @@ llvm_cbe_lAB92:
   Z = 0;
   N = 0;
   v1391 = S;
-  *((&RAM[((v1391 | 256u))])) = (-85);
-  *((&RAM[(((((((v1391 - 1))))) | 256u))])) = (-97);
+  *((&RAM[((v1391 | 256u))])) = -85;
+  *((&RAM[(((((((v1391 - 1))))) | 256u))])) = -97;
   S = (((v1391 - 2)));
   v1441 = 64;   /* for PHI node */
   goto llvm_cbe_lAC0F;
@@ -27296,12 +27296,12 @@ llvm_cbe_lAC06:
   X = v1437;
   v1438 = *((&RAM[66u]));
   Y = v1438;
-  A = (-104);
+  A = -104;
   v1439 = *((&RAM[169u]));
   Z = (((v1439 == 0)));
   N = (((((v1439 >> 7)))));
   V = ((((((((v1439 >> 6))))) & 1)));
-  v1441 = (-104);   /* for PHI node */
+  v1441 = -104;   /* for PHI node */
   goto llvm_cbe_lAC0F;
 
 llvm_cbe_lAC0D:
@@ -27313,7 +27313,7 @@ llvm_cbe_lAC0D:
 
 llvm_cbe_lAD24:
   v1539 = S;
-  *((&RAM[((v1539 | 256u))])) = (-83);
+  *((&RAM[((v1539 | 256u))])) = -83;
   *((&RAM[(((((((v1539 - 1))))) | 256u))])) = 38;
   v1540 = ((v1539 - 2));
   S = v1540;
@@ -27322,14 +27322,14 @@ llvm_cbe_lAD24:
 
 llvm_cbe_lAD87:
   v1590 = S;
-  *((&RAM[((v1590 | 256u))])) = (-83);
-  *((&RAM[(((((((v1590 - 1))))) | 256u))])) = (-119);
+  *((&RAM[((v1590 | 256u))])) = -83;
+  *((&RAM[(((((((v1590 - 1))))) | 256u))])) = -119;
   S = (((v1590 - 2)));
   goto llvm_cbe_lAD24;
 
 llvm_cbe_lAF28:
   v1840 = S;
-  *((&RAM[((v1840 | 256u))])) = (-81);
+  *((&RAM[((v1840 | 256u))])) = -81;
   *((&RAM[(((((((v1840 - 1))))) | 256u))])) = 42;
   v1841 = ((v1840 - 2));
   S = v1841;
@@ -27342,8 +27342,8 @@ llvm_cbe_lB3BC:
   N = 1;
   *((&RAM[16u])) = 128u;
   v2564 = S;
-  *((&RAM[((v2564 | 256u))])) = (-77);
-  *((&RAM[(((((((v2564 - 1))))) | 256u))])) = (-62);
+  *((&RAM[((v2564 | 256u))])) = -77;
+  *((&RAM[(((((((v2564 - 1))))) | 256u))])) = -62;
   v2565 = ((v2564 - 2));
   S = v2565;
   v2021 = v2565;   /* for PHI node */
@@ -27353,8 +27353,8 @@ llvm_cbe_lB092:
   v2023 = A;
   *((&RAM[69u])) = v2023;
   v2024 = S;
-  *((&RAM[((v2024 | 256u))])) = (-80);
-  *((&RAM[(((((((v2024 - 1))))) | 256u))])) = (-106);
+  *((&RAM[((v2024 | 256u))])) = -80;
+  *((&RAM[(((((((v2024 - 1))))) | 256u))])) = -106;
   S = (((v2024 - 2)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -27365,8 +27365,8 @@ llvm_cbe_lB081:
   Z = (((v2011 == 0)));
   N = (((((v2011 >> 7)))));
   v2012 = S;
-  *((&RAM[((v2012 | 256u))])) = (-80);
-  *((&RAM[(((((((v2012 - 1))))) | 256u))])) = (-124);
+  *((&RAM[((v2012 | 256u))])) = -80;
+  *((&RAM[(((((((v2012 - 1))))) | 256u))])) = -124;
   S = (((v2012 - 2)));
   *((&RAM[12u])) = v2011;
   goto llvm_cbe_lB092;
@@ -27384,8 +27384,8 @@ llvm_cbe_lB3E6:
   N = 1;
   *((&RAM[16u])) = v2578;
   v2579 = S;
-  *((&RAM[((v2579 | 256u))])) = (-77);
-  *((&RAM[(((((((v2579 - 1))))) | 256u))])) = (-20);
+  *((&RAM[((v2579 | 256u))])) = -77;
+  *((&RAM[(((((((v2579 - 1))))) | 256u))])) = -20;
   S = (((v2579 - 2)));
   goto llvm_cbe_lB092;
 
@@ -27396,16 +27396,16 @@ llvm_cbe_lB09F:
   *((&RAM[13u])) = 0;
   *((&RAM[14u])) = 0;
   v2027 = S;
-  *((&RAM[((v2027 | 256u))])) = (-80);
-  *((&RAM[(((((((v2027 - 1))))) | 256u))])) = (-89);
+  *((&RAM[((v2027 | 256u))])) = -80;
+  *((&RAM[(((((((v2027 - 1))))) | 256u))])) = -89;
   S = (((v2027 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lB0B0:
   v2032 = S;
-  *((&RAM[((v2032 | 256u))])) = (-80);
-  *((&RAM[(((((((v2032 - 1))))) | 256u))])) = (-78);
+  *((&RAM[((v2032 | 256u))])) = -80;
+  *((&RAM[(((((((v2032 - 1))))) | 256u))])) = -78;
   S = (((v2032 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -27425,17 +27425,17 @@ llvm_cbe_lB0D4:
   Z = 0;
   N = 1;
   v2046 = S;
-  *((&RAM[((v2046 | 256u))])) = (-80);
-  *((&RAM[(((((((v2046 - 1))))) | 256u))])) = (-38);
+  *((&RAM[((v2046 | 256u))])) = -80;
+  *((&RAM[(((((((v2046 - 1))))) | 256u))])) = -38;
   S = (((v2046 - 2)));
   PC = 115;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb20321:
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
-  *((&RAM[13u])) = (-1);
+  *((&RAM[13u])) = -1;
   goto llvm_cbe_lB0D4;
 
 llvm_cbe_bb20381:
@@ -27459,10 +27459,10 @@ llvm_cbe_lB1DB:
   Z = (((v2215 == 0)));
   N = (((((v2215 >> 7)))));
   *((&RAM[(((((((v2213 - 2))))) | 256u))])) = v2215;
-  *((&RAM[(((((((v2213 - 3))))) | 256u))])) = (-79);
-  *((&RAM[(((((((v2213 - 4))))) | 256u))])) = (-27);
-  *((&RAM[(((((((v2213 - 5))))) | 256u))])) = (-79);
-  *((&RAM[(((((((v2213 - 6))))) | 256u))])) = (-76);
+  *((&RAM[(((((((v2213 - 3))))) | 256u))])) = -79;
+  *((&RAM[(((((((v2213 - 4))))) | 256u))])) = -27;
+  *((&RAM[(((((((v2213 - 5))))) | 256u))])) = -79;
+  *((&RAM[(((((((v2213 - 6))))) | 256u))])) = -76;
   S = (((v2213 - 7)));
   PC = 115;
   goto llvm_cbe_not_found;
@@ -27509,7 +27509,7 @@ llvm_cbe_lB1E6:
   Y = v2231;
   Z = (((v2231 == 0)));
   N = (((((v2231 >> 7)))));
-  *((&RAM[((v2217 | 256u))])) = (-78);
+  *((&RAM[((v2217 | 256u))])) = -78;
   *((&RAM[((v2216 | 256u))])) = 4;
   S = (((v2216 - 1)));
   PC = 121;
@@ -27518,10 +27518,10 @@ llvm_cbe_lB1E6:
 llvm_cbe_lB39E:
   C = 1;
   v2556 = S;
-  *((&RAM[((v2556 | 256u))])) = (-77);
-  *((&RAM[(((((((v2556 - 1))))) | 256u))])) = (-95);
+  *((&RAM[((v2556 | 256u))])) = -77;
+  *((&RAM[(((((((v2556 - 1))))) | 256u))])) = -95;
   S = (((v2556 - 2)));
-  PC = (-16);
+  PC = -16;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lB43B:
@@ -27535,19 +27535,19 @@ llvm_cbe_lB43B:
   Z = (((v2619 == 0)));
   N = (((((v2619 >> 7)))));
   *((&RAM[79u])) = v2619;
-  *llvm_cbe_tmp26100 = (-76);
+  *llvm_cbe_tmp26100 = -76;
   *((&RAM[((v2616 | 256u))])) = 67;
   S = v2615;
   PC = 121;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lB737:
-  A = (-1);
+  A = -1;
   Z = 0;
   N = 1;
-  *((&RAM[101u])) = (-1);
+  *((&RAM[101u])) = -1;
   v3149 = S;
-  *((&RAM[((v3149 | 256u))])) = (-73);
+  *((&RAM[((v3149 | 256u))])) = -73;
   *((&RAM[(((((((v3149 - 1))))) | 256u))])) = 61;
   S = (((v3149 - 2)));
   PC = 121;
@@ -27574,8 +27574,8 @@ llvm_cbe_lB7CD:
   v3230 = *((&RAM[36u]));
   v3231 = *((&RAM[37u]));
   *((&RAM[(((v3231 << 8u) | v3230))])) = 0;
-  *((&RAM[(((((((v3229 - 1))))) | 256u))])) = (-73);
-  *((&RAM[(((((((v3229 - 2))))) | 256u))])) = (-39);
+  *((&RAM[(((((((v3229 - 1))))) | 256u))])) = -73;
+  *((&RAM[(((((((v3229 - 2))))) | 256u))])) = -39;
   S = (((v3229 - 3)));
   PC = 121;
   goto llvm_cbe_not_found;
@@ -27647,7 +27647,7 @@ llvm_cbe_lB830:
   Z = 1;
   N = 0;
   v3288 = S;
-  *((&RAM[((v3288 | 256u))])) = (-72);
+  *((&RAM[((v3288 | 256u))])) = -72;
   *((&RAM[(((((((v3288 - 1))))) | 256u))])) = 54;
   S = (((v3288 - 2)));
   PC = 121;
@@ -27655,7 +27655,7 @@ llvm_cbe_lB830:
 
 llvm_cbe_lBD0A:
   v4185 = S;
-  *((&RAM[((v4185 | 256u))])) = (-67);
+  *((&RAM[((v4185 | 256u))])) = -67;
   *((&RAM[(((((((v4185 - 1))))) | 256u))])) = 12;
   S = (((v4185 - 2)));
   PC = 115;
@@ -27667,7 +27667,7 @@ llvm_cbe_bb40011:
 
 llvm_cbe_bb40110:
   v4194 = S;
-  *((&RAM[((v4194 | 256u))])) = (-67);
+  *((&RAM[((v4194 | 256u))])) = -67;
   *((&RAM[(((((((v4194 - 1))))) | 256u))])) = 25;
   S = (((v4194 - 2)));
   PC = 115;
@@ -27675,7 +27675,7 @@ llvm_cbe_bb40110:
 
 llvm_cbe_lBD30:
   v4213 = S;
-  *((&RAM[((v4213 | 256u))])) = (-67);
+  *((&RAM[((v4213 | 256u))])) = -67;
   *((&RAM[(((((((v4213 - 1))))) | 256u))])) = 50;
   S = (((v4213 - 2)));
   PC = 115;
@@ -27702,7 +27702,7 @@ llvm_cbe_bb41064:
   C = 1;
   v4299 = (((((v4295 & 255))) - 48));
   v4300 = v4299;
-  V = (((((((((v4300 ^ v4298) & 128u) == 0u) | (((s8 )v4298) > ((s8 )(-1))))&1))) ? 0 : 1));
+  V = (((((((((v4300 ^ v4298) & 128u) == 0u) | (((s8 )v4298) > ((s8 )-1)))&1))) ? 0 : 1));
   v4301 = v4299;
   A = v4301;
   Z = (((v4301 == 0)));
@@ -27776,28 +27776,28 @@ llvm_cbe_lBDAE:
 
 llvm_cbe_bb44364:
   v4597 = S;
-  *((&RAM[((v4597 | 256u))])) = (-32);
-  *((&RAM[(((((((v4597 - 1))))) | 256u))])) = (-96);
+  *((&RAM[((v4597 | 256u))])) = -32;
+  *((&RAM[(((((((v4597 - 1))))) | 256u))])) = -96;
   S = (((v4597 - 2)));
-  PC = (-13);
+  PC = -13;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE11E:
   v4637 = v4638;
-  *((&RAM[(((((((v4637 - 1))))) | 256u))])) = (-31);
+  *((&RAM[(((((((v4637 - 1))))) | 256u))])) = -31;
   *((&RAM[(((((((v4637 - 2))))) | 256u))])) = 32;
   S = (((v4637 - 3)));
-  PC = (-58);
+  PC = -58;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lAB8D:
   v1388 = X;
   *((&RAM[19u])) = v1388;
   v1389 = S;
-  *((&RAM[((v1389 | 256u))])) = (-85);
+  *((&RAM[((v1389 | 256u))])) = -85;
   v1390 = ((v1389 - 1));
   S = v1390;
-  *((&RAM[((v1390 | 256u))])) = (-111);
+  *((&RAM[((v1390 | 256u))])) = -111;
   v4638 = v1390;   /* for PHI node */
   goto llvm_cbe_lE11E;
 
@@ -27805,10 +27805,10 @@ llvm_cbe_lABAD:
   v1400 = X;
   *((&RAM[19u])) = v1400;
   v1401 = S;
-  *((&RAM[((v1401 | 256u))])) = (-85);
+  *((&RAM[((v1401 | 256u))])) = -85;
   v1402 = ((v1401 - 1));
   S = v1402;
-  *((&RAM[((v1402 | 256u))])) = (-79);
+  *((&RAM[((v1402 | 256u))])) = -79;
   v4638 = v1402;   /* for PHI node */
   goto llvm_cbe_lE11E;
 
@@ -27821,10 +27821,10 @@ llvm_cbe_lE159:
   Z = 0;
   N = 0;
   v4668 = S;
-  *((&RAM[((v4668 | 256u))])) = (-31);
+  *((&RAM[((v4668 | 256u))])) = -31;
   *((&RAM[(((((((v4668 - 1))))) | 256u))])) = 97;
   S = (((v4668 - 2)));
-  PC = (-40);
+  PC = -40;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE16F:
@@ -27837,10 +27837,10 @@ llvm_cbe_lE16F:
   Z = (((v4682 == 0)));
   N = (((((v4682 >> 7)))));
   v4683 = S;
-  *((&RAM[((v4683 | 256u))])) = (-31);
+  *((&RAM[((v4683 | 256u))])) = -31;
   *((&RAM[(((((((v4683 - 1))))) | 256u))])) = 119;
   S = (((v4683 - 2)));
-  PC = (-43);
+  PC = -43;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb45323:
@@ -27848,10 +27848,10 @@ llvm_cbe_bb45323:
   Z = 0;
   N = 0;
   v4686 = S;
-  *((&RAM[((v4686 | 256u))])) = (-31);
-  *((&RAM[(((((((v4686 - 1))))) | 256u))])) = (-126);
+  *((&RAM[((v4686 | 256u))])) = -31;
+  *((&RAM[(((((((v4686 - 1))))) | 256u))])) = -126;
   S = (((v4686 - 2)));
-  PC = (-73);
+  PC = -73;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb45306:
@@ -27867,18 +27867,18 @@ llvm_cbe_bb45306:
 
 llvm_cbe_lE195:
   v4698 = S;
-  *((&RAM[((v4698 | 256u))])) = (-31);
-  *((&RAM[(((((((v4698 - 1))))) | 256u))])) = (-105);
+  *((&RAM[((v4698 | 256u))])) = -31;
+  *((&RAM[(((((((v4698 - 1))))) | 256u))])) = -105;
   S = (((v4698 - 2)));
-  PC = (-73);
+  PC = -73;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE1C1:
   v4713 = S;
-  *((&RAM[((v4713 | 256u))])) = (-31);
-  *((&RAM[(((((((v4713 - 1))))) | 256u))])) = (-61);
+  *((&RAM[((v4713 | 256u))])) = -31;
+  *((&RAM[(((((((v4713 - 1))))) | 256u))])) = -61;
   S = (((v4713 - 2)));
-  PC = (-64);
+  PC = -64;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE1CA:
@@ -27887,10 +27887,10 @@ llvm_cbe_lE1CA:
   Z = (((v4722 == 0)));
   N = (((((v4722 >> 7)))));
   v4723 = S;
-  *((&RAM[((v4723 | 256u))])) = (-31);
-  *((&RAM[(((((((v4723 - 1))))) | 256u))])) = (-50);
+  *((&RAM[((v4723 | 256u))])) = -31;
+  *((&RAM[(((((((v4723 - 1))))) | 256u))])) = -50;
   S = (((v4723 - 2)));
-  PC = (-61);
+  PC = -61;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE1D4:
@@ -27898,15 +27898,15 @@ llvm_cbe_lE1D4:
   A = 0;
   Z = 1;
   N = 0;
-  *((&RAM[(((((((v4725 - 1))))) | 256u))])) = (-31);
-  *((&RAM[(((((((v4725 - 2))))) | 256u))])) = (-40);
+  *((&RAM[(((((((v4725 - 1))))) | 256u))])) = -31;
+  *((&RAM[(((((((v4725 - 2))))) | 256u))])) = -40;
   S = (((v4725 - 3)));
-  PC = (-67);
+  PC = -67;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE156:
   v4664 = S;
-  *((&RAM[((v4664 | 256u))])) = (-31);
+  *((&RAM[((v4664 | 256u))])) = -31;
   v4665 = ((v4664 - 1));
   S = v4665;
   *((&RAM[((v4665 | 256u))])) = 88;
@@ -27917,7 +27917,7 @@ llvm_cbe_lE16A:
   v4676 = v4677;
   *((&RAM[10u])) = v4676;
   v4678 = S;
-  *((&RAM[((v4678 | 256u))])) = (-31);
+  *((&RAM[((v4678 | 256u))])) = -31;
   v4679 = ((v4678 - 1));
   S = v4679;
   *((&RAM[((v4679 | 256u))])) = 110;
@@ -27946,10 +27946,10 @@ llvm_cbe_lE1D9:
   Z = 1;
   N = 0;
   v4727 = S;
-  *((&RAM[((v4727 | 256u))])) = (-31);
-  *((&RAM[(((((((v4727 - 1))))) | 256u))])) = (-33);
+  *((&RAM[((v4727 | 256u))])) = -31;
+  *((&RAM[(((((((v4727 - 1))))) | 256u))])) = -33;
   S = (((v4727 - 2)));
-  PC = (-70);
+  PC = -70;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE1EC:
@@ -27959,10 +27959,10 @@ llvm_cbe_lE1EC:
   v4735 = X;
   *((&RAM[73u])) = v4735;
   v4736 = S;
-  *((&RAM[((v4736 | 256u))])) = (-31);
-  *((&RAM[(((((((v4736 - 1))))) | 256u))])) = (-14);
+  *((&RAM[((v4736 | 256u))])) = -31;
+  *((&RAM[(((((((v4736 - 1))))) | 256u))])) = -14;
   S = (((v4736 - 2)));
-  PC = (-70);
+  PC = -70;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE1F9:
@@ -27973,12 +27973,12 @@ llvm_cbe_lE1F9:
   X = v4742;
   Z = (((v4742 == 0)));
   N = (((((v4742 >> 7)))));
-  PC = (-70);
+  PC = -70;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE206:
   v4746 = v4747;
-  *((&RAM[((v4746 | 256u))])) = (-30);
+  *((&RAM[((v4746 | 256u))])) = -30;
   *((&RAM[(((((((v4746 - 1))))) | 256u))])) = 8;
   S = (((v4746 - 2)));
   PC = 121;
@@ -27986,8 +27986,8 @@ llvm_cbe_lE206:
 
 llvm_cbe_lE1E0:
   v4728 = S;
-  *((&RAM[((v4728 | 256u))])) = (-31);
-  *((&RAM[(((((((v4728 - 1))))) | 256u))])) = (-30);
+  *((&RAM[((v4728 | 256u))])) = -31;
+  *((&RAM[(((((((v4728 - 1))))) | 256u))])) = -30;
   v4729 = ((v4728 - 2));
   S = v4729;
   v4747 = v4729;   /* for PHI node */
@@ -27995,8 +27995,8 @@ llvm_cbe_lE1E0:
 
 llvm_cbe_lE1E6:
   v4731 = S;
-  *((&RAM[((v4731 | 256u))])) = (-31);
-  *((&RAM[(((((((v4731 - 1))))) | 256u))])) = (-24);
+  *((&RAM[((v4731 | 256u))])) = -31;
+  *((&RAM[(((((((v4731 - 1))))) | 256u))])) = -24;
   v4732 = ((v4731 - 2));
   S = v4732;
   v4747 = v4732;   /* for PHI node */
@@ -28004,8 +28004,8 @@ llvm_cbe_lE1E6:
 
 llvm_cbe_lE1F3:
   v4737 = S;
-  *((&RAM[((v4737 | 256u))])) = (-31);
-  *((&RAM[(((((((v4737 - 1))))) | 256u))])) = (-11);
+  *((&RAM[((v4737 | 256u))])) = -31;
+  *((&RAM[(((((((v4737 - 1))))) | 256u))])) = -11;
   v4738 = ((v4737 - 2));
   S = v4738;
   v4747 = v4738;   /* for PHI node */
@@ -28013,7 +28013,7 @@ llvm_cbe_lE1F3:
 
 llvm_cbe_lE22E:
   v4767 = S;
-  *((&RAM[((v4767 | 256u))])) = (-30);
+  *((&RAM[((v4767 | 256u))])) = -30;
   *((&RAM[(((((((v4767 - 1))))) | 256u))])) = 48;
   v4768 = ((v4767 - 2));
   S = v4768;
@@ -28022,7 +28022,7 @@ llvm_cbe_lE22E:
 
 llvm_cbe_lE242:
   v4777 = S;
-  *((&RAM[((v4777 | 256u))])) = (-30);
+  *((&RAM[((v4777 | 256u))])) = -30;
   *((&RAM[(((((((v4777 - 1))))) | 256u))])) = 68;
   v4778 = ((v4777 - 2));
   S = v4778;
@@ -28031,7 +28031,7 @@ llvm_cbe_lE242:
 
 llvm_cbe_lE251:
   v4785 = S;
-  *((&RAM[((v4785 | 256u))])) = (-30);
+  *((&RAM[((v4785 | 256u))])) = -30;
   *((&RAM[(((((((v4785 - 1))))) | 256u))])) = 83;
   v4786 = ((v4785 - 2));
   S = v4786;
@@ -28040,7 +28040,7 @@ llvm_cbe_lE251:
 
 llvm_cbe_lE211:
   v4759 = S;
-  *((&RAM[((v4759 | 256u))])) = (-30);
+  *((&RAM[((v4759 | 256u))])) = -30;
   *((&RAM[(((((((v4759 - 1))))) | 256u))])) = 19;
   S = (((v4759 - 2)));
   PC = 121;
@@ -28048,7 +28048,7 @@ llvm_cbe_lE211:
 
 llvm_cbe_lE21E:
   v4763 = S;
-  *((&RAM[((v4763 | 256u))])) = (-30);
+  *((&RAM[((v4763 | 256u))])) = -30;
   *((&RAM[(((((((v4763 - 1))))) | 256u))])) = 32;
   S = (((v4763 - 2)));
   goto llvm_cbe_lE211;
@@ -28058,27 +28058,27 @@ llvm_cbe_lE219:
   A = 0;
   Z = 1;
   N = 0;
-  *((&RAM[(((((((v4761 - 1))))) | 256u))])) = (-30);
+  *((&RAM[(((((((v4761 - 1))))) | 256u))])) = -30;
   *((&RAM[(((((((v4761 - 2))))) | 256u))])) = 29;
   S = (((v4761 - 3)));
-  PC = (-67);
+  PC = -67;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE1BE:
   v4711 = S;
-  *((&RAM[((v4711 | 256u))])) = (-31);
+  *((&RAM[((v4711 | 256u))])) = -31;
   v4712 = ((v4711 - 1));
   S = v4712;
-  *((&RAM[((v4712 | 256u))])) = (-64);
+  *((&RAM[((v4712 | 256u))])) = -64;
   v4762 = v4712;   /* for PHI node */
   goto llvm_cbe_lE219;
 
 llvm_cbe_lE1C7:
   v4720 = S;
-  *((&RAM[((v4720 | 256u))])) = (-31);
+  *((&RAM[((v4720 | 256u))])) = -31;
   v4721 = ((v4720 - 1));
   S = v4721;
-  *((&RAM[((v4721 | 256u))])) = (-55);
+  *((&RAM[((v4721 | 256u))])) = -55;
   v4762 = v4721;   /* for PHI node */
   goto llvm_cbe_lE219;
 
@@ -28091,18 +28091,18 @@ llvm_cbe_lE224:
   Z = 1;
   N = 0;
   v4766 = S;
-  *((&RAM[((v4766 | 256u))])) = (-30);
+  *((&RAM[((v4766 | 256u))])) = -30;
   *((&RAM[(((((((v4766 - 1))))) | 256u))])) = 45;
   S = (((v4766 - 2)));
-  PC = (-70);
+  PC = -70;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE23F:
   v4776 = S;
-  *((&RAM[((v4776 | 256u))])) = (-30);
+  *((&RAM[((v4776 | 256u))])) = -30;
   *((&RAM[(((((((v4776 - 1))))) | 256u))])) = 65;
   S = (((v4776 - 2)));
-  PC = (-70);
+  PC = -70;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE234:
@@ -28124,7 +28124,7 @@ llvm_cbe_lE234:
   }
 
 llvm_cbe_bb46089:
-  Y = (-1);
+  Y = -1;
   Z = 0;
   N = 1;
   goto llvm_cbe_lE23F;
@@ -28139,10 +28139,10 @@ llvm_cbe_lE248:
   Z = (((v4783 == 0)));
   N = (((((v4783 >> 7)))));
   v4784 = S;
-  *((&RAM[((v4784 | 256u))])) = (-30);
+  *((&RAM[((v4784 | 256u))])) = -30;
   *((&RAM[(((((((v4784 - 1))))) | 256u))])) = 80;
   S = (((v4784 - 2)));
-  PC = (-70);
+  PC = -70;
   goto llvm_cbe_not_found;
 
 llvm_cbe_lE25D:
@@ -28152,7 +28152,7 @@ llvm_cbe_lE25D:
   Y = v4794;
   Z = (((v4794 == 0)));
   N = (((((v4794 >> 7)))));
-  PC = (-67);
+  PC = -67;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb47433:
@@ -28168,10 +28168,10 @@ llvm_cbe_bb47433:
   N = 0;
   *((&RAM[22u])) = 25;
   C = 1;
-  *((&RAM[((v4860 | 256u))])) = (-28);
+  *((&RAM[((v4860 | 256u))])) = -28;
   *((&RAM[(((((((v4859 - 3))))) | 256u))])) = 5;
   S = (((v4859 - 4)));
-  PC = (-100);
+  PC = -100;
   goto llvm_cbe_not_found;
 
   do {     /* Syntactic loop 'lE3E2' to make GCC happy */
@@ -28191,20 +28191,20 @@ llvm_cbe_lE3E2:
   } while (1); /* end of syntactic loop 'lE3E2' */
 llvm_cbe_lE397:
   v4859 = S;
-  *((&RAM[((v4859 | 256u))])) = (-29);
-  *((&RAM[(((((((v4859 - 1))))) | 256u))])) = (-103);
+  *((&RAM[((v4859 | 256u))])) = -29;
+  *((&RAM[(((((((v4859 - 1))))) | 256u))])) = -103;
   v4860 = ((v4859 - 2));
   S = v4860;
   *((&RAM[84u])) = 76;
   *((&RAM[784u])) = 76;
   *((&RAM[785u])) = 72;
-  *((&RAM[786u])) = (-78);
-  *((&RAM[5u])) = (-111);
-  *((&RAM[6u])) = (-77);
-  A = (-86);
-  Y = (-79);
-  *((&RAM[3u])) = (-86);
-  *((&RAM[4u])) = (-79);
+  *((&RAM[786u])) = -78;
+  *((&RAM[5u])) = -111;
+  *((&RAM[6u])) = -77;
+  A = -86;
+  Y = -79;
+  *((&RAM[3u])) = -86;
+  *((&RAM[4u])) = -79;
   X = 28;
   Z = 0;
   N = 0;
@@ -28218,10 +28218,10 @@ llvm_cbe_lE406:
   *((&RAM[44u])) = v4871;
   C = 1;
   v4872 = S;
-  *((&RAM[((v4872 | 256u))])) = (-28);
+  *((&RAM[((v4872 | 256u))])) = -28;
   *((&RAM[(((((((v4872 - 1))))) | 256u))])) = 13;
   S = (((v4872 - 2)));
-  PC = (-103);
+  PC = -103;
   goto llvm_cbe_not_found;
 
 llvm_cbe_bb47890:
