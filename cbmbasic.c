@@ -6035,7 +6035,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[7984u])) = -1;
   *((&llvm_cbe_ROM[7985u])) = -100;
   *((&llvm_cbe_ROM[7989u])) = 10;
-  ltmp_1_1 = memset(((&llvm_cbe_ROM[7990u])), ((-1)), 5ull);
+  ltmp_1_1 = memset(((&llvm_cbe_ROM[7990u])), -1, 5ull);
   *((&llvm_cbe_ROM[7995u])) = -33;
   *((&llvm_cbe_ROM[7996u])) = 10;
   *((&llvm_cbe_ROM[7997u])) = 128u;
@@ -6054,7 +6054,7 @@ int main(int llvm_cbe_argc, char **llvm_cbe_argv) {
   *((&llvm_cbe_ROM[8013u])) = -88;
   *((&llvm_cbe_ROM[8017u])) = 60;
   *((&llvm_cbe_ROM[8018u])) = -20;
-  ltmp_2_1 = memset(((&llvm_cbe_ROM[8019u])), ((-86)), 30ull);
+  ltmp_2_1 = memset(((&llvm_cbe_ROM[8019u])), -86, 30ull);
   *((&llvm_cbe_ROM[8127u])) = -127;
   *((&llvm_cbe_ROM[8128u])) = 56;
   *((&llvm_cbe_ROM[8129u])) = -86;
@@ -16009,7 +16009,7 @@ llvm_cbe_lBB17:
   N = 0;
   C = 1;
   v3832 = *((&RAM[97u]));
-  v3833 = ((-v3832));
+  v3833 = -v3832;
   v3834 = v3833;
   if (((v3834 & 128u) == 0u)) {
     goto llvm_cbe_bb36956;
@@ -20983,7 +20983,7 @@ llvm_cbe_lB94D:
   *((&RAM[101u])) = (((v3540 ^ -1)));
   v3541 = *((&RAM[112u]));
   A = (((v3541 ^ -1)));
-  v3542 = ((-v3541));
+  v3542 = -v3541;
   *((&RAM[112u])) = v3542;
   Z = (((v3541 == 0)));
   N = (((((v3542 >> 7)))));
@@ -21792,7 +21792,7 @@ llvm_cbe_bb40306:
   N = 0;
   C = 1;
   v4217 = *((&RAM[94u]));
-  v4218 = ((-v4217));
+  v4218 = -v4217;
   v4219 = v4218;
   if (((v4219 & 128u) == 0u)) {
     goto llvm_cbe_bb40347;
@@ -25138,7 +25138,7 @@ llvm_cbe_bb42800:
   Z = 1;
   N = 0;
   C = 1;
-  v4436 = ((-v4434));
+  v4436 = -v4434;
   v4437 = v4436;
   if (((v4437 & 128u) == 0u)) {
     goto llvm_cbe_bb42841;
