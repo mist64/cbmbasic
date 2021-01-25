@@ -291,7 +291,7 @@ OPEN() {
         unsigned char savedbyte = RAM[kernal_filename+kernal_filename_len];
         const char* mode = kernal_sec == 0 ? "r" : "w";
         RAM[kernal_filename+kernal_filename_len] = 0;
-        kernal_files[kernal_lfn] = fopen(RAM+kernal_filename, mode);
+        kernal_files[kernal_lfn] = fopen((char *)RAM+kernal_filename, mode);
         RAM[kernal_filename+kernal_filename_len] = savedbyte;
         if (kernal_files[kernal_lfn]) {
             kernal_files_next[kernal_lfn] = EOF;
@@ -870,9 +870,38 @@ IOBASE() {
 		Y = CIA >> 8;
 }
 
+unsigned char RAM[65536];
+unsigned short PC;
+unsigned char A;
+unsigned char X;
+unsigned char Y;
+unsigned char S;
+unsigned char N;
+unsigned char V;
+unsigned char B;
+unsigned char D;
+unsigned char I;
+unsigned char Z;
+unsigned char C;
+
 int
-kernal_dispatch() {
+kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned char *y, unsigned char *s, unsigned char *n, unsigned char *v, unsigned char *b, unsigned char *d, unsigned char *i, unsigned char *z, unsigned char *c) {
+	PC = *pc;
+	A = *a;
+	X = *x;
+	Y = *y;
+	S = *s;
+	N = *n;
+	V = *v;
+	B = *b;
+	D = *d;
+	I = *i;
+	Z = *z;
+	C = *c;
+
 //{ printf("kernal_dispatch $%04X; ", PC); int i; printf("stack (%02X): ", S); for (i=S+1; i<0x100; i++) { printf("%02X ", RAM[0x0100+i]); } printf("\n"); }
+
+	int ret = 1;
 
 	unsigned int new_pc;
 	switch(PC) {
@@ -911,10 +940,24 @@ kernal_dispatch() {
 		case MAGIC_GONE:	new_pc = plugin_gone(); PUSH_WORD(new_pc? new_pc-1:orig_gone-1); break;
 		case MAGIC_EVAL:	new_pc = plugin_eval(); PUSH_WORD(new_pc? new_pc-1:orig_eval-1); break;
 		
-		case MAGIC_CONTINUATION: /*printf("--CONTINUATION--\n");*/ return 0;
+		case MAGIC_CONTINUATION: /*printf("--CONTINUATION--\n");*/ ret = 0;
 
 		default: printf("unknown PC=$%04X S=$%02X\n", PC, S); exit(1);
 	}
-	return 1;
+
+	*pc = PC;
+	*a = A;
+	*x = X;
+	*y = Y;
+	*s = S;
+	*n = N;
+	*v = V;
+	*b = B;
+	*d = D;
+	*i = I;
+	*z = Z;
+	*c = C;
+
+	return ret;
 }
 
