@@ -6347,7 +6347,7 @@ llvm_cbe_lE394:
   X = 11;
   Z = 0;
   N = 0;
-  v4905 = 0;   /* for PHI node */
+  v4905 = 0;
   goto llvm_cbe_lE455;
 
   do {     /* Syntactic loop 'bb48000' to make GCC happy */
@@ -7447,12 +7447,12 @@ llvm_cbe_lA38F:
   if (((v28 & 255u) == 0u)) {
     goto llvm_cbe_bb2004;
   } else {
-    v49 = v21;   /* for PHI node */
-    v51 = v29;   /* for PHI node */
-    v53 = v30;   /* for PHI node */
-    v55 = ((v28 & 255u) == 0u);   /* for PHI node */
-    v57 = v26;   /* for PHI node */
-    v59 = v23;   /* for PHI node */
+    v49 = v21;
+    v51 = v29;
+    v53 = v30;
+    v55 = ((v28 & 255u) == 0u);
+    v57 = v26;
+    v59 = v23;
     goto llvm_cbe_lA3B7;
   }
 
@@ -7461,16 +7461,16 @@ llvm_cbe_bb2168:
   v46 = v43;
   v47 = (((((((v43 >> 8u))))) & 1));
   if (v46 == 0) {
-    v49 = v44;   /* for PHI node */
-    v51 = v47;   /* for PHI node */
-    v53 = v46;   /* for PHI node */
-    v55 = (v46 == 0);   /* for PHI node */
-    v57 = v46;   /* for PHI node */
-    v59 = v46;   /* for PHI node */
+    v49 = v44;
+    v51 = v47;
+    v53 = v46;
+    v55 = (v46 == 0);
+    v57 = v46;
+    v59 = v46;
     goto llvm_cbe_lA3B7;
   } else {
-    v22 = v44;   /* for PHI node */
-    v24 = v46;   /* for PHI node */
+    v22 = v44;
+    v24 = v46;
     goto llvm_cbe_lA38F;
   }
 
@@ -7478,7 +7478,7 @@ llvm_cbe_bb2156:
   if ((((v25 ^ v43) & 128u) == 0u)) {
     goto llvm_cbe_bb2167;
   } else {
-    v45 = 1;   /* for PHI node */
+    v45 = 1;
     goto llvm_cbe_bb2168;
   }
 
@@ -7504,7 +7504,7 @@ llvm_cbe_bb2004:
   if (v31 == 0) {
     goto llvm_cbe_bb2021;
   } else {
-    v35 = v31;   /* for PHI node */
+    v35 = v31;
     goto llvm_cbe_lA3A4;
   }
 
@@ -7513,7 +7513,7 @@ llvm_cbe_bb2021:
   *((&RAM[73u])) = v32;
   v33 = *((&RAM[((v25 + 259u))]));
   *((&RAM[74u])) = v33;
-  v35 = v33;   /* for PHI node */
+  v35 = v33;
   goto llvm_cbe_lA3A4;
 
 llvm_cbe_bb2088:
@@ -7524,19 +7524,19 @@ llvm_cbe_bb2088:
   v41 = ((((((((((v40 >> 8u))))) & 1))) ^ 1));
   v42 = v39;
   if (((v40 & 255u) == 0u)) {
-    v49 = v21;   /* for PHI node */
-    v51 = v41;   /* for PHI node */
-    v53 = v42;   /* for PHI node */
-    v55 = ((v40 & 255u) == 0u);   /* for PHI node */
-    v57 = v37;   /* for PHI node */
-    v59 = v23;   /* for PHI node */
+    v49 = v21;
+    v51 = v41;
+    v53 = v42;
+    v55 = ((v40 & 255u) == 0u);
+    v57 = v37;
+    v59 = v23;
     goto llvm_cbe_lA3B7;
   } else {
     goto llvm_cbe_lA3B0;
   }
 
 llvm_cbe_bb2167:
-  v45 = 0;   /* for PHI node */
+  v45 = 0;
   goto llvm_cbe_bb2168;
 
   } while (1); /* end of syntactic loop 'lA38F' */
@@ -7549,8 +7549,8 @@ llvm_cbe_lA38A:
   Z = (((v19 == 0)));
   N = (((((v19 >> 7)))));
   v20 = V;
-  v22 = v20;   /* for PHI node */
-  v24 = v19;   /* for PHI node */
+  v22 = v20;
+  v24 = v19;
   goto llvm_cbe_lA38F;
 
 llvm_cbe_lA749:
@@ -7559,7 +7559,7 @@ llvm_cbe_lA749:
   *((&RAM[(((((((v737 - 1))))) | 256u))])) = 75;
   v738 = ((v737 - 2));
   S = v738;
-  v16 = v738;   /* for PHI node */
+  v16 = v738;
   goto llvm_cbe_lA38A;
 
 llvm_cbe_bb9908:
@@ -7572,7 +7572,7 @@ llvm_cbe_bb9908:
   *((&RAM[(((((((v939 - 1))))) | 256u))])) = -38;
   v940 = ((v939 - 2));
   S = v940;
-  v16 = v940;   /* for PHI node */
+  v16 = v940;
   goto llvm_cbe_lA38A;
 
 llvm_cbe_lA8D2:
@@ -7593,7 +7593,7 @@ llvm_cbe_lAD27:
   *((&RAM[(((((((v1543 - 1))))) | 256u))])) = 45;
   v1544 = ((v1543 - 2));
   S = v1544;
-  v16 = v1544;   /* for PHI node */
+  v16 = v1544;
   goto llvm_cbe_lA38A;
 
 llvm_cbe_bb15322:
@@ -7638,8 +7638,8 @@ llvm_cbe_lA3F3:
   if (v120 == 1) {
     goto llvm_cbe_bb2717;
   } else {
-    v110 = v126;   /* for PHI node */
-    v112 = v122;   /* for PHI node */
+    v110 = v126;
+    v112 = v122;
     goto llvm_cbe_lA3EC;
   }
 
@@ -7653,8 +7653,8 @@ llvm_cbe_bb2358:
   Z = v79;
   N = v80;
   if (v78 == 0) {
-    v121 = v88;   /* for PHI node */
-    v123 = v78;   /* for PHI node */
+    v121 = v88;
+    v123 = v78;
     goto llvm_cbe_lA3F3;
   } else {
     goto llvm_cbe_bb2419;
@@ -7664,7 +7664,7 @@ llvm_cbe_bb2346:
   if ((((((((v83 ^ v82))))) & 128u) == 0u)) {
     goto llvm_cbe_bb2357;
   } else {
-    v87 = 1;   /* for PHI node */
+    v87 = 1;
     goto llvm_cbe_bb2358;
   }
 
@@ -7695,7 +7695,7 @@ llvm_cbe_bb2271:
   if ((((((((v71 ^ v68))))) & 128u) == 0u)) {
     goto llvm_cbe_bb2282;
   } else {
-    v77 = 1;   /* for PHI node */
+    v77 = 1;
     goto llvm_cbe_bb2283;
   }
 
@@ -7748,7 +7748,7 @@ llvm_cbe_bb29034:
   if ((((v2916 ^ v2917) & 128u) == 0u)) {
     goto llvm_cbe_bb29045;
   } else {
-    v2919 = 1;   /* for PHI node */
+    v2919 = 1;
     goto llvm_cbe_bb29046;
   }
 
@@ -7773,7 +7773,7 @@ llvm_cbe_bb28975:
   if ((((v2910 ^ v2912) & 128u) == 0u)) {
     goto llvm_cbe_bb28986;
   } else {
-    v2914 = 1;   /* for PHI node */
+    v2914 = 1;
     goto llvm_cbe_bb28987;
   }
 
@@ -7819,7 +7819,7 @@ llvm_cbe_bb27706:
   if (((v2797 & 255u) == 0u)) {
     goto llvm_cbe_lB606;
   } else {
-    v2800 = v2798;   /* for PHI node */
+    v2800 = v2798;
     goto llvm_cbe_lB57D;
   }
 
@@ -7836,7 +7836,7 @@ llvm_cbe_lB572:
   if (((v2793 & 255u) == 0u)) {
     goto llvm_cbe_bb27706;
   } else {
-    v2800 = v2794;   /* for PHI node */
+    v2800 = v2794;
     goto llvm_cbe_lB57D;
   }
 
@@ -7847,8 +7847,8 @@ llvm_cbe_lB56E:
   X = v2783;
   Z = (((v2783 == 0)));
   N = (((((v2783 >> 7)))));
-  v2788 = v2785;   /* for PHI node */
-  v2790 = v2783;   /* for PHI node */
+  v2788 = v2785;
+  v2790 = v2783;
   goto llvm_cbe_lB572;
 
 llvm_cbe_lB566:
@@ -7860,8 +7860,8 @@ llvm_cbe_lB566:
   Z = 0;
   N = 0;
   *((&RAM[83u])) = 3;
-  v2784 = v2782;   /* for PHI node */
-  v2786 = v2781;   /* for PHI node */
+  v2784 = v2782;
+  v2786 = v2781;
   goto llvm_cbe_lB56E;
 
 llvm_cbe_bb27597:
@@ -7945,8 +7945,8 @@ llvm_cbe_lB526:
   A = v2756;
   Z = (((v2756 == 0)));
   N = (((((v2756 >> 7)))));
-  v2758 = v2756;   /* for PHI node */
-  v2760 = v2755;   /* for PHI node */
+  v2758 = v2756;
+  v2760 = v2755;
   goto llvm_cbe_lB52A;
 
 llvm_cbe_bb3008:
@@ -7971,8 +7971,8 @@ llvm_cbe_lA416:
   if ((((s8 )v172) < ((s8 )0))) {
     goto llvm_cbe_bb3008;
   } else {
-    v166 = (((v165 + 1)));   /* for PHI node */
-    v168 = v171;   /* for PHI node */
+    v166 = (((v165 + 1)));
+    v168 = v171;
     goto llvm_cbe_lA416;
   }
 
@@ -7986,8 +7986,8 @@ llvm_cbe_lA412:
   A = v153;
   Z = (((v153 == 0)));
   N = (((((v153 >> 7)))));
-  v166 = 0;   /* for PHI node */
-  v168 = v153;   /* for PHI node */
+  v166 = 0;
+  v168 = v153;
   goto llvm_cbe_lA416;
 
 llvm_cbe_bb2905:
@@ -8010,7 +8010,7 @@ llvm_cbe_lA408:
   if (v157 == 0) {
     goto llvm_cbe_bb2905;
   } else {
-    v190 = v151;   /* for PHI node */
+    v190 = v151;
     goto llvm_cbe_lA434;
   }
 
@@ -8020,7 +8020,7 @@ llvm_cbe_lA3B8:
   *((&RAM[(((((((v63 - 2))))) | 256u))])) = -70;
   v65 = ((v63 - 3));
   S = v65;
-  v152 = v65;   /* for PHI node */
+  v152 = v65;
   goto llvm_cbe_lA408;
 
 llvm_cbe_lA508:
@@ -8031,7 +8031,7 @@ llvm_cbe_lA508:
   v343 = ((v342 - 1));
   S = v343;
   *((&RAM[((v343 | 256u))])) = 12;
-  v64 = v343;   /* for PHI node */
+  v64 = v343;
   goto llvm_cbe_lA3B8;
 
 llvm_cbe_bb4378:
@@ -8048,7 +8048,7 @@ llvm_cbe_bb4378:
   N = (((((v338 >> 7)))));
   *((&RAM[91u])) = v338;
   if (v337 == 0) {
-    v341 = v338;   /* for PHI node */
+    v341 = v338;
     goto llvm_cbe_lA508;
   } else {
     goto llvm_cbe_bb4421;
@@ -8058,7 +8058,7 @@ llvm_cbe_bb4366:
   if ((((v331 ^ v333) & 128u) == 0u)) {
     goto llvm_cbe_bb4377;
   } else {
-    v335 = 1;   /* for PHI node */
+    v335 = 1;
     goto llvm_cbe_bb4378;
   }
 
@@ -8089,7 +8089,7 @@ llvm_cbe_lA4F3:
   }
 
 llvm_cbe_bb4377:
-  v335 = 0;   /* for PHI node */
+  v335 = 0;
   goto llvm_cbe_bb4378;
 
 llvm_cbe_bb4421:
@@ -8097,7 +8097,7 @@ llvm_cbe_bb4421:
   Y = v339;
   Z = (((v339 == 0)));
   N = (((((v339 >> 7)))));
-  v341 = v339;   /* for PHI node */
+  v341 = v339;
   goto llvm_cbe_lA508;
 
 llvm_cbe_lB159:
@@ -8108,7 +8108,7 @@ llvm_cbe_lB159:
   v2140 = ((v2104 - 1));
   S = v2140;
   *((&RAM[((v2140 | 256u))])) = 95;
-  v64 = v2140;   /* for PHI node */
+  v64 = v2140;
   goto llvm_cbe_lA3B8;
 
 llvm_cbe_bb21282:
@@ -8121,7 +8121,7 @@ llvm_cbe_bb21282:
   v2136 = v2132 & 256u;
   C = (((((v2136 >> 8u)))));
   if (v2136 == 0u) {
-    v2139 = v2131;   /* for PHI node */
+    v2139 = v2131;
     goto llvm_cbe_lB159;
   } else {
     goto llvm_cbe_bb21311;
@@ -8131,7 +8131,7 @@ llvm_cbe_bb21270:
   if ((((v2130 ^ v2132) & 128u) == 0u)) {
     goto llvm_cbe_bb21281;
   } else {
-    v2134 = 1;   /* for PHI node */
+    v2134 = 1;
     goto llvm_cbe_bb21282;
   }
 
@@ -8215,8 +8215,8 @@ llvm_cbe_lB0EF:
   v2063 = ((v2057 + v2056));
   *((&RAM[96u])) = v2063;
   v2064 = v2063;
-  v2066 = v2059;   /* for PHI node */
-  v2068 = v2061;   /* for PHI node */
+  v2066 = v2059;
+  v2068 = v2061;
   goto llvm_cbe_lB0F1;
 
 llvm_cbe_bb20807:
@@ -8227,9 +8227,9 @@ llvm_cbe_bb20807:
   if (v2084 == 0) {
     goto llvm_cbe_lB113_2e_loopexit;
   } else {
-    v2058 = v2087;   /* for PHI node */
-    v2060 = v2079;   /* for PHI node */
-    v2062 = v2081;   /* for PHI node */
+    v2058 = v2087;
+    v2060 = v2079;
+    v2062 = v2081;
     goto llvm_cbe_lB0EF;
   }
 
@@ -8251,8 +8251,8 @@ llvm_cbe_bb20778:
   v2082 = v2078 & 256u;
   v2083 = ((((v2082 >> 8u))));
   if (v2082 == 0u) {
-    v2066 = v2079;   /* for PHI node */
-    v2068 = v2081;   /* for PHI node */
+    v2066 = v2079;
+    v2068 = v2081;
     goto llvm_cbe_lB0F1;
   } else {
     goto llvm_cbe_bb20807;
@@ -8262,7 +8262,7 @@ llvm_cbe_bb20766:
   if ((((v2072 ^ v2078) & 128u) == 0u)) {
     goto llvm_cbe_bb20777;
   } else {
-    v2080 = 1;   /* for PHI node */
+    v2080 = 1;
     goto llvm_cbe_bb20778;
   }
 
@@ -8304,7 +8304,7 @@ llvm_cbe_bb20664:
   }
 
 llvm_cbe_bb20777:
-  v2080 = 0;   /* for PHI node */
+  v2080 = 0;
   goto llvm_cbe_bb20778;
 
   } while (1); /* end of syntactic loop 'lB0F1' */
@@ -8318,9 +8318,9 @@ llvm_cbe_lB0E7:
   X = v2056;
   Z = (((v2056 == 0)));
   N = (((((v2056 >> 7)))));
-  v2058 = 0;   /* for PHI node */
-  v2060 = v2053;   /* for PHI node */
-  v2062 = v2055;   /* for PHI node */
+  v2058 = 0;
+  v2060 = v2053;
+  v2062 = v2055;
   goto llvm_cbe_lB0EF;
 
 llvm_cbe_lB0DB:
@@ -8427,7 +8427,7 @@ llvm_cbe_bb21180:
   }
 
 llvm_cbe_bb21281:
-  v2134 = 0;   /* for PHI node */
+  v2134 = 0;
   goto llvm_cbe_bb21282;
 
 llvm_cbe_bb21311:
@@ -8435,7 +8435,7 @@ llvm_cbe_bb21311:
   Y = v2137;
   Z = (((v2137 == 0)));
   N = (((((v2137 >> 7)))));
-  v2139 = v2137;   /* for PHI node */
+  v2139 = v2137;
   goto llvm_cbe_lB159;
 
 llvm_cbe_lB264:
@@ -8444,7 +8444,7 @@ llvm_cbe_lB264:
   *((&RAM[(((((((v2283 - 1))))) | 256u))])) = 102;
   v2284 = ((v2283 - 2));
   S = v2284;
-  v152 = v2284;   /* for PHI node */
+  v152 = v2284;
   goto llvm_cbe_lA408;
 
 llvm_cbe_lB2B9:
@@ -8453,7 +8453,7 @@ llvm_cbe_lB2B9:
   *((&RAM[(((((((v2350 - 1))))) | 256u))])) = -69;
   v2351 = ((v2350 - 2));
   S = v2351;
-  v152 = v2351;   /* for PHI node */
+  v152 = v2351;
   goto llvm_cbe_lA408;
 
 llvm_cbe_bb23581:
@@ -8475,7 +8475,7 @@ llvm_cbe_bb23569:
   if ((((v2330 ^ v2344) & 128u) == 0u)) {
     goto llvm_cbe_bb23580;
   } else {
-    v2346 = 1;   /* for PHI node */
+    v2346 = 1;
     goto llvm_cbe_bb23581;
   }
 
@@ -8513,7 +8513,7 @@ llvm_cbe_bb23485:
   if ((((v2331 ^ v2337) & 128u) == 0u)) {
     goto llvm_cbe_bb23496;
   } else {
-    v2339 = 1;   /* for PHI node */
+    v2339 = 1;
     goto llvm_cbe_bb23497;
   }
 
@@ -8542,16 +8542,16 @@ llvm_cbe_lB2A0:
   if (v2333 == 1) {
     goto llvm_cbe_bb23467;
   } else {
-    v2302 = v2332;   /* for PHI node */
+    v2302 = v2332;
     goto llvm_cbe_lB286;
   }
 
 llvm_cbe_bb23496:
-  v2339 = 0;   /* for PHI node */
+  v2339 = 0;
   goto llvm_cbe_bb23497;
 
 llvm_cbe_bb23580:
-  v2346 = 0;   /* for PHI node */
+  v2346 = 0;
   goto llvm_cbe_bb23581;
 
 llvm_cbe_bb23610:
@@ -8579,7 +8579,7 @@ llvm_cbe_lE39A:
   *((&RAM[(((((((v4861 - 3))))) | 256u))])) = 40;
   v4864 = ((v4861 - 4));
   S = v4864;
-  v152 = v4864;   /* for PHI node */
+  v152 = v4864;
   goto llvm_cbe_lA408;
 
 llvm_cbe_bb2910:
@@ -8594,7 +8594,7 @@ llvm_cbe_bb2910:
   if (v162 == 0) {
     goto llvm_cbe_lA412;
   } else {
-    v190 = v151;   /* for PHI node */
+    v190 = v151;
     goto llvm_cbe_lA434;
   }
 
@@ -8663,7 +8663,7 @@ llvm_cbe_bb27156:
   if (v2733 == 0) {
     goto llvm_cbe_bb27197;
   } else {
-    v2737 = v2734;   /* for PHI node */
+    v2737 = v2734;
     goto llvm_cbe_lB501;
   }
 
@@ -8671,7 +8671,7 @@ llvm_cbe_bb27144:
   if ((((v2727 ^ v2729) & 128u) == 0u)) {
     goto llvm_cbe_bb27155;
   } else {
-    v2731 = 1;   /* for PHI node */
+    v2731 = 1;
     goto llvm_cbe_bb27156;
   }
 
@@ -8707,8 +8707,8 @@ llvm_cbe_lB47D:
   Z = (((v2660 == 0)));
   N = 0;
   *((&RAM[15u])) = v2660;
-  v2723 = v2655;   /* for PHI node */
-  v2725 = v2658;   /* for PHI node */
+  v2723 = v2655;
+  v2725 = v2658;
   goto llvm_cbe_lB4F6;
 
 llvm_cbe_lB475:
@@ -8721,7 +8721,7 @@ llvm_cbe_lB475:
   N = (((((v2654 >> 7)))));
   *((&RAM[80u])) = v2653;
   *((&RAM[81u])) = v2654;
-  v2656 = v2651;   /* for PHI node */
+  v2656 = v2651;
   goto llvm_cbe_lB47D;
 
 llvm_cbe_lAA52:
@@ -8733,7 +8733,7 @@ llvm_cbe_lAA52:
   *((&RAM[((v1117 | 256u))])) = -86;
   *((&RAM[(((((((v1117 - 1))))) | 256u))])) = 88;
   S = (((v1117 - 2)));
-  v2652 = v1184;   /* for PHI node */
+  v2652 = v1184;
   goto llvm_cbe_lB475;
 
 llvm_cbe_bb12042:
@@ -8811,7 +8811,7 @@ llvm_cbe_lA9BF:
   v1101 = ((((v1100 >> 7))));
   N = v1101;
   if (v1097 == 0) {
-    v1118 = v1099;   /* for PHI node */
+    v1118 = v1099;
     goto llvm_cbe_lA9DA;
   } else {
     goto llvm_cbe_lA9C2;
@@ -8823,7 +8823,7 @@ llvm_cbe_lAC83:
   *((&RAM[(((((((v1493 - 1))))) | 256u))])) = -123;
   v1494 = ((v1493 - 2));
   S = v1494;
-  v1118 = v1494;   /* for PHI node */
+  v1118 = v1494;
   goto llvm_cbe_lA9DA;
 
 llvm_cbe_bb11937:
@@ -8866,7 +8866,7 @@ llvm_cbe_lB4BF:
   *((&RAM[((v2704 | 256u))])) = -76;
   *((&RAM[(((((((v2704 - 1))))) | 256u))])) = -62;
   S = (((v2704 - 2)));
-  v2652 = v2673;   /* for PHI node */
+  v2652 = v2673;
   goto llvm_cbe_lB475;
 
 llvm_cbe_lB4B5:
@@ -8895,7 +8895,7 @@ llvm_cbe_bb26745:
   v2698 = ((((v2670 >> 7))));
   N = v2698;
   if (v2696 == 0) {
-    v2701 = v2670;   /* for PHI node */
+    v2701 = v2670;
     goto llvm_cbe_lB4B5;
   } else {
     goto llvm_cbe_bb26787;
@@ -8905,7 +8905,7 @@ llvm_cbe_bb26733:
   if ((((v2677 ^ v2692) & 128u) == 0u)) {
     goto llvm_cbe_bb26744;
   } else {
-    v2694 = 1;   /* for PHI node */
+    v2694 = 1;
     goto llvm_cbe_bb26745;
   }
 
@@ -8934,7 +8934,7 @@ llvm_cbe_lB4A4:
   Z = ((((v2686 & 255u) == 0u)));
   N = (((((v2685 >> 7)))));
   if (((v2686 & 255u) == 0u)) {
-    v2689 = v2687;   /* for PHI node */
+    v2689 = v2687;
     goto llvm_cbe_lB4A9;
   } else {
     goto llvm_cbe_lB4A8;
@@ -8960,8 +8960,8 @@ llvm_cbe_bb26648:
   if (((v2682 & 255u) == 0u)) {
     goto llvm_cbe_lB4A4;
   } else {
-    v2674 = v2684;   /* for PHI node */
-    v2676 = v2683;   /* for PHI node */
+    v2674 = v2684;
+    v2676 = v2683;
     goto llvm_cbe_lB497;
   }
 
@@ -8987,8 +8987,8 @@ llvm_cbe_lB48D:
   N = 1;
   v2671 = (v2670 << 8u) | v2669;
   v2672 = C;
-  v2674 = 0;   /* for PHI node */
-  v2676 = v2672;   /* for PHI node */
+  v2674 = 0;
+  v2676 = v2672;
   goto llvm_cbe_lB497;
 
 llvm_cbe_lAC7D:
@@ -9017,7 +9017,7 @@ llvm_cbe_bb14708:
   if ((((v1483 ^ v1485) & 128u) == 0u)) {
     goto llvm_cbe_bb14719;
   } else {
-    v1487 = 1;   /* for PHI node */
+    v1487 = 1;
     goto llvm_cbe_bb14720;
   }
 
@@ -9048,8 +9048,8 @@ llvm_cbe_lAC65:
   Z = ((((v1475 & 255u) == 0u)));
   N = (((((v1474 >> 7)))));
   if (((v1475 & 255u) == 0u)) {
-    v1480 = v1476;   /* for PHI node */
-    v1482 = v1473;   /* for PHI node */
+    v1480 = v1476;
+    v1482 = v1473;
     goto llvm_cbe_lAC72;
   } else {
     goto llvm_cbe_bb14650;
@@ -9082,8 +9082,8 @@ llvm_cbe_lAC54:
 llvm_cbe_lAC71:
   v1477 = v1478;
   C = 0;
-  v1480 = 0;   /* for PHI node */
-  v1482 = v1477;   /* for PHI node */
+  v1480 = 0;
+  v1482 = v1477;
   goto llvm_cbe_lAC72;
 
 llvm_cbe_bb14592:
@@ -9095,7 +9095,7 @@ llvm_cbe_bb14592:
   Z = 1;
   N = 0;
   *((&RAM[7u])) = 0;
-  v1478 = 0;   /* for PHI node */
+  v1478 = 0;
   goto llvm_cbe_lAC71;
 
 llvm_cbe_bb14650:
@@ -9103,11 +9103,11 @@ llvm_cbe_bb14650:
   A = 44;
   Z = 0;
   N = 0;
-  v1478 = 44;   /* for PHI node */
+  v1478 = 44;
   goto llvm_cbe_lAC71;
 
 llvm_cbe_bb14719:
-  v1487 = 0;   /* for PHI node */
+  v1487 = 0;
   goto llvm_cbe_bb14720;
 
 llvm_cbe_bb14749:
@@ -9173,7 +9173,7 @@ llvm_cbe_bb8425:
   N = (((((v788 >> 7)))));
   C = 0;
   if (v788 == 0) {
-    v858 = 0;   /* for PHI node */
+    v858 = 0;
     goto llvm_cbe_lA84B;
   } else {
     goto llvm_cbe_lA7CE;
@@ -9221,7 +9221,7 @@ llvm_cbe_lA849:
   A = v856;
   Z = (((v856 == 0)));
   N = (((((v856 >> 7)))));
-  v858 = v844;   /* for PHI node */
+  v858 = v844;
   goto llvm_cbe_lA84B;
 
 llvm_cbe_bb9019:
@@ -9256,13 +9256,13 @@ llvm_cbe_lA82F:
   if (v843 == 0) {
     goto llvm_cbe_lA831;
   } else {
-    v845 = v843;   /* for PHI node */
+    v845 = v843;
     goto llvm_cbe_lA832;
   }
 
 llvm_cbe_lA831:
   C = 0;
-  v845 = 0;   /* for PHI node */
+  v845 = 0;
   goto llvm_cbe_lA832;
 
 llvm_cbe_bb9073:
@@ -9428,8 +9428,8 @@ llvm_cbe_lACDF:
   Z = (((v1530 == 0)));
   N = (((((v1530 >> 7)))));
   if ((((s8 )v1530) < ((s8 )0))) {
-    v833 = v1529;   /* for PHI node */
-    v835 = v1528;   /* for PHI node */
+    v833 = v1529;
+    v835 = v1528;
     goto llvm_cbe_lA827;
   } else {
     goto llvm_cbe_lACEA;
@@ -9566,7 +9566,7 @@ llvm_cbe_bb17695:
   if ((((v1780 ^ v1782) & 128u) == 0u)) {
     goto llvm_cbe_bb17706;
   } else {
-    v1784 = 1;   /* for PHI node */
+    v1784 = 1;
     goto llvm_cbe_bb17707;
   }
 
@@ -9590,7 +9590,7 @@ llvm_cbe_bb14049:
   *((&RAM[((v1415 | 256u))])) = -85;
   *((&RAM[(((((((v1415 - 1))))) | 256u))])) = -59;
   S = (((v1415 - 2)));
-  v1779 = v1414;   /* for PHI node */
+  v1779 = v1414;
   goto llvm_cbe_lAEBD;
 
 llvm_cbe_lABBF:
@@ -9615,7 +9615,7 @@ llvm_cbe_bb17635:
   Z = ((((v1776 & 255u) == 0u)));
   N = (((((v1775 >> 7)))));
   if (((v1776 & 255u) == 0u)) {
-    v1779 = v1777;   /* for PHI node */
+    v1779 = v1777;
     goto llvm_cbe_lAEBD;
   } else {
     goto llvm_cbe_lAECC;
@@ -9680,7 +9680,7 @@ llvm_cbe_lAE95:
   }
 
 llvm_cbe_bb17706:
-  v1784 = 0;   /* for PHI node */
+  v1784 = 0;
   goto llvm_cbe_bb17707;
 
 llvm_cbe_bb17736:
@@ -9709,7 +9709,7 @@ llvm_cbe_lB46D:
 
 llvm_cbe_lB4A8:
   C = 0;
-  v2689 = 0;   /* for PHI node */
+  v2689 = 0;
   goto llvm_cbe_lB4A9;
 
 llvm_cbe_lB4A8_2e_loopexit:
@@ -9721,7 +9721,7 @@ llvm_cbe_lB4A8_2e_loopexit:
   goto llvm_cbe_lB4A8;
 
 llvm_cbe_bb26744:
-  v2694 = 0;   /* for PHI node */
+  v2694 = 0;
   goto llvm_cbe_bb26745;
 
 llvm_cbe_bb26787:
@@ -9729,7 +9729,7 @@ llvm_cbe_bb26787:
   X = v2699;
   Z = (((v2699 == 0)));
   N = (((((v2699 >> 7)))));
-  v2701 = v2699;   /* for PHI node */
+  v2701 = v2699;
   goto llvm_cbe_lB4B5;
 
 llvm_cbe_bb26818:
@@ -9748,7 +9748,7 @@ llvm_cbe_lB65D:
   *llvm_cbe_tmp29299 = -74;
   *((&RAM[((v2938 | 256u))])) = 95;
   S = v2937;
-  v2652 = v2950;   /* for PHI node */
+  v2652 = v2950;
   goto llvm_cbe_lB475;
 
 llvm_cbe_bb29398:
@@ -9770,7 +9770,7 @@ llvm_cbe_bb29386:
   if ((((v2943 ^ v2947) & 128u) == 0u)) {
     goto llvm_cbe_bb29397;
   } else {
-    v2949 = 1;   /* for PHI node */
+    v2949 = 1;
     goto llvm_cbe_bb29398;
   }
 
@@ -9801,7 +9801,7 @@ llvm_cbe_lB649:
   }
 
 llvm_cbe_bb29397:
-  v2949 = 0;   /* for PHI node */
+  v2949 = 0;
   goto llvm_cbe_bb29398;
 
 llvm_cbe_lB6EF:
@@ -9814,7 +9814,7 @@ llvm_cbe_lB6EF:
   *((&RAM[(((((((v3075 - 1))))) | 256u))])) = -74;
   *((&RAM[(((((((v3075 - 2))))) | 256u))])) = -11;
   S = (((v3075 - 3)));
-  v2656 = 1;   /* for PHI node */
+  v2656 = 1;
   goto llvm_cbe_lB47D;
 
 llvm_cbe_lB70E:
@@ -9824,7 +9824,7 @@ llvm_cbe_lB70E:
   *((&RAM[(((((((v3114 - 1))))) | 256u))])) = -73;
   *((&RAM[(((((((v3114 - 2))))) | 256u))])) = 17;
   S = (((v3114 - 3)));
-  v2656 = v3112;   /* for PHI node */
+  v2656 = v3112;
   goto llvm_cbe_lB47D;
 
 llvm_cbe_lB70D:
@@ -9833,8 +9833,8 @@ llvm_cbe_lB70D:
   A = v3111;
   Z = (((v3111 == 0)));
   N = (((((v3111 >> 7)))));
-  v3113 = v3111;   /* for PHI node */
-  v3115 = v3109;   /* for PHI node */
+  v3113 = v3111;
+  v3115 = v3109;
   goto llvm_cbe_lB70E;
 
 llvm_cbe_lB70C:
@@ -9843,7 +9843,7 @@ llvm_cbe_lB70C:
   *((&RAM[((v3107 | 256u))])) = v3105;
   v3108 = ((v3107 - 1));
   S = v3108;
-  v3110 = v3108;   /* for PHI node */
+  v3110 = v3108;
   goto llvm_cbe_lB70D;
 
 llvm_cbe_lB706:
@@ -9856,7 +9856,7 @@ llvm_cbe_lB706:
   Z = v3102;
   N = (((((v3100 >> 7)))));
   if (v3098 == 0) {
-    v3106 = v3100;   /* for PHI node */
+    v3106 = v3100;
     goto llvm_cbe_lB70C;
   } else {
     goto llvm_cbe_bb30669;
@@ -9875,12 +9875,12 @@ llvm_cbe_lB703:
   Z = ((((v3090 & 255u) == 0u)));
   N = (((((v3089 >> 7)))));
   A = v3087;
-  v3093 = v3087;   /* for PHI node */
-  v3095 = v3086;   /* for PHI node */
-  v3097 = v3085;   /* for PHI node */
-  v3099 = v3091;   /* for PHI node */
-  v3101 = v3087;   /* for PHI node */
-  v3103 = (v3087 == 0);   /* for PHI node */
+  v3093 = v3087;
+  v3095 = v3086;
+  v3097 = v3085;
+  v3099 = v3091;
+  v3101 = v3087;
+  v3103 = (v3087 == 0);
   goto llvm_cbe_lB706;
 
 llvm_cbe_bb30990:
@@ -9893,19 +9893,19 @@ llvm_cbe_bb30990:
   C = v3147;
   v3148 = ((v3146 ^ -1));
   A = v3148;
-  v3093 = v3140;   /* for PHI node */
-  v3095 = v3139;   /* for PHI node */
-  v3097 = v3138;   /* for PHI node */
-  v3099 = v3147;   /* for PHI node */
-  v3101 = v3148;   /* for PHI node */
-  v3103 = (v3146 == 0xff);   /* for PHI node */
+  v3093 = v3140;
+  v3095 = v3139;
+  v3097 = v3138;
+  v3099 = v3147;
+  v3101 = v3148;
+  v3103 = (v3146 == 0xff);
   goto llvm_cbe_lB706;
 
 llvm_cbe_bb30967:
   if ((((((((v3141 ^ v3137))))) & 128u) == 0u)) {
     goto llvm_cbe_bb30989;
   } else {
-    v3145 = 1;   /* for PHI node */
+    v3145 = 1;
     goto llvm_cbe_bb30990;
   }
 
@@ -9925,7 +9925,7 @@ llvm_cbe_lB72F:
   }
 
 llvm_cbe_bb30989:
-  v3145 = 0;   /* for PHI node */
+  v3145 = 0;
   goto llvm_cbe_bb30990;
 
 llvm_cbe_bb30669:
@@ -9934,7 +9934,7 @@ llvm_cbe_bb30669:
   A = v3092;
   Z = (((v3092 == 0)));
   N = (((((v3092 >> 7)))));
-  v3106 = v3092;   /* for PHI node */
+  v3106 = v3092;
   goto llvm_cbe_lB70C;
 
 llvm_cbe_bb31200:
@@ -9947,7 +9947,7 @@ llvm_cbe_bb31200:
   v3171 = v3167 & 256u;
   C = ((((((((v3171 >> 8u))))) ^ 1)));
   if (v3171 == 0u) {
-    v3110 = v3161;   /* for PHI node */
+    v3110 = v3161;
     goto llvm_cbe_lB70D;
   } else {
     goto llvm_cbe_bb31224;
@@ -9957,7 +9957,7 @@ llvm_cbe_bb31177:
   if ((((((((v3165 ^ v3159))))) & 128u) == 0u)) {
     goto llvm_cbe_bb31199;
   } else {
-    v3169 = 1;   /* for PHI node */
+    v3169 = 1;
     goto llvm_cbe_bb31200;
   }
 
@@ -9994,7 +9994,7 @@ llvm_cbe_lB74B:
   }
 
 llvm_cbe_bb31199:
-  v3169 = 0;   /* for PHI node */
+  v3169 = 0;
   goto llvm_cbe_bb31200;
 
 llvm_cbe_bb31224:
@@ -10008,8 +10008,8 @@ llvm_cbe_bb31224:
   Z = ((((v3175 & 255u) == 0u)));
   N = (((((v3174 >> 7)))));
   if ((v3176 != 0)) {
-    v3113 = v3172;   /* for PHI node */
-    v3115 = v3161;   /* for PHI node */
+    v3113 = v3172;
+    v3115 = v3161;
     goto llvm_cbe_lB70E;
   } else {
     goto llvm_cbe_bb31265;
@@ -10019,8 +10019,8 @@ llvm_cbe_bb31265:
   A = v3173;
   Z = (((v3173 == 0)));
   N = (((((v3173 >> 7)))));
-  v3113 = v3173;   /* for PHI node */
-  v3115 = v3161;   /* for PHI node */
+  v3113 = v3173;
+  v3115 = v3161;
   goto llvm_cbe_lB70E;
 
 llvm_cbe_lB51F:
@@ -10035,13 +10035,13 @@ llvm_cbe_lB51F:
   if (v2754 == 0) {
     goto llvm_cbe_lB526;
   } else {
-    v2723 = v2754;   /* for PHI node */
-    v2725 = v2753;   /* for PHI node */
+    v2723 = v2754;
+    v2725 = v2753;
     goto llvm_cbe_lB4F6;
   }
 
 llvm_cbe_bb27155:
-  v2731 = 0;   /* for PHI node */
+  v2731 = 0;
   goto llvm_cbe_bb27156;
 
 llvm_cbe_bb27197:
@@ -10049,7 +10049,7 @@ llvm_cbe_bb27197:
   Y = v2735;
   Z = (((v2734 == 1)));
   N = (((((v2735 >> 7)))));
-  v2737 = v2735;   /* for PHI node */
+  v2737 = v2735;
   goto llvm_cbe_lB501;
 
 llvm_cbe_bb27244:
@@ -10091,8 +10091,8 @@ llvm_cbe_lB62B:
   v2930 = *((&RAM[78u]));
   v2931 = *((&RAM[79u]));
   *((&RAM[(((((v2931 << 8u) | v2930) + v2929) & 65535u))])) = v2928;
-  v2758 = v2928;   /* for PHI node */
-  v2760 = v2924;   /* for PHI node */
+  v2758 = v2928;
+  v2760 = v2924;
   goto llvm_cbe_lB52A;
 
 llvm_cbe_lB54B:
@@ -10126,8 +10126,8 @@ llvm_cbe_bb28012:
   Z = ((((((((v2825 >> 1))))) & 1)));
   C = (((v2825 & 1)));
   if (v2826 == 0) {
-    v2784 = v2824;   /* for PHI node */
-    v2786 = v2819;   /* for PHI node */
+    v2784 = v2824;
+    v2786 = v2819;
     goto llvm_cbe_lB56E;
   } else {
     goto llvm_cbe_bb28069;
@@ -10157,7 +10157,7 @@ llvm_cbe_bb27909:
   if ((((v2814 ^ v2816) & 128u) == 0u)) {
     goto llvm_cbe_bb27920;
   } else {
-    v2818 = 1;   /* for PHI node */
+    v2818 = 1;
     goto llvm_cbe_bb27921;
   }
 
@@ -10195,7 +10195,7 @@ llvm_cbe_lB57D:
   }
 
 llvm_cbe_bb27920:
-  v2818 = 0;   /* for PHI node */
+  v2818 = 0;
   goto llvm_cbe_bb27921;
 
 llvm_cbe_bb28000:
@@ -10206,8 +10206,8 @@ llvm_cbe_bb28069:
   Z = v2803;
   N = v2804;
   if ((((s8 )v2802) < ((s8 )0))) {
-    v2784 = v2824;   /* for PHI node */
-    v2786 = v2819;   /* for PHI node */
+    v2784 = v2824;
+    v2786 = v2819;
     goto llvm_cbe_lB56E;
   } else {
     goto llvm_cbe_bb28086;
@@ -10222,8 +10222,8 @@ llvm_cbe_bb28319:
   Z = ((((v2851 & 255u) == 0u)));
   N = (((((v2850 >> 7)))));
   if (((v2851 & 255u) == 0u)) {
-    v2788 = v2848;   /* for PHI node */
-    v2790 = v2844;   /* for PHI node */
+    v2788 = v2848;
+    v2790 = v2844;
     goto llvm_cbe_lB572;
   } else {
     goto llvm_cbe_lB5B8;
@@ -10261,7 +10261,7 @@ llvm_cbe_bb28235:
   C = v2840;
   *((&RAM[34u])) = v2839;
   if (v2840 == 0) {
-    v2843 = v2812;   /* for PHI node */
+    v2843 = v2812;
     goto llvm_cbe_lB5AE;
   } else {
     goto llvm_cbe_bb28265;
@@ -10271,7 +10271,7 @@ llvm_cbe_bb28223:
   if ((((v2834 ^ v2836) & 128u) == 0u)) {
     goto llvm_cbe_bb28234;
   } else {
-    v2838 = 1;   /* for PHI node */
+    v2838 = 1;
     goto llvm_cbe_bb28235;
   }
 
@@ -10295,7 +10295,7 @@ llvm_cbe_bb28169:
   if ((((v2830 ^ v2831) & 128u) == 0u)) {
     goto llvm_cbe_bb28180;
   } else {
-    v2833 = 1;   /* for PHI node */
+    v2833 = 1;
     goto llvm_cbe_bb28181;
   }
 
@@ -10317,11 +10317,11 @@ llvm_cbe_bb28086:
   }
 
 llvm_cbe_bb28180:
-  v2833 = 0;   /* for PHI node */
+  v2833 = 0;
   goto llvm_cbe_bb28181;
 
 llvm_cbe_bb28234:
-  v2838 = 0;   /* for PHI node */
+  v2838 = 0;
   goto llvm_cbe_bb28235;
 
 llvm_cbe_bb28265:
@@ -10329,7 +10329,7 @@ llvm_cbe_bb28265:
   *((&RAM[35u])) = v2841;
   Z = (((v2841 == 0)));
   N = (((((v2841 >> 7)))));
-  v2843 = v2841;   /* for PHI node */
+  v2843 = v2841;
   goto llvm_cbe_lB5AE;
 
 llvm_cbe_lB5BB:
@@ -10341,19 +10341,19 @@ llvm_cbe_lB5BB:
   }
 
 llvm_cbe_bb28986:
-  v2914 = 0;   /* for PHI node */
+  v2914 = 0;
   goto llvm_cbe_bb28987;
 
 llvm_cbe_bb29045:
-  v2919 = 0;   /* for PHI node */
+  v2919 = 0;
   goto llvm_cbe_bb29046;
 
 llvm_cbe_bb2282:
-  v77 = 0;   /* for PHI node */
+  v77 = 0;
   goto llvm_cbe_bb2283;
 
 llvm_cbe_bb2357:
-  v87 = 0;   /* for PHI node */
+  v87 = 0;
   goto llvm_cbe_bb2358;
 
   do {     /* Syntactic loop 'lA3EC' to make GCC happy */
@@ -10375,12 +10375,12 @@ llvm_cbe_lA3EC:
   v119 = *((&RAM[89u]));
   *((&RAM[(((((v119 << 8u) | v118) + v116) & 65535u))])) = v117;
   if (v111 == 1) {
-    v121 = v109;   /* for PHI node */
-    v123 = v113;   /* for PHI node */
+    v121 = v109;
+    v123 = v113;
     goto llvm_cbe_lA3F3;
   } else {
-    v110 = v109;   /* for PHI node */
-    v112 = v113;   /* for PHI node */
+    v110 = v109;
+    v112 = v113;
     goto llvm_cbe_lA3EC;
   }
 
@@ -10398,8 +10398,8 @@ llvm_cbe_bb2543:
   if ((v106 != 0)) {
     goto llvm_cbe_bb2568;
   } else {
-    v110 = v88;   /* for PHI node */
-    v112 = v78;   /* for PHI node */
+    v110 = v88;
+    v112 = v78;
     goto llvm_cbe_lA3EC;
   }
 
@@ -10407,7 +10407,7 @@ llvm_cbe_bb2531:
   if ((((((((v78 ^ v100))))) & 128u) == 0u)) {
     goto llvm_cbe_bb2542;
   } else {
-    v104 = 1;   /* for PHI node */
+    v104 = 1;
     goto llvm_cbe_bb2543;
   }
 
@@ -10437,7 +10437,7 @@ llvm_cbe_bb2462:
   C = v96;
   *((&RAM[90u])) = v94;
   if (v95 == 0) {
-    v99 = v96;   /* for PHI node */
+    v99 = v96;
     goto llvm_cbe_lA3DC;
   } else {
     goto llvm_cbe_bb2487;
@@ -10447,7 +10447,7 @@ llvm_cbe_bb2450:
   if ((((((((v78 ^ v68))))) & 128u) == 0u)) {
     goto llvm_cbe_bb2461;
   } else {
-    v93 = 1;   /* for PHI node */
+    v93 = 1;
     goto llvm_cbe_bb2462;
   }
 
@@ -10466,7 +10466,7 @@ llvm_cbe_bb2419:
   }
 
 llvm_cbe_bb2461:
-  v93 = 0;   /* for PHI node */
+  v93 = 0;
   goto llvm_cbe_bb2462;
 
 llvm_cbe_bb2487:
@@ -10475,11 +10475,11 @@ llvm_cbe_bb2487:
   Z = (((v82 == 1)));
   N = (((((v97 >> 7)))));
   C = 1;
-  v99 = 1;   /* for PHI node */
+  v99 = 1;
   goto llvm_cbe_lA3DC;
 
 llvm_cbe_bb2542:
-  v104 = 0;   /* for PHI node */
+  v104 = 0;
   goto llvm_cbe_bb2543;
 
 llvm_cbe_bb2568:
@@ -10488,8 +10488,8 @@ llvm_cbe_bb2568:
   *((&RAM[89u])) = v108;
   Z = (((v107 == 1)));
   N = (((((v108 >> 7)))));
-  v110 = v88;   /* for PHI node */
-  v112 = v78;   /* for PHI node */
+  v110 = v88;
+  v112 = v78;
   goto llvm_cbe_lA3EC;
 
 llvm_cbe_bb2856:
@@ -10539,7 +10539,7 @@ llvm_cbe_bb2773:
   if ((((v138 ^ v139) & 128u) == 0u)) {
     goto llvm_cbe_bb2784;
   } else {
-    v141 = 1;   /* for PHI node */
+    v141 = 1;
     goto llvm_cbe_bb2785;
   }
 
@@ -10568,8 +10568,8 @@ llvm_cbe_lA753:
   *((&RAM[(((((((v746 + 2))))) | 256u))])) = -89;
   *((&RAM[(((((((v746 + 1))))) | 256u))])) = 89;
   S = v746;
-  v133 = v746;   /* for PHI node */
-  v135 = 9;   /* for PHI node */
+  v133 = v746;
+  v135 = 9;
   goto llvm_cbe_lA3FB;
 
 llvm_cbe_lA74C:
@@ -10596,7 +10596,7 @@ llvm_cbe_bb7768:
   if ((((v740 ^ v742) & 128u) == 0u)) {
     goto llvm_cbe_bb7779;
   } else {
-    v744 = 1;   /* for PHI node */
+    v744 = 1;
     goto llvm_cbe_bb7780;
   }
 
@@ -10614,7 +10614,7 @@ llvm_cbe_bb7744:
   }
 
 llvm_cbe_bb7779:
-  v744 = 0;   /* for PHI node */
+  v744 = 0;
   goto llvm_cbe_bb7780;
 
 llvm_cbe_lA883:
@@ -10626,8 +10626,8 @@ llvm_cbe_lA883:
   *((&RAM[(((((((v882 - 1))))) | 256u))])) = -121;
   v883 = ((v882 - 2));
   S = v883;
-  v133 = v883;   /* for PHI node */
-  v135 = 3;   /* for PHI node */
+  v133 = v883;
+  v135 = 3;
   goto llvm_cbe_lA3FB;
 
 llvm_cbe_lADAA:
@@ -10641,8 +10641,8 @@ llvm_cbe_lADAA:
   *((&RAM[(((((((v1608 - 2))))) | 256u))])) = -80;
   v1611 = ((v1608 - 3));
   S = v1611;
-  v133 = v1611;   /* for PHI node */
-  v135 = 1;   /* for PHI node */
+  v133 = v1611;
+  v135 = 1;
   goto llvm_cbe_lA3FB;
 
 llvm_cbe_lADA4:
@@ -10652,7 +10652,7 @@ llvm_cbe_lADA4:
   Z = (((v1607 == 0)));
   N = (((((v1607 >> 7)))));
   V = ((((((((v1607 >> 6))))) & 1)));
-  v1609 = v1602;   /* for PHI node */
+  v1609 = v1602;
   goto llvm_cbe_lADAA;
 
 llvm_cbe_lAD9E:
@@ -10680,7 +10680,7 @@ llvm_cbe_lA9B1:
   *((&RAM[(((((((v1088 - 3))))) | 256u))])) = -71;
   v1090 = ((v1088 - 4));
   S = v1090;
-  v1603 = v1090;   /* for PHI node */
+  v1603 = v1090;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_bb12645:
@@ -10689,7 +10689,7 @@ llvm_cbe_bb12645:
   *((&RAM[(((((((v1252 - 1))))) | 256u))])) = -73;
   v1253 = ((v1252 - 2));
   S = v1253;
-  v1603 = v1253;   /* for PHI node */
+  v1603 = v1253;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_bb12618:
@@ -10724,9 +10724,9 @@ llvm_cbe_bb12564:
   N = v1247;
   C = 0;
   if (((v1245 & 255u) == 0u)) {
-    v1301 = 0;   /* for PHI node */
-    v1303 = v1246;   /* for PHI node */
-    v1305 = v1247;   /* for PHI node */
+    v1301 = 0;
+    v1303 = v1246;
+    v1305 = v1247;
     goto llvm_cbe_lAAF8;
   } else {
     goto llvm_cbe_bb12591;
@@ -10744,9 +10744,9 @@ llvm_cbe_bb12537:
   v1244 = ((((v1240 >> 7))));
   N = v1244;
   if (((v1241 & 255u) == 0u)) {
-    v1301 = v1242;   /* for PHI node */
-    v1303 = v1243;   /* for PHI node */
-    v1305 = v1244;   /* for PHI node */
+    v1301 = v1242;
+    v1303 = v1243;
+    v1305 = v1244;
     goto llvm_cbe_lAAF8;
   } else {
     goto llvm_cbe_bb12564;
@@ -10793,7 +10793,7 @@ llvm_cbe_lAD8A:
   *((&RAM[(((((((v1591 - 1))))) | 256u))])) = -116;
   v1592 = ((v1591 - 2));
   S = v1592;
-  v1603 = v1592;   /* for PHI node */
+  v1603 = v1592;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_lA775:
@@ -10925,7 +10925,7 @@ llvm_cbe_lB824:
   v3276 = ((v3275 - 1));
   S = v3276;
   *((&RAM[((v3276 | 256u))])) = 38;
-  v3246 = v3276;   /* for PHI node */
+  v3246 = v3276;
   goto llvm_cbe_lB7EB;
 
 llvm_cbe_lB82D:
@@ -10934,7 +10934,7 @@ llvm_cbe_lB82D:
   v3286 = ((v3285 - 1));
   S = v3286;
   *((&RAM[((v3286 | 256u))])) = 47;
-  v3246 = v3286;   /* for PHI node */
+  v3246 = v3286;
   goto llvm_cbe_lB7EB;
 
 llvm_cbe_lE12A:
@@ -10950,7 +10950,7 @@ llvm_cbe_lAEF4:
   *((&RAM[(((((((v1800 - 1))))) | 256u))])) = -10;
   v1801 = ((v1800 - 2));
   S = v1801;
-  v1603 = v1801;   /* for PHI node */
+  v1603 = v1801;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_lAFB4:
@@ -10959,7 +10959,7 @@ llvm_cbe_lAFB4:
   *((&RAM[(((((((v1910 - 1))))) | 256u))])) = -74;
   v1911 = ((v1910 - 2));
   S = v1911;
-  v1603 = v1911;   /* for PHI node */
+  v1603 = v1911;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_lB1B5:
@@ -10968,7 +10968,7 @@ llvm_cbe_lB1B5:
   *((&RAM[(((((((v2197 - 1))))) | 256u))])) = -73;
   v2198 = ((v2197 - 2));
   S = v2198;
-  v1603 = v2198;   /* for PHI node */
+  v1603 = v2198;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_lE257:
@@ -10977,7 +10977,7 @@ llvm_cbe_lE257:
   *((&RAM[(((((((v4789 - 1))))) | 256u))])) = 89;
   v4790 = ((v4789 - 2));
   S = v4790;
-  v1603 = v4790;   /* for PHI node */
+  v1603 = v4790;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_lE1E3:
@@ -10993,7 +10993,7 @@ llvm_cbe_bb48000_2e_lA928_crit_edge:
   *((&RAM[(((((((v4927 - 1))))) | 256u))])) = 42;
   v4928 = ((v4927 - 2));
   S = v4928;
-  v1603 = v4928;   /* for PHI node */
+  v1603 = v4928;
   goto llvm_cbe_lAD9E;
 
 llvm_cbe_bb16012:
@@ -11013,11 +11013,11 @@ llvm_cbe_lAE2B:
   *((&RAM[((v1700 | 256u))])) = v1699;
   v1701 = ((v1700 - 1));
   S = v1701;
-  v1609 = v1701;   /* for PHI node */
+  v1609 = v1701;
   goto llvm_cbe_lADAA;
 
 llvm_cbe_bb2784:
-  v141 = 0;   /* for PHI node */
+  v141 = 0;
   goto llvm_cbe_bb2785;
 
 llvm_cbe_lA434:
@@ -11052,7 +11052,7 @@ llvm_cbe_bb3071:
   if (v184 == 0) {
     goto llvm_cbe_bb3148;
   } else {
-    v190 = v179;   /* for PHI node */
+    v190 = v179;
     goto llvm_cbe_lA434;
   }
 
@@ -11065,7 +11065,7 @@ llvm_cbe_lA421:
   if (v177 == 9) {
     goto llvm_cbe_bb3071;
   } else {
-    v175 = v177;   /* for PHI node */
+    v175 = v177;
     goto llvm_cbe_lA421;
   }
 
@@ -11075,7 +11075,7 @@ llvm_cbe_lA41F:
   Z = 0;
   N = 1;
   v173 = S;
-  v175 = 0;   /* for PHI node */
+  v175 = 0;
   goto llvm_cbe_lA421;
 
 llvm_cbe_bb3153:
@@ -11089,7 +11089,7 @@ llvm_cbe_bb3153:
   if (v188 == 0) {
     goto llvm_cbe_lA435;
   } else {
-    v190 = v179;   /* for PHI node */
+    v190 = v179;
     goto llvm_cbe_lA434;
   }
 
@@ -11156,15 +11156,15 @@ llvm_cbe_lB35F:
   if (v2507 == 0) {
     goto llvm_cbe_bb24876;
   } else {
-    v196 = v2493;   /* for PHI node */
-    v198 = v2495;   /* for PHI node */
-    v200 = v2497;   /* for PHI node */
-    v202 = v2508;   /* for PHI node */
-    v204 = v2507;   /* for PHI node */
-    v206 = v2508;   /* for PHI node */
-    v208 = v2508;   /* for PHI node */
-    v210 = v2508;   /* for PHI node */
-    v212 = v2505;   /* for PHI node */
+    v196 = v2493;
+    v198 = v2495;
+    v200 = v2497;
+    v202 = v2508;
+    v204 = v2507;
+    v206 = v2508;
+    v208 = v2508;
+    v210 = v2508;
+    v212 = v2505;
     goto llvm_cbe_lA435_2e_loopexit;
   }
 
@@ -11179,12 +11179,12 @@ llvm_cbe_lB378:
   if (v2503 == 1) {
     goto llvm_cbe_bb25109;
   } else {
-    v2492 = v2532;   /* for PHI node */
-    v2494 = v2521;   /* for PHI node */
-    v2496 = v2512;   /* for PHI node */
-    v2498 = v2509;   /* for PHI node */
-    v2500 = v2523;   /* for PHI node */
-    v2502 = v2529;   /* for PHI node */
+    v2492 = v2532;
+    v2494 = v2521;
+    v2496 = v2512;
+    v2498 = v2509;
+    v2500 = v2523;
+    v2502 = v2529;
     goto llvm_cbe_lB35F;
   }
 
@@ -11194,11 +11194,11 @@ llvm_cbe_bb24876:
   v2511 = ((((((v2510 >> 8))))));
   v2512 = v2510;
   if (v2511 == 0) {
-    v2522 = v2493;   /* for PHI node */
-    v2524 = v2508;   /* for PHI node */
-    v2526 = v2511;   /* for PHI node */
-    v2528 = v2508;   /* for PHI node */
-    v2530 = v2505;   /* for PHI node */
+    v2522 = v2493;
+    v2524 = v2508;
+    v2526 = v2511;
+    v2528 = v2508;
+    v2530 = v2505;
     goto llvm_cbe_lB378;
   } else {
     goto llvm_cbe_bb24931;
@@ -11209,22 +11209,22 @@ llvm_cbe_bb25051:
   v2519 = v2516;
   v2520 = (((((((v2516 >> 8u))))) & 1));
   if (v2520 == 0) {
-    v2522 = v2517;   /* for PHI node */
-    v2524 = v2519;   /* for PHI node */
-    v2526 = v2520;   /* for PHI node */
-    v2528 = v2519;   /* for PHI node */
-    v2530 = v2515;   /* for PHI node */
+    v2522 = v2517;
+    v2524 = v2519;
+    v2526 = v2520;
+    v2528 = v2519;
+    v2530 = v2515;
     goto llvm_cbe_lB378;
   } else {
-    v196 = v2517;   /* for PHI node */
-    v198 = v2512;   /* for PHI node */
-    v200 = v2509;   /* for PHI node */
-    v202 = v2519;   /* for PHI node */
-    v204 = v2520;   /* for PHI node */
-    v206 = v2519;   /* for PHI node */
-    v208 = v2519;   /* for PHI node */
-    v210 = v2519;   /* for PHI node */
-    v212 = v2515;   /* for PHI node */
+    v196 = v2517;
+    v198 = v2512;
+    v200 = v2509;
+    v202 = v2519;
+    v204 = v2520;
+    v206 = v2519;
+    v208 = v2519;
+    v210 = v2519;
+    v212 = v2515;
     goto llvm_cbe_lA435_2e_loopexit;
   }
 
@@ -11232,7 +11232,7 @@ llvm_cbe_bb25039:
   if ((((v2508 ^ v2516) & 128u) == 0u)) {
     goto llvm_cbe_bb25050;
   } else {
-    v2518 = 1;   /* for PHI node */
+    v2518 = 1;
     goto llvm_cbe_bb25051;
   }
 
@@ -11258,7 +11258,7 @@ llvm_cbe_bb24961:
   goto llvm_cbe_bb24973;
 
 llvm_cbe_bb25050:
-  v2518 = 0;   /* for PHI node */
+  v2518 = 0;
   goto llvm_cbe_bb25051;
 
   } while (1); /* end of syntactic loop 'lB35F' */
@@ -11275,12 +11275,12 @@ llvm_cbe_lB355:
   v2488 = *((&RAM[113u]));
   v2489 = *((&RAM[114u]));
   v2490 = V;
-  v2492 = 0;   /* for PHI node */
-  v2494 = v2490;   /* for PHI node */
-  v2496 = v2489;   /* for PHI node */
-  v2498 = v2488;   /* for PHI node */
-  v2500 = 0;   /* for PHI node */
-  v2502 = 0;   /* for PHI node */
+  v2492 = 0;
+  v2494 = v2490;
+  v2496 = v2489;
+  v2498 = v2488;
+  v2500 = 0;
+  v2502 = 0;
   goto llvm_cbe_lB35F;
 
 llvm_cbe_lB337:
@@ -11294,8 +11294,8 @@ llvm_cbe_lB337:
   *((&RAM[(((((((v2450 - 1))))) | 256u))])) = 61;
   v2451 = ((v2450 - 2));
   S = v2451;
-  v2485 = v2451;   /* for PHI node */
-  v2487 = 0;   /* for PHI node */
+  v2485 = v2451;
+  v2487 = 0;
   goto llvm_cbe_lB355;
 
 llvm_cbe_lB331:
@@ -11307,7 +11307,7 @@ llvm_cbe_lB331:
   if ((((s8 )v2446) < ((s8 )0))) {
     goto llvm_cbe_bb24451;
   } else {
-    v2449 = v2444;   /* for PHI node */
+    v2449 = v2444;
     goto llvm_cbe_lB337;
   }
 
@@ -11321,7 +11321,7 @@ llvm_cbe_bb24392:
   if ((((s8 )v2443) < ((s8 )0))) {
     goto llvm_cbe_bb24421;
   } else {
-    v2445 = 5;   /* for PHI node */
+    v2445 = 5;
     goto llvm_cbe_lB331;
   }
 
@@ -11340,9 +11340,9 @@ llvm_cbe_bb24349:
   if (v2441 == 1) {
     goto llvm_cbe_bb24392;
   } else {
-    v2389 = v2428;   /* for PHI node */
-    v2391 = v2434;   /* for PHI node */
-    v2393 = v2440;   /* for PHI node */
+    v2389 = v2428;
+    v2391 = v2434;
+    v2393 = v2440;
     goto llvm_cbe_lB2F2;
   }
 
@@ -11350,7 +11350,7 @@ llvm_cbe_bb24337:
   if ((((v2432 ^ v2437) & 128u) == 0u)) {
     goto llvm_cbe_bb24348;
   } else {
-    v2439 = 1;   /* for PHI node */
+    v2439 = 1;
     goto llvm_cbe_bb24349;
   }
 
@@ -11375,10 +11375,10 @@ llvm_cbe_lB30F:
   N = (((((v2416 >> 7)))));
   C = 0;
   if (v2416 == 0) {
-    v2429 = v2397;   /* for PHI node */
-    v2431 = 0;   /* for PHI node */
-    v2433 = v2416;   /* for PHI node */
-    v2435 = v2414;   /* for PHI node */
+    v2429 = v2397;
+    v2431 = 0;
+    v2433 = v2416;
+    v2435 = v2414;
     goto llvm_cbe_lB320;
   } else {
     goto llvm_cbe_bb24207;
@@ -11398,7 +11398,7 @@ llvm_cbe_bb24099:
   if (v2412 == 0) {
     goto llvm_cbe_lB245;
   } else {
-    v2415 = v2408;   /* for PHI node */
+    v2415 = v2408;
     goto llvm_cbe_lB30F;
   }
 
@@ -11452,9 +11452,9 @@ llvm_cbe_lB2EA:
   Z = 1;
   N = 0;
   *((&RAM[113u])) = 0;
-  v2389 = 0;   /* for PHI node */
-  v2391 = 4;   /* for PHI node */
-  v2393 = 0;   /* for PHI node */
+  v2389 = 0;
+  v2391 = 4;
+  v2393 = 0;
   goto llvm_cbe_lB2F2;
 
 llvm_cbe_lB256:
@@ -11501,7 +11501,7 @@ llvm_cbe_bb23881:
   if ((((((((v2378 ^ v2377))))) & 128u) == 0u)) {
     goto llvm_cbe_bb23892;
   } else {
-    v2382 = 1;   /* for PHI node */
+    v2382 = 1;
     goto llvm_cbe_bb23893;
   }
 
@@ -11530,7 +11530,7 @@ llvm_cbe_bb23783:
   if ((((((((v2370 ^ v2369))))) & 128u) == 0u)) {
     goto llvm_cbe_bb23794;
   } else {
-    v2374 = 1;   /* for PHI node */
+    v2374 = 1;
     goto llvm_cbe_bb23795;
   }
 
@@ -11562,8 +11562,8 @@ llvm_cbe_lB2CD:
   if (v2367 == 1) {
     goto llvm_cbe_bb23739;
   } else {
-    v2357 = v2364;   /* for PHI node */
-    v2359 = 0;   /* for PHI node */
+    v2357 = v2364;
+    v2359 = 0;
     goto llvm_cbe_lB2C8;
   }
 
@@ -11580,11 +11580,11 @@ llvm_cbe_lB2BC:
   Z = (((v2355 == 0)));
   N = (((((v2355 >> 7)))));
   if (v2355 == 0) {
-    v2365 = v2355;   /* for PHI node */
+    v2365 = v2355;
     goto llvm_cbe_lB2CD;
   } else {
-    v2357 = v2355;   /* for PHI node */
-    v2359 = 0;   /* for PHI node */
+    v2357 = v2355;
+    v2359 = 0;
     goto llvm_cbe_lB2C8;
   }
 
@@ -11592,7 +11592,7 @@ llvm_cbe_lB2CD_2e_loopexit:
   Y = 0;
   Z = (((v2360 == 1)));
   N = 0;
-  v2365 = 0;   /* for PHI node */
+  v2365 = 0;
   goto llvm_cbe_lB2CD;
 
   do {     /* Syntactic loop 'lB2C8' to make GCC happy */
@@ -11607,18 +11607,18 @@ llvm_cbe_lB2C8:
   if (v2363 == v2356) {
     goto llvm_cbe_lB2CD_2e_loopexit;
   } else {
-    v2357 = v2356;   /* for PHI node */
-    v2359 = v2363;   /* for PHI node */
+    v2357 = v2356;
+    v2359 = v2363;
     goto llvm_cbe_lB2C8;
   }
 
   } while (1); /* end of syntactic loop 'lB2C8' */
 llvm_cbe_bb23794:
-  v2374 = 0;   /* for PHI node */
+  v2374 = 0;
   goto llvm_cbe_bb23795;
 
 llvm_cbe_bb23892:
-  v2382 = 0;   /* for PHI node */
+  v2382 = 0;
   goto llvm_cbe_bb23893;
 
 llvm_cbe_lB30E:
@@ -11626,7 +11626,7 @@ llvm_cbe_lB30E:
   Y = v2413;
   Z = (((v2413 == 0)));
   N = (((((v2413 >> 7)))));
-  v2415 = v2413;   /* for PHI node */
+  v2415 = v2413;
   goto llvm_cbe_lB30F;
 
 llvm_cbe_bb24259:
@@ -11643,17 +11643,17 @@ llvm_cbe_bb24259:
   Z = (((v2426 == 0)));
   N = (((((v2426 >> 7)))));
   v2427 = v2424;
-  v2429 = v2423;   /* for PHI node */
-  v2431 = v2427;   /* for PHI node */
-  v2433 = v2425;   /* for PHI node */
-  v2435 = v2426;   /* for PHI node */
+  v2429 = v2423;
+  v2431 = v2427;
+  v2433 = v2425;
+  v2435 = v2426;
   goto llvm_cbe_lB320;
 
 llvm_cbe_bb24247:
   if ((((v2417 ^ v2420) & 128u) == 0u)) {
     goto llvm_cbe_bb24258;
   } else {
-    v2422 = 1;   /* for PHI node */
+    v2422 = 1;
     goto llvm_cbe_bb24259;
   }
 
@@ -11672,18 +11672,18 @@ llvm_cbe_lB319:
   }
 
 llvm_cbe_bb24258:
-  v2422 = 0;   /* for PHI node */
+  v2422 = 0;
   goto llvm_cbe_bb24259;
 
 llvm_cbe_bb24348:
-  v2439 = 0;   /* for PHI node */
+  v2439 = 0;
   goto llvm_cbe_bb24349;
 
 llvm_cbe_bb24421:
   X = 4;
   Z = 0;
   N = 0;
-  v2445 = 4;   /* for PHI node */
+  v2445 = 4;
   goto llvm_cbe_lB331;
 
 llvm_cbe_bb24451:
@@ -11691,7 +11691,7 @@ llvm_cbe_bb24451:
   X = v2447;
   Z = ((((((v2444 - 1))) == 1)));
   N = (((((v2447 >> 7)))));
-  v2449 = v2447;   /* for PHI node */
+  v2449 = v2447;
   goto llvm_cbe_lB337;
 
 llvm_cbe_lB34C:
@@ -11711,8 +11711,8 @@ llvm_cbe_lB34C:
   A = v2483;
   Z = (((v2483 == 0)));
   N = (((((v2483 >> 7)))));
-  v2485 = v2477;   /* for PHI node */
-  v2487 = v2483;   /* for PHI node */
+  v2485 = v2477;
+  v2487 = v2483;
   goto llvm_cbe_lB355;
 
 llvm_cbe_lB296:
@@ -11734,8 +11734,8 @@ llvm_cbe_lB296:
   v2329 = ((v2328 - 1));
   S = v2329;
   *((&RAM[((v2329 | 256u))])) = -97;
-  v2474 = v2325;   /* for PHI node */
-  v2476 = v2329;   /* for PHI node */
+  v2474 = v2325;
+  v2476 = v2329;
   goto llvm_cbe_lB34C;
 
 llvm_cbe_lB286:
@@ -11748,8 +11748,8 @@ llvm_cbe_lB286:
   v2304 = ((v2303 & 64));
   V = (((((v2304 >> 6)))));
   if (v2304 == 0) {
-    v2320 = 11;   /* for PHI node */
-    v2322 = 0;   /* for PHI node */
+    v2320 = 11;
+    v2322 = 0;
     goto llvm_cbe_lB296;
   } else {
     goto llvm_cbe_bb23221;
@@ -11766,7 +11766,7 @@ llvm_cbe_lB27D:
   v2299 = *((&RAM[95u]));
   v2300 = *((&RAM[96u]));
   *((&RAM[(((((v2300 << 8u) | v2299) + 4u) & 65535u))])) = v2298;
-  v2302 = 4;   /* for PHI node */
+  v2302 = 4;
   goto llvm_cbe_lB286;
 
 llvm_cbe_lB274:
@@ -11781,7 +11781,7 @@ llvm_cbe_lB274:
   v2294 = *((&RAM[96u]));
   *((&RAM[(((((v2294 << 8u) | v2293) + 1u) & 65535u))])) = v2291;
   if (v2292 == 0) {
-    v2297 = v2289;   /* for PHI node */
+    v2297 = v2289;
     goto llvm_cbe_lB27D;
   } else {
     goto llvm_cbe_bb23082;
@@ -11800,7 +11800,7 @@ llvm_cbe_lB267:
   v2288 = *((&RAM[96u]));
   *((&RAM[(((v2288 << 8u) | v2287))])) = v2285;
   if (v2286 == 0) {
-    v2290 = 5;   /* for PHI node */
+    v2290 = 5;
     goto llvm_cbe_lB274;
   } else {
     goto llvm_cbe_bb23027;
@@ -11810,7 +11810,7 @@ llvm_cbe_bb23027:
   X = 4;
   Z = 0;
   N = 0;
-  v2290 = 4;   /* for PHI node */
+  v2290 = 4;
   goto llvm_cbe_lB274;
 
 llvm_cbe_bb23082:
@@ -11818,7 +11818,7 @@ llvm_cbe_bb23082:
   X = v2295;
   Z = ((((((v2289 - 1))) == 1)));
   N = (((((v2295 >> 7)))));
-  v2297 = v2295;   /* for PHI node */
+  v2297 = v2295;
   goto llvm_cbe_lB27D;
 
 llvm_cbe_bb23339:
@@ -11829,15 +11829,15 @@ llvm_cbe_bb23339:
   Z = (((v2318 == 0)));
   N = (((((v2318 >> 7)))));
   C = ((((((((v2315 >> 8u))))) & 1)));
-  v2320 = v2311;   /* for PHI node */
-  v2322 = v2318;   /* for PHI node */
+  v2320 = v2311;
+  v2322 = v2318;
   goto llvm_cbe_lB296;
 
 llvm_cbe_bb23327:
   if ((((v2314 ^ v2315) & 128u) == 0u)) {
     goto llvm_cbe_bb23338;
   } else {
-    v2317 = 1;   /* for PHI node */
+    v2317 = 1;
     goto llvm_cbe_bb23339;
   }
 
@@ -11865,7 +11865,7 @@ llvm_cbe_bb23251:
   if ((((v2307 ^ v2308) & 128u) == 0u)) {
     goto llvm_cbe_bb23262;
   } else {
-    v2310 = 1;   /* for PHI node */
+    v2310 = 1;
     goto llvm_cbe_bb23263;
   }
 
@@ -11886,19 +11886,19 @@ llvm_cbe_bb23221:
   }
 
 llvm_cbe_bb23262:
-  v2310 = 0;   /* for PHI node */
+  v2310 = 0;
   goto llvm_cbe_bb23263;
 
 llvm_cbe_bb23338:
-  v2317 = 0;   /* for PHI node */
+  v2317 = 0;
   goto llvm_cbe_bb23339;
 
 llvm_cbe_bb24207:
   *llvm_cbe_tmp24041 = -77;
   S = v2396;
   *((&RAM[((v2396 | 256u))])) = 24;
-  v2474 = v2414;   /* for PHI node */
-  v2476 = v2396;   /* for PHI node */
+  v2474 = v2414;
+  v2476 = v2396;
   goto llvm_cbe_lB34C;
 
 llvm_cbe_bb5024:
@@ -12151,8 +12151,8 @@ llvm_cbe_lADF0:
   Z = ((((v1668 & 255u) == 0u)));
   N = (((((v1667 >> 7)))));
   if (v1669 == 0) {
-    v1731 = v1663;   /* for PHI node */
-    v1733 = v1665;   /* for PHI node */
+    v1731 = v1663;
+    v1733 = v1665;
     goto llvm_cbe_lAE5D;
   } else {
     goto llvm_cbe_bb16661;
@@ -12168,14 +12168,14 @@ llvm_cbe_bb16573:
   Z = (((v1658 == 0)));
   N = (((((v1658 >> 7)))));
   v1659 = v1658 + 41088u;
-  v1661 = v1659;   /* for PHI node */
+  v1661 = v1659;
   goto llvm_cbe_lADF0;
 
 llvm_cbe_bb16561:
   if ((((v1654 ^ v1655) & 128u) == 0u)) {
     goto llvm_cbe_bb16572;
   } else {
-    v1657 = 1;   /* for PHI node */
+    v1657 = 1;
     goto llvm_cbe_bb16573;
   }
 
@@ -12203,7 +12203,7 @@ llvm_cbe_bb16482:
   if ((((v1645 ^ v1647) & 128u) == 0u)) {
     goto llvm_cbe_bb16493;
   } else {
-    v1649 = 1;   /* for PHI node */
+    v1649 = 1;
     goto llvm_cbe_bb16494;
   }
 
@@ -12234,7 +12234,7 @@ llvm_cbe_bb16431:
   if ((((v1638 ^ v1642) & 128u) == 0u)) {
     goto llvm_cbe_bb16442;
   } else {
-    v1644 = 1;   /* for PHI node */
+    v1644 = 1;
     goto llvm_cbe_bb16443;
   }
 
@@ -12267,7 +12267,7 @@ llvm_cbe_bb16372:
   if ((((v1618 ^ v1635) & 128u) == 0u)) {
     goto llvm_cbe_bb16383;
   } else {
-    v1637 = 1;   /* for PHI node */
+    v1637 = 1;
     goto llvm_cbe_bb16384;
   }
 
@@ -12314,7 +12314,7 @@ llvm_cbe_lADBB:
   if (v1619 == 0u) {
     goto llvm_cbe_bb16196;
   } else {
-    v1633 = v1620;   /* for PHI node */
+    v1633 = v1620;
     goto llvm_cbe_lADD7;
   }
 
@@ -12328,26 +12328,26 @@ llvm_cbe_bb16196:
   Z = ((((v1623 & 255u) == 0u)));
   N = (((((v1622 >> 7)))));
   if (v1624 == 0) {
-    v1633 = v1625;   /* for PHI node */
+    v1633 = v1625;
     goto llvm_cbe_lADD7;
   } else {
     goto llvm_cbe_bb16223;
   }
 
 llvm_cbe_bb16383:
-  v1637 = 0;   /* for PHI node */
+  v1637 = 0;
   goto llvm_cbe_bb16384;
 
 llvm_cbe_bb16442:
-  v1644 = 0;   /* for PHI node */
+  v1644 = 0;
   goto llvm_cbe_bb16443;
 
 llvm_cbe_bb16493:
-  v1649 = 0;   /* for PHI node */
+  v1649 = 0;
   goto llvm_cbe_bb16494;
 
 llvm_cbe_bb16572:
-  v1657 = 0;   /* for PHI node */
+  v1657 = 0;
   goto llvm_cbe_bb16573;
 
 llvm_cbe_lAE11:
@@ -12356,7 +12356,7 @@ llvm_cbe_lAE11:
   Z = 0;
   N = 0;
   *((&RAM[77u])) = v1691;
-  v1661 = 41115u;   /* for PHI node */
+  v1661 = 41115u;
   goto llvm_cbe_lADF0;
 
 llvm_cbe_lAE07:
@@ -12409,11 +12409,11 @@ llvm_cbe_lAE5B:
   v1726 = v1727;
   v1728 = v1729;
   if (v1724 == 0) {
-    v1731 = v1726;   /* for PHI node */
-    v1733 = v1728;   /* for PHI node */
+    v1731 = v1726;
+    v1733 = v1728;
     goto llvm_cbe_lAE5D;
   } else {
-    v1749 = v1726;   /* for PHI node */
+    v1749 = v1726;
     goto llvm_cbe_lAE80;
   }
 
@@ -12422,9 +12422,9 @@ llvm_cbe_bb16722:
   Z = v1686;
   N = v1687;
   if (v1685 == 0) {
-    v1725 = v1686;   /* for PHI node */
-    v1727 = v1684;   /* for PHI node */
-    v1729 = v1685;   /* for PHI node */
+    v1725 = v1686;
+    v1727 = v1684;
+    v1729 = v1685;
     goto llvm_cbe_lAE5B;
   } else {
     goto llvm_cbe_lAE66;
@@ -12458,9 +12458,9 @@ llvm_cbe_lAE58:
   v1723 = ((v1722 == 0));
   Z = v1723;
   N = (((((v1722 >> 7)))));
-  v1725 = v1723;   /* for PHI node */
-  v1727 = v1721;   /* for PHI node */
-  v1729 = v1722;   /* for PHI node */
+  v1725 = v1723;
+  v1727 = v1721;
+  v1729 = v1722;
   goto llvm_cbe_lAE5B;
 
 llvm_cbe_lB1B8:
@@ -12549,7 +12549,7 @@ llvm_cbe_lB782:
   v3195 = ((v3193 - 1));
   S = v3195;
   *((&RAM[((v3195 | 256u))])) = -124;
-  v3003 = v3195;   /* for PHI node */
+  v3003 = v3195;
   goto llvm_cbe_lB6A3;
 
 llvm_cbe_lB77C:
@@ -12558,7 +12558,7 @@ llvm_cbe_lB77C:
   *((&RAM[(((((((v3191 - 1))))) | 256u))])) = 126;
   v3192 = ((v3191 - 2));
   S = v3192;
-  v3194 = v3192;   /* for PHI node */
+  v3194 = v3192;
   goto llvm_cbe_lB782;
 
 llvm_cbe_lB78B:
@@ -12567,7 +12567,7 @@ llvm_cbe_lB78B:
   *((&RAM[(((((((v3202 - 1))))) | 256u))])) = -115;
   v3203 = ((v3202 - 2));
   S = v3203;
-  v3194 = v3203;   /* for PHI node */
+  v3194 = v3203;
   goto llvm_cbe_lB782;
 
 llvm_cbe_lB7AD:
@@ -12576,7 +12576,7 @@ llvm_cbe_lB7AD:
   *((&RAM[(((((((v3212 - 1))))) | 256u))])) = -81;
   v3213 = ((v3212 - 2));
   S = v3213;
-  v3194 = v3213;   /* for PHI node */
+  v3194 = v3213;
   goto llvm_cbe_lB782;
 
 llvm_cbe_lE25A:
@@ -12585,7 +12585,7 @@ llvm_cbe_lE25A:
   v4792 = ((v4791 - 1));
   S = v4792;
   *((&RAM[((v4792 | 256u))])) = 92;
-  v3003 = v4792;   /* for PHI node */
+  v3003 = v4792;
   goto llvm_cbe_lB6A3;
 
 llvm_cbe_lAD97:
@@ -12716,7 +12716,7 @@ llvm_cbe_lA94E:
   if (((v1022 & 255u) == 0u)) {
     goto llvm_cbe_lA957;
   } else {
-    v1024 = v1020;   /* for PHI node */
+    v1024 = v1020;
     goto llvm_cbe_lA953;
   }
 
@@ -12749,7 +12749,7 @@ llvm_cbe_bb10720:
   Z = ((((v1050 & 255u) == 0u)));
   N = (((((v1049 >> 7)))));
   if (v1051 == 0) {
-    v1024 = v1047;   /* for PHI node */
+    v1024 = v1047;
     goto llvm_cbe_lA953;
   } else {
     goto llvm_cbe_bb10804;
@@ -12942,14 +12942,14 @@ llvm_cbe_bb7990:
   *((&RAM[(((((((v754 - 4))))) | 256u))])) = -89;
   *((&RAM[(((((((v754 - 5))))) | 256u))])) = 113;
   S = (((v754 - 6)));
-  v1807 = -92;   /* for PHI node */
+  v1807 = -92;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb7978:
   if ((((v756 ^ v757) & 128u) == 0u)) {
     goto llvm_cbe_bb7989;
   } else {
-    v759 = 1;   /* for PHI node */
+    v759 = 1;
     goto llvm_cbe_bb7990;
   }
 
@@ -12977,7 +12977,7 @@ llvm_cbe_bb7914:
   if ((((v748 ^ v750) & 128u) == 0u)) {
     goto llvm_cbe_bb7925;
   } else {
-    v752 = 1;   /* for PHI node */
+    v752 = 1;
     goto llvm_cbe_bb7926;
   }
 
@@ -12996,11 +12996,11 @@ llvm_cbe_lA75D:
   }
 
 llvm_cbe_bb7925:
-  v752 = 0;   /* for PHI node */
+  v752 = 0;
   goto llvm_cbe_bb7926;
 
 llvm_cbe_bb7989:
-  v759 = 0;   /* for PHI node */
+  v759 = 0;
   goto llvm_cbe_bb7990;
 
 llvm_cbe_lA815:
@@ -13011,7 +13011,7 @@ llvm_cbe_lA815:
   *((&RAM[((v824 | 256u))])) = -88;
   *((&RAM[(((((((v824 - 1))))) | 256u))])) = 25;
   S = (((v824 - 2)));
-  v1807 = -92;   /* for PHI node */
+  v1807 = -92;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb10448:
@@ -13022,7 +13022,7 @@ llvm_cbe_bb10448:
   *((&RAM[((v1011 | 256u))])) = -87;
   *((&RAM[(((((((v1011 - 1))))) | 256u))])) = 54;
   S = (((v1011 - 2)));
-  v1807 = -89;   /* for PHI node */
+  v1807 = -89;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lA92E:
@@ -13050,7 +13050,7 @@ llvm_cbe_lA9A8:
   *((&RAM[((v1086 | 256u))])) = -87;
   *((&RAM[(((((((v1086 - 1))))) | 256u))])) = -80;
   S = (((v1086 - 2)));
-  v1807 = -78;   /* for PHI node */
+  v1807 = -78;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb12412:
@@ -13061,7 +13061,7 @@ llvm_cbe_bb12412:
   *((&RAM[((v1220 | 256u))])) = -86;
   *((&RAM[(((((((v1220 - 1))))) | 256u))])) = -113;
   S = (((v1220 - 2)));
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lAA89:
@@ -13080,7 +13080,7 @@ llvm_cbe_lAB88:
   *((&RAM[((v1387 | 256u))])) = -85;
   *((&RAM[(((((((v1387 - 1))))) | 256u))])) = -116;
   S = (((v1387 - 2)));
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lABA8:
@@ -13091,7 +13091,7 @@ llvm_cbe_lABA8:
   *((&RAM[((v1399 | 256u))])) = -85;
   *((&RAM[(((((((v1399 - 1))))) | 256u))])) = -84;
   S = (((v1399 - 2)));
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lABC6:
@@ -13102,7 +13102,7 @@ llvm_cbe_lABC6:
   *((&RAM[((v1416 | 256u))])) = -85;
   *((&RAM[(((((((v1416 - 1))))) | 256u))])) = -54;
   S = (((v1416 - 2)));
-  v1807 = 59;   /* for PHI node */
+  v1807 = 59;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb14932:
@@ -13113,7 +13113,7 @@ llvm_cbe_bb14932:
   A = 44;
   Z = 0;
   N = 0;
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lAEFC:
@@ -13122,7 +13122,7 @@ llvm_cbe_lAEFC:
   Z = (((v1805 == 0)));
   N = (((((v1805 >> 7)))));
   V = ((((((((v1805 >> 6))))) & 1)));
-  v1807 = v1803;   /* for PHI node */
+  v1807 = v1803;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lAEF1:
@@ -13133,7 +13133,7 @@ llvm_cbe_lAEF1:
   A = 40;
   Z = 0;
   N = 0;
-  v1804 = 40;   /* for PHI node */
+  v1804 = 40;
   goto llvm_cbe_lAEFC;
 
 llvm_cbe_lAEEA:
@@ -13217,7 +13217,7 @@ llvm_cbe_lAEF7:
   Z = (((v1802 == 0)));
   N = (((((v1802 >> 7)))));
   V = ((((((((v1802 >> 6))))) & 1)));
-  v1804 = 41;   /* for PHI node */
+  v1804 = 41;
   goto llvm_cbe_lAEFC;
 
 llvm_cbe_bb22339:
@@ -13262,7 +13262,7 @@ llvm_cbe_lB700:
   *((&RAM[(((((((v3082 - 1))))) | 256u))])) = 2;
   v3083 = ((v3082 - 2));
   S = v3083;
-  v3178 = v3083;   /* for PHI node */
+  v3178 = v3083;
   goto llvm_cbe_lB761;
 
 llvm_cbe_lB72C:
@@ -13271,7 +13271,7 @@ llvm_cbe_lB72C:
   *((&RAM[(((((((v3135 - 1))))) | 256u))])) = 46;
   v3136 = ((v3135 - 2));
   S = v3136;
-  v3178 = v3136;   /* for PHI node */
+  v3178 = v3136;
   goto llvm_cbe_lB761;
 
 llvm_cbe_lB748:
@@ -13280,7 +13280,7 @@ llvm_cbe_lB748:
   *((&RAM[(((((((v3155 - 1))))) | 256u))])) = 74;
   v3156 = ((v3155 - 2));
   S = v3156;
-  v3178 = v3156;   /* for PHI node */
+  v3178 = v3156;
   goto llvm_cbe_lB761;
 
 llvm_cbe_lB73E:
@@ -13302,7 +13302,7 @@ llvm_cbe_bb19050:
   A = 40;
   Z = 0;
   N = 0;
-  v1804 = 40;   /* for PHI node */
+  v1804 = 40;
   goto llvm_cbe_lAEFC;
 
 llvm_cbe_lB3B9:
@@ -13313,7 +13313,7 @@ llvm_cbe_lB3B9:
   A = 40;
   Z = 0;
   N = 0;
-  v1804 = 40;   /* for PHI node */
+  v1804 = 40;
   goto llvm_cbe_lAEFC;
 
 llvm_cbe_lAFB7:
@@ -13324,7 +13324,7 @@ llvm_cbe_lAFB7:
   A = 44;
   Z = 0;
   N = 0;
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB07E:
@@ -13334,7 +13334,7 @@ llvm_cbe_lB07E:
   A = 44;
   Z = 0;
   N = 0;
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB088:
@@ -13354,7 +13354,7 @@ llvm_cbe_lB3C9:
   *((&RAM[((v2568 | 256u))])) = -77;
   *((&RAM[(((((((v2568 - 1))))) | 256u))])) = -51;
   S = (((v2568 - 2)));
-  v1807 = -78;   /* for PHI node */
+  v1807 = -78;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB3E1:
@@ -13365,7 +13365,7 @@ llvm_cbe_lB3E1:
   *((&RAM[(((((((v2575 - 1))))) | 256u))])) = -77;
   *((&RAM[(((((((v2575 - 2))))) | 256u))])) = -27;
   S = (((v2575 - 3)));
-  v1807 = -91;   /* for PHI node */
+  v1807 = -91;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB3B3:
@@ -13374,7 +13374,7 @@ llvm_cbe_lB3B3:
   v2561 = ((v2560 - 1));
   S = v2561;
   *((&RAM[((v2561 | 256u))])) = -75;
-  v2576 = v2561;   /* for PHI node */
+  v2576 = v2561;
   goto llvm_cbe_lB3E1;
 
 llvm_cbe_lB3F4:
@@ -13383,7 +13383,7 @@ llvm_cbe_lB3F4:
   v2583 = ((v2582 - 1));
   S = v2583;
   *((&RAM[((v2583 | 256u))])) = -10;
-  v2576 = v2583;   /* for PHI node */
+  v2576 = v2583;
   goto llvm_cbe_lB3E1;
 
 llvm_cbe_bb31070:
@@ -13394,7 +13394,7 @@ llvm_cbe_bb31070:
   A = 44;
   Z = 0;
   N = 0;
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lB7F1:
@@ -13405,7 +13405,7 @@ llvm_cbe_lB7F1:
   A = 44;
   Z = 0;
   N = 0;
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_bb32392:
@@ -13431,7 +13431,7 @@ llvm_cbe_lE20E:
   A = 44;
   Z = 0;
   N = 0;
-  v1807 = 44;   /* for PHI node */
+  v1807 = 44;
   goto llvm_cbe_lAEFF;
 
 llvm_cbe_lE200:
@@ -13440,7 +13440,7 @@ llvm_cbe_lE200:
   v4745 = ((v4743 - 1));
   S = v4745;
   *((&RAM[((v4745 | 256u))])) = 2;
-  v4758 = v4745;   /* for PHI node */
+  v4758 = v4745;
   goto llvm_cbe_lE20E;
 
 llvm_cbe_lE1E9:
@@ -13449,7 +13449,7 @@ llvm_cbe_lE1E9:
   *((&RAM[(((((((v4733 - 1))))) | 256u))])) = -21;
   v4734 = ((v4733 - 2));
   S = v4734;
-  v4744 = v4734;   /* for PHI node */
+  v4744 = v4734;
   goto llvm_cbe_lE200;
 
 llvm_cbe_lE1F6:
@@ -13458,7 +13458,7 @@ llvm_cbe_lE1F6:
   *((&RAM[(((((((v4739 - 1))))) | 256u))])) = -8;
   v4740 = ((v4739 - 2));
   S = v4740;
-  v4744 = v4740;   /* for PHI node */
+  v4744 = v4740;
   goto llvm_cbe_lE200;
 
 llvm_cbe_lE231:
@@ -13467,7 +13467,7 @@ llvm_cbe_lE231:
   *((&RAM[(((((((v4769 - 1))))) | 256u))])) = 51;
   v4770 = ((v4769 - 2));
   S = v4770;
-  v4744 = v4770;   /* for PHI node */
+  v4744 = v4770;
   goto llvm_cbe_lE200;
 
 llvm_cbe_lE245:
@@ -13476,7 +13476,7 @@ llvm_cbe_lE245:
   *((&RAM[(((((((v4779 - 1))))) | 256u))])) = 71;
   v4780 = ((v4779 - 2));
   S = v4780;
-  v4744 = v4780;   /* for PHI node */
+  v4744 = v4780;
   goto llvm_cbe_lE200;
 
 llvm_cbe_lE254:
@@ -13485,7 +13485,7 @@ llvm_cbe_lE254:
   v4788 = ((v4787 - 1));
   S = v4788;
   *((&RAM[((v4788 | 256u))])) = 86;
-  v4758 = v4788;   /* for PHI node */
+  v4758 = v4788;
   goto llvm_cbe_lE20E;
 
 llvm_cbe_lB09A:
@@ -13562,10 +13562,10 @@ llvm_cbe_bb22780:
   v2274 = v2271;
   v2275 = v2271 & 256u;
   if (v2275 == 0u) {
-    v2249 = 3;   /* for PHI node */
-    v2251 = v2272;   /* for PHI node */
-    v2253 = v2274;   /* for PHI node */
-    v2255 = v2269;   /* for PHI node */
+    v2249 = 3;
+    v2251 = v2272;
+    v2253 = v2274;
+    v2255 = v2269;
     goto llvm_cbe_lB21C;
   } else {
     goto llvm_cbe_lB245_2e_loopexit;
@@ -13575,7 +13575,7 @@ llvm_cbe_bb22768:
   if ((((v2270 ^ v2271) & 128u) == 0u)) {
     goto llvm_cbe_bb22779;
   } else {
-    v2273 = 1;   /* for PHI node */
+    v2273 = 1;
     goto llvm_cbe_bb22780;
   }
 
@@ -13632,7 +13632,7 @@ llvm_cbe_bb22666:
   goto llvm_cbe_bb22678;
 
 llvm_cbe_bb22779:
-  v2273 = 0;   /* for PHI node */
+  v2273 = 0;
   goto llvm_cbe_bb22780;
 
   } while (1); /* end of syntactic loop 'lB21C' */
@@ -13656,10 +13656,10 @@ llvm_cbe_lB20E:
   N = (((((v2245 >> 7)))));
   v2246 = V;
   v2247 = Y;
-  v2249 = v2247;   /* for PHI node */
-  v2251 = v2246;   /* for PHI node */
-  v2253 = v2245;   /* for PHI node */
-  v2255 = v2244;   /* for PHI node */
+  v2249 = v2247;
+  v2251 = v2246;
+  v2253 = v2245;
+  v2255 = v2244;
   goto llvm_cbe_lB21C;
 
 llvm_cbe_lB248:
@@ -13745,7 +13745,7 @@ llvm_cbe_lB7EE:
   *((&RAM[(((((((v3247 - 1))))) | 256u))])) = -16;
   v3248 = ((v3247 - 2));
   S = v3248;
-  v3251 = v3248;   /* for PHI node */
+  v3251 = v3248;
   goto llvm_cbe_lB7F7;
 
 llvm_cbe_lB80D:
@@ -13761,7 +13761,7 @@ llvm_cbe_lB80D:
   *((&RAM[(((((((v3265 - 3))))) | 256u))])) = 21;
   v3267 = ((v3265 - 4));
   S = v3267;
-  v3251 = v3267;   /* for PHI node */
+  v3251 = v3267;
   goto llvm_cbe_lB7F7;
 
 llvm_cbe_lE12D:
@@ -13770,7 +13770,7 @@ llvm_cbe_lE12D:
   *((&RAM[(((((((v4652 - 1))))) | 256u))])) = 47;
   v4653 = ((v4652 - 2));
   S = v4653;
-  v3251 = v4653;   /* for PHI node */
+  v3251 = v4653;
   goto llvm_cbe_lB7F7;
 
 llvm_cbe_bb32065:
@@ -13981,7 +13981,7 @@ llvm_cbe_bb33869:
   if ((((v3463 ^ v3465) & 128u) == 0u)) {
     goto llvm_cbe_bb33880;
   } else {
-    v3467 = 1;   /* for PHI node */
+    v3467 = 1;
     goto llvm_cbe_bb33881;
   }
 
@@ -14007,7 +14007,7 @@ llvm_cbe_bb33802:
   if ((((v3457 ^ v3459) & 128u) == 0u)) {
     goto llvm_cbe_bb33813;
   } else {
-    v3461 = 1;   /* for PHI node */
+    v3461 = 1;
     goto llvm_cbe_bb33814;
   }
 
@@ -14033,7 +14033,7 @@ llvm_cbe_bb33735:
   if ((((v3451 ^ v3453) & 128u) == 0u)) {
     goto llvm_cbe_bb33746;
   } else {
-    v3455 = 1;   /* for PHI node */
+    v3455 = 1;
     goto llvm_cbe_bb33747;
   }
 
@@ -14059,7 +14059,7 @@ llvm_cbe_bb33668:
   if ((((v3445 ^ v3447) & 128u) == 0u)) {
     goto llvm_cbe_bb33679;
   } else {
-    v3449 = 1;   /* for PHI node */
+    v3449 = 1;
     goto llvm_cbe_bb33680;
   }
 
@@ -14085,7 +14085,7 @@ llvm_cbe_bb33601:
   if ((((v3438 ^ v3441) & 128u) == 0u)) {
     goto llvm_cbe_bb33612;
   } else {
-    v3443 = 1;   /* for PHI node */
+    v3443 = 1;
     goto llvm_cbe_bb33613;
   }
 
@@ -14140,7 +14140,7 @@ llvm_cbe_bb32673:
   if ((((((((v3323 ^ v3319))))) & 128u) == 0u)) {
     goto llvm_cbe_bb32684;
   } else {
-    v3327 = 1;   /* for PHI node */
+    v3327 = 1;
     goto llvm_cbe_bb32685;
   }
 
@@ -14175,8 +14175,8 @@ llvm_cbe_lB86F:
   A = v3318;
   Z = (((v3318 == 0)));
   N = (((((v3318 >> 7)))));
-  v3320 = v3318;   /* for PHI node */
-  v3322 = 105;   /* for PHI node */
+  v3320 = v3318;
+  v3322 = 105;
   goto llvm_cbe_lB877;
 
 llvm_cbe_lB853:
@@ -14223,7 +14223,7 @@ llvm_cbe_lE01E:
   if ((((s8 )v4540) < ((s8 )0))) {
     goto llvm_cbe_bb43878;
   } else {
-    v4533 = (((v4532 + 1)));   /* for PHI node */
+    v4533 = (((v4532 + 1)));
     goto llvm_cbe_lE01E;
   }
 
@@ -14243,7 +14243,7 @@ llvm_cbe_bb43754:
   X = 5;
   Z = 0;
   N = 0;
-  v4533 = 0;   /* for PHI node */
+  v4533 = 0;
   goto llvm_cbe_lE01E;
 
 llvm_cbe_bb43725:
@@ -14264,7 +14264,7 @@ llvm_cbe_bb43713:
   if ((((v4522 ^ v4523) & 128u) == 0u)) {
     goto llvm_cbe_bb43724;
   } else {
-    v4525 = 1;   /* for PHI node */
+    v4525 = 1;
     goto llvm_cbe_bb43725;
   }
 
@@ -14282,7 +14282,7 @@ llvm_cbe_lE011:
   }
 
 llvm_cbe_bb43724:
-  v4525 = 0;   /* for PHI node */
+  v4525 = 0;
   goto llvm_cbe_bb43725;
 
 llvm_cbe_lE27D:
@@ -14330,8 +14330,8 @@ llvm_cbe_lBAED:
   *((&RAM[((v3809 | 256u))])) = -70;
   *((&RAM[(((((((v3809 - 1))))) | 256u))])) = -13;
   S = (((v3809 - 2)));
-  v3320 = v3807;   /* for PHI node */
-  v3322 = 0;   /* for PHI node */
+  v3320 = v3807;
+  v3322 = 0;
   goto llvm_cbe_lB877;
 
 llvm_cbe_bb11646:
@@ -14344,7 +14344,7 @@ llvm_cbe_bb11646:
   *((&RAM[((v1139 | 256u))])) = -86;
   *((&RAM[(((((((v1139 - 1))))) | 256u))])) = 6;
   S = (((v1139 - 2)));
-  v3808 = v1138;   /* for PHI node */
+  v3808 = v1138;
   goto llvm_cbe_lBAED;
 
 llvm_cbe_lA9FF:
@@ -14368,7 +14368,7 @@ llvm_cbe_bb36749:
   v3806 = v3802 & 256u;
   C = (((((v3806 >> 8u)))));
   if (v3806 == 0u) {
-    v3808 = v3805;   /* for PHI node */
+    v3808 = v3805;
     goto llvm_cbe_lBAED;
   } else {
     goto llvm_cbe_lB97E;
@@ -14378,7 +14378,7 @@ llvm_cbe_bb36737:
   if ((((v3801 ^ v3802) & 128u) == 0u)) {
     goto llvm_cbe_bb36748;
   } else {
-    v3804 = 1;   /* for PHI node */
+    v3804 = 1;
     goto llvm_cbe_bb36749;
   }
 
@@ -14403,31 +14403,31 @@ llvm_cbe_lBAE5:
   }
 
 llvm_cbe_bb36748:
-  v3804 = 0;   /* for PHI node */
+  v3804 = 0;
   goto llvm_cbe_bb36749;
 
 llvm_cbe_bb32684:
-  v3327 = 0;   /* for PHI node */
+  v3327 = 0;
   goto llvm_cbe_bb32685;
 
 llvm_cbe_bb33612:
-  v3443 = 0;   /* for PHI node */
+  v3443 = 0;
   goto llvm_cbe_bb33613;
 
 llvm_cbe_bb33679:
-  v3449 = 0;   /* for PHI node */
+  v3449 = 0;
   goto llvm_cbe_bb33680;
 
 llvm_cbe_bb33746:
-  v3455 = 0;   /* for PHI node */
+  v3455 = 0;
   goto llvm_cbe_bb33747;
 
 llvm_cbe_bb33813:
-  v3461 = 0;   /* for PHI node */
+  v3461 = 0;
   goto llvm_cbe_bb33814;
 
 llvm_cbe_bb33880:
-  v3467 = 0;   /* for PHI node */
+  v3467 = 0;
   goto llvm_cbe_bb33881;
 
 llvm_cbe_bb34178:
@@ -14450,7 +14450,7 @@ llvm_cbe_bb34166:
   if ((((v3510 ^ v3511) & 128u) == 0u)) {
     goto llvm_cbe_bb34177;
   } else {
-    v3513 = 1;   /* for PHI node */
+    v3513 = 1;
     goto llvm_cbe_bb34178;
   }
 
@@ -14486,7 +14486,7 @@ llvm_cbe_bb34106:
   if ((((((((v3502 ^ v3500))))) & 128u) == 0u)) {
     goto llvm_cbe_bb34117;
   } else {
-    v3506 = 1;   /* for PHI node */
+    v3506 = 1;
     goto llvm_cbe_bb34118;
   }
 
@@ -14516,16 +14516,16 @@ llvm_cbe_lB929_2e_preheader:
   *((&RAM[101u])) = v3407;
   *((&RAM[112u])) = v3405;
   if (v3421 == 0) {
-    v3471 = v3419;   /* for PHI node */
-    v3473 = v3411;   /* for PHI node */
-    v3475 = v3409;   /* for PHI node */
-    v3477 = v3407;   /* for PHI node */
-    v3479 = v3405;   /* for PHI node */
-    v3481 = v3413;   /* for PHI node */
-    v3483 = v3415;   /* for PHI node */
+    v3471 = v3419;
+    v3473 = v3411;
+    v3475 = v3409;
+    v3477 = v3407;
+    v3479 = v3405;
+    v3481 = v3413;
+    v3483 = v3415;
     goto llvm_cbe_lB91D;
   } else {
-    v3501 = v3415;   /* for PHI node */
+    v3501 = v3415;
     goto llvm_cbe_bb34087;
   }
 
@@ -14554,14 +14554,14 @@ llvm_cbe_bb33500:
   if (((v3427 & 255u) == 0u)) {
     goto llvm_cbe_lB8F7_2e_loopexit;
   } else {
-    v3406 = 0;   /* for PHI node */
-    v3408 = v3405;   /* for PHI node */
-    v3410 = v3407;   /* for PHI node */
-    v3412 = v3409;   /* for PHI node */
-    v3414 = v3428;   /* for PHI node */
-    v3416 = v3425;   /* for PHI node */
-    v3418 = v3423;   /* for PHI node */
-    v3420 = v3411;   /* for PHI node */
+    v3406 = 0;
+    v3408 = v3405;
+    v3410 = v3407;
+    v3412 = v3409;
+    v3414 = v3428;
+    v3416 = v3425;
+    v3418 = v3423;
+    v3420 = v3411;
     goto llvm_cbe_lB8DB;
   }
 
@@ -14569,7 +14569,7 @@ llvm_cbe_bb33488:
   if ((((v3415 ^ v3422) & 128u) == 0u)) {
     goto llvm_cbe_bb33499;
   } else {
-    v3424 = 1;   /* for PHI node */
+    v3424 = 1;
     goto llvm_cbe_bb33500;
   }
 
@@ -14582,7 +14582,7 @@ llvm_cbe_bb33423:
   }
 
 llvm_cbe_bb33499:
-  v3424 = 0;   /* for PHI node */
+  v3424 = 0;
   goto llvm_cbe_bb33500;
 
   } while (1); /* end of syntactic loop 'lB8DB' */
@@ -14598,14 +14598,14 @@ llvm_cbe_lB8D7:
   v3402 = *((&RAM[100u]));
   v3403 = *((&RAM[101u]));
   v3404 = *((&RAM[112u]));
-  v3406 = v3404;   /* for PHI node */
-  v3408 = v3403;   /* for PHI node */
-  v3410 = v3402;   /* for PHI node */
-  v3412 = v3401;   /* for PHI node */
-  v3414 = 0;   /* for PHI node */
-  v3416 = 0;   /* for PHI node */
-  v3418 = v3400;   /* for PHI node */
-  v3420 = v3399;   /* for PHI node */
+  v3406 = v3404;
+  v3408 = v3403;
+  v3410 = v3402;
+  v3412 = v3401;
+  v3414 = 0;
+  v3416 = 0;
+  v3418 = v3400;
+  v3420 = v3399;
   goto llvm_cbe_lB8DB;
 
 llvm_cbe_bb33348:
@@ -14628,7 +14628,7 @@ llvm_cbe_bb33331:
   if ((((((((v3388 ^ v3387))))) & 128u) == 0u)) {
     goto llvm_cbe_bb33347;
   } else {
-    v3392 = 1;   /* for PHI node */
+    v3392 = 1;
     goto llvm_cbe_bb33348;
   }
 
@@ -14655,7 +14655,7 @@ llvm_cbe_bb33253:
   if ((((((((v3381 ^ v3380))))) & 128u) == 0u)) {
     goto llvm_cbe_bb33269;
   } else {
-    v3385 = 1;   /* for PHI node */
+    v3385 = 1;
     goto llvm_cbe_bb33270;
   }
 
@@ -14682,7 +14682,7 @@ llvm_cbe_bb33175:
   if ((((((((v3374 ^ v3373))))) & 128u) == 0u)) {
     goto llvm_cbe_bb33191;
   } else {
-    v3378 = 1;   /* for PHI node */
+    v3378 = 1;
     goto llvm_cbe_bb33192;
   }
 
@@ -14709,7 +14709,7 @@ llvm_cbe_bb33097:
   if ((((((((v3367 ^ v3365))))) & 128u) == 0u)) {
     goto llvm_cbe_bb33113;
   } else {
-    v3371 = 1;   /* for PHI node */
+    v3371 = 1;
     goto llvm_cbe_bb33114;
   }
 
@@ -14737,7 +14737,7 @@ llvm_cbe_bb33019:
   if ((((v3359 ^ v3361) & 128u) == 0u)) {
     goto llvm_cbe_bb33030;
   } else {
-    v3363 = 1;   /* for PHI node */
+    v3363 = 1;
     goto llvm_cbe_bb33031;
   }
 
@@ -14766,7 +14766,7 @@ llvm_cbe_bb32940:
   Z = ((((v3355 & 255u) == 0u)));
   N = (((((v3354 >> 7)))));
   if (((v3355 & 255u) == 0u)) {
-    v3357 = 97u;   /* for PHI node */
+    v3357 = 97u;
     goto llvm_cbe_lB8AF;
   } else {
     goto llvm_cbe_bb32978;
@@ -14776,27 +14776,27 @@ llvm_cbe_bb32978:
   Y = 105;
   Z = 0;
   N = 0;
-  v3357 = 105u;   /* for PHI node */
+  v3357 = 105u;
   goto llvm_cbe_lB8AF;
 
 llvm_cbe_bb33030:
-  v3363 = 0;   /* for PHI node */
+  v3363 = 0;
   goto llvm_cbe_bb33031;
 
 llvm_cbe_bb33113:
-  v3371 = 0;   /* for PHI node */
+  v3371 = 0;
   goto llvm_cbe_bb33114;
 
 llvm_cbe_bb33191:
-  v3378 = 0;   /* for PHI node */
+  v3378 = 0;
   goto llvm_cbe_bb33192;
 
 llvm_cbe_bb33269:
-  v3385 = 0;   /* for PHI node */
+  v3385 = 0;
   goto llvm_cbe_bb33270;
 
 llvm_cbe_bb33347:
-  v3392 = 0;   /* for PHI node */
+  v3392 = 0;
   goto llvm_cbe_bb33348;
 
 llvm_cbe_lBB8F:
@@ -14844,10 +14844,10 @@ llvm_cbe_lBB29:
   if (((v3861 & 255u) == 0u)) {
     goto llvm_cbe_bb37068;
   } else {
-    v3872 = v3859;   /* for PHI node */
-    v3874 = v3861;   /* for PHI node */
-    v3876 = ((v3861 & 255u) == 0u);   /* for PHI node */
-    v3878 = v3861;   /* for PHI node */
+    v3872 = v3859;
+    v3874 = v3861;
+    v3876 = ((v3861 & 255u) == 0u);
+    v3878 = v3861;
     goto llvm_cbe_lBB3F_2e_preheader;
   }
 
@@ -14868,8 +14868,8 @@ llvm_cbe_lBB3F:
   v3903 = (((((v3886 << 1))) | (((s16 )(s8 )v3888))));
   v3904 = v3903;
   if (((((((((v3903 >> 8))))))) == 0)) {
-    v3908 = v3884;   /* for PHI node */
-    v3910 = v3904;   /* for PHI node */
+    v3908 = v3884;
+    v3910 = v3904;
     goto llvm_cbe_lBB4C;
   } else {
     goto llvm_cbe_bb37254;
@@ -14895,24 +14895,24 @@ llvm_cbe_lBB4F:
   v3933 = ((((v3932 >> 7))));
   *((&RAM[106u])) = v3932;
   if ((((((((v3930 == 0) ^ 1)&1)) | (v3933 == 0))&1))) {
-    v3883 = v3917;   /* for PHI node */
-    v3885 = v3907;   /* for PHI node */
-    v3887 = v3919;   /* for PHI node */
-    v3889 = v3930;   /* for PHI node */
-    v3891 = v3931;   /* for PHI node */
-    v3893 = v3915;   /* for PHI node */
-    v3895 = v3914;   /* for PHI node */
-    v3897 = v3913;   /* for PHI node */
-    v3899 = v3921;   /* for PHI node */
-    v3901 = v3933;   /* for PHI node */
+    v3883 = v3917;
+    v3885 = v3907;
+    v3887 = v3919;
+    v3889 = v3930;
+    v3891 = v3931;
+    v3893 = v3915;
+    v3895 = v3914;
+    v3897 = v3913;
+    v3899 = v3921;
+    v3901 = v3933;
     goto llvm_cbe_lBB3F;
   } else {
-    v3848 = v3907;   /* for PHI node */
-    v3850 = v3919;   /* for PHI node */
-    v3852 = v3915;   /* for PHI node */
-    v3854 = v3914;   /* for PHI node */
-    v3856 = v3913;   /* for PHI node */
-    v3858 = v3921;   /* for PHI node */
+    v3848 = v3907;
+    v3850 = v3919;
+    v3852 = v3915;
+    v3854 = v3914;
+    v3856 = v3913;
+    v3858 = v3921;
     goto llvm_cbe_lBB29;
   }
 
@@ -14926,9 +14926,9 @@ llvm_cbe_lBB4C:
   v3915 = (((((((v3911 >> 2))))) & 1));
   v3916 = ((v3911 & 1));
   if (v3916 == 0) {
-    v3918 = v3882;   /* for PHI node */
-    v3920 = v3909;   /* for PHI node */
-    v3922 = v3912;   /* for PHI node */
+    v3918 = v3882;
+    v3920 = v3909;
+    v3922 = v3912;
     goto llvm_cbe_lBB4F;
   } else {
     goto llvm_cbe_lBB5D;
@@ -14939,8 +14939,8 @@ llvm_cbe_bb37254:
   v3906 = ((((v3905 >> 7))));
   *((&RAM[(((v3905 + 41u) & 255u))])) = v3904;
   if (v3905 == 0) {
-    v3908 = v3905;   /* for PHI node */
-    v3910 = 64;   /* for PHI node */
+    v3908 = v3905;
+    v3910 = 64;
     goto llvm_cbe_lBB4C;
   } else {
     goto llvm_cbe_bb37278;
@@ -14950,24 +14950,24 @@ llvm_cbe_bb37278:
   if (v3906 == 0) {
     goto llvm_cbe_lBB7E;
   } else {
-    v3908 = v3905;   /* for PHI node */
-    v3910 = 1;   /* for PHI node */
+    v3908 = v3905;
+    v3910 = 1;
     goto llvm_cbe_lBB4C;
   }
 
 llvm_cbe_bb37685:
   v3949 = v3950;
   *((&RAM[106u])) = v3948;
-  v3918 = v3909;   /* for PHI node */
-  v3920 = v3909;   /* for PHI node */
-  v3922 = v3949;   /* for PHI node */
+  v3918 = v3909;
+  v3920 = v3909;
+  v3922 = v3949;
   goto llvm_cbe_lBB4F;
 
 llvm_cbe_bb37673:
   if ((((((((v3947 ^ v3946))))) & 128u) == 0u)) {
     goto llvm_cbe_bb37684;
   } else {
-    v3950 = 1;   /* for PHI node */
+    v3950 = 1;
     goto llvm_cbe_bb37685;
   }
 
@@ -15027,7 +15027,7 @@ llvm_cbe_bb37610:
   goto llvm_cbe_bb37622;
 
 llvm_cbe_bb37684:
-  v3950 = 0;   /* for PHI node */
+  v3950 = 0;
   goto llvm_cbe_bb37685;
 
   } while (1); /* end of syntactic loop 'lBB3F' */
@@ -15039,16 +15039,16 @@ llvm_cbe_lBB3F_2e_preheader:
   v3879 = v3875;
   v3880 = ((((((((((v3873 >> 8u))))) & 1))) ^ 1));
   v3881 = ((((v3877 >> 7))));
-  v3883 = v3871;   /* for PHI node */
-  v3885 = v3847;   /* for PHI node */
-  v3887 = v3849;   /* for PHI node */
-  v3889 = v3880;   /* for PHI node */
-  v3891 = v3879;   /* for PHI node */
-  v3893 = v3851;   /* for PHI node */
-  v3895 = v3853;   /* for PHI node */
-  v3897 = v3855;   /* for PHI node */
-  v3899 = v3857;   /* for PHI node */
-  v3901 = v3881;   /* for PHI node */
+  v3883 = v3871;
+  v3885 = v3847;
+  v3887 = v3849;
+  v3889 = v3880;
+  v3891 = v3879;
+  v3893 = v3851;
+  v3895 = v3853;
+  v3897 = v3855;
+  v3899 = v3857;
+  v3901 = v3881;
   goto llvm_cbe_lBB3F;
 
 llvm_cbe_bb37068:
@@ -15058,10 +15058,10 @@ llvm_cbe_bb37068:
   if (((v3864 & 255u) == 0u)) {
     goto llvm_cbe_bb37109;
   } else {
-    v3872 = v3862;   /* for PHI node */
-    v3874 = v3864;   /* for PHI node */
-    v3876 = ((v3864 & 255u) == 0u);   /* for PHI node */
-    v3878 = v3864;   /* for PHI node */
+    v3872 = v3862;
+    v3874 = v3864;
+    v3876 = ((v3864 & 255u) == 0u);
+    v3878 = v3864;
     goto llvm_cbe_lBB3F_2e_preheader;
   }
 
@@ -15072,10 +15072,10 @@ llvm_cbe_bb37109:
   if (((v3867 & 255u) == 0u)) {
     goto llvm_cbe_bb37150;
   } else {
-    v3872 = v3865;   /* for PHI node */
-    v3874 = v3867;   /* for PHI node */
-    v3876 = ((v3867 & 255u) == 0u);   /* for PHI node */
-    v3878 = v3867;   /* for PHI node */
+    v3872 = v3865;
+    v3874 = v3867;
+    v3876 = ((v3867 & 255u) == 0u);
+    v3878 = v3867;
     goto llvm_cbe_lBB3F_2e_preheader;
   }
 
@@ -15083,10 +15083,10 @@ llvm_cbe_bb37150:
   v3868 = *((&RAM[109u]));
   v3869 = *((&RAM[101u]));
   v3870 = ((v3868 - v3869));
-  v3872 = v3868;   /* for PHI node */
-  v3874 = v3870;   /* for PHI node */
-  v3876 = ((v3870 & 255u) == 0u);   /* for PHI node */
-  v3878 = v3870;   /* for PHI node */
+  v3872 = v3868;
+  v3874 = v3870;
+  v3876 = ((v3870 & 255u) == 0u);
+  v3878 = v3870;
   goto llvm_cbe_lBB3F_2e_preheader;
 
   } while (1); /* end of syntactic loop 'lBB29' */
@@ -15100,12 +15100,12 @@ llvm_cbe_bb37005:
   v3844 = D;
   v3845 = I;
   v3846 = S;
-  v3848 = -4;   /* for PHI node */
-  v3850 = 1;   /* for PHI node */
-  v3852 = v3845;   /* for PHI node */
-  v3854 = v3844;   /* for PHI node */
-  v3856 = v3843;   /* for PHI node */
-  v3858 = v3842;   /* for PHI node */
+  v3848 = -4;
+  v3850 = 1;
+  v3852 = v3845;
+  v3854 = v3844;
+  v3856 = v3843;
+  v3858 = v3842;
   goto llvm_cbe_lBB29;
 
 llvm_cbe_lBB21:
@@ -15139,8 +15139,8 @@ llvm_cbe_lAF7E:
   X = -96;
   Z = 0;
   N = 1;
-  v4070 = v1882;   /* for PHI node */
-  v4072 = -96;   /* for PHI node */
+  v4070 = v1882;
+  v4072 = -96;
   goto llvm_cbe_lBC4F;
 
 llvm_cbe_lBC49:
@@ -15150,8 +15150,8 @@ llvm_cbe_lBC49:
   N = 0;
   *((&RAM[101u])) = 0;
   *((&RAM[100u])) = 0;
-  v4070 = 0;   /* for PHI node */
-  v4072 = v4067;   /* for PHI node */
+  v4070 = 0;
+  v4072 = v4067;
   goto llvm_cbe_lBC4F;
 
 llvm_cbe_lBC44:
@@ -15168,7 +15168,7 @@ llvm_cbe_lBC44:
   v4066 = v4065;
   N = (((((v4066 >> 7)))));
   A = v4066;
-  v4068 = v4061;   /* for PHI node */
+  v4068 = v4061;
   goto llvm_cbe_lBC49;
 
 llvm_cbe_lB391:
@@ -15178,9 +15178,9 @@ llvm_cbe_lB391:
   N = 0;
   *((&RAM[13u])) = 0;
   *((&RAM[98u])) = v2554;
-  v4058 = v2554;   /* for PHI node */
-  llvm_cbe_storemerge50334_2e_in__PHI_TEMPORARY = (&Y);   /* for PHI node */
-  v4062 = -112;   /* for PHI node */
+  v4058 = v2554;
+  llvm_cbe_storemerge50334_2e_in__PHI_TEMPORARY = (&Y);
+  v4062 = -112;
   goto llvm_cbe_lBC44;
 
 llvm_cbe_lAED7:
@@ -15191,7 +15191,7 @@ llvm_cbe_lAED7:
   A = v1793;
   Z = (((v1792 == 0xff)));
   N = (((((v1793 >> 7)))));
-  v2555 = v1793;   /* for PHI node */
+  v2555 = v1793;
   goto llvm_cbe_lB391;
 
 llvm_cbe_bb18630:
@@ -15203,7 +15203,7 @@ llvm_cbe_bb18630:
   A = v1868;
   Z = (((v1868 == 0)));
   N = (((((v1868 >> 7)))));
-  v2555 = v1868;   /* for PHI node */
+  v2555 = v1868;
   goto llvm_cbe_lB391;
 
 llvm_cbe_lAF5D:
@@ -15249,7 +15249,7 @@ llvm_cbe_lB002:
   A = v1949;
   Z = (((v1944 == v1948)));
   N = (((((v1949 >> 7)))));
-  v2555 = v1949;   /* for PHI node */
+  v2555 = v1949;
   goto llvm_cbe_lB391;
 
 llvm_cbe_bb25283:
@@ -15260,14 +15260,14 @@ llvm_cbe_bb25283:
   Z = (((v2553 == 0)));
   N = (((((v2553 >> 7)))));
   C = (((((((((((v2550 >> 8u))))) & 1))) ^ 1)));
-  v2555 = v2553;   /* for PHI node */
+  v2555 = v2553;
   goto llvm_cbe_lB391;
 
 llvm_cbe_bb25271:
   if ((((((((v2548 ^ v2547))))) & 128u) == 0u)) {
     goto llvm_cbe_bb25282;
   } else {
-    v2552 = 1;   /* for PHI node */
+    v2552 = 1;
     goto llvm_cbe_bb25283;
   }
 
@@ -15294,7 +15294,7 @@ llvm_cbe_bb25197:
   if ((((((((v2541 ^ v2540))))) & 128u) == 0u)) {
     goto llvm_cbe_bb25208;
   } else {
-    v2545 = 1;   /* for PHI node */
+    v2545 = 1;
     goto llvm_cbe_bb25209;
   }
 
@@ -15314,18 +15314,18 @@ llvm_cbe_lB387:
   }
 
 llvm_cbe_bb25208:
-  v2545 = 0;   /* for PHI node */
+  v2545 = 0;
   goto llvm_cbe_bb25209;
 
 llvm_cbe_bb25282:
-  v2552 = 0;   /* for PHI node */
+  v2552 = 0;
   goto llvm_cbe_bb25283;
 
 llvm_cbe_lB3A2:
   A = 0;
   Z = 1;
   N = 0;
-  v2555 = 0;   /* for PHI node */
+  v2555 = 0;
   goto llvm_cbe_lB391;
 
 llvm_cbe_bb31602:
@@ -15361,9 +15361,9 @@ llvm_cbe_lBC3C:
   A = 0;
   Z = 1;
   N = 0;
-  v4058 = v4056;   /* for PHI node */
-  llvm_cbe_storemerge50334_2e_in__PHI_TEMPORARY = (&A);   /* for PHI node */
-  v4062 = -120;   /* for PHI node */
+  v4058 = v4056;
+  llvm_cbe_storemerge50334_2e_in__PHI_TEMPORARY = (&A);
+  v4062 = -120;
   goto llvm_cbe_lBC44;
 
 llvm_cbe_lB072:
@@ -15394,14 +15394,14 @@ llvm_cbe_lB061:
   if (v1994 == 0) {
     goto llvm_cbe_bb19922;
   } else {
-    v2005 = v1990;   /* for PHI node */
+    v2005 = v1990;
     goto llvm_cbe_lB072;
   }
 
 llvm_cbe_lB02A:
   v1956 = A;
-  v1991 = v1956;   /* for PHI node */
-  v1993 = v1956;   /* for PHI node */
+  v1991 = v1956;
+  v1993 = v1956;
   goto llvm_cbe_lB061;
 
 llvm_cbe_bb19905:
@@ -15411,8 +15411,8 @@ llvm_cbe_bb19905:
   X = v1989;
   A = v1986;
   C = v1984;
-  v1991 = v1979;   /* for PHI node */
-  v1993 = v1979;   /* for PHI node */
+  v1991 = v1979;
+  v1993 = v1979;
   goto llvm_cbe_lB061;
 
   do {     /* Syntactic loop 'lB05B' to make GCC happy */
@@ -15439,9 +15439,9 @@ llvm_cbe_lB066:
   v2002 = ((v2001 ^ 1));
   v2003 = ((v1982 + 1));
   if (((v2000 & 255u) == 0u)) {
-    v1983 = v2003;   /* for PHI node */
-    v1985 = v2002;   /* for PHI node */
-    v1987 = v1996;   /* for PHI node */
+    v1983 = v2003;
+    v1985 = v2002;
+    v1987 = v1996;
     goto llvm_cbe_lB05B;
   } else {
     goto llvm_cbe_bb19989;
@@ -15457,9 +15457,9 @@ llvm_cbe_lB056:
   X = v1981;
   Z = (((v1981 == 0)));
   N = (((((v1981 >> 7)))));
-  v1983 = 0;   /* for PHI node */
-  v1985 = v1976;   /* for PHI node */
-  v1987 = v1979;   /* for PHI node */
+  v1983 = 0;
+  v1985 = v1976;
+  v1987 = v1979;
   goto llvm_cbe_lB05B;
 
 llvm_cbe_bb19786:
@@ -15473,8 +15473,8 @@ llvm_cbe_bb19786:
   v1976 = ((v1975 ^ 1));
   C = v1976;
   if (v1974 == 0) {
-    v1978 = v1968;   /* for PHI node */
-    v1980 = v1974;   /* for PHI node */
+    v1978 = v1968;
+    v1980 = v1974;
     goto llvm_cbe_lB056;
   } else {
     goto llvm_cbe_bb19810;
@@ -15484,7 +15484,7 @@ llvm_cbe_bb19774:
   if ((((((((v1969 ^ v1968))))) & 128u) == 0u)) {
     goto llvm_cbe_bb19785;
   } else {
-    v1973 = 1;   /* for PHI node */
+    v1973 = 1;
     goto llvm_cbe_bb19786;
   }
 
@@ -15508,7 +15508,7 @@ llvm_cbe_lB044:
   }
 
 llvm_cbe_bb19785:
-  v1973 = 0;   /* for PHI node */
+  v1973 = 0;
   goto llvm_cbe_bb19786;
 
 llvm_cbe_bb19810:
@@ -15518,8 +15518,8 @@ llvm_cbe_bb19810:
   if (v1975 == 0) {
     goto llvm_cbe_bb19826;
   } else {
-    v1978 = v1968;   /* for PHI node */
-    v1980 = 1;   /* for PHI node */
+    v1978 = v1968;
+    v1980 = 1;
     goto llvm_cbe_lB056;
   }
 
@@ -15528,13 +15528,13 @@ llvm_cbe_bb19826:
   A = -1;
   Z = 0;
   N = 1;
-  v1978 = v1969;   /* for PHI node */
-  v1980 = -1;   /* for PHI node */
+  v1978 = v1969;
+  v1980 = -1;
   goto llvm_cbe_lB056;
 
 llvm_cbe_bb19922:
   C = 0;
-  v2005 = v1990;   /* for PHI node */
+  v2005 = v1990;
   goto llvm_cbe_lB072;
 
 llvm_cbe_bb19989:
@@ -15545,7 +15545,7 @@ llvm_cbe_bb19989:
   Z = 0;
   N = 1;
   if (v2001 == 0) {
-    v2005 = -1;   /* for PHI node */
+    v2005 = -1;
     goto llvm_cbe_lB072;
   } else {
     goto llvm_cbe_bb20005;
@@ -15555,7 +15555,7 @@ llvm_cbe_bb20005:
   X = 1;
   Z = 0;
   N = 0;
-  v2005 = 1;   /* for PHI node */
+  v2005 = 1;
   goto llvm_cbe_lB072;
 
 llvm_cbe_bb20086:
@@ -15589,7 +15589,7 @@ llvm_cbe_lBDCD:
   *((&RAM[((v4308 | 256u))])) = -67;
   *((&RAM[(((((((v4308 - 1))))) | 256u))])) = -42;
   S = (((v4308 - 2)));
-  v4068 = -112;   /* for PHI node */
+  v4068 = -112;
   goto llvm_cbe_lBC49;
 
 llvm_cbe_lA6E8:
@@ -15598,8 +15598,8 @@ llvm_cbe_lA6E8:
   *((&RAM[((v672 | 256u))])) = -90;
   *((&RAM[(((((((v672 - 1))))) | 256u))])) = -20;
   S = (((v672 - 2)));
-  v4305 = v659;   /* for PHI node */
-  v4307 = v661;   /* for PHI node */
+  v4305 = v659;
+  v4307 = v661;
   goto llvm_cbe_lBDCD;
 
 llvm_cbe_bb7193:
@@ -15613,7 +15613,7 @@ llvm_cbe_bb7193:
   if (((v668 & 255u) == 0u)) {
     goto llvm_cbe_lA6E8;
   } else {
-    v671 = v669;   /* for PHI node */
+    v671 = v669;
     goto llvm_cbe_lA6E6;
   }
 
@@ -15638,7 +15638,7 @@ llvm_cbe_lA6D7:
   if (((v664 & 255u) == 0u)) {
     goto llvm_cbe_bb7193;
   } else {
-    v671 = v665;   /* for PHI node */
+    v671 = v665;
     goto llvm_cbe_lA6E6;
   }
 
@@ -15657,8 +15657,8 @@ llvm_cbe_lBDC9:
   X = v4303;
   Z = (((v4303 == 0)));
   N = (((((v4303 >> 7)))));
-  v4305 = v4303;   /* for PHI node */
-  v4307 = v4302;   /* for PHI node */
+  v4305 = v4303;
+  v4307 = v4302;
   goto llvm_cbe_lBDCD;
 
 llvm_cbe_bb47779:
@@ -15673,15 +15673,15 @@ llvm_cbe_bb47779:
   *((&RAM[((v4902 | 256u))])) = -28;
   *((&RAM[(((((((v4902 - 1))))) | 256u))])) = 60;
   S = (((v4902 - 2)));
-  v4305 = v4893;   /* for PHI node */
-  v4307 = v4901;   /* for PHI node */
+  v4305 = v4893;
+  v4307 = v4901;
   goto llvm_cbe_lBDCD;
 
 llvm_cbe_bb47767:
   if ((((((((v4896 ^ v4895))))) & 128u) == 0u)) {
     goto llvm_cbe_bb47778;
   } else {
-    v4900 = 1;   /* for PHI node */
+    v4900 = 1;
     goto llvm_cbe_bb47779;
   }
 
@@ -15709,7 +15709,7 @@ llvm_cbe_bb47693:
   if ((((((((v4888 ^ v4887))))) & 128u) == 0u)) {
     goto llvm_cbe_bb47704;
   } else {
-    v4892 = 1;   /* for PHI node */
+    v4892 = 1;
     goto llvm_cbe_bb47705;
   }
 
@@ -15729,11 +15729,11 @@ llvm_cbe_lE430:
   }
 
 llvm_cbe_bb47704:
-  v4892 = 0;   /* for PHI node */
+  v4892 = 0;
   goto llvm_cbe_bb47705;
 
 llvm_cbe_bb47778:
-  v4900 = 0;   /* for PHI node */
+  v4900 = 0;
   goto llvm_cbe_bb47779;
 
 llvm_cbe_lBCD5:
@@ -15824,7 +15824,7 @@ llvm_cbe_lB929_2e_bb34087_crit_edge:
   *((&RAM[100u])) = v3492;
   *((&RAM[99u])) = v3494;
   *((&RAM[98u])) = v3498;
-  v3501 = v3487;   /* for PHI node */
+  v3501 = v3487;
   goto llvm_cbe_bb34087;
 
   do {     /* Syntactic loop 'lB91D' to make GCC happy */
@@ -15859,13 +15859,13 @@ llvm_cbe_bb33930:
   v3498 = v3495;
   v3499 = ((((v3498 >> 7))));
   if (v3499 == 0) {
-    v3471 = v3498;   /* for PHI node */
-    v3473 = v3494;   /* for PHI node */
-    v3475 = v3492;   /* for PHI node */
-    v3477 = v3490;   /* for PHI node */
-    v3479 = v3488;   /* for PHI node */
-    v3481 = v3496;   /* for PHI node */
-    v3483 = v3487;   /* for PHI node */
+    v3471 = v3498;
+    v3473 = v3494;
+    v3475 = v3492;
+    v3477 = v3490;
+    v3479 = v3488;
+    v3481 = v3496;
+    v3483 = v3487;
     goto llvm_cbe_lB91D;
   } else {
     goto llvm_cbe_lB929_2e_bb34087_crit_edge;
@@ -15875,21 +15875,21 @@ llvm_cbe_bb33918:
   if ((((v3482 ^ v3484) & 128u) == 0u)) {
     goto llvm_cbe_bb33929;
   } else {
-    v3486 = 1;   /* for PHI node */
+    v3486 = 1;
     goto llvm_cbe_bb33930;
   }
 
 llvm_cbe_bb33929:
-  v3486 = 0;   /* for PHI node */
+  v3486 = 0;
   goto llvm_cbe_bb33930;
 
   } while (1); /* end of syntactic loop 'lB91D' */
 llvm_cbe_bb34117:
-  v3506 = 0;   /* for PHI node */
+  v3506 = 0;
   goto llvm_cbe_bb34118;
 
 llvm_cbe_bb34177:
-  v3513 = 0;   /* for PHI node */
+  v3513 = 0;
   goto llvm_cbe_bb34178;
 
 llvm_cbe_lBC26:
@@ -15928,7 +15928,7 @@ llvm_cbe_bb36474:
   if ((((v3774 ^ v3777) & 128u) == 0u)) {
     goto llvm_cbe_bb36485;
   } else {
-    v3779 = 1;   /* for PHI node */
+    v3779 = 1;
     goto llvm_cbe_bb36486;
   }
 
@@ -15953,11 +15953,11 @@ llvm_cbe_lBAB7:
   Z = (((v3771 == 0)));
   N = (((((v3771 >> 7)))));
   if (v3771 == 0) {
-    v3797 = v3770;   /* for PHI node */
+    v3797 = v3770;
     goto llvm_cbe_lBADA;
   } else {
-    v3773 = v3770;   /* for PHI node */
-    v3775 = v3771;   /* for PHI node */
+    v3773 = v3770;
+    v3775 = v3771;
     goto llvm_cbe_bb36456;
   }
 
@@ -15967,7 +15967,7 @@ llvm_cbe_lBA30:
   v3667 = ((v3666 - 1));
   S = v3667;
   *((&RAM[((v3667 | 256u))])) = 50;
-  v3769 = v3667;   /* for PHI node */
+  v3769 = v3667;
   goto llvm_cbe_lBAB7;
 
 llvm_cbe_lBA2B:
@@ -15992,14 +15992,14 @@ llvm_cbe_bb36957:
   v3839 = ((v3838 - 1));
   S = v3839;
   *((&RAM[((v3839 | 256u))])) = 32;
-  v3769 = v3839;   /* for PHI node */
+  v3769 = v3839;
   goto llvm_cbe_lBAB7;
 
 llvm_cbe_bb36945:
   if (((v3832 & 128u) == 0u)) {
     goto llvm_cbe_bb36956;
   } else {
-    v3836 = 1;   /* for PHI node */
+    v3836 = 1;
     goto llvm_cbe_bb36957;
   }
 
@@ -16018,7 +16018,7 @@ llvm_cbe_lBB17:
   }
 
 llvm_cbe_bb36956:
-  v3836 = 0;   /* for PHI node */
+  v3836 = 0;
   goto llvm_cbe_bb36957;
 
 llvm_cbe_lE03A:
@@ -16034,16 +16034,16 @@ llvm_cbe_lE03A:
   v4548 = ((v4545 - 1));
   S = v4548;
   if (v4547 == 0) {
-    v3797 = v4548;   /* for PHI node */
+    v3797 = v4548;
     goto llvm_cbe_lBADA;
   } else {
-    v3773 = v4548;   /* for PHI node */
-    v3775 = v4547;   /* for PHI node */
+    v3773 = v4548;
+    v3775 = v4547;
     goto llvm_cbe_bb36456;
   }
 
 llvm_cbe_bb36485:
-  v3779 = 0;   /* for PHI node */
+  v3779 = 0;
   goto llvm_cbe_bb36486;
 
 llvm_cbe_lBAF4:
@@ -16117,7 +16117,7 @@ llvm_cbe_lE00B:
   if ((((s8 )v4519) > ((s8 )-1))) {
     goto llvm_cbe_lB97E;
   } else {
-    v3797 = v4518;   /* for PHI node */
+    v3797 = v4518;
     goto llvm_cbe_lBADA;
   }
 
@@ -16306,15 +16306,15 @@ llvm_cbe_lA53C:
   v379 = ((v378 == 0));
   v380 = ((((v378 >> 7))));
   if (v378 == 0) {
-    v395 = v371;   /* for PHI node */
-    v397 = v373;   /* for PHI node */
-    v399 = v375;   /* for PHI node */
-    v401 = v378;   /* for PHI node */
-    v403 = v380;   /* for PHI node */
-    v405 = v379;   /* for PHI node */
+    v395 = v371;
+    v397 = v373;
+    v399 = v375;
+    v401 = v378;
+    v403 = v380;
+    v405 = v379;
     goto llvm_cbe_lA55F;
   } else {
-    v382 = 0;   /* for PHI node */
+    v382 = 0;
     goto llvm_cbe_lA544;
   }
 
@@ -16327,19 +16327,19 @@ llvm_cbe_bb4856:
   *((&RAM[34u])) = v386;
   *((&RAM[35u])) = v391;
   if (v392 == 0) {
-    v368 = v391;   /* for PHI node */
-    v370 = v386;   /* for PHI node */
-    v372 = v386;   /* for PHI node */
-    v374 = v392;   /* for PHI node */
-    v376 = v389;   /* for PHI node */
+    v368 = v391;
+    v370 = v386;
+    v372 = v386;
+    v374 = v392;
+    v376 = v389;
     goto llvm_cbe_lA53C;
   } else {
-    v395 = v386;   /* for PHI node */
-    v397 = v392;   /* for PHI node */
-    v399 = v389;   /* for PHI node */
-    v401 = v391;   /* for PHI node */
-    v403 = 0;   /* for PHI node */
-    v405 = 0;   /* for PHI node */
+    v395 = v386;
+    v397 = v392;
+    v399 = v389;
+    v401 = v391;
+    v403 = 0;
+    v405 = 0;
     goto llvm_cbe_lA55F;
   }
 
@@ -16347,7 +16347,7 @@ llvm_cbe_bb4844:
   if ((((v387 ^ v388) & 128u) == 0u)) {
     goto llvm_cbe_bb4855;
   } else {
-    v390 = 1;   /* for PHI node */
+    v390 = 1;
     goto llvm_cbe_bb4856;
   }
 
@@ -16378,7 +16378,7 @@ llvm_cbe_lA544:
   if (v383 == 0) {
     goto llvm_cbe_bb4708;
   } else {
-    v382 = (((v381 + 1)));   /* for PHI node */
+    v382 = (((v381 + 1)));
     goto llvm_cbe_lA544;
   }
 
@@ -16387,7 +16387,7 @@ llvm_cbe_bb4751:
   goto llvm_cbe_bb4763;
 
 llvm_cbe_bb4855:
-  v390 = 0;   /* for PHI node */
+  v390 = 0;
   goto llvm_cbe_bb4856;
 
   } while (1); /* end of syntactic loop 'lA53C' */
@@ -16404,11 +16404,11 @@ llvm_cbe_lA533:
   C = 0;
   v365 = V;
   v366 = X;
-  v368 = v364;   /* for PHI node */
-  v370 = v363;   /* for PHI node */
-  v372 = v366;   /* for PHI node */
-  v374 = 0;   /* for PHI node */
-  v376 = v365;   /* for PHI node */
+  v368 = v364;
+  v370 = v363;
+  v372 = v366;
+  v374 = 0;
+  v376 = v365;
   goto llvm_cbe_lA53C;
 
 llvm_cbe_lA4F0:
@@ -16417,7 +16417,7 @@ llvm_cbe_lA4F0:
   *((&RAM[(((((((v328 - 1))))) | 256u))])) = -14;
   v329 = ((v328 - 2));
   S = v329;
-  v362 = v329;   /* for PHI node */
+  v362 = v329;
   goto llvm_cbe_lA533;
 
 llvm_cbe_lA52D:
@@ -16426,7 +16426,7 @@ llvm_cbe_lA52D:
   *((&RAM[(((((((v359 - 1))))) | 256u))])) = 47;
   v360 = ((v359 - 2));
   S = v360;
-  v362 = v360;   /* for PHI node */
+  v362 = v360;
   goto llvm_cbe_lA533;
 
 llvm_cbe_lE1B8:
@@ -16435,7 +16435,7 @@ llvm_cbe_lE1B8:
   *((&RAM[(((((((v4709 - 1))))) | 256u))])) = -70;
   v4710 = ((v4709 - 2));
   S = v4710;
-  v362 = v4710;   /* for PHI node */
+  v362 = v4710;
   goto llvm_cbe_lA533;
 
 llvm_cbe_lA579:
@@ -16453,7 +16453,7 @@ llvm_cbe_lA579:
 
 llvm_cbe_bb3640:
   *llvm_cbe_tmp3659 = -104;
-  v420 = v255;   /* for PHI node */
+  v420 = v255;
   goto llvm_cbe_lA579;
 
 llvm_cbe_lA49F:
@@ -16462,7 +16462,7 @@ llvm_cbe_lA49F:
   v258 = ((v257 - 1));
   S = v258;
   *((&RAM[((v258 | 256u))])) = -95;
-  v420 = v258;   /* for PHI node */
+  v420 = v258;
   goto llvm_cbe_lA579;
 
 llvm_cbe_lA609:
@@ -16499,18 +16499,18 @@ llvm_cbe_lA582:
   if ((((s8 )v429) < ((s8 )0))) {
     goto llvm_cbe_bb5087;
   } else {
-    v433 = v425;   /* for PHI node */
+    v433 = v425;
     goto llvm_cbe_lA58E;
   }
 
 llvm_cbe_bb5114:
   v431 = ((v425 + 1));
   if (v431 == 0) {
-    v433 = v431;   /* for PHI node */
+    v433 = v431;
     goto llvm_cbe_lA58E;
   } else {
-    v426 = v431;   /* for PHI node */
-    v428 = v427;   /* for PHI node */
+    v426 = v431;
+    v428 = v427;
     goto llvm_cbe_lA582;
   }
 
@@ -16518,9 +16518,9 @@ llvm_cbe_bb5087:
   v430 = ((((v429 - 255))));
   C = (((((((((((v430 >> 8u))))) & 1))) ^ 1)));
   if (((v430 & 255u) == 0u)) {
-    v473 = v425;   /* for PHI node */
-    v475 = v429;   /* for PHI node */
-    v477 = v427;   /* for PHI node */
+    v473 = v425;
+    v475 = v429;
+    v477 = v427;
     goto llvm_cbe_lA5C9;
   } else {
     goto llvm_cbe_bb5114;
@@ -16536,8 +16536,8 @@ llvm_cbe_lA5DE:
   if (v486 == 0) {
     goto llvm_cbe_bb5685;
   } else {
-    v426 = v478;   /* for PHI node */
-    v428 = v479;   /* for PHI node */
+    v426 = v478;
+    v428 = v479;
     goto llvm_cbe_lA582;
   }
 
@@ -16571,9 +16571,9 @@ llvm_cbe_lA5C9:
   v479 = ((v476 + 1));
   *((&RAM[((v479 + 507u))])) = v474;
   if (v474 == 0) {
-    v515 = v478;   /* for PHI node */
-    v517 = v474;   /* for PHI node */
-    v519 = v479;   /* for PHI node */
+    v515 = v478;
+    v517 = v474;
+    v519 = v479;
     goto llvm_cbe_lA609;
   } else {
     goto llvm_cbe_bb5562;
@@ -16585,9 +16585,9 @@ llvm_cbe_lA58E:
   v435 = ((((v434 - 32))));
   C = (((((((((((v435 >> 8u))))) & 1))) ^ 1)));
   if (((v435 & 255u) == 0u)) {
-    v473 = v432;   /* for PHI node */
-    v475 = v429;   /* for PHI node */
-    v477 = v427;   /* for PHI node */
+    v473 = v432;
+    v475 = v429;
+    v477 = v427;
     goto llvm_cbe_lA5C9;
   } else {
     goto llvm_cbe_bb5158;
@@ -16600,9 +16600,9 @@ llvm_cbe_bb5186:
   if (v438 == 0) {
     goto llvm_cbe_bb5213;
   } else {
-    v473 = v432;   /* for PHI node */
-    v475 = v429;   /* for PHI node */
-    v477 = v427;   /* for PHI node */
+    v473 = v432;
+    v475 = v429;
+    v477 = v427;
     goto llvm_cbe_lA5C9;
   }
 
@@ -16611,9 +16611,9 @@ llvm_cbe_bb5158:
   v436 = ((((v434 - 34))));
   C = (((((((((((v436 >> 8u))))) & 1))) ^ 1)));
   if (((v436 & 255u) == 0u)) {
-    v495 = v432;   /* for PHI node */
-    v497 = v429;   /* for PHI node */
-    v499 = v427;   /* for PHI node */
+    v495 = v432;
+    v497 = v429;
+    v499 = v427;
     goto llvm_cbe_lA5EE;
   } else {
     goto llvm_cbe_bb5186;
@@ -16623,9 +16623,9 @@ llvm_cbe_bb5213:
   v439 = ((((v434 - 63))));
   C = (((((((((((v439 >> 8u))))) & 1))) ^ 1)));
   if (((v439 & 255u) == 0u)) {
-    v473 = v432;   /* for PHI node */
-    v475 = -103;   /* for PHI node */
-    v477 = v427;   /* for PHI node */
+    v473 = v432;
+    v475 = -103;
+    v477 = v427;
     goto llvm_cbe_lA5C9;
   } else {
     goto llvm_cbe_lA5A4;
@@ -16637,9 +16637,9 @@ llvm_cbe_bb5282:
   if (v442 == 0) {
     goto llvm_cbe_lA5AC;
   } else {
-    v473 = v432;   /* for PHI node */
-    v475 = v429;   /* for PHI node */
-    v477 = v427;   /* for PHI node */
+    v473 = v432;
+    v475 = v429;
+    v477 = v427;
     goto llvm_cbe_lA5C9;
   }
 
@@ -16657,15 +16657,15 @@ llvm_cbe_lA5C7:
   v467 = v468;
   v469 = v470;
   v471 = *((&RAM[113u]));
-  v473 = v467;   /* for PHI node */
-  v475 = v469;   /* for PHI node */
-  v477 = v471;   /* for PHI node */
+  v473 = v467;
+  v475 = v469;
+  v477 = v471;
   goto llvm_cbe_lA5C9;
 
 llvm_cbe_bb5482:
   v466 = ((v464 | v452));
-  v468 = v454;   /* for PHI node */
-  v470 = v466;   /* for PHI node */
+  v468 = v454;
+  v470 = v466;
   goto llvm_cbe_lA5C7;
 
 llvm_cbe_bb5455:
@@ -16674,7 +16674,7 @@ llvm_cbe_bb5455:
   if (((v465 & 255u) == 0u)) {
     goto llvm_cbe_bb5482;
   } else {
-    v503 = v456;   /* for PHI node */
+    v503 = v456;
     goto llvm_cbe_lA5F5;
   }
 
@@ -16684,9 +16684,9 @@ llvm_cbe_bb5431:
   v464 = v460;
   C = (((((((((((v461 >> 8u))))) & 1))) ^ 1)));
   if (v464 == 0) {
-    v445 = v452;   /* for PHI node */
-    v447 = v454;   /* for PHI node */
-    v449 = v456;   /* for PHI node */
+    v445 = v452;
+    v447 = v454;
+    v449 = v456;
     goto llvm_cbe_lA5B6;
   } else {
     goto llvm_cbe_bb5455;
@@ -16696,7 +16696,7 @@ llvm_cbe_bb5414:
   if ((((((((v459 ^ v458))))) & 128u) == 0u)) {
     goto llvm_cbe_bb5430;
   } else {
-    v463 = 1;   /* for PHI node */
+    v463 = 1;
     goto llvm_cbe_bb5431;
   }
 
@@ -16721,9 +16721,9 @@ llvm_cbe_lA5B6:
   v448 = v449;
   v450 = ((v448 + 1));
   v451 = ((v446 + 1));
-  v453 = v444;   /* for PHI node */
-  v455 = v451;   /* for PHI node */
-  v457 = v450;   /* for PHI node */
+  v453 = v444;
+  v455 = v451;
+  v457 = v450;
   goto llvm_cbe_lA5B8;
 
 llvm_cbe_lA5AC:
@@ -16731,9 +16731,9 @@ llvm_cbe_lA5AC:
   *((&RAM[11u])) = 0;
   *((&RAM[122u])) = v432;
   v443 = ((v432 - 1));
-  v445 = 0;   /* for PHI node */
-  v447 = v443;   /* for PHI node */
-  v449 = -1;   /* for PHI node */
+  v445 = 0;
+  v447 = v443;
+  v449 = -1;
   goto llvm_cbe_lA5B6;
 
 llvm_cbe_bb5831:
@@ -16741,9 +16741,9 @@ llvm_cbe_bb5831:
   if (v512 == 0) {
     goto llvm_cbe_bb5853;
   } else {
-    v453 = v506;   /* for PHI node */
-    v455 = v504;   /* for PHI node */
-    v457 = v509;   /* for PHI node */
+    v453 = v506;
+    v455 = v504;
+    v457 = v509;
     goto llvm_cbe_lA5B8;
   }
 
@@ -16756,7 +16756,7 @@ llvm_cbe_lA5F9:
   if ((((s8 )v511) < ((s8 )0))) {
     goto llvm_cbe_bb5831;
   } else {
-    v508 = (((v507 + 1)));   /* for PHI node */
+    v508 = (((v507 + 1)));
     goto llvm_cbe_lA5F9;
   }
 
@@ -16767,7 +16767,7 @@ llvm_cbe_lA5F5:
   v505 = *((&RAM[11u]));
   v506 = ((v505 + 1));
   *((&RAM[11u])) = v506;
-  v508 = 0;   /* for PHI node */
+  v508 = 0;
   goto llvm_cbe_lA5F9;
 
 llvm_cbe_lA5EE:
@@ -16778,11 +16778,11 @@ llvm_cbe_lA5EE:
   *((&RAM[((v500 + 507u))])) = v496;
   v501 = ((v494 + 1));
   if (v501 == 0) {
-    v503 = v500;   /* for PHI node */
+    v503 = v500;
     goto llvm_cbe_lA5F5;
   } else {
-    v488 = v501;   /* for PHI node */
-    v490 = v500;   /* for PHI node */
+    v488 = v501;
+    v490 = v500;
     goto llvm_cbe_lA5E5;
   }
 
@@ -16791,14 +16791,14 @@ llvm_cbe_bb5707:
   v493 = ((((v491 - v492))));
   C = (((((((((((v493 >> 8u))))) & 1))) ^ 1)));
   if (((v493 & 255u) == 0u)) {
-    v473 = v487;   /* for PHI node */
-    v475 = v491;   /* for PHI node */
-    v477 = v489;   /* for PHI node */
+    v473 = v487;
+    v475 = v491;
+    v477 = v489;
     goto llvm_cbe_lA5C9;
   } else {
-    v495 = v487;   /* for PHI node */
-    v497 = v491;   /* for PHI node */
-    v499 = v489;   /* for PHI node */
+    v495 = v487;
+    v497 = v491;
+    v499 = v489;
     goto llvm_cbe_lA5EE;
   }
 
@@ -16807,9 +16807,9 @@ llvm_cbe_lA5E5:
   v489 = v490;
   v491 = *((&RAM[((v487 | 512u))]));
   if (v491 == 0) {
-    v473 = v487;   /* for PHI node */
-    v475 = v491;   /* for PHI node */
-    v477 = v489;   /* for PHI node */
+    v473 = v487;
+    v475 = v491;
+    v477 = v489;
     goto llvm_cbe_lA5C9;
   } else {
     goto llvm_cbe_bb5707;
@@ -16817,24 +16817,24 @@ llvm_cbe_lA5E5:
 
 llvm_cbe_bb5685:
   *((&RAM[8u])) = v486;
-  v488 = v478;   /* for PHI node */
-  v490 = v479;   /* for PHI node */
+  v488 = v478;
+  v490 = v479;
   goto llvm_cbe_lA5E5;
 
 llvm_cbe_bb5430:
-  v463 = 0;   /* for PHI node */
+  v463 = 0;
   goto llvm_cbe_bb5431;
 
 llvm_cbe_bb5853:
   v513 = *((&RAM[((v504 | 512u))]));
   if ((((s8 )v513) < ((s8 )0))) {
-    v515 = v504;   /* for PHI node */
-    v517 = v513;   /* for PHI node */
-    v519 = v509;   /* for PHI node */
+    v515 = v504;
+    v517 = v513;
+    v519 = v509;
     goto llvm_cbe_lA609;
   } else {
-    v468 = v504;   /* for PHI node */
-    v470 = v513;   /* for PHI node */
+    v468 = v504;
+    v470 = v513;
     goto llvm_cbe_lA5C7;
   }
 
@@ -16850,8 +16850,8 @@ llvm_cbe_lA57C:
   Z = 0;
   N = 0;
   *((&RAM[15u])) = 4;
-  v426 = v424;   /* for PHI node */
-  v428 = 4;   /* for PHI node */
+  v426 = v424;
+  v428 = 4;
   goto llvm_cbe_lA582;
 
 llvm_cbe_lA641:
@@ -16891,11 +16891,11 @@ llvm_cbe_lA617:
   v534 = (v530 << 8u) | v532;
   v535 = *((&RAM[(((v534 + 1u) & 65535u))]));
   if (v535 == 0) {
-    v557 = v530;   /* for PHI node */
-    v559 = v535;   /* for PHI node */
-    v561 = v535;   /* for PHI node */
-    v563 = (v535 == 0);   /* for PHI node */
-    v565 = 1;   /* for PHI node */
+    v557 = v530;
+    v559 = v535;
+    v561 = v535;
+    v563 = (v535 == 0);
+    v565 = 1;
     goto llvm_cbe_lA640;
   } else {
     goto llvm_cbe_bb5989;
@@ -16906,15 +16906,15 @@ llvm_cbe_lA637:
   v554 = *((&RAM[(((v534 + 1u) & 65535u))]));
   v555 = *((&RAM[v534]));
   if (v552 == 0) {
-    v557 = v554;   /* for PHI node */
-    v559 = v555;   /* for PHI node */
-    v561 = v555;   /* for PHI node */
-    v563 = (v555 == 0);   /* for PHI node */
-    v565 = 0;   /* for PHI node */
+    v557 = v554;
+    v559 = v555;
+    v561 = v555;
+    v563 = (v555 == 0);
+    v565 = 0;
     goto llvm_cbe_lA640;
   } else {
-    v531 = v554;   /* for PHI node */
-    v533 = v555;   /* for PHI node */
+    v531 = v554;
+    v533 = v555;
     goto llvm_cbe_lA617;
   }
 
@@ -16922,7 +16922,7 @@ llvm_cbe_bb6067:
   if (((v539 & 255u) == 0u)) {
     goto llvm_cbe_lA62E;
   } else {
-    v553 = v541;   /* for PHI node */
+    v553 = v541;
     goto llvm_cbe_lA637;
   }
 
@@ -16938,24 +16938,24 @@ llvm_cbe_bb5989:
   if (v540 == 0) {
     goto llvm_cbe_bb6067;
   } else {
-    v567 = v541;   /* for PHI node */
-    v569 = v536;   /* for PHI node */
-    v571 = v543;   /* for PHI node */
-    v573 = v542;   /* for PHI node */
-    v575 = 3;   /* for PHI node */
+    v567 = v541;
+    v569 = v536;
+    v571 = v543;
+    v573 = v542;
+    v575 = 3;
     goto llvm_cbe_lA641_2e_loopexit;
   }
 
 llvm_cbe_bb6154:
   if (((v547 & 255u) == 0u)) {
-    v567 = v549;   /* for PHI node */
-    v569 = v544;   /* for PHI node */
-    v571 = v551;   /* for PHI node */
-    v573 = v550;   /* for PHI node */
-    v575 = 2;   /* for PHI node */
+    v567 = v549;
+    v569 = v544;
+    v571 = v551;
+    v573 = v550;
+    v575 = 2;
     goto llvm_cbe_lA641_2e_loopexit;
   } else {
-    v553 = v549;   /* for PHI node */
+    v553 = v549;
     goto llvm_cbe_lA637;
   }
 
@@ -16971,11 +16971,11 @@ llvm_cbe_lA62E:
   if (v548 == 0) {
     goto llvm_cbe_bb6154;
   } else {
-    v567 = v549;   /* for PHI node */
-    v569 = v544;   /* for PHI node */
-    v571 = v551;   /* for PHI node */
-    v573 = v550;   /* for PHI node */
-    v575 = 2;   /* for PHI node */
+    v567 = v549;
+    v569 = v544;
+    v571 = v551;
+    v573 = v550;
+    v575 = 2;
     goto llvm_cbe_lA641_2e_loopexit;
   }
 
@@ -16989,8 +16989,8 @@ llvm_cbe_lA613:
   X = v529;
   Z = (((v529 == 0)));
   N = (((((v529 >> 7)))));
-  v531 = v529;   /* for PHI node */
-  v533 = v528;   /* for PHI node */
+  v531 = v529;
+  v533 = v528;
   goto llvm_cbe_lA617;
 
 llvm_cbe_lA4A2:
@@ -17001,7 +17001,7 @@ llvm_cbe_lA4A2:
   v261 = ((v260 - 1));
   S = v261;
   *((&RAM[((v261 | 256u))])) = -90;
-  v527 = v261;   /* for PHI node */
+  v527 = v261;
   goto llvm_cbe_lA613;
 
 llvm_cbe_lA6A7:
@@ -17010,7 +17010,7 @@ llvm_cbe_lA6A7:
   v636 = ((v635 - 1));
   S = v636;
   *((&RAM[((v636 | 256u))])) = -87;
-  v527 = v636;   /* for PHI node */
+  v527 = v636;
   goto llvm_cbe_lA613;
 
 llvm_cbe_lA8C0:
@@ -17020,8 +17020,8 @@ llvm_cbe_lA8C0:
   *((&RAM[((v923 | 256u))])) = -88;
   *((&RAM[(((((((v923 - 1))))) | 256u))])) = -62;
   S = (((v923 - 2)));
-  v531 = v919;   /* for PHI node */
-  v533 = v921;   /* for PHI node */
+  v531 = v919;
+  v533 = v921;
   goto llvm_cbe_lA617;
 
 llvm_cbe_bb9675:
@@ -17036,8 +17036,8 @@ llvm_cbe_bb9675:
   Z = (((v915 == 0)));
   N = (((((v915 >> 7)))));
   if (v914 == 0) {
-    v920 = v915;   /* for PHI node */
-    v922 = v913;   /* for PHI node */
+    v920 = v915;
+    v922 = v913;
     goto llvm_cbe_lA8C0;
   } else {
     goto llvm_cbe_bb9716;
@@ -17047,7 +17047,7 @@ llvm_cbe_bb9663:
   if ((((v908 ^ v910) & 128u) == 0u)) {
     goto llvm_cbe_bb9674;
   } else {
-    v912 = 1;   /* for PHI node */
+    v912 = 1;
     goto llvm_cbe_bb9675;
   }
 
@@ -17084,7 +17084,7 @@ llvm_cbe_bb9597:
   if ((((((((v901 ^ v900))))) & 128u) == 0u)) {
     goto llvm_cbe_bb9608;
   } else {
-    v905 = 1;   /* for PHI node */
+    v905 = 1;
     goto llvm_cbe_bb9609;
   }
 
@@ -17110,7 +17110,7 @@ llvm_cbe_bb9535:
   if ((((((((v895 ^ v894))))) & 128u) == 0u)) {
     goto llvm_cbe_bb9546;
   } else {
-    v898 = 1;   /* for PHI node */
+    v898 = 1;
     goto llvm_cbe_bb9547;
   }
 
@@ -17129,15 +17129,15 @@ llvm_cbe_lA8A6:
   }
 
 llvm_cbe_bb9546:
-  v898 = 0;   /* for PHI node */
+  v898 = 0;
   goto llvm_cbe_bb9547;
 
 llvm_cbe_bb9608:
-  v905 = 0;   /* for PHI node */
+  v905 = 0;
   goto llvm_cbe_bb9609;
 
 llvm_cbe_bb9674:
-  v912 = 0;   /* for PHI node */
+  v912 = 0;
   goto llvm_cbe_bb9675;
 
 llvm_cbe_bb9716:
@@ -17145,8 +17145,8 @@ llvm_cbe_bb9716:
   X = v916;
   Z = (((v916 == 0)));
   N = (((((v916 >> 7)))));
-  v920 = v916;   /* for PHI node */
-  v922 = v913;   /* for PHI node */
+  v920 = v916;
+  v922 = v913;
   goto llvm_cbe_lA8C0;
 
 llvm_cbe_lA8BC:
@@ -17156,8 +17156,8 @@ llvm_cbe_lA8BC:
   X = v918;
   Z = (((v918 == 0)));
   N = (((((v918 >> 7)))));
-  v920 = v918;   /* for PHI node */
-  v922 = v917;   /* for PHI node */
+  v920 = v918;
+  v922 = v917;
   goto llvm_cbe_lA8C0;
 
 llvm_cbe_lA641_2e_loopexit:
@@ -17305,7 +17305,7 @@ llvm_cbe_bb6761:
   if ((((v620 ^ v621) & 128u) == 0u)) {
     goto llvm_cbe_bb6772;
   } else {
-    v623 = 1;   /* for PHI node */
+    v623 = 1;
     goto llvm_cbe_bb6773;
   }
 
@@ -17330,7 +17330,7 @@ llvm_cbe_bb6701:
   if ((((v615 ^ v616) & 128u) == 0u)) {
     goto llvm_cbe_bb6712;
   } else {
-    v618 = 1;   /* for PHI node */
+    v618 = 1;
     goto llvm_cbe_bb6713;
   }
 
@@ -17355,7 +17355,7 @@ llvm_cbe_lA659:
   v597 = ((v596 - 1));
   S = v597;
   *((&RAM[((v597 | 256u))])) = 91;
-  v614 = v597;   /* for PHI node */
+  v614 = v597;
   goto llvm_cbe_lA68E;
 
 llvm_cbe_lA4ED:
@@ -17397,15 +17397,15 @@ llvm_cbe_lA4DF:
   if (v320 == 0) {
     goto llvm_cbe_bb4252;
   } else {
-    v322 = v311;   /* for PHI node */
+    v322 = v311;
     goto llvm_cbe_lA4DF_2e_backedge;
   }
 
 llvm_cbe_lA4DF_2e_backedge:
   v321 = v322;
   v323 = ((v309 + 1));
-  v310 = v323;   /* for PHI node */
-  v312 = v321;   /* for PHI node */
+  v310 = v323;
+  v312 = v321;
   goto llvm_cbe_lA4DF;
 
 llvm_cbe_bb4252:
@@ -17417,7 +17417,7 @@ llvm_cbe_bb4252:
   if (v311 == 1) {
     goto llvm_cbe_lA4ED_2e_loopexit;
   } else {
-    v322 = v326;   /* for PHI node */
+    v322 = v326;
     goto llvm_cbe_lA4DF_2e_backedge;
   }
 
@@ -17432,8 +17432,8 @@ llvm_cbe_bb4157:
   v307 = v303 & 256u;
   C = (((((v307 >> 8u)))));
   if (v307 == 0u) {
-    v310 = 0;   /* for PHI node */
-    v312 = v301;   /* for PHI node */
+    v310 = 0;
+    v312 = v301;
     goto llvm_cbe_lA4DF;
   } else {
     goto llvm_cbe_bb4186;
@@ -17443,7 +17443,7 @@ llvm_cbe_bb4145:
   if ((((v297 ^ v303) & 128u) == 0u)) {
     goto llvm_cbe_bb4156;
   } else {
-    v305 = 1;   /* for PHI node */
+    v305 = 1;
     goto llvm_cbe_bb4157;
   }
 
@@ -17468,7 +17468,7 @@ llvm_cbe_bb4065:
   Z = (((v297 == 0)));
   N = (((((v297 >> 7)))));
   if (v298 == 0) {
-    v302 = v292;   /* for PHI node */
+    v302 = v292;
     goto llvm_cbe_lA4D7;
   } else {
     goto llvm_cbe_bb4101;
@@ -17478,7 +17478,7 @@ llvm_cbe_bb4053:
   if ((((((((v281 ^ v263))))) & 128u) == 0u)) {
     goto llvm_cbe_bb4064;
   } else {
-    v296 = 1;   /* for PHI node */
+    v296 = 1;
     goto llvm_cbe_bb4065;
   }
 
@@ -17503,7 +17503,7 @@ llvm_cbe_bb3979:
   if ((((((((v265 ^ v287))))) & 128u) == 0u)) {
     goto llvm_cbe_bb3990;
   } else {
-    v291 = 1;   /* for PHI node */
+    v291 = 1;
     goto llvm_cbe_bb3991;
   }
 
@@ -17528,7 +17528,7 @@ llvm_cbe_bb3923:
   if ((((v283 ^ v284) & 128u) == 0u)) {
     goto llvm_cbe_bb3934;
   } else {
-    v286 = 1;   /* for PHI node */
+    v286 = 1;
     goto llvm_cbe_bb3935;
   }
 
@@ -17555,7 +17555,7 @@ llvm_cbe_bb3862:
   if ((((v276 ^ v278) & 128u) == 0u)) {
     goto llvm_cbe_bb3873;
   } else {
-    v280 = 1;   /* for PHI node */
+    v280 = 1;
     goto llvm_cbe_bb3874;
   }
 
@@ -17579,7 +17579,7 @@ llvm_cbe_bb3802:
   if ((((((((v271 ^ v263))))) & 128u) == 0u)) {
     goto llvm_cbe_bb3824;
   } else {
-    v275 = 1;   /* for PHI node */
+    v275 = 1;
     goto llvm_cbe_bb3825;
   }
 
@@ -17609,23 +17609,23 @@ llvm_cbe_bb3686:
   }
 
 llvm_cbe_bb3824:
-  v275 = 0;   /* for PHI node */
+  v275 = 0;
   goto llvm_cbe_bb3825;
 
 llvm_cbe_bb3873:
-  v280 = 0;   /* for PHI node */
+  v280 = 0;
   goto llvm_cbe_bb3874;
 
 llvm_cbe_bb3934:
-  v286 = 0;   /* for PHI node */
+  v286 = 0;
   goto llvm_cbe_bb3935;
 
 llvm_cbe_bb3990:
-  v291 = 0;   /* for PHI node */
+  v291 = 0;
   goto llvm_cbe_bb3991;
 
 llvm_cbe_bb4064:
-  v296 = 0;   /* for PHI node */
+  v296 = 0;
   goto llvm_cbe_bb4065;
 
 llvm_cbe_bb4101:
@@ -17635,11 +17635,11 @@ llvm_cbe_bb4101:
   *((&RAM[37u])) = v300;
   Z = (((v265 == 1)));
   N = (((((v300 >> 7)))));
-  v302 = v299;   /* for PHI node */
+  v302 = v299;
   goto llvm_cbe_lA4D7;
 
 llvm_cbe_bb4156:
-  v305 = 0;   /* for PHI node */
+  v305 = 0;
   goto llvm_cbe_bb4157;
 
 llvm_cbe_bb4186:
@@ -17648,8 +17648,8 @@ llvm_cbe_bb4186:
   Z = (((v267 == 1)));
   N = (((((v308 >> 7)))));
   C = 0;
-  v310 = 0;   /* for PHI node */
-  v312 = v301;   /* for PHI node */
+  v310 = 0;
+  v312 = v301;
   goto llvm_cbe_lA4DF;
 
 llvm_cbe_lA52A:
@@ -17679,7 +17679,7 @@ llvm_cbe_lA522:
   if ((((s8 )v357) < ((s8 )0))) {
     goto llvm_cbe_lA52A_2e_loopexit;
   } else {
-    v351 = (((v350 + 1)));   /* for PHI node */
+    v351 = (((v350 + 1)));
     goto llvm_cbe_lA522;
   }
 
@@ -17699,7 +17699,7 @@ llvm_cbe_lA50D:
   Y = v349;
   Z = (((v348 == 1)));
   N = (((((v349 >> 7)))));
-  v351 = 0;   /* for PHI node */
+  v351 = 0;
   goto llvm_cbe_lA522;
 
 llvm_cbe_bb6425:
@@ -17717,7 +17717,7 @@ llvm_cbe_bb6413:
   if ((((v591 ^ v592) & 128u) == 0u)) {
     goto llvm_cbe_bb6424;
   } else {
-    v594 = 1;   /* for PHI node */
+    v594 = 1;
     goto llvm_cbe_bb6425;
   }
 
@@ -17742,7 +17742,7 @@ llvm_cbe_bb6354:
   if ((((v586 ^ v587) & 128u) == 0u)) {
     goto llvm_cbe_bb6365;
   } else {
-    v589 = 1;   /* for PHI node */
+    v589 = 1;
     goto llvm_cbe_bb6366;
   }
 
@@ -17767,11 +17767,11 @@ llvm_cbe_lA644:
   }
 
 llvm_cbe_bb6365:
-  v589 = 0;   /* for PHI node */
+  v589 = 0;
   goto llvm_cbe_bb6366;
 
 llvm_cbe_bb6424:
-  v594 = 0;   /* for PHI node */
+  v594 = 0;
   goto llvm_cbe_bb6425;
 
 llvm_cbe_lA877:
@@ -17800,15 +17800,15 @@ llvm_cbe_lE1B5:
   v4708 = ((v4707 - 1));
   S = v4708;
   *((&RAM[((v4708 | 256u))])) = -73;
-  v614 = v4708;   /* for PHI node */
+  v614 = v4708;
   goto llvm_cbe_lA68E;
 
 llvm_cbe_bb6712:
-  v618 = 0;   /* for PHI node */
+  v618 = 0;
   goto llvm_cbe_bb6713;
 
 llvm_cbe_bb6772:
-  v623 = 0;   /* for PHI node */
+  v623 = 0;
   goto llvm_cbe_bb6773;
 
 llvm_cbe_lA717:
@@ -17901,7 +17901,7 @@ llvm_cbe_bb8567:
   if (((v791 & 128u) == 0u)) {
     goto llvm_cbe_bb8578;
   } else {
-    v793 = 1;   /* for PHI node */
+    v793 = 1;
     goto llvm_cbe_bb8579;
   }
 
@@ -17922,7 +17922,7 @@ llvm_cbe_lA7CE:
   }
 
 llvm_cbe_bb8578:
-  v793 = 0;   /* for PHI node */
+  v793 = 0;
   goto llvm_cbe_bb8579;
 
 llvm_cbe_bb8609:
@@ -17971,8 +17971,8 @@ llvm_cbe_lA81D:
   Z = (((v830 == 0)));
   N = (((((v830 >> 7)))));
   if (v829 == 0) {
-    v833 = v830;   /* for PHI node */
-    v835 = v828;   /* for PHI node */
+    v833 = v830;
+    v835 = v828;
     goto llvm_cbe_lA827;
   } else {
     goto llvm_cbe_bb8965;
@@ -18014,8 +18014,8 @@ llvm_cbe_bb8965:
   Y = v831;
   Z = (((v830 == 1)));
   N = (((((v831 >> 7)))));
-  v833 = v831;   /* for PHI node */
-  v835 = v828;   /* for PHI node */
+  v833 = v831;
+  v835 = v828;
   goto llvm_cbe_lA827;
 
 llvm_cbe_lA870:
@@ -18120,7 +18120,7 @@ llvm_cbe_bb10139:
   if ((((v952 ^ v954) & 128u) == 0u)) {
     goto llvm_cbe_bb10150;
   } else {
-    v956 = 1;   /* for PHI node */
+    v956 = 1;
     goto llvm_cbe_bb10151;
   }
 
@@ -18166,7 +18166,7 @@ llvm_cbe_bb15034:
   goto llvm_cbe_lACD1;
 
 llvm_cbe_bb10150:
-  v956 = 0;   /* for PHI node */
+  v956 = 0;
   goto llvm_cbe_bb10151;
 
 llvm_cbe_bb10181:
@@ -18200,8 +18200,8 @@ llvm_cbe_lA911:
   v986 = *((&RAM[122u]));
   v987 = *((&RAM[123u]));
   v988 = (v987 << 8u) | v986;
-  v990 = 0;   /* for PHI node */
-  v992 = v982;   /* for PHI node */
+  v990 = 0;
+  v992 = v982;
   goto llvm_cbe_lA919;
 
   do {     /* Syntactic loop 'lA919' to make GCC happy */
@@ -18211,9 +18211,9 @@ llvm_cbe_lA919:
   v993 = ((v989 + v984));
   v994 = *((&RAM[(((v988 + v993) & 65535u))]));
   if (v994 == 0) {
-    v962 = v991;   /* for PHI node */
-    v964 = v994;   /* for PHI node */
-    v966 = (v994 == 0);   /* for PHI node */
+    v962 = v991;
+    v964 = v994;
+    v966 = (v994 == 0);
     goto llvm_cbe_lA905_2e_loopexit;
   } else {
     goto llvm_cbe_bb10328;
@@ -18228,14 +18228,14 @@ llvm_cbe_bb10357:
   v1005 = ((((v1001 >> 7))));
   v1006 = ((v989 + 1));
   if (((v1002 & 255u) == 0u)) {
-    v979 = v980;   /* for PHI node */
-    v981 = v978;   /* for PHI node */
-    v983 = v1003;   /* for PHI node */
-    v985 = v1000;   /* for PHI node */
+    v979 = v980;
+    v981 = v978;
+    v983 = v1003;
+    v985 = v1000;
     goto llvm_cbe_lA911;
   } else {
-    v990 = v1006;   /* for PHI node */
-    v992 = v1003;   /* for PHI node */
+    v990 = v1006;
+    v992 = v1003;
     goto llvm_cbe_lA919;
   }
 
@@ -18246,9 +18246,9 @@ llvm_cbe_bb10328:
   v998 = ((((((((((v997 >> 8u))))) & 1))) ^ 1));
   v999 = v996;
   if (((v997 & 255u) == 0u)) {
-    v962 = v998;   /* for PHI node */
-    v964 = v999;   /* for PHI node */
-    v966 = ((v997 & 255u) == 0u);   /* for PHI node */
+    v962 = v998;
+    v964 = v999;
+    v966 = ((v997 & 255u) == 0u);
     goto llvm_cbe_lA905_2e_loopexit;
   } else {
     goto llvm_cbe_bb10357;
@@ -18264,10 +18264,10 @@ llvm_cbe_lA90B:
   N = 0;
   *((&RAM[8u])) = 0;
   v977 = C;
-  v979 = v975;   /* for PHI node */
-  v981 = 0;   /* for PHI node */
-  v983 = v977;   /* for PHI node */
-  v985 = 0;   /* for PHI node */
+  v979 = v975;
+  v981 = 0;
+  v983 = v977;
+  v985 = 0;
   goto llvm_cbe_lA911;
 
 llvm_cbe_lA906:
@@ -18276,7 +18276,7 @@ llvm_cbe_lA906:
   Z = (((v972 == 0)));
   N = (((((v972 >> 7)))));
   V = ((((((((v972 >> 6))))) & 1)));
-  v976 = 58;   /* for PHI node */
+  v976 = 58;
   goto llvm_cbe_lA90B;
 
 llvm_cbe_lA75A:
@@ -18437,7 +18437,7 @@ llvm_cbe_lA909:
   X = 0;
   Z = 1;
   N = 0;
-  v976 = 0;   /* for PHI node */
+  v976 = 0;
   goto llvm_cbe_lA90B;
 
 llvm_cbe_lA8A3:
@@ -18446,7 +18446,7 @@ llvm_cbe_lA8A3:
   v893 = ((v892 - 1));
   S = v893;
   *((&RAM[((v893 | 256u))])) = -91;
-  v974 = v893;   /* for PHI node */
+  v974 = v893;
   goto llvm_cbe_lA909;
 
 llvm_cbe_lA93B:
@@ -18455,7 +18455,7 @@ llvm_cbe_lA93B:
   v1014 = ((v1013 - 1));
   S = v1014;
   *((&RAM[((v1014 | 256u))])) = 61;
-  v974 = v1014;   /* for PHI node */
+  v974 = v1014;
   goto llvm_cbe_lA909;
 
 llvm_cbe_lA937:
@@ -18834,7 +18834,7 @@ llvm_cbe_lAE66:
   Z = (((v1746 == v1745)));
   N = (((((v1747 >> 7)))));
   *((&RAM[111u])) = v1747;
-  v1749 = v1744;   /* for PHI node */
+  v1749 = v1744;
   goto llvm_cbe_lAE80;
 
 llvm_cbe_lAE19:
@@ -18875,7 +18875,7 @@ llvm_cbe_lADB1:
   v1613 = ((v1612 - 1));
   S = v1613;
   *((&RAM[((v1613 | 256u))])) = -77;
-  v1756 = v1613;   /* for PHI node */
+  v1756 = v1613;
   goto llvm_cbe_lAE83;
 
 llvm_cbe_lB63D:
@@ -18891,7 +18891,7 @@ llvm_cbe_lB63D:
   v2935 = ((v2933 - 3));
   S = v2935;
   *((&RAM[((v2935 | 256u))])) = 69;
-  v1756 = v2935;   /* for PHI node */
+  v1756 = v2935;
   goto llvm_cbe_lAE83;
 
 llvm_cbe_lAF27:
@@ -18949,7 +18949,7 @@ llvm_cbe_bb18444:
   v1848 = ((v1847 - 1));
   S = v1848;
   *((&RAM[((v1848 | 256u))])) = 61;
-  v1817 = v1848;   /* for PHI node */
+  v1817 = v1848;
   goto llvm_cbe_lAF14;
 
 llvm_cbe_lAF6E:
@@ -18958,7 +18958,7 @@ llvm_cbe_lAF6E:
   v1871 = ((v1870 - 1));
   S = v1871;
   *((&RAM[((v1871 | 256u))])) = 112;
-  v1817 = v1871;   /* for PHI node */
+  v1817 = v1871;
   goto llvm_cbe_lAF14;
 
 llvm_cbe_bb18352:
@@ -18975,7 +18975,7 @@ llvm_cbe_bb18340:
   if ((((((((v1820 ^ 128u))))) & 128u) == 0u)) {
     goto llvm_cbe_bb18351;
   } else {
-    v1834 = 1;   /* for PHI node */
+    v1834 = 1;
     goto llvm_cbe_bb18352;
   }
 
@@ -18999,7 +18999,7 @@ llvm_cbe_bb18279:
   if ((((((((v1818 ^ 128u))))) & 128u) == 0u)) {
     goto llvm_cbe_bb18290;
   } else {
-    v1829 = 1;   /* for PHI node */
+    v1829 = 1;
     goto llvm_cbe_bb18291;
   }
 
@@ -19015,11 +19015,11 @@ llvm_cbe_bb18249:
   }
 
 llvm_cbe_bb18290:
-  v1829 = 0;   /* for PHI node */
+  v1829 = 0;
   goto llvm_cbe_bb18291;
 
 llvm_cbe_bb18351:
-  v1834 = 0;   /* for PHI node */
+  v1834 = 0;
   goto llvm_cbe_bb18352;
 
 llvm_cbe_lAF5C:
@@ -19263,7 +19263,7 @@ llvm_cbe_bb21619:
   Z = (((v2165 == 0)));
   N = (((((v2165 >> 7)))));
   if (v2164 == 0) {
-    v2168 = v2165;   /* for PHI node */
+    v2168 = v2165;
     goto llvm_cbe_lB18F;
   } else {
     goto llvm_cbe_bb21660;
@@ -19273,7 +19273,7 @@ llvm_cbe_bb21607:
   if ((((v2159 ^ v2160) & 128u) == 0u)) {
     goto llvm_cbe_bb21618;
   } else {
-    v2162 = 1;   /* for PHI node */
+    v2162 = 1;
     goto llvm_cbe_bb21619;
   }
 
@@ -19335,7 +19335,7 @@ llvm_cbe_lB185_2e_loopexit:
   goto llvm_cbe_lB185;
 
 llvm_cbe_bb21618:
-  v2162 = 0;   /* for PHI node */
+  v2162 = 0;
   goto llvm_cbe_bb21619;
 
 llvm_cbe_bb21660:
@@ -19343,7 +19343,7 @@ llvm_cbe_bb21660:
   Y = v2166;
   Z = (((v2166 == 0)));
   N = (((((v2166 >> 7)))));
-  v2168 = v2166;   /* for PHI node */
+  v2168 = v2166;
   goto llvm_cbe_lB18F;
 
 llvm_cbe_lB1A0:
@@ -19374,7 +19374,7 @@ llvm_cbe_bb21809:
   Z = (((v2189 == 0)));
   N = (((((v2189 >> 7)))));
   if (v2188 == 0) {
-    v2192 = v2189;   /* for PHI node */
+    v2192 = v2189;
     goto llvm_cbe_lB1A0;
   } else {
     goto llvm_cbe_bb21850;
@@ -19384,7 +19384,7 @@ llvm_cbe_bb21797:
   if ((((v2181 ^ v2184) & 128u) == 0u)) {
     goto llvm_cbe_bb21808;
   } else {
-    v2186 = 1;   /* for PHI node */
+    v2186 = 1;
     goto llvm_cbe_bb21809;
   }
 
@@ -19409,7 +19409,7 @@ llvm_cbe_bb21743:
   if ((((v2177 ^ v2178) & 128u) == 0u)) {
     goto llvm_cbe_bb21754;
   } else {
-    v2180 = 1;   /* for PHI node */
+    v2180 = 1;
     goto llvm_cbe_bb21755;
   }
 
@@ -19450,11 +19450,11 @@ llvm_cbe_lB261:
   goto llvm_cbe_lB194;
 
 llvm_cbe_bb21754:
-  v2180 = 0;   /* for PHI node */
+  v2180 = 0;
   goto llvm_cbe_bb21755;
 
 llvm_cbe_bb21808:
-  v2186 = 0;   /* for PHI node */
+  v2186 = 0;
   goto llvm_cbe_bb21809;
 
 llvm_cbe_bb21850:
@@ -19462,7 +19462,7 @@ llvm_cbe_bb21850:
   Y = v2190;
   Z = (((v2190 == 0)));
   N = (((((v2190 >> 7)))));
-  v2192 = v2190;   /* for PHI node */
+  v2192 = v2190;
   goto llvm_cbe_lB1A0;
 
 llvm_cbe_lB34B:
@@ -19495,7 +19495,7 @@ llvm_cbe_bb24596:
   if ((((v2462 ^ v2464) & 128u) == 0u)) {
     goto llvm_cbe_bb24607;
   } else {
-    v2466 = 1;   /* for PHI node */
+    v2466 = 1;
     goto llvm_cbe_bb24608;
   }
 
@@ -19524,7 +19524,7 @@ llvm_cbe_bb24529:
   if ((((v2452 ^ v2455) & 128u) == 0u)) {
     goto llvm_cbe_bb24540;
   } else {
-    v2457 = 1;   /* for PHI node */
+    v2457 = 1;
     goto llvm_cbe_bb24541;
   }
 
@@ -19543,11 +19543,11 @@ llvm_cbe_lB33E:
   }
 
 llvm_cbe_bb24540:
-  v2457 = 0;   /* for PHI node */
+  v2457 = 0;
   goto llvm_cbe_bb24541;
 
 llvm_cbe_bb24607:
-  v2466 = 0;   /* for PHI node */
+  v2466 = 0;
   goto llvm_cbe_bb24608;
 
 llvm_cbe_bb25109:
@@ -19738,7 +19738,7 @@ llvm_cbe_bb28750:
   if ((((v2892 ^ v2893) & 128u) == 0u)) {
     goto llvm_cbe_bb28761;
   } else {
-    v2895 = 1;   /* for PHI node */
+    v2895 = 1;
     goto llvm_cbe_bb28762;
   }
 
@@ -19767,8 +19767,8 @@ llvm_cbe_lB5BD:
   Z = (((v2858 == 0)));
   N = (((((v2858 >> 7)))));
   if ((((s8 )v2858) < ((s8 )0))) {
-    v2889 = v2855;   /* for PHI node */
-    v2891 = v2854;   /* for PHI node */
+    v2889 = v2855;
+    v2891 = v2854;
     goto llvm_cbe_lB5F6;
   } else {
     goto llvm_cbe_bb28389;
@@ -19791,8 +19791,8 @@ llvm_cbe_bb28389:
   if ((((s8 )v2860) < ((s8 )0))) {
     goto llvm_cbe_bb28430;
   } else {
-    v2889 = v2855;   /* for PHI node */
-    v2891 = v2854;   /* for PHI node */
+    v2889 = v2855;
+    v2891 = v2854;
     goto llvm_cbe_lB5F6;
   }
 
@@ -19806,8 +19806,8 @@ llvm_cbe_lB5C7:
   Z = (((v2866 == 0)));
   N = (((((v2866 >> 7)))));
   if (v2866 == 0) {
-    v2889 = v2863;   /* for PHI node */
-    v2891 = v2862;   /* for PHI node */
+    v2889 = v2863;
+    v2891 = v2862;
     goto llvm_cbe_lB5F6;
   } else {
     goto llvm_cbe_bb28471;
@@ -19838,8 +19838,8 @@ llvm_cbe_bb28584:
   if (((v2873 & 255u) == 0u)) {
     goto llvm_cbe_bb28589;
   } else {
-    v2889 = v2863;   /* for PHI node */
-    v2891 = v2862;   /* for PHI node */
+    v2889 = v2863;
+    v2891 = v2862;
     goto llvm_cbe_lB5F6;
   }
 
@@ -19873,8 +19873,8 @@ llvm_cbe_bb28589:
   Z = ((((v2877 & 255u) == 0u)));
   N = (((((v2876 >> 7)))));
   if (v2878 == 0) {
-    v2889 = v2863;   /* for PHI node */
-    v2891 = v2862;   /* for PHI node */
+    v2889 = v2863;
+    v2891 = v2862;
     goto llvm_cbe_lB5F6;
   } else {
     goto llvm_cbe_lB5DC;
@@ -19891,8 +19891,8 @@ llvm_cbe_lB5DC:
   if (v2882 == 0) {
     goto llvm_cbe_bb28646;
   } else {
-    v2889 = v2863;   /* for PHI node */
-    v2891 = v2862;   /* for PHI node */
+    v2889 = v2863;
+    v2891 = v2862;
     goto llvm_cbe_lB5F6;
   }
 
@@ -19907,8 +19907,8 @@ llvm_cbe_bb28651:
   if (v2886 == 0) {
     goto llvm_cbe_lB5E6;
   } else {
-    v2889 = v2863;   /* for PHI node */
-    v2891 = v2862;   /* for PHI node */
+    v2889 = v2863;
+    v2891 = v2862;
     goto llvm_cbe_lB5F6;
   }
 
@@ -19930,12 +19930,12 @@ llvm_cbe_lB5E6:
   Z = (((v2887 == 0)));
   N = (((((v2887 >> 7)))));
   *((&RAM[85u])) = v2887;
-  v2889 = v2863;   /* for PHI node */
-  v2891 = v2862;   /* for PHI node */
+  v2889 = v2863;
+  v2891 = v2862;
   goto llvm_cbe_lB5F6;
 
 llvm_cbe_bb28761:
-  v2895 = 0;   /* for PHI node */
+  v2895 = 0;
   goto llvm_cbe_bb28762;
 
 llvm_cbe_bb28792:
@@ -19978,7 +19978,7 @@ llvm_cbe_bb29826:
   if ((((v2988 ^ v2991) & 128u) == 0u)) {
     goto llvm_cbe_bb29837;
   } else {
-    v2993 = 1;   /* for PHI node */
+    v2993 = 1;
     goto llvm_cbe_bb29838;
   }
 
@@ -20000,7 +20000,7 @@ llvm_cbe_lB68C:
   Z = (((v2977 == 0)));
   N = (((((v2977 >> 7)))));
   if (v2977 == 0) {
-    v2989 = v2977;   /* for PHI node */
+    v2989 = v2977;
     goto llvm_cbe_lB699;
   } else {
     goto llvm_cbe_bb29719;
@@ -20020,7 +20020,7 @@ llvm_cbe_lB4C3:
   S = v2708;
   *((&RAM[34u])) = v2705;
   *((&RAM[35u])) = v2706;
-  v2976 = v2708;   /* for PHI node */
+  v2976 = v2708;
   goto llvm_cbe_lB68C;
 
 llvm_cbe_lB66A:
@@ -20029,7 +20029,7 @@ llvm_cbe_lB66A:
   *((&RAM[(((((((v2957 - 1))))) | 256u))])) = 108;
   v2958 = ((v2957 - 2));
   S = v2958;
-  v2976 = v2958;   /* for PHI node */
+  v2976 = v2958;
   goto llvm_cbe_lB68C;
 
 llvm_cbe_lB67A:
@@ -20053,7 +20053,7 @@ llvm_cbe_lB67A:
   N = (((((v2974 >> 7)))));
   *((&RAM[34u])) = v2972;
   *((&RAM[35u])) = v2973;
-  v2976 = v2965;   /* for PHI node */
+  v2976 = v2965;
   goto llvm_cbe_lB68C;
 
 llvm_cbe_lAA59:
@@ -20070,7 +20070,7 @@ llvm_cbe_lAA59:
   v1188 = ((v1187 - 1));
   S = v1188;
   *((&RAM[((v1188 | 256u))])) = 99;
-  v2964 = v1188;   /* for PHI node */
+  v2964 = v1188;
   goto llvm_cbe_lB67A;
 
 llvm_cbe_lB660:
@@ -20079,7 +20079,7 @@ llvm_cbe_lB660:
   v2953 = ((v2952 - 1));
   S = v2953;
   *((&RAM[((v2953 | 256u))])) = 98;
-  v2964 = v2953;   /* for PHI node */
+  v2964 = v2953;
   goto llvm_cbe_lB67A;
 
 llvm_cbe_lB725:
@@ -20089,7 +20089,7 @@ llvm_cbe_lB725:
   *llvm_cbe_tmp30820 = -73;
   *((&RAM[((v3120 | 256u))])) = 40;
   S = v3119;
-  v2976 = v3119;   /* for PHI node */
+  v2976 = v3119;
   goto llvm_cbe_lB68C;
 
 llvm_cbe_bb30862:
@@ -20112,7 +20112,7 @@ llvm_cbe_bb30850:
   if ((((v3126 ^ v3128) & 128u) == 0u)) {
     goto llvm_cbe_bb30861;
   } else {
-    v3130 = 1;   /* for PHI node */
+    v3130 = 1;
     goto llvm_cbe_bb30862;
   }
 
@@ -20140,7 +20140,7 @@ llvm_cbe_lB719:
   }
 
 llvm_cbe_bb30861:
-  v3130 = 0;   /* for PHI node */
+  v3130 = 0;
   goto llvm_cbe_bb30862;
 
 llvm_cbe_bb30892:
@@ -20158,7 +20158,7 @@ llvm_cbe_bb29790:
   A = v2987;
   Z = (((v2987 == 0)));
   N = (((((v2987 >> 7)))));
-  v2989 = v2987;   /* for PHI node */
+  v2989 = v2987;
   goto llvm_cbe_lB699;
 
   do {     /* Syntactic loop 'lB690' to make GCC happy */
@@ -20175,7 +20175,7 @@ llvm_cbe_lB690:
   if (v2986 == v2977) {
     goto llvm_cbe_bb29790;
   } else {
-    v2979 = v2986;   /* for PHI node */
+    v2979 = v2986;
     goto llvm_cbe_lB690;
   }
 
@@ -20183,11 +20183,11 @@ llvm_cbe_lB690:
 llvm_cbe_bb29719:
   *((&RAM[((v2975 | 256u))])) = v2977;
   S = (((v2975 - 1)));
-  v2979 = 0;   /* for PHI node */
+  v2979 = 0;
   goto llvm_cbe_lB690;
 
 llvm_cbe_bb29837:
-  v2993 = 0;   /* for PHI node */
+  v2993 = 0;
   goto llvm_cbe_bb29838;
 
 llvm_cbe_bb29868:
@@ -20308,7 +20308,7 @@ llvm_cbe_bb30252:
   if ((((v3029 ^ v3040) & 128u) == 0u)) {
     goto llvm_cbe_bb30263;
   } else {
-    v3042 = 1;   /* for PHI node */
+    v3042 = 1;
     goto llvm_cbe_bb30264;
   }
 
@@ -20325,7 +20325,7 @@ llvm_cbe_bb30228:
   }
 
 llvm_cbe_bb30263:
-  v3042 = 0;   /* for PHI node */
+  v3042 = 0;
   goto llvm_cbe_bb30264;
 
 llvm_cbe_bb30294:
@@ -20379,9 +20379,9 @@ llvm_cbe_lAA68:
   v1196 = ((v1195 - 1));
   S = v1196;
   *((&RAM[((v1196 | 256u))])) = 110;
-  v3053 = v1189;   /* for PHI node */
-  v3055 = v1191;   /* for PHI node */
-  v3057 = v1196;   /* for PHI node */
+  v3053 = v1189;
+  v3055 = v1191;
+  v3057 = v1196;
   goto llvm_cbe_lB6DB;
 
 llvm_cbe_lAA4B:
@@ -20390,9 +20390,9 @@ llvm_cbe_lAA4B:
   N = (((((v1162 >> 7)))));
   Y = v1163;
   v1183 = ((v1163 == 0));
-  v1190 = v1162;   /* for PHI node */
-  v1192 = v1163;   /* for PHI node */
-  v1194 = v1183;   /* for PHI node */
+  v1190 = v1162;
+  v1192 = v1163;
+  v1194 = v1183;
   goto llvm_cbe_lAA68;
 
 llvm_cbe_lAA64:
@@ -20400,9 +20400,9 @@ llvm_cbe_lAA64:
   Z = 0;
   N = 0;
   Y = 0;
-  v1190 = 97;   /* for PHI node */
-  v1192 = 0;   /* for PHI node */
-  v1194 = 1;   /* for PHI node */
+  v1190 = 97;
+  v1192 = 0;
+  v1194 = 1;
   goto llvm_cbe_lAA68;
 
 llvm_cbe_lB6AA:
@@ -20415,9 +20415,9 @@ llvm_cbe_lB6AA:
   v3011 = ((v3010 - 1));
   S = v3011;
   *((&RAM[((v3011 | 256u))])) = -80;
-  v3053 = v3008;   /* for PHI node */
-  v3055 = v3006;   /* for PHI node */
-  v3057 = v3011;   /* for PHI node */
+  v3053 = v3008;
+  v3055 = v3006;
+  v3057 = v3011;
   goto llvm_cbe_lB6DB;
 
 llvm_cbe_lB037:
@@ -20437,8 +20437,8 @@ llvm_cbe_lB037:
   *((&RAM[((v1965 | 256u))])) = -80;
   *((&RAM[(((((((v1965 - 1))))) | 256u))])) = 67;
   S = (((v1965 - 2)));
-  v3007 = v1964;   /* for PHI node */
-  v3009 = v1963;   /* for PHI node */
+  v3007 = v1964;
+  v3009 = v1963;
   goto llvm_cbe_lB6AA;
 
 llvm_cbe_lB663:
@@ -20452,8 +20452,8 @@ llvm_cbe_lB663:
   *((&RAM[((v2956 | 256u))])) = -74;
   *((&RAM[(((((((v2956 - 1))))) | 256u))])) = 105;
   S = (((v2956 - 2)));
-  v3007 = v2955;   /* for PHI node */
-  v3009 = v2954;   /* for PHI node */
+  v3007 = v2955;
+  v3009 = v2954;
   goto llvm_cbe_lB6AA;
 
 llvm_cbe_lB66D:
@@ -20467,8 +20467,8 @@ llvm_cbe_lB66D:
   *((&RAM[((v2961 | 256u))])) = -74;
   *((&RAM[(((((((v2961 - 1))))) | 256u))])) = 115;
   S = (((v2961 - 2)));
-  v3007 = v2960;   /* for PHI node */
-  v3009 = v2959;   /* for PHI node */
+  v3007 = v2960;
+  v3009 = v2959;
   goto llvm_cbe_lB6AA;
 
 llvm_cbe_lB6A6:
@@ -20478,8 +20478,8 @@ llvm_cbe_lB6A6:
   Y = v3005;
   Z = (((v3005 == 0)));
   N = (((((v3005 >> 7)))));
-  v3007 = v3005;   /* for PHI node */
-  v3009 = v3004;   /* for PHI node */
+  v3007 = v3005;
+  v3009 = v3004;
   goto llvm_cbe_lB6AA;
 
 llvm_cbe_bb11513:
@@ -20571,8 +20571,8 @@ llvm_cbe_lB712:
   *((&RAM[((v3118 | 256u))])) = -73;
   *((&RAM[(((((((v3118 - 1))))) | 256u))])) = 24;
   S = (((v3118 - 2)));
-  v3007 = v3117;   /* for PHI node */
-  v3009 = v3116;   /* for PHI node */
+  v3007 = v3117;
+  v3009 = v3116;
   goto llvm_cbe_lB6AA;
 
 llvm_cbe_bb30376:
@@ -20803,14 +20803,14 @@ llvm_cbe_lB8FB:
 llvm_cbe_lB8F9:
   v3429 = v3430;
   *((&RAM[97u])) = v3429;
-  v3432 = v3429;   /* for PHI node */
+  v3432 = v3429;
   goto llvm_cbe_lB8FB;
 
 llvm_cbe_lB8F7:
   A = 0;
   Z = 1;
   N = 0;
-  v3430 = 0;   /* for PHI node */
+  v3430 = 0;
   goto llvm_cbe_lB8F9;
 
 llvm_cbe_lB7B0:
@@ -20841,7 +20841,7 @@ llvm_cbe_bb43196:
   Z = (((v4474 == 0)));
   N = (((((v4474 >> 7)))));
   if (v4474 == 0) {
-    v3430 = v4474;   /* for PHI node */
+    v3430 = v4474;
     goto llvm_cbe_lB8F9;
   } else {
     goto llvm_cbe_lBF84;
@@ -20865,7 +20865,7 @@ llvm_cbe_bb36572:
   C = ((((((((v3787 >> 8u))))) & 1)));
   *((&RAM[97u])) = v3790;
   if (v3790 == 0) {
-    v3432 = v3790;   /* for PHI node */
+    v3432 = v3790;
     goto llvm_cbe_lB8FB;
   } else {
     goto llvm_cbe_lBACF;
@@ -20875,7 +20875,7 @@ llvm_cbe_bb36560:
   if ((((v3780 ^ v3787) & 128u) == 0u)) {
     goto llvm_cbe_bb36571;
   } else {
-    v3789 = 1;   /* for PHI node */
+    v3789 = 1;
     goto llvm_cbe_bb36572;
   }
 
@@ -20894,20 +20894,20 @@ llvm_cbe_bb36520:
   Z = (((v3784 == 0)));
   N = (((((v3784 >> 7)))));
   V = ((((((((v3784 >> 6))))) & 1)));
-  v3786 = 0;   /* for PHI node */
+  v3786 = 0;
   goto llvm_cbe_lBAC6;
 
 llvm_cbe_lBAC4:
   if (v3781 == 0) {
-    v3797 = v3772;   /* for PHI node */
+    v3797 = v3772;
     goto llvm_cbe_lBADA;
   } else {
-    v3786 = v3783;   /* for PHI node */
+    v3786 = v3783;
     goto llvm_cbe_lBAC6;
   }
 
 llvm_cbe_bb36571:
-  v3789 = 0;   /* for PHI node */
+  v3789 = 0;
   goto llvm_cbe_bb36572;
 
 llvm_cbe_lBADA:
@@ -20917,7 +20917,7 @@ llvm_cbe_lBADA:
   Z = 1;
   N = 0;
   *((&RAM[97u])) = 0;
-  v3432 = 0;   /* for PHI node */
+  v3432 = 0;
   goto llvm_cbe_lB8FB;
 
 llvm_cbe_lB946:
@@ -20988,10 +20988,10 @@ llvm_cbe_lB94D:
   Z = (((v3541 == 0)));
   N = (((((v3542 >> 7)))));
   if (v3541 == 0) {
-    v3544 = v3535;   /* for PHI node */
+    v3544 = v3535;
     goto llvm_cbe_lB96F;
   } else {
-    v3554 = v3535;   /* for PHI node */
+    v3554 = v3535;
     goto llvm_cbe_lB97D;
   }
 
@@ -21007,7 +21007,7 @@ llvm_cbe_bb33373:
   Z = (((v3397 == 0xff)));
   N = (((((v3398 >> 7)))));
   *((&RAM[102u])) = v3398;
-  v3536 = v3396;   /* for PHI node */
+  v3536 = v3396;
   goto llvm_cbe_lB94D;
 
 llvm_cbe_bb39555:
@@ -21021,7 +21021,7 @@ llvm_cbe_bb39555:
   *((&RAM[(((((((v4131 - 1))))) | 256u))])) = -83;
   v4132 = ((v4131 - 2));
   S = v4132;
-  v3536 = v4132;   /* for PHI node */
+  v3536 = v4132;
   goto llvm_cbe_lB94D;
 
 llvm_cbe_bb39509:
@@ -21034,7 +21034,7 @@ llvm_cbe_bb39509:
   N = v4130;
   V = ((((((((v4129 >> 6))))) & 1)));
   if (v4130 == 0) {
-    v4135 = v4128;   /* for PHI node */
+    v4135 = v4128;
     goto llvm_cbe_lBCAF;
   } else {
     goto llvm_cbe_bb39555;
@@ -21107,14 +21107,14 @@ llvm_cbe_lAFE6:
   Z = (((v1933 == 0)));
   N = (((((v1933 >> 7)))));
   V = ((((((((v1933 >> 6))))) & 1)));
-  v1935 = -1;   /* for PHI node */
+  v1935 = -1;
   goto llvm_cbe_lAFEB;
 
 llvm_cbe_lAFE9:
   Y = 0;
   Z = 1;
   N = 0;
-  v1935 = 0;   /* for PHI node */
+  v1935 = 0;
   goto llvm_cbe_lAFEB;
 
 llvm_cbe_lAFFF:
@@ -21219,7 +21219,7 @@ llvm_cbe_lB96F:
   if (v3546 == 0) {
     goto llvm_cbe_bb34570;
   } else {
-    v3554 = v3543;   /* for PHI node */
+    v3554 = v3543;
     goto llvm_cbe_lB97D;
   }
 
@@ -21229,7 +21229,7 @@ llvm_cbe_lBC23:
   *((&RAM[(((((((v4032 - 1))))) | 256u))])) = 37;
   v4034 = ((v4032 - 2));
   S = v4034;
-  v3544 = v4034;   /* for PHI node */
+  v3544 = v4034;
   goto llvm_cbe_lB96F;
 
 llvm_cbe_bb38702:
@@ -21243,7 +21243,7 @@ llvm_cbe_bb38702:
   if (v4030 == 0) {
     goto llvm_cbe_lBC1A;
   } else {
-    v4033 = v4026;   /* for PHI node */
+    v4033 = v4026;
     goto llvm_cbe_lBC23;
   }
 
@@ -21265,14 +21265,14 @@ llvm_cbe_bb11344:
   *((&RAM[(((((((v1102 - 1))))) | 256u))])) = -58;
   v1104 = ((v1102 - 2));
   S = v1104;
-  v4027 = v1104;   /* for PHI node */
+  v4027 = v1104;
   goto llvm_cbe_lBC1B;
 
 llvm_cbe_lA9C2:
   if (v1101 == 0) {
     goto llvm_cbe_lBBD0;
   } else {
-    v1103 = v1099;   /* for PHI node */
+    v1103 = v1099;
     goto llvm_cbe_bb11344;
   }
 
@@ -21290,7 +21290,7 @@ llvm_cbe_lAC8C:
   if (v1497 == 0) {
     goto llvm_cbe_lBBD0;
   } else {
-    v1103 = v1499;   /* for PHI node */
+    v1103 = v1499;
     goto llvm_cbe_bb11344;
   }
 
@@ -21300,7 +21300,7 @@ llvm_cbe_lAE43:
   *((&RAM[(((((((v1709 - 1))))) | 256u))])) = 69;
   v1710 = ((v1709 - 2));
   S = v1710;
-  v4027 = v1710;   /* for PHI node */
+  v4027 = v1710;
   goto llvm_cbe_lBC1B;
 
 llvm_cbe_lA778:
@@ -21338,7 +21338,7 @@ llvm_cbe_lA7A2:
   *((&RAM[(((((((v775 - 1))))) | 256u))])) = -92;
   v776 = ((v775 - 2));
   S = v776;
-  v1703 = v776;   /* for PHI node */
+  v1703 = v776;
   goto llvm_cbe_lAE38;
 
 llvm_cbe_lADFA:
@@ -21363,7 +21363,7 @@ llvm_cbe_lADFA:
   X = v1682;
   Z = (((v1682 == 0)));
   N = (((((v1682 >> 7)))));
-  v1703 = v1680;   /* for PHI node */
+  v1703 = v1680;
   goto llvm_cbe_lAE38;
 
 llvm_cbe_lADF9:
@@ -21372,7 +21372,7 @@ llvm_cbe_lADF9:
   *((&RAM[((v1670 | 256u))])) = v1671;
   v1672 = ((v1670 - 1));
   S = v1672;
-  v1674 = v1672;   /* for PHI node */
+  v1674 = v1672;
   goto llvm_cbe_lADFA;
 
 llvm_cbe_lAF0F:
@@ -21383,7 +21383,7 @@ llvm_cbe_lAF0F:
   A = v1815;
   Z = (((v1815 == 0)));
   N = (((((v1815 >> 7)))));
-  v1674 = v1814;   /* for PHI node */
+  v1674 = v1814;
   goto llvm_cbe_lADFA;
 
 llvm_cbe_bb17786:
@@ -21404,7 +21404,7 @@ llvm_cbe_bb36905:
   *((&RAM[(((((((v3830 - 1))))) | 256u))])) = 22;
   v3831 = ((v3830 - 2));
   S = v3831;
-  v4027 = v3831;   /* for PHI node */
+  v4027 = v3831;
   goto llvm_cbe_lBC1B;
 
 llvm_cbe_lBBD4:
@@ -21413,7 +21413,7 @@ llvm_cbe_lBBD4:
   *((&RAM[(((((((v3976 - 1))))) | 256u))])) = -42;
   v3977 = ((v3976 - 2));
   S = v3977;
-  v4027 = v3977;   /* for PHI node */
+  v4027 = v3977;
   goto llvm_cbe_lBC1B;
 
 llvm_cbe_bb25910:
@@ -21439,7 +21439,7 @@ llvm_cbe_lB418:
   if ((((s8 )(((v2597 - 1)))) < ((s8 )0))) {
     goto llvm_cbe_bb25910;
   } else {
-    v2596 = (((v2595 + 1)));   /* for PHI node */
+    v2596 = (((v2595 + 1)));
     goto llvm_cbe_lB418;
   }
 
@@ -21449,7 +21449,7 @@ llvm_cbe_bb25849:
   Y = 4;
   Z = 0;
   N = 0;
-  v2596 = 0;   /* for PHI node */
+  v2596 = 0;
   goto llvm_cbe_lB418;
 
 llvm_cbe_lBBCC:
@@ -21476,7 +21476,7 @@ llvm_cbe_lE043:
   v4559 = ((v4558 - 1));
   S = v4559;
   *((&RAM[((v4559 | 256u))])) = 73;
-  v3973 = v4559;   /* for PHI node */
+  v3973 = v4559;
   goto llvm_cbe_lBBCA;
 
 llvm_cbe_lBA12:
@@ -21488,8 +21488,8 @@ llvm_cbe_lBA12:
   *((&RAM[((v3658 | 256u))])) = -70;
   *((&RAM[(((((((v3658 - 1))))) | 256u))])) = 24;
   S = (((v3658 - 2)));
-  v4555 = -71;   /* for PHI node */
-  v4557 = -63;   /* for PHI node */
+  v4555 = -71;
+  v4557 = -63;
   goto llvm_cbe_lE043;
 
 llvm_cbe_lE2AD:
@@ -21497,8 +21497,8 @@ llvm_cbe_lE2AD:
   Y = -30;
   Z = 0;
   N = 1;
-  v4555 = -30;   /* for PHI node */
-  v4557 = -17;   /* for PHI node */
+  v4555 = -30;
+  v4557 = -17;
   goto llvm_cbe_lE043;
 
 llvm_cbe_lE2A7:
@@ -21525,8 +21525,8 @@ llvm_cbe_lE324:
   *((&RAM[((v4837 | 256u))])) = -29;
   *((&RAM[(((((((v4837 - 1))))) | 256u))])) = 42;
   S = (((v4837 - 2)));
-  v4555 = -29;   /* for PHI node */
-  v4557 = 62;   /* for PHI node */
+  v4555 = -29;
+  v4557 = 62;
   goto llvm_cbe_lE043;
 
 llvm_cbe_lE316:
@@ -21570,7 +21570,7 @@ llvm_cbe_lE2B4:
   v4821 = ((v4820 - 1));
   S = v4821;
   *((&RAM[((v4821 | 256u))])) = -74;
-  v3973 = v4821;   /* for PHI node */
+  v3973 = v4821;
   goto llvm_cbe_lBBCA;
 
 llvm_cbe_lE05D:
@@ -21597,7 +21597,7 @@ llvm_cbe_lE033:
   S = v4544;
   *((&RAM[113u])) = -60;
   *((&RAM[114u])) = -65;
-  v4564 = v4544;   /* for PHI node */
+  v4564 = v4544;
   goto llvm_cbe_lE05D;
 
 llvm_cbe_lE04F:
@@ -21606,7 +21606,7 @@ llvm_cbe_lE04F:
   *((&RAM[(((((((v4561 - 1))))) | 256u))])) = 81;
   v4562 = ((v4561 - 2));
   S = v4562;
-  v4564 = v4562;   /* for PHI node */
+  v4564 = v4562;
   goto llvm_cbe_lE05D;
 
 llvm_cbe_lBBD0:
@@ -21660,7 +21660,7 @@ llvm_cbe_lBC0C:
   *((&RAM[(((((((v4012 - 1))))) | 256u))])) = 14;
   v4014 = ((v4012 - 2));
   S = v4014;
-  v4027 = v4014;   /* for PHI node */
+  v4027 = v4014;
   goto llvm_cbe_lBC1B;
 
 llvm_cbe_lA9FC:
@@ -21669,7 +21669,7 @@ llvm_cbe_lA9FC:
   *((&RAM[(((((((v1135 - 1))))) | 256u))])) = -2;
   v1136 = ((v1135 - 2));
   S = v1136;
-  v4013 = v1136;   /* for PHI node */
+  v4013 = v1136;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_lBAE2:
@@ -21678,7 +21678,7 @@ llvm_cbe_lBAE2:
   *((&RAM[(((((((v3798 - 1))))) | 256u))])) = -28;
   v3800 = ((v3798 - 2));
   S = v3800;
-  v4013 = v3800;   /* for PHI node */
+  v4013 = v3800;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_lA9F2:
@@ -21687,7 +21687,7 @@ llvm_cbe_lA9F2:
   *((&RAM[(((((((v1129 - 1))))) | 256u))])) = -12;
   v1130 = ((v1129 - 2));
   S = v1130;
-  v3799 = v1130;   /* for PHI node */
+  v3799 = v1130;
   goto llvm_cbe_lBAE2;
 
 llvm_cbe_bb11733:
@@ -21696,7 +21696,7 @@ llvm_cbe_bb11733:
   *((&RAM[(((((((v1144 - 1))))) | 256u))])) = 16;
   v1145 = ((v1144 - 2));
   S = v1145;
-  v3799 = v1145;   /* for PHI node */
+  v3799 = v1145;
   goto llvm_cbe_lBAE2;
 
 llvm_cbe_lAA07:
@@ -21711,7 +21711,7 @@ llvm_cbe_lAA07:
   if (((v1143 & 255u) == 0u)) {
     goto llvm_cbe_bb11733;
   } else {
-    v1126 = v1141;   /* for PHI node */
+    v1126 = v1141;
     goto llvm_cbe_lA9ED;
   }
 
@@ -21721,7 +21721,7 @@ llvm_cbe_lBD5B:
   *((&RAM[(((((((v4241 - 1))))) | 256u))])) = 93;
   v4242 = ((v4241 - 2));
   S = v4242;
-  v3799 = v4242;   /* for PHI node */
+  v3799 = v4242;
   goto llvm_cbe_lBAE2;
 
 llvm_cbe_bb40489:
@@ -21751,7 +21751,7 @@ llvm_cbe_bb40452:
   if ((((((((v4230 ^ v4228))))) & 128u) == 0u)) {
     goto llvm_cbe_bb40463;
   } else {
-    v4234 = 1;   /* for PHI node */
+    v4234 = 1;
     goto llvm_cbe_bb40464;
   }
 
@@ -21775,14 +21775,14 @@ llvm_cbe_bb40348:
   Z = (((v4222 == 0)));
   N = (((((v4222 >> 7)))));
   C = (((((((((((v4219 >> 8u))))) & 1))) ^ 1)));
-  v4229 = v4222;   /* for PHI node */
+  v4229 = v4222;
   goto llvm_cbe_lBD49;
 
 llvm_cbe_bb40336:
   if (((v4217 & 128u) == 0u)) {
     goto llvm_cbe_bb40347;
   } else {
-    v4221 = 1;   /* for PHI node */
+    v4221 = 1;
     goto llvm_cbe_bb40348;
   }
 
@@ -21844,7 +21844,7 @@ llvm_cbe_bb40152:
   Z = ((((v4202 & 255u) == 0u)));
   N = (((((v4201 >> 7)))));
   if (((v4202 & 255u) == 0u)) {
-    v4209 = v4203;   /* for PHI node */
+    v4209 = v4203;
     goto llvm_cbe_lBD2E;
   } else {
     goto llvm_cbe_bb40179;
@@ -21860,14 +21860,14 @@ llvm_cbe_bb40125:
   Z = ((((v4199 & 255u) == 0u)));
   N = (((((v4198 >> 7)))));
   if (((v4199 & 255u) == 0u)) {
-    v4209 = v4200;   /* for PHI node */
+    v4209 = v4200;
     goto llvm_cbe_lBD2E;
   } else {
     goto llvm_cbe_bb40152;
   }
 
 llvm_cbe_bb40347:
-  v4221 = 0;   /* for PHI node */
+  v4221 = 0;
   goto llvm_cbe_bb40348;
 
 llvm_cbe_lBD47:
@@ -21875,7 +21875,7 @@ llvm_cbe_lBD47:
   A = v4227;
   Z = (((v4227 == 0)));
   N = (((((v4227 >> 7)))));
-  v4229 = v4227;   /* for PHI node */
+  v4229 = v4227;
   goto llvm_cbe_lBD49;
 
 llvm_cbe_bb40083:
@@ -21951,7 +21951,7 @@ llvm_cbe_lBCF7:
   if ((((s8 )v4177) < ((s8 )0))) {
     goto llvm_cbe_bb39979;
   } else {
-    v4175 = (((v4174 + 1)));   /* for PHI node */
+    v4175 = (((v4174 + 1)));
     goto llvm_cbe_lBCF7;
   }
 
@@ -21961,7 +21961,7 @@ llvm_cbe_lBCF3:
   X = 10;
   Z = 0;
   N = 0;
-  v4175 = 0;   /* for PHI node */
+  v4175 = 0;
   goto llvm_cbe_lBCF7;
 
 llvm_cbe_lAC89:
@@ -22003,7 +22003,7 @@ llvm_cbe_lBD41:
   }
 
 llvm_cbe_bb40463:
-  v4234 = 0;   /* for PHI node */
+  v4234 = 0;
   goto llvm_cbe_bb40464;
 
 llvm_cbe_lBD5E:
@@ -22023,7 +22023,7 @@ llvm_cbe_lBD71:
   *((&RAM[(((((((v4251 - 2))))) | 256u))])) = 115;
   v4258 = ((v4251 - 3));
   S = v4258;
-  v3799 = v4258;   /* for PHI node */
+  v3799 = v4258;
   goto llvm_cbe_lBAE2;
 
 llvm_cbe_lBD6A:
@@ -22057,7 +22057,7 @@ llvm_cbe_lBE21:
   *((&RAM[(((((((v4333 - 1))))) | 256u))])) = 35;
   v4334 = ((v4333 - 2));
   S = v4334;
-  v3799 = v4334;   /* for PHI node */
+  v3799 = v4334;
   goto llvm_cbe_lBAE2;
 
 llvm_cbe_lBE1D:
@@ -22082,7 +22082,7 @@ llvm_cbe_lBAFE:
   *((&RAM[(((((((v3817 - 2))))) | 256u))])) = 0;
   v3819 = ((v3817 - 3));
   S = v3819;
-  v4013 = v3819;   /* for PHI node */
+  v4013 = v3819;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_lBD52:
@@ -22091,7 +22091,7 @@ llvm_cbe_lBD52:
   v4238 = ((v4237 - 1));
   S = v4238;
   *((&RAM[((v4238 | 256u))])) = 84;
-  v3818 = v4238;   /* for PHI node */
+  v3818 = v4238;
   goto llvm_cbe_lBAFE;
 
 llvm_cbe_lBD55:
@@ -22112,7 +22112,7 @@ llvm_cbe_lBE28:
   v4338 = ((v4337 - 1));
   S = v4338;
   *((&RAM[((v4338 | 256u))])) = 42;
-  v3818 = v4338;   /* for PHI node */
+  v3818 = v4338;
   goto llvm_cbe_lBAFE;
 
 llvm_cbe_bb41452:
@@ -22143,7 +22143,7 @@ llvm_cbe_lBD7E:
   *((&RAM[(((((((v4268 - 2))))) | 256u))])) = -127;
   v4269 = ((v4268 - 3));
   S = v4269;
-  v4013 = v4269;   /* for PHI node */
+  v4013 = v4269;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_lAA27:
@@ -22156,7 +22156,7 @@ llvm_cbe_lAA27:
   Z = (((v1161 == 0)));
   N = (((((v1161 >> 7)))));
   C = (((((((((((v1160 >> 8u))))) & 1))) ^ 1)));
-  v4267 = v1161;   /* for PHI node */
+  v4267 = v1161;
   goto llvm_cbe_lBD7E;
 
 llvm_cbe_lBA20:
@@ -22169,7 +22169,7 @@ llvm_cbe_lBA20:
   *llvm_cbe_tmp35476 = -70;
   *((&RAM[((v3660 | 256u))])) = 35;
   S = (((v3660 - 1)));
-  v4267 = v3662;   /* for PHI node */
+  v4267 = v3662;
   goto llvm_cbe_lBD7E;
 
 llvm_cbe_lBD74:
@@ -22193,7 +22193,7 @@ llvm_cbe_lBD74:
   *llvm_cbe_tmp40651 = -67;
   *((&RAM[((v4259 | 256u))])) = 122;
   S = (((v4259 - 1)));
-  v4267 = v4265;   /* for PHI node */
+  v4267 = v4265;
   goto llvm_cbe_lBD7E;
 
 llvm_cbe_lBF71:
@@ -22202,7 +22202,7 @@ llvm_cbe_lBF71:
   *((&RAM[(((((((v4470 - 1))))) | 256u))])) = 115;
   v4471 = ((v4470 - 2));
   S = v4471;
-  v4013 = v4471;   /* for PHI node */
+  v4013 = v4471;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_lE26B:
@@ -22211,7 +22211,7 @@ llvm_cbe_lE26B:
   *((&RAM[(((((((v4796 - 1))))) | 256u))])) = 109;
   v4797 = ((v4796 - 2));
   S = v4797;
-  v4013 = v4797;   /* for PHI node */
+  v4013 = v4797;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_lE2B7:
@@ -22231,7 +22231,7 @@ llvm_cbe_lE277:
   *((&RAM[(((((((v4800 - 1))))) | 256u))])) = 121;
   v4801 = ((v4800 - 2));
   S = v4801;
-  v4013 = v4801;   /* for PHI node */
+  v4013 = v4801;
   goto llvm_cbe_lBC0C;
 
 llvm_cbe_bb43610:
@@ -22240,7 +22240,7 @@ llvm_cbe_bb43610:
   *((&RAM[(((((((v4509 - 1))))) | 256u))])) = -4;
   v4510 = ((v4509 - 2));
   S = v4510;
-  v4033 = v4510;   /* for PHI node */
+  v4033 = v4510;
   goto llvm_cbe_lBC23;
 
 llvm_cbe_bb43581:
@@ -22262,7 +22262,7 @@ llvm_cbe_bb43569:
   if ((((v4502 ^ v4504) & 128u) == 0u)) {
     goto llvm_cbe_bb43580;
   } else {
-    v4506 = 1;   /* for PHI node */
+    v4506 = 1;
     goto llvm_cbe_bb43581;
   }
 
@@ -22280,7 +22280,7 @@ llvm_cbe_lBFF4:
   }
 
 llvm_cbe_bb43580:
-  v4506 = 0;   /* for PHI node */
+  v4506 = 0;
   goto llvm_cbe_bb43581;
 
 llvm_cbe_bb34570:
@@ -22292,7 +22292,7 @@ llvm_cbe_bb34570:
   if (v3548 == 0) {
     goto llvm_cbe_bb34588;
   } else {
-    v3554 = v3543;   /* for PHI node */
+    v3554 = v3543;
     goto llvm_cbe_lB97D;
   }
 
@@ -22305,7 +22305,7 @@ llvm_cbe_bb34588:
   if (v3550 == 0) {
     goto llvm_cbe_bb34606;
   } else {
-    v3554 = v3543;   /* for PHI node */
+    v3554 = v3543;
     goto llvm_cbe_lB97D;
   }
 
@@ -22315,7 +22315,7 @@ llvm_cbe_bb34606:
   *((&RAM[98u])) = v3552;
   Z = (((v3552 == 0)));
   N = (((((v3552 >> 7)))));
-  v3554 = v3543;   /* for PHI node */
+  v3554 = v3543;
   goto llvm_cbe_lB97D;
 
 llvm_cbe_lB9BA:
@@ -22346,13 +22346,13 @@ llvm_cbe_bb34824:
   Z = (((v3596 == 0)));
   N = (((((v3596 >> 7)))));
   if (v3595 == 0) {
-    v3641 = v3579;   /* for PHI node */
+    v3641 = v3579;
     goto llvm_cbe_lB9BA;
   } else {
-    v3598 = v3579;   /* for PHI node */
-    v3600 = v3594;   /* for PHI node */
-    v3602 = v3596;   /* for PHI node */
-    v3604 = v3581;   /* for PHI node */
+    v3598 = v3579;
+    v3600 = v3594;
+    v3602 = v3596;
+    v3604 = v3581;
     goto llvm_cbe_lB9A6;
   }
 
@@ -22367,9 +22367,9 @@ llvm_cbe_bb34790:
   v3591 = (((((((v3586 >> 8u))))) & 1));
   C = v3591;
   if ((((((((v3590 == 0) ^ 1)&1)) | (v3589 == 0))&1))) {
-    v3564 = v3581;   /* for PHI node */
-    v3566 = v3579;   /* for PHI node */
-    v3568 = v3589;   /* for PHI node */
+    v3564 = v3581;
+    v3566 = v3579;
+    v3568 = v3589;
     goto llvm_cbe_lB985;
   } else {
     goto llvm_cbe_bb34824;
@@ -22379,7 +22379,7 @@ llvm_cbe_bb34778:
   if ((((v3583 ^ v3586) & 128u) == 0u)) {
     goto llvm_cbe_bb34789;
   } else {
-    v3588 = 1;   /* for PHI node */
+    v3588 = 1;
     goto llvm_cbe_bb34790;
   }
 
@@ -22401,9 +22401,9 @@ llvm_cbe_lB862:
   *((&RAM[(((((((v3311 - 1))))) | 256u))])) = 100;
   v3312 = ((v3311 - 2));
   S = v3312;
-  v3580 = v3312;   /* for PHI node */
-  v3582 = v3339;   /* for PHI node */
-  v3584 = v3337;   /* for PHI node */
+  v3580 = v3312;
+  v3582 = v3339;
+  v3584 = v3337;
   goto llvm_cbe_lB999;
 
 llvm_cbe_lB897:
@@ -22432,15 +22432,15 @@ llvm_cbe_bb32762:
   X = 97;
   Z = 0;
   N = 0;
-  v3338 = v3336;   /* for PHI node */
-  v3340 = 97;   /* for PHI node */
+  v3338 = v3336;
+  v3340 = 97;
   goto llvm_cbe_lB897;
 
 llvm_cbe_bb32750:
   if ((((v3332 ^ v3333) & 128u) == 0u)) {
     goto llvm_cbe_bb32761;
   } else {
-    v3335 = 1;   /* for PHI node */
+    v3335 = 1;
     goto llvm_cbe_bb32762;
   }
 
@@ -22468,7 +22468,7 @@ llvm_cbe_bb32709:
   }
 
 llvm_cbe_bb32761:
-  v3335 = 0;   /* for PHI node */
+  v3335 = 0;
   goto llvm_cbe_bb32762;
 
 llvm_cbe_lB893:
@@ -22476,8 +22476,8 @@ llvm_cbe_lB893:
   Z = 1;
   N = 0;
   *((&RAM[112u])) = 0;
-  v3338 = v3328;   /* for PHI node */
-  v3340 = v3321;   /* for PHI node */
+  v3338 = v3328;
+  v3340 = v3321;
   goto llvm_cbe_lB897;
 
 llvm_cbe_lB985:
@@ -22502,9 +22502,9 @@ llvm_cbe_lB985:
   Z = (((v3578 == 0)));
   N = (((((v3578 >> 7)))));
   *llvm_cbe_tmp34730 = v3578;
-  v3580 = v3565;   /* for PHI node */
-  v3582 = v3563;   /* for PHI node */
-  v3584 = v3567;   /* for PHI node */
+  v3580 = v3565;
+  v3582 = v3563;
+  v3584 = v3567;
   goto llvm_cbe_lB999;
 
 llvm_cbe_lB983:
@@ -22513,9 +22513,9 @@ llvm_cbe_lB983:
   X = 37;
   Z = 0;
   N = 0;
-  v3564 = 37;   /* for PHI node */
-  v3566 = v3559;   /* for PHI node */
-  v3568 = v3561;   /* for PHI node */
+  v3564 = 37;
+  v3566 = v3559;
+  v3568 = v3561;
   goto llvm_cbe_lB985;
 
 llvm_cbe_lBA33:
@@ -22533,11 +22533,11 @@ llvm_cbe_lBA33:
   v3670 = ((v3669 - 2));
   S = v3670;
   if (v3668 == 0) {
-    v3560 = v3670;   /* for PHI node */
-    v3562 = v3668;   /* for PHI node */
+    v3560 = v3670;
+    v3562 = v3668;
     goto llvm_cbe_lB983;
   } else {
-    v3683 = v3668;   /* for PHI node */
+    v3683 = v3668;
     goto llvm_cbe_lBA5E;
   }
 
@@ -22552,11 +22552,11 @@ llvm_cbe_lBA42:
   v3673 = ((v3672 - 2));
   S = v3673;
   if (v3671 == 0) {
-    v3560 = v3673;   /* for PHI node */
-    v3562 = v3671;   /* for PHI node */
+    v3560 = v3673;
+    v3562 = v3671;
     goto llvm_cbe_lB983;
   } else {
-    v3683 = v3671;   /* for PHI node */
+    v3683 = v3671;
     goto llvm_cbe_lBA5E;
   }
 
@@ -22571,11 +22571,11 @@ llvm_cbe_lBA47:
   v3676 = ((v3675 - 2));
   S = v3676;
   if (v3674 == 0) {
-    v3560 = v3676;   /* for PHI node */
-    v3562 = v3674;   /* for PHI node */
+    v3560 = v3676;
+    v3562 = v3674;
     goto llvm_cbe_lB983;
   } else {
-    v3683 = v3674;   /* for PHI node */
+    v3683 = v3674;
     goto llvm_cbe_lBA5E;
   }
 
@@ -22590,11 +22590,11 @@ llvm_cbe_lBA4C:
   v3679 = ((v3678 - 2));
   S = v3679;
   if (v3677 == 0) {
-    v3560 = v3679;   /* for PHI node */
-    v3562 = v3677;   /* for PHI node */
+    v3560 = v3679;
+    v3562 = v3677;
     goto llvm_cbe_lB983;
   } else {
-    v3683 = v3677;   /* for PHI node */
+    v3683 = v3677;
     goto llvm_cbe_lBA5E;
   }
 
@@ -22604,9 +22604,9 @@ llvm_cbe_bb39639:
   *((&RAM[(((((((v4139 - 1))))) | 256u))])) = -73;
   v4140 = ((v4139 - 2));
   S = v4140;
-  v3580 = v4140;   /* for PHI node */
-  v3582 = 97;   /* for PHI node */
-  v3584 = v4134;   /* for PHI node */
+  v3580 = v4140;
+  v3582 = 97;
+  v3584 = v4134;
   goto llvm_cbe_lB999;
 
 llvm_cbe_lBCAF:
@@ -22629,11 +22629,11 @@ llvm_cbe_lBCAE:
   A = v4133;
   Z = (((v4133 == 0)));
   N = (((((v4133 >> 7)))));
-  v4135 = v4133;   /* for PHI node */
+  v4135 = v4133;
   goto llvm_cbe_lBCAF;
 
 llvm_cbe_bb34789:
-  v3588 = 0;   /* for PHI node */
+  v3588 = 0;
   goto llvm_cbe_bb34790;
 
 llvm_cbe_lB9B0:
@@ -22664,13 +22664,13 @@ llvm_cbe_lB9B0:
   Z = (((v3639 == 0)));
   N = (((((v3639 >> 7)))));
   if (v3639 == 0) {
-    v3641 = v3617;   /* for PHI node */
+    v3641 = v3617;
     goto llvm_cbe_lB9BA;
   } else {
-    v3598 = v3617;   /* for PHI node */
-    v3600 = v3639;   /* for PHI node */
-    v3602 = v3638;   /* for PHI node */
-    v3604 = v3625;   /* for PHI node */
+    v3598 = v3617;
+    v3600 = v3639;
+    v3602 = v3638;
+    v3604 = v3625;
     goto llvm_cbe_lB9A6;
   }
 
@@ -22691,11 +22691,11 @@ llvm_cbe_bb32852:
   *((&RAM[(((((((v3349 - 1))))) | 256u))])) = -94;
   v3350 = ((v3349 - 2));
   S = v3350;
-  v3618 = v3350;   /* for PHI node */
-  v3620 = v3337;   /* for PHI node */
-  v3622 = v3344;   /* for PHI node */
-  v3624 = v3347;   /* for PHI node */
-  v3626 = v3339;   /* for PHI node */
+  v3618 = v3350;
+  v3620 = v3337;
+  v3622 = v3344;
+  v3624 = v3347;
+  v3626 = v3339;
   goto llvm_cbe_lB9B0;
 
 llvm_cbe_lB9AC:
@@ -22708,11 +22708,11 @@ llvm_cbe_lB9AC:
   Z = ((((v3616 & 255u) == 0u)));
   N = ((((((((((v3614 >> 8))))))) & 1)));
   *llvm_cbe_tmp34900 = v3616;
-  v3618 = v3597;   /* for PHI node */
-  v3620 = v3599;   /* for PHI node */
-  v3622 = v3601;   /* for PHI node */
-  v3624 = v3615;   /* for PHI node */
-  v3626 = v3603;   /* for PHI node */
+  v3618 = v3597;
+  v3620 = v3599;
+  v3622 = v3601;
+  v3624 = v3615;
+  v3626 = v3603;
   goto llvm_cbe_lB9B0;
 
 llvm_cbe_lB9A6:
@@ -22730,7 +22730,7 @@ llvm_cbe_lB9A6:
   v3609 = v3608;
   *llvm_cbe_tmp34900 = v3609;
   if (v3607 == 0) {
-    v3612 = v3609;   /* for PHI node */
+    v3612 = v3609;
     goto llvm_cbe_lB9AC;
   } else {
     goto llvm_cbe_bb34934;
@@ -22741,7 +22741,7 @@ llvm_cbe_bb34934:
   *llvm_cbe_tmp34900 = v3610;
   Z = 0;
   N = (((((v3610 >> 7)))));
-  v3612 = v3610;   /* for PHI node */
+  v3612 = v3610;
   goto llvm_cbe_lB9AC;
 
 llvm_cbe_lBCBB:
@@ -22760,11 +22760,11 @@ llvm_cbe_lBCBB:
   *((&RAM[(((((((v4151 - 1))))) | 256u))])) = -56;
   v4152 = ((v4151 - 2));
   S = v4152;
-  v3618 = v4152;   /* for PHI node */
-  v3620 = v4134;   /* for PHI node */
-  v3622 = v4150;   /* for PHI node */
-  v3624 = v4149;   /* for PHI node */
-  v3626 = 97;   /* for PHI node */
+  v3618 = v4152;
+  v3620 = v4134;
+  v3622 = v4150;
+  v3624 = v4149;
+  v3626 = 97;
   goto llvm_cbe_lB9B0;
 
 llvm_cbe_lBA8B:
@@ -22804,11 +22804,11 @@ llvm_cbe_lBA61:
   v3701 = v3702;
   v3703 = v3704;
   if (v3701 == 0) {
-    v3727 = v3693;   /* for PHI node */
-    v3729 = v3695;   /* for PHI node */
-    v3731 = v3697;   /* for PHI node */
-    v3733 = v3699;   /* for PHI node */
-    v3735 = v3701;   /* for PHI node */
+    v3727 = v3693;
+    v3729 = v3695;
+    v3731 = v3697;
+    v3733 = v3699;
+    v3735 = v3701;
     goto llvm_cbe_lBA7D;
   } else {
     goto llvm_cbe_bb35720;
@@ -22834,13 +22834,13 @@ llvm_cbe_lBA7D:
   if (v3746 == 0) {
     goto llvm_cbe_lBA8B_2e_loopexit;
   } else {
-    v3692 = v3744;   /* for PHI node */
-    v3694 = v3743;   /* for PHI node */
-    v3696 = v3741;   /* for PHI node */
-    v3698 = v3739;   /* for PHI node */
-    v3700 = v3737;   /* for PHI node */
-    v3702 = v3745;   /* for PHI node */
-    v3704 = v3746;   /* for PHI node */
+    v3692 = v3744;
+    v3694 = v3743;
+    v3696 = v3741;
+    v3698 = v3739;
+    v3700 = v3737;
+    v3702 = v3745;
+    v3704 = v3746;
     goto llvm_cbe_lBA61;
   }
 
@@ -22849,18 +22849,18 @@ llvm_cbe_bb35963:
   V = v3722;
   v3724 = v3721;
   v3725 = (((((((v3721 >> 8u))))) & 1));
-  v3727 = v3709;   /* for PHI node */
-  v3729 = v3714;   /* for PHI node */
-  v3731 = v3719;   /* for PHI node */
-  v3733 = v3724;   /* for PHI node */
-  v3735 = v3725;   /* for PHI node */
+  v3727 = v3709;
+  v3729 = v3714;
+  v3731 = v3719;
+  v3733 = v3724;
+  v3735 = v3725;
   goto llvm_cbe_lBA7D;
 
 llvm_cbe_bb35951:
   if ((((v3699 ^ v3721) & 128u) == 0u)) {
     goto llvm_cbe_bb35962;
   } else {
-    v3723 = 1;   /* for PHI node */
+    v3723 = 1;
     goto llvm_cbe_bb35963;
   }
 
@@ -22880,7 +22880,7 @@ llvm_cbe_bb35884:
   if ((((v3697 ^ v3716) & 128u) == 0u)) {
     goto llvm_cbe_bb35895;
   } else {
-    v3718 = 1;   /* for PHI node */
+    v3718 = 1;
     goto llvm_cbe_bb35896;
   }
 
@@ -22900,7 +22900,7 @@ llvm_cbe_bb35817:
   if ((((v3695 ^ v3711) & 128u) == 0u)) {
     goto llvm_cbe_bb35828;
   } else {
-    v3713 = 1;   /* for PHI node */
+    v3713 = 1;
     goto llvm_cbe_bb35829;
   }
 
@@ -22920,7 +22920,7 @@ llvm_cbe_bb35750:
   if ((((v3693 ^ v3706) & 128u) == 0u)) {
     goto llvm_cbe_bb35761;
   } else {
-    v3708 = 1;   /* for PHI node */
+    v3708 = 1;
     goto llvm_cbe_bb35762;
   }
 
@@ -22934,19 +22934,19 @@ llvm_cbe_bb35720:
   }
 
 llvm_cbe_bb35761:
-  v3708 = 0;   /* for PHI node */
+  v3708 = 0;
   goto llvm_cbe_bb35762;
 
 llvm_cbe_bb35828:
-  v3713 = 0;   /* for PHI node */
+  v3713 = 0;
   goto llvm_cbe_bb35829;
 
 llvm_cbe_bb35895:
-  v3718 = 0;   /* for PHI node */
+  v3718 = 0;
   goto llvm_cbe_bb35896;
 
 llvm_cbe_bb35962:
-  v3723 = 0;   /* for PHI node */
+  v3723 = 0;
   goto llvm_cbe_bb35963;
 
   } while (1); /* end of syntactic loop 'lBA61' */
@@ -22963,13 +22963,13 @@ llvm_cbe_lBA5E:
   v3688 = *((&RAM[40u]));
   v3689 = *((&RAM[41u]));
   v3690 = *((&RAM[112u]));
-  v3692 = v3690;   /* for PHI node */
-  v3694 = v3689;   /* for PHI node */
-  v3696 = v3688;   /* for PHI node */
-  v3698 = v3687;   /* for PHI node */
-  v3700 = v3686;   /* for PHI node */
-  v3702 = v3684;   /* for PHI node */
-  v3704 = v3685;   /* for PHI node */
+  v3692 = v3690;
+  v3694 = v3689;
+  v3696 = v3688;
+  v3698 = v3687;
+  v3700 = v3686;
+  v3702 = v3684;
+  v3704 = v3685;
   goto llvm_cbe_lBA61;
 
 llvm_cbe_lBA51:
@@ -22981,7 +22981,7 @@ llvm_cbe_lBA51:
   *((&RAM[((v3681 | 256u))])) = -70;
   *((&RAM[(((((((v3681 - 1))))) | 256u))])) = 85;
   S = (((v3681 - 2)));
-  v3683 = v3680;   /* for PHI node */
+  v3683 = v3680;
   goto llvm_cbe_lBA5E;
 
 llvm_cbe_lBA8C:
@@ -23027,7 +23027,7 @@ llvm_cbe_lB850:
   *((&RAM[(((((((v3304 - 1))))) | 256u))])) = 82;
   v3306 = ((v3304 - 2));
   S = v3306;
-  v3753 = v3306;   /* for PHI node */
+  v3753 = v3306;
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lBA0B:
@@ -23040,7 +23040,7 @@ llvm_cbe_lBA0B:
   *((&RAM[(((((((v3656 - 1))))) | 256u))])) = 17;
   v3657 = ((v3656 - 2));
   S = v3657;
-  v3305 = v3657;   /* for PHI node */
+  v3305 = v3657;
   goto llvm_cbe_lB850;
 
 llvm_cbe_lE284:
@@ -23053,7 +23053,7 @@ llvm_cbe_lE284:
   *((&RAM[(((((((v4804 - 1))))) | 256u))])) = -118;
   v4805 = ((v4804 - 2));
   S = v4805;
-  v3305 = v4805;   /* for PHI node */
+  v3305 = v4805;
   goto llvm_cbe_lB850;
 
 llvm_cbe_bb46931:
@@ -23065,7 +23065,7 @@ llvm_cbe_bb46931:
   *((&RAM[((v4838 | 256u))])) = 54;
   v4845 = ((v4838 - 1));
   S = v4845;
-  v3305 = v4845;   /* for PHI node */
+  v3305 = v4845;
   goto llvm_cbe_lB850;
 
 llvm_cbe_lE32B:
@@ -23093,7 +23093,7 @@ llvm_cbe_lB867:
   *((&RAM[(((((((v3314 - 1))))) | 256u))])) = 105;
   v3315 = ((v3314 - 2));
   S = v3315;
-  v3753 = v3315;   /* for PHI node */
+  v3753 = v3315;
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lAD45:
@@ -23128,7 +23128,7 @@ llvm_cbe_lBE2F:
   v4342 = ((v4341 - 1));
   S = v4342;
   *((&RAM[((v4342 | 256u))])) = 49;
-  v3303 = v4342;   /* for PHI node */
+  v3303 = v4342;
   goto llvm_cbe_lB849;
 
 llvm_cbe_lBE2B:
@@ -23148,7 +23148,7 @@ llvm_cbe_bb46437:
   v4810 = ((v4808 - 2));
   S = v4810;
   *((&RAM[((v4810 | 256u))])) = -110;
-  v3303 = v4810;   /* for PHI node */
+  v3303 = v4810;
   goto llvm_cbe_lB849;
 
 llvm_cbe_lE28B:
@@ -23220,7 +23220,7 @@ llvm_cbe_bb44230:
   v4581 = v4577 & 256u;
   C = (((((v4581 >> 8u)))));
   if (v4581 == 0u) {
-    v4584 = v4576;   /* for PHI node */
+    v4584 = v4576;
     goto llvm_cbe_lE07D;
   } else {
     goto llvm_cbe_bb44259;
@@ -23230,7 +23230,7 @@ llvm_cbe_bb44218:
   if ((((v4575 ^ v4577) & 128u) == 0u)) {
     goto llvm_cbe_bb44229;
   } else {
-    v4579 = 1;   /* for PHI node */
+    v4579 = 1;
     goto llvm_cbe_bb44230;
   }
 
@@ -23250,7 +23250,7 @@ llvm_cbe_lE073:
   }
 
 llvm_cbe_bb44229:
-  v4579 = 0;   /* for PHI node */
+  v4579 = 0;
   goto llvm_cbe_bb44230;
 
 llvm_cbe_bb44259:
@@ -23258,7 +23258,7 @@ llvm_cbe_bb44259:
   Y = v4582;
   Z = (((v4582 == 0)));
   N = (((((v4582 >> 7)))));
-  v4584 = v4582;   /* for PHI node */
+  v4584 = v4582;
   goto llvm_cbe_lE07D;
 
 llvm_cbe_lE0CC:
@@ -23311,7 +23311,7 @@ llvm_cbe_lBA28:
   *((&RAM[(((((((v3663 - 1))))) | 256u))])) = 42;
   v3664 = ((v3663 - 2));
   S = v3664;
-  v3753 = v3664;   /* for PHI node */
+  v3753 = v3664;
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lBA24:
@@ -23340,7 +23340,7 @@ llvm_cbe_lBDF8:
   Z = ((((v4321 & 255u) == 0u)));
   N = (((((v4320 >> 7)))));
   if (((((((((v4321 & 255u) == 0u) ^ 1)&1)) & (v4322 == 0))&1))) {
-    v4324 = 0;   /* for PHI node */
+    v4324 = 0;
     goto llvm_cbe_lBE09;
   } else {
     goto llvm_cbe_lBE00;
@@ -23374,7 +23374,7 @@ llvm_cbe_lBDDF:
   N = v4314;
   V = ((((((((v4313 >> 6))))) & 1)));
   if (v4314 == 0) {
-    v4316 = 32;   /* for PHI node */
+    v4316 = 32;
     goto llvm_cbe_lBDE7;
   } else {
     goto llvm_cbe_bb41270;
@@ -23387,7 +23387,7 @@ llvm_cbe_bb12682:
   Y = 1;
   Z = 0;
   N = 0;
-  v4312 = v1259;   /* for PHI node */
+  v4312 = v1259;
   goto llvm_cbe_lBDDF;
 
 llvm_cbe_lB468:
@@ -23399,7 +23399,7 @@ llvm_cbe_lB468:
   *((&RAM[(((((((v2646 - 1))))) | 256u))])) = 108;
   v2647 = ((v2646 - 2));
   S = v2647;
-  v4312 = v2647;   /* for PHI node */
+  v4312 = v2647;
   goto llvm_cbe_lBDDF;
 
 llvm_cbe_lBDD7:
@@ -23408,14 +23408,14 @@ llvm_cbe_lBDD7:
   *((&RAM[(((((((v4309 - 1))))) | 256u))])) = -39;
   v4310 = ((v4309 - 2));
   S = v4310;
-  v4312 = v4310;   /* for PHI node */
+  v4312 = v4310;
   goto llvm_cbe_lBDDF;
 
 llvm_cbe_bb41270:
   A = 45;
   Z = 0;
   N = 0;
-  v4316 = 45;   /* for PHI node */
+  v4316 = 45;
   goto llvm_cbe_lBDE7;
 
 llvm_cbe_lBFA6:
@@ -23493,7 +23493,7 @@ llvm_cbe_lE060:
   if (v4570 == 0) {
     goto llvm_cbe_bb44146;
   } else {
-    v4573 = v4567;   /* for PHI node */
+    v4573 = v4567;
     goto llvm_cbe_lE06C;
   }
 
@@ -23502,7 +23502,7 @@ llvm_cbe_bb44146:
   *((&RAM[114u])) = v4571;
   Z = (((v4571 == 0)));
   N = (((((v4571 >> 7)))));
-  v4573 = v4571;   /* for PHI node */
+  v4573 = v4571;
   goto llvm_cbe_lE06C;
 
 llvm_cbe_lE084:
@@ -23536,7 +23536,7 @@ llvm_cbe_lBB0F:
   *((&RAM[(((((((v3827 - 1))))) | 256u))])) = 17;
   v3828 = ((v3827 - 2));
   S = v3828;
-  v3753 = v3828;   /* for PHI node */
+  v3753 = v3828;
   goto llvm_cbe_lBA8C;
 
 llvm_cbe_lBA04:
@@ -23643,8 +23643,8 @@ llvm_cbe_lA78B:
   *((&RAM[((v766 | 256u))])) = -89;
   *((&RAM[(((((((v766 - 1))))) | 256u))])) = -111;
   S = (((v766 - 2)));
-  v3958 = -71;   /* for PHI node */
-  v3960 = -68;   /* for PHI node */
+  v3958 = -71;
+  v3960 = -68;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_bb15466:
@@ -23661,15 +23661,15 @@ llvm_cbe_bb15466:
   *llvm_cbe_tmp15497 = -83;
   *((&RAM[((v1552 | 256u))])) = 68;
   S = (((v1546 - 2)));
-  v3958 = 1;   /* for PHI node */
-  v3960 = v1557;   /* for PHI node */
+  v3958 = 1;
+  v3960 = v1557;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_bb15454:
   if ((((v1550 ^ v1553) & 128u) == 0u)) {
     goto llvm_cbe_bb15465;
   } else {
-    v1555 = 1;   /* for PHI node */
+    v1555 = 1;
     goto llvm_cbe_bb15466;
   }
 
@@ -23696,7 +23696,7 @@ llvm_cbe_bb15400:
   if ((((v1546 ^ v1547) & 128u) == 0u)) {
     goto llvm_cbe_bb15411;
   } else {
-    v1549 = 1;   /* for PHI node */
+    v1549 = 1;
     goto llvm_cbe_bb15412;
   }
 
@@ -23715,11 +23715,11 @@ llvm_cbe_lAD35:
   }
 
 llvm_cbe_bb15411:
-  v1549 = 0;   /* for PHI node */
+  v1549 = 0;
   goto llvm_cbe_bb15412;
 
 llvm_cbe_bb15465:
-  v1555 = 0;   /* for PHI node */
+  v1555 = 0;
   goto llvm_cbe_bb15466;
 
 llvm_cbe_bb17522:
@@ -23731,8 +23731,8 @@ llvm_cbe_bb17522:
   *((&RAM[((v1768 | 256u))])) = -82;
   *((&RAM[(((((((v1768 - 1))))) | 256u))])) = -92;
   S = (((v1768 - 2)));
-  v3958 = -82;   /* for PHI node */
-  v3960 = -88;   /* for PHI node */
+  v3958 = -82;
+  v3960 = -88;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lAFA0:
@@ -23742,8 +23742,8 @@ llvm_cbe_lAFA0:
   Y = v1900;
   Z = (((v1900 == 0)));
   N = (((((v1900 >> 7)))));
-  v3958 = v1900;   /* for PHI node */
-  v3960 = v1899;   /* for PHI node */
+  v3958 = v1900;
+  v3960 = v1899;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lAF71:
@@ -23815,8 +23815,8 @@ llvm_cbe_lBB07:
   *((&RAM[((v3826 | 256u))])) = -69;
   *((&RAM[(((((((v3826 - 1))))) | 256u))])) = 11;
   S = (((v3826 - 2)));
-  v3958 = v3822;   /* for PHI node */
-  v3960 = v3824;   /* for PHI node */
+  v3958 = v3822;
+  v3960 = v3824;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lBB01:
@@ -23825,9 +23825,9 @@ llvm_cbe_lBB01:
   X = 0;
   Z = 1;
   N = 0;
-  v3821 = 0;   /* for PHI node */
-  v3823 = -70;   /* for PHI node */
-  v3825 = -7;   /* for PHI node */
+  v3821 = 0;
+  v3823 = -70;
+  v3825 = -7;
   goto llvm_cbe_lBB07;
 
 llvm_cbe_lE26E:
@@ -23841,9 +23841,9 @@ llvm_cbe_lE26E:
   *((&RAM[((v4799 | 256u))])) = -30;
   *((&RAM[(((((((v4799 - 1))))) | 256u))])) = 118;
   S = (((v4799 - 2)));
-  v3821 = v4798;   /* for PHI node */
-  v3823 = -30;   /* for PHI node */
-  v3825 = -27;   /* for PHI node */
+  v3821 = v4798;
+  v3823 = -30;
+  v3825 = -27;
   goto llvm_cbe_lBB07;
 
 llvm_cbe_lBF74:
@@ -23855,8 +23855,8 @@ llvm_cbe_lBF74:
   *((&RAM[((v4472 | 256u))])) = -65;
   *((&RAM[(((((((v4472 - 1))))) | 256u))])) = 122;
   S = (((v4472 - 2)));
-  v3958 = -65;   /* for PHI node */
-  v3960 = 17;   /* for PHI node */
+  v3958 = -65;
+  v3960 = 17;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lE0BE:
@@ -23868,8 +23868,8 @@ llvm_cbe_lE0BE:
   *((&RAM[((v4605 | 256u))])) = -32;
   *((&RAM[(((((((v4605 - 1))))) | 256u))])) = -60;
   S = (((v4605 - 2)));
-  v3958 = 0;   /* for PHI node */
-  v3960 = -117;   /* for PHI node */
+  v3958 = 0;
+  v3960 = -117;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_bb44359:
@@ -23889,8 +23889,8 @@ llvm_cbe_lE2C5:
   *((&RAM[((v4824 | 256u))])) = -30;
   *((&RAM[(((((((v4824 - 1))))) | 256u))])) = -53;
   S = (((v4824 - 2)));
-  v3958 = 0;   /* for PHI node */
-  v3960 = 87;   /* for PHI node */
+  v3958 = 0;
+  v3960 = 87;
   goto llvm_cbe_lBBA2;
 
 llvm_cbe_lBBD7:
@@ -23965,7 +23965,7 @@ llvm_cbe_lBC02:
   if (v4006 == 5) {
     goto llvm_cbe_bb38581;
   } else {
-    v4002 = v4006;   /* for PHI node */
+    v4002 = v4006;
     goto llvm_cbe_lBC02;
   }
 
@@ -23976,7 +23976,7 @@ llvm_cbe_lBBFE:
   X = 5;
   Z = 0;
   N = 0;
-  v4002 = 0;   /* for PHI node */
+  v4002 = 0;
   goto llvm_cbe_lBC02;
 
 llvm_cbe_lBBFC:
@@ -24059,7 +24059,7 @@ llvm_cbe_lBC11:
   if (v4020 == 6) {
     goto llvm_cbe_bb38664;
   } else {
-    v4016 = v4020;   /* for PHI node */
+    v4016 = v4020;
     goto llvm_cbe_lBC11;
   }
 
@@ -24068,7 +24068,7 @@ llvm_cbe_lBC11_2e_preheader:
   X = 6;
   Z = 0;
   N = 0;
-  v4016 = 0;   /* for PHI node */
+  v4016 = 0;
   goto llvm_cbe_lBC11;
 
 llvm_cbe_lE000:
@@ -24101,10 +24101,10 @@ llvm_cbe_lBC2B:
   Z = (((v4038 == 0)));
   N = (((((v4038 >> 7)))));
   if (v4038 == 0) {
-    v4049 = v4036;   /* for PHI node */
+    v4049 = v4036;
     goto llvm_cbe_lBC38;
   } else {
-    v4040 = v4036;   /* for PHI node */
+    v4040 = v4036;
     goto llvm_cbe_lBC2F;
   }
 
@@ -24114,7 +24114,7 @@ llvm_cbe_lA79F:
   *((&RAM[(((((((v773 - 1))))) | 256u))])) = -95;
   v774 = ((v773 - 2));
   S = v774;
-  v4037 = v774;   /* for PHI node */
+  v4037 = v774;
   goto llvm_cbe_lBC2B;
 
 llvm_cbe_lA795:
@@ -24136,7 +24136,7 @@ llvm_cbe_lB9EA:
   *((&RAM[(((((((v3646 - 1))))) | 256u))])) = -20;
   v3647 = ((v3646 - 2));
   S = v3647;
-  v4037 = v3647;   /* for PHI node */
+  v4037 = v3647;
   goto llvm_cbe_lBC2B;
 
 llvm_cbe_lBFA1:
@@ -24157,7 +24157,7 @@ llvm_cbe_lBC39:
   *((&RAM[(((((((v4054 - 1))))) | 256u))])) = 59;
   v4055 = ((v4054 - 2));
   S = v4055;
-  v4037 = v4055;   /* for PHI node */
+  v4037 = v4055;
   goto llvm_cbe_lBC2B;
 
 llvm_cbe_lBC5D:
@@ -24173,7 +24173,7 @@ llvm_cbe_lBC5D:
   Z = (((v4087 == 0)));
   N = (((((v4087 >> 7)))));
   if (v4087 == 0){
-    v4037 = v4083;   /* for PHI node */
+    v4037 = v4083;
     goto llvm_cbe_lBC2B;
   } else {
     goto llvm_cbe_bb39048;
@@ -24188,8 +24188,8 @@ llvm_cbe_lAD55:
   *((&RAM[(((((((v1564 - 1))))) | 256u))])) = 89;
   v1565 = ((v1564 - 2));
   S = v1565;
-  v4082 = 1;   /* for PHI node */
-  v4084 = v1565;   /* for PHI node */
+  v4082 = 1;
+  v4084 = v1565;
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_bb19585:
@@ -24206,8 +24206,8 @@ llvm_cbe_bb19585:
   v1955 = ((v1954 - 2));
   S = v1955;
   *((&RAM[36u])) = 105;
-  v4082 = 0;   /* for PHI node */
-  v4084 = v1955;   /* for PHI node */
+  v4082 = 0;
+  v4084 = v1955;
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_bb21970:
@@ -24221,8 +24221,8 @@ llvm_cbe_bb21970:
   v2206 = ((v2205 - 2));
   S = v2206;
   *((&RAM[36u])) = -91;
-  v4082 = -79;   /* for PHI node */
-  v4084 = v2206;   /* for PHI node */
+  v4082 = -79;
+  v4084 = v2206;
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_lBE0B:
@@ -24236,8 +24236,8 @@ llvm_cbe_lBE0B:
   v4326 = ((v4325 - 2));
   S = v4326;
   *((&RAM[36u])) = -72;
-  v4082 = -67;   /* for PHI node */
-  v4084 = v4326;   /* for PHI node */
+  v4082 = -67;
+  v4084 = v4326;
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_lBE09:
@@ -24249,7 +24249,7 @@ llvm_cbe_lBE07:
   A = -9;
   Z = 0;
   N = 1;
-  v4324 = -9;   /* for PHI node */
+  v4324 = -9;
   goto llvm_cbe_lBE09;
 
 llvm_cbe_lBE16:
@@ -24263,8 +24263,8 @@ llvm_cbe_lBE16:
   v4330 = ((v4329 - 2));
   S = v4330;
   *((&RAM[36u])) = -77;
-  v4082 = -67;   /* for PHI node */
-  v4084 = v4330;   /* for PHI node */
+  v4082 = -67;
+  v4084 = v4330;
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_lBF92:
@@ -24278,8 +24278,8 @@ llvm_cbe_lBF92:
   v4479 = ((v4478 - 2));
   S = v4479;
   *((&RAM[36u])) = 78;
-  v4082 = 0;   /* for PHI node */
-  v4084 = v4479;   /* for PHI node */
+  v4082 = 0;
+  v4084 = v4479;
   goto llvm_cbe_lBC5D;
 
 llvm_cbe_lE097:
@@ -24288,7 +24288,7 @@ llvm_cbe_lE097:
   *((&RAM[(((((((v4593 - 1))))) | 256u))])) = -103;
   v4594 = ((v4593 - 2));
   S = v4594;
-  v4037 = v4594;   /* for PHI node */
+  v4037 = v4594;
   goto llvm_cbe_lBC2B;
 
 llvm_cbe_lBC31:
@@ -24303,7 +24303,7 @@ llvm_cbe_lBC31:
   if (v4047 == 0) {
     goto llvm_cbe_bb38814;
   } else {
-    v4049 = v4042;   /* for PHI node */
+    v4049 = v4042;
     goto llvm_cbe_lBC38;
   }
 
@@ -24313,8 +24313,8 @@ llvm_cbe_lBC2F:
   A = v4041;
   Z = (((v4041 == 0)));
   N = (((((v4041 >> 7)))));
-  v4043 = v4039;   /* for PHI node */
-  v4045 = v4041;   /* for PHI node */
+  v4043 = v4039;
+  v4045 = v4041;
   goto llvm_cbe_lBC31;
 
 llvm_cbe_bb39048:
@@ -24325,7 +24325,7 @@ llvm_cbe_bb39048:
   Z = (((v4089 == v4088)));
   N = (((((v4090 >> 7)))));
   if ((((s8 )v4090) < ((s8 )0))) {
-    v4040 = v4083;   /* for PHI node */
+    v4040 = v4083;
     goto llvm_cbe_lBC2F;
   } else {
     goto llvm_cbe_bb39090;
@@ -24337,8 +24337,8 @@ llvm_cbe_lBC92:
   Z = (((v4089 == 0)));
   N = (((((v4089 >> 7)))));
   if (v4120 == 0){
-    v4043 = v4083;   /* for PHI node */
-    v4045 = v4089;   /* for PHI node */
+    v4043 = v4083;
+    v4045 = v4089;
     goto llvm_cbe_lBC31;
   } else {
     goto llvm_cbe_bb39456;
@@ -24355,7 +24355,7 @@ llvm_cbe_bb39090:
   if (((v4093 & 255u) == 0u)) {
     goto llvm_cbe_bb39119;
   } else {
-    v4121 = v4094;   /* for PHI node */
+    v4121 = v4094;
     goto llvm_cbe_lBC92;
   }
 
@@ -24372,7 +24372,7 @@ llvm_cbe_bb39119:
   if (((v4098 & 255u) == 0u)) {
     goto llvm_cbe_bb39184;
   } else {
-    v4121 = v4099;   /* for PHI node */
+    v4121 = v4099;
     goto llvm_cbe_lBC92;
   }
 
@@ -24390,7 +24390,7 @@ llvm_cbe_bb39184:
   if (((v4103 & 255u) == 0u)) {
     goto llvm_cbe_bb39249;
   } else {
-    v4121 = v4104;   /* for PHI node */
+    v4121 = v4104;
     goto llvm_cbe_lBC92;
   }
 
@@ -24408,7 +24408,7 @@ llvm_cbe_bb39249:
   if (((v4108 & 255u) == 0u)) {
     goto llvm_cbe_bb39314;
   } else {
-    v4121 = v4109;   /* for PHI node */
+    v4121 = v4109;
     goto llvm_cbe_lBC92;
   }
 
@@ -24424,7 +24424,7 @@ llvm_cbe_bb39416:
   if (v4118 == 0){
     goto llvm_cbe_lBCBA;
   } else {
-    v4121 = v4119;   /* for PHI node */
+    v4121 = v4119;
     goto llvm_cbe_lBC92;
   }
 
@@ -24432,7 +24432,7 @@ llvm_cbe_bb39404:
   if ((((((((v4113 ^ v4112))))) & 128u) == 0u)) {
     goto llvm_cbe_bb39415;
   } else {
-    v4117 = 1;   /* for PHI node */
+    v4117 = 1;
     goto llvm_cbe_bb39416;
   }
 
@@ -24455,7 +24455,7 @@ llvm_cbe_bb39314:
   }
 
 llvm_cbe_bb39415:
-  v4117 = 0;   /* for PHI node */
+  v4117 = 0;
   goto llvm_cbe_bb39416;
 
 llvm_cbe_bb39456:
@@ -24463,15 +24463,15 @@ llvm_cbe_bb39456:
   A = v4122;
   Z = (((v4089 == 0xff)));
   N = (((((v4122 >> 7)))));
-  v4043 = v4083;   /* for PHI node */
-  v4045 = v4122;   /* for PHI node */
+  v4043 = v4083;
+  v4045 = v4122;
   goto llvm_cbe_lBC31;
 
 llvm_cbe_bb38814:
   A = 1;
   Z = 0;
   N = 0;
-  v4049 = v4042;   /* for PHI node */
+  v4049 = v4042;
   goto llvm_cbe_lBC38;
 
 llvm_cbe_lBC58:
@@ -24613,7 +24613,7 @@ llvm_cbe_bb43003:
   if ((((v4456 ^ v4459) & 128u) == 0u)) {
     goto llvm_cbe_bb43014;
   } else {
-    v4461 = 1;   /* for PHI node */
+    v4461 = 1;
     goto llvm_cbe_bb43015;
   }
 
@@ -24644,9 +24644,9 @@ llvm_cbe_lBEEF:
   v4457 = v4454 & 256u;
   v4458 = (((((((v4457 >> 8u))))) ^ 1));
   if (v4457 == 0u){
-    v4447 = (((v4446 + 1)));   /* for PHI node */
-    v4449 = v4458;   /* for PHI node */
-    v4451 = v4456;   /* for PHI node */
+    v4447 = (((v4446 + 1)));
+    v4449 = v4458;
+    v4451 = v4456;
     goto llvm_cbe_lBEEF;
   } else {
     goto llvm_cbe_bb42991;
@@ -24664,15 +24664,15 @@ llvm_cbe_lBEE3:
   Z = 0;
   N = 0;
   C = 1;
-  v4447 = 0;   /* for PHI node */
-  v4449 = 1;   /* for PHI node */
-  v4451 = v4441;   /* for PHI node */
+  v4447 = 0;
+  v4449 = 1;
+  v4451 = v4441;
   goto llvm_cbe_lBEEF;
 
 llvm_cbe_bb42795:
   if (v4435 == 0){
-    v4442 = v4434;   /* for PHI node */
-    v4444 = 43;   /* for PHI node */
+    v4442 = v4434;
+    v4444 = 43;
     goto llvm_cbe_lBEE3;
   } else {
     goto llvm_cbe_bb42800;
@@ -24687,7 +24687,7 @@ llvm_cbe_lBED3:
   v4435 = ((((v4434 >> 7))));
   N = v4435;
   if (v4434 == 0){
-    v4464 = v4432;   /* for PHI node */
+    v4464 = v4432;
     goto llvm_cbe_lBF07;
   } else {
     goto llvm_cbe_bb42795;
@@ -24703,7 +24703,7 @@ llvm_cbe_bb42727:
   Z = ((((v4431 & 255u) == 0u)));
   N = (((((v4430 >> 7)))));
   if (((v4431 & 255u) == 0u)) {
-    v4433 = v4429;   /* for PHI node */
+    v4433 = v4429;
     goto llvm_cbe_lBED3;
   } else {
     goto llvm_cbe_bb42754;
@@ -24716,7 +24716,7 @@ llvm_cbe_lBEC6:
   v4427 = *((&RAM[((v4426 + 255u))]));
   v4428 = v4427;
   if ((((((((v4428 - 48))))) & 255u) == 0u)) {
-    v4425 = (((v4424 + 1)));   /* for PHI node */
+    v4425 = (((v4424 + 1)));
     goto llvm_cbe_lBEC6;
   } else {
     goto llvm_cbe_bb42727;
@@ -24732,7 +24732,7 @@ llvm_cbe_lBEC4:
   Y = v4415;
   Z = (((v4415 == 0)));
   N = (((((v4415 >> 7)))));
-  v4425 = 0;   /* for PHI node */
+  v4425 = 0;
   goto llvm_cbe_lBEC6;
 
   do {     /* Syntactic loop 'lBE6A' to make GCC happy */
@@ -24751,8 +24751,8 @@ llvm_cbe_lBE6A:
 
 llvm_cbe_bb42248:
   if (((((((v4398 >> 7))))) == 0)) {
-    v4381 = v4398;   /* for PHI node */
-    v4383 = v4382;   /* for PHI node */
+    v4381 = v4398;
+    v4383 = v4382;
     goto llvm_cbe_lBE6A;
   } else {
     goto llvm_cbe_lBE90;
@@ -24817,19 +24817,19 @@ llvm_cbe_lBE8E:
   if (((((((v4398 >> 7))))) == 0)) {
     goto llvm_cbe_lBE90;
   } else {
-    v4381 = v4398;   /* for PHI node */
-    v4383 = v4382;   /* for PHI node */
+    v4381 = v4398;
+    v4383 = v4382;
     goto llvm_cbe_lBE6A;
   }
 
 llvm_cbe_bb42632:
   v4421 = ((v4419 - 60));
   if (((v4421 & 255u) == 0u)) {
-    v4423 = v4421;   /* for PHI node */
+    v4423 = v4421;
     goto llvm_cbe_lBEC4;
   } else {
-    v4381 = v4418;   /* for PHI node */
-    v4383 = v4417;   /* for PHI node */
+    v4381 = v4418;
+    v4383 = v4417;
     goto llvm_cbe_lBE6A;
   }
 
@@ -24841,7 +24841,7 @@ llvm_cbe_lBEB2:
   v4419 = v4417;
   v4420 = ((v4419 - 36));
   if (((v4420 & 255u) == 0u)) {
-    v4423 = v4420;   /* for PHI node */
+    v4423 = v4420;
     goto llvm_cbe_lBEC4;
   } else {
     goto llvm_cbe_bb42632;
@@ -24859,7 +24859,7 @@ llvm_cbe_bb42362:
   if (v4413 == 1){
     goto llvm_cbe_bb42513;
   } else {
-    v4416 = v4412;   /* for PHI node */
+    v4416 = v4412;
     goto llvm_cbe_lBEB2;
   }
 
@@ -24867,7 +24867,7 @@ llvm_cbe_bb42350:
   if ((((v4405 ^ v4407) & 128u) == 0u)) {
     goto llvm_cbe_bb42361;
   } else {
-    v4409 = 1;   /* for PHI node */
+    v4409 = 1;
     goto llvm_cbe_bb42362;
   }
 
@@ -24883,8 +24883,8 @@ llvm_cbe_lBE97:
 
 llvm_cbe_lBE90:
   if (v4397 == 0){
-    v4404 = v4397;   /* for PHI node */
-    v4406 = v4398;   /* for PHI node */
+    v4404 = v4397;
+    v4406 = v4398;
     goto llvm_cbe_lBE97;
   } else {
     goto llvm_cbe_bb42278;
@@ -24893,8 +24893,8 @@ llvm_cbe_lBE90:
 llvm_cbe_bb42314:
   v4401 = v4400;
   v4402 = (((((((v4400 >> 8u))))) & 1));
-  v4404 = v4402;   /* for PHI node */
-  v4406 = v4401;   /* for PHI node */
+  v4404 = v4402;
+  v4406 = v4401;
   goto llvm_cbe_lBE97;
 
 llvm_cbe_bb42278:
@@ -24910,13 +24910,13 @@ llvm_cbe_bb42302:
   goto llvm_cbe_bb42314;
 
 llvm_cbe_bb42361:
-  v4409 = 0;   /* for PHI node */
+  v4409 = 0;
   goto llvm_cbe_bb42362;
 
 llvm_cbe_bb42513:
   v4414 = ((v4411 + 2));
   *((&RAM[((v4414 + 255u))])) = 46;
-  v4416 = v4414;   /* for PHI node */
+  v4416 = v4414;
   goto llvm_cbe_lBEB2;
 
   } while (1); /* end of syntactic loop 'lBE6A' */
@@ -24925,8 +24925,8 @@ llvm_cbe_lBE6A_2e_preheader:
   X = 128u;
   Z = 0;
   N = 1;
-  v4381 = 128u;   /* for PHI node */
-  v4383 = v4378;   /* for PHI node */
+  v4381 = 128u;
+  v4383 = v4378;
   goto llvm_cbe_lBE6A;
 
 llvm_cbe_lAF4B:
@@ -24941,14 +24941,14 @@ llvm_cbe_lAF4B:
   *((&RAM[((v1859 | 256u))])) = -81;
   *((&RAM[(((((((v1859 - 1))))) | 256u))])) = 88;
   S = (((v1859 - 2)));
-  v4379 = 36;   /* for PHI node */
+  v4379 = 36;
   goto llvm_cbe_lBE6A_2e_preheader;
 
 llvm_cbe_lBE66:
   Y = 0;
   Z = 1;
   N = 0;
-  v4379 = 0;   /* for PHI node */
+  v4379 = 0;
   goto llvm_cbe_lBE6A_2e_preheader;
 
 llvm_cbe_lBE48:
@@ -24982,9 +24982,9 @@ llvm_cbe_bb41647:
   Z = ((((v4352 & 255u) == 0u)));
   N = (((((v4351 >> 7)))));
   if (v4353 == 0){
-    v4364 = 1;   /* for PHI node */
-    v4366 = v4354;   /* for PHI node */
-    v4368 = v4348;   /* for PHI node */
+    v4364 = 1;
+    v4366 = v4354;
+    v4368 = v4348;
     goto llvm_cbe_lBE48;
   } else {
     goto llvm_cbe_bb41674;
@@ -25002,8 +25002,8 @@ llvm_cbe_bb41618:
   if (v4349 == 0){
     goto llvm_cbe_bb41647;
   } else {
-    v4360 = 1;   /* for PHI node */
-    v4362 = v4348;   /* for PHI node */
+    v4360 = 1;
+    v4362 = v4348;
     goto llvm_cbe_lBE47;
   }
 
@@ -25011,7 +25011,7 @@ llvm_cbe_bb41606:
   if ((((v4344 ^ v4345) & 128u) == 0u)) {
     goto llvm_cbe_bb41617;
   } else {
-    v4347 = 1;   /* for PHI node */
+    v4347 = 1;
     goto llvm_cbe_bb41618;
   }
 
@@ -25030,16 +25030,16 @@ llvm_cbe_lBE35:
   }
 
 llvm_cbe_bb41617:
-  v4347 = 0;   /* for PHI node */
+  v4347 = 0;
   goto llvm_cbe_bb41618;
 
 llvm_cbe_lBE47:
   v4359 = v4360;
   v4361 = v4362;
   C = 1;
-  v4364 = v4359;   /* for PHI node */
-  v4366 = 1;   /* for PHI node */
-  v4368 = v4361;   /* for PHI node */
+  v4364 = v4359;
+  v4366 = 1;
+  v4368 = v4361;
   goto llvm_cbe_lBE48;
 
 llvm_cbe_bb41697:
@@ -25051,15 +25051,15 @@ llvm_cbe_bb41697:
   A = 2;
   Z = 0;
   N = 0;
-  v4360 = v4358;   /* for PHI node */
-  v4362 = 2;   /* for PHI node */
+  v4360 = v4358;
+  v4362 = 2;
   goto llvm_cbe_lBE47;
 
 llvm_cbe_bb41685:
   if ((((v4348 ^ v4355) & 128u) == 0u)) {
     goto llvm_cbe_bb41696;
   } else {
-    v4357 = 1;   /* for PHI node */
+    v4357 = 1;
     goto llvm_cbe_bb41697;
   }
 
@@ -25072,7 +25072,7 @@ llvm_cbe_bb41674:
   }
 
 llvm_cbe_bb41696:
-  v4357 = 0;   /* for PHI node */
+  v4357 = 0;
   goto llvm_cbe_bb41697;
 
 llvm_cbe_lBE64:
@@ -25089,7 +25089,7 @@ llvm_cbe_lBE53:
   Z = v4371;
   N = v4372;
   if (v4363 == 0){
-    v4377 = v4374;   /* for PHI node */
+    v4377 = v4374;
     goto llvm_cbe_lBE64;
   } else {
     goto llvm_cbe_bb41869;
@@ -25102,14 +25102,14 @@ llvm_cbe_bb41869:
   Z = (((v4375 == 0)));
   N = (((((v4375 >> 7)))));
   *((&RAM[((v4375 + 255u))])) = 48;
-  v4377 = v4375;   /* for PHI node */
+  v4377 = v4375;
   goto llvm_cbe_lBE64;
 
 llvm_cbe_bb42754:
   Y = v4426;
   Z = (((v4415 == v4424)));
   N = (((((v4426 >> 7)))));
-  v4433 = v4426;   /* for PHI node */
+  v4433 = v4426;
   goto llvm_cbe_lBED3;
 
 llvm_cbe_bb42842:
@@ -25121,15 +25121,15 @@ llvm_cbe_bb42842:
   A = 45;
   Z = 0;
   N = 0;
-  v4442 = v4440;   /* for PHI node */
-  v4444 = 45;   /* for PHI node */
+  v4442 = v4440;
+  v4444 = 45;
   goto llvm_cbe_lBEE3;
 
 llvm_cbe_bb42830:
   if (((v4434 & 128u) == 0u)) {
     goto llvm_cbe_bb42841;
   } else {
-    v4439 = 1;   /* for PHI node */
+    v4439 = 1;
     goto llvm_cbe_bb42842;
   }
 
@@ -25147,11 +25147,11 @@ llvm_cbe_bb42800:
   }
 
 llvm_cbe_bb42841:
-  v4439 = 0;   /* for PHI node */
+  v4439 = 0;
   goto llvm_cbe_bb42842;
 
 llvm_cbe_bb43014:
-  v4461 = 0;   /* for PHI node */
+  v4461 = 0;
   goto llvm_cbe_bb43015;
 
 llvm_cbe_lBF07:
@@ -25164,7 +25164,7 @@ llvm_cbe_lBF07:
 
 llvm_cbe_lBF04:
   *((&RAM[((v4318 + 255u))])) = 48;
-  v4464 = v4318;   /* for PHI node */
+  v4464 = v4318;
   goto llvm_cbe_lBF07;
 
 llvm_cbe_lBFBE:
@@ -25799,7 +25799,7 @@ llvm_cbe_lABD6:
   v1420 = ((v1419 - 1));
   S = v1420;
   *((&RAM[((v1420 | 256u))])) = -40;
-  v1431 = v1420;   /* for PHI node */
+  v1431 = v1420;
   goto llvm_cbe_lABF9;
 
 llvm_cbe_lABD1:
@@ -25815,7 +25815,7 @@ llvm_cbe_lAC4A:
   v1463 = ((v1462 - 1));
   S = v1463;
   *((&RAM[((v1463 | 256u))])) = 76;
-  v1431 = v1463;   /* for PHI node */
+  v1431 = v1463;
   goto llvm_cbe_lABF9;
 
 llvm_cbe_bb14489:
@@ -25922,7 +25922,7 @@ llvm_cbe_bb7060:
   v653 = ((v652 - 1));
   S = v653;
   *((&RAM[((v653 | 256u))])) = -45;
-  v842 = v653;   /* for PHI node */
+  v842 = v653;
   goto llvm_cbe_lA82C;
 
 llvm_cbe_lA7AE:
@@ -25931,7 +25931,7 @@ llvm_cbe_lA7AE:
   v781 = ((v780 - 1));
   S = v781;
   *((&RAM[((v781 | 256u))])) = -80;
-  v842 = v781;   /* for PHI node */
+  v842 = v781;
   goto llvm_cbe_lA82C;
 
 llvm_cbe_lA7A5:
@@ -25980,7 +25980,7 @@ llvm_cbe_bb15659:
   if ((((((((v1571 ^ v1569))))) & 128u) == 0u)) {
     goto llvm_cbe_bb15674;
   } else {
-    v1575 = 1;   /* for PHI node */
+    v1575 = 1;
     goto llvm_cbe_bb15675;
   }
 
@@ -26004,7 +26004,7 @@ llvm_cbe_lAD5A:
   }
 
 llvm_cbe_bb15674:
-  v1575 = 0;   /* for PHI node */
+  v1575 = 0;
   goto llvm_cbe_bb15675;
 
 llvm_cbe_lAD80:
@@ -26115,7 +26115,7 @@ llvm_cbe_bb11118:
   if ((((v1071 ^ v1075) & 128u) == 0u)) {
     goto llvm_cbe_bb11129;
   } else {
-    v1077 = 1;   /* for PHI node */
+    v1077 = 1;
     goto llvm_cbe_bb11130;
   }
 
@@ -26145,7 +26145,7 @@ llvm_cbe_bb11001:
   if ((((v1058 ^ v1066) & 128u) == 0u)) {
     goto llvm_cbe_bb11012;
   } else {
-    v1068 = 1;   /* for PHI node */
+    v1068 = 1;
     goto llvm_cbe_bb11013;
   }
 
@@ -26171,7 +26171,7 @@ llvm_cbe_bb10934:
   if ((((v1055 ^ v1060) & 128u) == 0u)) {
     goto llvm_cbe_bb10945;
   } else {
-    v1062 = 1;   /* for PHI node */
+    v1062 = 1;
     goto llvm_cbe_bb10946;
   }
 
@@ -26197,15 +26197,15 @@ llvm_cbe_bb10804:
   }
 
 llvm_cbe_bb10945:
-  v1062 = 0;   /* for PHI node */
+  v1062 = 0;
   goto llvm_cbe_bb10946;
 
 llvm_cbe_bb11012:
-  v1068 = 0;   /* for PHI node */
+  v1068 = 0;
   goto llvm_cbe_bb11013;
 
 llvm_cbe_bb11129:
-  v1077 = 0;   /* for PHI node */
+  v1077 = 0;
   goto llvm_cbe_bb11130;
 
 llvm_cbe_bb11160:
@@ -26250,8 +26250,8 @@ llvm_cbe_lA9ED:
   v1128 = ((v1127 - 1));
   S = v1128;
   *((&RAM[((v1128 | 256u))])) = -15;
-  v1151 = v1125;   /* for PHI node */
-  v1153 = v1128;   /* for PHI node */
+  v1151 = v1125;
+  v1153 = v1128;
   goto llvm_cbe_lAA1D;
 
 llvm_cbe_bb11550:
@@ -26260,7 +26260,7 @@ llvm_cbe_bb11550:
   N = 0;
   *((&RAM[97u])) = 0;
   *((&RAM[102u])) = 0;
-  v1126 = 0;   /* for PHI node */
+  v1126 = 0;
   goto llvm_cbe_lA9ED;
 
 llvm_cbe_lA9F5:
@@ -26275,8 +26275,8 @@ llvm_cbe_lA9F5:
   v1134 = ((v1133 - 1));
   S = v1134;
   *((&RAM[((v1134 | 256u))])) = -5;
-  v1151 = v1132;   /* for PHI node */
-  v1153 = v1134;   /* for PHI node */
+  v1151 = v1132;
+  v1153 = v1134;
   goto llvm_cbe_lAA1D;
 
 llvm_cbe_lAA90:
@@ -26349,12 +26349,12 @@ llvm_cbe_bb12987:
   v1299 = (((((((v1293 >> 8u))))) & 1));
   C = v1299;
   if (v1296 == 0) {
-    v1301 = v1299;   /* for PHI node */
-    v1303 = v1297;   /* for PHI node */
-    v1305 = v1298;   /* for PHI node */
+    v1301 = v1299;
+    v1303 = v1297;
+    v1305 = v1298;
     goto llvm_cbe_lAAF8;
   } else {
-    v1329 = v1296;   /* for PHI node */
+    v1329 = v1296;
     goto llvm_cbe_lAB0E;
   }
 
@@ -26362,7 +26362,7 @@ llvm_cbe_bb12975:
   if ((((v1292 ^ v1293) & 128u) == 0u)) {
     goto llvm_cbe_bb12986;
   } else {
-    v1295 = 1;   /* for PHI node */
+    v1295 = 1;
     goto llvm_cbe_bb12987;
   }
 
@@ -26391,8 +26391,8 @@ llvm_cbe_lAAEE:
   v1290 = v1287 & 256u;
   v1291 = (((((((v1290 >> 8u))))) ^ 1));
   if (v1290 == 0u) {
-    v1283 = v1291;   /* for PHI node */
-    v1285 = v1289;   /* for PHI node */
+    v1283 = v1291;
+    v1285 = v1289;
     goto llvm_cbe_lAAEE;
   } else {
     goto llvm_cbe_bb12951;
@@ -26405,12 +26405,12 @@ llvm_cbe_lAAEC:
   Z = (((v1281 == 0)));
   N = (((((v1281 >> 7)))));
   C = 1;
-  v1283 = 1;   /* for PHI node */
-  v1285 = v1281;   /* for PHI node */
+  v1283 = 1;
+  v1285 = v1281;
   goto llvm_cbe_lAAEE;
 
 llvm_cbe_bb12986:
-  v1295 = 0;   /* for PHI node */
+  v1295 = 0;
   goto llvm_cbe_bb12987;
 
 llvm_cbe_lAAFD:
@@ -26443,7 +26443,7 @@ llvm_cbe_bb13175:
   v1327 = v1323 & 256u;
   C = ((((((((v1327 >> 8u))))) ^ 1)));
   if (v1327 == 0u) {
-    v1329 = v1326;   /* for PHI node */
+    v1329 = v1326;
     goto llvm_cbe_lAB0E;
   } else {
     goto llvm_cbe_lAB13;
@@ -26453,7 +26453,7 @@ llvm_cbe_bb13163:
   if ((((((((v1321 ^ v1320))))) & 128u) == 0u)) {
     goto llvm_cbe_bb13174;
   } else {
-    v1325 = 1;   /* for PHI node */
+    v1325 = 1;
     goto llvm_cbe_bb13175;
   }
 
@@ -26491,7 +26491,7 @@ llvm_cbe_bb13100:
   }
 
 llvm_cbe_bb13174:
-  v1325 = 0;   /* for PHI node */
+  v1325 = 0;
   goto llvm_cbe_bb13175;
 
 llvm_cbe_lAB10:
@@ -26540,7 +26540,7 @@ llvm_cbe_lA451:
   A = 63;
   Z = 0;
   N = 0;
-  v1361 = v223;   /* for PHI node */
+  v1361 = v223;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_lA456:
@@ -26558,19 +26558,19 @@ llvm_cbe_lA456:
   *((&RAM[(((((((v230 - 2))))) | 256u))])) = 93;
   v232 = ((v230 - 3));
   S = v232;
-  v1361 = v232;   /* for PHI node */
+  v1361 = v232;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_lA454:
   Y = 0;
   Z = 1;
   N = 0;
-  v226 = 0u;   /* for PHI node */
+  v226 = 0u;
   goto llvm_cbe_lA456;
 
 llvm_cbe_lA456_2e_loopexit:
   v224 = v234;
-  v226 = v224;   /* for PHI node */
+  v226 = v224;
   goto llvm_cbe_lA456;
 
 llvm_cbe_lA6F3:
@@ -26579,7 +26579,7 @@ llvm_cbe_lA6F3:
   *((&RAM[(((((((v677 - 1))))) | 256u))])) = -11;
   v678 = ((v677 - 2));
   S = v678;
-  v1361 = v678;   /* for PHI node */
+  v1361 = v678;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_lA6EF:
@@ -26596,7 +26596,7 @@ llvm_cbe_lA6ED:
   A = 32;
   Z = 0;
   N = 0;
-  v674 = 32;   /* for PHI node */
+  v674 = 32;
   goto llvm_cbe_lA6EF;
 
 llvm_cbe_lA737:
@@ -26608,7 +26608,7 @@ llvm_cbe_lA737:
   Z = (((v732 == 0)));
   N = (((((v732 >> 7)))));
   if ((((s8 )v732) < ((s8 )0))) {
-    v674 = v732;   /* for PHI node */
+    v674 = v732;
     goto llvm_cbe_lA6EF;
   } else {
     goto llvm_cbe_bb7693;
@@ -26635,28 +26635,28 @@ llvm_cbe_lA72C:
   v714 = ((v713 - 1));
   v715 = ((((v714 >> 7))));
   if (v713 == 1) {
-    v723 = v709;   /* for PHI node */
-    v725 = v715;   /* for PHI node */
-    v727 = (v713 == 1);   /* for PHI node */
-    v729 = v711;   /* for PHI node */
+    v723 = v709;
+    v725 = v715;
+    v727 = (v713 == 1);
+    v729 = v711;
     goto llvm_cbe_lA737_2e_loopexit;
   } else {
-    v717 = 0;   /* for PHI node */
+    v717 = 0;
     goto llvm_cbe_lA72F;
   }
 
 llvm_cbe_bb7654:
   v721 = ((v707 + 1));
   if (v720 == 0) {
-    v723 = v719;   /* for PHI node */
-    v725 = v720;   /* for PHI node */
-    v727 = (v719 == 0);   /* for PHI node */
-    v729 = v718;   /* for PHI node */
+    v723 = v719;
+    v725 = v720;
+    v727 = (v719 == 0);
+    v729 = v718;
     goto llvm_cbe_lA737_2e_loopexit;
   } else {
-    v708 = v721;   /* for PHI node */
-    v710 = v719;   /* for PHI node */
-    v712 = v718;   /* for PHI node */
+    v708 = v721;
+    v710 = v719;
+    v712 = v718;
     goto llvm_cbe_lA72C;
   }
 
@@ -26669,7 +26669,7 @@ llvm_cbe_lA72F:
   if ((((s8 )v719) < ((s8 )0))) {
     goto llvm_cbe_bb7654;
   } else {
-    v717 = (((v716 + 1)));   /* for PHI node */
+    v717 = (((v716 + 1)));
     goto llvm_cbe_lA72F;
   }
 
@@ -26689,9 +26689,9 @@ llvm_cbe_bb7535:
   Y = -1;
   Z = 0;
   N = 1;
-  v708 = 0;   /* for PHI node */
-  v710 = v705;   /* for PHI node */
-  v712 = -1;   /* for PHI node */
+  v708 = 0;
+  v710 = v705;
+  v712 = -1;
   goto llvm_cbe_lA72C;
 
 llvm_cbe_bb7508:
@@ -26742,7 +26742,7 @@ llvm_cbe_bb7693:
   *((&RAM[(((((((v733 - 1))))) | 256u))])) = 63;
   v734 = ((v733 - 2));
   S = v734;
-  v1361 = v734;   /* for PHI node */
+  v1361 = v734;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_lAAD7:
@@ -26754,7 +26754,7 @@ llvm_cbe_lAAD7:
   *((&RAM[(((((((v1267 - 1))))) | 256u))])) = -37;
   v1268 = ((v1267 - 2));
   S = v1268;
-  v1361 = v1268;   /* for PHI node */
+  v1361 = v1268;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_lA44A:
@@ -26784,7 +26784,7 @@ llvm_cbe_bb12828:
   *((&RAM[(((((((v1271 - 1))))) | 256u))])) = -28;
   v1272 = ((v1271 - 2));
   S = v1272;
-  v1361 = v1272;   /* for PHI node */
+  v1361 = v1272;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_bb13338:
@@ -26800,7 +26800,7 @@ llvm_cbe_bb13338:
   *((&RAM[(((((((v1348 - 1))))) | 256u))])) = 47;
   v1349 = ((v1348 - 2));
   S = v1349;
-  v1361 = v1349;   /* for PHI node */
+  v1361 = v1349;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_lAB44:
@@ -26808,7 +26808,7 @@ llvm_cbe_lAB44:
   Z = (((v1359 == 0)));
   N = (((((v1359 >> 7)))));
   V = ((((((((v1359 >> 6))))) & 1)));
-  v1361 = v1355;   /* for PHI node */
+  v1361 = v1355;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_bb13438:
@@ -26837,7 +26837,7 @@ llvm_cbe_lAAC5:
   *((&RAM[(((((((v1262 - 1))))) | 256u))])) = -57;
   v1263 = ((v1262 - 2));
   S = v1263;
-  v1356 = v1263;   /* for PHI node */
+  v1356 = v1263;
   goto llvm_cbe_lAB3B;
 
 llvm_cbe_lAB19:
@@ -26846,7 +26846,7 @@ llvm_cbe_lAB19:
   *((&RAM[(((((((v1335 - 1))))) | 256u))])) = 27;
   v1336 = ((v1335 - 2));
   S = v1336;
-  v1356 = v1336;   /* for PHI node */
+  v1356 = v1336;
   goto llvm_cbe_lAB3B;
 
 llvm_cbe_lAC00:
@@ -26855,7 +26855,7 @@ llvm_cbe_lAC00:
   *((&RAM[(((((((v1435 - 1))))) | 256u))])) = 2;
   v1436 = ((v1435 - 2));
   S = v1436;
-  v1356 = v1436;   /* for PHI node */
+  v1356 = v1436;
   goto llvm_cbe_lAB3B;
 
 llvm_cbe_lAB42:
@@ -26872,7 +26872,7 @@ llvm_cbe_bb14244:
   A = 63;
   Z = 0;
   N = 0;
-  v1361 = v1434;   /* for PHI node */
+  v1361 = v1434;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_bb14506:
@@ -26884,7 +26884,7 @@ llvm_cbe_bb14506:
   A = 63;
   Z = 0;
   N = 0;
-  v1361 = v1461;   /* for PHI node */
+  v1361 = v1461;
   goto llvm_cbe_lAB47;
 
 llvm_cbe_bb13769:
@@ -27052,7 +27052,7 @@ llvm_cbe_bb15791:
   if ((((v1570 ^ v1582) & 128u) == 0u)) {
     goto llvm_cbe_bb15802;
   } else {
-    v1584 = 1;   /* for PHI node */
+    v1584 = 1;
     goto llvm_cbe_bb15803;
   }
 
@@ -27068,7 +27068,7 @@ llvm_cbe_lAD78:
   }
 
 llvm_cbe_bb15802:
-  v1584 = 0;   /* for PHI node */
+  v1584 = 0;
   goto llvm_cbe_bb15803;
 
 llvm_cbe_bb15877:
@@ -27140,7 +27140,7 @@ llvm_cbe_bb18525:
   v1857 = ((v1856 - 1));
   S = v1857;
   *((&RAM[((v1857 | 256u))])) = 74;
-  v1884 = v1857;   /* for PHI node */
+  v1884 = v1857;
   goto llvm_cbe_lAF84;
 
 llvm_cbe_bb18805:
@@ -27149,7 +27149,7 @@ llvm_cbe_bb18805:
   v1881 = ((v1880 - 1));
   S = v1881;
   *((&RAM[((v1881 | 256u))])) = 125;
-  v1884 = v1881;   /* for PHI node */
+  v1884 = v1881;
   goto llvm_cbe_lAF84;
 
 llvm_cbe_bb18937:
@@ -27203,8 +27203,8 @@ llvm_cbe_lAFCA:
   N = (((((v1922 >> 7)))));
   *llvm_cbe_tmp19190 = v1922;
   S = v1919;
-  v1927 = v1919;   /* for PHI node */
-  v1929 = v1921;   /* for PHI node */
+  v1927 = v1919;
+  v1929 = v1921;
   goto llvm_cbe_lAFD6;
 
 llvm_cbe_lAFD4:
@@ -27216,8 +27216,8 @@ llvm_cbe_lAFD4:
   Y = v1925;
   Z = (((v1925 == 0)));
   N = (((((v1925 >> 7)))));
-  v1927 = v1924;   /* for PHI node */
-  v1929 = v1925;   /* for PHI node */
+  v1927 = v1924;
+  v1929 = v1925;
   goto llvm_cbe_lAFD6;
 
 llvm_cbe_lB085:
@@ -27245,7 +27245,7 @@ llvm_cbe_lA9A5:
   *((&RAM[(((((((v1082 - 1))))) | 256u))])) = -89;
   v1083 = ((v1082 - 2));
   S = v1083;
-  v2021 = v1083;   /* for PHI node */
+  v2021 = v1083;
   goto llvm_cbe_lB08B;
 
 llvm_cbe_lA742:
@@ -27265,7 +27265,7 @@ llvm_cbe_lAC15:
   *((&RAM[(((((((v1444 - 1))))) | 256u))])) = 23;
   v1445 = ((v1444 - 2));
   S = v1445;
-  v2021 = v1445;   /* for PHI node */
+  v2021 = v1445;
   goto llvm_cbe_lB08B;
 
 llvm_cbe_lAC0F:
@@ -27288,7 +27288,7 @@ llvm_cbe_lAB92:
   *((&RAM[((v1391 | 256u))])) = -85;
   *((&RAM[(((((((v1391 - 1))))) | 256u))])) = -97;
   S = (((v1391 - 2)));
-  v1441 = 64;   /* for PHI node */
+  v1441 = 64;
   goto llvm_cbe_lAC0F;
 
 llvm_cbe_lAC06:
@@ -27301,14 +27301,14 @@ llvm_cbe_lAC06:
   Z = (((v1439 == 0)));
   N = (((((v1439 >> 7)))));
   V = ((((((((v1439 >> 6))))) & 1)));
-  v1441 = -104;   /* for PHI node */
+  v1441 = -104;
   goto llvm_cbe_lAC0F;
 
 llvm_cbe_lAC0D:
   A = 0;
   Z = 1;
   N = 0;
-  v1441 = 0;   /* for PHI node */
+  v1441 = 0;
   goto llvm_cbe_lAC0F;
 
 llvm_cbe_lAD24:
@@ -27317,7 +27317,7 @@ llvm_cbe_lAD24:
   *((&RAM[(((((((v1539 - 1))))) | 256u))])) = 38;
   v1540 = ((v1539 - 2));
   S = v1540;
-  v2021 = v1540;   /* for PHI node */
+  v2021 = v1540;
   goto llvm_cbe_lB08B;
 
 llvm_cbe_lAD87:
@@ -27333,7 +27333,7 @@ llvm_cbe_lAF28:
   *((&RAM[(((((((v1840 - 1))))) | 256u))])) = 42;
   v1841 = ((v1840 - 2));
   S = v1841;
-  v2021 = v1841;   /* for PHI node */
+  v2021 = v1841;
   goto llvm_cbe_lB08B;
 
 llvm_cbe_lB3BC:
@@ -27346,7 +27346,7 @@ llvm_cbe_lB3BC:
   *((&RAM[(((((((v2564 - 1))))) | 256u))])) = -62;
   v2565 = ((v2564 - 2));
   S = v2565;
-  v2021 = v2565;   /* for PHI node */
+  v2021 = v2565;
   goto llvm_cbe_lB08B;
 
 llvm_cbe_lB092:
@@ -27594,7 +27594,7 @@ llvm_cbe_bb31790:
   N = (((((v3224 >> 7)))));
   *((&RAM[123u])) = v3224;
   if (v3223 == 0) {
-    v3227 = v3224;   /* for PHI node */
+    v3227 = v3224;
     goto llvm_cbe_lB7CD;
   } else {
     goto llvm_cbe_bb31833;
@@ -27604,7 +27604,7 @@ llvm_cbe_bb31778:
   if ((((v3218 ^ v3219) & 128u) == 0u)) {
     goto llvm_cbe_bb31789;
   } else {
-    v3221 = 1;   /* for PHI node */
+    v3221 = 1;
     goto llvm_cbe_bb31790;
   }
 
@@ -27629,7 +27629,7 @@ llvm_cbe_lB7B5:
   }
 
 llvm_cbe_bb31789:
-  v3221 = 0;   /* for PHI node */
+  v3221 = 0;
   goto llvm_cbe_bb31790;
 
 llvm_cbe_bb31833:
@@ -27637,7 +27637,7 @@ llvm_cbe_bb31833:
   X = v3225;
   Z = (((v3225 == 0)));
   N = (((((v3225 >> 7)))));
-  v3227 = v3225;   /* for PHI node */
+  v3227 = v3225;
   goto llvm_cbe_lB7CD;
 
 llvm_cbe_lB830:
@@ -27715,7 +27715,7 @@ llvm_cbe_bb41052:
   if ((((v4291 ^ v4295) & 128u) == 0u)) {
     goto llvm_cbe_bb41063;
   } else {
-    v4297 = 1;   /* for PHI node */
+    v4297 = 1;
     goto llvm_cbe_bb41064;
   }
 
@@ -27743,7 +27743,7 @@ llvm_cbe_bb40941:
   if ((((v4286 ^ v4287) & 128u) == 0u)) {
     goto llvm_cbe_bb40952;
   } else {
-    v4289 = 1;   /* for PHI node */
+    v4289 = 1;
     goto llvm_cbe_bb40953;
   }
 
@@ -27763,11 +27763,11 @@ llvm_cbe_lBDA0:
   }
 
 llvm_cbe_bb40952:
-  v4289 = 0;   /* for PHI node */
+  v4289 = 0;
   goto llvm_cbe_bb40953;
 
 llvm_cbe_bb41063:
-  v4297 = 0;   /* for PHI node */
+  v4297 = 0;
   goto llvm_cbe_bb41064;
 
 llvm_cbe_lBDAE:
@@ -27798,7 +27798,7 @@ llvm_cbe_lAB8D:
   v1390 = ((v1389 - 1));
   S = v1390;
   *((&RAM[((v1390 | 256u))])) = -111;
-  v4638 = v1390;   /* for PHI node */
+  v4638 = v1390;
   goto llvm_cbe_lE11E;
 
 llvm_cbe_lABAD:
@@ -27809,7 +27809,7 @@ llvm_cbe_lABAD:
   v1402 = ((v1401 - 1));
   S = v1402;
   *((&RAM[((v1402 | 256u))])) = -79;
-  v4638 = v1402;   /* for PHI node */
+  v4638 = v1402;
   goto llvm_cbe_lE11E;
 
 llvm_cbe_lE159:
@@ -27910,7 +27910,7 @@ llvm_cbe_lE156:
   v4665 = ((v4664 - 1));
   S = v4665;
   *((&RAM[((v4665 | 256u))])) = 88;
-  v4726 = v4665;   /* for PHI node */
+  v4726 = v4665;
   goto llvm_cbe_lE1D4;
 
 llvm_cbe_lE16A:
@@ -27921,7 +27921,7 @@ llvm_cbe_lE16A:
   v4679 = ((v4678 - 1));
   S = v4679;
   *((&RAM[((v4679 | 256u))])) = 110;
-  v4726 = v4679;   /* for PHI node */
+  v4726 = v4679;
   goto llvm_cbe_lE1D4;
 
 llvm_cbe_lE165:
@@ -27930,14 +27930,14 @@ llvm_cbe_lE165:
   Z = (((v4675 == 0)));
   N = (((((v4675 >> 7)))));
   V = ((((((((v4675 >> 6))))) & 1)));
-  v4677 = 1;   /* for PHI node */
+  v4677 = 1;
   goto llvm_cbe_lE16A;
 
 llvm_cbe_lE168:
   A = 0;
   Z = 1;
   N = 0;
-  v4677 = 0;   /* for PHI node */
+  v4677 = 0;
   goto llvm_cbe_lE16A;
 
 llvm_cbe_lE1D9:
@@ -27990,7 +27990,7 @@ llvm_cbe_lE1E0:
   *((&RAM[(((((((v4728 - 1))))) | 256u))])) = -30;
   v4729 = ((v4728 - 2));
   S = v4729;
-  v4747 = v4729;   /* for PHI node */
+  v4747 = v4729;
   goto llvm_cbe_lE206;
 
 llvm_cbe_lE1E6:
@@ -27999,7 +27999,7 @@ llvm_cbe_lE1E6:
   *((&RAM[(((((((v4731 - 1))))) | 256u))])) = -24;
   v4732 = ((v4731 - 2));
   S = v4732;
-  v4747 = v4732;   /* for PHI node */
+  v4747 = v4732;
   goto llvm_cbe_lE206;
 
 llvm_cbe_lE1F3:
@@ -28008,7 +28008,7 @@ llvm_cbe_lE1F3:
   *((&RAM[(((((((v4737 - 1))))) | 256u))])) = -11;
   v4738 = ((v4737 - 2));
   S = v4738;
-  v4747 = v4738;   /* for PHI node */
+  v4747 = v4738;
   goto llvm_cbe_lE206;
 
 llvm_cbe_lE22E:
@@ -28017,7 +28017,7 @@ llvm_cbe_lE22E:
   *((&RAM[(((((((v4767 - 1))))) | 256u))])) = 48;
   v4768 = ((v4767 - 2));
   S = v4768;
-  v4747 = v4768;   /* for PHI node */
+  v4747 = v4768;
   goto llvm_cbe_lE206;
 
 llvm_cbe_lE242:
@@ -28026,7 +28026,7 @@ llvm_cbe_lE242:
   *((&RAM[(((((((v4777 - 1))))) | 256u))])) = 68;
   v4778 = ((v4777 - 2));
   S = v4778;
-  v4747 = v4778;   /* for PHI node */
+  v4747 = v4778;
   goto llvm_cbe_lE206;
 
 llvm_cbe_lE251:
@@ -28035,7 +28035,7 @@ llvm_cbe_lE251:
   *((&RAM[(((((((v4785 - 1))))) | 256u))])) = 83;
   v4786 = ((v4785 - 2));
   S = v4786;
-  v4747 = v4786;   /* for PHI node */
+  v4747 = v4786;
   goto llvm_cbe_lE206;
 
 llvm_cbe_lE211:
@@ -28070,7 +28070,7 @@ llvm_cbe_lE1BE:
   v4712 = ((v4711 - 1));
   S = v4712;
   *((&RAM[((v4712 | 256u))])) = -64;
-  v4762 = v4712;   /* for PHI node */
+  v4762 = v4712;
   goto llvm_cbe_lE219;
 
 llvm_cbe_lE1C7:
@@ -28079,7 +28079,7 @@ llvm_cbe_lE1C7:
   v4721 = ((v4720 - 1));
   S = v4721;
   *((&RAM[((v4721 | 256u))])) = -55;
-  v4762 = v4721;   /* for PHI node */
+  v4762 = v4721;
   goto llvm_cbe_lE219;
 
 llvm_cbe_lE224:
@@ -28184,7 +28184,7 @@ llvm_cbe_lE3E2:
   if ((((s8 )(((v4867 - 1)))) < ((s8 )0))) {
     goto llvm_cbe_bb47433;
   } else {
-    v4866 = (((v4865 + 1)));   /* for PHI node */
+    v4866 = (((v4865 + 1)));
     goto llvm_cbe_lE3E2;
   }
 
@@ -28208,7 +28208,7 @@ llvm_cbe_lE397:
   X = 28;
   Z = 0;
   N = 0;
-  v4866 = 0;   /* for PHI node */
+  v4866 = 0;
   goto llvm_cbe_lE3E2;
 
 llvm_cbe_lE406:
@@ -28251,7 +28251,7 @@ llvm_cbe_lE455:
   if ((((s8 )v4909) < ((s8 )0))) {
     goto llvm_cbe_bb47890;
   } else {
-    v4905 = (((v4904 + 1)));   /* for PHI node */
+    v4905 = (((v4904 + 1)));
     goto llvm_cbe_lE455;
   }
 
