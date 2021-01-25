@@ -6338,7 +6338,7 @@ int main(int argc, char **argv) {
       exit(1);
   }
 
-  do {     /* Syntactic loop 'lE394' to make GCC happy */
+  do {
 lE394:
   v4858 = S;
   RAM[v4858 | 256u] = -29;
@@ -6350,7 +6350,7 @@ lE394:
   v4905 = 0;
   goto lE455;
 
-  do {     /* Syntactic loop 'bb48000' to make GCC happy */
+  do {
 bb48000:
   v4924 = PC;
   if (v4924 == 0xA437) /* error handler */
@@ -7434,7 +7434,7 @@ lA3B7:
     goto bb48000;
   }
 
-  do {     /* Syntactic loop 'lA38F' to make GCC happy */
+  do {
 lA38F:
   v21 = v22;
   v23 = v24;
@@ -7539,7 +7539,7 @@ bb2167:
   v45 = 0;
   goto bb2168;
 
-  } while (1); /* end of syntactic loop 'lA38F' */
+  } while (1);
 lA38A:
   v15 = v16;
   v17 = v15 + 1;
@@ -7959,7 +7959,7 @@ bb3008:
   S = (v169 - 3);
   goto lB526;
 
-  do {     /* Syntactic loop 'lA416' to make GCC happy */
+  do {
 lA416:
   v165 = v166;
   v167 = v168;
@@ -7976,7 +7976,7 @@ lA416:
     goto lA416;
   }
 
-  } while (1); /* end of syntactic loop 'lA416' */
+  } while (1);
 lA412:
   v163 = A;
   RAM[v151 | 256u] = v163;
@@ -8207,7 +8207,7 @@ lB11D:
     goto lB128;
   }
 
-  do {     /* Syntactic loop 'lB0EF' to make GCC happy */
+  do {
 lB0EF:
   v2057 = v2058;
   v2059 = v2060;
@@ -8233,7 +8233,7 @@ bb20807:
     goto lB0EF;
   }
 
-  do {     /* Syntactic loop 'lB0F1' to make GCC happy */
+  do {
 lB0F1:
   v2065 = v2066;
   v2067 = v2068;
@@ -8307,8 +8307,8 @@ bb20777:
   v2080 = 0;
   goto bb20778;
 
-  } while (1); /* end of syntactic loop 'lB0F1' */
-  } while (1); /* end of syntactic loop 'lB0EF' */
+  } while (1);
+  } while (1);
 lB0E7:
   Y = 0;
   RAM[16] = 0;
@@ -8940,7 +8940,7 @@ lB4A4:
     goto lB4A8;
   }
 
-  do {     /* Syntactic loop 'lB497' to make GCC happy */
+  do {
 lB497:
   v2673 = v2674;
   v2675 = v2676;
@@ -8974,7 +8974,7 @@ bb26619:
     goto bb26648;
   }
 
-  } while (1); /* end of syntactic loop 'lB497' */
+  } while (1);
 lB48D:
   v2669 = A;
   RAM[111] = v2669;
@@ -10356,7 +10356,7 @@ bb2357:
   v87 = 0;
   goto bb2358;
 
-  do {     /* Syntactic loop 'lA3EC' to make GCC happy */
+  do {
 lA3EC:
   v109 = v110;
   v111 = v112;
@@ -10384,7 +10384,7 @@ lA3EC:
     goto lA3EC;
   }
 
-  } while (1); /* end of syntactic loop 'lA3EC' */
+  } while (1);
 bb2543:
   v103 = v104;
   V = v103;
@@ -11056,7 +11056,7 @@ bb3071:
     goto lA434;
   }
 
-  do {     /* Syntactic loop 'lA421' to make GCC happy */
+  do {
 lA421:
   v174 = v175;
   v176 = RAM[((((((((((v174 + v173))) + 1))))) | 256u))];
@@ -11069,7 +11069,7 @@ lA421:
     goto lA421;
   }
 
-  } while (1); /* end of syntactic loop 'lA421' */
+  } while (1);
 lA41F:
   X = -9;
   Z = 0;
@@ -11139,7 +11139,7 @@ lA435_2e_loopexit:
   V = v195;
   goto lA435;
 
-  do {     /* Syntactic loop 'lB35F' to make GCC happy */
+  do {
 lB35F:
   v2491 = v2492;
   v2493 = v2494;
@@ -11261,7 +11261,7 @@ bb25050:
   v2518 = 0;
   goto bb25051;
 
-  } while (1); /* end of syntactic loop 'lB35F' */
+  } while (1);
 lB355:
   v2484 = v2485;
   v2486 = v2487;
@@ -11595,7 +11595,7 @@ lB2CD_2e_loopexit:
   v2365 = 0;
   goto lB2CD;
 
-  do {     /* Syntactic loop 'lB2C8' to make GCC happy */
+  do {
 lB2C8:
   v2356 = v2357;
   v2358 = v2359;
@@ -11612,7 +11612,7 @@ lB2C8:
     goto lB2C8;
   }
 
-  } while (1); /* end of syntactic loop 'lB2C8' */
+  } while (1);
 bb23794:
   v2374 = 0;
   goto bb23795;
@@ -13541,7 +13541,7 @@ lB245_2e_loopexit:
   Y = 3;
   goto lB245;
 
-  do {     /* Syntactic loop 'lB21C' to make GCC happy */
+  do {
 lB21C:
   v2248 = v2249;
   v2250 = v2251;
@@ -13635,7 +13635,7 @@ bb22779:
   v2273 = 0;
   goto bb22780;
 
-  } while (1); /* end of syntactic loop 'lB21C' */
+  } while (1);
 lB20E:
   v2237 = S;
   v2238 = v2237 + 1;
@@ -14208,7 +14208,7 @@ bb43878:
   S = (v4530 - 3);
   goto lB853;
 
-  do {     /* Syntactic loop 'lE01E' to make GCC happy */
+  do {
 lE01E:
   v4532 = v4533;
   v4534 = 5 - v4532;
@@ -14227,7 +14227,7 @@ lE01E:
     goto lE01E;
   }
 
-  } while (1); /* end of syntactic loop 'lE01E' */
+  } while (1);
 bb43754:
   C = 1;
   v4527 = (((v4523 & 255))) - 1;
@@ -14529,7 +14529,7 @@ lB929_2e_preheader:
     goto bb34087;
   }
 
-  do {     /* Syntactic loop 'lB8DB' to make GCC happy */
+  do {
 lB8DB:
   v3405 = v3406;
   v3407 = v3408;
@@ -14585,7 +14585,7 @@ bb33499:
   v3424 = 0;
   goto bb33500;
 
-  } while (1); /* end of syntactic loop 'lB8DB' */
+  } while (1);
 lB8D7:
   Y = 0;
   A = 0;
@@ -14830,7 +14830,7 @@ lBB7E:
   C = (v3952 & 1);
   goto lBB8F;
 
-  do {     /* Syntactic loop 'lBB29' to make GCC happy */
+  do {
 lBB29:
   v3847 = v3848;
   v3849 = v3850;
@@ -14851,7 +14851,7 @@ lBB29:
     goto lBB3F_2e_preheader;
   }
 
-  do {     /* Syntactic loop 'lBB3F' to make GCC happy */
+  do {
 lBB3F:
   v3882 = v3883;
   v3884 = v3885;
@@ -15030,7 +15030,7 @@ bb37684:
   v3950 = 0;
   goto bb37685;
 
-  } while (1); /* end of syntactic loop 'lBB3F' */
+  } while (1);
 lBB3F_2e_preheader:
   v3871 = v3872;
   v3873 = v3874;
@@ -15089,7 +15089,7 @@ bb37150:
   v3878 = v3870;
   goto lBB3F_2e_preheader;
 
-  } while (1); /* end of syntactic loop 'lBB29' */
+  } while (1);
 bb37005:
   X = -4;
   A = 1;
@@ -15415,7 +15415,7 @@ bb19905:
   v1993 = v1979;
   goto lB061;
 
-  do {     /* Syntactic loop 'lB05B' to make GCC happy */
+  do {
 lB05B:
   v1982 = v1983;
   v1984 = v1985;
@@ -15447,7 +15447,7 @@ lB066:
     goto bb19989;
   }
 
-  } while (1); /* end of syntactic loop 'lB05B' */
+  } while (1);
 lB056:
   v1977 = v1978;
   v1979 = v1980;
@@ -15827,7 +15827,7 @@ lB929_2e_bb34087_crit_edge:
   v3501 = v3487;
   goto bb34087;
 
-  do {     /* Syntactic loop 'lB91D' to make GCC happy */
+  do {
 lB91D:
   v3470 = v3471;
   v3472 = v3473;
@@ -15883,7 +15883,7 @@ bb33929:
   v3486 = 0;
   goto bb33930;
 
-  } while (1); /* end of syntactic loop 'lB91D' */
+  } while (1);
 bb34117:
   v3506 = 0;
   goto bb34118;
@@ -16294,7 +16294,7 @@ lA55F:
     goto bb48000;
   }
 
-  do {     /* Syntactic loop 'lA53C' to make GCC happy */
+  do {
 lA53C:
   v367 = v368;
   v369 = v370;
@@ -16371,7 +16371,7 @@ bb4708:
     goto bb4763;
   }
 
-  do {     /* Syntactic loop 'lA544' to make GCC happy */
+  do {
 lA544:
   v381 = v382;
   v383 = RAM[(((v377 + (((((v381 + 5)))))) & 65535u))];
@@ -16382,7 +16382,7 @@ lA544:
     goto lA544;
   }
 
-  } while (1); /* end of syntactic loop 'lA544' */
+  } while (1);
 bb4751:
   goto bb4763;
 
@@ -16390,7 +16390,7 @@ bb4855:
   v390 = 0;
   goto bb4856;
 
-  } while (1); /* end of syntactic loop 'lA53C' */
+  } while (1);
 lA533:
   v361 = v362;
   v363 = RAM[43];
@@ -16491,7 +16491,7 @@ lA609:
     goto bb48000;
   }
 
-  do {     /* Syntactic loop 'lA582' to make GCC happy */
+  do {
 lA582:
   v425 = v426;
   v427 = v428;
@@ -16747,7 +16747,7 @@ bb5831:
     goto lA5B8;
   }
 
-  do {     /* Syntactic loop 'lA5F9' to make GCC happy */
+  do {
 lA5F9:
   v507 = v508;
   v509 = (((v507 + v502))) + 1;
@@ -16760,7 +16760,7 @@ lA5F9:
     goto lA5F9;
   }
 
-  } while (1); /* end of syntactic loop 'lA5F9' */
+  } while (1);
 lA5F5:
   v502 = v503;
   v504 = RAM[122];
@@ -16842,7 +16842,7 @@ lA5DC:
   RAM[15] = v482;
   goto lA5DE;
 
-  } while (1); /* end of syntactic loop 'lA582' */
+  } while (1);
 lA57C:
   v424 = RAM[122];
   X = v424;
@@ -16882,7 +16882,7 @@ lA640:
   C = 0;
   goto lA641;
 
-  do {     /* Syntactic loop 'lA617' to make GCC happy */
+  do {
 lA617:
   v530 = v531;
   v532 = v533;
@@ -16979,7 +16979,7 @@ lA62E:
     goto lA641_2e_loopexit;
   }
 
-  } while (1); /* end of syntactic loop 'lA617' */
+  } while (1);
 lA613:
   v526 = v527;
   S = (v526 - 1);
@@ -17381,7 +17381,7 @@ lA4ED_2e_loopexit:
   X = v326;
   goto lA4ED;
 
-  do {     /* Syntactic loop 'lA4DF' to make GCC happy */
+  do {
 lA4DF:
   v309 = v310;
   v311 = v312;
@@ -17421,7 +17421,7 @@ bb4252:
     goto lA4DF_2e_backedge;
   }
 
-  } while (1); /* end of syntactic loop 'lA4DF' */
+  } while (1);
 bb4157:
   v304 = v305;
   V = v304;
@@ -17666,7 +17666,7 @@ lA52A_2e_loopexit:
   N = v357 >> 7;
   goto lA52A;
 
-  do {     /* Syntactic loop 'lA522' to make GCC happy */
+  do {
 lA522:
   v350 = v351;
   v352 = v349 - v350;
@@ -17683,7 +17683,7 @@ lA522:
     goto lA522;
   }
 
-  } while (1); /* end of syntactic loop 'lA522' */
+  } while (1);
 lA50D:
   v344 = RAM[20];
   v345 = RAM[21];
@@ -18189,7 +18189,7 @@ lA905_2e_loopexit:
   C = v961;
   goto lA905;
 
-  do {     /* Syntactic loop 'lA911' to make GCC happy */
+  do {
 lA911:
   v978 = v979;
   v980 = v981;
@@ -18204,7 +18204,7 @@ lA911:
   v992 = v982;
   goto lA919;
 
-  do {     /* Syntactic loop 'lA919' to make GCC happy */
+  do {
 lA919:
   v989 = v990;
   v991 = v992;
@@ -18254,8 +18254,8 @@ bb10328:
     goto bb10357;
   }
 
-  } while (1); /* end of syntactic loop 'lA919' */
-  } while (1); /* end of syntactic loop 'lA911' */
+  } while (1);
+  } while (1);
 lA90B:
   v975 = v976;
   RAM[7] = v975;
@@ -20161,7 +20161,7 @@ bb29790:
   v2989 = v2987;
   goto lB699;
 
-  do {     /* Syntactic loop 'lB690' to make GCC happy */
+  do {
 lB690:
   v2978 = v2979;
   v2980 = RAM[34];
@@ -20179,7 +20179,7 @@ lB690:
     goto lB690;
   }
 
-  } while (1); /* end of syntactic loop 'lB690' */
+  } while (1);
 bb29719:
   RAM[v2975 | 256u] = v2977;
   S = (v2975 - 1);
@@ -20762,7 +20762,7 @@ lB848_2e_loopexit:
   N = v3296 >> 7;
   goto lB848;
 
-  do {     /* Syntactic loop 'lB840' to make GCC happy */
+  do {
 lB840:
   v3296 = (((v3294 ^ v3291))) & v3295;
   if (v3296 == 0) {
@@ -20771,7 +20771,7 @@ lB840:
     goto lB848_2e_loopexit;
   }
 
-  } while (1); /* end of syntactic loop 'lB840' */
+  } while (1);
 lB83C:
   v3291 = X;
   RAM[74] = v3291;
@@ -21427,7 +21427,7 @@ bb25910:
   S = (v2598 - 3);
   goto lBBD4;
 
-  do {     /* Syntactic loop 'lB418' to make GCC happy */
+  do {
 lB418:
   v2595 = v2596;
   v2597 = 4 - v2595;
@@ -21443,7 +21443,7 @@ lB418:
     goto lB418;
   }
 
-  } while (1); /* end of syntactic loop 'lB418' */
+  } while (1);
 bb25849:
   RAM[72] = v2594;
   Y = 4;
@@ -21942,7 +21942,7 @@ bb39979:
     goto bb39984;
   }
 
-  do {     /* Syntactic loop 'lBCF7' to make GCC happy */
+  do {
 lBCF7:
   v4174 = v4175;
   v4176 = 10 - v4174;
@@ -21955,7 +21955,7 @@ lBCF7:
     goto lBCF7;
   }
 
-  } while (1); /* end of syntactic loop 'lBCF7' */
+  } while (1);
 lBCF3:
   Y = 0;
   X = 10;
@@ -22794,7 +22794,7 @@ lBA8B_2e_loopexit:
   RAM[112] = v3744;
   goto lBA8B;
 
-  do {     /* Syntactic loop 'lBA61' to make GCC happy */
+  do {
 lBA61:
   v3691 = v3692;
   v3693 = v3694;
@@ -22949,7 +22949,7 @@ bb35962:
   v3723 = 0;
   goto bb35963;
 
-  } while (1); /* end of syntactic loop 'lBA61' */
+  } while (1);
 lBA5E:
   v3682 = v3683;
   v3684 = v3682 & 1;
@@ -23954,7 +23954,7 @@ bb38581:
     goto bb48000;
   }
 
-  do {     /* Syntactic loop 'lBC02' to make GCC happy */
+  do {
 lBC02:
   v4001 = v4002;
   v4003 = 5 - v4001;
@@ -23969,7 +23969,7 @@ lBC02:
     goto lBC02;
   }
 
-  } while (1); /* end of syntactic loop 'lBC02' */
+  } while (1);
 lBBFE:
   v4000 = A;
   RAM[102] = v4000;
@@ -24048,7 +24048,7 @@ bb38664:
   RAM[112] = 0;
   goto lBC1A;
 
-  do {     /* Syntactic loop 'lBC11' to make GCC happy */
+  do {
 lBC11:
   v4015 = v4016;
   v4017 = 6 - v4015;
@@ -24063,7 +24063,7 @@ lBC11:
     goto lBC11;
   }
 
-  } while (1); /* end of syntactic loop 'lBC11' */
+  } while (1);
 lBC11_2e_preheader:
   X = 6;
   Z = 0;
@@ -24631,7 +24631,7 @@ bb42991:
     goto bb43003;
   }
 
-  do {     /* Syntactic loop 'lBEEF' to make GCC happy */
+  do {
 lBEEF:
   v4446 = v4447;
   v4448 = v4449;
@@ -24652,7 +24652,7 @@ lBEEF:
     goto bb42991;
   }
 
-  } while (1); /* end of syntactic loop 'lBEEF' */
+  } while (1);
 lBEE3:
   v4441 = v4442;
   v4443 = v4444;
@@ -24709,7 +24709,7 @@ bb42727:
     goto bb42754;
   }
 
-  do {     /* Syntactic loop 'lBEC6' to make GCC happy */
+  do {
 lBEC6:
   v4424 = v4425;
   v4426 = v4415 - v4424;
@@ -24722,7 +24722,7 @@ lBEC6:
     goto bb42727;
   }
 
-  } while (1); /* end of syntactic loop 'lBEC6' */
+  } while (1);
 lBEC4:
   v4422 = v4423;
   A = v4418;
@@ -24735,7 +24735,7 @@ lBEC4:
   v4425 = 0;
   goto lBEC6;
 
-  do {     /* Syntactic loop 'lBE6A' to make GCC happy */
+  do {
 lBE6A:
   v4380 = v4381;
   v4382 = v4383;
@@ -24919,7 +24919,7 @@ bb42513:
   v4416 = v4414;
   goto lBEB2;
 
-  } while (1); /* end of syntactic loop 'lBE6A' */
+  } while (1);
 lBE6A_2e_preheader:
   v4378 = v4379;
   X = 128u;
@@ -25656,8 +25656,8 @@ bb47961:
   N = v4915;
   goto lE4B6;
 
-  } while (1); /* end of syntactic loop 'bb48000' */
-  do {     /* Syntactic loop 'not_found' to make GCC happy */
+  } while (1);
+  do {
 not_found:
   v0 = PC;
   v1 = v0;
@@ -25710,7 +25710,7 @@ bb1876:
   PC = v9;
   goto bb1885;
 
-  } while (1); /* end of syntactic loop 'not_found' */
+  } while (1);
 lA43A:
   C = v4857;
   v216 = ((v4856 << 1));
@@ -26380,7 +26380,7 @@ bb12951:
     goto bb12975;
   }
 
-  do {     /* Syntactic loop 'lAAEE' to make GCC happy */
+  do {
 lAAEE:
   v1282 = v1283;
   v1284 = v1285;
@@ -26398,7 +26398,7 @@ lAAEE:
     goto bb12951;
   }
 
-  } while (1); /* end of syntactic loop 'lAAEE' */
+  } while (1);
 lAAEC:
   v1281 = Y;
   A = v1281;
@@ -26626,7 +26626,7 @@ lA737_2e_loopexit:
   X = v714;
   goto lA737;
 
-  do {     /* Syntactic loop 'lA72C' to make GCC happy */
+  do {
 lA72C:
   v707 = v708;
   v709 = v710;
@@ -26660,7 +26660,7 @@ bb7654:
     goto lA72C;
   }
 
-  do {     /* Syntactic loop 'lA72F' to make GCC happy */
+  do {
 lA72F:
   v716 = v717;
   v718 = (((v716 + v711))) + 1;
@@ -26673,8 +26673,8 @@ lA72F:
     goto lA72F;
   }
 
-  } while (1); /* end of syntactic loop 'lA72F' */
-  } while (1); /* end of syntactic loop 'lA72C' */
+  } while (1);
+  } while (1);
 bb7535:
   C = 1;
   v703 = v698 - 127;
@@ -28174,7 +28174,7 @@ bb47433:
   PC = -100;
   goto not_found;
 
-  do {     /* Syntactic loop 'lE3E2' to make GCC happy */
+  do {
 lE3E2:
   v4865 = v4866;
   v4867 = 28 - v4865;
@@ -28188,7 +28188,7 @@ lE3E2:
     goto lE3E2;
   }
 
-  } while (1); /* end of syntactic loop 'lE3E2' */
+  } while (1);
 lE397:
   v4859 = S;
   RAM[v4859 | 256u] = -29;
@@ -28240,7 +28240,7 @@ bb47890:
     goto bb48000;
   }
 
-  do {     /* Syntactic loop 'lE455' to make GCC happy */
+  do {
 lE455:
   v4904 = v4905;
   v4906 = 11 - v4904;
@@ -28255,7 +28255,7 @@ lE455:
     goto lE455;
   }
 
-  } while (1); /* end of syntactic loop 'lE455' */
-  } while (1); /* end of syntactic loop 'lE394' */
+  } while (1);
+  } while (1);
 }
 
