@@ -1,8 +1,6 @@
 import pprint
 
 def print_section(sections, section):
-    print('')
-    print(section + ':')
     for line in sections[section]:
         if line.startswith('goto'):
             goto_target = line.split(' ')[1][:-1]
@@ -66,6 +64,8 @@ print("// Inlining {} basic blocks.".format(len(single_goto_targets)))
 
 for section in sections:
     if section not in single_goto_targets:
+        print('')
+        print(section + ':')
         print_section(sections, section)
 
 

@@ -2280,7 +2280,7 @@ bb48000:
     goto lE4B1;
   }
 
-#include "core2.c"
+#include "core.c"
 
 }
 
