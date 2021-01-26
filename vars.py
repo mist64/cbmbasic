@@ -19,7 +19,7 @@ sections = {}
 for line in code:
     if line == '':
         continue
-    if line.endswith(':'):
+    if line.endswith(':') and not (line.startswith('case') or line.startswith('default')):
         section = line[:-1]
         sections[section] = []
     else:
@@ -49,14 +49,30 @@ all_variables = set(all_variables)
 #pprint.pprint(sections_for_variable)
 
 # print global variables
+globals = []
 for variable in all_variables:
     if len(sections_for_variable[variable]) != 1:
-        if variable in eightbit:
-            print('u8 ' + variable + ';')
-        elif variable in bool:
-            print('bool ' + variable + ';')
-        else:
-            print('u16 ' + variable + ';')
+        globals.append(variable)
+global_renames = {}
+index = 0
+for variable in globals:
+    if variable in eightbit:
+        new_name = 'g' + str(index)
+        index += 1
+        global_renames[variable] = new_name
+        print('u8 ' + new_name + ';')
+for variable in globals:
+    if variable in bool:
+        new_name = 'g' + str(index)
+        index += 1
+        global_renames[variable] = new_name
+        print('bool ' + new_name + ';')
+for variable in globals:
+    if variable not in eightbit and variable not in bool:
+        new_name = 'g' + str(index)
+        index += 1
+        global_renames[variable] = new_name
+        print('u16 ' + new_name + ';')
 
 # print sections, with local variables
 
@@ -93,16 +109,12 @@ for section in sections:
             renames[variable] = new_name
             print('u16 ' + new_name + ';')
     for line in sections[section]:
+        variables += re.findall(r'v[0-9]+', line)
+        for variable in global_renames:
+            if variable in variables:
+                line = re.sub(r'\b' + variable + r'\b', global_renames[variable], line)
         for variable in renames:
-            line = re.sub(variable, renames[variable], line)
+            line = re.sub(r'\b' + variable + r'\b', renames[variable], line)
         print(line)
     print('}')
-
-
-
-
-
-
-
-
 
