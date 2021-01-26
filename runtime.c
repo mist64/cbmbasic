@@ -146,7 +146,7 @@ int readycount = 0;
 int interactive;
 FILE *input_file;
 
-int
+unsigned short
 init_os(int argc, char **argv) {
 //	printf("init_os %d\n", argc);
 	if (!argc) /* continuation */
