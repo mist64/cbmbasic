@@ -69,16 +69,32 @@ for section in sections:
         if len(sections_for_variable[variable]) == 1:
             variables.append(variable)
 
+    variables.sort()
+
+    renames = {}
+    index = 0
+
     for variable in variables:
         if variable in eightbit:
-            print('u8 ' + variable + ';')
+            new_name = 't' + str(index)
+            index += 1
+            renames[variable] = new_name
+            print('u8 ' + new_name + ';')
     for variable in variables:
         if variable in bool:
-            print('bool ' + variable + ';')
+            new_name = 't' + str(index)
+            index += 1
+            renames[variable] = new_name
+            print('bool ' + new_name + ';')
     for variable in variables:
         if variable not in eightbit and variable not in bool:
-            print('u16 ' + variable + ';')
+            new_name = 't' + str(index)
+            index += 1
+            renames[variable] = new_name
+            print('u16 ' + new_name + ';')
     for line in sections[section]:
+        for variable in renames:
+            line = re.sub(variable, renames[variable], line)
         print(line)
     print('}')
 
