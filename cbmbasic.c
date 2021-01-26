@@ -1209,17 +1209,6 @@ int main(int argc, char **argv) {
       exit(1);
   }
 
-lE394:
-  v4858 = S;
-  RAM[v4858 + 256u] = -29;
-  RAM[(v4858 - 1) + 256u] = -106;
-  S = (v4858 - 2);
-  X = 11;
-  Z = 0;
-  N = 0;
-  v4905 = 0;
-  goto lE455;
-
 bb48000:
   v4924 = PC;
   if (v4924 == 0xA437) /* error handler */
@@ -2280,7 +2269,7 @@ bb48000:
     goto lE4B1;
   }
 
-#include "core.c"
+#include "core2.c"
 
 }
 
