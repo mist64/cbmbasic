@@ -56,6 +56,7 @@ stack4(unsigned short a, unsigned short b, unsigned short c, unsigned short d) {
 	return 1;
 }
 
+// *** handled in cbmbasic.c; this version is for the use in plugins! *** //
 /*
  * CHRGET/CHRGOT
  * CBMBASIC implements CHRGET/CHRGOT as self-modifying
@@ -905,8 +906,8 @@ kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned
 
 	unsigned int new_pc;
 	switch(PC) {
-		case 0x0073:	CHRGET();	break;
-		case 0x0079:	CHRGOT();	break;
+		case 0x0073:	CHRGET();	break; // handled by cbmbasic.c,
+		case 0x0079:	CHRGOT();	break; // should not ever trigger
 		case 0xFF90:	SETMSG();	break;
 		case 0xFF99:	MEMTOP();	break;
 		case 0xFF9C:	MEMBOT();	break;
