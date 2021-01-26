@@ -12,7 +12,7 @@ def print_section(sections, section):
             print(line)
 
 
-with open("core.c", "r") as f:
+with open("core_orig.c", "r") as f:
     code = f.readlines()
     code = [x.strip() for x in code]
 
@@ -27,7 +27,7 @@ sections = {}
 for line in code:
     if line == '':
         continue
-    if line.endswith(':'):
+    if line.endswith(':') and not (line.startswith('case') or line.startswith('default')):
         section = line[:-1]
         sections[section] = []
     else:
@@ -43,9 +43,9 @@ for section in sections:
         if line.startswith('goto'):
             goto_target = line.split(' ')[1][:-1]
             if goto_target in goto_targets:
-                goto_targets[goto_target] += 1
+                goto_targets[goto_target].append(section)
             else:
-                goto_targets[goto_target] = 1
+                goto_targets[goto_target] = [ section ]
 
 #print(goto_targets)
 
@@ -54,7 +54,7 @@ for section in sections:
 single_goto_targets = []
 
 for goto_target in goto_targets:
-    if goto_targets[goto_target] == 1:
+    if len(goto_targets[goto_target]) == 1 and goto_targets[goto_target] != [ 'bb48000' ]:
         if 'goto ' + goto_target + ';' not in sections[goto_target]: # self loop
             single_goto_targets.append(goto_target)
     
