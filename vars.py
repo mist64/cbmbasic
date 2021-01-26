@@ -49,14 +49,14 @@ all_variables = set(all_variables)
 #pprint.pprint(sections_for_variable)
 
 # print global variables
-#for variable in all_variables:
-#    if len(sections_for_variable[variable]) > 1:
-#        if variable in eightbit:
-#            print('u8 ' + variable + ';')
-#        elif variable in bool:
-#            print('bool ' + variable + ';')
-#        else:
-#            print('u16 ' + variable + ';')
+for variable in all_variables:
+    if len(sections_for_variable[variable]) != 1:
+        if variable in eightbit:
+            print('u8 ' + variable + ';')
+        elif variable in bool:
+            print('bool ' + variable + ';')
+        else:
+            print('u16 ' + variable + ';')
 
 # print sections, with local variables
 
