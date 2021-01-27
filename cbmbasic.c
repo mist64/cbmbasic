@@ -28,7 +28,7 @@
 /* these must be defined outside */
 /*********************************/
 unsigned short init_os(int, char **);
-unsigned int kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned char *y, unsigned char *s, unsigned char *n, unsigned char *v, unsigned char *b, unsigned char *d, unsigned char *i, unsigned char *z, unsigned char *c);
+unsigned int kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned char *y, unsigned char *s, unsigned char *n, unsigned char *z, unsigned char *c);
 /*********************************/
 
 #include <stdio.h>
@@ -45,6 +45,13 @@ typedef signed int s32;
 #ifndef __cplusplus
 typedef u8 bool;
 #endif
+
+// disable all calculations of V, B, D, I: they are not needed in cbmbasic
+// (we should remove them)
+#define V_INSTR V = 0; if (0)
+#define B_INSTR B = 0; if (0)
+#define D_INSTR D = 0; if (0)
+#define I_INSTR I = 0; if (0)
 
 static void CHRGET_common(bool inc, u8 *a, bool *z, bool *c);
 
@@ -1193,7 +1200,7 @@ int main(int argc, char **argv) {
     Z = t7;
     N = t2 >> 7;
     C = t1;
-    V = t0;
+    V_INSTR V = t0;
     t5 = RAM[(g590 + 256u)];
     S = g370;
     t6 = RAM[(g370 + 256u)];
@@ -1460,7 +1467,7 @@ int main(int argc, char **argv) {
   {
     u8 t0;
     t0 = g66;
-    V = t0;
+    V_INSTR V = t0;
     C = (((g996 >> 8) & 1) ^ 1);
     g350 = g915 + 1;
     X = g350;
@@ -1498,7 +1505,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g532;
-    V = t0;
+    V_INSTR V = t0;
     g601 = g934;
     g609 = g601 == 0;
     g709 = (g601 >> 7);
@@ -1570,7 +1577,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g733;
-    V = t0;
+    V_INSTR V = t0;
     C = (g924 >> 8) & 1;
     RAM[91] = g924;
     t1 = RAM[51];
@@ -1594,7 +1601,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g162;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g805 >> 8) & 1;
     C = t1;
     RAM[90] = g805;
@@ -1969,7 +1976,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g374;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g921;
     A = t1;
     t2 = (g921 >> 8) & 1;
@@ -2053,7 +2060,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u16 t2;
     t0 = g525;
-    V = t0;
+    V_INSTR V = t0;
     g357 = g988;
     A = g357;
     Z = g357 == 0;
@@ -2169,7 +2176,7 @@ int main(int argc, char **argv) {
       t1 = RAM[47];
       if (((g427 - t1) & 255u) == 0u) {
         X = g249;
-        V = g628;
+        V_INSTR V = g628;
         Y = 0;
         g727 = S;
         g43 = g727 + 1;
@@ -2258,7 +2265,7 @@ int main(int argc, char **argv) {
         C = t2;
         Z = t4;
         N = t5;
-        V = t0;
+        V_INSTR V = t0;
         Y = 0;
         goto lB113;
       } else {
@@ -2307,7 +2314,7 @@ int main(int argc, char **argv) {
         C = (((t5 >> 8) & 1) ^ 1);
         Z = ((t5 & 255u) == 0u);
         N = t4 >> 7;
-        V = g628;
+        V_INSTR V = g628;
         Y = 1;
         goto lB185;
       } else {
@@ -2350,7 +2357,7 @@ int main(int argc, char **argv) {
     t10 = t2 - 40;
     t11 = t10;
     t3 = (((((((t11 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
-    V = t3;
+    V_INSTR V = t3;
     t4 = t10;
     A = t4;
     Z = t4 == 0;
@@ -2497,7 +2504,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u16 t3;
     t0 = g232;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g920;
     A = t1;
     Z = t1 == 0;
@@ -2526,7 +2533,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u16 t3;
     t0 = g646;
-    V = t0;
+    V_INSTR V = t0;
     g436 = g797;
     A = g436;
     Z = g436 == 0;
@@ -2725,7 +2732,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g299;
-    V = t0;
+    V_INSTR V = t0;
     g737 = g977;
     A = g737;
     t1 = (g977 >> 8) & 1;
@@ -3031,7 +3038,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g73;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g900;
     A = t1;
     t2 = (g900 >> 8) & 1;
@@ -3175,7 +3182,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u16 t3;
     t0 = g326;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g800;
     A = t1;
     Z = t1 == 0;
@@ -3237,7 +3244,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     if (t1 == 0) {
       t8 = S;
       RAM[t8 + 256u] = -84;
@@ -3249,7 +3256,7 @@ int main(int argc, char **argv) {
       Z = t2 == 0;
       N = t2 >> 7;
       t3 = t2 & 64;
-      V = (t3 >> 6);
+      V_INSTR V = (t3 >> 6);
       if (t3 == 0) {
         t6 = A;
         RAM[7] = t6;
@@ -3889,7 +3896,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u16 t3;
     t0 = g234;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g835;
     A = t1;
     Z = t1 == 0;
@@ -4160,7 +4167,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u16 t2;
     t0 = g468;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g997;
     A = t1;
     Z = t1 == 0;
@@ -4355,7 +4362,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g310;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g856;
     Z = t1 == 0;
     N = t1 >> 7;
@@ -4413,7 +4420,7 @@ int main(int argc, char **argv) {
     u16 t6;
     u16 t7;
     t0 = g323;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g811;
     A = t1;
     Z = t1 == 0;
@@ -4597,10 +4604,10 @@ int main(int argc, char **argv) {
     t1 = RAM[(g747 + 256u)];
     t2 = (t1 >> 7);
     N = t2;
-    V = ((t1 >> 6) & 1);
-    B = ((t1 >> 4) & 1);
-    D = ((t1 >> 3) & 1);
-    I = ((t1 >> 2) & 1);
+    V_INSTR V = ((t1 >> 6) & 1);
+    B_INSTR B = ((t1 >> 4) & 1);
+    D_INSTR D = ((t1 >> 3) & 1);
+    I_INSTR I = ((t1 >> 2) & 1);
     Z = ((t1 >> 1) & 1);
     C = (t1 & 1);
     if (t2 == 0) {
@@ -4647,7 +4654,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g386;
-    V = t0;
+    V_INSTR V = t0;
     g688 = g994;
     t1 = (g994 >> 8) & 1;
     C = t1;
@@ -4775,7 +4782,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g762;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g803;
     A = t1;
     Z = t1 == 0;
@@ -4802,7 +4809,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g289;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g836;
     A = t1;
     Z = t1 == 0;
@@ -4915,7 +4922,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g420;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g905;
     A = t1;
     Z = t1 == 0;
@@ -4970,7 +4977,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g667;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g808;
     A = t1;
     Z = t1 == 0;
@@ -5018,7 +5025,7 @@ int main(int argc, char **argv) {
     u16 t8;
     u16 t9;
     t0 = g757;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g831;
     A = t1;
     Z = t1 == 0;
@@ -5130,7 +5137,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g393;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g945;
     A = t1;
     C = (g945 >> 8) & 1;
@@ -5192,7 +5199,7 @@ int main(int argc, char **argv) {
     t0 = RAM[72];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     g258 = g155;
     goto lADAA;
   }
@@ -5339,10 +5346,10 @@ int main(int argc, char **argv) {
     S = t1;
     t2 = RAM[(t1 + 256u)];
     N = t2 >> 7;
-    V = ((t2 >> 6) & 1);
-    B = ((t2 >> 4) & 1);
-    D = ((t2 >> 3) & 1);
-    I = ((t2 >> 2) & 1);
+    V_INSTR V = ((t2 >> 6) & 1);
+    B_INSTR B = ((t2 >> 4) & 1);
+    D_INSTR D = ((t2 >> 3) & 1);
+    I_INSTR I = ((t2 >> 2) & 1);
     t3 = (t2 >> 1) & 1;
     Z = t3;
     C = (t2 & 1);
@@ -5834,7 +5841,7 @@ int main(int argc, char **argv) {
     RAM[93] = g513;
     RAM[113] = t2;
     RAM[114] = t1;
-    V = t0;
+    V_INSTR V = t0;
     goto lA435;
   }
   
@@ -5928,7 +5935,7 @@ int main(int argc, char **argv) {
       RAM[93] = t5;
       RAM[113] = g457;
       RAM[114] = g389;
-      V = t0;
+      V_INSTR V = t0;
       t7 = RAM[(((g5 + 1) + 256u))];
       t8 = g5 + 2;
       S = t8;
@@ -6079,7 +6086,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g273;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g955;
     A = t1;
     C = (g955 >> 8) & 1;
@@ -6292,7 +6299,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g616;
-    V = t0;
+    V_INSTR V = t0;
     C = (((g949 >> 8) & 1) ^ 1);
     t1 = RAM[95];
     RAM[(((g243 << 8u) | t1) + 3u) & 65535u] = g892;
@@ -6317,7 +6324,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g469;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g798 >> 8) & 1) ^ 1;
     C = t1;
     t2 = RAM[96];
@@ -6460,7 +6467,7 @@ int main(int argc, char **argv) {
     u8 t4;
     u16 t5;
     t0 = g618;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g824;
     t2 = (g824 >> 8) & 1;
     C = t2;
@@ -6594,7 +6601,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     N = t0 >> 7;
     t1 = t0 & 64;
-    V = (t1 >> 6);
+    V_INSTR V = (t1 >> 6);
     if (t1 == 0) {
       g32 = 11;
       g464 = 0;
@@ -6707,7 +6714,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g134;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g846;
     A = t1;
     Z = t1 == 0;
@@ -6725,7 +6732,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g26;
-    V = t0;
+    V_INSTR V = t0;
     g188 = g953;
     t1 = (g953 >> 8) & 1;
     C = t1;
@@ -6876,7 +6883,7 @@ int main(int argc, char **argv) {
       t2 = RAM[4514];
       Z = t2 == 0;
       N = t2 >> 7;
-      V = ((t2 >> 6) & 1);
+      V_INSTR V = ((t2 >> 6) & 1);
       goto lA437;
     }
   }
@@ -6905,7 +6912,7 @@ int main(int argc, char **argv) {
       N = t1 >> 7;
       t5 = (t1 - 2) + (((s16 )(s8 )t0));
       t6 = t5;
-      V = (((((((t6 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t6 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
       t2 = ((t6 >> 8) & 1) ^ 1;
       C = t2;
       RAM[122] = t5;
@@ -6915,7 +6922,7 @@ int main(int argc, char **argv) {
       N = t3 >> 7;
       t7 = (t3 - 1) + t2;
       t8 = t7;
-      V = (((((((t8 ^ t3) & 128u) == 0u) | (((s8 )t3) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t8 ^ t3) & 128u) == 0u) | (((s8 )t3) > -1))&1))) ? 0 : 1;
       t4 = t7;
       A = t4;
       Z = t4 == 0;
@@ -7021,7 +7028,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     t2 = C;
     if (t1 == 0) {
       if (t2 != 0) {
@@ -7068,7 +7075,7 @@ int main(int argc, char **argv) {
     t0 = RAM[56];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     goto lAD90;
   }
   
@@ -7124,7 +7131,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u16 t2;
     t0 = g746;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g816;
     A = t1;
     C = (g816 >> 8) & 1;
@@ -7145,7 +7152,7 @@ int main(int argc, char **argv) {
     u16 t4;
     u16 t5;
     t0 = g123;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g841;
     t2 = (t1 >> 7);
     RAM[34] = t1;
@@ -7179,7 +7186,7 @@ int main(int argc, char **argv) {
     u8 t5;
     u8 t6;
     t0 = g364;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g842;
     A = t1;
     Z = t1 == 0;
@@ -7224,7 +7231,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u16 t4;
     t0 = g539;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g911;
     A = t1;
     Z = t1 == 0;
@@ -7324,7 +7331,7 @@ int main(int argc, char **argv) {
     t0 = A;
     g909 = t0 - 177;
     t8 = g909;
-    V = (((((((t8 ^ t0) & 128u) == 0u) | (((s8 )t0) < 0))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t8 ^ t0) & 128u) == 0u) | (((s8 )t0) < 0))&1))) ? 0 : 1;
     g518 = g909;
     A = g518;
     Z = g518 == 0;
@@ -7731,7 +7738,7 @@ int main(int argc, char **argv) {
     t1 = C;
     t10 = (t0 - 129) + (((s16 )(s8 )t1));
     t11 = t10;
-    V = (((((((t11 ^ t0) & 128u) == 0u) | (((s8 )t0) < 0))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t11 ^ t0) & 128u) == 0u) | (((s8 )t0) < 0))&1))) ? 0 : 1;
     t2 = t10;
     A = t2;
     Z = t2 == 0;
@@ -7901,7 +7908,7 @@ int main(int argc, char **argv) {
     if (t0 == 0) {
       t1 = A;
       g993 = (t1 - 48) + (((s16 )(s8 )t0));
-      V = (((((((g993 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((g993 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
       RAM[7] = g993;
       g373 = RAM[21];
       A = g373;
@@ -8123,10 +8130,10 @@ int main(int argc, char **argv) {
       S = t2;
       t3 = RAM[(t2 + 256u)];
       N = t3 >> 7;
-      V = ((t3 >> 6) & 1);
-      B = ((t3 >> 4) & 1);
-      D = ((t3 >> 3) & 1);
-      I = ((t3 >> 2) & 1);
+      V_INSTR V = ((t3 >> 6) & 1);
+      B_INSTR B = ((t3 >> 4) & 1);
+      D_INSTR D = ((t3 >> 3) & 1);
+      I_INSTR I = ((t3 >> 2) & 1);
       Z = ((t3 >> 1) & 1);
       t4 = t3 & 1;
       C = t4;
@@ -8187,7 +8194,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g674;
-    V = t0;
+    V_INSTR V = t0;
     C = (g946 >> 8) & 1;
     RAM[g538 + 256u] = g946;
     t1 = RAM[58];
@@ -8210,7 +8217,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g253;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g845 >> 8) & 1;
     C = t1;
     g362 = S;
@@ -8400,7 +8407,7 @@ int main(int argc, char **argv) {
     t1 = RAM[11433];
     Z = t1 == 0;
     N = t1 >> 7;
-    V = ((t1 >> 6) & 1);
+    V_INSTR V = ((t1 >> 6) & 1);
     g288 = t0;
     goto lAEFF;
   }
@@ -8480,7 +8487,7 @@ int main(int argc, char **argv) {
     t0 = RAM[10409];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     g248 = 41;
     goto lAEFC;
   }
@@ -8886,7 +8893,7 @@ int main(int argc, char **argv) {
     t0 = RAM[3746];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     goto lA437;
   }
   
@@ -8915,7 +8922,7 @@ int main(int argc, char **argv) {
         C = (((t4 >> 8) & 1) ^ 1);
         Z = ((t4 & 255u) == 0u);
         N = t3 >> 7;
-        V = g445;
+        V_INSTR V = g445;
         Y = t0;
         *p15 = -78;
         S = g15;
@@ -8949,7 +8956,7 @@ int main(int argc, char **argv) {
       C = (t2 >> 8u);
       Z = t1 == 0;
       N = t1 >> 7;
-      V = t0;
+      V_INSTR V = t0;
       Y = 3;
       goto lB245;
     }
@@ -9001,7 +9008,7 @@ int main(int argc, char **argv) {
       t4 = (t2 - t3);
       if ((t4 & 255u) == 0u) {
         C = (((t4 >> 8) & 1) ^ 1);
-        V = g445;
+        V_INSTR V = g445;
         Y = 1;
         X = 19;
         A = g655;
@@ -9107,7 +9114,7 @@ int main(int argc, char **argv) {
       t1 = A;
       t3 = (t1 - 48) + (((s16 )(s8 )t0));
       t4 = t3;
-      V = (((((((t4 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t4 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
       t2 = t3;
       A = t2;
       Z = t2 == 0;
@@ -9288,7 +9295,7 @@ int main(int argc, char **argv) {
         t3 = C;
         t5 = (t2 - 128) + (((s16 )(s8 )t3));
         t6 = t5;
-        V = (((((((t6 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
+        V_INSTR V = (((((((t6 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
         C = (((t6 >> 8) & 1) ^ 1);
         t4 = S;
         RAM[t4 + 256u] = t5;
@@ -9324,7 +9331,7 @@ int main(int argc, char **argv) {
       t2 = RAM[7074];
       Z = t2 == 0;
       N = t2 >> 7;
-      V = ((t2 >> 6) & 1);
+      V_INSTR V = ((t2 >> 6) & 1);
       goto lA437;
     } else {
       goto lB34B;
@@ -9567,7 +9574,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g756;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g880;
     A = t1;
     Z = t1 == 0;
@@ -9589,7 +9596,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g182;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g942 >> 8) & 1;
     C = t1;
     RAM[99] = g942;
@@ -9618,7 +9625,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g449;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g861 >> 8) & 1;
     C = t1;
     RAM[100] = g861;
@@ -9647,7 +9654,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g712;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g848 >> 8) & 1;
     C = t1;
     RAM[101] = g848;
@@ -9676,7 +9683,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g440;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g799 >> 8) & 1;
     C = t1;
     RAM[112] = g799;
@@ -9711,7 +9718,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     if (t1 == 0) {
       t2 = A;
       t3 = RAM[86];
@@ -9768,7 +9775,7 @@ int main(int argc, char **argv) {
     u8 t4;
     u8 t5;
     t0 = g488;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g984;
     A = t1;
     Z = t1 == 0;
@@ -9922,7 +9929,7 @@ int main(int argc, char **argv) {
     u16 t3;
     u16 t4;
     t0 = g242;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g854;
     A = t1;
     Z = t1 == 0;
@@ -9934,7 +9941,7 @@ int main(int argc, char **argv) {
       C = 1;
       t3 = (g854 & 255) - 1;
       t4 = t3;
-      V = (((((((t4 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t4 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
       t2 = t3;
       A = t2;
       C = (((t4 >> 8) & 1) ^ 1);
@@ -10074,7 +10081,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u16 t2;
     t0 = g96;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g806;
     A = t1;
     Z = t1 == 0;
@@ -10162,7 +10169,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g126;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g963;
     A = t1;
     Z = t1 == 0;
@@ -10185,7 +10192,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u16 t4;
     t0 = g730;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g804;
     A = t1;
     Z = t1 == 0;
@@ -10268,7 +10275,7 @@ int main(int argc, char **argv) {
       X = t3;
       Z = t3 == 0;
       N = t4;
-      V = t2;
+      V_INSTR V = t2;
       A = t1;
       C = t0;
       RAM[99] = g443;
@@ -10308,7 +10315,7 @@ int main(int argc, char **argv) {
       X = g582;
       Z = ((t4 & 255u) == 0u);
       N = t3 >> 7;
-      V = t0;
+      V_INSTR V = t0;
       A = t1;
       C = t2;
       RAM[99] = g412;
@@ -10371,7 +10378,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g301;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g980;
     A = t1;
     Z = t1 == 0;
@@ -10393,7 +10400,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g507;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g940 >> 8) & 1) ^ 1;
     C = t1;
     RAM[99] = g943;
@@ -10423,7 +10430,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g60;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g966 >> 8) & 1) ^ 1;
     C = t1;
     RAM[100] = g796;
@@ -10453,7 +10460,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g461;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g987 >> 8) & 1) ^ 1;
     C = t1;
     RAM[101] = g935;
@@ -10483,7 +10490,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g540;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g872 >> 8) & 1;
     C = t1;
     RAM[112] = g872;
@@ -10699,10 +10706,10 @@ int main(int argc, char **argv) {
           S = g421;
           t13 = RAM[(g421 + 256u)];
           N = t13 >> 7;
-          V = ((t13 >> 6) & 1);
-          B = ((t13 >> 4) & 1);
-          D = ((t13 >> 3) & 1);
-          I = ((t13 >> 2) & 1);
+          V_INSTR V = ((t13 >> 6) & 1);
+          B_INSTR B = ((t13 >> 4) & 1);
+          D_INSTR D = ((t13 >> 3) & 1);
+          I_INSTR I = ((t13 >> 2) & 1);
           Z = ((t13 >> 1) & 1);
           C = (t13 & 1);
           goto lBB8F;
@@ -11072,7 +11079,7 @@ int main(int argc, char **argv) {
       Z = t7 == 0;
       t8 = (t7 >> 7);
       N = t8;
-      V = ((t7 >> 6) & 1);
+      V_INSTR V = ((t7 >> 6) & 1);
       if (t8 == 0) {
         t11 = S;
         RAM[t11 + 256u] = -81;
@@ -11137,7 +11144,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g471;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g936;
     A = t1;
     Z = t1 == 0;
@@ -11154,7 +11161,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g369;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g826 >> 8) & 1) ^ 1;
     C = t1;
     Y = g823;
@@ -11411,7 +11418,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g226;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g809;
     A = t1;
     Z = t1 == 0;
@@ -11608,7 +11615,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g701;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g990;
     A = t1;
     Z = t1 == 0;
@@ -11630,7 +11637,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g315;
-    V = t0;
+    V_INSTR V = t0;
     g660 = g998;
     t1 = ((g844 >> 8) & 1) ^ 1;
     C = t1;
@@ -11885,7 +11892,7 @@ int main(int argc, char **argv) {
     } else {
       A = t1;
       C = t6;
-      V = t0;
+      V_INSTR V = t0;
       Z = t7;
       N = t9;
       RAM[112] = t2;
@@ -11935,7 +11942,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u16 t4;
     t0 = g407;
-    V = t0;
+    V_INSTR V = t0;
     g552 = g881;
     A = g552;
     Z = g552 == 0;
@@ -11958,7 +11965,7 @@ int main(int argc, char **argv) {
         t3 = RAM[5136];
         Z = t3 == 0;
         N = t3 >> 7;
-        V = ((t3 >> 6) & 1);
+        V_INSTR V = ((t3 >> 6) & 1);
         g137 = 0;
         goto lBAC6;
       } else {
@@ -12036,7 +12043,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g651;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g832;
     A = t1;
     Z = t1 == 0;
@@ -12158,7 +12165,7 @@ int main(int argc, char **argv) {
         Z = t3 == 0;
         t4 = (t3 >> 7);
         N = t4;
-        V = ((t3 >> 6) & 1);
+        V_INSTR V = ((t3 >> 6) & 1);
         if (t4 == 0) {
           goto lB97E;
         } else {
@@ -12629,7 +12636,7 @@ int main(int argc, char **argv) {
     Z = t5;
     N = t4;
     A = t3;
-    V = t2;
+    V_INSTR V = t2;
     C = t1;
     X = t0;
     t6 = RAM[(((g329 + 1) + 256u))];
@@ -12927,7 +12934,7 @@ int main(int argc, char **argv) {
     C = 1;
     t1 = (g867 & 255) - 85;
     t2 = t1;
-    V = (((((((t2 ^ g317) & 128u) == 0u) | (((s8 )g317) > -1))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t2 ^ g317) & 128u) == 0u) | (((s8 )g317) > -1))&1))) ? 0 : 1;
     t0 = t1;
     C = (((t2 >> 8) & 1) ^ 1);
     if (t0 == 0) {
@@ -12964,7 +12971,7 @@ int main(int argc, char **argv) {
       C = 1;
       g867 = t1 - 58;
       t3 = g867;
-      V = (((((((t3 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t3 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
       g317 = g867;
       C = (((t3 >> 8) & 1) ^ 1);
       if (g317 == 0) {
@@ -13013,7 +13020,7 @@ int main(int argc, char **argv) {
       } else {
         t0 = RAM[15];
         t1 = t0 & 64;
-        V = (t1 >> 6);
+        V_INSTR V = (t1 >> 6);
         if (t1 == 0) {
           t7 = (t4 - 63);
           C = (((t7 >> 8) & 1) ^ 1);
@@ -13072,7 +13079,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u16 t3;
     t0 = g70;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g956;
     C = (((g871 >> 8) & 1) ^ 1);
     if (t1 == 0) {
@@ -13504,7 +13511,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g690;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g932;
     A = t1;
     t2 = (g932 >> 8) & 1;
@@ -13538,7 +13545,7 @@ int main(int argc, char **argv) {
     u8 t5;
     u16 t6;
     t0 = g572;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g967;
     A = t1;
     Z = t1 == 0;
@@ -13583,7 +13590,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g519;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g821 >> 8) & 1) ^ 1;
     C = t1;
     t2 = RAM[58];
@@ -13820,7 +13827,7 @@ int main(int argc, char **argv) {
     u8 t4;
     u16 t5;
     t0 = g479;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g825;
     A = t1;
     Z = t1 == 0;
@@ -13846,7 +13853,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g433;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g974 >> 8) & 1;
     C = t1;
     RAM[122] = g974;
@@ -14019,7 +14026,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u16 t3;
     t0 = g437;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g902;
     A = t1;
     Z = t1 == 0;
@@ -14066,7 +14073,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g410;
-    V = t0;
+    V_INSTR V = t0;
     g336 = g979;
     A = g336;
     t1 = (g906 >> 8) & 1;
@@ -14093,7 +14100,7 @@ int main(int argc, char **argv) {
   {
     u8 t0;
     t0 = g351;
-    V = t0;
+    V_INSTR V = t0;
     g566 = g926;
     X = g566;
     C = 1;
@@ -14120,7 +14127,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g291;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g910;
     A = t1;
     Z = t1 == 0;
@@ -14147,7 +14154,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g169;
-    V = t0;
+    V_INSTR V = t0;
     g530 = g995;
     t1 = (g995 >> 8) & 1;
     C = t1;
@@ -14175,7 +14182,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g732;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g898;
     A = t1;
     Z = t1 == 0;
@@ -14300,7 +14307,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g561;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g928;
     A = t1;
     Z = t1 == 0;
@@ -14316,7 +14323,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g580;
-    V = t0;
+    V_INSTR V = t0;
     t1 = (g879 >> 8) & 1;
     C = t1;
     RAM[45] = g879;
@@ -14393,10 +14400,10 @@ int main(int argc, char **argv) {
     p2 = &RAM[(t1 + 256u)];
     t2 = *p2;
     N = t2 >> 7;
-    V = ((t2 >> 6) & 1);
-    B = ((t2 >> 4) & 1);
-    D = ((t2 >> 3) & 1);
-    I = ((t2 >> 2) & 1);
+    V_INSTR V = ((t2 >> 6) & 1);
+    B_INSTR B = ((t2 >> 4) & 1);
+    D_INSTR D = ((t2 >> 3) & 1);
+    I_INSTR I = ((t2 >> 2) & 1);
     t3 = (t2 >> 1) & 1;
     Z = t3;
     C = (t2 & 1);
@@ -14530,7 +14537,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g599;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g862;
     A = t1;
     Z = t1 == 0;
@@ -14603,7 +14610,7 @@ int main(int argc, char **argv) {
     N = t0 >> 7;
     t5 = t0 - 1;
     t6 = t5;
-    V = (((((((t6 ^ t0) & 128u) == 0u) | (((s8 )t0) > -1))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t6 ^ t0) & 128u) == 0u) | (((s8 )t0) > -1))&1))) ? 0 : 1;
     t1 = t5;
     A = t1;
     t2 = (t6 >> 8) & 1;
@@ -14731,7 +14738,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g706;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g951;
     A = t1;
     Z = t1 == 0;
@@ -14921,7 +14928,7 @@ int main(int argc, char **argv) {
     t0 = RAM[162];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     g214 = 58;
     goto lA90B;
   }
@@ -15078,7 +15085,7 @@ int main(int argc, char **argv) {
       t2 = (t1 >> 7);
       N = t2;
       t3 = t1 & 64;
-      V = (t3 >> 6);
+      V_INSTR V = (t3 >> 6);
       if (t3 == 0) {
         if (t2 == 0) {
           t5 = RAM[19];
@@ -15377,7 +15384,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     if (t1 == 0) {
       goto lAAE5;
     } else {
@@ -15801,7 +15808,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     N = t0 >> 7;
     t3 = t0;
-    V = 0;
+    V_INSTR V = 0;
     C = 1;
     g295 = RAM[101];
     A = g295;
@@ -15810,7 +15817,7 @@ int main(int argc, char **argv) {
     g960 = g295;
     t4 = g960 - 160;
     t5 = t4;
-    V = (((((((t5 ^ g295) & 128u) == 0u) | (((s8 )g295) < 0))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t5 ^ g295) & 128u) == 0u) | (((s8 )g295) < 0))&1))) ? 0 : 1;
     t1 = t4;
     A = t1;
     Z = t1 == 0;
@@ -15843,7 +15850,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g498;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g930;
     A = t1;
     Z = t1 == 0;
@@ -15857,7 +15864,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g567;
-    V = t0;
+    V_INSTR V = t0;
     t1 = ((g1000 >> 8) & 1) ^ 1;
     C = t1;
     A = -29;
@@ -16034,7 +16041,7 @@ int main(int argc, char **argv) {
     N = t6 >> 7;
     if (t1 == 0) {
       t8 = (t5 - 92) + t2;
-      V = (((((((t8 ^ t0) & 128u) == 0u) | (((s8 )t0) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t8 ^ t0) & 128u) == 0u) | (((s8 )t0) > -1))&1))) ? 0 : 1;
       t3 = t8;
       A = t3;
       Z = t3 == 0;
@@ -16042,7 +16049,7 @@ int main(int argc, char **argv) {
       C = 1;
       t9 = (t8 & 255) - 165;
       t10 = t9;
-      V = (((((((t10 ^ t3) & 128u) == 0u) | (((s8 )t3) < 0))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t10 ^ t3) & 128u) == 0u) | (((s8 )t3) < 0))&1))) ? 0 : 1;
       t4 = t9;
       A = t4;
       Z = t4 == 0;
@@ -16167,7 +16174,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g637;
-    V = t0;
+    V_INSTR V = t0;
     g633 = g941;
     A = g633;
     t1 = (g941 >> 8) & 1;
@@ -16300,7 +16307,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g42;
-    V = t0;
+    V_INSTR V = t0;
     g388 = g837;
     A = g388;
     t1 = (g837 >> 8) & 1;
@@ -16329,7 +16336,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g46;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g855;
     A = t1;
     Z = t1 == 0;
@@ -16416,7 +16423,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g359;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g860;
     C = (g860 >> 8) & 1;
     RAM[72] = t1;
@@ -16434,7 +16441,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g617;
-    V = t0;
+    V_INSTR V = t0;
     g207 = g972;
     g695 = g207 == 0;
     g533 = (g207 >> 7);
@@ -16648,7 +16655,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g209;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g827;
     A = t1;
     Z = t1 == 0;
@@ -16916,7 +16923,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g352;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g896;
     A = t1;
     Z = t1 == 0;
@@ -17103,7 +17110,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g415;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g820;
     A = t1;
     Z = t1 == 0;
@@ -17277,10 +17284,10 @@ int main(int argc, char **argv) {
     p19 = &RAM[(g371 + 256u)];
     t14 = *p19;
     N = t14 >> 7;
-    V = ((t14 >> 6) & 1);
-    B = ((t14 >> 4) & 1);
-    D = ((t14 >> 3) & 1);
-    I = ((t14 >> 2) & 1);
+    V_INSTR V = ((t14 >> 6) & 1);
+    B_INSTR B = ((t14 >> 4) & 1);
+    D_INSTR D = ((t14 >> 3) & 1);
+    I_INSTR I = ((t14 >> 2) & 1);
     t15 = (t14 >> 1) & 1;
     Z = t15;
     C = (t14 & 1);
@@ -17344,7 +17351,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g166;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g965;
     A = t1;
     Z = t1 == 0;
@@ -17427,7 +17434,7 @@ int main(int argc, char **argv) {
         RAM[22] = t0;
         t11 = (t8 - 4) + t4;
         t12 = t11;
-        V = (((((((t12 ^ t0) & 128u) == 0u) | (((s8 )t0) > -1))&1))) ? 0 : 1;
+        V_INSTR V = (((((((t12 ^ t0) & 128u) == 0u) | (((s8 )t0) > -1))&1))) ? 0 : 1;
         t5 = t11;
         A = t5;
         C = (((t12 >> 8) & 1) ^ 1);
@@ -17621,7 +17628,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     t2 = S;
     RAM[t2 + 256u] = -86;
     t3 = t2 - 1;
@@ -18094,7 +18101,7 @@ int main(int argc, char **argv) {
     u8 t5;
     u16 t6;
     t0 = g717;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g917;
     A = t1;
     Z = t1 == 0;
@@ -18270,7 +18277,7 @@ int main(int argc, char **argv) {
     Z = t1 == 0;
     t2 = (t1 >> 7);
     N = t2;
-    V = ((t1 >> 6) & 1);
+    V_INSTR V = ((t1 >> 6) & 1);
     if (t2 == 0) {
       g681 = t0;
       goto lBCAF;
@@ -18397,7 +18404,7 @@ int main(int argc, char **argv) {
     t0 = RAM[160];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     g104 = -1;
     goto lAFEB;
   }
@@ -19020,7 +19027,7 @@ int main(int argc, char **argv) {
     t1 = RAM[22434];
     Z = t1 == 0;
     N = t1 >> 7;
-    V = ((t1 >> 6) & 1);
+    V_INSTR V = ((t1 >> 6) & 1);
     goto lBBCC;
   }
   
@@ -19203,7 +19210,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g784;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g889;
     A = t1;
     Z = t1 == 0;
@@ -19248,7 +19255,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g75;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g840;
     A = t1;
     Z = t1 == 0;
@@ -19267,7 +19274,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     if (t1 == 0) {
       goto lBD47;
     } else {
@@ -19339,7 +19346,7 @@ int main(int argc, char **argv) {
       Z = t4 == 0;
       N = ((t10 >> 8) & 1);
       t11 = t10 & 128;
-      V = (t11 >> 7);
+      V_INSTR V = (t11 >> 7);
       if (t11 == 0) {
         goto lBD0A;
       } else {
@@ -19455,7 +19462,7 @@ int main(int argc, char **argv) {
       Z = t2 == 0;
       t3 = (t2 >> 7);
       N = t3;
-      V = ((t2 >> 6) & 1);
+      V_INSTR V = ((t2 >> 6) & 1);
       if (t3 == 0) {
         goto lBD71;
       } else {
@@ -19657,7 +19664,7 @@ int main(int argc, char **argv) {
     C = 1;
     t4 = t2 - 48;
     t5 = t4;
-    V = (((((((t5 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t5 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
     t3 = t4;
     A = t3;
     Z = t3 == 0;
@@ -19731,7 +19738,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u16 t4;
     t0 = g277;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g883;
     A = t1;
     Z = t1 == 0;
@@ -19813,7 +19820,7 @@ int main(int argc, char **argv) {
     u16 t7;
     u16 t8;
     t0 = g84;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g958;
     A = t1;
     Z = t1 == 0;
@@ -19829,7 +19836,7 @@ int main(int argc, char **argv) {
     } else {
       t7 = ((((g958 & 255) - 9))) + t3;
       t8 = t7;
-      V = (((((((t8 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+      V_INSTR V = (((((((t8 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
       t4 = t7;
       t5 = (t8 >> 8) & 1;
       C = (t5 ^ 1);
@@ -19936,7 +19943,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g647;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g850;
     A = t1;
     C = (g850 >> 8) & 1;
@@ -20414,7 +20421,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g495;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g817;
     t2 = (g817 >> 8) & 1;
     g579 = g644;
@@ -20430,7 +20437,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g229;
-    V = t0;
+    V_INSTR V = t0;
     g680 = g822;
     t1 = RAM[106];
     g817 = (t1 + g206) + ((((g822 >> 8) & 1)));
@@ -20451,7 +20458,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g510;
-    V = t0;
+    V_INSTR V = t0;
     g223 = g868;
     t1 = RAM[107];
     g822 = (t1 + g591) + ((((g868 >> 8) & 1)));
@@ -20472,7 +20479,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g238;
-    V = t0;
+    V_INSTR V = t0;
     g644 = g969;
     t1 = RAM[108];
     g868 = (t1 + g213) + ((((g969 >> 8) & 1)));
@@ -20838,7 +20845,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u16 t2;
     t0 = g161;
-    V = t0;
+    V_INSTR V = t0;
     g683 = g847;
     A = g683;
     Z = g683 == 0;
@@ -21032,7 +21039,7 @@ int main(int argc, char **argv) {
     Z = t0 == 0;
     t1 = (t0 >> 7);
     N = t1;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     if (t1 == 0) {
       g508 = 32;
       goto lBDE7;
@@ -21361,7 +21368,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g778;
-    V = t0;
+    V_INSTR V = t0;
     C = (g838 >> 8) & 1;
     RAM[36] = g838;
     p5 = &RAM[(g174 + 256u)];
@@ -21384,7 +21391,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g31;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g885;
     A = t1;
     Z = t1 == 0;
@@ -22272,7 +22279,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g3;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g908;
     A = t1;
     Z = t1 == 0;
@@ -22456,7 +22463,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u16 t1;
     t0 = g648;
-    V = t0;
+    V_INSTR V = t0;
     C = (g858 >> 8) & 1;
     t1 = g729;
     RAM[t1 + 259u] = g858;
@@ -22500,7 +22507,7 @@ int main(int argc, char **argv) {
       N = t4 >> 7;
       A = t4;
       C = t5;
-      V = t3;
+      V_INSTR V = t3;
       g858 = ((((t6 & 255) + 58))) + t5;
       if (((s8 )t4) < 0) {
         goto bb43014;
@@ -22620,7 +22627,7 @@ int main(int argc, char **argv) {
     t0 = g895;
     A = g192;
     C = (((t0 >> 8) & 1) ^ 1);
-    V = g101;
+    V_INSTR V = g101;
     X = g192;
     Y = g379;
     Z = g379 == 0;
@@ -22879,7 +22886,7 @@ int main(int argc, char **argv) {
     t2 = g728;
     t8 = (t2 - 3) + (((s16 )(s8 )t1));
     t9 = t8;
-    V = (((((((t9 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t9 ^ t2) & 128u) == 0u) | (((s8 )t2) > -1))&1))) ? 0 : 1;
     C = (((t9 >> 8) & 1) ^ 1);
     RAM[94] = t8;
     RAM[93] = t0;
@@ -22925,7 +22932,7 @@ int main(int argc, char **argv) {
     u16 t6;
     u16 t7;
     t0 = g685;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g964;
     A = t1;
     Z = t1 == 0;
@@ -23012,7 +23019,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g556;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g982;
     C = (g982 >> 8) & 1;
     X = t1;
@@ -23043,7 +23050,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g486;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g904;
     C = (((g882 >> 8) & 1) ^ 1);
     X = t1;
@@ -23263,10 +23270,10 @@ int main(int argc, char **argv) {
     S = t1;
     t6 = RAM[(t1 + 256u)];
     N = t6 >> 7;
-    V = ((t6 >> 6) & 1);
-    B = ((t6 >> 4) & 1);
-    D = ((t6 >> 3) & 1);
-    I = ((t6 >> 2) & 1);
+    V_INSTR V = ((t6 >> 6) & 1);
+    B_INSTR B = ((t6 >> 4) & 1);
+    D_INSTR D = ((t6 >> 3) & 1);
+    I_INSTR I = ((t6 >> 2) & 1);
     Z = ((t6 >> 1) & 1);
     C = (t6 & 1);
     t7 = RAM[20];
@@ -23564,7 +23571,7 @@ int main(int argc, char **argv) {
         goto bb48000;
       }
     } else {
-      t14 = kernal_dispatch(&PC, &A, &X, &Y, &S, &N, &V, &B, &D, &I, &Z, &C);
+      t14 = kernal_dispatch(&PC, &A, &X, &Y, &S, &N, &Z, &C);
       if (t14 == 0u){
         return 0; /* continuation */
       } else {
@@ -23809,7 +23816,7 @@ int main(int argc, char **argv) {
     u8 t5;
     u8 t6;
     t0 = g244;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g894;
     A = t1;
     Z = t1 == 0;
@@ -24004,7 +24011,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g631;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g870;
     A = t1;
     Z = t1 == 0;
@@ -24032,7 +24039,7 @@ int main(int argc, char **argv) {
     u16 t4;
     u16 t5;
     t0 = g385;
-    V = t0;
+    V_INSTR V = t0;
     t2 = g802 & 255;
     t3 = t2 << 1;
     t1 = t3;
@@ -24064,7 +24071,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u8 t2;
     t0 = g215;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g802;
     g217 = (t1 >> 7);
     t2 = (g802 >> 8) & 1;
@@ -24263,7 +24270,7 @@ int main(int argc, char **argv) {
     u8 t3;
     u8 t4;
     t0 = g511;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g976;
     A = t1;
     t2 = t1 == 0;
@@ -24308,7 +24315,7 @@ int main(int argc, char **argv) {
       goto lAAEE;
     } else {
       C = t4;
-      V = t2;
+      V_INSTR V = t2;
       t5 = t3 ^ -1;
       A = t5;
       Z = (t3 == 0xff);
@@ -24377,7 +24384,7 @@ int main(int argc, char **argv) {
     u8 t1;
     u16 t2;
     t0 = g558;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g887;
     A = t1;
     Z = t1 == 0;
@@ -24676,12 +24683,12 @@ int main(int argc, char **argv) {
         Z = t2 == 0;
         t3 = (t2 >> 7);
         N = t3;
-        V = ((t2 >> 6) & 1);
+        V_INSTR V = ((t2 >> 6) & 1);
         if (t3 == 0) {
           C = 1;
           t8 = t5 - 127;
           t9 = t8;
-          V = (((((((t9 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+          V_INSTR V = (((((((t9 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
           g769 = t8;
           A = g769;
           C = (((t9 >> 8) & 1) ^ 1);
@@ -24759,7 +24766,7 @@ int main(int argc, char **argv) {
     t0 = RAM[16297];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     g358 = g10;
     goto lAB47;
   }
@@ -24783,7 +24790,7 @@ int main(int argc, char **argv) {
       t1 = RAM[7593];
       Z = t1 == 0;
       N = t1 >> 7;
-      V = ((t1 >> 6) & 1);
+      V_INSTR V = ((t1 >> 6) & 1);
       goto lAB44;
     }
   }
@@ -24975,7 +24982,7 @@ int main(int argc, char **argv) {
     u8 t0;
     u8 t1;
     t0 = g269;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g829;
     A = t1;
     C = (g829 >> 8) & 1;
@@ -25217,7 +25224,7 @@ int main(int argc, char **argv) {
     t2 = RAM[169];
     Z = t2 == 0;
     N = t2 >> 7;
-    V = ((t2 >> 6) & 1);
+    V_INSTR V = ((t2 >> 6) & 1);
     g12 = -104;
     goto lAC0F;
   }
@@ -25507,7 +25514,7 @@ int main(int argc, char **argv) {
     u8 t2;
     u8 t3;
     t0 = g210;
-    V = t0;
+    V_INSTR V = t0;
     g191 = g830;
     A = g191;
     t1 = (g830 >> 8) & 1;
@@ -25598,7 +25605,7 @@ int main(int argc, char **argv) {
     u16 t3;
     u16 t4;
     t0 = g93;
-    V = t0;
+    V_INSTR V = t0;
     t1 = g914;
     A = t1;
     Z = t1 == 0;
@@ -25606,7 +25613,7 @@ int main(int argc, char **argv) {
     C = 1;
     t3 = (g914 & 255) - 48;
     t4 = t3;
-    V = (((((((t4 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
+    V_INSTR V = (((((((t4 ^ t1) & 128u) == 0u) | (((s8 )t1) > -1))&1))) ? 0 : 1;
     t2 = t3;
     A = t2;
     Z = t2 == 0;
@@ -25625,7 +25632,7 @@ int main(int argc, char **argv) {
     u8 t4;
     u16 t5;
     t0 = g281;
-    V = t0;
+    V_INSTR V = t0;
     t5 = g978 << 1;
     t1 = (t5 & 510);
     A = t1;
@@ -25823,7 +25830,7 @@ int main(int argc, char **argv) {
     t0 = RAM[169];
     Z = t0 == 0;
     N = t0 >> 7;
-    V = ((t0 >> 6) & 1);
+    V_INSTR V = ((t0 >> 6) & 1);
     g95 = 1;
     goto lE16A;
   }

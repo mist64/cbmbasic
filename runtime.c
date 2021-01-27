@@ -886,17 +886,13 @@ unsigned char Z;
 unsigned char C;
 
 int
-kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned char *y, unsigned char *s, unsigned char *n, unsigned char *v, unsigned char *b, unsigned char *d, unsigned char *i, unsigned char *z, unsigned char *c) {
+kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned char *y, unsigned char *s, unsigned char *n, unsigned char *z, unsigned char *c) {
 	PC = *pc;
 	A = *a;
 	X = *x;
 	Y = *y;
 	S = *s;
 	N = *n;
-	V = *v;
-	B = *b;
-	D = *d;
-	I = *i;
 	Z = *z;
 	C = *c;
 
@@ -952,10 +948,6 @@ kernal_dispatch(unsigned short *pc, unsigned char *a, unsigned char *x, unsigned
 	*y = Y;
 	*s = S;
 	*n = N;
-	*v = V;
-	*b = B;
-	*d = D;
-	*i = I;
 	*z = Z;
 	*c = C;
 
