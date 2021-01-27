@@ -106,9 +106,10 @@ int main(int argc, char **argv) {
     u16 t0;
     u16 t1;
     t0 = PC;
-    if (t0 == 0xA437) /* error handler */
-    goto lA437;
-    t1 = *((&case_labels[(t0 + 4294926336u)]));
+    if (t0 == 0xA437) { /* error handler */
+      goto lA437;
+    }
+    t1 = *((&case_labels[(t0 - 0xA000)]));
     switch (t1) {
       default:
       goto not_found;
@@ -1206,7 +1207,7 @@ int main(int argc, char **argv) {
     t6 = RAM[(g370 + 256u)];
     t8 = (t5 + 1) + (t6 << 8);
     PC = t8;
-    if ((t8 + 4294926336u) > 17590u) {
+    if (t8 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -1451,7 +1452,7 @@ int main(int argc, char **argv) {
       t8 = RAM[(t7 + 256u)];
       t9 = (t6 + 1) + (t8 << 8);
       PC = t9;
-      if ((t9 + 4294926336u) > 17590u) {
+      if (t9 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -5048,7 +5049,7 @@ int main(int argc, char **argv) {
         t5 = RAM[(t4 + 256u)];
         t9 = (t3 + 1) + (t5 << 8);
         PC = t9;
-        if ((t9 + 4294926336u) > 17590u) {
+        if (t9 > 0xE4B6) {
           goto not_found;
         } else {
           goto bb48000;
@@ -5708,7 +5709,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -5797,7 +5798,7 @@ int main(int argc, char **argv) {
     t1 = RAM[769];
     t2 = (t1 << 8) | t0;
     PC = t2;
-    if ((t2 + 4294926336u) > 17590u) {
+    if (t2 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -5942,7 +5943,7 @@ int main(int argc, char **argv) {
       t9 = RAM[(t8 + 256u)];
       t10 = (t7 + 1) + (t9 << 8);
       PC = t10;
-      if ((t10 + 4294926336u) > 17590u) {
+      if (t10 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -8658,7 +8659,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -9471,7 +9472,7 @@ int main(int argc, char **argv) {
       t8 = RAM[(t7 + 256u)];
       t12 = (t6 + 1) + (t8 << 8);
       PC = t12;
-      if ((t12 + 4294926336u) > 17590u) {
+      if (t12 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12380,7 +12381,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12407,7 +12408,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12434,7 +12435,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12461,7 +12462,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12488,7 +12489,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12515,7 +12516,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12577,7 +12578,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -12607,7 +12608,7 @@ int main(int argc, char **argv) {
     t1 = RAM[771];
     t2 = (t1 << 8) | t0;
     PC = t2;
-    if ((t2 + 4294926336u) > 17590u) {
+    if (t2 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -12645,7 +12646,7 @@ int main(int argc, char **argv) {
     t8 = RAM[(t7 + 256u)];
     t9 = (t6 + 1) + (t8 << 8);
     PC = t9;
-    if ((t9 + 4294926336u) > 17590u) {
+    if (t9 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -12836,7 +12837,7 @@ int main(int argc, char **argv) {
     t2 = RAM[773];
     t3 = (t2 << 8) | t1;
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -12886,7 +12887,7 @@ int main(int argc, char **argv) {
     t7 = RAM[(t6 + 256u)];
     t8 = (t5 + 1) + (t7 << 8);
     PC = t8;
-    if ((t8 + 4294926336u) > 17590u) {
+    if (t8 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -13303,7 +13304,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -13739,7 +13740,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -13840,7 +13841,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -14479,7 +14480,7 @@ int main(int argc, char **argv) {
         t9 = RAM[775];
         t11 = (t9 << 8) | t8;
         PC = t11;
-        if ((t11 + 4294926336u) > 17590u) {
+        if (t11 > 0xE4B6) {
           goto not_found;
         } else {
           goto bb48000;
@@ -14523,7 +14524,7 @@ int main(int argc, char **argv) {
     t1 = RAM[777];
     t2 = (t1 << 8) | t0;
     PC = t2;
-    if ((t2 + 4294926336u) > 17590u) {
+    if (t2 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -14576,7 +14577,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -14681,7 +14682,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -14702,7 +14703,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -14723,7 +14724,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15207,7 +15208,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15246,7 +15247,7 @@ int main(int argc, char **argv) {
     t9 = RAM[(t8 + 256u)];
     t10 = (t7 + 1) + (t9 << 8);
     PC = t10;
-    if ((t10 + 4294926336u) > 17590u) {
+    if (t10 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15304,7 +15305,7 @@ int main(int argc, char **argv) {
     t18 = RAM[(t17 + 256u)];
     t19 = (t16 + 1) + (t18 << 8);
     PC = t19;
-    if ((t19 + 4294926336u) > 17590u) {
+    if (t19 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15325,7 +15326,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15493,7 +15494,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15524,7 +15525,7 @@ int main(int argc, char **argv) {
     t5 = RAM[(t4 + 256u)];
     t6 = (t3 + 1) + (t5 << 8);
     PC = t6;
-    if ((t6 + 4294926336u) > 17590u) {
+    if (t6 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15551,7 +15552,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -15579,7 +15580,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15600,7 +15601,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15621,7 +15622,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15658,7 +15659,7 @@ int main(int argc, char **argv) {
     t7 = RAM[35];
     t8 = (t7 << 8) | t6;
     PC = t8;
-    if ((t8 + 4294926336u) > 17590u) {
+    if (t8 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15684,7 +15685,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15752,7 +15753,7 @@ int main(int argc, char **argv) {
     t2 = RAM[779];
     t3 = (t2 << 8) | t1;
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15784,7 +15785,7 @@ int main(int argc, char **argv) {
     t2 = RAM[(t1 + 256u)];
     t3 = (t0 + 1) + (t2 << 8);
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15910,7 +15911,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -15989,7 +15990,7 @@ int main(int argc, char **argv) {
     t6 = RAM[(t5 + 256u)];
     t7 = (t4 + 1) + (t6 << 8);
     PC = t7;
-    if ((t7 + 4294926336u) > 17590u) {
+    if (t7 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16010,7 +16011,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16135,7 +16136,7 @@ int main(int argc, char **argv) {
     t2 = RAM[(t1 + 256u)];
     t3 = (t0 + 1) + (t2 << 8);
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16160,7 +16161,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16293,7 +16294,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16411,7 +16412,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16555,7 +16556,7 @@ int main(int argc, char **argv) {
     t18 = RAM[(t17 + 256u)];
     t19 = (t16 + 1) + (t18 << 8);
     PC = t19;
-    if ((t19 + 4294926336u) > 17590u) {
+    if (t19 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16585,7 +16586,7 @@ int main(int argc, char **argv) {
     t6 = RAM[(t5 + 256u)];
     t7 = (t4 + 1) + (t6 << 8);
     PC = t7;
-    if ((t7 + 4294926336u) > 17590u) {
+    if (t7 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16614,7 +16615,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16641,7 +16642,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -16908,7 +16909,7 @@ int main(int argc, char **argv) {
     t2 = RAM[(t1 + 256u)];
     t3 = (t0 + 1) + (t2 << 8);
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17224,7 +17225,7 @@ int main(int argc, char **argv) {
     t2 = RAM[(t1 + 256u)];
     t3 = (t0 + 1) + (t2 << 8);
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17389,7 +17390,7 @@ int main(int argc, char **argv) {
     t2 = RAM[(t1 + 256u)];
     t3 = (t0 + 1) + (t2 << 8);
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17771,7 +17772,7 @@ int main(int argc, char **argv) {
     t9 = RAM[(t6 + 256u)];
     t10 = (t8 + 1) + (t9 << 8);
     PC = t10;
-    if ((t10 + 4294926336u) > 17590u) {
+    if (t10 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17799,7 +17800,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17830,7 +17831,7 @@ int main(int argc, char **argv) {
     t5 = RAM[(t4 + 256u)];
     t6 = (t3 + 1) + (t5 << 8);
     PC = t6;
-    if ((t6 + 4294926336u) > 17590u) {
+    if (t6 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17892,7 +17893,7 @@ int main(int argc, char **argv) {
     t5 = RAM[(t4 + 256u)];
     t6 = (t3 + 1) + (t5 << 8);
     PC = t6;
-    if ((t6 + 4294926336u) > 17590u) {
+    if (t6 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17924,7 +17925,7 @@ int main(int argc, char **argv) {
     t6 = RAM[(t5 + 256u)];
     t7 = (t4 + 1) + (t6 << 8);
     PC = t7;
-    if ((t7 + 4294926336u) > 17590u) {
+    if (t7 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17945,7 +17946,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -17999,7 +18000,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -18123,7 +18124,7 @@ int main(int argc, char **argv) {
       t5 = RAM[(t4 + 256u)];
       t6 = (t3 + 1) + (t5 << 8);
       PC = t6;
-      if ((t6 + 4294926336u) > 17590u) {
+      if (t6 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -18181,7 +18182,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -18202,7 +18203,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -19801,7 +19802,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -20315,7 +20316,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -20614,7 +20615,7 @@ int main(int argc, char **argv) {
     t12 = RAM[(t11 + 256u)];
     t14 = (t10 + 1) + (t12 << 8);
     PC = t14;
-    if ((t14 + 4294926336u) > 17590u) {
+    if (t14 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -21216,7 +21217,7 @@ int main(int argc, char **argv) {
       t5 = RAM[(t4 + 256u)];
       t6 = (t3 + 1) + (t5 << 8);
       PC = t6;
-      if ((t6 + 4294926336u) > 17590u) {
+      if (t6 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -21290,7 +21291,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -21340,7 +21341,7 @@ int main(int argc, char **argv) {
     t10 = RAM[(t9 + 256u)];
     t12 = (t8 + 1) + (t10 << 8);
     PC = t12;
-    if ((t12 + 4294926336u) > 17590u) {
+    if (t12 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -21660,7 +21661,7 @@ int main(int argc, char **argv) {
     t19 = RAM[(t18 + 256u)];
     t20 = (t17 + 1) + (t19 << 8);
     PC = t20;
-    if ((t20 + 4294926336u) > 17590u) {
+    if (t20 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -21698,7 +21699,7 @@ int main(int argc, char **argv) {
       t7 = RAM[(t6 + 256u)];
       t9 = (t5 + 1) + (t7 << 8);
       PC = t9;
-      if ((t9 + 4294926336u) > 17590u) {
+      if (t9 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -21797,7 +21798,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -21866,7 +21867,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -22322,7 +22323,7 @@ int main(int argc, char **argv) {
     t5 = RAM[(t4 + 256u)];
     t6 = (t3 + 1) + (t5 << 8);
     PC = t6;
-    if ((t6 + 4294926336u) > 17590u) {
+    if (t6 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -22343,7 +22344,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -22375,7 +22376,7 @@ int main(int argc, char **argv) {
     t4 = RAM[(t3 + 256u)];
     t5 = (t2 + 1) + (t4 << 8);
     PC = t5;
-    if ((t5 + 4294926336u) > 17590u) {
+    if (t5 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -22396,7 +22397,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -22425,7 +22426,7 @@ int main(int argc, char **argv) {
       t4 = RAM[(t3 + 256u)];
       t5 = (t2 + 1) + (t4 << 8);
       PC = t5;
-      if ((t5 + 4294926336u) > 17590u) {
+      if (t5 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -22451,7 +22452,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23099,7 +23100,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23214,7 +23215,7 @@ int main(int argc, char **argv) {
       t5 = RAM[(t4 + 256u)];
       t6 = (t3 + 1) + (t5 << 8);
       PC = t6;
-      if ((t6 + 4294926336u) > 17590u) {
+      if (t6 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -23236,7 +23237,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23280,7 +23281,7 @@ int main(int argc, char **argv) {
     t8 = RAM[21];
     t9 = (t8 << 8) | t7;
     PC = t9;
-    if ((t9 + 4294926336u) > 17590u) {
+    if (t9 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23301,7 +23302,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23322,7 +23323,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23362,7 +23363,7 @@ int main(int argc, char **argv) {
     t1 = RAM[769];
     t2 = (t1 << 8) | t0;
     PC = t2;
-    if ((t2 + 4294926336u) > 17590u) {
+    if (t2 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23446,7 +23447,7 @@ int main(int argc, char **argv) {
     t3 = RAM[(t2 + 256u)];
     t4 = (t1 + 1) + (t3 << 8);
     PC = t4;
-    if ((t4 + 4294926336u) > 17590u) {
+    if (t4 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23503,7 +23504,7 @@ int main(int argc, char **argv) {
     t2 = RAM[(t1 + 256u)];
     t3 = (t0 + 1) + (t2 << 8);
     PC = t3;
-    if ((t3 + 4294926336u) > 17590u) {
+    if (t3 > 0xE4B6) {
       goto not_found;
     } else {
       goto bb48000;
@@ -23565,7 +23566,7 @@ int main(int argc, char **argv) {
       t5 = RAM[(((t10 + 2u) & 65535u))];
       t13 = (t5 << 8) | t4;
       PC = t13;
-      if ((t13 + 4294926336u) > 17590u) {
+      if (t13 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
@@ -23587,7 +23588,7 @@ int main(int argc, char **argv) {
         t11 = PC;
         t12 = (t11 + 1) + (t2 << 8);
         PC = t12;
-        if ((t12 + 4294926336u) > 17590u) {
+        if (t12 > 0xE4B6) {
           goto not_found;
         } else {
           goto bb48000;
@@ -26236,7 +26237,7 @@ int main(int argc, char **argv) {
       t5 = RAM[(g596 + 256u)];
       t7 = (t4 + 1) + (t5 << 8);
       PC = t7;
-      if ((t7 + 4294926336u) > 17590u) {
+      if (t7 > 0xE4B6) {
         goto not_found;
       } else {
         goto bb48000;
