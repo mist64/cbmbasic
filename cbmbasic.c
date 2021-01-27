@@ -46,7 +46,7 @@ typedef signed int s32;
 typedef u8 bool;
 #endif
 
-static void CHRGET_common(bool inc, u8 *a, bool *n, bool *z, bool *c);
+static void CHRGET_common(bool inc, u8 *a, bool *z, bool *c);
 
 u8 RAM[65536];
 
@@ -26242,7 +26242,7 @@ int main(int argc, char **argv) {
   
   chrget:
   {
-      CHRGET_common(1, &A, &N, &Z, &C);
+      CHRGET_common(1, &A, &Z, &C);
       PC = RAM[(++S + 256u)];
       PC = (PC + 1) + (RAM[(++S + 256u)] << 8);
       goto bb48000;
@@ -26250,7 +26250,7 @@ int main(int argc, char **argv) {
 
   chrgot:
   {
-      CHRGET_common(0, &A, &N, &Z, &C);
+      CHRGET_common(0, &A, &Z, &C);
       PC = RAM[(++S + 256u)];
       PC = (PC + 1) + (RAM[(++S + 256u)] << 8);
       goto bb48000;
@@ -26258,10 +26258,8 @@ int main(int argc, char **argv) {
 }
 
 
-#define SETZ(a) Z=a;
-#define SETSZ(a) Z = (a)? 0:1; N = ((signed char)(a))<0?1:0
-#define SETNC(a) C = (a)&0x100? 0:1
-#define SETV(a) /* not needed */
+#define SETZ(a) Z = (a)? 0 : 1;
+#define SETC(a) C = (a)&0x100? 0:1
 
 /*
  * CHRGET/CHRGOT
@@ -26284,32 +26282,37 @@ int main(int argc, char **argv) {
 008A   60         RTS
 */
 static void
-CHRGET_common(bool inc, u8 *a, bool *n, bool *z, bool *c) {
-	u8 A = 0;
-	bool N = 0;
-	bool Z = 0;
-	bool C = 0;
+CHRGET_common(bool inc, u8 *a, bool *z, bool *c) {
+	u8 A;
+	bool Z, C;
 	
-	u16 temp16;
-	if (!inc) goto CHRGOT_start;
-CHRGET_start:
-	RAM[0x7A]++; SETSZ(RAM[0x7A]);
-	if (!Z) goto CHRGOT_start;
-	RAM[0x7B]++; SETSZ(RAM[0x7B]);
-CHRGOT_start:
-	A = RAM[RAM[0x7A] | RAM[0x7B]<<8]; SETSZ(A);
-	temp16 = ((u16)A) - ((u16)0x3A); SETNC(temp16); SETSZ(temp16&0xFF);
-	if (C) goto end;
-	temp16 = ((u16)A) - ((u16)0x20); SETNC(temp16); SETSZ(temp16&0xFF);
-	if (Z) goto CHRGET_start;
-	C = 1;
-	temp16 = (u16)A-(u16)0x30-(u16)(1-C); SETV(((A ^ temp16) & 0x80) && ((A ^ 0x30) & 0x80)); A = (u8)temp16; SETSZ(A); SETNC(temp16);
-	C = 1;
-	temp16 = (u16)A-(u16)0xD0-(u16)(1-C); SETV(((A ^ temp16) & 0x80) && ((A ^ 0xD0) & 0x80)); A = (u8)temp16; SETSZ(A); SETNC(temp16);
+	if (!inc) {
+		goto skip_inc;
+	}
+
+	while(1) {
+		RAM[0x7A]++;
+		if (!RAM[0x7A]) {
+			RAM[0x7B]++;
+		}
+
+skip_inc:
+		A = RAM[RAM[0x7A] | RAM[0x7B] << 8];
 	
-end:
+		if (A >= 0x3A) {
+			Z = A == 0x3A;
+			C = 1;
+			break;
+		} else {
+			if (A != 0x20) {
+				Z = A == 0;
+				C = A < 0x30;
+				break;
+			}
+		}
+	};
+	
 	*a = A;
-	*n = N;
 	*z = Z;
 	*c = C;
 }
