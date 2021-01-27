@@ -26257,10 +26257,6 @@ int main(int argc, char **argv) {
   }
 }
 
-
-#define SETZ(a) Z = (a)? 0 : 1;
-#define SETC(a) C = (a)&0x100? 0:1
-
 /*
  * CHRGET/CHRGOT
  * CBMBASIC implements CHRGET/CHRGOT as self-modifying
