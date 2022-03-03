@@ -230,6 +230,43 @@ plugin_gone() {
 
 			continue;
 		}
+
+                /* Implements the ANSI Set Graphics Mode
+		   as appears on http://ascii-table.com/ansi-escape-sequences.php
+	           Note that some attributes will be implemented differently depending on what
+                   terminal program you are using.
+                */
+		if (compare("ANSISGM")) {
+			char attr, fg, bg;
+			attr = get_byte(); /* Attribute */
+			check_comma();
+			fg = get_byte(); /* Foreground color */
+			check_comma();
+			bg = get_byte(); /* Background color */
+
+			if (attr < 0 || attr > 8) return error(ERROR_ILLEGAL_QUANTITY);
+			if (fg < 30 || fg > 37) return error(ERROR_ILLEGAL_QUANTITY);
+			if (bg < 40 || bg > 47) return error(ERROR_ILLEGAL_QUANTITY);
+
+			printf("\033[%d;%d;%dm",attr,bg,fg);
+	        	continue;
+		}
+
+                /* ANSI erase line */
+		if (compare("ANSIEL")) {
+			printf("\033[K");
+                }
+
+                /* ANSI save cursor pos */
+		if (compare("ANSISC")) {
+			printf("\033[s");
+                }
+
+                /* ANSI restore cursor pos */
+		if (compare("ANSIRC")) {
+			printf("\033[u");
+                }
+
 		/*
 		 * this example shows:
 		 * - how to override existing keywords

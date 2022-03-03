@@ -471,6 +471,9 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
                 case 17: /* CSR DOWN */
                     down_cursor();
                     break;
+		case 18: /* REV ON */
+		    reverse_screen(1);
+		    break;
                 case 19: /* CSR HOME */
                     move_cursor(0, 0);
                     break;
@@ -494,6 +497,9 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
                     break;
                 case 145: /* CSR UP */
                     up_cursor();
+                    break;
+		case 146: /* REV OFF */
+		    reverse_screen(0);
                     break;
                 case 147: /* clear screen */
 #ifndef NO_CLRHOME
