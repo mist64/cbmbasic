@@ -44,7 +44,7 @@
 #include "glue.h"
 #include "console.h"
 
-unsigned char RAM[65536];
+//unsigned char RAM[65536];
 
 int
 stack4(unsigned short a, unsigned short b, unsigned short c, unsigned short d) {
