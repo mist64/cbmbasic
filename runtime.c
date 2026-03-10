@@ -145,6 +145,9 @@ int readycount = 0;
 int interactive;
 FILE *input_file;
 
+/* set to 1 once stdin reaches EOF so CHRIN exits cleanly */
+static int stdin_eof = 0;
+
 /* Jiffy clock: offset set by SETTIM, base wall-clock time at that point.
  * Used by both SETTIM and RDTIM so must be declared before init_os. */
 static unsigned long jiffy_offset = 0;
@@ -394,9 +397,19 @@ CHRIN() {
 				kernal_status |= KERN_ST_EOF;
 		}
 	} else if (!input_file) {
-		A = getchar(); /* stdin */
-		if (A == EOF) exit(0); /* clean exit on Ctrl-D / EOF */
-		if (A=='\n') A = '\r';
+		if (stdin_eof) exit(0);
+		{
+			int ch = getchar(); /* must capture in int before assigning to unsigned char A */
+			if (ch == EOF) {
+				/* First EOF: send CR to terminate the current input line cleanly.
+				 * Set flag so the very next CHRIN call exits before getchar(). */
+				stdin_eof = 1;
+				A = '\r';
+			} else {
+				A = (unsigned char)ch;
+				if (A == '\n') A = '\r';
+			}
+		}
 	} else {
 		if (fakerun) {
 			A = run[fakerun_index++];
@@ -837,7 +850,7 @@ GETIN() {
             FD_SET(STDIN_FILENO, &fds);
             if (select(STDIN_FILENO + 1, &fds, NULL, NULL, &tv) > 0) {
                 A = getchar();
-                if (A == EOF) exit(0); /* clean exit on Ctrl-D / EOF */
+                if (A == EOF) { stdin_eof = 1; A = 0; }
                 if (A == '\n') A = '\r';
             } else {
                 A = 0; /* no key available */
