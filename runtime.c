@@ -375,6 +375,7 @@ CHRIN() {
 		}
 	} else if (!input_file) {
 		A = getchar(); /* stdin */
+		if (A == EOF) exit(0); /* clean exit on Ctrl-D / EOF */
 		if (A=='\n') A = '\r';
 	} else {
 		if (fakerun) {
@@ -820,6 +821,7 @@ GETIN() {
             A = 0;
 #else
         A = getchar();
+        if (A == EOF) exit(0); /* clean exit on Ctrl-D / EOF */
 #endif
         if (A=='\n') A = '\r';
         C = 0;
