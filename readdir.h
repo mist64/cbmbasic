@@ -9,9 +9,8 @@
 #define MAX_PATH 260
 #endif
 
-struct dirent
-{
-	char d_name[MAX_PATH];
+struct dirent {
+  char d_name[MAX_PATH];
 };
 
 typedef struct dir_private DIR;

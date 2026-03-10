@@ -4,4 +4,3 @@ unsigned short plugin_crnch(void);
 unsigned short plugin_qplop(void);
 unsigned short plugin_gone(void);
 unsigned short plugin_eval(void);
-
