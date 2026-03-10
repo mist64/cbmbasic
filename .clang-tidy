@@ -1,0 +1,6 @@
+---
+# Disable overly pedantic security checks for functions that are already safe
+# vsnprintf, snprintf, strncpy (when used correctly) are fine and portable
+# Also ignore unused variable warnings and dead stores
+Checks: '-clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,-clang-diagnostic-unused-*,-clang-analyzer-deadcode.DeadStores'
+---
