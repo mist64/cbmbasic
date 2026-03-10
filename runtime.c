@@ -36,6 +36,7 @@
 #include <conio.h>   // _kbhit, _getch
 #else
 #include <sys/time.h>
+#include <sys/select.h>
 #include <unistd.h>
 #endif
 #include "stat.h"
@@ -144,6 +145,11 @@ int readycount = 0;
 int interactive;
 FILE *input_file;
 
+/* Jiffy clock: offset set by SETTIM, base wall-clock time at that point.
+ * Used by both SETTIM and RDTIM so must be declared before init_os. */
+static unsigned long jiffy_offset = 0;
+static struct timeval jiffy_base_tv = {0, 0};
+
 int
 init_os(int argc, char **argv) {
 //	printf("init_os %d\n", argc);
@@ -158,10 +164,17 @@ init_os(int argc, char **argv) {
 			exit(1);
 		}
 		if (fgetc(input_file)=='#') {
-			char c;
+			int c;
+			/* skip the shebang line; handle \r, \n, and \r\n */
 			do {
 				c = fgetc(input_file);
-			} while((c!=13)&&(c!=10));
+			} while (c != EOF && c != '\n' && c != '\r');
+			/* consume the \n of a \r\n pair */
+			if (c == '\r') {
+				c = fgetc(input_file);
+				if (c != '\n' && c != EOF)
+					ungetc(c, input_file);
+			}
 		} else {
 			fseek(input_file, 0, SEEK_SET);
 		}
@@ -170,6 +183,7 @@ init_os(int argc, char **argv) {
 		input_file = NULL;
 	}
 	srand((unsigned int)time(NULL));
+	gettimeofday(&jiffy_base_tv, NULL); /* initialise TI clock base */
 
 	return 0xE394; /* main entry point of BASIC */
 }
@@ -368,7 +382,13 @@ CHRIN() {
 		} else {
 			if (kernal_files_next[kernal_input] == EOF)
 				kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
-			A = kernal_files_next[kernal_input];
+			/* Use int comparison before narrowing to unsigned char to avoid
+			   truncating EOF (-1) to 0xFF and misreading it as valid data */
+			{
+				int ch = kernal_files_next[kernal_input];
+				if (ch == EOF) { kernal_status |= KERN_ST_EOF; A = 13; }
+				else A = (unsigned char)ch;
+			}
 			kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
 			if (kernal_files_next[kernal_input] == EOF)
 				kernal_status |= KERN_ST_EOF;
@@ -380,8 +400,10 @@ CHRIN() {
 	} else {
 		if (fakerun) {
 			A = run[fakerun_index++];
-			if (fakerun_index==sizeof(run))
-				input_file = 0; /* switch to stdin */
+			if (fakerun_index==sizeof(run)) {
+					fclose(input_file); /* prevent fd leak when switching to stdin */
+					input_file = 0; /* switch to stdin */
+				}
 		} else {
 			A = fgetc(input_file);
 			if ((A==255)&&(readycount==1)) {
@@ -546,7 +568,12 @@ printf("CHROUT: %d @ %x,%x,%x,%x\n", A, a, b, c, d);
             }
         }
 #endif
-		fflush(stdout);
+		/* Flush only on CR (line end) or colour/cursor control codes that
+		 * might be the last output before blocking on input. Flushing on
+		 * every character is a significant performance drag for PRINT-heavy
+		 * programs. */
+		if (A == 13 || A < 32)
+			fflush(stdout);
 		C = 0;
 	}
 }
@@ -580,11 +607,18 @@ LOAD() {
 			RAM[memp++] = 0;
 			RAM[memp++] = 0x12; /* REVERS ON */
 			RAM[memp++] = '"';
-			for(i=0; i<16; i++)
-				RAM[memp+i] = ' ';
-			if( (getcwd((char*)&RAM[memp], 256)) == NULL )
-				goto device_not_present;
-			memp += strlen((char*)&RAM[memp]); /* only 16 on COMMODORE DOS */
+			{
+				char cwdbuf[256];
+				size_t cwdlen;
+				if (getcwd(cwdbuf, sizeof(cwdbuf)) == NULL)
+					goto device_not_present;
+				cwdlen = strlen(cwdbuf);
+				if (cwdlen > 16) cwdlen = 16; /* match Commodore 16-char display limit */
+				if (memp + cwdlen + 10 >= 0xFFFF)
+					goto device_not_present;
+				memcpy(&RAM[memp], cwdbuf, cwdlen);
+				memp += cwdlen;
+			}
 			RAM[memp++] = '"';
 			RAM[memp++] = ' ';
 			RAM[memp++] = '0';
@@ -601,6 +635,9 @@ LOAD() {
 				goto device_not_present;
 			while ((dp = readdir(dirp))) {
 				size_t namlen = strlen(dp->d_name);
+				/* Guard: each entry needs at most ~30 bytes; leave headroom */
+				if (memp + 32 + 16 >= 0xFFFF)
+					break;
 				stat(dp->d_name, &st);
 				file_size = (st.st_size + 253)/254; /* convert file size from num of bytes to num of blocks(254 bytes) */
 				if (file_size>0xFFFF)
@@ -736,58 +773,25 @@ SAVE() {
 /* SETTIM */
 static void
 SETTIM() {
-    unsigned long   jiffies = Y*65536 + X*256 + A;
-    unsigned long   seconds = jiffies/60;
-#ifdef _WIN32
-	SYSTEMTIME st;
-
-	GetLocalTime(&st);
-	st.wHour         = (WORD)(seconds/3600);
-	st.wMinute       = (WORD)(seconds/60);
-	st.wSecond       = (WORD)(seconds%60);
-	st.wMilliseconds = (WORD)((jiffies % 60) * 1000 / 60);
-	SetLocalTime(&st);
-#else
-    time_t  now = time(0);
-    struct tm       bd;
-    struct timeval  tv;
-    
-    localtime_r(&now, &bd);
-
-    bd.tm_sec       = seconds%60;
-    bd.tm_min       = seconds/60;
-    bd.tm_hour      = seconds/3600;
-
-    tv.tv_sec   = mktime(&bd);
-    tv.tv_usec  = (jiffies % 60) * (1000000/60);
-    
-    settimeofday(&tv, 0);
-#endif
+    unsigned long jiffies = Y*65536UL + X*256UL + A;
+    jiffy_offset = jiffies;
+    gettimeofday(&jiffy_base_tv, NULL);
 }
 
 /* RDTIM */
 static void
 RDTIM() {
-	unsigned long   jiffies;
-#ifdef _WIN32
-	SYSTEMTIME st;
+    struct timeval now;
+    unsigned long elapsed_jiffies, jiffies;
 
-	GetLocalTime(&st);
-	jiffies = ((st.wHour*60 + st.wMinute)*60 + st.wSecond)*60 + st.wMilliseconds * 60 / 1000;
-#else
-    time_t  now = time(0);
-    struct tm       bd;
-    struct timeval  tv;
-    
-    localtime_r(&now, &bd);
-    gettimeofday(&tv, 0);
-    
-    jiffies = ((bd.tm_hour*60 + bd.tm_min)*60 + bd.tm_sec)*60 + tv.tv_usec / (1000000/60);
-#endif
-    Y   = (unsigned char)(jiffies/65536);
-    X   = (unsigned char)((jiffies%65536)/256);
-    A   = (unsigned char)(jiffies%256);
-    
+    gettimeofday(&now, NULL);
+    elapsed_jiffies = (unsigned long)((now.tv_sec  - jiffy_base_tv.tv_sec)  * 60
+                                    + (now.tv_usec - jiffy_base_tv.tv_usec) / (1000000/60));
+    jiffies = jiffy_offset + elapsed_jiffies;
+
+    Y = (unsigned char)(jiffies / 65536);
+    X = (unsigned char)((jiffies % 65536) / 256);
+    A = (unsigned char)(jiffies % 256);
 }
 
 /* STOP */
@@ -807,7 +811,12 @@ GETIN() {
         } else {
             if (kernal_files_next[kernal_input] == EOF)
                 kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
-            A = kernal_files_next[kernal_input];
+            /* Use int comparison before narrowing to unsigned char */
+            {
+                int ch = kernal_files_next[kernal_input];
+                if (ch == EOF) { kernal_status |= KERN_ST_EOF; A = 199; }
+                else A = (unsigned char)ch;
+            }
             kernal_files_next[kernal_input] = fgetc(kernal_files[kernal_input]);
             if (kernal_files_next[kernal_input] == EOF)
                 kernal_status |= KERN_ST_EOF;
@@ -820,10 +829,21 @@ GETIN() {
         else
             A = 0;
 #else
-        A = getchar();
-        if (A == EOF) exit(0); /* clean exit on Ctrl-D / EOF */
+        {
+            /* Non-blocking key check via select() with zero timeout */
+            fd_set fds;
+            struct timeval tv = {0, 0};
+            FD_ZERO(&fds);
+            FD_SET(STDIN_FILENO, &fds);
+            if (select(STDIN_FILENO + 1, &fds, NULL, NULL, &tv) > 0) {
+                A = getchar();
+                if (A == EOF) exit(0); /* clean exit on Ctrl-D / EOF */
+                if (A == '\n') A = '\r';
+            } else {
+                A = 0; /* no key available */
+            }
+        }
 #endif
-        if (A=='\n') A = '\r';
         C = 0;
     }
 }

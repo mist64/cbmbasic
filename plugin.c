@@ -237,7 +237,7 @@ plugin_gone() {
                    terminal program you are using.
                 */
 		if (compare("ANSISGM")) {
-			char attr, fg, bg;
+			int attr, fg, bg;
 			attr = get_byte(); /* Attribute */
 			check_comma();
 			fg = get_byte(); /* Foreground color */
@@ -299,6 +299,9 @@ plugin_gone() {
 			char s[256];
 
 			get_string(s);
+			/* WARNING: passes BASIC string directly to the shell with no
+			 * sanitisation. This is intentional (SYS SYSTEM feature) but
+			 * means any BASIC program can execute arbitrary host commands. */
 			system(s);
 
 			continue;
