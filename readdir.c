@@ -1,3 +1,4 @@
+#ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN
 #include <errno.h>
 #include <stdlib.h>
@@ -96,3 +97,4 @@ int closedir(DIR *dir)
 	return 0;
 }
 
+#endif /* _WIN32 */
