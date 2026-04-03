@@ -144,6 +144,8 @@ int readycount = 0;
 int interactive;
 FILE *input_file;
 
+static int stdin_eof = 0;
+
 int
 init_os(int argc, char **argv) {
 //	printf("init_os %d\n", argc);
@@ -374,8 +376,15 @@ CHRIN() {
 				kernal_status |= KERN_ST_EOF;
 		}
 	} else if (!input_file) {
-		A = getchar(); /* stdin */
-		if (A=='\n') A = '\r';
+		if (stdin_eof) exit(0);
+		int ch = getchar();
+		if (ch == EOF) {
+			stdin_eof = 1;
+			A = '\r';
+		} else {
+			A = ch;
+			if (A=='\n') A = '\r';
+		}
 	} else {
 		if (fakerun) {
 			A = run[fakerun_index++];
@@ -819,7 +828,9 @@ GETIN() {
         else
             A = 0;
 #else
-        A = getchar();
+        int ch = getchar();
+        if (ch == EOF) { stdin_eof = 1; A = 0; }
+        else A = ch;
 #endif
         if (A=='\n') A = '\r';
         C = 0;
